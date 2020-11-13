@@ -1,23 +1,23 @@
 # Defining Functions
 
+## Learning Goals
+
+- Define a function (function signature, function body, return)
+- Demonstrate calling functions with and without arguments/parameters
+
 ## Introduction
 
 A function is a reusable chunk of code. Every function is defined with a name and some logic.
 
 If, in a given project, we want to **define** our own reusable chunks of code, then we can define our own functions. Then, any code that has access to our functions can invoke them. To define a function, we must use specific Python syntax.
 
-## Learning Goals
-
-- Define a function (function signature, function body, return)
-- Demonstrate calling functions with and without arguments/parameters
-
 ## Vocabulary and Synonyms
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
-| Function | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again. | Method | "I defined a function," "I used a function," "I wrote a function"
+| Function | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again. | - | "I defined a function," "I used a function," "I wrote a function"
 | Function definition, defining a function | How a function gets defined before it gets invoked | Function def, where the function is defined, a function you wrote | "I defined a function named `get_length`," "I defined the `get_length` function in this file," "I had bugs in my `get_length` function definition."
-| Function Signature | A piece of syntax. A part of the function definition that determines function name and the parameter list | Method signature | "We can read the name from the function signature," "The function signature tells us what parameters there are."
+| Function Signature | A piece of syntax. A part of the function definition that determines function name and the parameter list | - | "We can read the name from the function signature," "The function signature tells us what parameters there are."
 | Parameter | The name of an expected argument for this function. This parameter name is the name of the local variable that will hold an argument value. Parameters and arguments at the time of function call are mapped positionally. | Argument. Param. What is passed into a function. | "This function has one parameter named `items`," "There are 3 parameters for this function," "The function doesn't take any parameters"
 
 ## Every Function Has a Responsibility
@@ -91,7 +91,7 @@ Read this table as it describes each piece of code in the function signature fro
 | `def` |`def` is a special keyword in Python. Python interpreters read `def` and go "Hey! I'm beginning to define a function!", and reads the rest of the line as a function definition.
 | `function_name` | **Replace this** part with the name of the function you are defining.
 | `( ... )` | These round parentheses contain the parameter list. Ensure that it's inbetween the function name and colon(`:`)! Ensure that there is an ending `)`!
-| `apples, oranges` | This is the function's parameter list. **Replace this!** Arguments named inside of a function signature are technincally called **parameters.** Here is a comma-separated list of the parameters of this function. There can be 0 parameters, in which case the parens would be empty, and the method signature would look like `def function_name():`
+| `apples, oranges` | This is the function's parameter list. **Replace this!** Arguments named inside of a function signature are technincally called **parameters.** Here is a comma-separated list of the parameters of this function. There can be 0 parameters, in which case the parens would be empty, and the function signature would look like `def function_name():`
 | `:` | This colon ends the function signature, and begins the function body. It's easy to not remember this colon!
 
 Let's look at some examples of different function signatures:

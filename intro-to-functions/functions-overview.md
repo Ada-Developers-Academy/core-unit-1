@@ -1,5 +1,10 @@
 # Functions: Overview
 
+## Learning Goals
+
+- Define and distinguish between the terms function, function signature, function body, and the return keyword
+- Apply Single Responsibility Principle to functions
+
 ## Introduction
 
 When we write code, we are creating sets of instructions.
@@ -43,16 +48,11 @@ How do programmers work with this large amount of code? We can keep our code fle
 
 Functions give developers a way to think about writing code and reusing code.
 
-## Learning Goals
-
-- Define and distinguish between the terms function, function signature, function body, and the return keyword
-- Apply Single Responsibility Principle to functions
-
 ## Vocabulary
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
-| Function | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again. | Method | "I defined a function," "I used a function," "I wrote a function"
+| Function | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again. | - | "I defined a function," "I used a function," "I wrote a function"
 | Invoking a function | "Invoking a function" means "make the lines of code inside of a function definition happen now." We can invoke a function any number of times (even infinitely!) | Calling a function, executing a function, evaluating a function, running a function, using a function | "I invoked the function named `print`," "I need to invoke `print` before the `if` statement," "I need to call that function at the end."
 | Function definition, defining a function | How a function gets defined before it gets invoked | Function def, where the function is defined, a function you wrote | "I defined a function named `get_length`," "I defined the `get_length` function in this file," "I had bugs in my `get_length` function definition."
 
@@ -87,7 +87,7 @@ A function can hold logic such as this.
 
 Almost every function has a name.
 
-This name is how we will use, define, and talk about the method.
+This name is how we will use, define, and talk about the function.
 
 **Look at this example:** A function that holds the logic for converting degrees from celsius to fahrenheit could have any of these names:
 

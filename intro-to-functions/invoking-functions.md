@@ -1,19 +1,19 @@
 # Invoking Functions
 
-## Introduction
-
-A function is a reusable chunk of code. Every function is defined with a name and some logic. If in a given project, on a given line of code, we want to **execute** this logic and this reusable chunk of code, we need to **invoke** the function.
-
 ## Learning Goals
 
 - Demonstrate calling functions with and without arguments
 - Use the return value in a function
 
+## Introduction
+
+A function is a reusable chunk of code. Every function is defined with a name and some logic. If in a given project, on a given line of code, we want to **execute** this logic and this reusable chunk of code, we need to **invoke** the function.
+
 ## Vocabulary and Synonyms
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
-| Function | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again. | Method | "I defined a function," "I used a function," "I wrote a function"
+| Function | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again. | - | "I defined a function," "I used a function," "I wrote a function"
 | Invoking a function | "Invoking a function" means "make the lines of code inside of a function definition happen now." We can invoke a function any number of times (even infinitely!) | Calling a function, executing a function, evaluating a function, running a function, using a function | "I invoked the function named `print`," "I need to invoke `print` before the `if` statement," "I need to call that function at the end."
 | Argument | An argument is a piece of data delivered to a function when it's being invoked. | Parameter | "I passed in the argument `"orange"`", "The function takes in two arguments"
 | Return value | A return value is the piece of data that a function delivers to the code that invoked the function. | Return | "That function returned a dictionary," "I need to use the return value of that function"
@@ -116,7 +116,7 @@ Today, we've been working with functions defined by Python, so we'll find the co
 
 From the documentation, we should understand the following:
 
-- The documentation calls the **first** argument `a`, and the **second** argument `b`. This is determined next to the name of the method, `random.randint(a, b)`
+- The documentation calls the **first** argument `a`, and the **second** argument `b`. This is determined next to the name of the function, `random.randint(a, b)`
 - The documentation says that the responsibility of this function relies on the logic of `a <= N <= b`. This means that the values of `a` should be the smallest number, and `b` should be the biggest number
 
 When using the `randint` method, our smallest number should be positioned as the **first** argument, and our largest number should be positioned as the **second** argument. The output of this function will be a randomly generated integer between the values of a and b.
