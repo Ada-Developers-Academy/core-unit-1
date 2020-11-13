@@ -11,32 +11,32 @@ A function is a reusable chunk of code. Every function is defined with a name an
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-| Function | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again. | - | "I defined a function," "I used a function," "I wrote a function"
-| Invoking a function | "Invoking a function" means "make the lines of code inside of a function definition happen now." We can invoke a function any number of times (even infinitely!) | Calling a function, executing a function, evaluating a function, running a function, using a function | "I invoked the function named `print`," "I need to invoke `print` before the `if` statement," "I need to call that function at the end."
-| Argument | An argument is a piece of data delivered to a function when it's being invoked. | Parameter | "I passed in the argument `"orange"`", "The function takes in two arguments"
-| Return value | A return value is the piece of data that a function delivers to the code that invoked the function. | Return | "That function returned a dictionary," "I need to use the return value of that function"
+| Vocab               | Definition                                                                                                                                                       | Synonyms                                                                                              | How to Use in a Sentence                                                                                                                 |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Function            | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again.   | -                                                                                                     | "I defined a function," "I used a function," "I wrote a function"                                                                        |
+| Invoking a function | "Invoking a function" means "make the lines of code inside of a function definition happen now." We can invoke a function any number of times (even infinitely!) | Calling a function, executing a function, evaluating a function, running a function, using a function | "I invoked the function named `print`," "I need to invoke `print` before the `if` statement," "I need to call that function at the end." |
+| Argument            | An argument is a piece of data delivered to a function when it's being invoked.                                                                                  | Parameter                                                                                             | "I passed in the argument `"orange"`", "The function takes in two arguments"                                                             |
+| Return value        | A return value is the piece of data that a function delivers to the code that invoked the function.                                                              | Return                                                                                                | "That function returned a dictionary," "I need to use the return value of that function"                                                 |
 
 ## Every Function Has a Responsibility
 
 Functions do things, and have a responsibility to do things when they are _invoked_.
 
-We should fully understand the *responsibility* of each function when we use it. Before using a function, we should be able to describe the following:
+We should fully understand the _responsibility_ of each function when we use it. Before using a function, we should be able to describe the following:
 
-* the purpose of the function
-* the data that *'goes into'* the function
-* the computations inside of the function
-* the data that *'goes out'* of the function
+- the purpose of the function
+- the data that _'goes into'_ the function
+- the computations inside of the function
+- the data that _'goes out'_ of the function
 
 Python has defined a lot of functions for us to use, already. Let's look at some Python functions and their responsibilities.
 
-| Name of function | Responsibility |
-| --- | --- |
-| `len` | Based on the one given value, will calculate the length of the given value. The given value is typically either a string or list.
-| `print` | Based on one given value, will display the given value to the "standard output" (like the console, terminal, bash, etc) as best it can.
-| `random.randint` | Based on two given values, generate a random integer in the range between the first given value and the second given value
-| `time.time` | Calculates the number of seconds passed since [epoch. For Unix system, January 1, 1970, 00:00:00 at UTC is epoch (the point where time begins).](https://en.wikipedia.org/wiki/Unix_time)
+| Name of function | Responsibility                                                                                                                                                                            |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `len`            | Based on the one given value, will calculate the length of the given value. The given value is typically either a string or list.                                                         |
+| `print`          | Based on one given value, will display the given value to the "standard output" (like the console, terminal, bash, etc) as best it can.                                                   |
+| `random.randint` | Based on two given values, generate a random integer in the range between the first given value and the second given value                                                                |
+| `time.time`      | Calculates the number of seconds passed since [epoch. For Unix system, January 1, 1970, 00:00:00 at UTC is epoch (the point where time begins).](https://en.wikipedia.org/wiki/Unix_time) |
 
 Callout: Technically, `time.time` is a function named `time` inside a module `time`. Also, `random.randint` is a function named `randint` inside of a module named `random`. We won't worry about these details yet! What this means for us today is we will sometimes need these two lines of code at the top: `import random` and/or `import time`
 
@@ -46,7 +46,6 @@ Callout: Going forward, because technically `time` and `randint` are the names o
 
 Once we know a function's name and responsibility, we can invoke this function on a certain line of code. To do so, use this syntax:
 
-
 ```python
 function_name()
 ```
@@ -55,12 +54,12 @@ function_name()
 
 Let's look at those Python functions and the syntax for how to invoke them.
 
-| Name of function | Syntax to Invoke (With Zero Arguments) |
-| --- | --- |
-| `len` | `len()`
-| `print` | `print()`
-| `randint` (inside the `random` module) | `random.randint()`
-| `time` (inside the `time` module) | `time.time()`
+| Name of function                       | Syntax to Invoke (With Zero Arguments) |
+| -------------------------------------- | -------------------------------------- |
+| `len`                                  | `len()`                                |
+| `print`                                | `print()`                              |
+| `randint` (inside the `random` module) | `random.randint()`                     |
+| `time` (inside the `time` module)      | `time.time()`                          |
 
 ### Try It
 
@@ -90,12 +89,12 @@ To invoke a function with one or more arguments, we need to include the argument
 
 Let's look at those Python functions and the syntax for how to pass in arguments.
 
-| Name of function | Line of code that invokes a function | Number of arguments passed in | Argument(s) passed in |
-| --- | --- | --- | --- |
-`len` | `len(["Kelsea's Title", "Kelsea's Job Description])` | 1 | `["Kelsea's Title", "Kelsea's Job Description]`
-`print` | `print("Garry's Models")` | 1 | `"Garry's Models"`
-`randint` | `random.randint(0, 777)` | 2 | `0` and `777`
-`time.time` | `time.time()` | 0 | -
+| Name of function | Line of code that invokes a function                 | Number of arguments passed in | Argument(s) passed in                           |
+| ---------------- | ---------------------------------------------------- | ----------------------------- | ----------------------------------------------- |
+| `len`            | `len(["Kelsea's Title", "Kelsea's Job Description])` | 1                             | `["Kelsea's Title", "Kelsea's Job Description]` |
+| `print`          | `print("Garry's Models")`                            | 1                             | `"Garry's Models"`                              |
+| `randint`        | `random.randint(0, 777)`                             | 2                             | `0` and `777`                                   |
+| `time.time`      | `time.time()`                                        | 0                             | -                                               |
 
 The number of arguments that a function accepts is determined by how it's defined. If we want to know how many arguments a function accepts, we should confirm through its documentation.
 
@@ -121,10 +120,10 @@ From the documentation, we should understand the following:
 
 When using the `randint` method, our smallest number should be positioned as the **first** argument, and our largest number should be positioned as the **second** argument. The output of this function will be a randomly generated integer between the values of a and b.
 
-
 ### Arguments Can Be Any Data Type
 
 Arguments can be any data type:
+
 - Strings
 - Lists
 - Dictionaries
@@ -132,6 +131,7 @@ Arguments can be any data type:
 - Anything else!
 
 Arguments can be:
+
 - Literal values (such as `"apples"`)
 - variables (such as `apples`, where `apples = "apples"` in a previous line of code)
 
@@ -181,16 +181,16 @@ We can usually describe a return value by simply describing what it represents. 
 
 Let's look at the return values for some functions we've observed, and some functions we can call.
 
-| Name of function | Description of Return Value | Line of code that invokes a function | Arguments passed in | The literal Return Value |
-| --- | --- | --- | --- | --- |
-`len` | length of the argument | `len(["Kelsea's Title", "Kelsea's Job Description])` | `["Kelsea's Title", "Kelsea's Job Description]` | 2
-`print` | nothing | `print("Garry's Models")` | `"Garry's Models"` | `None`
-`randint` | a random integer within the range of the two arguments | `random.randint(0, 777)` | `0` and `777` | 419
-`time` | the number of seconds since epoch | `time.time()` | - | `1602720584.8029282`
+| Name of function | Description of Return Value                            | Line of code that invokes a function                 | Arguments passed in                             | The literal Return Value |
+| ---------------- | ------------------------------------------------------ | ---------------------------------------------------- | ----------------------------------------------- | ------------------------ |
+| `len`            | length of the argument                                 | `len(["Kelsea's Title", "Kelsea's Job Description])` | `["Kelsea's Title", "Kelsea's Job Description]` | 2                        |
+| `print`          | nothing                                                | `print("Garry's Models")`                            | `"Garry's Models"`                              | `None`                   |
+| `randint`        | a random integer within the range of the two arguments | `random.randint(0, 777)`                             | `0` and `777`                                   | 419                      |
+| `time`           | the number of seconds since epoch                      | `time.time()`                                        | -                                               | `1602720584.8029282`     |
 
 Callout: `print`'s return value is always `None`! This is intentional. The people who defined `print` (aka Python) said that the responsibility of `print` is to return `None`.
 
-How do we figure out what a return value is or should be? 
+How do we figure out what a return value is or should be?
 
 The logic for determining the return value is inside of the function itself, so to figure out what the return value for any function is, we would need to do one of...
 
@@ -204,6 +204,7 @@ When a function is invoked, the return value is used to pass back a value to the
 Our logic will often rely on these return values of the functions we use.
 
 **Setting Up a Pattern:** We will often...
+
 1. _declare_ a variable
 1. then invoke a function and _assign_ it to that variable on the right-hand side of the assignment operator (`=`).
 
@@ -218,8 +219,8 @@ Our Python interpreter reads this line of code from left to right like so:
 
 1. On line 1, the _variable_ named `kelseas_details` is _assigned_ the value on the right: a _list_ with two elements: `"Kelsea's Title"` and `"Kelsea's Job Description"`
 2. On line 2, the _value_ of the _variable_ named `details_length` is _assigned_ to the value on the right: `len(kelseas_details)`
-    - What is the evaluated value of `len(kelseas_details)`? Well, we are _invoking_ the function `len`, passing in one argument: `kelseas_details`. The **return value** of `len(kelseas_details)` is `2`
-    - Therefore, the variable `details_length` is _assigned_ to the value `2` (the return value of `len(kelseas_details)`)
+   - What is the evaluated value of `len(kelseas_details)`? Well, we are _invoking_ the function `len`, passing in one argument: `kelseas_details`. The **return value** of `len(kelseas_details)` is `2`
+   - Therefore, the variable `details_length` is _assigned_ to the value `2` (the return value of `len(kelseas_details)`)
 
 We should and will use those return values as:
 
