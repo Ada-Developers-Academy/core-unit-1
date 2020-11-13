@@ -26,26 +26,4 @@ Standards:
         Type: Lesson
         UID: 692aeabdceb105d82aed2187db381860
         Path: /intro-to-functions/defining-functions.md
-  -
-    Title: Iterating Over Data
-    Description: Iterating Over Lists and Dictionaries
-    UID: ad761157395a8c19d065660ac5423e9d
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: 73614349112b279b128707f59f64ea73
-        Path: /iterating-over-data/intro-to-iteration.md
-      -
-        Type: Lesson
-        UID: 855d8a80de3cd1ae1d82f7d92fbb6a65
-        Path: /iterating-over-data/iterating-over-lists.md
-      -
-        Type: Lesson
-        UID: 4f46cf1826180e1577fa3b06a0d50482
-        Path: /iterating-over-data/iterating-over-dictionaries.md
-      -
-        Type: Lesson
-        UID: 5975570980b5393098e0c214eaa948e6
-        Path: /iterating-over-data/iterating-and-special-cases.md
+
