@@ -273,36 +273,132 @@ To debug, we should...
 
 ## Check for Understanding
 
+### !challenge
+
+- type: checkbox
+- id: ec392164-68de-4e37-a0c0-26ccd20f5cf6
+- title: Invoking Synonyms
+
+##### !question
+
 Assume there is a function named `perform_show()`. Select all terms that mean invoking `perform_show()`
+
+##### !end-question
+
+##### !options
 
 - Calling `perform_show()`
 - Executing `perform_show()`
 - Passing `perform_show()`
 - Evaluating `perform_show()`
 
-`performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])`
+##### !end-options
+
+##### !answer
+
+- Calling `perform_show()`
+- Executing `perform_show()`
+- Evaluating `perform_show()`
+
+##### !end-answer
+
+### !end-challenge
+
+### !challenge
+
+- type: multiple-choice
+- id: a667287f-6322-490d-a5e3-fa32b8ef1d41
+- title: Function Name
+
+##### !question
+
+```python
+performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])`
+```
 
 What is the name of the function being called?
 
-- `performance`
-- `perform_show`
-- `"Tyra's Magic Show"`
-- `["rabbit", "deck of cards"]`
+##### !end-question
 
-`performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])`
+##### !options
+
+- performance
+- perform_show
+- "Tyra's Magic Show"
+- ["rabbit", "deck of cards"]
+
+##### !end-options
+
+##### !answer
+
+- perform_show
+
+##### !end-answer
+
+### !end-challenge
+
+### !challenge
+
+- type: multiple-choice
+- id: 5874f1be-0457-4d35-9f1e-f0876502eda1
+- title: Function Arguments
+
+##### !question
 
 How many arguments are being passed into this function call?
+
+```python
+performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])
+```
+
+##### !end-question
+
+##### !options
 
 - 0
 - 1
 - 2
 - 3
 
-`performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])`
+##### !end-options
 
-What is `performance`?
+##### !answer
+
+- 2
+
+##### !end-answer
+
+### !end-challenge
+
+### !challenge
+
+- type: multiple-choice
+- id: 346c043f-969e-426d-afd1-15aafa603e45
+- title: Functions and Variables
+
+##### !question
+
+What is performance?
+
+```python
+performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])
+```
+
+##### !end-question
+
+##### !options
 
 - A variable that invokes the `perform_show` function
 - A variable that holds the `perform_show` function
 - A variable that holds the return value of `perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])`
 - A variable that is the `perform_show` function
+
+##### !end-options
+
+##### !answer
+
+- A variable that holds the return value of `perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])`
+
+##### !end-answer
+
+### !end-challenge

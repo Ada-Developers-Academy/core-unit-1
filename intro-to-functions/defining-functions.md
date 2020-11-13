@@ -391,6 +391,14 @@ sing_happy_birthday("Kerry")
 
 Order still matters. We cannot invoke a function before our Python interpreter knows that it's defined.
 
+### !challenge
+
+- type: multiple-choice
+- id: e205de80-0a88-486d-a842-30a29d5f896e
+- title: Function Error
+
+##### !question
+
 Predict: What error we will see and why we will see it?
 
 ```python
@@ -404,7 +412,29 @@ def sing_happy_birthday(name):
     print("Happy birthday to you")
 ```
 
-Answer: We will get `NameError: name 'sing_happy_birthday' is not defined` because we try to invoke the `sing_happy_birthday` function before it's defined.
+##### !end-question
+
+##### !options
+
+- ValueError
+- TypeError
+- NameError
+
+##### !end-options
+
+##### !answer
+
+- NameError
+
+##### !end-answer
+
+#### !explanation
+
+We will get `NameError: name 'sing_happy_birthday' is not defined` because we try to invoke the `sing_happy_birthday` function before it's defined.
+
+#### !end-explanation
+
+### !end-challenge
 
 ### Functions Can Invoke Other Functions
 
@@ -454,7 +484,21 @@ For the `sing_happy_birthday(name)` function, I could invoke this function with 
 
 ## Check for Understanding
 
+### !challenge
+
+- type: multiple-choice
+- id: dd40bdc9-236d-444c-afb2-7cc45cdd9970
+- title: Function Syntax
+
+##### !question
+
 Which of these has correct syntax in its function signature _and_ its function body?
+
+##### !end-question
+
+##### !options
+
+-
 
 ```python
 def convert_to_fahrenheit(deg_celsius)
@@ -462,11 +506,15 @@ def convert_to_fahrenheit(deg_celsius)
     return result
 ```
 
+-
+
 ```python
 def convert_to_fahrenheit():
     result = (deg_celsius * 1.8) + 32
     return result
 ```
+
+-
 
 ```python
 def convert_to_fahrenheit(deg_celsius):
@@ -474,8 +522,24 @@ result = (deg_celsius * 1.8) + 32
 return result
 ```
 
+-
+
 ```python
 def convert_to_fahrenheit(deg_celsius):
     result = (deg_celsius * 1.8) + 32
     return result
 ```
+
+##### !end-options
+
+##### !answer
+
+```python
+def convert_to_fahrenheit(deg_celsius):
+    result = (deg_celsius * 1.8) + 32
+    return result
+```
+
+##### !end-answer
+
+### !end-challenge
