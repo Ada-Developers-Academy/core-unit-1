@@ -19,4 +19,15 @@ Standards:
         Type: Lesson
         UID: 692aeabdceb105d82aed2187db381860
         Path: /intro-to-functions/defining-functions.md
+  -
+    Title: While Loops
+    Description: Practice using while loops to loop while a conditional is true
+    UID: wvsHzCRCSqu
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: vQjRO4
+        Path: /while-loops/while-loops.md
 
