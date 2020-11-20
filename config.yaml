@@ -16,6 +16,25 @@ Standards:
         UID: YUccLN
         Path: /approaching-a-problem/intro-to-pair-programming.md
   -
+    Title: Intro to Debugging
+    Description: Intro to Errors, Identifying Errors, Intro to Debugging
+    UID: aGJLyn
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: amY0J6
+        Path: /intro-to-debugging/intro-to-errors.md
+      -
+        Type: Lesson
+        UID: B6OYlI
+        Path: /intro-to-debugging/identifying-errors.md
+      -
+        Type: Lesson
+        UID: VvrMFH
+        Path: /intro-to-debugging/intro-to-debugging.md
+  -
     Title: Intro To Functions
     Description: Invoking and Defining Functions
     UID: e30a742083b7afa72ec565afafb9f64b
