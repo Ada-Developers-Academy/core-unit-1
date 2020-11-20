@@ -97,3 +97,31 @@ To incorporate testing into our development workflow, our workflow may adjust to
 4. Implement the code to make that test pass
 5. Create `git` commits when appropriate (at least one)
 6. Repeat!
+
+## Check for Understanding
+
+### !challenge
+
+* type: checkbox
+* id: 96e36e16-4354-449b-b99b-5d9737766507
+* title: Testing
+
+##### !question
+Why are automated tests beneficial?
+##### !end-question
+
+##### !options
+* Improves quality of code 
+* Catches potential logical errors within functions
+* Improves team collaboration 
+##### !end-options
+
+##### !answer
+* 
+##### !end-answer
+
+##### !explanation 
+Tests and these benefits are reasons to follow a practice called test-driven development. If you'd like to look that up, follow your curiosity~
+##### !end-explanation 
+
+### !end-challenge
