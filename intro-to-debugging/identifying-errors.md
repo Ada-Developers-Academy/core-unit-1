@@ -166,6 +166,14 @@ It's up to developers to use the information from the stack trace just as one pi
 
 ## Check for Understanding
 
+<!-- Question 1 -->
+
+### !challenge
+* type: multiple-choice
+* id: 85c12282-66c8-46d9-ae20-10e73cdb6f5a
+* title: What is the error description?
+
+##### !question
 Given this stack trace output, what is the description of the error?
 
 ```bash
@@ -174,11 +182,27 @@ Given this stack trace output, what is the description of the error?
                         ^
 SyntaxError: invalid syntax
 ```
+##### !end-question
 
+##### !options
 * invalid syntax
 * missing colon
 * invalid if syntax
+##### !end-options
 
+##### !answer
+* invalid syntax
+##### !end-answer
+### !end-challenge
+
+<!-- Question 2 -->
+
+### !challenge
+* type: multiple-choice
+* id: 2cb0d84c-a5eb-44f3-8bee-5d7e61e5e47f
+* title: What is the name of this error?
+
+##### !question
 Given this stack trace output, what is the name of the error?
 
 ```bash
@@ -187,11 +211,28 @@ Given this stack trace output, what is the name of the error?
                         ^
 SyntaxError: invalid syntax
 ```
+##### !end-question
 
+##### !options
 * ZeroDivisionError
 * A Syntax Error
 * SyntaxError
+##### !end-options
 
+##### !answer
+* SyntaxError
+##### !end-answer
+
+### !end-challenge
+
+<!-- Question 3 -->
+
+### !challenge
+* type: multiple-choice
+* id: 889eac81-84e0-46fe-a157-25102c56e28c
+* title: What is the location of this error?
+
+##### !question
 Given this stack trace output, what is the location of the line of code that caused the error?
 
 ```bash
@@ -200,7 +241,16 @@ Given this stack trace output, what is the location of the line of code that cau
                         ^
 SyntaxError: invalid syntax
 ```
+##### !end-question
 
+##### !options
 * `example.py`
 * line 5
 * `main.py`, line 5
+##### !end-options
+
+##### !answer
+* `main.py`, line 5
+##### !end-answer
+
+### !end-challenge

@@ -99,40 +99,145 @@ As programmers, we will copy and paste a lot. However, when we carelessly copy a
 
 ## Check for Understanding
 
+<!-- Question 1 -->
+
+### !challenge
+* type: multiple-choice
+* id: bd266c76-9e23-448e-b93e-b870e894c2bf
+* title: Errors
+
+##### !question
 What kind of error does the following code produce?
 
 ```python
+for i in range
+    print("Hello")
 ```
+##### !end-question
 
+##### !options
 * Syntax Error
 * Runtime Error
 * Logical Error
+##### !end-options
 
+##### !answer
+* Syntax Error
+##### !end-answer
+
+#### !explanation 
+We will receive the following error message: `SyntaxError: invalid syntax` because the `:` is missing. In python, `:` are used to indicate the start of a code block. 
+#### !end-explanation 
+### !end-challenge
+
+<!-- Question 2 -->
+
+### !challenge
+* type: multiple-choice
+* id: 59bd8c4c-9113-4e20-9bd9-f93b3a7e1f93
+* title: Errors
+
+##### !question
 What kind of error does the following code produce?
-
 ```python
+def addition():
+    num1 = 2
+    num2 = 3
+    print(num1+num2)
+sum()
 ```
+##### !end-question
 
+##### !options
 * Syntax Error
 * Runtime Error
 * Logical Error
+##### !end-options
 
+##### !answer
+* Runtime Error
+##### !end-answer
 
+#### !explanation 
+We will receive the following error message: `NameError: name 'sum' is not defined`. A `NameError` is a type of `Runtime error` that appears when a variable or function is used or invoked before it is defined. In this code snippet, a function named `sum` is being invoked, however, `sum()` does not exist. Often times, this error will appear when a variable or function is misspelled or misnamed. Perhaps the programmer meant to invoke `addition`. 
+#### !end-explanation 
+### !end-challenge
+
+<!-- Question 3 -->
+
+### !challenge
+* type: multiple-choice
+* id: 52579603-887f-4085-8448-ef4e8f00405a
+* title: Errors
+
+##### !question
 What kind of error does the following code produce?
-
 ```python
+def addition():
+    num1 = input("Enter a number")
+    num2 = input("Enter another number")
+    print(num1+num2)
+addition()
 ```
+##### !end-question
 
+##### !options
 * Syntax Error
 * Runtime Error
 * Logical Error
+##### !end-options
 
+##### !answer
+* Logical Error
+##### !end-answer
 
+#### !explanation 
+We will not receive an error message, but we will have a `logical error`. The purpose of `addition()` is to add two numbers together. However, `input()` always returns a string even when receiving numeric values. In this example, `num1` and `num2` were never converted into integers. This is why `print` combines the two strings together instead of displaying a sum of two numbers. 
+
+I.e. The `addition()` logic is '5' + '5' = '55' when it should be 5 + 5 = 10.
+#### !end-explanation 
+### !end-challenge
+
+<!-- Question 4 -->
+
+### !challenge
+* type: multiple-choice
+* id: 5dee9a1f-f130-42e5-afdb-1ce6630300a6
+* title: Errors
+
+##### !question
 What kind of error does the following code produce?
-
 ```python
+def multiply():
+num1 = 2
+num2 = 2
+print(num1*num2)
+multiply()
 ```
+##### !end-question
 
+##### !options
 * Syntax Error
 * Runtime Error
 * Logical Error
+##### !end-options
+
+##### !answer
+* Syntax Error
+##### !end-answer
+
+#### !explanation 
+We will receive the following error message: `IndentationError: expected an indented block`. This is a type of `Syntax Error`. Synonymous with how other languages use braces, Python uses whitespaces to start and end a code block. The code block under `def multiply():` should be indented by 4 spaces (preferably) to indicate that the code is inside of `multiply()`.
+
+I.e. 
+```python
+def multiply():
+    num1 = 2
+    num2 = 2
+    print(num1*num2)
+multiply()
+```
+
+
+#### !end-explanation 
+### !end-challenge

@@ -181,9 +181,18 @@ In conclusion, debugging is one of the main things we'll be doing as programmers
 
 ## Check for Understanding
 
-Select all methods that are valid ways to approach debugging
+<!-- Question 1 -->
 
+### !challenge
+* type: checkbox
+* id: 27fc1277-cb27-426a-aff8-0298638fb5f0
+* title: Debugging Methods
 
+##### !question
+Select all methods that are valid ways to approach debugging.
+##### !end-question
+
+##### !options
 * Asking "what" is happening
 * Talking to a literal rubber duck
 * Talking to a classmate
@@ -193,15 +202,14 @@ Select all methods that are valid ways to approach debugging
 * Making theories and experiments on why the bug is there and how to fix it
 * Taking notes about the bug
 * Making a table or diagram
+##### !end-options
 
+##### !answer
+* 
+##### !end-answer
 
-* Asking "what" is happening
-* Talking to a literal rubber duck
-* Talking to a classmate
-* Writing down what you expected to happen vs. what actually happened
-* Taking a break and looking at it again in an hour
-* Using `print` statements to confirm the value of a variable on a given line
-* Making theories and experiments on why the bug is there and how to fix it
-* Taking notes about the bug
-* Making a table or diagram
+##### !explanation 
+These are all great debugging methods!
+##### !end-explanation 
 
+### !end-challenge
