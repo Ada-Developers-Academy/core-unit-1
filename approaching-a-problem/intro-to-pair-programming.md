@@ -108,10 +108,31 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 
 ## Check for Understanding
 
-Which of the following is the format of feedback recommended in "Humans' Guide to Pair Programming"?
 
-During _____, when you did _____,I felt _____. In the future, I’d like to try _____.
+<!-- Question 1 -->
 
-What did the quote about "skill imbalance" above express?
+### !challenge
 
-- Skill imbalance isn't as accurate or important than it may seem. Assume that you and your partner are both amazing.
+* type: short-answer
+* id: dbb0ce80-a6b9-4d5e-bd4e-9f1590ce4d49
+* title: Pair Programming Reflection
+
+##### !question
+
+Write a reflection and impression you have about the above material. Include thoughts on feedback and skill imbalance based on the quotes above.
+
+##### !end-question
+
+##### !placeholder
+
+Enter notes here
+
+##### !end-placeholder
+
+##### !answer
+
+/.*/
+
+##### !end-answer
+
+### !end-challenge

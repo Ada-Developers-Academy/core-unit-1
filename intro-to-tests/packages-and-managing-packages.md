@@ -134,14 +134,7 @@ We are largely using `pip` to do global installations on our computer. It is bes
 
 We will find, install, use, and manage packages in Python using `pip`.
 
-Checklist:
-- Define package in Python 
-- Explain that pip is a package installer for Python
+Commands to keep handy:
 
-Possibly another checklist:
-- install `pip`
-- run `pip3 --version`
-- run `pip3 list`
-
-## Check for Understanding
-
+- `pip3 --version`
+- `pip3 list`
