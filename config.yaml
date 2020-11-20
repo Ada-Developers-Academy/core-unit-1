@@ -64,4 +64,22 @@ Standards:
         Type: Lesson
         UID: 692aeabdceb105d82aed2187db381860
         Path: /intro-to-functions/defining-functions.md
-
+  -
+    Title: Intro To Tests
+    Description: Packages and Managing Packages, Automated Tests, Intro to pytest
+    UID: cxnH0Z
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: abirop
+        Path: /intro-to-tests/packages-and-managing-packages.md
+      -
+        Type: Lesson
+        UID: qGalfB
+        Path: /intro-to-tests/automated-tests.md
+      -
+        Type: Lesson
+        UID: xGvLQz
+        Path: /intro-to-tests/intro-to-pytest.md
