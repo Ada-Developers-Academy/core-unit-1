@@ -1,6 +1,21 @@
 ---
 Standards:
   -
+    Title: Approaching a Problem
+    Description: Breaking down a problem, Pseudocode, Pair Programming
+    UID: pSGW3x
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: DkCHnM
+        Path: /approaching-a-problem/pseudocode-and-logic.md
+      -
+        Type: Lesson
+        UID: YUccLN
+        Path: /approaching-a-problem/intro-to-pair-programming.md
+  -
     Title: Intro To Functions
     Description: Invoking and Defining Functions
     UID: e30a742083b7afa72ec565afafb9f64b
