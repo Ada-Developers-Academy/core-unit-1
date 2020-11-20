@@ -185,18 +185,14 @@ Terminal and some commands bring us to different text editors. If you're ever ta
 
 Try using the up and down arrows to scroll, and tapping the `q` or `esc` key to quit.  If you're ever in this situation, one of macOS's default text editors, [`vim`](https://en.wikipedia.org/wiki/Vim_(text_editor) is at play here! See more vim commands [with this vim resource](https://devhints.io/vim).
 
-## Check for Understanding
 
 ## Check for Understanding
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 
 ### !challenge
 
 * type: multiple-choice
 * id: 0d18747d-94a0-4136-85b1-49a1308ef647
 * title: The command line 
-<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
-<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
 
 ##### !question
 
@@ -221,4 +217,3 @@ What is the command line?
 
 ### !end-challenge
 
-<!-- ======================= END CHALLENGE ======================= -->
