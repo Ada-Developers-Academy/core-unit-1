@@ -20,9 +20,9 @@ As a programmer, the terminal is one of our most important tools, and we will ru
 
 ## Command Line vs. Terminal vs. Shell
 
-In our curriculum, we will use "terminal" to mean an application that allows command input to interact with a computer, such as navigating, running programs, or making files. Often, developers use the phrases "terminal" and "console" interchangeably. In macOS, there is an application named Terminal, and we'll use that application to type in commands and use the command line.
+In our curriculum, we will use **"terminal"** to mean an application that allows command input to interact with a computer, such as navigating, running programs, or making files. Often, developers use the phrases "terminal" and "console" interchangeably. In macOS, there is an application named Terminal, and we'll use that application to type in commands and use the command line.
 
-The command line refers to the interface where developers type in commands into a terminal. The command line is the area in the terminal where we type in commands.
+The **command line** refers to the interface where developers type in commands into a terminal. The command line is the area in the terminal where we type in commands.
 
 Often, a tutorial may stylize a command line prompt (or, command to input) with a `$` in the front. This `$` is to indicate the command line, and shouldn't be typed in.
 
@@ -32,11 +32,21 @@ $ ls
 
 In this example, the user should execute the `ls` command by typing in `ls`.
 
-A shell is a program that runs commands. It is the program that works between the command line and the computer's operating system, and runs our programs. There is a shell used in our terminal, that takes the commands we type in our terminal and executes them. In this curriculum, we will go into shells only at this level of depth.
+A **shell** is a program that runs commands. It is the program that works between the command line and the computer's operating system, and runs our programs. There is a shell used in our terminal, that takes the commands we type in our terminal and executes them. In this curriculum, we will go into shells only at this level of depth.
 
-Callout: There is some cool computing history about how the terms "console" and "terminal" have evolved! Follow your curiosity and look it up!
+### !callout-secondary
 
-Callout: Our terminal can run several kinds of _text editors_, or programs that can read and modify text files. Over this curriculum, we will briefly cover some. However, programmers can have a lot of depth and excitement over text editors, and if you'd like to join, follow your curiosity and look it up!
+There is some cool computing history about how the terms "console" and "terminal" have evolved! Follow your curiosity and look it up!
+
+### !end-callout
+
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-info
+
+## Text Editors
+Our terminal can run several kinds of _text editors_, or programs that can read and modify text files. Over this curriculum, we will briefly cover some. However, programmers can have a lot of depth and excitement over text editors, and if you'd like to join, follow your curiosity and look it up!
+
+### !end-callout
 
 ## Navigating The File System
 
@@ -147,16 +157,16 @@ python3 some_file.py
 
 If we forget to run our Python scripts with `python3`, there's a chance that the script runs as expected, and a chance that the script breaks or has bugs.
 
-### !callout-info
+### !callout-warning
 
-## python3
+## python3 vs python
 "A lot of tutorials just use the `python` command to run Python scripts! Why? I'm not convinced that we need to use the `python3` command." One way to check if you need to use the `python3` command is to run two commands: `$ python --version` and `$ python3 --version`. If the output of these two commands differs (namely, `python` points to version 2), then we need to **avoid** using the `python` command.
 
 ### !end-callout
 
 ### !callout-info
 
-## python3 
+## python3 aliases
 There are many methods to make shortcuts for the `python3` command, including terminal/bash aliases, and more. Follow your curiosity!
 
 ### !end-callout

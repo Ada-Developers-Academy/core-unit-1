@@ -89,7 +89,13 @@ To use `pip`, we should learn:
 1. How to list all the packages installed on our computer
 1. How to install packages
 
-Callout: (IMPORTANT, should be red or something) In the following sections, our commands begin with `pip3`. That may be surprising; why do we use `pip3` instead of `pip`? `pip3` will specify to use `pip` with Python 3, which is not only desired, but **necessary.**
+### !callout-danger
+
+## Always use pip3
+In the following sections, our commands begin with `pip3`. That may be surprising; why do we use `pip3` instead of `pip`? `pip3` will specify to use `pip` with Python 3, which is not only desired, but **necessary.**
+### !end-callout
+
+<!-- Need to confirm that python3 install pip does not make this point moot -->
 
 ### Installation
 
@@ -117,7 +123,12 @@ pip3 install <packagename>
 
 Where `<packagename>` is replaced with a package name.
 
-Callout: We are largely using `pip` to do global installations on our computer. It is best practice to use `pip` to install packages in a virtual environment; this is out of scope for this curriculum, but feel free to dive deeper.
+### !callout-secondary
+
+## Global Installations vs. Virtual Environments
+We are largely using `pip` to do global installations on our computer. It is best practice to use `pip` to install packages in a virtual environment; this is out of scope for this curriculum, but feel free to dive deeper.
+
+### !end-callout
 
 ## Summary
 

@@ -125,7 +125,12 @@ def add(first_num, second_num):
 def len(s):
 ```
 
-Callout: The parameter name `s` isn't a very descriptive one. Whatever you imagined `s` meaning... you're wrong! The argument `s` may be a string, byte, tuple, list, range, dictionary, set, or frozen set.
+### !callout-secondary
+
+## len(s)
+The parameter name `s` isn't a very descriptive one. Whatever you imagined `s` meaning... you're wrong! The argument `s` may be a string, byte, tuple, list, range, dictionary, set, or frozen set.
+
+### !end-callout
 
 ### More About Parameters
 

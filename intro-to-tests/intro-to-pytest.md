@@ -27,7 +27,7 @@ pip3 install -U pytest
 
 ### !callout-danger
 ## pip3
-Callout in Red: Recall that we use `pip3` to designate `pip` for Python3.
+Recall that we use `pip3` to designate `pip` for Python3.
 ### !end-callout
 
 

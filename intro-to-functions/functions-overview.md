@@ -154,7 +154,12 @@ We should be able to **reuse** the exact same `convert_temperature` function log
 
 The Single Responsibility Principle (SRP) states that a function should have one, and only one primary responsibility. This is to say, when developers describe the purpose of a function, ideally, the function isn't trying to do more than one thing.
 
-Callout: What is "one thing"? This principle intentionally relies on abstraction, design, and programmer personal opinion, so the answer to this question will differ per function.
+### !callout-info
+
+## "One responsibility"
+What is "one thing"? This principle intentionally relies on abstraction, design, and programmer personal opinion, so the answer to this question will differ per function.
+
+### !end-callout
 
 We can talk about a function's responsibility with the sentence, "The responsibility of this function is to..."
 

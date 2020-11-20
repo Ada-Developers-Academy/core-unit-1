@@ -38,9 +38,20 @@ Python has defined a lot of functions for us to use, already. Let's look at some
 | `random.randint` | Based on two given values, generate a random integer in the range between the first given value and the second given value                                                                |
 | `time.time` | Calculates the number of seconds passed since [epoch. For Unix system, January 1, 1970, 00:00:00 at UTC is epoch (the point where time begins).](https://en.wikipedia.org/wiki/Unix_time) |
 
-Callout: Technically, `time.time` is a function named `time` inside a module `time` . Also, `random.randint` is a function named `randint` inside of a module named `random` . We won't worry about these details yet! What this means for us today is we will sometimes need these two lines of code at the top: `import random` and/or `import time`
+### !callout-info
 
-Callout: Going forward, because technically `time` and `randint` are the names of the functions, and `time.time` and `random.randint` are how we must invoke them, we will notate it as such.
+## time and random are modules
+Technically, `time.time` is a function named `time` inside a module `time` . Also, `random.randint` is a function named `randint` inside of a module named `random` . We won't worry about these details yet! What this means for us today is we will sometimes need these two lines of code at the top: `import random` and/or `import time`
+
+### !end-callout
+
+### !callout-info
+
+## time.time and random.randint
+
+Going forward, because technically `time` and `randint` are the names of the functions, and `time.time` and `random.randint` are how we must invoke them, we will notate it as such.
+
+### !end-callout
 
 ## Invoke Functions with `function_name()`
 
@@ -188,7 +199,12 @@ Let's look at the return values for some functions we've observed, and some func
 | `randint` | a random integer within the range of the two arguments | `random.randint(0, 777)` | `0` and `777` | 419                      |
 | `time` | the number of seconds since epoch                      | `time.time()` | -                                               | `1602720584.8029282` |
 
-Callout: `print` 's return value is always `None` ! This is intentional. The people who defined `print` (aka Python) said that the responsibility of `print` is to return `None` .
+### !callout-info
+
+## print() returns None
+`print` 's return value is always `None` ! This is intentional. The people who defined `print` (aka Python) said that the responsibility of `print` is to return `None` .
+
+### !end-callout
 
 How do we figure out what a return value is or should be?
 
