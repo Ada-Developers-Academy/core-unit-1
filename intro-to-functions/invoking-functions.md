@@ -291,6 +291,7 @@ To debug, we should...
 
 ## Check for Understanding
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: checkbox
@@ -321,7 +322,9 @@ Assume there is a function named `perform_show()` . Select all terms that mean i
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -354,7 +357,9 @@ What is the name of the function being called?
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -387,7 +392,9 @@ performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -420,3 +427,4 @@ performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->

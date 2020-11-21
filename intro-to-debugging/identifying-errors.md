@@ -168,6 +168,7 @@ It's up to developers to use the information from the stack trace just as one pi
 
 <!-- Question 1 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
 * id: 85c12282-66c8-46d9-ae20-10e73cdb6f5a
@@ -194,9 +195,11 @@ SyntaxError: invalid syntax
 * invalid syntax
 ##### !end-answer
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Question 2 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
 * id: 2cb0d84c-a5eb-44f3-8bee-5d7e61e5e47f
@@ -224,9 +227,11 @@ SyntaxError: invalid syntax
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Question 3 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
 * id: 889eac81-84e0-46fe-a157-25102c56e28c
@@ -254,3 +259,4 @@ SyntaxError: invalid syntax
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->

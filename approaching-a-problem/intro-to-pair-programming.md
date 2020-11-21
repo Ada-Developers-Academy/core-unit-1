@@ -111,6 +111,7 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 
 <!-- Question 1 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: short-answer
@@ -136,3 +137,4 @@ Enter notes here
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->

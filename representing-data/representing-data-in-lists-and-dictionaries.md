@@ -127,6 +127,7 @@ The first dictionary should have the time as the key, and the t-shirt colors see
 
 The second dictionary should have a t-shirt color as the key, and the frequency of that t-shirt color as the value.
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: short-answer
 * id: 9523c54f-fd25-4dcf-be14-4d5a9ff33d43
@@ -144,6 +145,7 @@ Enter notes here
 /.*/
 ##### !end-answer
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 ### Our Conclusions About Dictionaries in Problem Statements
 

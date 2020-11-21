@@ -407,6 +407,7 @@ sing_happy_birthday("Kerry")
 
 Order still matters. We cannot invoke a function before our Python interpreter knows that it's defined.
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -451,6 +452,7 @@ We will get `NameError: name 'sing_happy_birthday' is not defined` because we tr
 #### !end-explanation
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 ### Functions Can Invoke Other Functions
 
@@ -500,6 +502,7 @@ For the `sing_happy_birthday(name)` function, I could invoke this function with 
 
 ## Check for Understanding
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -559,3 +562,4 @@ def convert_to_fahrenheit(deg_celsius):
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->

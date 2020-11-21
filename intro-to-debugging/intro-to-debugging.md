@@ -183,6 +183,7 @@ In conclusion, debugging is one of the main things we'll be doing as programmers
 
 <!-- Question 1 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: checkbox
 * id: 27fc1277-cb27-426a-aff8-0298638fb5f0
@@ -213,3 +214,4 @@ These are all great debugging methods!
 ##### !end-explanation 
 
 ### !end-challenge
+<!-- prettier-ignore-end -->

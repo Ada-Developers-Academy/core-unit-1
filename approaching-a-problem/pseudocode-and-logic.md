@@ -121,6 +121,7 @@ average = sum / number
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: short-answer
@@ -146,6 +147,7 @@ Your answer here
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- ======================= END CHALLENGE ======================= -->
 
@@ -274,6 +276,7 @@ print("The number of even numbers is #{num_of_even_nums}")
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -305,6 +308,7 @@ Which of the following is an accurate description of the process in Examples 1 a
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- ======================= END CHALLENGE ======================= -->
 
@@ -312,6 +316,7 @@ Which of the following is an accurate description of the process in Examples 1 a
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -343,11 +348,13 @@ Which of these is the best definition of pseudocode?
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- ======================= END CHALLENGE ======================= -->
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -376,7 +383,9 @@ Which of these is not a benefit of writing pseudocode?
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -406,3 +415,4 @@ Which of these describes a general process of incorporating pseudocode into solv
 ##### !end-answer
 
 ### !end-challenge
+<!-- prettier-ignore-end -->

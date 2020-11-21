@@ -101,6 +101,7 @@ As programmers, we will copy and paste a lot. However, when we carelessly copy a
 
 <!-- Question 1 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
 * id: bd266c76-9e23-448e-b93e-b870e894c2bf
@@ -129,9 +130,11 @@ for i in range
 We will receive the following error message: `SyntaxError: invalid syntax` because the `:` is missing. In python, `:` are used to indicate the start of a code block. 
 #### !end-explanation 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Question 2 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
 * id: 59bd8c4c-9113-4e20-9bd9-f93b3a7e1f93
@@ -162,9 +165,11 @@ sum()
 We will receive the following error message: `NameError: name 'sum' is not defined`. A `NameError` is a type of `Runtime error` that appears when a variable or function is used or invoked before it is defined. In this code snippet, a function named `sum` is being invoked, however, `sum()` does not exist. Often times, this error will appear when a variable or function is misspelled or misnamed. Perhaps the programmer meant to invoke `addition`. 
 #### !end-explanation 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Question 3 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
 * id: 52579603-887f-4085-8448-ef4e8f00405a
@@ -197,9 +202,11 @@ We will not receive an error message, but we will have a `logical error`. The pu
 I.e. The `addition()` logic is '5' + '5' = '55' when it should be 5 + 5 = 10.
 #### !end-explanation 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Question 4 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
 * id: 5dee9a1f-f130-42e5-afdb-1ce6630300a6
@@ -241,3 +248,4 @@ multiply()
 
 #### !end-explanation 
 ### !end-challenge
+<!-- prettier-ignore-end -->

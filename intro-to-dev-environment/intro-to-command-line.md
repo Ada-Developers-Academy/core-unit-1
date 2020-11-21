@@ -198,6 +198,7 @@ Try using the up and down arrows to scroll, and tapping the `q` or `esc` key to 
 
 ## Check for Understanding
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -226,4 +227,5 @@ What is the command line?
 
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
