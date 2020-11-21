@@ -10,6 +10,7 @@
 As we see more and more problems in programming, we'll be faced with a lot of ambiguous direction. Exciting computer science problems will often have no obvious place to start. Should you make a function? How many variables? Do we need iteration?
 
 As part of _breaking down a problem_, one step we should consider, take, and practice, is representing data we see as data structures. To give ourselves a starting point in problem-solving, we can practice:
+
 - Observing the problem and data given to us
 - Turn these observations into data structures like strings, lists, dictionaries, and more
 
@@ -60,11 +61,27 @@ Create a function. In this function:
 
 ### Make Your Own Conclusions About Lists in Problem Statements
 
-The ideal solution for the problem statement above uses lists.
+The ideal solution for the problem statement above uses lists. Did you come to the same conclusion? If so, how?
 
-Did you come to that conclusion? If so, how? Share your notes about what you observed in the above problem statement. **What pieces of the problem statement** directly helped you make those conclusions?
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: OQhdum
+* title: Did you come to the same conclusion? If so, how? 
 
-Learn Short Answer
+##### !question
+Share your notes about what you observed in the above problem statement. **What pieces of the problem statement** directly helped you make those conclusions?
+##### !end-question
+
+##### !placeholder
+Enter notes here
+##### !end-placeholder
+
+##### !answer
+/.*/
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
 
 ### Our Conclusions About Lists in Problem Statements
 
@@ -127,14 +144,16 @@ The first dictionary should have the time as the key, and the t-shirt colors see
 
 The second dictionary should have a t-shirt color as the key, and the frequency of that t-shirt color as the value.
 
+Did you come to the same conclusion? If so, how?
+
 <!-- prettier-ignore-start -->
 ### !challenge
 * type: short-answer
 * id: 9523c54f-fd25-4dcf-be14-4d5a9ff33d43
-* title: What were your conclusions about dictionaries?
+* title: Did you come to the same conclusion? If so, how? 
 
 ##### !question
-Did you come to the same conclusion? If so, how? Share your notes about what you observed in the above problem statement. **What pieces of the problem statement** directly helped you make those conclusions?
+Share your notes about what you observed in the above problem statement. **What pieces of the problem statement** directly helped you make those conclusions?
 ##### !end-question
 
 ##### !placeholder
