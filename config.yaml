@@ -83,3 +83,22 @@ Standards:
         Type: Lesson
         UID: xGvLQz
         Path: /intro-to-tests/intro-to-pytest.md
+  -
+    Title: Representing Data
+    Description: Representing Data in Lists and Dictionaries, Data and JSON
+    UID: hxB08H
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 88DgSp
+        Path: /representing-data/representing-data-in-lists-and-dictionaries.md
+      -
+        Type: Lesson
+        UID: r7MHqf
+        Path: /representing-data/data-and-json.md
+      -
+        Type: Lesson
+        UID: p4Pb0s
+        Path: /representing-data/practice-representing-data.md
