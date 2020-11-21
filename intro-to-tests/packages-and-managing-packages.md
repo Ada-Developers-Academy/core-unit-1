@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-- Define package in Python 
+- Define package in Python
 - Explain that pip is a package installer for Python
 
 ## Introduction
@@ -15,11 +15,11 @@ Is there a way for us to find other coding projects to help solve our problems?
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Package | A package is a collection of Python modules that are related to each other | "library" or "dependency" in other languages can feel equivalent | "I need to install that package on my computer before I can use it," "My project requires the `pytest` package v6.1," "Maybe there's a package for formatting tables that exists"
-Version | A state of software, with its code and dependencies at a specific time. Usually identified with numbers | - | "There weren't a lot of changes between this version and the last version," "Package A is going to stop supporting Package B older than version 2."
-Release | A distribution of a new version of a package | - | 
+| Vocab   | Definition                                                                                              | Synonyms                                                         | How to Use in a Sentence                                                                                                                                                          |
+| ------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Package | A package is a collection of Python modules that are related to each other                              | "library" or "dependency" in other languages can feel equivalent | "I need to install that package on my computer before I can use it," "My project requires the `pytest` package v6.1," "Maybe there's a package for formatting tables that exists" |
+| Version | A state of software, with its code and dependencies at a specific time. Usually identified with numbers | -                                                                | "There weren't a lot of changes between this version and the last version," "Package A is going to stop supporting Package B older than version 2."                               |
+| Release | A distribution of a new version of a package                                                            | -                                                                |
 
 ## Packages Are Software People Can Use
 
@@ -28,10 +28,12 @@ In Python, a package is a collection of Python code that are related to each oth
 Often, packages are meant to define code that can be utilitized as tools. Packages are used to extend a developer's abilities-- we can find, install, and use packages to help our own project development go smoother.
 
 Packages can:
+
 - provide functionality
 - provide design patterns
 
 Popular Python packages include:
+
 1. NumPy, a package that gives functionality for complex math, including algebraic formulas
 1. Requests, a package that makes creating HTTP Requests more readable
 1. Pandas, a package designed for working with large and complex data sets and analyzing them
@@ -39,8 +41,11 @@ Popular Python packages include:
 **Example:** Nella may be working on a project where she builds a birthday calendar, and she needs to find out how many days there are until her birthday. Nella finds that dates, times, and time zones in Python are tricky to work with. Of course, she could write all of this logic herself! Or... she could find a package that provides functionality and structure around counting down dates.
 
 ### !callout-info
+
 ## Packages and Modules
+
 Technically, we can say a package is a collection of Python modules, and every `.py` file is a module!
+
 ### !end-callout
 
 ### Where Do Packages Come From?
@@ -60,10 +65,12 @@ We can install an infinite number of packages onto our computer. And with that, 
 Similarly, our own computer will be different from someone else's machine. There are an infinite number of ways that the package could even be installed and found on the computer!
 
 Over time, this can get hairy. We need to manage packages so that:
+
 1. Our own usage of a package and its version is consistent and working
 1. When we collaborate with other team members, it can be reliable that their installation is similar
 
 There are many packages that are designed to...
+
 - install packages
 - manage packages
 - allow other machines to install and manage the same packages
@@ -85,6 +92,7 @@ A worst-case scenario for a developer is broken code that is failing because of 
 We will use `pip` to install many dependencies over time.
 
 To use `pip`, we should learn:
+
 1. How to install it onto our own computers
 1. How to list all the packages installed on our computer
 1. How to install packages
@@ -92,7 +100,9 @@ To use `pip`, we should learn:
 ### !callout-danger
 
 ## Always use pip3
+
 In the following sections, our commands begin with `pip3`. That may be surprising; why do we use `pip3` instead of `pip`? `pip3` will specify to use `pip` with Python 3, which is not only desired, but **necessary.**
+
 ### !end-callout
 
 <!-- Need to confirm that python3 install pip does not make this point moot -->
@@ -126,6 +136,7 @@ Where `<packagename>` is replaced with a package name.
 ### !callout-secondary
 
 ## Global Installations vs. Virtual Environments
+
 We are largely using `pip` to do global installations on our computer. It is best practice to use `pip` to install packages in a virtual environment; this is out of scope for this curriculum, but feel free to dive deeper.
 
 ### !end-callout

@@ -12,13 +12,13 @@ Broken code is caused by errors. Understanding more about errors and what causes
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Error | When a program does unexpected things | Bug | "The program had an error, so it stopped running," "I need to find the cause of that error and fix it"
-Crash | When a program comes to a halt because of an error | Stopped | "When my code tried to divide by zero, it crashed," "The program keeps crashing whenever I try to run it"
-Syntax Error | An error caused by incorrect syntax that Python cannot interpret | - | "I was missing a keyword, so it gave me a syntax error"
-Runtime Error | An error raised during runtime | - | "I didn't realize I had a bug until I ran my code and got a runtime error"
-Logical Error | An error caused by incorrect logic | - | "I got confused with two variables and swapped them, and it caused a logical error."
+| Vocab         | Definition                                                       | Synonyms | How to Use in a Sentence                                                                                  |
+| ------------- | ---------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------- |
+| Error         | When a program does unexpected things                            | Bug      | "The program had an error, so it stopped running," "I need to find the cause of that error and fix it"    |
+| Crash         | When a program comes to a halt because of an error               | Stopped  | "When my code tried to divide by zero, it crashed," "The program keeps crashing whenever I try to run it" |
+| Syntax Error  | An error caused by incorrect syntax that Python cannot interpret | -        | "I was missing a keyword, so it gave me a syntax error"                                                   |
+| Runtime Error | An error raised during runtime                                   | -        | "I didn't realize I had a bug until I ran my code and got a runtime error"                                |
+| Logical Error | An error caused by incorrect logic                               | -        | "I got confused with two variables and swapped them, and it caused a logical error."                      |
 
 ## What is an Error?
 
@@ -29,6 +29,7 @@ Errors and bugs can cause all sorts of problems, like programs halting and endin
 ### !callout-info
 
 ## The Origin of "Bugs"
+
 The term "bug" comes from some interesting history! In 1947, Grace Hopper recorded the first bug. As she and her team worked on the Harvard Mark II, which is an old-school computer that read instructions from physical tapes, there was an error. After some investigation, the team found that the source of the problem was a _**literal bug**_ that got stuck on one of the tapes!
 
 ### !end-callout
@@ -57,7 +58,7 @@ Syntax errors are often caused by things such as:
 - misspelling something
 - accessing a list or dictionary with the wrong syntax
 - unmatching indentation levels
-- mixed-use of tabs or spaces 
+- mixed-use of tabs or spaces
 
 To debug syntax errors, we should review the syntax in our code, and compare it to the syntax that Python is looking for.
 
@@ -93,6 +94,7 @@ Logical errors can happen for an infinite number of reasons, but here are some c
 ### !callout-danger
 
 ## Be Careful! Prefer to Type Out Code
+
 As programmers, we will copy and paste a lot. However, when we carelessly copy and paste code, it can often lead to a lot of logical errors. Take care when you copy and paste and be sure to update all of the variable names and syntax... Or even try to type out the code entirely, to help slow you down and follow along!
 
 ### !end-callout

@@ -4,8 +4,8 @@
 
 By the end of this lesson, we will be able to...
 
-- Define pseudocode 
-- Explain how pseudocode can describe logic before implementation 
+- Define pseudocode
+- Explain how pseudocode can describe logic before implementation
 - Use pseudocode to describe logic before implementation
 
 ## Introduction
@@ -21,21 +21,22 @@ Our problem-solving process includes:
 
 As our programs become more complicated, it becomes harder to know where to get started, break down the steps that need to be done, and write clean code.
 
-Breaking down a problem allows us to focus on what needs to be done and create steps to arrive at the minimum of what is needed to solve a problem. 
+Breaking down a problem allows us to focus on what needs to be done and create steps to arrive at the minimum of what is needed to solve a problem.
 
 Today we will focus on a strategy that can help us accomplish these steps: starting with pseudocode.
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Pseudocode | an informal code style intended to give explanation and meaning | - | "Before I approach writing my Python code, I'll start with pseudocode," "I deleted my pseudocode line by line as I translated it into Python"
+| Vocab      | Definition                                                      | Synonyms | How to Use in a Sentence                                                                                                                      |
+| ---------- | --------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pseudocode | an informal code style intended to give explanation and meaning | -        | "Before I approach writing my Python code, I'll start with pseudocode," "I deleted my pseudocode line by line as I translated it into Python" |
 
 ## What is Pseudocode?
 
 **[Pseudocode](https://en.wikipedia.org/wiki/Pseudocode)** is a term that describes **informal, non-working, non-functioning lines of code intended to give explanation and meaning to developers.** It is code that is not intended to be part of the final solution/program.
 
 Pseudocode...
+
 - Catches logical errors and bugs more quickly
 - Can possibly express thoughts more clearly than code
 - Makes changes easier
@@ -51,6 +52,7 @@ By integrating pseudocode into the coding process, we'll be able to plan, commun
 Observe the following examples. Try to figure out the goal of each block of code. Which block of code is easier to read and understand the goal?
 
 1.
+
 ```python
 fruits = ['apples', 'oranges', 'bananas', 'canned o-shaped spaghetti noodles']
 grocery_list = []
@@ -62,6 +64,7 @@ end the loop
 ```
 
 2.
+
 ```python
 fruits = ['kiwis', 'mangos', 'bananas']
 fruit_basket = []
@@ -95,6 +98,7 @@ Given the following problem, look at these different and valid examples of pseud
 Calculate the average of the numbers 3, 5, 6, 15, and 27 using a loop.
 
 1.
+
 ```python
 make a numbers variable, and it is an array
 make a sum variable, and it starts with a value of 0
@@ -107,6 +111,7 @@ the average is sum / number
 ```
 
 2.
+
 ```python
 # numbers is numbers from prompt
 numbers = [3, 5, 6, 15, 27]
@@ -151,7 +156,6 @@ Your answer here
 
 <!-- ======================= END CHALLENGE ======================= -->
 
-
 ## Applying the Process
 
 In our problem-solving steps, we can use pseudocode to think through the solution with ideas, notes, and comments. We apply the process of writing pseudocode before we write implementation code.
@@ -168,6 +172,7 @@ In the two examples below, we should witness these things:
 Calculate the average of the numbers 3, 5, 6, 15, and 27 using a loop.
 
 1.
+
 ```python
 make a numbers variable, and it is an array
 make a sum variable, and it starts with a value of 0
@@ -178,6 +183,7 @@ the average is sum / the total number of numbers
 ```
 
 2.
+
 ```python
 make a numbers variable, and it is an array
 make a sum variable, and it starts with a value of 0
@@ -190,6 +196,7 @@ the average is sum / the length of the numbers array
 ```
 
 3.
+
 ```python
 # numbers is numbers from prompt
 numbers = [3, 5, 6, 15, 27]
@@ -203,6 +210,7 @@ average = sum / len(numbers)
 ```
 
 4.
+
 ```python
 numbers = [3, 5, 6, 15, 27]
 sum = 0
@@ -218,6 +226,7 @@ average = sum / len(numbers)
 Count the number of even numbers from the numbers 3, 5, 6, 15, and 27 using a loop
 
 1.
+
 ```python
 make numbers variable: array, 3, 5, 6, 15, and 27 from prompt
 make number of even numbers variable: start at 0
@@ -233,6 +242,7 @@ end loop
 ```
 
 2.
+
 ```python
 numbers = array, 3, 5, 6, 15, and 27
 num_of_even_nums = start at 0
@@ -248,6 +258,7 @@ end
 ```
 
 3.
+
 ```python
 numbers = [3, 5, 6, 15, 27]
 num_of_even_nums = 0
@@ -263,6 +274,7 @@ end
 ```
 
 4.
+
 ```python
 numbers = [3, 5, 6, 15, 27]
 num_of_even_nums = 0
@@ -352,7 +364,6 @@ Which of these is the best definition of pseudocode?
 
 <!-- ======================= END CHALLENGE ======================= -->
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
-
 
 <!-- prettier-ignore-start -->
 ### !challenge

@@ -41,9 +41,11 @@ There is some cool computing history about how the terms "console" and "terminal
 ### !end-callout
 
 <!-- available callout types: info, success, warning, danger, secondary  -->
+
 ### !callout-info
 
 ## Text Editors
+
 Our terminal can run several kinds of _text editors_, or programs that can read and modify text files. Over this curriculum, we will briefly cover some. However, programmers can have a lot of depth and excitement over text editors, and if you'd like to join, follow your curiosity and look it up!
 
 ### !end-callout
@@ -111,7 +113,7 @@ We can create and delete files and folders from the command line.
 Files and folders deleted with these commands are difficult to recover; use them often and wisely!
 
 | Command in the Command Line | Description                                                                                                                                                                 | Notes                                                                                                                             |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | `rm -rf folder-name`        | Deletes the folder with the given path and folder name, and all of the files and folders inside of it. By default, this deletes the folder in the current working directory | In this example, `rm -rf folder-name` deletes the folder named `folder-name` inside the current directory.                        |
 | `rm some_file.py`           | Deletes the file with the given path and file name. By default, this creates a new file inside the current working dierctory                                                | In this example, `touch new_file.py` makes a new file named `new_file.py`. We should include the file extension in this filename. | In this examle, `rm some_file.py` deletes the file named `some_file.py` inside the current directory. |
 
@@ -160,6 +162,7 @@ If we forget to run our Python scripts with `python3`, there's a chance that the
 ### !callout-warning
 
 ## python3 vs python
+
 "A lot of tutorials just use the `python` command to run Python scripts! Why? I'm not convinced that we need to use the `python3` command." One way to check if you need to use the `python3` command is to run two commands: `$ python --version` and `$ python3 --version`. If the output of these two commands differs (namely, `python` points to version 2), then we need to **avoid** using the `python` command.
 
 ### !end-callout
@@ -167,6 +170,7 @@ If we forget to run our Python scripts with `python3`, there's a chance that the
 ### !callout-info
 
 ## python3 aliases
+
 There are many methods to make shortcuts for the `python3` command, including terminal/bash aliases, and more. Follow your curiosity!
 
 ### !end-callout
@@ -193,8 +197,7 @@ Terminal and some commands bring us to different text editors. If you're ever ta
 - there is a `:` on the bottom line
 - `ctrl+c` does not exit this screen
 
-Try using the up and down arrows to scroll, and tapping the `q` or `esc` key to quit.  If you're ever in this situation, one of macOS's default text editors, [`vim`](https://en.wikipedia.org/wiki/Vim_(text_editor) is at play here! See more vim commands [with this vim resource](https://devhints.io/vim).
-
+Try using the up and down arrows to scroll, and tapping the `q` or `esc` key to quit. If you're ever in this situation, one of macOS's default text editors, [`vim`](https://en.wikipedia.org/wiki/Vim_(text_editor) is at play here! See more vim commands [with this vim resource](https://devhints.io/vim).
 
 ## Check for Understanding
 
@@ -228,4 +231,3 @@ What is the command line?
 
 ### !end-challenge
 <!-- prettier-ignore-end -->
-

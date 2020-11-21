@@ -16,15 +16,16 @@ Learning about what these error messages are and how to read them will help us d
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Stack Trace | A report of the active stack frames at a certain point in time during the execution of a program. Reports error messages and details about that error | Traceback | "When debugging that error, we should check the stack trace to see what line of code caused it," "The stack trace is very long, but we can see what test called this method here."
+| Vocab       | Definition                                                                                                                                            | Synonyms  | How to Use in a Sentence                                                                                                                                                           |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stack Trace | A report of the active stack frames at a certain point in time during the execution of a program. Reports error messages and details about that error | Traceback | "When debugging that error, we should check the stack trace to see what line of code caused it," "The stack trace is very long, but we can see what test called this method here." |
 
 ## The Stack Trace Delivers Error Messages
 
 The stack trace is a report of all of the code running at a specific point. The stack trace will report error messages and details about that error, if the program runs into a syntax or runtime error.
 
 For example, let's consider the following situation:
+
 1. A Python script named `main.py`
 1. A terminal that runs that file
 
@@ -50,10 +51,13 @@ ZeroDivisionError: division by zero
 ```
 
 ### !callout-info
+
 ## Terminal
+
 Let's consider briefly **where** we see error messages, and in general all output. Right now, when we run Python code from the terminal, we see the output in the terminal. That's because our computers and terminals have configured a [standard stream for output](https://en.wikipedia.org/wiki/Standard_streams), or an "output channel." The output channel, or standard stream for output, for the terminal is the terminal itself by default.
 
 We introduce this idea briefly because one day, the standard stream may change. :)
+
 ### !end-callout
 
 We introduce this idea briefly because one day, the standard stream may change. :)
@@ -104,6 +108,7 @@ As our programs get bigger, we'll find that our stack trace outputs may get real
     888/0
 ZeroDivisionError: division by zero
 ```
+
 </details>
 
 Why is there so much output?
@@ -115,8 +120,11 @@ The details of these subroutines are typically hidden in high-level programming 
 The call stack, sometimes called "the stack," is a data structure that stores information about all the subroutines that start or finish. When a subroutine starts, the call stack _pushes_ information about that onto the stack. When a subroutine finishes, the call stack _pops_ that information off the stack.
 
 ### !callout-info
-## Fun Fact 
+
+## Fun Fact
+
 This is where the phrase "stack overflow" comes from!
+
 ### !end-callout
 
 ## Finding The Good Stuff: How to Read Error Messages
@@ -140,14 +148,15 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-| Piece of the Stack Trace | Notes
-| --- | ---
-`Traceback (most recent call last):` | This is the beginning of the Traceback (Stack trace) being formatted and printed.
-`File "main.py", line 5, in <module>` | This is information about the line of code described in the next line. This describes what file that line of code is in, the line number, and what module it is in.
-`apple_basket_quantity = number_of_apples / basket_capacity # this is line 5` | This is the line of code that caused an error, or contains code that caused an error. **Note that it is indented** one level from the above line.
-`ZeroDivisionError: division by zero` | This is the name of the error, and a description of the error. **Note that it is not indented at all** to emphasize that this is the ultimate error.
+| Piece of the Stack Trace                                                      | Notes                                                                                                                                                               |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Traceback (most recent call last):`                                          | This is the beginning of the Traceback (Stack trace) being formatted and printed.                                                                                   |
+| `File "main.py", line 5, in <module>`                                         | This is information about the line of code described in the next line. This describes what file that line of code is in, the line number, and what module it is in. |
+| `apple_basket_quantity = number_of_apples / basket_capacity # this is line 5` | This is the line of code that caused an error, or contains code that caused an error. **Note that it is indented** one level from the above line.                   |
+| `ZeroDivisionError: division by zero`                                         | This is the name of the error, and a description of the error. **Note that it is not indented at all** to emphasize that this is the ultimate error.                |
 
 From our example, we can answer our three questions about errors:
+
 1. The description of the error is `division by zero`
 2. The name of the error is `ZeroDivisionError`
 3. The line of code that caused the error is in `main.py` on line 5

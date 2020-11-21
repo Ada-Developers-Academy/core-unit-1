@@ -157,6 +157,7 @@ The Single Responsibility Principle (SRP) states that a function should have one
 ### !callout-info
 
 ## "One responsibility"
+
 What is "one thing"? This principle intentionally relies on abstraction, design, and programmer personal opinion, so the answer to this question will differ per function.
 
 ### !end-callout

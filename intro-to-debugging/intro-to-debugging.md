@@ -23,9 +23,9 @@ By the end of this lesson, we will be able to...
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Debugging | The process of identifying and removing errors from computer hardware or software | Fixing, inspecting | "I need to debug my view and figure out why it wasn't displaying right," "Have you tried to debug your error?"
+| Vocab     | Definition                                                                        | Synonyms           | How to Use in a Sentence                                                                                       |
+| --------- | --------------------------------------------------------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------- |
+| Debugging | The process of identifying and removing errors from computer hardware or software | Fixing, inspecting | "I need to debug my view and figure out why it wasn't displaying right," "Have you tried to debug your error?" |
 
 ## Debugging is a Way to Ask and Answer Questions
 
@@ -170,12 +170,12 @@ When we combine all these concepts, we get:
 We can even break it up this way:
 
 1. Figure out **what** is happening
-    - Use your error messages and `print` statements
+   - Use your error messages and `print` statements
 2. Figure out **why** it's happening
-    - Use `print` statements, rubber ducking skills, and other future debuging tools
+   - Use `print` statements, rubber ducking skills, and other future debuging tools
 3. Figure out **how** to fix it
-    - Make theories and then test them!
-    - Use rubber ducking skills, experimentation, research, and ask for help!
+   - Make theories and then test them!
+   - Use rubber ducking skills, experimentation, research, and ask for help!
 
 In conclusion, debugging is one of the main things we'll be doing as programmers. We will learn so many more debugging tools in the future!
 

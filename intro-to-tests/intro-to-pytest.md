@@ -10,10 +10,10 @@ When we understand that tests can verify code correctness, let's learn one way t
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Assertion | A statement that somethng is true |
-Assert | Stating that something is true | expect |
+| Vocab     | Definition                        | Synonyms | How to Use in a Sentence |
+| --------- | --------------------------------- | -------- | ------------------------ |
+| Assertion | A statement that somethng is true |
+| Assert    | Stating that something is true    | expect   |
 
 ## Installing `pytest`
 
@@ -26,10 +26,12 @@ pip3 install -U pytest
 ```
 
 ### !callout-danger
-## pip3
-Recall that we use `pip3` to designate `pip` for Python3.
-### !end-callout
 
+## pip3
+
+Recall that we use `pip3` to designate `pip` for Python3.
+
+### !end-callout
 
 ## Reworking Our Project Structure
 
@@ -47,16 +49,18 @@ When we use `pytest`, we will be creating more files. In order to anticipate mor
 ```
 
 Take care to notice the following:
+
 1. In our project directory, there are 0 files, and 2 folders: `projectname` and `tests`.
-    - We will replace the folder name `projectname` with our project's name
+   - We will replace the folder name `projectname` with our project's name
 1. In our `projectname` folder, there is a file named `somefile.py`
-    - This represents any Python files that include the functions we're writing
+   - This represents any Python files that include the functions we're writing
 1. In our `tests` folder, there is a file named `test_somefile.py`
-    - This represents a test file that is responsible for testing `projectname/somefile.py`
+   - This represents a test file that is responsible for testing `projectname/somefile.py`
 1. There are some other files: `__init__.py` and `context.py`
-    - We will not focus on these files, but feel free to read through them
+   - We will not focus on these files, but feel free to read through them
 
 This folder structure isn't necessary to make `pytest` work; this folder structure:
+
 1. Provides structure and organization to our projects
 1. Mimics a project structure commonly used across technologies
 
@@ -127,7 +131,7 @@ The `assert` statement checks if what's on the right is **truthy**. If the expre
 
 We can use comparisons, and the wide range of Python comparisons in our `assert` statements.
 
-Read through these example `assert` statements as passing examples that prove we can compare numbers, strings, 
+Read through these example `assert` statements as passing examples that prove we can compare numbers, strings,
 
 1. `assert True`
 1. `assert 3+3`
@@ -145,10 +149,12 @@ Read through these example `assert` statements as passing examples that prove we
 1. `assert "foo" not in "Once upon a time, there was a dragon queen..."`
 
 ### !callout-info
-## Python Operators
-`is`, `not`, `is not`, and `in` are operators in Python. `is` returns true if both sides evaluate to the exact same object in memory. Feel free to keep diving into these operators!
-### !end-callout
 
+## Python Operators
+
+`is`, `not`, `is not`, and `in` are operators in Python. `is` returns true if both sides evaluate to the exact same object in memory. Feel free to keep diving into these operators!
+
+### !end-callout
 
 Tests should include at least one `assert` statement. There can be multiple assertions in a test.
 
@@ -156,11 +162,11 @@ Tests should include at least one `assert` statement. There can be multiple asse
 
 What do we put into the test (function) body? "Arrange, Act, Assert" is a useful pattern for reading and structuring tests.
 
-| section | likely location in test | description |
-| --- | --- | --- |
-Arrange | top | The top section of a test can include things to arrange, or set up. This can be creating variables, calling helper methods, or anything else depending on the context. Sometimes this section doesn't exist, because there is no setup.
-Act | middle | This section is where what needs to be tested _happens_. If we're writing a unit test for a function, this is where we invoke the function.
-Assert | end | The assert section is where any assert statements can be made.
+| section | likely location in test | description                                                                                                                                                                                                                             |
+| ------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Arrange | top                     | The top section of a test can include things to arrange, or set up. This can be creating variables, calling helper methods, or anything else depending on the context. Sometimes this section doesn't exist, because there is no setup. |
+| Act     | middle                  | This section is where what needs to be tested _happens_. If we're writing a unit test for a function, this is where we invoke the function.                                                                                             |
+| Assert  | end                     | The assert section is where any assert statements can be made.                                                                                                                                                                          |
 
 ### Expecting a Raised Exception
 
@@ -179,12 +185,12 @@ def test_zero_division():
         1 / 0 # Act
 ```
 
-| Code | Description |
-| --- | --- |
-`import pytest` | In order to check for raised exceptions, we need to import `pytest`.
-`with pytest.raises(...)` | This syntax begins a block, checking for an exception to be raised within the block
-`ZeroDivisionError` | The kind of exception we expect should be specified here
-`1 / 0` | In this code block, we should do our **Act** step, or invoke the function we're testing here.
+| Code                      | Description                                                                                   |
+| ------------------------- | --------------------------------------------------------------------------------------------- |
+| `import pytest`           | In order to check for raised exceptions, we need to import `pytest`.                          |
+| `with pytest.raises(...)` | This syntax begins a block, checking for an exception to be raised within the block           |
+| `ZeroDivisionError`       | The kind of exception we expect should be specified here                                      |
+| `1 / 0`                   | In this code block, we should do our **Act** step, or invoke the function we're testing here. |
 
 ## Check for Understanding
 
@@ -197,7 +203,6 @@ def test_returns_true():
     result = func_that_always_returns_true()
     assert result
 ```
-
 
 ```python
 def test_returns_true_if_odd():

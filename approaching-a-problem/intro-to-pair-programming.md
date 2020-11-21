@@ -46,9 +46,9 @@ Following these steps can help pairs be aligned and focused:
 
 ## Pairing Remotely
 
-Sometimes it won't be possible to pair in person.  You may be far away from each other, have transportation issues or there might be a global pandemic.
+Sometimes it won't be possible to pair in person. You may be far away from each other, have transportation issues or there might be a global pandemic.
 
-You can still accomplish pair programming remotely by following the principles above.  
+You can still accomplish pair programming remotely by following the principles above.
 
 There are many software solutions you can use to make remote pairing go smoothly but even something as simple as screen sharing during a video call can do the trick.
 
@@ -67,29 +67,32 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 #### **Skill Imbalance**
 
 > Most of the time, what looks like a skill imbalance, isn’t. I’m going to argue here that the perception that you are “ahead of” or “behind” your partner is less accurate and less important than it may seem. ... A really important assumption to make is that each person has a lot of value to contribute to the work, regardless of experience or a perception of skill level. Assume that you and your partner are both amazing.
-> - [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
+>
+> — [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
 
 #### Empathy for yourself and others
 
 > Radical self-acceptance is a skill like any other.
-— [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
+>
+> — [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
 
 #### Asking for and Receiving Feedback
 
 > Make eye contact, observe your partner’s body language, tone of voice, and stay silent while they are talking. Repeat their words in your head, and let them sink in. Nod or say “hm” to show that you are actively listening to their words. ...
 
 > It’s normal to feel defensive and to want to show that you haven’t done anything wrong, but realize that’s not needed here. Thank your partner for sharing what most likely was a difficult thing to say. Take some silent time to consider the feedback from a calm place before responding.
-— [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
+>
+> — [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
 
 #### Giving Feedback
 
 > Here’s a good format:
 
->> During _____, when you did _____,I felt _____. In the future, I’d like to try _____.
- Is that something you’d be willing to do?
+> > During **\_**, when you did **\_**,I felt **\_**. In the future, I’d like to try **\_**.
+> > Is that something you’d be willing to do?
 
->Your partner’s answer might be “no”, and that’s totally ok! In that case, accept their answer, ask why, and keeping talking until you can agree on a course of action.
-— [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
+> Your partner’s answer might be “no”, and that’s totally ok! In that case, accept their answer, ask why, and keeping talking until you can agree on a course of action.
+> — [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
 
 ### 10 Ways to Improve Your Pairing Experience
 
@@ -107,7 +110,6 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 [Tarso Aires, 10 Ways to Improve Your Pairing Experience](https://www.thoughtworks.com/insights/blog/10-ways-improve-your-pairing-experience)
 
 ## Check for Understanding
-
 
 <!-- Question 1 -->
 
