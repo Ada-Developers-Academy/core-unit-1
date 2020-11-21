@@ -8,16 +8,15 @@
 
 As we work with data, we may think, "How can this data get out of our code, and into someone else's code?"
 
-
 The JSON data format allows programmers to parse and generate data that is largely compatible across languages. Getting exposure to JSON will help us visualize what our Python code may use one day.
 
 Additionally, lessons from JSON exposes us to how applications beyond Python can represent data.
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-JSON | a lightweight data-interchange format that can hold objects, arrays, strings, numbers, booleans, and other formats. Intentionally language-independent. | - | "That API sends back the user data in JSON," "When we read the JSON data, we should find where the location data is nested."
+| Vocab | Definition                                                                                                                                              | Synonyms | How to Use in a Sentence                                                                                                     |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| JSON  | a lightweight data-interchange format that can hold objects, arrays, strings, numbers, booleans, and other formats. Intentionally language-independent. | -        | "That API sends back the user data in JSON," "When we read the JSON data, we should find where the location data is nested." |
 
 ## What is JSON?
 
@@ -35,14 +34,14 @@ JSON stands for "JavaScript Object Notation." JSON was inspired by JavaScript st
 
 ### Example JSON
 
-This is one piece of data formatted in JSON. This data comes from an API used for a map  application:
+This is one piece of data formatted in JSON. This data comes from an API used for a map application:
 
 ```json
 {
   "markers": [
     {
       "name": "Rixos The Palm Dubai",
-      "location": [25.1212, 55.1535],
+      "location": [25.1212, 55.1535]
     },
     {
       "name": "Shangri-La Hotel",
@@ -59,15 +58,17 @@ This is one piece of data formatted in JSON. This data comes from an API used fo
 Looking at this example, we can analyze...
 
 This JSON data is an object as the outer-most data structure.
+
 - It has one name/value pair. The name is `"markers"`, and the value is an array.
 
 The array of markers contains three objects:
+
 - The first object has two name/value pairs.
-    1. The first pair has the name `"name"`, and the value `"Rixos the Palm Dubai"`
-    2. The second pair has the name `"location"`, and an array as its value
-        - The locations array has two elements: the two numbers `25.1212` and `55.1535`
+  1. The first pair has the name `"name"`, and the value `"Rixos the Palm Dubai"`
+  2. The second pair has the name `"location"`, and an array as its value
+     - The locations array has two elements: the two numbers `25.1212` and `55.1535`
 - The second object also has two name/value pairs.
-    - This second object has a similar structure to the _sibling_ above, but different values
+  - This second object has a similar structure to the _sibling_ above, but different values
 - The third object follows this pattern with different values, as well
 
 ### JSON Expresses Relationships Between Data
@@ -88,7 +89,7 @@ With the above example, we can come to the following conclusions:
 
 1. There are many markers, so the value of `"markers"` is an array
 1. Each marker has many pieces of related data, so each marker is an object.
-    - Each marker has a `"name"` and a `"location"` associated with it
+   - Each marker has a `"name"` and a `"location"` associated with it
 1. Each location has many pieces of data associated with it, so the value of `"location"` is an array.
 
 ### Observations About JSON and Data
@@ -96,7 +97,7 @@ With the above example, we can come to the following conclusions:
 - JSON arrays operate very similarly to Python lists
 - JSON objects operate very similarly to Python dictionaries
 - We can nest JSON arrays and objects inside each other
-    - Arrays can hold arrays, objects, or other kinds of data like strings, numbers, `"true"`, `"false"`, and `"null"`
+  - Arrays can hold arrays, objects, or other kinds of data like strings, numbers, `"true"`, `"false"`, and `"null"`
 - How the data is nested can imply relationships and meaning in the data
 
 ## When is JSON Relevant?
@@ -112,6 +113,7 @@ JSON is relevant when:
 ### !callout-info
 
 ## JSON Alternatives
+
 Are there other ways to format data that are language-agnostic? Yes! There are many formats besides JSON; XML is a popular alternative. Other examples include YAML and SOAP.
 
 ### !end-callout
