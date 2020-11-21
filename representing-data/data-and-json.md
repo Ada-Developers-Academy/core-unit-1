@@ -25,7 +25,13 @@ JSON is a specific kind of format that can hold and represent data. JSON does no
 
 JSON is purely text, but represents data as a combination of _ordered lists of values, or arrays,_ and _name/value pairs, or "objects."_
 
-Callout: JSON stands for "JavaScript Object Notation." JSON was inspired by JavaScript standards, and its syntax mimics some JavaScript patterns. However, JSON is used today as a language-independent data format.
+### !callout-info
+
+## What Does JSON Stand For?
+
+JSON stands for "JavaScript Object Notation." JSON was inspired by JavaScript standards, and its syntax mimics some JavaScript patterns. However, JSON is used today as a language-independent data format.
+
+### !end-callout
 
 ### Example JSON
 
@@ -103,20 +109,78 @@ JSON is relevant when:
 - We need to send data to another piece of software, and we aren't sure what data format is compatible, so we choose JSON as a common format
 - We want to practice reading nested data structures
 
-Callout: Are there other ways to format data that are language-agnostic? Yes! There are many formats besides JSON; XML is a popular alternative. Other examples include YAML and SOAP.
+### !callout-info
+
+## JSON Alternatives
+Are there other ways to format data that are language-agnostic? Yes! There are many formats besides JSON; XML is a popular alternative. Other examples include YAML and SOAP.
+
+### !end-callout
 
 ## Check for Understanding
 
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: checkbox
+* id: da740fd4-4668-4581-8c24-2a8936e5377f
+* title: JSON
+
+##### !question
+
 JSON is built specifically for which language?
 
-- JSONese
-- Python
-- JavaScript
-- JSON is language-agnostic, or suitable for more than one language
+##### !end-question
+
+##### !options
+
+* JSONish
+* Python
+* JavaScript
+* JSON is language-agnostic, or suitable for more than one language
+
+##### !end-options
+
+##### !answer
+
+* JSON is language-agnostic, or suitable for more than one language
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: checkbox
+* id: 68a2cbe8-7a2f-4e8b-b98a-943d288e2bd7
+* title: JSON
+
+##### !question
 
 Select all of the following that are true: JSON supports having...
 
-- Strings
-- Numbers
-- Objects
-- Arrays
+##### !end-question
+
+##### !options
+
+* Strings
+* Numbers
+* Objects
+* Arrays
+
+##### !end-options
+
+##### !answer
+
+* Strings
+* Numbers
+* Objects
+* Arrays
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
