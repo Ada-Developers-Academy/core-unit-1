@@ -105,6 +105,8 @@ To incorporate testing into our development workflow, our workflow may adjust to
 
 ## Check for Understanding
 
+<!-- Question 1 -->
+
 <!-- prettier-ignore-start -->
 ### !challenge
 

@@ -206,7 +206,15 @@ Select all methods that are valid ways to approach debugging.
 ##### !end-options
 
 ##### !answer
-* 
+* Asking "what" is happening
+* Talking to a literal rubber duck
+* Talking to a classmate
+* Writing down what you expected to happen vs. what actually happened
+* Taking a break and looking at it again in an hour
+* Using `print` statements to confirm the value of a variable on a given line
+* Making theories and experiments on why the bug is there and how to fix it
+* Taking notes about the bug
+* Making a table or diagram
 ##### !end-answer
 
 ##### !explanation 

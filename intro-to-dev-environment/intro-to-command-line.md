@@ -201,6 +201,8 @@ Try using the up and down arrows to scroll, and tapping the `q` or `esc` key to 
 
 ## Check for Understanding
 
+<!-- Question 1 -->
+
 <!-- prettier-ignore-start -->
 ### !challenge
 

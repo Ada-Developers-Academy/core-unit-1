@@ -293,6 +293,8 @@ To debug, we should...
 
 ## Check for Understanding
 
+<!-- Question 1 -->
+
 <!-- prettier-ignore-start -->
 ### !challenge
 
@@ -305,7 +307,6 @@ To debug, we should...
 Assume there is a function named `perform_show()` . Select all terms that mean invoking `perform_show()`
 
 ##### !end-question
-
 ##### !options
 
 * Calling `perform_show()`
@@ -314,7 +315,6 @@ Assume there is a function named `perform_show()` . Select all terms that mean i
 * Evaluating `perform_show()`
 
 ##### !end-options
-
 ##### !answer
 
 * Calling `perform_show()`
@@ -322,9 +322,10 @@ Assume there is a function named `perform_show()` . Select all terms that mean i
 * Evaluating `perform_show()`
 
 ##### !end-answer
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -342,7 +343,6 @@ performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])`
 What is the name of the function being called?
 
 ##### !end-question
-
 ##### !options
 
 * performance
@@ -351,15 +351,15 @@ What is the name of the function being called?
 * ["rabbit", "deck of cards"]
 
 ##### !end-options
-
 ##### !answer
 
 * perform_show
 
 ##### !end-answer
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -377,7 +377,6 @@ performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])
 ```
 
 ##### !end-question
-
 ##### !options
 
 * 0
@@ -386,15 +385,15 @@ performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])
 * 3
 
 ##### !end-options
-
 ##### !answer
 
 * 2
 
 ##### !end-answer
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
+
+<!-- Question 4 -->
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -412,7 +411,6 @@ performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])
 ```
 
 ##### !end-question
-
 ##### !options
 
 * A variable that invokes the `perform_show` function
@@ -421,12 +419,10 @@ performance = perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])
 * A variable that is the `perform_show` function
 
 ##### !end-options
-
 ##### !answer
 
 * A variable that holds the return value of `perform_show("Tyra's Magic Show", ["rabbit", "deck of cards"])`
 
 ##### !end-answer
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
