@@ -208,7 +208,7 @@ def test_returns_true():
 
 * type: code-snippet
 * language: python3.6
-* id: 4dd64cc8-f0a2-4b7a-916b-709680d6d37e
+* id: VarpJ0
 * title: Intro to pytest
 
 ### !question
@@ -241,18 +241,15 @@ class TestChallenge(unittest.TestCase):
 ```
 ### !end-tests
 
-### !hint
-
-Use the chat bubble in the lower right corner to ask your instructor for help.
-
-### !end-hint
-
 ### !explanation
+
+We are expecting this implementation, although returning anything truthy will work too.
 
 ```python
 def func_that_always_returns_true():
     return True
 ```
+
 ### !end-explanation
 
 ### !end-challenge
