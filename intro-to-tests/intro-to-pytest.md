@@ -198,12 +198,9 @@ Here, we are displaying the contents of the test.
 
 Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
-```python
-def test_returns_true():
-    result = func_that_always_returns_true()
-    assert result
-```
+<!-- Question 1 -->
 
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: code-snippet
@@ -221,7 +218,6 @@ def test_returns_true():
     assert result
 ```
 ### !end-question
-
 ### !placeholder
 
 ```python
@@ -229,7 +225,6 @@ def func_that_always_returns_true():
     pass
 ```
 ### !end-placeholder
-
 ### !tests
 ```python
 import unittest
@@ -240,7 +235,6 @@ class TestChallenge(unittest.TestCase):
       self.assertTrue(p.func_that_always_returns_true())
 ```
 ### !end-tests
-
 ### !explanation
 
 We are expecting this implementation, although returning anything truthy will work too.
@@ -251,8 +245,22 @@ def func_that_always_returns_true():
 ```
 
 ### !end-explanation
-
 ### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 621ce40e-a848-4429-a100-76e6001f77c3
+* title: Intro to pytest
+
+##### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
 ```python
 def test_returns_true_if_odd():
@@ -261,12 +269,87 @@ def test_returns_true_if_odd():
     assert result
 ```
 
+##### !end-question
+##### !tests
+
+```py
+import unittest
+import main as p
+
+class TestPython1(unittest.TestCase):
+    def test_returns_true_if_odd(self):
+        number = 5
+        result = p.is_odd(number)
+        self.assertTrue(result)
+```
+
+##### !end-tests
+##### !hint
+
+Logic to find that something is odd or even is best solved using the modulo operator.
+
+##### !end-hint
+##### !hint
+
+Don't forget to put your code in a function with the right name and parameters.
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 71615b90-7562-480f-b868-50e23812a0f3
+* title: Intro to pytest
+
+##### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
+
 ```python
 def test_returns_false_if_even():
     number = 6
     result = is_odd(number)
     assert not result
 ```
+
+##### !end-question
+
+##### !tests
+
+```py
+import unittest
+import main as p
+
+class TestPython1(unittest.TestCase):
+    def test_returns_false_if_even(self):
+        number = 6
+        result = p.is_odd(number)
+        self.assertFalse(result)
+```
+
+##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 4 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 386b0492-77de-4132-a81c-8746090296c2
+* title: Intro to pytest
+
+##### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
 ```python
 def test_returns_None_if_negative():
@@ -275,8 +358,57 @@ def test_returns_None_if_negative():
     assert result is None
 ```
 
+##### !end-question
+##### !tests
+
+```py
+import unittest
+import main as p
+
+class TestPython1(unittest.TestCase):
+    def test_returns_None_if_negative(self):
+        number = -1000
+        result = p.is_odd(number)
+        assert result is None
+```
+
+##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 5 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: a18259ec-848d-4ec4-99c1-c6a71ec1fab7
+* title: Intro to pytest
+
+##### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
+
 ```python
 def test_raises_runtime_error():
     with pytest.raises(RuntimeError):
-        my_func()
+        runs_mystery_algorithm()
 ```
+
+##### !end-question
+##### !tests
+
+```py
+import unittest
+import main as p
+
+class TestPython1(unittest.TestCase):
+    def test_raises_runtime_error(self):
+        with self.assertRaises(RuntimeError):
+            p.runs_mystery_algorithm()
+```
+
+##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->
