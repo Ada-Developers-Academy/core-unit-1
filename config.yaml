@@ -1,6 +1,57 @@
 ---
 Standards:
   -
+    Title: Ada Orientation
+    Description: What is Ada?, Online Communcation Norms, Learn LMS, Slack, Google Calendar, Attendance, Project Feedback, One on Ones, Online Meeting Rooms, Retrospectives
+    UID: sEk2C7
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 1o47Ox
+        Path: /ada-orientation/what-is-ada.md
+      -
+        Type: Lesson
+        UID: aKkd3p
+        Path: /ada-orientation/online-communication-norms.md
+      -
+        Type: Lesson
+        UID: FyXbJn
+        Path: /ada-orientation/learn-lms.md
+      -
+        Type: Lesson
+        UID: SdrsII
+        Path: /ada-orientation/slack.md
+      -
+        Type: Lesson
+        UID: 96fbha
+        Path: /ada-orientation/google-calendar.md
+      -
+        Type: Lesson
+        UID: xn8tqi
+        Path: /ada-orientation/attendance.md
+      -
+        Type: Lesson
+        UID: tj7R4n
+        Path: /ada-orientation/project-feedback.md
+      -
+        Type: Lesson
+        UID: Asf7p8
+        Path: /ada-orientation/one-on-ones.md
+      -
+        Type: Lesson
+        UID: tjHiWE
+        Path: /ada-orientation/one-on-ones.instructor.md
+      -
+        Type: Lesson
+        UID: O6okIU
+        Path: /ada-orientation/online-meeting-rooms.md
+      -
+        Type: Lesson
+        UID: 63F66B
+        Path: /ada-orientation/retrospectives.md
+  -
     Title: Approaching a Problem
     Description: Breaking down a problem, Pseudocode, Pair Programming
     UID: pSGW3x
