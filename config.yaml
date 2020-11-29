@@ -98,7 +98,7 @@ Standards:
         Path: /intro-to-dev-environment/intro-to-command-line.md
   -
     Title: Intro To Functions
-    Description: Invoking and Defining Functions
+    Description: Functions Overview, Invoking Functions, Defining Functions
     UID: e30a742083b7afa72ec565afafb9f64b
     SuccessCriteria:
       - success criteria
