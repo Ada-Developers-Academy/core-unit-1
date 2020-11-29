@@ -204,6 +204,59 @@ def test_returns_true():
     assert result
 ```
 
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 4dd64cc8-f0a2-4b7a-916b-709680d6d37e
+* title: Intro to pytest
+
+### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
+
+```python
+def test_returns_true():
+    result = func_that_always_returns_true()
+    assert result
+```
+### !end-question
+
+### !placeholder
+
+```python
+def func_that_always_returns_true():
+    pass
+```
+### !end-placeholder
+
+### !tests
+```python
+import unittest
+import main as p
+
+class TestChallenge(unittest.TestCase):
+  def test_returns_true(self):
+      self.assertTrue(p.func_that_always_returns_true())
+```
+### !end-tests
+
+### !hint
+
+Use the chat bubble in the lower right corner to ask your instructor for help.
+
+### !end-hint
+
+### !explanation
+
+```python
+def func_that_always_returns_true():
+    return True
+```
+### !end-explanation
+
+### !end-challenge
+
 ```python
 def test_returns_true_if_odd():
     number = 5
