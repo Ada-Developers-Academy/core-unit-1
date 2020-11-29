@@ -192,6 +192,14 @@ def test_zero_division():
 | `ZeroDivisionError`       | The kind of exception we expect should be specified here                                      |
 | `1 / 0`                   | In this code block, we should do our **Act** step, or invoke the function we're testing here. |
 
+### !callout-info
+
+## Testing Raised Exceptions?
+
+This curriculum will go deeper into raising exceptions eventually! For now, awareness of syntax is our friend.
+
+### !end-callout
+
 ## Check for Understanding
 
 Here, we are displaying the contents of the test.
