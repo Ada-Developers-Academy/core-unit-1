@@ -1,0 +1,55 @@
+name: Labeler
+on: 
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  label:
+    name: add label to new PRs
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/github-script@v3
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
+        script: |
+          // Get PR description
+          const msg = context.payload.pull_request.title;
+           
+          class AdaPullRequest {
+            constructor(label, column_id) {
+              this.label = label;
+              this.column_id = column_id;
+            }
+
+            addLabel() {
+              github.issues.addLabels({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: [this.label] 
+              })
+            }
+
+            addToProjectBoard() {
+              github.projects.createCard({
+                column_id: this.column_id,
+                content_type: 'PullRequest',
+                content_id: context.payload.pull_request.id
+              })
+            }
+          }
+          
+          if(msg) {
+            const inDevelopment = msg.includes("WIP");
+            
+            if(inDevelopment) {
+              const developmentPullRequest = new AdaPullRequest("Needs Input", 11900772)
+              developmentPullRequest.addLabel();
+              developmentPullRequest.addToProjectBoard();
+            } else {
+              const generalPullRequest = new AdaPullRequest("Ready for Review #1", 11900773)
+              generalPullRequest.addLabel();
+              generalPullRequest.addToProjectBoard();
+            }
+          } 
