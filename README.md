@@ -13,7 +13,7 @@ Unit 1 focuses on programming fundamentals in Python.
 ## To Edit/Preview Lesson Locally 
  - clone the repo `git clone https://github.com/Ada-Developers-Academy/core-unit-1.git`
  
- We use Visual Studio Code, but feel free to edit Markdown in editor you prefer.
+ We use Visual Studio Code, but feel free to use any editor you prefer.
  If using Visual Studio Code, we recommend the following plugins:
  - [Markdown-formatter](https://marketplace.visualstudio.com/items?itemName=mervin.markdown-formatter) Visual Studio Code plugin
  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Visual Studio Code plugin
