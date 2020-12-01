@@ -1,4 +1,4 @@
-# Big(O) Notation
+# Big O Notation
 
 ## Learning Goals
 
@@ -11,15 +11,15 @@
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
 
-## Big(O)
+## Big O
 
 ## The Common Curves
 
 ### Examples
 
-## Time Complexity: Code to Big(O)
+## Time Complexity: Code to Big O
 
-## Space Complexity: Code to Big(O)
+## Space Complexity: Code to Big O
 
 ## Check for Understanding
 
