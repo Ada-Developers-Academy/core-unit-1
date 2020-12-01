@@ -140,4 +140,4 @@ Lesson order (config file should match this order)
  If using Visual Studio Code, we recommend the following plugins:
  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Visual Studio Code plugin
 
-Read the [How to Contribute] section of the wiki for more information on submitting PR reviews.
+Read the [How to Contribute](https://github.com/Ada-Developers-Academy/core-unit-1/wiki#how-to-contribute) section of the wiki for more information on submitting PR reviews.
