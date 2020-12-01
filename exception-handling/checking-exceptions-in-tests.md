@@ -65,19 +65,150 @@ In the test `test_zero_division`, we can read and confirm:
 
 ## Check for Understanding
 
-<!-- Reading code questions -->
+<!-- Question 1 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: 8HwyKa
+* title: Checking Exceptions in Tests
+
+##### !question
 
 What is the function call that will raise an exception?
-
-What is the kind of exception we're expecting?
-
-What is the function call that will raise an exception?
-
-What is the kind of exception we're expecting?
-
-Given this test, implement the function that will pass this test.
 
 ```python
+def test_check_is_phone_num_valid():
+    phone_num = 777-888-9999
+    with pytest.raises(ValueError):
+        is_valid = is_phone_num_valid(phone_num)
+```
+
+##### !end-question
+##### !placeholder
+
+function_name(args)
+
+##### !end-placeholder
+##### !answer
+
+is_phone_num_valid(phone_num)
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: wrXI7Z
+* title: Checking Exceptions in Tests
+
+##### !question
+
+What is the kind of exception we're expecting?
+
+```python
+def test_check_is_phone_num_valid():
+    phone_num = 777-888-9999
+    with pytest.raises(ValueError):
+        is_valid = is_phone_num_valid(phone_num)
+```
+
+##### !end-question
+##### !placeholder
+
+function_name(args)
+
+##### !end-placeholder
+##### !answer
+
+ValueError
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: TmFBrt
+* title: Checking Exceptions in Tests
+
+##### !question
+
+What is the function call that will raise an exception?
+
+```python
+def test_add_student_to_roster():
+    roster = {}
+    student = "Cordelia Wang"
+    with pytest.raises(AttributeError):
+        add_student_to_roster(roster, student)
+```
+
+##### !end-question
+##### !placeholder
+
+function_name(args)
+
+##### !end-placeholder
+##### !answer
+
+add_student_to_roster(roster, student)
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+
+<!-- Question 4 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: z4Qv6S
+* title: Checking Exceptions in Tests
+
+##### !question
+
+What is the kind of exception we're expecting?
+
+```python
+def test_add_student_to_roster():
+    roster = {}
+    student = "Cordelia Wang"
+    with pytest.raises(AttributeError):
+        add_student_to_roster(roster, student)
+```
+
+##### !end-question
+##### !placeholder
+
+NameOfException
+
+##### !end-placeholder
+##### !answer
+
+AttributeError
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+Given these tests, implement the function that will pass.
+
+```python
+def test_valid_name():
+    result = claim_unreserved_code_school_name("Some Code School")
+    assert result is True
+
+
 def test_invalid_name():
     with pytest.raises(ValueError):
         claim_unreserved_code_school_name("Ada Developers Academy")
