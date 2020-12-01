@@ -15,7 +15,6 @@ Unit 1 focuses on programming fundamentals in Python.
  
  We use Visual Studio Code, but feel free to use any editor you prefer.
  If using Visual Studio Code, we recommend the following plugins:
- - [Markdown-formatter](https://marketplace.visualstudio.com/items?itemName=mervin.markdown-formatter) Visual Studio Code plugin
  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Visual Studio Code plugin
 
 Read the [How to Contribute] section of the wiki for more information on submitting PR reviews.
