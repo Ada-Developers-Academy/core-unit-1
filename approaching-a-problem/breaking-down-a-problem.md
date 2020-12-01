@@ -13,7 +13,7 @@ Programming code is about using computers to solve problems. Often, this initial
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence |
 | ----- | ---------- | -------- | ------------------------ |
-Timeboxing
+Timeboxing | A time management technique where someone determines the maximum amount of time to spend on a task | - | "My code is working, but I want to make it better. I'll timebox refactoring to 2 hours," "I've been stuck on this and I need to do research. I'll timebox research to 30 minutes and then ask a classmate for help."
 
 ## Breaking Down a Problem
 
@@ -58,7 +58,12 @@ Preparing dinner for tonight:
 - Go shopping for the ingredients we need
 - Cook dinner
 
-Callout: We can realize here that **there are multiple ways to solve a problem.** We could have looked for a recipe that only has ingredients we already have. Or, we could have ordered pizza delivery!
+### !callout-info
+
+## Always Multiple Solutions
+We can realize here that **there are multiple ways to solve a problem.** We could have looked for a recipe that only has ingredients we already have. Or, we could have ordered pizza delivery!
+
+### !end-callout
 
 #### Come Up With Ideas
 
@@ -107,37 +112,68 @@ Programmers should get their code working first, and then improve their code aft
 
 ## Timeboxing
 
-Timeboxing is a time management technique where someone determines the maximum amount of time to spend on a task.
+Timeboxing is a time management technique where someone determines the _maximum_ amount of time to spend on a task.
 
 When we are solving problems, we may come up with one solution, but then desire to work more on it. Or, sometimes, we might want to research alternative solutions. In these cases, it might be valuable to timebox these tasks.
 
 Some examples might be:
 - Timeboxing "Research alternatives to if/else conditionals" to 1 hour, and decide on one solution at that point
-- timeboxing "Refactor our project" to 2 hours, and call the project good enough at that point
-- timeboxing "Work through the binary problems" and getting stuck for 30 minutes, and ask for help from the cohort at that point
+- Timeboxing "Refactor our project" to 2 hours, and call the project good enough at that point
+- Timeboxing "Work through the binary problems" and getting stuck for 30 minutes, and ask for help from the cohort at that point
 
 ## Check for Understanding
 
-<!-- MC: Which of these breaks down a problem in the correct order?
+<!-- Question 1 -->
 
-1. Read the problem
-2. Clarify the problem with questions
-3. Break down the problem into smaller sub-problems
-4. Think through the solution with ideas, notes, pseudocode, comments, explanations, and tasks left to do more research on
-5. Write parts of the solution in Python code
-6. Repeat steps necessary
+<!-- prettier-ignore-start -->
+### !challenge
 
-Answer: Clarify, create sub-problems, hypothesize solutions, solve a sub-problem, repeat
+* type: multiple-choice
+* id: 5ZzhNo
+* title: Breaking Down a Problem
 
-Hypothesize solutions, clarify, create sub-problems, solve a sub-problem, repeat
+##### !question
 
-Hypothesize solutions, create sub-problems, solve a sub-problem, clarify, repeat
+Which of these breaks down a problem in the correct order?
 
-Hypothesize solutions, create sub-problems, clarify, solve a sub-problem, repeat
+##### !end-question
 
- -->
+##### !options
 
-<!-- Short answer: Create a hypothetical situation where working first, improving second will be important and useful. -->
+* Clarify, create sub-problems, hypothesize solutions, solve a sub-problem, repeat
+
+* Hypothesize solutions, clarify, create sub-problems, solve a sub-problem, repeat
+
+* Hypothesize solutions, create sub-problems, solve a sub-problem, clarify, repeat
+
+* Hypothesize solutions, create sub-problems, clarify, solve a sub-problem, repeat
+
+##### !end-options
+
+##### !answer
+
+* Clarify, create sub-problems, hypothesize solutions, solve a sub-problem, repeat
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: paragraph
+* id: 52f6378d-4a54-46a7-a16b-e055a9b1d232
+* title: Breaking Down a Problem
+
+##### !question
+
+Create a hypothetical situation where working first, improving second will be important and useful.
+
+##### !end-question
+### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- MC: Which of these is the most accurate definition of "timeboxing"?
 
@@ -147,3 +183,34 @@ A time management method that uses a timer to break down work into 25 minute int
 
 Research and exploration to learn about a task or the possible solutions.
  -->
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 76pFSw
+* title: Breaking Down a Problem
+
+##### !question
+
+Which of these is the most accurate definition of "timeboxing"?
+
+##### !end-question
+
+##### !options
+
+* You work on the task during the fixed time period and stop working on it once the time is up - then, you assess whether you've reached your planned goals.
+* A time management method that uses a timer to break down work into 25 minute intervals, separated by short breaks.
+* Research and exploration to learn about a task or the possible solutions.
+
+##### !end-options
+
+##### !answer
+
+* You work on the task during the fixed time period and stop working on it once the time is up - then, you assess whether you've reached your planned goals.
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
