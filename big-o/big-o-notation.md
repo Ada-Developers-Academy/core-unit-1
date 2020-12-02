@@ -2,53 +2,97 @@
 
 ## Learning Goals
 
-- Apply space complexity analysis to arrays and operations on arrays
-- Apply time complexity analysis to arrays and operations on arrays
+- Define Big O Notation
+- Recognize Big O Notation and common notations: constant, logarithmic, constant, loglinear, quadratic, exponential
+- Compare and rank the complexity of the common notations between least and most complex
 
 ## Introduction
 
-We know to compare, but problem: we don't know how to measure it.
+Imagine that we're developers working on a unique project: we are writing software not for a laptop, but something much smaller! Imagine we're coding for an Arduino microcontroller, which has limited RAM. It's entirely possible that our program would crash if it takes up to much memory.
 
-We have a program, for an arduino, very limited processing power and memory.
+Let's imagine that we could write our Arduino program with two different solutions. We know that we should compare the space complexity between the two algorithms. However, **_how_** do we compare space complexity?
+
+Computer science uses concepts from mathematics to measure time and space complexity. By using Big O notation, we can concretely evaluate which is more efficient. Then, our program will work better on the Arduino!
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Big O | run time or space requirements grow as the input size grows | - | 
+| Vocab | Definition                                                                                           | Synonyms | How to Use in a Sentence                                                                                                                                     |
+| ----- | ---------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Big O | A notation style to describe **how** the run time or space requirements grow as the input size grows | -        | "The Big O of the linear search algorithm is O(n) ("O of n"), or linear," "The Big O of "n log n" is less complex than Big O of "n squared," so it's better" |
 
-## Big O
+## Big O Describes How Complexity Grows
 
-notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity
+Big O Notation, pronounced "Big Oh notation," is a notation style that describes **how** the run time or space requirements grow as the input size grows.
 
-classify algorithms according to how their run time or space requirements grow as the input size grows
+The formal definition of Big O Notation is rooted in mathematics: Big O Notation "describes the limiting behavior of a function when the argument tends towards infinity." Let's parse this language:
 
-To quantitatively represent the worst case performance for speed and memory utilization of an algorithm, we use the Big O notation, pronounced "big oh notation" or the asymptotic notation.
+- The "function" is the algorithm
+- The "argument" is likely the input data set that the algorithm operates on
+- "tends towards infinity" describes that we are considering all hypothetical situations... We consdier the complexity when the argument being a million rows long a million + 1 rows long, a million + 2 rows long, all the way towards infinity
+- "Limiting behavior" describes the rate at which complexity grows. Sometimes, as the argument grows bigger and bigger, the complexity grows rapidly! Sometimes, as the argument grows, the complexity grows slowly.
 
-Leveraging the big O notation, we can:
+This limiting behavior is the most important information; we are looking for a mathematical expression to describe the growth of complexity.
 
-Make quantitative judgments about the value of one algorithm over another.
-Predict whether the software will meet any efficiency constraints that exist.
+To quantitatively represent the worst case performance for speed and memory utilization of an algorithm, we use the Big O notation. Leveraging the big O notation, we can:
+
+- Make quantitative judgments about the efficiency of one algorithm over another
+- Predict whether the software will meet any efficiency constraints that exist
+
+## "Syntax"
+
+This is an example of Big O notation:
+
+> O(n)
+
+- `O(...)` is the recognizable form of Big O notation
+- Inside the parentheses is some mathematical expression that describes the relationship between the size of the input vs. the complexity of the algorithm
+
+Overall, the contents inbetween the parens is the information we care most about.
 
 ## The Common Curves
 
-Ordered by fastest to slowest.
+These are common Big O complexities to be familiar with.
 
-| **Constant Complexity O(1)**   |  A term used to describe an algorithm which will take the same amount of time to execute regardless of the size of the input.  For example selecting the smallest value in an array which is already sorted.       |
-| **Logirithmic Complexity O(log n)**   |  A term used to describe an algorithm which will grow in time or space complexity proportional to the log of the input size.  Logorithmic algorithms increase **very** slowly as the size of the input increases.  They usually involve an algorithm which excludes 1/2 of the input with each iteration of a loop.      |
-| **Linear Complexity O(n)**   |  A term used to describe an algorithm which take proprotionately longer or more memory as the size of the input increases.  For example selecting a linear search runs in linear time because it has to check all elements of the array.  A method to duplicate an array would likewise have linear space complexity because the return array is of equal size to the original.       |
-| **Log Linear Complexity O(n log n)**   |  A term used to describe an algorithm which will grow in time or space complexity proportional to the log of the input size.  Logorithmic algorithms increase **very** slowly as the size of the input increases.  They usually involve an algorithm which excludes 1/2 of the input with each iteration of a loop.      |
-| **Quadratic Complexity O(n<sup>2</sup>)**   |  A term used to describe an algorithm which will have a runtime or memory usage proportional to the size of the input squared.  This often involves 2 nested loops.       |
-| **Exponential Complexity O(2<sup>n</sup>)**   |  A term used to describe an algorithm which will have a runtime or memory usage which doubles each time the input size increases by one.        |
+These complexities are ordered! We can describe their order in all of these ways:
+
+- going from least complex to most complex
+- going from fastest to slowest in time complexity
+- going from least operations to most operations in time complexity
+- going from most space efficent to least space efficent in space complexity
+- going from slower-growing to faster-growing
+
+| Complexity       | Name        | Definition                                                                                                                                                                                                                                                                                    |
+| ---------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| O(1)             | Constant    | The algorithm which will take the same amount of time to execute regardless of the size of the input.                                                                                                                                                                                         |
+| O(log n)         | Logarithmic | The algorithm which will grow in time or space complexity proportional to the **log** of the input size. Logorithmic algorithms increase **very** slowly as the size of the input increases. They usually involve an algorithm which excludes 1/2 of the input with each iteration of a loop. |
+| O(n)             | Linear      | The algorithm will grow in time or space directly proprotional to the input size. The complexity increases at the same rate that the input increases.                                                                                                                                         |
+| O(n log n)       | Log Linear  | A term used to describe an algorithm which will grow in time or space complexity proportional to the n log n of the input size.                                                                                                                                                               |
+| O(n<sup>2</sup>) | Quadratic   | The algorithm which will have a runtime or memory usage proportional to the size of the input squared. This often involves 2 nested loops.                                                                                                                                                    |
+| O(2<sup>n</sup>) | Exponential | The algorithm's complexity doubles each time the input size increases by one.                                                                                                                                                                                                                 |
+
+### !callout-info
+
+## How do we say it out loud?
+
+Developers talk about Big O a lot, so it's useful to know how to talk about this out loud. Here are some example sentences to help start the pattern:
+
+- "The Big O of linear search is O of 1. It runs in constant time."
+- "An algorithm with a Big O of log n is better than O of n log n."
+- "O of n-squared is one of the slowest!"
+
+### !end-callout
 
 ### Examples
 
+Let's consider and compare some "real-world" algorithms.
 
-O(1) – Find a random person's phone number by flipping open any page in the phone book.
-O(log n) – Given a person's name, find the corresponding phone number. This is using a binary search for a person's phone number.
-O(n) – Find all people whose phone numbers contain the digit "5". This will require linear scaning through the phone book.
-O(n log n) – Sort a phone book's pages by looking at the first name on each page. See the merge sort for understanding this further.
+Consider the problem: You have an address book, and you want to find the contact information for your friend Taylor.
 
+| Algorithm                                                                                                                                                                                                                                                                                                   | Big O    |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Start at the first page of the address book. Read through each page. If you see Taylor's name, you found their phone number                                                                                                                                                                                 | O(n)     |
+| Assume your contacts are alphabetically sorted. Flip to the half-way point of the address book, then determine which half of the address book "Taylor" is in. Then look through that half of the address book, split that in half, and determine which half to look through. Do this until we find "Taylor" | O(log n) |
+| Use a bookmark you inserted before that is labeled "Taylor", that leads straight to Taylor's phone number.                                                                                                                                                                                                  | O(1)     |
 
 ## Time Complexity: Code to Big O
 
@@ -74,7 +118,7 @@ while i < j
 ### Always Looking for the Biggest Big O
 
 Constants are dropped. Constants only shift our graph slightly, but do not affect the overall look of the graph by much. O(2n) is shortened to O(n). O(1⁄2 n) is shortened to O(n).
-Usually when an algorithm's growth rate is a mix of orders, the dominant order is shown, and the rest are dropped. O(n^2) + O(n) or O(n^2 + n) would be shortened to O(n^2). This is because O(n^2) + O(n) is smaller than O(n^2) + O(n^2).In other words, O(n^2) + O(n) is in the order of O(n^2) + O(n^2). O(n^2) + O(n^2) can be simplified to O(n^2) * 2 or O(2 * n^2). Then, we can drop the constant, and simply state that the complexity is O(n^2).
+Usually when an algorithm's growth rate is a mix of orders, the dominant order is shown, and the rest are dropped. O(n^2) + O(n) or O(n^2 + n) would be shortened to O(n^2). This is because O(n^2) + O(n) is smaller than O(n^2) + O(n^2).In other words, O(n^2) + O(n) is in the order of O(n^2) + O(n^2). O(n^2) + O(n^2) can be simplified to O(n^2) _ 2 or O(2 _ n^2). Then, we can drop the constant, and simply state that the complexity is O(n^2).
 
 ## Space Complexity: Code to Big O
 
