@@ -45,11 +45,11 @@ jobs:
             
             if(inDevelopment) {
               const developmentPullRequest = new AdaPullRequest("Needs Input", 11900772)
-              developmentPullRequest.addLabel();
+            
               developmentPullRequest.addToProjectBoard();
             } else {
               const generalPullRequest = new AdaPullRequest("Ready for Review #1", 11900773)
-              generalPullRequest.addLabel();
+              
               generalPullRequest.addToProjectBoard();
             }
           } 
