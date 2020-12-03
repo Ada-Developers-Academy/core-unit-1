@@ -76,7 +76,9 @@ def linear_search(array, item):
 
 ### Large Example
 
-This is one implementation of reversing the order of items in a list. It loops through an array, and starts looking at the first item (at index `i`) and the last item (at index `j`), and swaps their values, making use of a temporary variable `temp`. It will return a list in reverse order.
+This is one implementation of reversing the order of items in a list. This should affect the original list.
+
+It loops through an array, and starts looking at the first item (at index `i`) and the last item (at index `j`), and swaps their values, making use of a temporary variable `temp`. It will return the list in reverse order.
 
 ```python
 def reverse(array):
@@ -231,72 +233,81 @@ def reverse(array):
 5. Match this to the most relevant Big O complexity
     - This algorithm has is O(1), and has constant space complexity
 
-## Example: Comparing Two Algorithms
+## Comparing Two Algorithms
 
-These are two algorithms for the same thing. Consider the time and space complexity for each algorithm. Afterwards, we'll compare the two algorithms.
+Of course, Big O analysis is ultimately best used to compare algorithms. Given two algorithms that solve the same problem, we can find the space and time complexity of both, and analyze which is the least complex overall.
 
-Algo 1
+As an example, we'll compare two algorithms for reversing a list.
 
-```
-# array is the input integer array to the algorithm
+### Algorithm A
 
-if array.length <= 1
-  return # nothing to reverse
+The first implementation for reversing a list is found earlier in this lesson. We discovered it has...
+- Time complexity of O(n)
+- Space complexity of O(1)
 
-i = 0
-j = array.length - 1
+### Algorithm B
 
-while i < j
-  # swap values at i and j
-  temp = array[i]
-  array[i] = array[j]
-  array[j] = temp
+This algorithm takes a different approach. First, we'll make a temporary list to help us. Then, we'll populate the temporary list with the items in reverse order. Finally, we'll re-assign each item in our list with the values from the temporary list.
 
-  increment i
-  decrement j
-```
+```python
+def reverse(array):
+    if len(array) <= 1:
+        return array
 
-You must have noticed the three memory allocations done by the program: i, j and temp. These are three integers created. Regardless of the size of the input array (be it 500 or 900,000), there will always be only and exactly three integers created. As such, the new memory allocations in this algorithm do not change as the size or value of the input changes. Such algorithms are said to have constant space complexity or O(1) space complexity.
+    i = 0
+    j = len(array) - 1
+    # This syntax creates a list of Nones, and has the length of array
+    temp_array = [None] * len(array)
 
-Algo 2
+    while i < len(array):
+        temp_array[i] = array[j]
+        i += 1
+        j -= 1
 
-```
-# array is the input integer array to the algorithm
+    i = 0
+    while i < len(array):
+        print(i)
+        array[i] = temp_array[i]
+        i += 1
 
-if array.length <= 1
-  return # nothing to reverse
-
-i = 0
-j = array.length - 1
-
-# create a new array of the same size as input array
-temp_array = new array of size array.length
-
-while i < array.length
-  # copy over the values in input array
-  # into the temp array in reverse order
-  temp_array[i] = array[j]
-  increment i
-  decrement j
-
-
-i = 0
-while i < array.length
-  # copy over values from the temp array
-  # into the input array
-  array[i] = temp_array[i]
-
-# array is reversed
+    return array
 ```
 
-The first while loop copies over each of the elements in the input array into a new array in reverse order of their position. The means, if there are 100 elements in the input array, then the loop will execute 100 times. If there are 700,000 elements in the input array, then the loop will execute 700,000 times and so on. Therefore, we can conclude that in the first loop, the number of operations performed are linearly changing in accordance with the size of the input.
-The second loop copies for each element of the temporary array back into the input array. Following the same logic, in the second loop, the number of operations performed are linearly changing in accordance with the size of the input.
-The time complexity of each loop is linear, or O(n) where n is the number of elements in the input array. Together, since they perform the operations one after another, the time complexity of the overall algorithm is linear or O(n), where n is the number of elements in the input array.
+An analysis of the time complexity might follow this line of thinking:
+1. There are a few operations outside of loops that will be added to the Big O
+1. There are two loops that iterate over _n_ elements
+1. We can start to express this as _(Some Constant Number of Operations Outside the Loop) + 2n_
+1. We can drop the constants to O(n)!
+1. This algorithm performs on linear time complexity
 
-There are two integers, i and j that are used to index into the arrays. Each of these take up additional memory of the size of an integer each. Also, in addition to the input array, the algorithm creates a new array. This new array, temp_array takes up as much space as the size of the input array. If there are 100 elements in the input array, then the temp_array needs to be able to hold 100 elements. If the input array holds 900,000 elements, then the temp_array should also be able to hold 900,000 elements. In other words, the new temp_array created takes up space that is linearly proportional to the size of the input array. Therefore, the space complexity of this algorithm is linear or O(n), where n is the number of elements in the input array.
+And we might analyze space complexity like so:
+1. `i` and `j` are two variables that get initialized
+1. `temp_array` is a list that will always have _n_ elements
+1. We can express this as _2 + n_
+1. We can drop the constants to O(n)
+1. This algorithm performs with linear space complexity
 
-### Comparing
+### Constant is More Efficient than Linear
 
-Time complexity: As we saw above, Algorithm 1 as well as Algorithm 2, both have the same time complexity. They both execute in linear time as compared to the size of the input, or are said to have O(n) time complexity, where n is the number of elements in the input array. From the view point of time complexity, both the algorithms are equally efficient.
-Space complexity: We noted that Algorithm 1 above has a space complexity of O(1) or constant, since the amount of additional memory used does not change as the size of the input array changes. In contrast, Algorithm 2 creates a new array. The size of this new array created is the same as the input array. Therefore, Algorithm 2 has a space complexity of O(n), where n is the number of elements in the input array. Comparing Algorithm 1's constant space complexity with Algorithm 2's linear space complexity, we can conclude that Algorithm 1 is more space efficient than Algorithm 2.
-In conclusion, although the two algorithms are equally time efficient, Algorithm 1 is more space efficient as compared to Algorithm 2 and hence, Algorithm 1 is a better choice.
+Now, we can confidently compare Algorithm A and Algorithm B:
+
+- | Algorithm A | Algorithm B
+--- | --- | ---
+Time Complexity | O(n) | O(n)
+Space Complexity | O(1) | O(n)
+
+Overall, the efficiency of these two algorithms does not differ by much; they both have a time complexity of O(n).
+
+However, we can reference and recall that O(1) is more performant than O(n)! We can conclude that Algorithm A is more efficient in space complexity.
+
+## Check for Understanding
+
+<!-- There will be a whoooole worksheet of finding complexity after this, so these questions should be small and mechanic -->
+
+<!-- Question about counting operations -->
+
+<!-- Question about counting space -->
+
+<!-- Question about dropping constants -->
+
+<!-- Question about dropping constants -->

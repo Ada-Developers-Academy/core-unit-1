@@ -95,3 +95,9 @@ Consider the problem: You have an address book, and you want to find the contact
 | Use a bookmark you inserted before that is labeled "Taylor", that leads straight to Taylor's phone number.                                                                                                                                                                                                  | O(1)     |
 
 ## Check for Understanding
+
+<!-- Question about comparing Big Os for more efficient -->
+
+<!-- Question about comparing Big Os for more efficient -->
+
+<!-- Question about comparing Big Os for more efficient -->
