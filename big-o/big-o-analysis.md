@@ -24,19 +24,20 @@ Recall that time complexity is the measurement of how the amount of time an algo
 ### Generic Steps
 
 1. Read through the code, and identify all lists that have a variable size.
-    - Typically, with one list, we say it has _n_ number of elements.
+   - Typically, with one list, we say it has _n_ number of elements.
 1. Identify all of the operations in the algorithm
 1. Recognize which operations are related to the lists of size _n_
-    - Typically, the operations inside of a for loop get multipled by _n_ times
-    - This relationship will change depending on the kind of loop and the logic in the loop. Consider cases where the loop `break`s.
+   - Typically, the operations inside of a for loop get multipled by _n_ times
+   - This relationship will change depending on the kind of loop and the logic in the loop. Consider cases where the loop `break`s.
 1. Create an equation that represents how many operations there are
-    - This equation can use _n_ as a variable
+   - This equation can use _n_ as a variable
 1. Drop the constants (notes below)
 1. Match this Big O to the most relevant complexity
 
 ### !callout-secondary
 
 ## What's an Operation?
+
 One operation is when one operator is used. There are arithmetic operators (`+`, `-`, `*`, `%`, etc), assignment operators (`=`, `+=`, etc), comparison operators (`==`, `<`, `>=`, etc), logical operators (`and`, `or`, `not`), and more miscellaneous ones (`is`, `is not`, `in`, `not in`, etc)
 
 ### !end-callout
@@ -56,23 +57,27 @@ def linear_search(array, item):
 1. Identify all lists with variable size: There is one list with variable size, and it's a size of _n_.
 
 2. Identify all operations in this algorithm:
-    1. `if item == array[i]`
-    1. `i in range(len(array))`
+
+   1. `if item == array[i]`
+   1. `i in range(len(array))`
 
 3. Recognize which operations have a relationship to list size:
-    1. `if item == array[i]` can happen _n_ times
-    1. `i in range(len(array))` can happen _n_ times
-        - If this is not obvious, this is a detail that we can leave as an unknown. We may have other clues in the rest of the process that could help us. We can revisit this if we realize that this is crucial to our solution.
+
+   1. `if item == array[i]` can happen _n_ times
+   1. `i in range(len(array))` can happen _n_ times
+      - If this is not obvious, this is a detail that we can leave as an unknown. We may have other clues in the rest of the process that could help us. We can revisit this if we realize that this is crucial to our solution.
 
 4. Create a formula that counts how many operations there are:
-    1. Two operations can happen _n_ times. We can express this as _2 * n_, or _2n_
+
+   1. Two operations can happen _n_ times. We can express this as _2 \* n_, or _2n_
 
 5. Drop the constants:
-    1. In math, when looking at _2n_, `2` is a constant that we can drop
-    1. After dropping the constant, our remaining formula is _n_
+
+   1. In math, when looking at _2n_, `2` is a constant that we can drop
+   1. After dropping the constant, our remaining formula is _n_
 
 6. Match this formula with the most relevant complexity:
-    1. _n_ matches _O(n)_ the most closely. This algorithm has linear time complexity.
+   1. _n_ matches _O(n)_ the most closely. This algorithm has linear time complexity.
 
 ### Large Example
 
@@ -102,30 +107,34 @@ def reverse(array):
 1. Identify all lists with variable size: There is one list with variable size, and it's a size of _n_.
 
 2. Identify all operations in this algorithm:
-    1. `len(array) <= 1`
-    1. `i = 0`
-    1. `j = ...`
-    1. `len(array) - 1`
-    1. `i < j`
-    1. `temp = ...`
-    1. `array[i] = ...`
-    1. `array[j] = ...`
-    1. `i += 1`
-    1. `j -= 1`
+
+   1. `len(array) <= 1`
+   1. `i = 0`
+   1. `j = ...`
+   1. `len(array) - 1`
+   1. `i < j`
+   1. `temp = ...`
+   1. `array[i] = ...`
+   1. `array[j] = ...`
+   1. `i += 1`
+   1. `j -= 1`
 
 3. Recognize which operations have a relationship to list size:
-    1. All 4 of the operations outside of the `while` loop will only happen once; they have no relationship to list size
-    1. All 6 of the operations inside the `while` loop can happen _n_ times
+
+   1. All 4 of the operations outside of the `while` loop will only happen once; they have no relationship to list size
+   1. All 6 of the operations inside the `while` loop can happen _n_ times
 
 4. Create a formula that counts how many operations there are:
-    1. We can express this as _4 + (6 * n)_, or _4 + 6n_
+
+   1. We can express this as _4 + (6 \* n)_, or _4 + 6n_
 
 5. Drop the constants:
-    1. We are able to drop `4 +` and `6 *`
-    1. After dropping the constants, our remaining formula is _n_
+
+   1. We are able to drop `4 +` and `6 *`
+   1. After dropping the constants, our remaining formula is _n_
 
 6. Match this formula with the most relevant complexity:
-    1. _n_ matches _O(n)_ the most closely. This algorithm has linear time complexity.
+   1. _n_ matches _O(n)_ the most closely. This algorithm has linear time complexity.
 
 ### What is "Dropping the Constant," or Finding the Dominant Order?
 
@@ -134,6 +143,7 @@ In complexity analysis, programmers care about the dominant order, or the part o
 Mathematical constants are values that have a fixed value. Constants tend to be added, subtracted, multiplied, or divided in our formulas. In Big O, constants will affect our complexity (O(6n) is different than O(n))... but they do not affect the curve enough that is meaningful for complexity analysis.
 
 Some examples:
+
 - O(2n) is shortened to O(n)
 - O(n/2) (or one half of _n_) is shortened to O(n)
 - O(n + n<sup>2</sup>) is shortened to O(n<sup>2</sup>)
@@ -145,6 +155,7 @@ Recall that space complexity is the measurement of how much memory an algorithm 
 ### !callout-info
 
 ## Lists Require More Memory Than A Single Value
+
 We can imagine that a single value `x = 42` will take "one unit" of memory, because it is a variable that holds one value. Following that logic, a list with many values, such as `[42, 43, 44, 45]` will take "four units" of memory. The amount of memory that the list holds is _n_ amount, in terms of space complexity.
 
 We will get into the details of lists and memory in a future lesson.
@@ -154,9 +165,9 @@ We will get into the details of lists and memory in a future lesson.
 ### Generic Steps
 
 1. Read through the code, and identify all places where a variable is _initially assigned._
-    - We do not need to count re-assignment of variables, as the value will occupy the same memory as the initial assignment
+   - We do not need to count re-assignment of variables, as the value will occupy the same memory as the initial assignment
 1. Recognize which variables have a value that could take a variable amount of memory
-    - Typically, storing a list will require _n_ amount of memory
+   - Typically, storing a list will require _n_ amount of memory
 1. Create an equation that represents how many values are initialized and stored in memory
 1. Drop the constants
 1. Match this Big O to a relevant complexity
@@ -174,23 +185,27 @@ def linear_search(array, item):
 ```
 
 1. Identify all places where the algorithm initializes a variable. (Don't count the input data set!)
-    - `i`
-    - `item`
+
+   - `i`
+   - `item`
 
 2. Recognize which variables hold a variable amount of memory
-    - Even though we _re-assign_ `i` _n_ number of times, `i` is only one variable holding one value. `i` doesn't hold a variable amount of memory.
-    - `item` is never re-assigned
+
+   - Even though we _re-assign_ `i` _n_ number of times, `i` is only one variable holding one value. `i` doesn't hold a variable amount of memory.
+   - `item` is never re-assigned
 
 3. Create an equation to represent the amount of memory needed
-    - The variable `i` will always occupy "one unit" of memory
-    - The variable `item` will always occupy "one unit" of memory
-    - We can express this as _1 + 1_, or _2_
+
+   - The variable `i` will always occupy "one unit" of memory
+   - The variable `item` will always occupy "one unit" of memory
+   - We can express this as _1 + 1_, or _2_
 
 4. Drop the constants
-    - In this case, _2_ is a constant, which leads us to...
+
+   - In this case, _2_ is a constant, which leads us to...
 
 5. Match this to the most relevant Big O complexity
-    - This algorithm has is O(1), and has constant space complexity
+   - This algorithm has is O(1), and has constant space complexity
 
 ### Large Example
 
@@ -216,22 +231,26 @@ def reverse(array):
 ```
 
 1. Identify all places where the algorithm initializes a variable. (Don't count the input data set!)
-    - `i`
-    - `j`
-    - `temp`
+
+   - `i`
+   - `j`
+   - `temp`
 
 2. Recognize which variables hold a variable amount of memory
-    - Even though we _re-assign_ `i`, `j`, and `temp` _n_ number of times, they are each only one variable holding one value.
+
+   - Even though we _re-assign_ `i`, `j`, and `temp` _n_ number of times, they are each only one variable holding one value.
 
 3. Create an equation to represent the amount of memory needed
-    - The variables `i`, `j`, and `temp` will always occupy "one unit" of memory
-    - We can express this as _1 + 1 + 1_, or _3_
+
+   - The variables `i`, `j`, and `temp` will always occupy "one unit" of memory
+   - We can express this as _1 + 1 + 1_, or _3_
 
 4. Drop the constants
-    - In this case, _3_ is a constant, which leads us to...
+
+   - In this case, _3_ is a constant, which leads us to...
 
 5. Match this to the most relevant Big O complexity
-    - This algorithm has is O(1), and has constant space complexity
+   - This algorithm has is O(1), and has constant space complexity
 
 ## Comparing Two Algorithms
 
@@ -242,6 +261,7 @@ As an example, we'll compare two algorithms for reversing a list.
 ### Algorithm A
 
 The first implementation for reversing a list is found earlier in this lesson. We discovered it has...
+
 - Time complexity of O(n)
 - Space complexity of O(1)
 
@@ -274,6 +294,7 @@ def reverse(array):
 ```
 
 An analysis of the time complexity might follow this line of thinking:
+
 1. There are a few operations outside of loops that will be added to the Big O
 1. There are two loops that iterate over _n_ elements
 1. We can start to express this as _(Some Constant Number of Operations Outside the Loop) + 2n_
@@ -281,6 +302,7 @@ An analysis of the time complexity might follow this line of thinking:
 1. This algorithm performs on linear time complexity
 
 And we might analyze space complexity like so:
+
 1. `i` and `j` are two variables that get initialized
 1. `temp_array` is a list that will always have _n_ elements
 1. We can express this as _2 + n_
@@ -291,10 +313,10 @@ And we might analyze space complexity like so:
 
 Now, we can confidently compare Algorithm A and Algorithm B:
 
-- | Algorithm A | Algorithm B
---- | --- | ---
-Time Complexity | O(n) | O(n)
-Space Complexity | O(1) | O(n)
+| -                | Algorithm A | Algorithm B |
+| ---------------- | ----------- | ----------- |
+| Time Complexity  | O(n)        | O(n)        |
+| Space Complexity | O(1)        | O(n)        |
 
 Overall, the efficiency of these two algorithms does not differ by much; they both have a time complexity of O(n).
 
