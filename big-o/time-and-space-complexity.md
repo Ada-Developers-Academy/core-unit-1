@@ -21,7 +21,7 @@ Ultimately, the machine that runs programs has limits, whether it's time or memo
 | Algorithm        | A specific process, set of rules, or solution to be followed when problem-solving                  | -        | "Sorting items in a list can be implemented a lot of different ways; there are different algorithms for sorting."        |
 | Efficient        | A quality of code that means it is fast, and/or it does not take up much memory                    | -        | "My code is so slow, it takes a minute to finish running with this data set! I should refactor it to be more efficient." |
 | Time Complexity  | A measurement of how the amount of time an algorithm takes to run as the size of the input changes |
-| Space Complexity | A measurement of how much memory algorithm uses as the size of the input changes                   |
+| Space Complexity | A measurement of how much memory an algorithm uses as the size of the input changes                   |
 
 ## Considering the Algorithm
 

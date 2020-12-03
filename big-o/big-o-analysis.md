@@ -138,26 +138,98 @@ Some examples:
 
 ## Space Complexity: Code to Big O
 
+Recall that space complexity is the measurement of how much memory an algorithm uses as the size of the input changes. Space complexity is measured in the _amount of memory allocated in this algorithm._ This amount of memory doesn't include the memory that stores our data set. Our goal will be to count the number of variables needed.
+
+### !callout-info
+
+## Lists Require More Memory Than A Single Value
+We can imagine that a single value `x = 42` will take "one unit" of memory, because it is a variable that holds one value. Following that logic, a list with many values, such as `[42, 43, 44, 45]` will take "four units" of memory. The amount of memory that the list holds is _n_ amount, in terms of space complexity.
+
+We will get into the details of lists and memory in a future lesson.
+
+### !end-callout
+
+### Generic Steps
+
+1. Read through the code, and identify all places where a variable is _initially assigned._
+    - We do not need to count re-assignment of variables, as the value will occupy the same memory as the initial assignment
+1. Recognize which variables have a value that could take a variable amount of memory
+    - Typically, storing a list will require _n_ amount of memory
+1. Create an equation that represents how many values are initialized and stored in memory
+1. Drop the constants
+1. Match this Big O to a relevant complexity
+
+### Small Example
+
+Given an implementation of linear search...
+
+```python
+def linear_search(array, item):
+    for i in range(len(array)):
+        if item == array[i]:
+            return i
+    return False
 ```
-# array is the input integer array to the algorithm
 
-if array.length <= 1
-  return # nothing to reverse
+1. Identify all places where the algorithm initializes a variable. (Don't count the input data set!)
+    - `i`
+    - `item`
 
-i = 0
-j = array.length - 1
+2. Recognize which variables hold a variable amount of memory
+    - Even though we _re-assign_ `i` _n_ number of times, `i` is only one variable holding one value. `i` doesn't hold a variable amount of memory.
+    - `item` is never re-assigned
 
-while i < j
-  # swap values at i and j
-  temp = array[i]
-  array[i] = array[j]
-  array[j] = temp
+3. Create an equation to represent the amount of memory needed
+    - The variable `i` will always occupy "one unit" of memory
+    - The variable `item` will always occupy "one unit" of memory
+    - We can express this as _1 + 1_, or _2_
 
-  increment i
-  decrement j
+4. Drop the constants
+    - In this case, _2_ is a constant, which leads us to...
+
+5. Match this to the most relevant Big O complexity
+    - This algorithm has is O(1), and has constant space complexity
+
+### Large Example
+
+Using this implementation of reversing the order of a list...
+
+```python
+def reverse(array):
+    if len(array) <= 1:
+        return array
+
+    i = 0
+    j = len(array) - 1
+
+    while i < j:
+        temp = array[i]
+        array[i] = array[j]
+        array[j] = temp
+
+        i += 1
+        j -= 1
+
+    return array
 ```
 
-You must have noticed the three memory allocations done by the program: i, j and temp. These are three integers created. Regardless of the size of the input array (be it 500 or 900,000), there will always be only and exactly three integers created. As such, the new memory allocations in this algorithm do not change as the size or value of the input changes. Such algorithms are said to have constant space complexity or O(1) space complexity.
+1. Identify all places where the algorithm initializes a variable. (Don't count the input data set!)
+    - `i`
+    - `j`
+    - `temp`
+
+2. Recognize which variables hold a variable amount of memory
+    - Even though we _re-assign_ `i`, `j`, and `temp` _n_ number of times, they are each only one variable holding one value.
+
+3. Create an equation to represent the amount of memory needed
+    - The variables `i`, `j`, and `temp` will always occupy "one unit" of memory
+    - We can express this as _1 + 1 + 1_, or _3_
+
+4. Drop the constants
+    - In this case, _3_ is a constant, which leads us to...
+
+5. Match this to the most relevant Big O complexity
+    - This algorithm has is O(1), and has constant space complexity
 
 ## Example: Comparing Two Algorithms
 
