@@ -2,33 +2,139 @@
 
 ## Learning Goals
 
+- Apply time complexity analysis to arrays and operations on arrays
+- Apply space complexity analysis to arrays and operations on arrays
+
 ## Introduction
+
+When we read code, we can analyze an algorithm and come to a conclusion about its time and space complexity. This skill will let us check the efficiency of our code as we write it or review it!
+
+This lesson is structured this way: We will...
+
+- introduce some guidelines and some steps to take when analyzing complexity
+- apply it to a small example, and give explanations
+- apply it to a large example, and give explanations
+
+We encourage you all to read through these sections. After each example, re-read the example and follow along the same thought process, so you can come to the same conclusions too.
 
 ## Time Complexity: Code to Big O
 
+Recall that time complexity is the measurement of how the amount of time an algorithm takes to run as the size of the input changes. Also, time complexity is usually measured in _number of operations._ Therefore, our goal is to find a formula that captures how many operations an algorithm executes.
+
+### Generic Steps
+
+1. Read through the code, and identify all lists that have a variable size.
+    - Typically, with one list, we say it has _n_ number of elements.
+1. Identify all of the operations in the algorithm
+1. Recognize which operations are related to the lists of size _n_
+    - Typically, the operations inside of a for loop get multipled by _n_ times
+    - This relationship will change depending on the kind of loop and the logic in the loop. Consider cases where the loop `break`s.
+1. Create an equation that represents how many operations there are
+    - This equation can use _n_ as a variable
+1. Drop the constants (notes below)
+1. Match this Big O to the most relevant complexity
+
+### !callout-secondary
+
+## What's an Operation?
+One operation is when one operator is used. There are arithmetic operators (`+`, `-`, `*`, `%`, etc), assignment operators (`=`, `+=`, etc), comparison operators (`==`, `<`, `>=`, etc), logical operators (`and`, `or`, `not`), and more miscellaneous ones (`is`, `is not`, `in`, `not in`, etc)
+
+### !end-callout
+
+### Small Example
+
+This is one implementation of the linear search algorithm. It takes in a list of _n_ element, and an item to search for. It's responsibility is to return the index of that item.
+
+```python
+def linear_search(array, item):
+    for i in range(len(array)):
+        if item == array[i]:
+            return i
+    return False
 ```
-# array is the input integer array to the algorithm
 
-if array.length <= 1
-  return # nothing to reverse
+1. Identify all lists with variable size: There is one list with variable size, and it's a size of _n_.
 
-i = 0
-j = array.length - 1
+2. Identify all operations in this algorithm:
+    1. `if item == array[i]`
+    1. `i in range(len(array))`
 
-while i < j
-  # swap values at i and j
-  temp = array[i]
-  array[i] = array[j]
-  array[j] = temp
+3. Recognize which operations have a relationship to list size:
+    1. `if item == array[i]` can happen _n_ times
+    1. `i in range(len(array))` can happen _n_ times
+        - If this is not obvious, this is a detail that we can leave as an unknown. We may have other clues in the rest of the process that could help us. We can revisit this if we realize that this is crucial to our solution.
 
-  increment i
-  decrement j
+4. Create a formula that counts how many operations there are:
+    1. Two operations can happen _n_ times. We can express this as _2 * n_, or _2n_
+
+5. Drop the constants:
+    1. In math, when looking at _2n_, `2` is a constant that we can drop
+    1. After dropping the constant, our remaining formula is _n_
+
+6. Match this formula with the most relevant complexity:
+    1. _n_ matches _O(n)_ the most closely. This algorithm has linear time complexity.
+
+### Large Example
+
+This is one implementation of reversing the order of items in a list. It loops through an array, and starts looking at the first item (at index `i`) and the last item (at index `j`), and swaps their values, making use of a temporary variable `temp`. It will return a list in reverse order.
+
+```python
+def reverse(array):
+    if len(array) <= 1:
+        return array
+
+    i = 0
+    j = len(array) - 1
+
+    while i < j:
+        temp = array[i]
+        array[i] = array[j]
+        array[j] = temp
+
+        i += 1
+        j -= 1
+
+    return array
 ```
 
-### Always Looking for the Biggest Big O
+1. Identify all lists with variable size: There is one list with variable size, and it's a size of _n_.
 
-Constants are dropped. Constants only shift our graph slightly, but do not affect the overall look of the graph by much. O(2n) is shortened to O(n). O(1⁄2 n) is shortened to O(n).
-Usually when an algorithm's growth rate is a mix of orders, the dominant order is shown, and the rest are dropped. O(n^2) + O(n) or O(n^2 + n) would be shortened to O(n^2). This is because O(n^2) + O(n) is smaller than O(n^2) + O(n^2).In other words, O(n^2) + O(n) is in the order of O(n^2) + O(n^2). O(n^2) + O(n^2) can be simplified to O(n^2) _ 2 or O(2 _ n^2). Then, we can drop the constant, and simply state that the complexity is O(n^2).
+2. Identify all operations in this algorithm:
+    1. `len(array) <= 1`
+    1. `i = 0`
+    1. `j = ...`
+    1. `len(array) - 1`
+    1. `i < j`
+    1. `temp = ...`
+    1. `array[i] = ...`
+    1. `array[j] = ...`
+    1. `i += 1`
+    1. `j -= 1`
+
+3. Recognize which operations have a relationship to list size:
+    1. All 4 of the operations outside of the `while` loop will only happen once; they have no relationship to list size
+    1. All 6 of the operations inside the `while` loop can happen _n_ times
+
+4. Create a formula that counts how many operations there are:
+    1. We can express this as _4 + (6 * n)_, or _4 + 6n_
+
+5. Drop the constants:
+    1. We are able to drop `4 +` and `6 *`
+    1. After dropping the constants, our remaining formula is _n_
+
+6. Match this formula with the most relevant complexity:
+    1. _n_ matches _O(n)_ the most closely. This algorithm has linear time complexity.
+
+### What is "Dropping the Constant," or Finding the Dominant Order?
+
+In complexity analysis, programmers care about the dominant order, or the part of the complexity that affect the complexity _the most._
+
+Mathematical constants are values that have a fixed value. Constants tend to be added, subtracted, multiplied, or divided in our formulas. In Big O, constants will affect our complexity (O(6n) is different than O(n))... but they do not affect the curve enough that is meaningful for complexity analysis.
+
+Some examples:
+- O(2n) is shortened to O(n)
+- O(n/2) (or one half of _n_) is shortened to O(n)
+- O(n + n<sup>2</sup>) is shortened to O(n<sup>2</sup>)
 
 ## Space Complexity: Code to Big O
 
