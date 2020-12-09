@@ -24,18 +24,18 @@ There are plenty of functions we want to use, but it isn't necessary for us to u
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | Documentation | Any written text, illustrations or video that describe a software or program to its users                                                   | Docs                                                                                         | "We use Python documentation to understand Python functionality in-depth"        |
 | Source code   | The original code that creates a program, usually the human-readable version                                                                | Implementation code                                                                          | "It's fascinating to read through Python's source code and see how it was made!" |
-| API           | A set of rules and tools that allows software to communicate with other software. Specifically designed to allow access to a wide audience. | "To learn how to interact with the external Slack service, we should look at the Slack API." |
+| API           | A set of rules and tools that allows software to communicate with other software. Specifically designed to allow access to a wide audience. | | "To learn how to interact with the external Slack service, we should look at the Slack API." |
 
 ## Documentation Varies
 
-Let's compare the documentation between the pandas library API and the Slack API. We should see that they're dramatically different in a lot of ways:
+Let's compare the documentation between the [pandas library API](https://pandas.pydata.org/docs/reference/index.html) and the [Slack API](https://api.slack.com/). We should see that they're dramatically different in a lot of ways:
 
 - how they look
 - the literal words
 - how the words are structured
 - how to navigate the page
 
-Documentation is typically written by the service itself. For example, the documentation for the Twitter API is provided by Twitter itself.
+Documentation is typically written by the service itself. For example, the documentation for the [Twitter API](https://developer.twitter.com/en/docs/twitter-api) is provided by Twitter itself.
 
 There is no standard for documentation. Because there's no standard, documentation between different libraries and APIs will vary... some will be clear and readable, and others will be obscure or sparse. (Feel free to feel frustrated at this.)
 
