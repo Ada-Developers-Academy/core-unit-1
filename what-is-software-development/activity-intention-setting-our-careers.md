@@ -26,7 +26,7 @@ Write these for your future self.
 
 ##### !question
 
-Write down a mobile app, web app, or software you like and why. (Ex: Zombies, Run! app, netflix.com, Microsoft OneNote)
+Write down a mobile app, web app, or piece of software you like and why. (Ex: Zombies, Run! app, netflix.com, Microsoft OneNote)
 
 ##### !end-question
 ### !end-challenge

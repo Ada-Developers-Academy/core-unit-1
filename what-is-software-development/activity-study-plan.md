@@ -68,6 +68,8 @@ Let's discuss our experiences in groups for about 15 minutes. Only share what yo
 Take 5 minutes to reflect on the following questions. Write down your answers for yourself.
 
 1. _Where_ do you work on your computer? On a desk? On a couch? Upside-down? In a noisy kitchen? In a quiet cave?
+
+If you listed multiple places, how would you rank each place for maintaining focus, comfort, ambiance, or any other quality that's important to you? 
     - What are the ways that this can be helpful?
     - ... or challenging?
 1. _When_ do you do work? Early in the morning? Late at night? Does it fluctuate or is it consistent? 

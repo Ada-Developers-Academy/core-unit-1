@@ -46,7 +46,7 @@ Source code is the kind of code that we'll write in this curriculum!
 
 ## What does "Open Source" mean?
 
-Open Source Software (OSS) means software that was intentionally built with an open development process -- the development and its source code is available for people to look at, and to use! (within its licenses). OSS encourages collaboration, lower barriers to entry, and accountability.
+Open Source Software (OSS) means software that was intentionally built with an open development process -- the development and its source code is available for the public to look at, and to use! (within its licenses). OSS encourages collaboration, lower barriers to entry, and accountability.
 
 ### !end-callout
 

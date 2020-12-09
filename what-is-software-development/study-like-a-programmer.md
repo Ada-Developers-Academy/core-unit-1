@@ -45,6 +45,7 @@ Some words that might describe what the role of a software developer is:
 - A team-player
 - A logician
 - A chef who remixes different "recipes" of code
+- Someone who writes stories for machines. These stories almost always build off others - like fan-fictions or sequels
 - Someone who gets paid to drink La Croix
 - A person who uses Google, Stack Overflow, and the Internet a lot
 - **Someone who will never get bored because there's always more to learn and more to improve**
@@ -248,7 +249,7 @@ We recommend starting to review material by starting with...
 - Review vocabulary
 - Creating a new list of questions for yourself
 
-Set up a cadence for yourself to review material. This is where your present-self should look out for your future self: reviewing material is much easier, funner, and more effective if you take notes in the beginning.
+Set up a cadence for yourself to review material. This is where your present-self should look out for your future self: reviewing material is much easier, more fun, and more effective if you take notes in the beginning.
 
 We recommend trying to review material...
 
@@ -279,7 +280,7 @@ Encourage yourself and others to take breaks often.
 
 #### Sleep
 
-Your brain is probably going to be much less productive at fixing a bug on the 11th hour of work today than you will be if you get good sleep and tackle the same bug first thing in the morning.  Also, don't be afraid to take naps!
+Your brain is probably going to be much less productive at fixing a bug on the 11th hour of work today than you will be if you get good sleep and tackle the same bug first thing in the morning. In fact, taking care of yourself as a software engineer usually leads to higher overall productivity than overworking! Also, don't be afraid to take naps!
 
 #### Feel Like a Programmer!
 
