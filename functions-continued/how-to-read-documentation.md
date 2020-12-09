@@ -169,3 +169,39 @@ Our pro tips:
 - Match the version of docs you're using to the version you're using
 - Take time to learn how to navigate the docs
 - Always play around with examples before using it in your own code
+
+## Check for understanding
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: checkbox
+* id: 22ca8275-4368-4940-b758-ac79e3222f24
+* title: Reading Documentation
+
+##### !question
+
+What are some important aspects of documentation we should look out for?
+
+##### !end-question
+
+##### !options
+
+* Version of Documentation  
+* Section Headings of docs, especially ones that describe the _kind_ of functionality you're looking for
+* Lists of functions 
+* Endpoints
+
+
+##### !end-options
+
+##### !answer
+
+* Version of Documentation  
+* Section Headings of docs, especially ones that describe the _kind_ of functionality you're looking for
+* Lists of functions 
+* Endpoints
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
