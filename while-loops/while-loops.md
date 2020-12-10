@@ -2,8 +2,8 @@
 
 ## Learning Goals
 
-* Practice using while loops to loop while a conditional is true 
-* Apply a counter variable while using while loops
+* Practice using while loops
+* Practice using a counter variable in a while loop
 
 ## Introduction
 
@@ -11,16 +11,16 @@ Imagine writing software that creates digital group greeting cards. Before the u
 
 How can we solve this problem using Python code?
 
-for loops allow programmers to iterate over lists. Sometimes, we need to repeat lines of code, but not because we are iterating through a list. We can explore the while loop as an alternative!
+`for` loops allow programmers to iterate over lists. Sometimes, we need to repeat lines of code, but not because we are traversing (iterating through) a list. We can explore the `while` loop as an alternative!
 
 ## Vocabulary and Synonyms
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
-Infinite Loop | A loop that runs and never terminates or ends. Leads to a stack overflow error. | endless loop | "The loop kept going and going forever"
-Counter variable | A variable solely used to representing a number that increments or decrements. Usually, it's used to count loops. It needs to be initialized outside of the loop. This is an informal, casual label! | - | "The counter variable `i` started at `0` and went up with each loop"
+Infinite loop | A loop that runs and never terminates or ends. This leads to a program freezing or getting stuck doing the same thing forever.  | endless loop | "The loop kept going and going forever, " "The program hit an infinite loop and I had to terminate it manually"
+Counter variable | A variable solely used to represent a number that increments or decrements. Usually, counter variables are used to count loop iterations. It needs to be initialized outside of the loop. This is an informal, casual label! | - | "The counter variable `i` started at `0` and incremented by 1 with each loop"
 
-## While Loops Syntax
+## `while` Loop Syntax
 
 While loops are loops that run _while_ some condition is `True` or truthy.
 
@@ -48,15 +48,15 @@ while i <= 5:
 print("We are outside the while loop! Wooo!")
 ```
 
-Here, we have a variable `i` . While `i` is less than or equal to 5, we will print `f"The value of i is {i}"` . Then, we will increment `i` by one.
+Here, we have a variable `i` . While `i` is less than or equal to 5, we will print `f"The value of i is {i}"` and then increment `i` by one.
 
-`i` begins with a value of `1` . As the while loop loops, `i` grows bigger and bigger, since we're modifying the same `i` variable.
+`i` begins with a value of `1`. As the `while` loop iterates, `i` grows bigger and bigger, since we're modifying the same `i` variable.
 
-At some point, `i` will have a value of `6` . Then, `i <= 5` is falsey, and the while loop will exit. Our code execution moves on to the final `print` statement.
+At some point, `i` will have a value of `6` . The conditional, `i <= 5`, will evaluate to `False`  and the while loop will exit. Our code execution moves on to the final `print` statement.
 
 Another way to read this while loop is with a table:
 
-| Value of `i` at the beginning of the loop | Is `i <= 10` ? | Value of `i` at the end of the loop body |
+| Value of `i` at the beginning of the loop iteration | Is `i <= 5` ? | Value of `i` at the end of the loop body |
 |-------------------------------------------|---------------|------------------------------------------|
 | `1` | `True` | `2` |
 | `2` | `True` | `3` |
@@ -65,11 +65,11 @@ Another way to read this while loop is with a table:
 | `5` | `True` | `6` |
 | `6` | `False` | Loop body doesn't execute                |
 
-Here, we should observe that at some point, `i` has a value of `6` , and the code asked "Is 6 <= 5? Is that true?" Because the answer is false, the code skips over the rest of the loop.
+Here, we should observe that at some point, `i` has a value of `6` , and the code asked "Is 6 <= 5? Is that true?" Because the answer is no, the program does not execute the loop body again and exits the loop.
 
-Callout: While loops can accidentally run infinitely! If the conditional for the while loop never becomes false, then the while loop and the program keep going, and going, and going... until something forces it to stop (such as a human closing down the program), or our machine cannot run it anymore. We call these cases **infinite loops, ** and are always a bug.
+Callout: While loops can accidentally run infinitely! If the conditional for the while loop never becomes false, then the while loop and the program keep going, and going, and going... until something forces it to stop (such as a human closing down the program), or our machine cannot run it anymore. We call these cases **infinite loops,** and are often a bug.
 
-## Used While Problem-Solving
+## Problem-Solving Using `while` 
 
 Let's explore different examples that apply while loops.
 
@@ -100,7 +100,7 @@ print("I have a very full flower basket with a dozen flowers:", flower_basket)
 
 Callout: Note that this conditional uses `<` , _not_ `<=` , because we don't want to add another flower if the length of `flower_basket` is _equal_ to twelve. Watch out for an off-by-one error!
 
-We can use a while loop that only checks if a variable is truthy!
+We can use a while loop that only checks if a variable is `True` or truthy!
 
 ``` python
 import random
@@ -127,17 +127,24 @@ while i <= 5:
 print("We are outside the while loop! Wooo!")
 ```
 
-A variable whose job it is to increment or decrement, specifically in a loop, is often called a _counter variable._
+A variable that is only incremented or decremented, specifically in a loop, is often called a _counter variable._
 
-This counter variable is:
+A counter variable is:
 
 * used in the conditional expression for the while loop
-* must eventually be modified in the while loop
-* typically initialized before the loop
+* must be modified somewhere in the body of the while loop
+* must be initialized before the loop
 
 In this case, `i` is the counter variable. It gets setup before the while loop begins, and then increments inside the while loop. When we forget to change our counter variable, we often get infinite loops and bugs!
 
-Callout: An alternative syntax is to use for loops with a range. The for loop syntax sets up and modifies something like a counter variable!
+
+### !callout-info
+
+## `for` Loops
+An alternative syntax is to use `for` loops with a range. The `for` loop syntax sets up and modifies something like a counter variable!
+
+### !end-callout
+
 
 ### `break` and `continue`
 
@@ -162,7 +169,7 @@ Possible example use cases:
 * needing to find a specific element, then leave the iteration
 * needing to leave the loop in case it comes across some invalid or error state
 
-`continue` is a keyword that will stop executing the current iteration, and resume execution at the next iteration. When our code sees `continue` , it doesn't run anymore code in that iteration, but continues to the next loop.
+`continue` is a keyword that will stop executing the current iteration, and resume execution at the next iteration. When our code sees `continue`, it doesn't run anymore code in that iteration but continues to the next iteration of the loop.
 
 ``` python
 def demonstrate_continue():
