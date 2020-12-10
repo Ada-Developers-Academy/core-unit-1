@@ -8,11 +8,13 @@
 
 Computers run our programs pretty quickly. For our projects, when we run the code or run the tests, it takes a fraction of a second, sometimes maybe one or two seconds. Our computers use a tiny bit of memory while running the program.
 
-However, those fractions of seconds add up. And what would happen if a computer did not have enough memory to hold everything in your code? In programming, we love to think in hypotheticals, and a hypothetical to constantly think about is, "What would happen if our data set was millions of items?"
+However, those fractions of seconds add up. And what would happen if a computer did not have enough memory to hold everything in your code? Recall every app you've used that was slow; it might have been slow because of slow Internet, and it might have been slow because retrieving and processing data takes noticeable time and resources.
 
-With a data set infinitely large, does our program slow down dramatically? Or slowly? Does our program take a very large amount of memory space?
+In programming, a way to create safe code is to consider different, extreme, possible situations. A great software situation to constantly think about is, "What would happen if our data set was millions of items?"
 
-Ultimately, the machine that runs programs has limits, whether it's time or memory. Machines have limited processing power and memory. Considering how much computing time and memory a program running our code consumes leads us to writing better code. Code that is fast or doesn't take a lot of memory is considered to be efficient.
+With a data set that is millions of items large, does our program slow down dramatically? Or slowly? Does our program take a very large amount of memory space?
+
+Ultimately, every machine that runs programs has limits, whether it's time or memory. Machines have limited processing power and memory. Considering how much computing time and memory a program running our code consumes leads us to writing better code. Code that is fast or doesn't take a lot of memory is considered to be efficient.
 
 ## Vocabulary and Synonyms
 
