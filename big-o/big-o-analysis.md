@@ -54,7 +54,7 @@ def linear_search(array, item):
     return False
 ```
 
-1. Identify all lists with variable size: There is one list with variable size, and it's a size of _n_.
+1. Identify all lists with variable size: There is one list with variable size, `array`, and it's a size of _n_.
 
 2. Identify all operations in this algorithm:
 

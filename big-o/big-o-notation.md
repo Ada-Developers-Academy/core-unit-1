@@ -33,7 +33,7 @@ The formal definition of Big O Notation is rooted in mathematics: Big O Notation
 
 This limiting behavior is the most important information; we are looking for a mathematical expression to describe the growth of complexity.
 
-To quantitatively represent the worst case performance for speed and memory utilization of an algorithm, we use the Big O notation. Leveraging the big O notation, we can:
+To quantitatively represent the worst case performance for speed and memory utilization of an algorithm, we use the Big O notation. Leveraging big O notation, we can:
 
 - Make quantitative judgments about the efficiency of one algorithm over another
 - Predict whether the software will meet any efficiency constraints that exist
