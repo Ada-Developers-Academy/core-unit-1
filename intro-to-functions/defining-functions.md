@@ -291,6 +291,8 @@ Return statements **always** end and exit a function call. When a program reache
 
 ![Monopoly Card that reads "ADVANCE TO GO (COLLECT $200)"](assets/defining-functions-return-monopoly.jpg)
 
+![Monopoly Card that reads "ADVANCE TO GO (COLLECT $200)"](../assets/willow.jpg)
+
 **Here's a Metaphor:** The `return` statement is like playing Monopoly, and getting the card that says "Advance to GO (Collect \$200)". It means that the program should **immediately** pick up its bags (and the return value!) and head back to the code that invoked the function. **Don't even bother looking at the rest of the function!**
 
 Read and run the code below to understand how `return` statements exit a function call, and that the rest of the function does not execute.
