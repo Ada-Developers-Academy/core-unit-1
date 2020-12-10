@@ -28,7 +28,11 @@ The formal definition of Big O Notation is rooted in mathematics: Big O Notation
 
 - The "function" is the algorithm
 - The "argument" is likely the input data set that the algorithm operates on
-- "tends towards infinity" describes that we are considering all hypothetical situations... We consider the complexity when the argument (i.e. the input) is a million rows long a million + 1 rows long, a million + 2 rows long, all the way towards infinity
+- "tends towards infinity" describes that we are considering all hypothetical situations... We consider the complexity when the argument (i.e. the input) is:
+    - a million rows long
+    - a million + 1 rows long
+    - a million + 2 rows long
+    - ... all the way towards infinity
 - "Limiting behavior" describes the rate at which complexity grows. Sometimes, as the argument grows bigger and bigger, the complexity grows rapidly! Sometimes, as the argument grows, the complexity grows slowly.
 
 This limiting behavior is the most important information; we are looking for a mathematical expression to describe the growth of complexity.
@@ -43,6 +47,8 @@ To quantitatively represent the worst case performance for speed and memory util
 This is an example of Big O notation:
 
 > O(n)
+
+Details:
 
 - `O(...)` is the recognizable form of Big O notation
 - Inside the parentheses is some mathematical expression that describes the relationship between the size of the input vs. the complexity of the algorithm
@@ -87,7 +93,7 @@ Developers talk about Big O a lot, so it's useful to know how to talk about this
 
 Let's consider and compare some "real-world" algorithms.
 
-Consider the problem: You have an address book, and you want to find the contact information for your friend Taylor.
+Consider this problem: You have an address book, and you want to find the contact information for your friend Taylor.
 
 | Algorithm                                                                                                                                                                                                                                                                                                   | Big O    |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |

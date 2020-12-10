@@ -91,7 +91,7 @@ Read through the algorithms that have slightly different details. Consider how m
 
 Re-read the examples again, imagining having a million contacts. Did any of these algorithms require us to create and hold something that wasn't an address book?
 
-**\*Space complexity** is considering how much space an algorithm takes.
+***Space complexity*** is considering how much space an algorithm takes.
 
 ## Best, Worst, and Average Cases
 
@@ -103,12 +103,12 @@ We could consider performance of an algorithm in three different scenarios: best
 
 ### Example: The Address Book's Best, Worse, and Average Case
 
-- Let's consider our example, finding our friend "Taylor" in our address book.
+Let's consider our example, finding our friend "Taylor" in our address book.
 
 Let's pick a specific algorithm: Start at the first page of the address book. Read through each page. If you see Taylor's name, you have found their phone number.
 
 - The best case scenario is that Taylor's the very first contact we see. That didn't take any time at all!
-- The worst case scenario is that Taylor is the very last contact, on the very last page, in the address book. With this algorithm, you would have read the entire address book to find one phone number
+- The worst case scenario is that Taylor is the very last contact, on the very last page, in the address book. With this algorithm, you would need to read the entire address book to find one phone number
 - The average case scenario is that Taylor is somewhere in the middle.
 
 If Taylor is the second contact or the second-to-last contact, is that kind of a best case scenario? Kind of a worst case scenario? It isn't; as programmers we can consider those cases to be average cases.
@@ -121,6 +121,6 @@ We can consider time and space complexity by worst and average case, too. Consid
 
 An efficient algorithm is one that runs as fast as possible and requires as little computer memory as possible. We often have to make a trade-off between these two goals. For any given algorithm, do we choose to use more memory to make our program faster, or settle for a slower program that uses less memory?
 
-The answer will ultimately on the context of the algorithm! That being said, we use Big O to inform our decisions more confidently.
+The answer will ultimately on the context of the algorithm! That being said, we can and will use formal measurements to inform our decisions more confidently.
 
 ## Check for Understanding
