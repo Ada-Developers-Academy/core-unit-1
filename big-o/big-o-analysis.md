@@ -150,7 +150,11 @@ Some examples:
 
 ## Space Complexity: Code to Big O
 
-Recall that space complexity is the measurement of how much memory an algorithm uses as the size of the input changes. Space complexity is measured in the _amount of memory allocated in this algorithm._ This amount of memory doesn't include the memory that stores our data set. Our goal will be to count the number of variables needed.
+Recall that space complexity is the measurement of how much memory an algorithm uses as the size of the input changes. Space complexity is measured in the _amount of memory allocated in this algorithm._ This amount of memory doesn't include the memory that stores our data set.
+
+Our goal will be to count the number of new values that are stored. We'll look for places where the code creates new values, like creating new lists, new objects, strings, or primitives.
+
+A great strategy is to count the number of initialized variables, but it will be great to understand that this is only one factor of space complexity.
 
 ### !callout-info
 
@@ -188,6 +192,9 @@ def linear_search(array, item):
 
    - `i`
    - `item`
+   - `array`
+
+Note: For this exercise and the purpose of illustrating space complexity, we'll consider `item` and won't consider `array`. However, it is a completely valid interpretation to not consider `item` or `array`, as they are "inputs" into this function.
 
 2. Recognize which variables hold a variable amount of memory
 

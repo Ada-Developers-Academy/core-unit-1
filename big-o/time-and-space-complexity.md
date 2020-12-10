@@ -12,7 +12,7 @@ However, those fractions of seconds add up. And what would happen if a computer 
 
 With a data set infinitely large, does our program slow down dramatically? Or slowly? Does our program take a very large amount of memory space?
 
-Ultimately, the machine that runs programs has limits, whether it's time or memory. Considering how fast and how much space our code is leads us to better code. Code that is fast or doesn't take a lot of memory is considered to be efficient.
+Ultimately, the machine that runs programs has limits, whether it's time or memory. Machines have limited processing power and memory. Considering how much computing time and memory a program running our code consumes leads us to writing better code. Code that is fast or doesn't take a lot of memory is considered to be efficient.
 
 ## Vocabulary and Synonyms
 
@@ -83,7 +83,7 @@ Finding your friend Taylor's phone number in an address book. (A physical one, w
 
 Read through the algorithms that have slightly different details. Consider how much **_space_** each algorithm takes-- how many pages are used? How many other tools are used?
 
-- Start at the first page of the address book. Read through each page. If you see Taylor's name, you have found their phone number. Each contact gets their own page in the address book.
+- Each contact gets their own page in the address book. Start at the first page of the address book. Read through each page. If you see Taylor's name, you have found their phone number.
 - Re-organize your address book so the contacts are in alphabetical order. Then, open to the half-way point of the address book, then determine which half of the address book "Taylor" is in. Then open that half of the address book, split that in half, and determine which half to look through. Do this until we find "Taylor."
 - Use a bookmark you inserted before that is labeled "Taylor", that leads straight to Taylor's phone number.
 
@@ -117,6 +117,8 @@ Given two algorithms, we can consider which algorithm is more efficient by compa
 
 We can consider time and space complexity by worst and average case, too. Considering the worst case scenario allows us to know how the program will do in the most critical positions. If an algorithm is to be used many times on many different instances, it may be more important to know the average execution time.
 
-An efficient algorithm is one that runs as fast as possible and requires as little computer memory as possible. We often have to settle for a trade-off between these two goals, compromising memory to make things faster, or speed to use less memory.
+An efficient algorithm is one that runs as fast as possible and requires as little computer memory as possible. We often have to make a trade-off between these two goals. For any given algorithm, do we choose to use more memory to make our program faster, or settle for a slower program that uses less memory?
+
+The answer will ultimately on the context of the algorithm! That being said, we use Big O to inform our decisions more confidently.
 
 ## Check for Understanding
