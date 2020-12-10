@@ -98,7 +98,12 @@ while len(flower_basket) < 12:
 print("I have a very full flower basket with a dozen flowers:", flower_basket)
 ```
 
-Callout: Note that this conditional uses `<` , _not_ `<=` , because we don't want to add another flower if the length of `flower_basket` is _equal_ to twelve. Watch out for an off-by-one error!
+### !callout-danger
+
+## Operator Syntax
+Note that this conditional uses `<` , _not_ `<=` , because we don't want to add another flower if the length of `flower_basket` is _equal_ to twelve. Watch out for an off-by-one error!
+
+### !end-callout
 
 We can use a while loop that only checks if a variable is `True` or truthy!
 
@@ -189,7 +194,7 @@ demonstrate_continue()
 
 Possible example uses cases:
 
-* wanting a loop to "skip" in a special case
+* needing to "skip" the rest of a loop body in a special case
 
 ## Check for Understanding
 
