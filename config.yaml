@@ -52,6 +52,37 @@ Standards:
         UID: 63F66B
         Path: /ada-orientation/retrospectives.md
   -
+    Title: What Is Software Development
+    Description: "What is Software?, Study Like a Programmer, Activity: Intention Setting Our Careers, Activity: Study Plan"
+    UID: 9db5757cd4ec665b52cdc40eb2e6c184
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 79b2e5a13c74e07f670ad4f6e0c9be75
+        Path: /what-is-software-development/what-is-software.md
+      -
+        Type: Lesson
+        UID: f1ec9a5d833e26f643c2aa2be8cec25f
+        Path: /what-is-software-development/study-like-a-programmer.md
+      -
+        Type: Instructor
+        UID: 2208effa2c7f806e68a4a11493d42391
+        Path: /what-is-software-development/activity-intention-setting-our-careers.instructor.md
+      -
+        Type: Lesson
+        UID: c0730743994de39e585f6c6a3718b26c
+        Path: /what-is-software-development/activity-intention-setting-our-careers.md
+      -
+        Type: Instructor
+        UID: 99be5734a0b03b94f8dbb3879d6e02e2
+        Path: /what-is-software-development/activity-study-plan.instructor.md
+      -
+        Type: Lesson
+        UID: d0b4410f501e2fd84af60ab3f7195403
+        Path: /what-is-software-development/activity-study-plan.md
+  -
     Title: Approaching a Problem
     Description: Breaking down a problem, Pseudocode, Pair Programming
     UID: pSGW3x
@@ -116,6 +147,17 @@ Standards:
         UID: 692aeabdceb105d82aed2187db381860
         Path: /intro-to-functions/defining-functions.md
   -
+    Title: Functions, Continued
+    Description: How to Read Documentation
+    UID: 6736abef6aad93ad0fdb8d10e1849b62
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 0ea7bd4c9be9469bd0232744edf2a80d
+        Path: /functions-continued/how-to-read-documentation.md
+  -
     Title: Intro To Tests
     Description: Packages and Managing Packages, Automated Tests, Intro to pytest
     UID: cxnH0Z
@@ -136,7 +178,7 @@ Standards:
         Path: /intro-to-tests/intro-to-pytest.md
   -
     Title: Representing Data
-    Description: Representing Data in Lists and Dictionaries, Data and JSON
+    Description: "Representing Data in Lists and Dictionaries, Data and JSON, Activity: Representing Data, Practice: Representing Data"
     UID: hxB08H
     SuccessCriteria:
       - success criteria
@@ -151,5 +193,36 @@ Standards:
         Path: /representing-data/data-and-json.md
       -
         Type: Lesson
+        UID: 1f3084593d9eed2a8ec8a797cbfdd89b
+        Path: /representing-data/activity-representing-data.md
+      -
+        Type: Lesson
         UID: p4Pb0s
         Path: /representing-data/practice-representing-data.md
+  -
+    Title: Big O
+    Description: Time and Space Complexity, Big O Notation, Big O Analysis
+    UID: f2703dfead197309bf41c0a2d8ff1daf
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Instructor
+        UID: 81281faf1d71e4872fb5ca286cc3618e
+        Path: /big-o/big-o.instructor.md
+      -
+        Type: Lesson
+        UID: b0ad60b6fe7116d3b63fdb9b4cc4bfde
+        Path: /big-o/time-and-space-complexity.md
+      -
+        Type: Lesson
+        UID: 97a53b0bc90b67970a5b0f0c61472464
+        Path: /big-o/big-o-notation.md
+      -
+        Type: Lesson
+        UID: 46f8d000785c9cd1b0112854c419f232
+        Path: /big-o/big-o-analysis.md
+      -
+        Type: Lesson
+        UID: 90465d8c4c1af56aed98039f4e95687c
+        Path: /big-o/practice-big-o.md
