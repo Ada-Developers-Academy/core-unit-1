@@ -2,8 +2,8 @@
 
 ## Learning Goals
 
-- Explain how a commit in git is made using the git add and git commit commands
-- Practice versioning code by creating commits in git
+- Explain how a commit in Git is made using the git add and git commit commands
+- Practice versioning code by creating commits in Git
 - Practice observing commit history using the commands git status, git log, git show, and git diff
 - Explain different ways of "undoing" commits using git revert and git reset
 
@@ -28,18 +28,16 @@ Staging Area
 Untracked Area
 Tracking
 vim
-Less
 
 ## Format
 
-The goal of this lesson is to learn how to build commits in git. However, there is plenty of information to consider before that.
+The goal of this lesson is to learn how to build commits in Git. However, there is plenty of information to consider before that.
 
-This lesson is organized into four sections: We'll learn about...
+This lesson is organized into three sections: We'll learn about...
 
 1. more details about what commits are
 1. the overall process of making a commit
 1. the steps to take to make a commit
-1. how to review commits, and review commit history
 
 ## How Do We See Differences in Code?
 
@@ -114,9 +112,9 @@ As a recommendation, bad times to make a commit are...
 
 As we keep programming, we may see that large commits can make the git history more challenging to read.
 
-## In git, There Are Local and Staging Areas
+## In Git, There Are Local and Staging Areas
 
-Because we get a lot of value when we intentionally construct a commit, we want to be selective about the specific code changes (lines added and removed) that goes into a commit.
+Because we get a lot of value when we intentionally construct a commit, we want to be selective about the specific code changes (lines added and removed) that go into a commit.
 
 Git allows us to be selective about changes that go into a commit. It lets us do that by creating two areas that code changes can be categorized in: the _local changes area_ and the _staging area_.
 
@@ -135,9 +133,9 @@ In a Git project, we can view a summary of the changes in the local and staging 
 $ git status
 ```
 
-Here is an example of `git status` output in a project.
+Below is an example of what the `git status` command could print out.
 
-Read the `git status` output. Then, read through the explanation below. Then re-read this output to check for understanding.
+Read this output. Then, read through the explanation below. Then re-read this output to check for understanding.
 
 ```
 On branch main
@@ -157,16 +155,16 @@ Untracked files:
 	tests/test_wave_06.py
 ```
 
-Let's observe how this output describes the code changes:
+This `git status` output describes the code changes:
 
 - "Changes to be committed:"
-    - This section describes the staging area
+    - This section describes the **staging area**
     - These are the code changes have been moved from local to staging
     - There's a tip from Git for the command to unstage that change, `"git restore --staged <file>..."`
     - In this example, there are some modifications in the file `tests/test_wave_01.py`. We know that because it says `modified:   tests/test_wave_01.py`
 
 - "Changes not staged for commit:"
-    - This section describes the local changes area
+    - This section describes the **local changes area**
     - These are the new code changes from tracked files
     - There are tips from Git for how to stage or restore code changes
     - In this example, there are modifications in the file `tests/test_wave_05.py`
@@ -195,7 +193,7 @@ We move changes from local to staging with the command `$ git add`. This command
 
 ### Untracked Changes Area, and Tracking Changes
 
-Git additionally has a third area: the _untracked area_.
+Besides the local changes and staging areas, Git additionally has a third area: the _untracked area_.
 
 By default, Git doesn't assume that it should watch for changes in every file in our project. By default, Git wants the programmer to intentionally say, "Hey! This file will contain code that I want to version and put in a repo."
 
@@ -212,7 +210,7 @@ Where `<relative-path-to-untracked-file>` is replaced with a relative path to th
 
 ## Commits Are Made After Local and Staging
 
-Programmers create a commit after their intended changes are in staging.
+Programmers create a commit _after their intended changes are in **staging.**_
 
 Every commit contains the following information:
 
@@ -249,17 +247,17 @@ Specificity in commit messages helps you and your teammates understand the Git h
 ### Example Commit Messages
 
 Some example commit messages include:
-- Fix failing RouteFinder tests
-- Reworks hikes and mountain searching logic
-- Add tests for hike guide meta-data
-- Update pytest dependency and generate test config
-- Renames class HikeFinder to HikePlanner
+- `"Fix failing RouteFinder tests"`
+- `"Reworks hikes and mountain searching logic"`
+- `"Add tests for hike guide meta-data"`
+- `"Update pytest dependency and generate test config"`
+- `"Renames class HikeFinder to HikePlanner"`
 
 Many software teams will designate a template to follow for commit messages.
 
 ### My Terminal Gets Funky With Commit Messages
 
-Working with commit messages can often bring us to other text editor programs. By default, many commands around git commits use the vim program. The program vim is really great at displaying text. However, vim also uses unique navigation keys.
+Working with commit messages can often bring us to other text editor programs. By default, many commands around git commits use the vim program. The program vim is really great at displaying text! However, vim uses unique navigation keys.
 
 When a git commit command opens up the vim program, we navigate by:
 
@@ -278,146 +276,10 @@ It is common to change the default editor for git from vim to something else, su
     - Staging area, where code changes that will be in the next commit are
     - Untracked changes area, where untracked files and changes are
 - We view a summary of the local code changes and the staged code changes with `$ git status`
-- We move code changes from local or untracked with `$ git add`
-- Commits contain the code changes that were in the staging area
+- We move code changes _from_ local or untracked _to_ the staging area with `$ git add`
+- We move all changes we want in a commit into the staging area
 - We create a commit and a commit message with `$ git commit -m "Message"`
 - We may need to navigate some screens with alternative syntax
 
-## We Can Review Git Histories
-
-As we create many commits, it will be crucial to review git histories. There are a series of commands that will give developers useful information about the git history.
-
-All of these commands have many different options available. Using these options can make the information more useful and effective to you. To explore these options, look them up and follow your curiosity!
-
-### !callout-info
-
-## Navigating with Less commands
-
-There are many commands in git that will open a screen with a program called Less. The program Less is really great at displaying text. However, Less also uses unique navigation keys.
-
-When a git command brings us to a Less screen, we can navigate like so:
-
-- up or down arrows to scroll
-- `j` or `k` keys to scroll
-- use spacebar to scroll down by one page
-- use `b` to scroll up by one page
-- `q` to exit the screen
-
-### !end-callout
-
-### `git status`
-
-The command `$ git status` outputs a summary of the changes in the local and staging areas. It also contains a lot of other information about the current state of our project as Git sees it!
-
-Use this command all the time:
-- To verify what changes are untracked, in local, and in staging
-- Before moving changes from local area to staging area
-- Before moving changes from the staging area to a commit
-- After making a commit to witness the changes in the staging area disappearing
-
-### `git diff` Reveals All Local Changes
-
-The command `$ git diff` outputs a summary of all changes in the local changes area.
-
-By default, it displays chunks of the diff. It names the file that the change is in, some of the surrounding lines, and a summary of lines of code that were added, removed, or modified.
-
-If there are a lot of local changes, we'll need to navigate  this screen with Less commands.
-
-Use this command all the time:
-- Before moving changes from local area to staging area
-- Reminding yourself what your most recent work has been
-- Seeing what changes you've written and deleted since the last commit
-
-### `git diff --staged` Reveals All Staged Changes
-
-If there are a lot of staged changes, we'll need to navigate  this screen with Less commands.
-
-It follows the same rules as `$ git diff`
-
-Use this command all the time:
-- Before moving changes from the staging area to a commit
-- Checking to see what's in the staging area
-
-### `git log` Reveals The Commit History
-
-The command `$ git log` will show all of the commits made on this git branch (details on branches are a separate subject. We may assume one default branch at this moment.)
-
-The log will clearly show the order of commits, and highlight their commit messages.
-
-Each commit is listed with the following details:
-
-- The commit hash, which is a unique ID for the commit
-- The details on the branch that this commit is on
-- The author(s) of the commit
-- The date and time that the commit was made
-- The commit message
-
-If there are a lot of commits, we'll need to navigate this screen with Less commands.
-
-Use this command frequently:
-- when you start a new task and should review the most recent work
-- to understand and recall the current history of commits
-- check a lot of commit information quickly, such as timestamps, authors, etc.
-
-### `git show` Summarizes a Commit
-
-The command `$ git show` will show the details of a single commit.
-
-By default, `$ git show` will print this information:
-- The commit hash (ID)
-- The author(s)
-- The date and time that the commit was made
-- The commit message
-- The entire diff of that commit
-
-Without any arguments, `$ git show` will show the details of the most recent commit.
-
-Optionally, we can give this command a commit hash, and it will show the details of that commit.
-
-```bash
-$ git show <commit hash, such as 26fb46ca8...>
-```
-
-Where `<commit hash, such as 26fb46ca8...>` is replaced with a commit hash.
-
-### !callout-info
-
-## Commit Hashes Can Be Shortened
-The commit IDs of git are special. In general, each commit ID is so unique. They're unique enough, that using even first several characters of it is enough to identify a commit. For example, anywhere that requires a commit hash, we can either use `06cde018c082dc4d936af278ba3b43ae5a3b9492`, or `06cde01`, and they would both work.
-
-This notation is helpful to recognize as commit hashes are often shortened.
-### !end-callout
-
-If the commit has a big diff, we'll need to navigate this screen with Less commands.
-
-Use this command often:
-- when you want to review a commit
-- to recall the contents of the most previous commit
-
-## All of These Should Be in the Project Root
-
-We should use all of these git commands when located in the project root.
-
-There aren't rules about this, but these commands are most effective, straightforward, and consistent from that location.
-
-## About "Undoing" Commits...
-
-Sometimes, as we work on code, we'll make a commit... and then realize that the code changes in that commit were terrible! And those code changes need to be deleted, erased, and undone!
-
-A natural instinct may be to try to "undo this commit."
-
-However, considering the mindset that Git encourages, the best way to "undo a commit" might be to create another commit that reverts those changes. This is a different perspective than trying to "undo" or "get rid of" changes.
-
-It is natural for code to constantly evolve and for learning and exploration to teach us lessons. Often, we learn that to move forward, we need to reverse our work.
-
-### !callout-info
-
-## No really, I just made a commit and I need to undo it
-
-Git has many ways to modify, uncommit, or revert commits. Some search terms to use to look up these commands may be, "git reset," "git commit amend," "git revert," and "git squash." As a goal, programmers should not change shared Git history, unless it is an emergency.
-
-### !end-callout
-
 ## Check for Understanding
-
 

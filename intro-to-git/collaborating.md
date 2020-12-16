@@ -28,13 +28,13 @@ Nakita's friends, Frida and Raul, want to join Nakita and help her build Hike Pl
 Git is highly configurable, so most of these settings can change. However, in the vast majority of cases, Git enables collaboration with this setup:
 
 - The project should be hosted somewhere, where team members have access. The project will can be called the project "repo."
-- Each developer will download the repo onto their machine using the Git command `clone`. This "download" will carry the Git history
+- Each developer will download the repo onto their machine using the Git command `clone`. This "download" will carry the Git history.
 - All team members should contribute code changes by making commits on their own machines
 - All team members will receive commits and updates from the main hosted repo
 - All team members will send commits and updates to the main hosted repo
 - All team members will follow and repeat this cycle, enabling a smooth team workflow
 
-### Example: The Hike Planner Team
+<!-- ### Example: The Hike Planner Team
 
 For the Hike Planner team, we might imagine:
 
@@ -47,40 +47,39 @@ For the Hike Planner team, we might imagine:
 - When Nakita wants to send commits that are on her laptop to the main hosted repo, she will push her commits. This process will use Git's merging tools, and the main hosted repo will now have a new, updated Git history.
     - When Frida pushes her commits, the main hosted repo will also work to have a new, updated Git history.
     - Raul's commits and contributions work the same way, too.
-- All three team members will contribute through making commits, pulling commits from the main repo, and pushing commits to the main repo.
+- All three team members will contribute through making commits, pulling commits from the main repo, and pushing commits to the main repo. -->
 
-### The Remote Repository and `origin`
-
-When we mention the "main hosted repo," we need to find a host. In most cases, this decision is already made and the host of this code base is Github.com.
+## The Remote Repository and `origin`
 
 A repo that holds a codebase and commit history that is accessible to team members is called a **remote repository.**
 
-This repo is usually hosted somewhere that is _not_ a developer's personal computer.
+When we mention the "main hosted repo," we need to find a host. This repo is usually hosted somewhere that is _not_ a developer's personal computer. In most cases, this decision is already made and the host of this code base is github.com.
 
 What do we do with a remote repo? All team members will look to this one, shared remote repo. It will be the main repo that team members can use as a source of truth. Team members will get new commits and updates from the remote repo. Team members will push their new commits to the remote repo.
 
+### !callout-secondary
+
+## Example: The Hike Planner Team
+The Hike Planner team will host their repo on github.com. Nakita, Frida, and Raul will all have access to this remote repo.
+
+### !end-callout
+
 #### Default Settings
 
-Often, the remote repo will be hosted on Github.com. Git usually gives a nickname to the remote repo hosted on Github.com: `origin`. There are many Git commands that will need a reference to a remote repo; we can use `origin` to mean the remote repo on Github.com
+Often, the remote repo will be hosted on Github.com. Git usually gives a nickname to the remote repo hosted on github.com: `origin`. There are many Git commands that will need a reference to a remote repo; we can use `origin` to mean the remote repo on Github.com
 
 ## Getting The Latest Version from `origin`
 
 The remote repository will receive new commits from each team member.
 
-While one individual dev works on their code on their own machine, they will need to get these new commits from `origin`.
-
-### !callout-secondary
-
-## Example: The Hike Planner Team
-The Hike Planner team will host their repo on Github.com. Nakita, Frida, and Raul will all have access to this remote repo.
-
-### !end-callout
+While one individual dev works on their code on their own machine, they will need to "pull" these new commits from `origin`.
 
 ### Pulling Means Fetching and Merging
 
 A remote repo has a Git history. Recall that so does each developer, on their own machines. Git recognizes that these are separate Git histories, even though they're the same project.
 
 Git thinks about "getting new commits from `origin`" actually as two things:
+
 1. The local machine needs to recognize that there are updates from another repo
 2. The two Git histories need to merge together, and become one
 
@@ -98,7 +97,7 @@ $ git pull
 ### !callout-secondary
 
 ## Example: The Hike Planner Team
-Nakita and Raul both pushed commits yesterday. Frida knows that there are new commits on the `origin` repo, and her local machine doesn't have those commits in her Git history. She should either run `$ git fetch` then `$ git merge`, or run `$ git pull`.
+Nakita and Raul both contributed new commits to the remote repo yesterday. Frida knows that there are new commits on the `origin` repo, and her local machine doesn't have those commits in her Git history. She should either run `$ git fetch` then `$ git merge`, or run `$ git pull`.
 
 ### !end-callout
 
@@ -133,7 +132,7 @@ It's important to note that this command will send every commit to the remote re
 
 ### !callout-info
 
-## Configurations For `push`
+## Configurations For Pushing
 There are many, many ways to configure the details about the `$ git push` command. When we need some more control over how and where we're pushing, we can look up these arguments.
 
 By default, `$ git push` will push the current history to the `origin` repo.
@@ -147,6 +146,13 @@ As a rule, Git requires a local repo to `pull` changes and to be up-to-date with
 Pulling before pushing helps the developer minimize merge conflicts in the future. After a developer pulls, they should re-run the tests and ensure the code is still working correctly.
 
 If it's not working correctly, then the developer can make more commits to get the project back in a good state. If it is working correctly, then the developer can push their commits!
+
+### !callout-secondary
+
+## Example: The Hike Planner Team
+Nakita just finished the feature that analyzes weather data. She made 3 commits, and they are on her local machine. She wants to merge them into the remote repo, `origin`. First, Nakita should `pull`, in case Frida or Raul merged commits recently. Secondly, Nakita should check that her code still works well. She sees that two tests are failing now. Nakita makes one commit to fix these tests. Thirdly, Nakita will `pull` again. She sees all tests are passing still. Finally, Nakita will `push` her four new commits on her machine.
+
+### !end-callout
 
 ## Proposed Workflow
 
@@ -162,7 +168,7 @@ To summarize these concepts and commands, here is a proposed development workflo
 1. Create at least one commit. Continue to write code and make commits.
 1. Fetch and merge any new commits from `origin` with `$ git pull`
 1. Review the code; check that the tests still pass, and the code still runs
-    1. If the code is broken, restart this process and make commits that will fix the problem
+    - If the code is broken, restart this process and make commits that will fix the problem
 1. Send all of your commits to `origin` with `$ git push`
 1. Review your work with `$ git status` and `$ git log`
 

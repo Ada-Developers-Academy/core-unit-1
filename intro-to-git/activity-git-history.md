@@ -1,8 +1,7 @@
-# Activity: git History
+# Activity: Git History
 
-<!-- Can be async -->
 <!-- Written to be synchronous -->
-<!-- Ideal Format: Small groups, large groups, roundtables, etc. -->
+<!-- Ideal Format: Small groups -->
 
 ## Goal
 
@@ -26,7 +25,7 @@ Part 1 and Part 2 will be a combination of discussion and individual writing:
 
 ## Part 1
 
-Each group member will describe the steps to create a specific commit, and diagram what Git "looks like" at each step.
+In part 1, each group member will describe the steps to create a specific commit, and diagram what Git "looks like" at each step.
 
 Each member will pick one of the commits in the Setup section. These specific commits already have these details:
 - The number and names of files that contain changes
@@ -35,47 +34,49 @@ Each member will pick one of the commits in the Setup section. These specific co
 
 The group members will use these details to name the specific commands needed.
 
-### Setup
+### Part 1 Setup
 
-1. Begin a diagram of Git's areas. Each individual should draw a...
-        - box labeled "Untracked Changes Area"
-        - box labeled "Local Changes Area"
-        - box labeled "Staging Area"
-        - box labeled "Git Log"
-
+1. Begin a diagram of Git's areas. Each individual should draw in their own notes a...
+    - box labeled "Untracked Changes Area"
+    - box labeled "Local Changes Area"
+    - box labeled "Staging Area"
+    - box labeled "Git Log"
 1. Each individual should pick one of these commits:
 
 ### Instructions
 
-Each group member should take turns making one step. Each group member should collaborate, discuss, help, and confirm that the other group members are on the right track.
+Group members should take turns making one step. During your turn, you should say out loud what your step is, and the Git command that goes with it. Each group member should collaborate, discuss, help, and confirm that the other group members are on the right track.
 
 These are the steps:
 
-1. Write down a new file or modified file into "Untracked Changes" or "Local Changes", one at a time
+1. Using the information from your commit, write down one new file or modified file into "Untracked Changes" or "Local Changes"
 1. Repeat step 1 until there are no more files to name
-1. Move a file into "Staging," and erase it from its previous area, one at a time
-1. Create a commit with the commit message
+1. Move a file into "Staging," and erase it from its previous area
+1. Repeat step 1 until there are no more files to add to staging
+1. Create a commit with the specified commit message
 1. Write down the commit's commit hash into the "Log"
 
 ## Part 2
 
-Each group member will describe the steps to pull and push commits, and diagram what Git "looks like" at each step.
+Imagine your group is a dev team that works on the product Hike Planner.
+
+Repeat the same process described in Part 1. However, the goal for part 2 is to describe the steps to pull and push commits, and diagram what Git "looks like" at each step.
 
 Each member will pick one of the commits in the Setup section. These specific commits will only have the detail of the commit hash.
 
-### Setup
+### Part 2 Setup
 
 1. Make a diagram that represents a team's repo. Label this "Hike Planner Git Log." Ensure all members can see this.
 1. Begin an individual diagram that represents each member's own laptop. Each individual should draw a box labeled "Git Log."
 1. Fill in the "Hike Planner Git Log" box with these commit hashes:
-    ```
-    43d8bf
-    01a66b
-    882c4a
-    c6f79p
-    ```
+    -   ```
+        43d8bf
+        01a66b
+        882c4a
+        c6f79p
+        ```
     - The commits are ordered reverse-chronologically. Commit `43d8bf` is the newest commit. `c6f79p` is the oldest commit.
-1. Each individual should pick one of these commit hashes.
+1. Each individual should pick one of these commit hashes:
 
 ### Instructions
 

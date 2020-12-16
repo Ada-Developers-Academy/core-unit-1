@@ -1,5 +1,16 @@
 # Instructor: Activity: git History
 
+- This is written to be synchronous
+- This can be done in-person or online, using breakout rooms
+    - In Part 2, the group must be able to look at a shared set of info... This will require students to share their screens or somethng.
+- Ideally, small groups are made with ~4 people in each group
+
+---
+
 - The point is to get them to visually play around and work with commits
-- Understand that each commit is a node, and has a parent commit
 - See the movement of commits
+- Get them to talk about Git commands out loud
+
+---
+
+- Don't let students spend all of their time on Part 1

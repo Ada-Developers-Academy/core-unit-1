@@ -1,11 +1,11 @@
-# Intro to git: Vocab and Concepts
+# Intro to Git: Vocab and Concepts
 
 ## Learning Goals
 
-- Explain how git is version control system used to version code
-- Define a repository in git
-- Compare a git repository to a project
-- Define a commit in git
+- Explain how Git is version control system used to version code
+- Define a repository in Git
+- Compare a Git repository to a project
+- Define a commit in Git
 
 ## Introduction
 
@@ -32,9 +32,9 @@ Commit
 
 ## Version Control Systems Let Us Version Our Code
 
-Version Control Systems are tools that allow programmers to create, view, and understand different versions of code.
+Version Control Systems (VCSs) are tools that allow programmers to create, view, and understand different versions of code.
 
-There are plenty of different Version Control Systems, with their own set of vocabulary and concepts. **Git** is a version control system that has widespread use and acceptance.
+There are plenty of different Version Control Systems, each with their own set of vocabulary and concepts. **Git** is a version control system that has widespread use and acceptance.
 
 Git gives us the tooling to:
 - create different versions of our codebases
@@ -43,9 +43,13 @@ Git gives us the tooling to:
 - collaborate on the same codebase at the same time with many people
 - configure codebases and developer workflows to help programmers
 
-Callout:
-Git vs. GitHub
+### !callout-info
+
+## Git vs. GitHub
+
 Git is the name of the version control system we will use. Git is a tool, and we'll primarily use this tool in the command line or using an IDE. GitHub is a service that can host our codebases. GitHub's hosting service is made for programmers who use Git in their projects. The primary way we interact with GitHub is through github.com
+
+### !end-callout
 
 ### VCS Will Affect Our Developer Workflow
 
@@ -55,7 +59,7 @@ Being able to get all the benefits of a version control system will require us t
 
 ## Each Repository is a Distinct "Project" Code Base
 
-Git has the concept of a repository, or repo. A repo is a way to describe a project codebase that is being versioned Git.
+Git has the concept of a **repository,** or repo. A **repo** is a way to describe a project codebase that is being versioned Git.
 
 Often, a repo will directly correlate to a folder on your machine that contains all of a project's files.
 
@@ -63,7 +67,7 @@ When we say to look at someone else's repo, it likely means that they have their
 
 ## Software is Built as a History
 
-As we track different versions of code, when we compare those versions to each other, we see how code shrinks, grows, and changes.
+When we compare different versions of code to each other, we see how the code shrinks, grows, and changes between them.
 
 In a sense, version control systems let us understand that software is built over time.
 
@@ -71,15 +75,13 @@ In order to use Git to compare versions, sometimes we will need to tell Git to _
 
 ### Commits are a Snapshot of History
 
-**A commit** is a representation of a version of code, especially within a history.
+**A commit** is a representation of a version of code at one point of time.
 
 We will build commits as we build software; we will create commits, and over time, these commits will represent different versions of code and build a history.
 
-Commits not only represent a version of code, but also they contain a lot of extra information.
-
-Every commit can also contain the following information:
+Commits not only represent a version of code, but also they contain a lot of extra information. Every commit can also contain the following information:
 - A summary of lines of code that were added, deleted, or changed, compared to the last commit
-- A way to refer to the last commit/its "parent" commit
+- A way to refer to the last commit, or its "parent" commit
 - A unique ID for the commit, often called the commit hash
 - A commit message, which will be a string that describes the commit's contents
 - The date and time that the commit was made
@@ -110,11 +112,14 @@ Using that information, Git (the tool) will go through a series of merging steps
 
 Now, with a unified history of commits, the repo's history will grow. Software development with Git is a cycle of this process.
 
-Callout:
+### !callout-info
 
-Comparing Different Ways to Collaborate
+## Comparing Different Ways to Collaborate
 
-Different versioning tools have different strategies. An older VCS used a system of _checking out a file for a period of time._ This VCS said that other team members could not open that file until that developer checked it back in!
+Different versioning tools have different strategies. An older VCS used a system of _checking out a file for a period of time,_ much like checking out a book from a library. This VCS said that other team members couldn't work on, or even ***open*** that file until that dev checked it back in!
+
+### !end-callout
+
 
 ## Check for Understanding
 
