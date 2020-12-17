@@ -14,12 +14,11 @@ Developers working on projects tracked by Git build their projects with commits.
 
 How would Nakita's workflow change if the Hike Planner team grows? Multiple developers can work on a project, and Git has even more tools to facilitate collaborating. The key to collaborating with Git is working to converge on a single, unified Git history together.
 
-
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Remote repository | asdf | Remote, remote repo, `origin` | asdf
+| Vocab             | Definition | Synonyms                      | How to Use in a Sentence |
+| ----------------- | ---------- | ----------------------------- | ------------------------ |
+| Remote repository | asdf       | Remote, remote repo, `origin` | asdf                     |
 
 ## Collaboration Means Looking at the Same Source of Code
 
@@ -60,6 +59,7 @@ What do we do with a remote repo? All team members will look to this one, shared
 ### !callout-secondary
 
 ## Example: The Hike Planner Team
+
 The Hike Planner team will host their repo on github.com. Nakita, Frida, and Raul will all have access to this remote repo.
 
 ### !end-callout
@@ -84,12 +84,14 @@ Git thinks about "getting new commits from `origin`" actually as two things:
 2. The two Git histories need to merge together, and become one
 
 To accomplish this, Git gives us these commands:
+
 ```
 $ git fetch
 $ git merge
 ```
 
 Git also gives us a synonym, which will execute `fetch` and then `merge`:
+
 ```
 $ git pull
 ```
@@ -97,6 +99,7 @@ $ git pull
 ### !callout-secondary
 
 ## Example: The Hike Planner Team
+
 Nakita and Raul both contributed new commits to the remote repo yesterday. Frida knows that there are new commits on the `origin` repo, and her local machine doesn't have those commits in her Git history. She should either run `$ git fetch` then `$ git merge`, or run `$ git pull`.
 
 ### !end-callout
@@ -114,6 +117,7 @@ When Git merges, it is a process of replaying and applying the commits one by on
 ### !callout-info
 
 ## So Much More About Pulling
+
 There is so much more about pulling and merging in Git to learn. These topics may be uncovered in the curriculum, and plenty will be learned through practice and curiosity!
 
 ### !end-callout
@@ -133,6 +137,7 @@ It's important to note that this command will send every commit to the remote re
 ### !callout-info
 
 ## Configurations For Pushing
+
 There are many, many ways to configure the details about the `$ git push` command. When we need some more control over how and where we're pushing, we can look up these arguments.
 
 By default, `$ git push` will push the current history to the `origin` repo.
@@ -150,6 +155,7 @@ If it's not working correctly, then the developer can make more commits to get t
 ### !callout-secondary
 
 ## Example: The Hike Planner Team
+
 Nakita just finished the feature that analyzes weather data. She made 3 commits, and they are on her local machine. She wants to merge them into the remote repo, `origin`. First, Nakita should `pull`, in case Frida or Raul merged commits recently. Secondly, Nakita should check that her code still works well. She sees that two tests are failing now. Nakita makes one commit to fix these tests. Thirdly, Nakita will `pull` again. She sees all tests are passing still. Finally, Nakita will `push` her four new commits on her machine.
 
 ### !end-callout
@@ -162,16 +168,14 @@ To summarize these concepts and commands, here is a proposed development workflo
 1. Determine what your next task or goal is.
 1. Start running tests, writing code, etc.
 1. When you have a small, meaningful change, get ready to make a commit:
-    1. Move the intended changes from local changes area to staging with `$ git add`
-    1. Create a commit and a commit message from the changes in staging with `$ git commit -m ""`
-    1. Review the commit with `$ git show`
+   1. Move the intended changes from local changes area to staging with `$ git add`
+   1. Create a commit and a commit message from the changes in staging with `$ git commit -m ""`
+   1. Review the commit with `$ git show`
 1. Create at least one commit. Continue to write code and make commits.
 1. Fetch and merge any new commits from `origin` with `$ git pull`
 1. Review the code; check that the tests still pass, and the code still runs
-    - If the code is broken, restart this process and make commits that will fix the problem
+   - If the code is broken, restart this process and make commits that will fix the problem
 1. Send all of your commits to `origin` with `$ git push`
 1. Review your work with `$ git status` and `$ git log`
 
 ## Check for Understanding
-
-

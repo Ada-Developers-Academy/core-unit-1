@@ -10,6 +10,7 @@
 As we create many commits, it will be crucial to review Git histories. There are a series of commands that will give developers useful information about the Git history.
 
 This resource will focus on:
+
 - `$ git status`
 - `$ git diff`
 - `$ git diff --staged`
@@ -39,6 +40,7 @@ When a git command brings us to a Less screen, we can navigate like so:
 The command `$ git status` outputs a summary of the changes in the local and staging areas. It also contains a lot of other information about the current state of our project as Git sees it!
 
 Use this command all the time:
+
 - To verify what changes are untracked, in local, and in staging
 - Before moving changes from local area to staging area
 - Before moving changes from the staging area to a commit
@@ -58,9 +60,10 @@ The command `$ git diff` outputs a summary of all changes in the _local changes 
 
 By default, it displays chunks of the diff. It names the file that the change is in, some of the surrounding lines, and a summary of lines of code that were added, removed, or modified.
 
-If there are a lot of local changes, we'll need to navigate  this screen with Less commands.
+If there are a lot of local changes, we'll need to navigate this screen with Less commands.
 
 Use this command all the time:
+
 - Before moving changes from local area to staging area
 - Reminding yourself what your most recent work has been
 - Seeing what changes you've written and deleted since the last commit
@@ -72,6 +75,7 @@ The command `$ git diff --staged` shows a summary of all changes in the _staging
 It follows the same rules as `$ git diff`. If there are a lot of staged changes, we'll need to navigate this screen with Less commands.
 
 Use this command all the time:
+
 - Before moving changes from the staging area to a commit
 - Checking to see what's in the staging area
 
@@ -92,6 +96,7 @@ Each commit is listed with the following details:
 If there are a lot of commits, we'll need to navigate this screen with Less commands.
 
 Use this command frequently:
+
 - when you start a new task and should review the most recent work
 - to understand and recall the current history of commits
 - check a lot of commit information quickly, such as timestamps, authors, etc.
@@ -101,6 +106,7 @@ Use this command frequently:
 The command `$ git show` will show the details of a single commit.
 
 By default, `$ git show` will print this information:
+
 - The commit hash (ID)
 - The author(s)
 - The date and time that the commit was made
@@ -120,14 +126,17 @@ Where `<commit hash, such as 26fb46ca8...>` is replaced with a commit hash.
 ### !callout-info
 
 ## Commit Hashes Can Be Shortened
+
 The commit IDs of git are special. In general, each commit ID is very unique. They're so unique, that using even first several characters of it is enough to identify a commit. For example, anywhere that requires a commit hash, we can either use `06cde018c082dc4d936af278ba3b43ae5a3b9492`, or `06cde01`, and they would both work.
 
 This notation is helpful to recognize as commit hashes are often shortened.
+
 ### !end-callout
 
 If the commit has a big diff, we'll need to navigate this screen with Less commands.
 
 Use this command often:
+
 - when you want to review a commit
 - to recall the contents of the most previous commit
 

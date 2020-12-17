@@ -10,6 +10,7 @@
 ## Introduction
 
 We know that Git will help us do these two things:
+
 - Version our software with commits and look at our commit history
 - Collaborate with others
 
@@ -19,8 +20,9 @@ Sometimes, we work on a project alone. Git is still an incredibly powerful and h
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
+| Vocab | Definition | Synonyms | How to Use in a Sentence |
+| ----- | ---------- | -------- | ------------------------ |
+
 Code Change
 Commit
 Local Changes Area
@@ -44,6 +46,7 @@ This lesson is organized into three sections: We'll learn about...
 One piece of information that commits contain is the differences (diff) in code between this version, and the last version.
 
 We can generalize that each change in software is a set of files and...
+
 - The lines of code that were added; what they are, what file, and what line number
 - The lines of code that were deleted
 - The lines of code that were modified
@@ -81,6 +84,7 @@ The diff of these changes can be displayed like this:
 -    return result
 +    return (deg_celsius * 1.8) + 32
 ```
+
 <!-- Include code screenshot in order to show color -->
 
 Note the `+` and `-` symbols at the beginning of each line to describe lines added and removed.
@@ -158,38 +162,40 @@ Untracked files:
 This `git status` output describes the code changes:
 
 - "Changes to be committed:"
-    - This section describes the **staging area**
-    - These are the code changes have been moved from local to staging
-    - There's a tip from Git for the command to unstage that change, `"git restore --staged <file>..."`
-    - In this example, there are some modifications in the file `tests/test_wave_01.py`. We know that because it says `modified:   tests/test_wave_01.py`
+
+  - This section describes the **staging area**
+  - These are the code changes have been moved from local to staging
+  - There's a tip from Git for the command to unstage that change, `"git restore --staged <file>..."`
+  - In this example, there are some modifications in the file `tests/test_wave_01.py`. We know that because it says `modified: tests/test_wave_01.py`
 
 - "Changes not staged for commit:"
-    - This section describes the **local changes area**
-    - These are the new code changes from tracked files
-    - There are tips from Git for how to stage or restore code changes
-    - In this example, there are modifications in the file `tests/test_wave_05.py`
+
+  - This section describes the **local changes area**
+  - These are the new code changes from tracked files
+  - There are tips from Git for how to stage or restore code changes
+  - In this example, there are modifications in the file `tests/test_wave_05.py`
 
 - "Untracked files:"
-    - This section describes the untracked changes area
-    - These are the files that Git understands are new and untracked, but the changes can't go into local changes until it's tracked
-    - Git gives us a tip for how to track that file
-    - In this example, there is one new file: `tests/test_wave_06.py`
+  - This section describes the untracked changes area
+  - These are the files that Git understands are new and untracked, but the changes can't go into local changes until it's tracked
+  - Git gives us a tip for how to track that file
+  - In this example, there is one new file: `tests/test_wave_06.py`
 
 ### Moving Changes to the Staging Area
 
 We move changes from local to staging with the command `$ git add`. This command is very configurable, and there are many valid ways and options to use it:
 
 - `$ git add <relative-path-to-file-or-folder>`
-    - ... where `<relative-path-to-file-or-folder>` is replaced
-    - This adds all code changes in the specified file or folder
-    - When given a folder, it adds all code changes in all files in it
-    - A common way to use this is `$ git add .`, where `.` indicates the current directory
-    - This method can add large amounts of changes at once
+  - ... where `<relative-path-to-file-or-folder>` is replaced
+  - This adds all code changes in the specified file or folder
+  - When given a folder, it adds all code changes in all files in it
+  - A common way to use this is `$ git add .`, where `.` indicates the current directory
+  - This method can add large amounts of changes at once
 - `$ git add -p`
-    - This brings the developer to an interactive mode
-    - Code changes will be presented on the screen one at a time. At each chunk, the dev inputs if the chunk should go into staging: `y` then enter for "yes," `n` then enter for "no."
-    - This mode cycles through all chunks in the local changes area, then exits the interactive mode
-    - This method encourages reviewing code changes
+  - This brings the developer to an interactive mode
+  - Code changes will be presented on the screen one at a time. At each chunk, the dev inputs if the chunk should go into staging: `y` then enter for "yes," `n` then enter for "no."
+  - This mode cycles through all chunks in the local changes area, then exits the interactive mode
+  - This method encourages reviewing code changes
 
 ### Untracked Changes Area, and Tracking Changes
 
@@ -206,7 +212,6 @@ $ git add <relative-path-to-untracked-file>
 ```
 
 Where `<relative-path-to-untracked-file>` is replaced with a relative path to the file.
-
 
 ## Commits Are Made After Local and Staging
 
@@ -247,6 +252,7 @@ Specificity in commit messages helps you and your teammates understand the Git h
 ### Example Commit Messages
 
 Some example commit messages include:
+
 - `"Fix failing RouteFinder tests"`
 - `"Reworks hikes and mountain searching logic"`
 - `"Add tests for hike guide meta-data"`
@@ -272,9 +278,9 @@ It is common to change the default editor for git from vim to something else, su
 ## Summary Of Building Commits
 
 - Code changes are in one of three areas:
-    - Local changes area, where most code changes begin
-    - Staging area, where code changes that will be in the next commit are
-    - Untracked changes area, where untracked files and changes are
+  - Local changes area, where most code changes begin
+  - Staging area, where code changes that will be in the next commit are
+  - Untracked changes area, where untracked files and changes are
 - We view a summary of the local code changes and the staged code changes with `$ git status`
 - We move code changes _from_ local or untracked _to_ the staging area with `$ git add`
 - We move all changes we want in a commit into the staging area
@@ -282,4 +288,3 @@ It is common to change the default editor for git from vim to something else, su
 - We may need to navigate some screens with alternative syntax
 
 ## Check for Understanding
-

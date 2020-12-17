@@ -21,8 +21,9 @@ How can the idea of versioning help us build software?
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
+| Vocab | Definition | Synonyms | How to Use in a Sentence |
+| ----- | ---------- | -------- | ------------------------ |
+
 Version
 Version Control System
 Git
@@ -37,6 +38,7 @@ Version Control Systems (VCSs) are tools that allow programmers to create, view,
 There are plenty of different Version Control Systems, each with their own set of vocabulary and concepts. **Git** is a version control system that has widespread use and acceptance.
 
 Git gives us the tooling to:
+
 - create different versions of our codebases
 - give names, ids, and information between different versions
 - follow a specific history of versions
@@ -80,6 +82,7 @@ In order to use Git to compare versions, sometimes we will need to tell Git to _
 We will build commits as we build software; we will create commits, and over time, these commits will represent different versions of code and build a history.
 
 Commits not only represent a version of code, but also they contain a lot of extra information. Every commit can also contain the following information:
+
 - A summary of lines of code that were added, deleted, or changed, compared to the last commit
 - A way to refer to the last commit, or its "parent" commit
 - A unique ID for the commit, often called the commit hash
@@ -105,6 +108,7 @@ When a developer clones the repo onto their machine, it will create a project fo
 Then, each dev who has built commits will send the commits to the team's repository.
 
 Recall that each commit includes this information:
+
 - A summary of lines of code that were added, deleted, or changed, compared to the last commit
 - A way to refer to the last commit/its "parent" commit
 
@@ -116,11 +120,8 @@ Now, with a unified history of commits, the repo's history will grow. Software d
 
 ## Comparing Different Ways to Collaborate
 
-Different versioning tools have different strategies. An older VCS used a system of _checking out a file for a period of time,_ much like checking out a book from a library. This VCS said that other team members couldn't work on, or even ***open*** that file until that dev checked it back in!
+Different versioning tools have different strategies. An older VCS used a system of _checking out a file for a period of time,_ much like checking out a book from a library. This VCS said that other team members couldn't work on, or even **_open_** that file until that dev checked it back in!
 
 ### !end-callout
 
-
 ## Check for Understanding
-
-
