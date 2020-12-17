@@ -228,11 +228,11 @@ def func_that_always_returns_true():
 ### !tests
 ```python
 import unittest
-import main as p
+from main import *
 
 class TestChallenge(unittest.TestCase):
   def test_returns_true(self):
-      self.assertTrue(p.func_that_always_returns_true())
+      self.assertTrue(func_that_always_returns_true())
 ```
 ### !end-tests
 ### !explanation
@@ -274,12 +274,12 @@ def test_returns_true_if_odd():
 
 ```py
 import unittest
-import main as p
+from main import *
 
 class TestPython1(unittest.TestCase):
     def test_returns_true_if_odd(self):
         number = 5
-        result = p.is_odd(number)
+        result = is_odd(number)
         self.assertTrue(result)
 ```
 
@@ -324,12 +324,12 @@ def test_returns_false_if_even():
 
 ```py
 import unittest
-import main as p
+from main import *
 
 class TestPython1(unittest.TestCase):
     def test_returns_false_if_even(self):
         number = 6
-        result = p.is_odd(number)
+        result = is_odd(number)
         self.assertFalse(result)
 ```
 
@@ -363,12 +363,12 @@ def test_returns_None_if_negative():
 
 ```py
 import unittest
-import main as p
+from main import *
 
 class TestPython1(unittest.TestCase):
     def test_returns_None_if_negative(self):
         number = -1000
-        result = p.is_odd(number)
+        result = is_odd(number)
         assert result is None
 ```
 
@@ -401,7 +401,7 @@ def test_raises_runtime_error():
 
 ```py
 import unittest
-import main as p
+from main import *
 
 class TestPython1(unittest.TestCase):
     def test_raises_runtime_error(self):
