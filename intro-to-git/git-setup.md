@@ -4,6 +4,10 @@
 
 ## Introduction
 
+Git has so many concepts to learn! Creating commits, reviewing commits, and collaborating truly are the most important parts of Git.
+
+However, it's important to recognize some actions needed to set up a Git repo. The following topics will probably not affect a developer's daily workflow, and will happen infrequently.
+
 This document will be written more like a resource. These topics are necessary to understand, but are less frequently used than concepts for commits and collaboration. Use this lesson as a reference guide, and to inspire you to read more.
 
 ## Vocabulary and Synonyms
