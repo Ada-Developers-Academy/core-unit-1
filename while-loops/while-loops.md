@@ -67,7 +67,15 @@ Another way to read this while loop is with a table:
 
 Here, we should observe that at some point, `i` has a value of `6` , and the code asked "Is 6 <= 5? Is that true?" Because the answer is no, the program does not execute the loop body again and exits the loop.
 
-Callout: While loops can accidentally run infinitely! If the conditional for the while loop never becomes false, then the while loop and the program keep going, and going, and going... until something forces it to stop (such as a human closing down the program), or our machine cannot run it anymore. We call these cases **infinite loops,** and are often a bug.
+<!-- prettier-ignore-start -->
+### !callout-danger
+
+## Infinite Loops
+While loops can accidentally run infinitely! If the conditional for the while loop never becomes false, then the while loop and the program keep going, and going, and going... until something forces it to stop (such as a human closing down the program), or our machine cannot run it anymore. We call these cases **infinite loops,** and are often a bug.
+### !end-callout
+<!-- prettier-ignore-end -->
+
+
 
 ## Problem-Solving Using `while` 
 
