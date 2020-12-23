@@ -7,7 +7,7 @@
 
 ## Introduction
 
-Programming code is about using computers to solve problems. Often, this initial problem will be too complex for us to solve in one attempt. In order to begin solving these problems, we need to practice breaking down a problem.
+Writing code is about using computers to solve problems. Often, this initial problem will be too complex for us to solve in one attempt. In order to begin solving these problems, we need to practice breaking down a problem.
 
 ## Vocabulary and Synonyms
 
@@ -17,7 +17,7 @@ Timeboxing | A time management technique where someone determines the maximum am
 
 ## Breaking Down a Problem
 
-The steps to breaking down a programming problem can be identical to real-life problem-solving. In order to come to express these steps, we will explain one angle of real-life problem-solving.
+The steps to breaking down a programming problem can be identical to real-life problem-solving. To get used to thinking step-by-step, let's try breaking down a common situation.
 
 ### Real Example
 
@@ -25,7 +25,7 @@ Here's a problem that we might face often: **How do we prepare dinner for tonigh
 
 #### Ask Clarifying Questions
 
-The first thing we can do is make sure we understand the problem. We can **clarify the problem with questions.** These questions and answers should give us constraints to the problem, making the problem (and its solution) smaller and clearer.
+The first thing we should do is make sure we understand the problem. We can **clarify the problem with questions.** We should ask questions that help us constrain the problem, making the problem (and its solution) smaller and clearer.
 
 Clarifying questions and their answers give us constraints. Clarifying questions:
 
@@ -61,26 +61,26 @@ Preparing dinner for tonight:
 ### !callout-info
 
 ## Always Multiple Solutions
-We can realize here that **there are multiple ways to solve a problem.** We could have looked for a recipe that only has ingredients we already have. Or, we could have ordered pizza delivery!
+Keep in mind that **there are multiple ways to solve a problem.** We could have looked for a recipe that only has ingredients we already have. Or, we could have ordered pizza delivery!
 
 ### !end-callout
 
 #### Come Up With Ideas
 
-Once we have some sub-problems, we can start coming up with ideas for how to solve one of them. We should think through the solution with all of the resources available! This includes writing down ideas, notes, pseudocode, comments, and explanations. We should also make a list of tasks we need to do, topics to do more research on, or more questions we have.
+Once we have some sub-problems, we can start coming up with ideas for how to solve one of them. We should think through the solution from a variety of perspectives! This may include writing down ideas, notes, pseudocode, comments, and explanations. We should also make a list of tasks we need to do, topics to do more research on, or more questions we have.
 
-For our example, we can start to think:
+For our example, we might start by thinking:
 
-- Could we find a recipe in a recipe book? Or can we find one online? Or do we want to call a family member for a recipe?
+- Can we find a recipe in a recipe book? Or can we find one online? Or do we want to call a family member for a recipe?
 - Can we make a list of ingredients we need to buy by comparing the recipe to our pantry?
 - To get to the grocery store, can we take the train?
 - We don't own a microwave. Can we use the oven instead?
 
 #### Begin Solving One Sub-problem
 
-Now that we have some ideas, we can pick one sub-problem and one strategy. Then, we begin making one possible solution. We might begin to solve a sub-problem like so:
+Now that we have some ideas, we can pick one sub-problem and one strategy. Then, we begin working on one possible solution. We might begin to solve a sub-problem like so:
 
-Go shopping for the ingredients we need
+Go shopping for the ingredients we need:
   - Go to the train station
   - Take the train to the market
   - Browse every market stall for every ingredient
@@ -99,16 +99,18 @@ Then, we should **repeat** these steps for different sub-problems until we have 
 2. Clarify the problem
 3. Create sub-problems
 4. Hypothesize ideas for the solution
-5. Solve a sub-problem in Python code
+5. Solve a sub-problem. When programming, this is where we write code!
 6. Repeat steps necessary
 
 ## Working First, Improve Second
 
 Sometimes we're working on a solution. Then, suddenly, half-way through this solution, we think of a second solution! This second solution is so much better, cleaner, and more perfect! Do we begin to work on that solution now?
 
-Instead of abandoning your first solution, programmers should try to finish an initial working solution first.
+Instead of just abandoning our initial solution, we should try to get it working first.
 
-Programmers should get their code working first, and then improve their code afterwards. When programmers focus on solving the problem first, and making their code elegant later, programmers can focus more and accomplish more!
+When we fully work through finding a solution to a problem, it can help us think things through in more detail and with greater clarity. If we stop halfway through, we might miss important insights that could have helped us even more! It's easy to get lost in the details of writing elegant code and then lose sight of our true objective: solving a problem.
+
+So let's write working code first, and then improve it afterwards!
 
 ## Timeboxing
 
@@ -119,7 +121,7 @@ When we are solving problems, we may come up with one solution, but then desire 
 Some examples might be:
 - Timeboxing "Research alternatives to if/else conditionals" to 1 hour, and decide on one solution at that point
 - Timeboxing "Refactor our project" to 2 hours, and call the project good enough at that point
-- Timeboxing "Work through the binary problems" and getting stuck for 30 minutes, and ask for help from the cohort at that point
+- Timeboxing "Work through the binary problems solo" to 30 minutes, including using debugging strategies, then ask for help from the cohort if I'm stuck
 
 ## Check for Understanding
 

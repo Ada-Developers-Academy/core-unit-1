@@ -6,7 +6,7 @@ Our goal is to practice taking a problem, and pulling it apart into separate ste
 
 ## Activity Instructions
 
-Follow the instructions about how and when to fill in the prompts below. For each prompt, describe the process in smaller steps. Put your steps in a list format.
+Follow the instructions about how and when to fill in the prompts below. For each prompt, describe the process in smaller, detailed steps. Put your steps in a list format. Imagine a ten-year-old using these steps to solve each problem.
 
 There should be at least three steps in each prompt.
 
