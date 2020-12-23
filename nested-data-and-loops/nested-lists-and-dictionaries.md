@@ -24,7 +24,7 @@ Lists can contain lists.
 
 In this example:
 - The outer list has five elements
-- The inner lists have three elements
+- The inner lists each have three elements
     - Inner lists don't need to be the same length as each other
 
 It may help to add white-space to read this data structure more clearly. This is the same list of lists.
@@ -39,11 +39,11 @@ It may help to add white-space to read this data structure more clearly. This is
 ]
 ```
 
-Lists of lists are also called **two-dimensional arrays.**
+Lists of lists are also called **two-dimensional arrays**.
 
 ### Accessing One Element
 
-In order to get the value of one element in a nested list, we must chain the syntax to index a list.
+To get the value of one element in a nested list, we chain the syntax for indexing into a list.
 
 ```python
 example_list[ index_to_find_inner_list ][ index_to_find_element ]
@@ -68,7 +68,7 @@ j = sarahs_list[3][0]
 n = sarahs_list[4][1]
 ```
 
-### Modifying An Element
+### Modifying an Element
 
 This is example syntax for modifying one element in a nested list.
 
@@ -97,7 +97,7 @@ print(sarahs_list)
 
 ## Dictionaries Containing Lists
 
-Dictionaries can contain lists.
+Dictionary values can contain lists too.  However, lists _cannot_ be used as dictionary keys.
 
 ```python
 {
@@ -108,12 +108,12 @@ Dictionaries can contain lists.
 
 In this example:
 - The outer dictionary has two key-value pairs: `'oranges'` and `'apples'`
-- One inner list has four elements
-- The other inner list has two elements
+- The list stored at the `'oranges'` key has four elements
+- The list stored at the `'apples'` key has four elements
 
 ### Accessing One Element
 
-To access one element, we chain the syntax to get a value from a dictionary, and then index a list.
+Similarly to how we accessed one element in a nested list, we chain the syntax for getting a value from a dictionary, and then index the resulting list to access one element.
 
 ```python
 example_dict[ key_to_find_inner_list ][ index_to_find_element ]
@@ -133,7 +133,7 @@ d = sarahs_dict['oranges'][3]
 e = sarahs_dict['apples'][0]
 ```
 
-### Modifying An Element
+### Modifying an Element
 
 This is example syntax for modifying one element in a nested list.
 
@@ -173,11 +173,11 @@ Lists can contain dictionaries.
 In this example:
 - The outer list has two items
 - The first inner dictionary has two key-value pairs
-- The second inner dictionary has two key-value pairs
+- The second inner dictionary also has two key-value pairs
 
 ### Accessing One Value
 
-To access one value from a nested dictionary, we chain the syntax to get a value from a dictionary.
+Accessing one value from a dictionary nested within a list continues the themes we've already seen.  We need to use the syntax for getting an index from a list, followed by the syntax for retrieving the value from a dictionary.
 
 ```python
 example_list[ index_to_find_item ][ key_to_access_value ]
@@ -200,7 +200,7 @@ apple_emoji = sarahs_list[0]['apple']
 
 ### Modifying A Value
 
-Modifying the contents of a nested dictionary follows the syntax rules we've seen before. We want to re-assign a value, so we use the assignment operator.
+Modifying the contents of a nested dictionary follows the syntax rules we've seen before. To re-assign a value, we use the assignment operator.
 
 Observe these examples:
 ```python
@@ -217,13 +217,13 @@ sarahs_list[0]['apple'] = 'A fruit with a lot of varieties'
 
 ## Dictionaries Containing Dictionaries
 
-Dictionaries containing dictionaries follows the patterns we've seen before.
+Dictionaries can also have dictionaries as values, but they _cannot_ be used as keys.  Using nested dictionaries follows the patterns we've already seen.
 
 ### Accessing and Modifying Inner Values
 
-We access a value from inner dictionary by chaining `[]`s with the appropriate key names.
+Accessing one value from nested dictionaries uses the expected key lookup syntax.  We just need to chain each lookup using `[]`s with the appropriate key names.
 
-Modifying a value in an inner dictionary needs re-assignment to the required key of the inner dictionary.
+Likewise, modifying a value in a nested dictionary requires re-assignment to the desired key of the inner dictionary.
 
 ```python
 sarahs_dict = {

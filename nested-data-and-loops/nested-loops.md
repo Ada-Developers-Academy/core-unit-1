@@ -6,9 +6,9 @@
 
 ## Introduction
 
-We can have loops inside of loops! Programmers tend to call loops inside of loops _**nested loops.**_
+We can have loops inside of loops! We call the arrangement of a loop inside another loop a _**nested loop**_.
 
-Nested loops aren't different from other loops at all! We'll extend our knowledge about loops; it might feel like there's no new knowledge here. _However_, nested loops can be intimidating to read and understand at first. We should practice reading, understanding, and writing nested loops to get over that fear!
+Nested loops are no different from non-nested loops! They can seem intimidating to read and understand at first. But by building on what we already know about other loops, we can expand our understanding and overcome that fear! We just need to practice reading, understanding, and writing nested loops until they feel just as familiar to us as any other loop!
 
 Callout: Nested loops do not require nested data structures; the only thing that nested loops and nested data structures have in common are being nested.
 
@@ -16,11 +16,11 @@ Callout: Nested loops do not require nested data structures; the only thing that
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
-Nested loop | A loop that runs inside of another loop | Loop in a loop | "The logic for checking if the word has vowels is in the nested loop, " "While we're iterating through that list of strings, we should also loop through each string and check if it has vowels."
+Nested loop | A loop that runs inside of another loop | Loop in a loop | "The logic for checking whether the word has vowels is in the nested loop, " "While we're iterating through that list of strings, we should do a nested loop through each string and check whether it has vowels."
 
 ## Observing Loops in Loops
 
-Any kind of loop can be inside any other kind of loop; we can have for-loops inside of while-loops, while-loops inside of for-loops, and any other combination. The logic of the loops can vary; they can iterate over the same data, iterate over different data, or do something completely different!
+Any kind of loop can be inside any other kind of loop; we can have for-loops inside of while-loops, while-loops inside of for-loops, and they can be nested to any depth. The logic of the loops can vary; they can iterate over the same data, iterate over different data, or do something completely different!
 
 The key to understanding nested loops is seeing how many times each loop runs. We should confirm that an entire nested loop finishes before moving on to the next iteration.
 
@@ -57,7 +57,7 @@ Callout: Let's reword this logic!
 
 We can trace the logic going from "most inner code" to "most outer": We are touching `char_map` in only one place in the code: the `if...else` block. However, `char_map` gets modified for every character, in every word from our original list of words.
 
-Tracing the logic going from "most outer code" to "most inner": We are looping through every word, and then every character in every word, before asking if the character is in `char_map` .
+Tracing the logic going from the outermost to the innermost code, we loop through every word in our word list, then every character of each word, then check whether each character is in `char_map`.
 
 <!-- end callout -->
 
@@ -127,7 +127,7 @@ What is the local variable for each item in `word` ?
 
 ## Visualizing Loops in Loops
 
-It can be a challenge to visualize how many loops run. To visualize nested loops, we can use a loop table. Let's use this code as our example.
+Sometimes it can be challenging to visualize how a particular loop runs. A _**loop table**_ is a tool we can use to help us visualize the operation of loops, both nested and unnested. Let's use our now-familiar character counting code as an example.
 
 ``` python
 def map_character_frequency(words):
@@ -179,7 +179,7 @@ print(char_map)
 
 2 | 5 | `reads` | `s` | `{"d": 2, "e": 2, "r": 2, "a": 1, "s": 1}` -->
 
-And then at this point, there are no more characters and no more words to loop through.
+At this point, there are no more characters and no more words to loop through.
 
 ## Writing Loops in Loops
 
