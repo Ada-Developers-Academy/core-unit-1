@@ -121,7 +121,14 @@ The function name is the name of the test, and it should imply what the test is 
 
 The function body contains the details of the test.
 
-`pytest` has a rule about naming tests: **It will only recognize test names beginning with `test_`**. The rest of the test name should imply the scenario you're testing. Possible example test names include, `test_creates_chart`, `test_returns_none_for_invalid_date`, `test_handles_yyyymmdd_date_format`, or `test_raises_error_for_empty_location`.
+`pytest` has a rule about naming individual tests: **It will only recognize test names begin with `test_` or end with `_test`**. The rest of the test name should imply the scenario you're testing.
+
+Possible example test names include:
+
+- `test_creates_chart` or `creates_chart_test`
+- `test_returns_none_for_invalid_date` or `returns_none_for_invalid_date_test`
+- `test_handles_yyyymmdd_date_format` or `handles_yyyymmdd_date_format_test`
+- `test_raises_error_for_empty_location` or `raises_error_for_empty_location_test`
 
 ### `assert`
 
@@ -129,7 +136,7 @@ The function body contains the details of the test.
 
 The `assert` statement checks if what's on the right is **truthy**. If the expression to the right is truthy, then the assertion will pass, and the test execution will move to the next line. If the expression is falsey, then the assertion will fail, the test execution will leave that test, and move on to the running the rest of the test suite.
 
-We can use comparisons, and the wide range of Python comparisons in our `assert` statements.
+We can use the wide range of Python comparisons in our `assert` statements.
 
 Read through these example `assert` statements as passing examples that prove we can compare numbers, strings,
 
