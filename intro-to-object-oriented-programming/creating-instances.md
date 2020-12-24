@@ -375,5 +375,4 @@ Dirty Computer: <__main__.Album object at 0x10b28c850>
 
 Note that even though two instances of `Album` both have the same title, `"Purple Rain"`, they are separate instances that have different IDs.
 
-## Check for Understanding
-
+<!-- No CFU; this lesson has several questions throughout the lesson -->

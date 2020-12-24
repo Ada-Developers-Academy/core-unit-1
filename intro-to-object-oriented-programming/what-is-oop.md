@@ -153,3 +153,9 @@ We will represent an idea as a data type by defining a **class.** A class is a t
 After we've defined the idea by defining a **class**, we will use this template/blueprint to create manifestations, or **instances** of this class. These instances are also known as **objects.**
 
 ## Check for Understanding
+
+<!-- Definition question about classes being templates/blueprints -->
+
+<!-- Definition question about instance -->
+
+<!-- Definition question about state and behavior -->

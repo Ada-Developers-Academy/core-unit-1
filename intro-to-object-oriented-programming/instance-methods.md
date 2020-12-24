@@ -414,6 +414,6 @@ Recall that every instance keeps track of the values to their own attributes.
 The debugger tool gives us great insight into the attributes of any instance. We can inspect each instance to see the details.
 
 <!-- insert image and details relevant to the image ;_; -->
+<!-- TODO: insert more text lol -->
 
-## Check for Understanding
-
+<!-- No CFU; this lesson has several questions throughout the lesson -->

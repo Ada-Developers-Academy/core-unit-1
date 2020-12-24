@@ -493,5 +493,4 @@ Here are some common bugs to look out for when defining classes:
     - This suggests that something in the class body is not indented, when it needs to be
     - Check your indentation! Everything inside a class body must start at one level of indentation in.
 
-## Check for Understanding
-
+<!-- No CFU; this lesson has several questions throughout the lesson -->
