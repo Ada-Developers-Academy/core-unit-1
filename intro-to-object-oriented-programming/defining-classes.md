@@ -9,10 +9,9 @@
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
-Constructor
-`__init__`
-`self`
-Attributes
+Constructor | A special type of method that is used when creating objects. It does not give a `return` value. It usually initializes an object's attributes. | Initializer | "The constructor gets called every time we make a new `User` instance," "The constructor has `username` as a parameter, so we need to pass in a username whenever we initialize a `User`"
+`__init__` | Python's specific method name for the constructor | - | "If I want to set up attributes, in my class definition I need to make an `__init__` method," "If I mispell `__init__`, my constructor won't work"
+`self` | The conventional name for a variable that refers to an instance itself. For instance methods in Python, this must always be the first parameter. | - | "We access attributes through `self`," "We assign attributes through `self`"
 
 ## When Do We Make a Class?
 

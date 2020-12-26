@@ -16,13 +16,14 @@ _Object-oriented programming_ is a programming paradigm that is a subset of impe
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence |
 | ----- | ---------- | -------- | ------------------------ |
-
-Object-oriented programming
-Object | Things that can be their own specific data types, hold unique data, and can do unique behavior | instance |
-Class | A template or blueprint used to create objects of a specific data type. A class is generic; it defines what those objects will look like, but doesn't itself have state.
-Instance | One particular object. Follows the format defined by its class, but has state that makes it specific.
-State | Data or attributes an object will keep track of
-Behavior | Methods that rely upon or modify state
+Object-oriented programming | A programming paradigm based on "objects," which contain state (attributes) and behavior (methods) | OOP | "OOP means we will define classes, and use classes to make objects"
+Object | A data structure that can be its own specific data types, hold unique data, and can do unique behavior. Can often mean one instance. | Instance | "In OOP, we'll be making a lot of objects," "We should invoke the `add_friend` method on the `User` object," "Each `User` object in the `User` list will have an ID"
+Class | A template or blueprint used to create objects of a specific data type. A class is generic and bastract; it defines what concrete objects will look like. | Template, blueprint | "The `String` class defines all of the attributes and methods that `String` objects have," "
+Instance | One particular object of a certain data type/class. Follows the format defined by its class, and has specific, individual state. | Object | "That specific `User` instance has an ID of `25`," "We should instantiate a new `User` instance here, then save it to the database," "The method `add_friend` takes in one instance of `User` as a parameter"
+State | A generic term for the data that an object "knows" at one point in time. Usually, state can change over time. | - | "The `User` object keeps `online_status` on state," "When a `User` object sends a message, the program checks the state of `online_status`"
+Attribute | A named property of a class. Attributes are usually used to keep track of state. | Property, field, "attr" | "The `User` class defines the attribute `online_status`," "The `online_status` attribute is a boolean," "We check the `online_status` property before we send a message"
+Behavior | A generic term for what an object can "do." | - | "The `User` class should have the behavior of adding a friend to the friend list"
+Method | A function that is defined inside of a class. Methods are usually used to describe behavior. | Function | "We need to call the `add_friend` method on `User`," "`User`'s `send_message` method checks the state of `online_status` at the beginning"
 
 ## Object-Oriented Programming
 

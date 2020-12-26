@@ -5,14 +5,6 @@
 Define instance methods
 Practice building classes with instance methods
 
-## Introduction
-
-
-## Vocabulary and Synonyms
-
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-
 ## Instance Methods are Behaviors Instances Can Do
 
 Class definitions can contain functions. When a function is inside of a class, we call those functions **methods.**

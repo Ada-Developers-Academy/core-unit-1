@@ -5,18 +5,9 @@
 - Define instances in Object-Oriented Programming
 - Practice creating instances of classes in Python
 
-## Introduction
-
-Instances are concrete manifestations of classes.
-
-## Vocabulary and Synonyms
-
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-
 ## Creating Instances
 
-The following expression creates an instance of a class:
+Instances are concrete manifestations of classes. The following expression creates an instance of a class:
 
 ```python
 ExampleClassName()
