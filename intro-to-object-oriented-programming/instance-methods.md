@@ -11,12 +11,12 @@ Class definitions can contain functions. When a function is inside of a class, w
 
 **Instance methods** are behaviors that _instances_ of classes can do.
 
-| Class  | Instances                                                                                                                 | Something Kept in | Behavior it Can Do                                                    |
-| ------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| String | `"Hello World! I am an instance of a String!"`                                                                            | Become CAPITALIZED if it needs to                                     |
-| List   | `["red", "orange", "yellow"]`                                                                                             | Reverse the order of its elements                                     |
+| Class  | Instances                                                                                                                 | Something Kept in                                                            | Behavior it Can Do |
+| ------ | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------ |
+| String | `"Hello World! I am an instance of a String!"`                                                                            | Become CAPITALIZED if it needs to                                            |
+| List   | `["red", "orange", "yellow"]`                                                                                             | Reverse the order of its elements                                            |
 | Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67                                     | Calculate its own average rating, tell you the number of trips they've taken |
-| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has                   |
+| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has                          |
 
 ## Defining Instance Methods
 
@@ -35,7 +35,6 @@ class ExampleClassName:
 - We can add as many parameters we want after `self`
 - Inside of this method, we can access attributes and _other_ methods, using `self`
 - We can do any other typical Python logic in here, such as loops, conditionals, etc.
-
 
 ### !callout-info
 
@@ -144,7 +143,6 @@ class Driver:
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-
 <!-- Question 2 -->
 
 <!-- prettier-ignore-start -->
@@ -237,7 +235,7 @@ class Album:
 
     def get_genre(self):
         return "Pop, rock, R&B, psychedelia"
-    
+
     def get_audio_data(self, track_index):
         genre = self.get_genre()
         audio_data = f"Prince - When Doves Cry (5:54) (Track 1) (Genre: {genre})"
@@ -371,14 +369,14 @@ name_of_instance.name_of_instance_method()
 To answer that question, we might follow certain steps to trace code:
 
 - What do we know about _what_ calls the method?
-    - What is to the left of the `.` (dot operator)?
-    - Is it an instance of a class?
-    - What class is it an instance of?
-        - Where is this class defined?
+  - What is to the left of the `.` (dot operator)?
+  - Is it an instance of a class?
+  - What class is it an instance of?
+    - Where is this class defined?
 - What do we know about the method being called?
-    - What is to the right of the `.` (dot operator)?
-    - Is it a method being invoked, with `()` at the end?
-    - Where is this method being defined? Is it inside of the class definition?
+  - What is to the right of the `.` (dot operator)?
+  - Is it a method being invoked, with `()` at the end?
+  - Where is this method being defined? Is it inside of the class definition?
 
 Once we've determined where the method is being defined, we can trace the code into that method definition.
 
@@ -391,11 +389,11 @@ purple_rain.get_audio_data(1)
 We might think:
 
 1. `purple_rain` is an instance of what class?
-    - `Album`
+   - `Album`
 1. Where is the definition for `Album`?
 1. Inside the definition of album, is there a method named `get_audio_data`?
 1. Where is the definition for `get_audio_data`?
-    - What arguments does it take in?
+   - What arguments does it take in?
 
 These answers should lead us to the `get_audio_data` method inside of the `Album` class.
 

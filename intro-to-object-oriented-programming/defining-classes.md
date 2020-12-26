@@ -7,11 +7,11 @@
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Constructor | A special type of method that is used when creating objects. It does not give a `return` value. It usually initializes an object's attributes. | Initializer | "The constructor gets called every time we make a new `User` instance," "The constructor has `username` as a parameter, so we need to pass in a username whenever we initialize a `User`"
-`__init__` | Python's specific method name for the constructor | - | "If I want to set up attributes, in my class definition I need to make an `__init__` method," "If I mispell `__init__`, my constructor won't work"
-`self` | The conventional name for a variable that refers to an instance itself. For instance methods in Python, this must always be the first parameter. | - | "We access attributes through `self`," "We assign attributes through `self`"
+| Vocab       | Definition                                                                                                                                       | Synonyms    | How to Use in a Sentence                                                                                                                                                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Constructor | A special type of method that is used when creating objects. It does not give a `return` value. It usually initializes an object's attributes.   | Initializer | "The constructor gets called every time we make a new `User` instance," "The constructor has `username` as a parameter, so we need to pass in a username whenever we initialize a `User`" |
+| `__init__`  | Python's specific method name for the constructor                                                                                                | -           | "If I want to set up attributes, in my class definition I need to make an `__init__` method," "If I mispell `__init__`, my constructor won't work"                                        |
+| `self`      | The conventional name for a variable that refers to an instance itself. For instance methods in Python, this must always be the first parameter. | -           | "We access attributes through `self`," "We assign attributes through `self`"                                                                                                              |
 
 ## When Do We Make a Class?
 
@@ -51,12 +51,12 @@ class ClassName:
     pass
 ```
 
-Piece of Code | Notes
---- | ---
-`class` | A keyword that indicates that a class definition is beginning
-`ClassName` | **Replace this** with the name of the class you're defining. The PEP-8 style guide prefers CapitalCamel case for class names. Class names should be singular nouns.
-`:` | Don't forget the colon to indicate the beginning of the class body
-Class body | Code that describes the class definition. It should be indented once into the class. The class body will include attributes and methods (functions) to describe state and behavior.
+| Piece of Code | Notes                                                                                                                                                                               |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `class`       | A keyword that indicates that a class definition is beginning                                                                                                                       |
+| `ClassName`   | **Replace this** with the name of the class you're defining. The PEP-8 style guide prefers CapitalCamel case for class names. Class names should be singular nouns.                 |
+| `:`           | Don't forget the colon to indicate the beginning of the class body                                                                                                                  |
+| Class body    | Code that describes the class definition. It should be indented once into the class. The class body will include attributes and methods (functions) to describe state and behavior. |
 
 <!-- Question 1 -->
 
@@ -123,8 +123,8 @@ The `__init__` method:
 - Runs whenever we instantiate ("use") this class
 - Contains any logic that should be run whenever we instantiate ("use") this class
 - **Must always take at least one parameter,** because it's special
-    - The first parameter **always** represents an instance itself. Details below.
-    - This parameter is typically named `self`
+  - The first parameter **always** represents an instance itself. Details below.
+  - This parameter is typically named `self`
 - Does not need to return anything (and should not return anything)
 
 For example, consider this `Album` class, that will print a message whenever an `Album` is instantiated:
@@ -219,11 +219,10 @@ All attributes have names. The values of attributes will differ between instance
 
 Here are some examples of attributes that could exist on classes:
 
-Class | Attribute | Instance Example | Value of Attribute for Example
---- | --- | --- | ---
-Driver | Total amount of money earned | A driver with ID `DR0004`, 3 rides, who has earned $35, has an average rating of 4.67 | `35`
-Album | Release date | Dirty Computer | `"2018"`
-
+| Class  | Attribute                    | Instance Example                                                                      | Value of Attribute for Example |
+| ------ | ---------------------------- | ------------------------------------------------------------------------------------- | ------------------------------ |
+| Driver | Total amount of money earned | A driver with ID `DR0004`, 3 rides, who has earned $35, has an average rating of 4.67 | `35`                           |
+| Album  | Release date                 | Dirty Computer                                                                        | `"2018"`                       |
 
 Because attributes have a close relationship to an instance, attributes will look and act exactly like variables... but they are assigned through `self`. Our syntax for reading and writing attributes will include `self`.
 
@@ -239,6 +238,7 @@ class Album:
 ```
 
 When we make an instance of this class `Album`, it will print this:
+
 ```
 We can also read the value of the title attribute
 by writing self.title: Purple Rain
@@ -380,11 +380,11 @@ We should observe:
 
 - Whenever we create an instance of `Album`, we'll need to pass in 3 things: `title`, `release_date`, and `tracks`
 - Every instance of this class has three attributes: `title`, `release_date`, and `track_list`
-    - We access these attributes with `self.title`, `self.release_date`, and `self.track_list`
+  - We access these attributes with `self.title`, `self.release_date`, and `self.track_list`
 - Inside of `__init__`, we assign these attributes to the parameters
 - Note that there aren't rules about naming parameters:
-    - The parameter `title` and the attribute `title` have the same name. The difference is that the parameter is a local variable, and the attribute is accessed with `self.title`
-    - The parameter `tracks` and the attribute `track_list` do not have the same name.
+  - The parameter `title` and the attribute `title` have the same name. The difference is that the parameter is a local variable, and the attribute is accessed with `self.title`
+  - The parameter `tracks` and the attribute `track_list` do not have the same name.
 - `self` must _still_ be the first parameter
 
 <!-- Question 4 -->
@@ -475,21 +475,21 @@ class Driver:
 Here are some common bugs to look out for when defining classes:
 
 1. `NameError: name 'ExampleClassName' is not defined`
-    - This suggests that the class named `ExampleClassName` hasn't been defined before trying to instantiate it
-    - Check your class definition for typos
-    - Check the line of code that instantiates this class for typos
-    - Check that your class is defined before instantiating it
+   - This suggests that the class named `ExampleClassName` hasn't been defined before trying to instantiate it
+   - Check your class definition for typos
+   - Check the line of code that instantiates this class for typos
+   - Check that your class is defined before instantiating it
 1. `AttributeError: 'ExampleClassName' object has no attribute 'missing_attribute_name'`
-    - This suggests that we are trying to read an attribute from an instance of this class, but that attribute doesn't have a value
-    - Check every place where the attribute is assigned for typos
-    - Check the line of code that reads this attribute for typos
-    - Ensure that the code uses `self` appropriately
-    - Trace the code and ensure that the attribute is assigned before being read
+   - This suggests that we are trying to read an attribute from an instance of this class, but that attribute doesn't have a value
+   - Check every place where the attribute is assigned for typos
+   - Check the line of code that reads this attribute for typos
+   - Ensure that the code uses `self` appropriately
+   - Trace the code and ensure that the attribute is assigned before being read
 1. `TypeError: __init__() takes 0 positional arguments but 1 was given`
-    - This suggests that the constructor doesn't define the first parameter `self` (and Python automatically passes in a value for `self`)
-    - Ensure that the `__init__` method takes in `self` as the first parameter
+   - This suggests that the constructor doesn't define the first parameter `self` (and Python automatically passes in a value for `self`)
+   - Ensure that the `__init__` method takes in `self` as the first parameter
 1. `IndentationError: expected an indented block`
-    - This suggests that something in the class body is not indented, when it needs to be
-    - Check your indentation! Everything inside a class body must start at one level of indentation in.
+   - This suggests that something in the class body is not indented, when it needs to be
+   - Check your indentation! Everything inside a class body must start at one level of indentation in.
 
 <!-- No CFU; this lesson has several questions throughout the lesson -->
