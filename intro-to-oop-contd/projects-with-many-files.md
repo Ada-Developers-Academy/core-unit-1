@@ -1,4 +1,4 @@
-# Python Projects with Many Files
+# Projects with Many Files
 
 ## Learning Goals
 

@@ -1,4 +1,4 @@
-# Testing the Behavior of Classes
+# Testing Objects
 
 ## Learning Goals
 
