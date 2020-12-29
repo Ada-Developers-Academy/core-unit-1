@@ -13,6 +13,8 @@
 
 ## What are Design Patterns?
 
+
+
 ## Example Design Patterns
 
 ## Over-design or Wrong Design Leads to Failures
