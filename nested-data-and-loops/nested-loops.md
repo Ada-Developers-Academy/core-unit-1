@@ -67,6 +67,8 @@ The function `map_character_frequency` takes in a list of words. In the function
 
 We then loop through every character in each `word`. Each character is represented with the variable `character`. For every character, we will run this set of instructions: we'll check whether it's in our `char_map` dictionary as a key already. If it is _not_ in the `char_map` dictionary already, then this is the first time we're seeing it, and it should be added to the dictionary as a key with a value of one. Otherwise, it's already in the dictionary, and we must increment the frequency count.
 
+![Diagram illustrating nested loops: words is a list containing "red", "orange", "yellow", "green". word is a string with the characters "o", "r", "a", "n", "g", "e". character has the value "a". char_map has the key-value pairs "r": 2, "e": 1, "d": 1, "o": 1.](../assets/nested-loops_nested-loops.png)
+
 ### !callout-info
 
 ## Let's Repeat That Explanation in Different Words
