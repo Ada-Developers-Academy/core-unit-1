@@ -7,36 +7,34 @@
 
 ## Introduction
 
-If you didn't know, the absolute worst-case scenario for software is a crash caused by a syntax or runtime error*. The software has gone to a state where the program can't do anything, the user can't do anything, and possibly the program can't even restart into a usable state!
+If you didn't know, the absolute worst-case scenario for software is a crash caused by a syntax or runtime error\*. The software has gone to a state where the program can't do anything, the user can't do anything, and possibly the program can't even restart into a usable state!
 
 If software fails for one person, it's likely that software is failing for _many_ people. All of these consequences result in **chaos**.
 
 ![giphy](https://user-images.githubusercontent.com/16619004/103056684-748d8a80-4552-11eb-8705-2429df508339.gif) Source: [Giphy](http://gph.is/2lENCEI)
 
-
 \* = Actually, there are plenty of other more severe worst-case scenarios.
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-| Exception | An event or error that may cause your program to stop if not properly handled. | error | "The user provided the wrong data type causing the Traceback to throw a TypeError exception." | 
+| Vocab     | Definition                                                                     | Synonyms | How to Use in a Sentence                                                                      |
+| --------- | ------------------------------------------------------------------------------ | -------- | --------------------------------------------------------------------------------------------- |
+| Exception | An event or error that may cause your program to stop if not properly handled. | error    | "The user provided the wrong data type causing the Traceback to throw a TypeError exception." |
 
 ## Exceptions Are Python's Cry For Help
 
 ### Python Raises Exceptions at Runtime
 
-
 ## Common Exception Types
 
-Exception Name | When it occurs
---- | ---
-NameError | Raised when a local or global name is not found. 
-ZeroDivisionError | Raised when the second argument of a division or modulo operation is zero.
-OverflowError | Raised when the result of an arithmetic operation is too large to be represented.
-SyntaxError | Raised when the parser encounters a syntax error. 
-TypeError | Raised when an operation or function is applied to an object of inappropriate type.
-KeyboardInterrupt | Raised when the user hits the interrupt key (normally Control-C or Delete).
+| Exception Name    | When it occurs                                                                      |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| NameError         | Raised when a local or global name is not found.                                    |
+| ZeroDivisionError | Raised when the second argument of a division or modulo operation is zero.          |
+| OverflowError     | Raised when the result of an arithmetic operation is too large to be represented.   |
+| SyntaxError       | Raised when the parser encounters a syntax error.                                   |
+| TypeError         | Raised when an operation or function is applied to an object of inappropriate type. |
+| KeyboardInterrupt | Raised when the user hits the interrupt key (normally Control-C or Delete).         |
 
 ## We Can Raise Exceptions
 
@@ -51,14 +49,16 @@ if x < 1:
 ```
 
 ### !callout-info
+
 ## Creating Error Messages
+
 We can actually pass in our own error message when we raise an exception! If we pass in an error message, the exception will use that string as its error description when needed.
+
 ### !end-callout
 
 ```python
 raise ZeroDivisionError('Tried to divide by zero flowers.')
 ```
-
 
 ## We Can Rescue Any Raised Exception
 
@@ -138,7 +138,7 @@ enter_candy()
 
 If we need to handle more than one kind of exception, we can add an infinite number of `except` clauses. Much like the `if..elif` statements, the raised exception will check if it matches one-at-a-time, starting from the top.
 
-This example will run the `try` clause. If an exception is raised, it will check if the exception is a `ZeroDivisionError ` first. If it isn't, then it will check if it's `UnboundLocalError`. Finally, if it isn't `UnboundLocalError`, then it will check if it's `NameError`. 
+This example will run the `try` clause. If an exception is raised, it will check if the exception is a `ZeroDivisionError ` first. If it isn't, then it will check if it's `UnboundLocalError`. Finally, if it isn't `UnboundLocalError`, then it will check if it's `NameError`.
 
 ```python
 def num_size():
@@ -169,5 +169,7 @@ If none of the built-in functions don't suit the logic and context of our code, 
 We won't cover that material, but it's a cool piece of syntax! Follow your curiosity!
 
 ## Summary
-Whether they're caused by programmers, insufficient memory, or user inputs errors are bound to happen. Raising and using the `try..except` clause are great ways to make our code more robust by handling errors before they crash our program. 
+
+Whether they're caused by programmers, insufficient memory, or user inputs errors are bound to happen. Raising and using the `try..except` clause are great ways to make our code more robust by handling errors before they crash our program.
+
 ## Check for Understanding

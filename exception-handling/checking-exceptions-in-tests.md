@@ -13,6 +13,7 @@ Sometimes, our projects will need to raise exceptions. As a developer, we find i
 ### !callout-info
 
 ## Example: Stop Money Transfers
+
 For example, imagine writing a banking webapp that allows customers to transfer money between accounts. Now imagine the customer Jordi. She likes using a web browser that doesn't allow web forms to enforce form validations. Jordi types in that she wants to withdraw $400 from her account. However, she makes a typo, and says inputs $4,000,000; more than she has! The web form wouldn't stop her from doing this, and the Python language wouldn't throw a Runtime error. However, we can stop the program from withdrawing $4,000,000 by throwing an exception.
 
 ### !end-callout
@@ -36,11 +37,11 @@ def test_exceptional_function():
         exceptional_function(exceptional_argument)
 ```
 
-| Code | Description |
-| --- | --- |
-`with pytest.raises(...):` | pytest needs to know beforehand that we're expecting an exception; otherwise it will allow crashes! We use `with pytest.raises(...):` to begin a code block for the rest of our test.
-`SomeTypeOfException` | **Replace this** with the exact kind of exception we're expecting. Examples include `TypeError`, `NotImplementedError`.
-`exceptional_function(exceptional_argument)` | **Replace this** with the function call that will raise the exception.
+| Code                                         | Description                                                                                                                                                                           |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `with pytest.raises(...):`                   | pytest needs to know beforehand that we're expecting an exception; otherwise it will allow crashes! We use `with pytest.raises(...):` to begin a code block for the rest of our test. |
+| `SomeTypeOfException`                        | **Replace this** with the exact kind of exception we're expecting. Examples include `TypeError`, `NotImplementedError`.                                                               |
+| `exceptional_function(exceptional_argument)` | **Replace this** with the function call that will raise the exception.                                                                                                                |
 
 ### Read This Example
 
@@ -97,7 +98,6 @@ is_phone_num_valid(phone_num)
 ##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
-
 
 <!-- Question 2 -->
 
@@ -166,7 +166,6 @@ add_student_to_roster(roster, student)
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-
 <!-- Question 4 -->
 
 <!-- prettier-ignore-start -->
@@ -213,4 +212,3 @@ def test_invalid_name():
     with pytest.raises(ValueError):
         claim_unreserved_code_school_name("Ada Developers Academy")
 ```
-
