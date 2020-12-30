@@ -199,6 +199,18 @@ def test_zero_division():
 | `ZeroDivisionError`       | The kind of exception we expect should be specified here                                      |
 | `1 / 0`                   | In this code block, we should do our **Act** step, or invoke the function we're testing here. |
 
+### !callout-danger
+
+## This Curriculum Uses unittest, Not pytest
+This curriculum teaches pytest, a testing framework that has wide adoption in the Python community. This curriculum's projects will use pytest. However, **the code challenges within this curriculum will use unittest,** a different testing framework. This is due to a limitation in the curriculum tools.
+
+---
+
+Working with unittest, rather than pytest, will have some differences in syntax. However, conceptually, they are the exact same; the structure, error output, error messages, passed test messages, etc. will all be extremely alike.
+
+This curriculum believes in a learner's ability to smoothly work with these differences.
+### !end-callout
+
 ## Check for Understanding
 
 Here, we are displaying the contents of the test.
@@ -235,11 +247,11 @@ def func_that_always_returns_true():
 ### !tests
 ```python
 import unittest
-import main as p
+from main import *
 
 class TestChallenge(unittest.TestCase):
   def test_returns_true(self):
-      self.assertTrue(p.func_that_always_returns_true())
+      self.assertTrue(func_that_always_returns_true())
 ```
 ### !end-tests
 ### !explanation
@@ -281,12 +293,12 @@ def test_returns_true_if_odd():
 
 ```py
 import unittest
-import main as p
+from main import *
 
 class TestPython1(unittest.TestCase):
     def test_returns_true_if_odd(self):
         number = 5
-        result = p.is_odd(number)
+        result = is_odd(number)
         self.assertTrue(result)
 ```
 
@@ -331,12 +343,12 @@ def test_returns_false_if_even():
 
 ```py
 import unittest
-import main as p
+from main import *
 
 class TestPython1(unittest.TestCase):
     def test_returns_false_if_even(self):
         number = 6
-        result = p.is_odd(number)
+        result = is_odd(number)
         self.assertFalse(result)
 ```
 
@@ -370,12 +382,12 @@ def test_returns_None_if_negative():
 
 ```py
 import unittest
-import main as p
+from main import *
 
 class TestPython1(unittest.TestCase):
     def test_returns_None_if_negative(self):
         number = -1000
-        result = p.is_odd(number)
+        result = is_odd(number)
         assert result is None
 ```
 
@@ -408,7 +420,7 @@ def test_raises_runtime_error():
 
 ```py
 import unittest
-import main as p
+from main import *
 
 class TestPython1(unittest.TestCase):
     def test_raises_runtime_error(self):
