@@ -1,4 +1,4 @@
-# Exception Handling
+# Raising and Handling Exceptions
 
 ## Learning Goals
 
