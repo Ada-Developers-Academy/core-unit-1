@@ -209,3 +209,113 @@ print(special_dishes)
 ```
 
 ## Check for Understanding
+
+<!-- Question 1 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: 6c3bc24e-e25e-4d85-8e8e-868cb4baa41f
+* title: Iteration Practice 1
+
+##### !question
+
+Which option will print the keys of this menu dictionary?
+
+```python
+drink_menu = {
+    "hot": "coffee",
+    "cold": "iced tea"
+}
+```
+
+##### !end-question
+
+##### !options
+
+*
+```python
+for drink_type in drink_menu.keys():
+  print(drink_type)
+```
+
+*
+```python
+for drink_type in drink_menu.values():
+  print(drink_type)
+```
+
+*
+```python
+for drink_type, drink in drink_menu.items():
+  print(drink)
+```
+
+##### !end-options
+
+##### !answer
+
+*
+```python
+for drink_type in drink_menu.keys():
+  print(drink_type)
+```
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: checkbox
+* id: c5a6748a-ad7e-4f50-93d4-f8d72e9f0f2a
+* title: Iteration Practice 2
+
+##### !question
+
+Which option will print the values of this menu dictionary?
+
+```python
+dessert_menu = {
+    "ice cream": "Vanilla Bean",
+    "cake": "Chocolate Lava Cake",
+    "pie": "Apple Pie"
+}
+```
+##### !end-question
+
+##### !options
+
+*
+```python
+for dessert in dessert_menu.values():
+  print(dessert)
+```
+*
+```python
+for category, dessert in dessert_menu.items():
+  print(dessert)
+```
+
+##### !end-options
+
+##### !answer
+
+*
+```python
+for dessert in dessert_menu.values():
+  print(dessert)
+```
+*
+```python
+for category, dessert in dessert_menu.items():
+  print(dessert)
+```
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
