@@ -10,7 +10,14 @@ We can have loops inside of loops! We call the arrangement of a loop inside anot
 
 Nested loops are no different from non-nested loops! They can seem intimidating to read and understand at first. But by building on what we already know about other loops, we can expand our understanding and overcome that fear! We just need to practice reading, understanding, and writing nested loops until they feel just as familiar to us as any other loop!
 
-Callout: Nested loops do not require nested data structures; the only thing that nested loops and nested data structures have in common are being nested.
+### !callout-info
+
+## Nested Loops != Nested Data Structures
+
+Nested loops do not require nested data structures; the only thing that nested loops and nested data structures have in common is being nested.
+
+### !end-callout
+
 
 ## Vocabulary and Synonyms
 
@@ -22,11 +29,18 @@ Nested loop | A loop that runs inside of another loop | Loop in a loop | "The lo
 
 Any kind of loop can be inside any other kind of loop; we can have for-loops inside of while-loops, while-loops inside of for-loops, and they can be nested to any depth. The logic of the loops can vary; they can iterate over the same data, iterate over different data, or do something completely different!
 
-The key to understanding nested loops is seeing how many times each loop runs. We should confirm that an entire nested loop finishes before moving on to the next iteration.
+The key to nested loops is in understanding how many times each loop runs, and over what data.
 
 Let's look at an example of a nested loop and step through what the code does.
 
-Callout: This example relies on knowing that strings are iterable; they are secretly sequences of characters!
+### !callout-info
+
+## We Can Iterate Over Strings
+
+This example relies on knowing that strings are iterable; they are secretly sequences of characters!
+
+### !end-callout
+
 
 ``` python
 def map_character_frequency(words):
@@ -49,19 +63,23 @@ print(colors_char_map)
 
 What does this example do?
 
-The function `map_character_frequency` takes in a list of words. In the function body, it creates an empty dictionary `char_map` . We'll look at every word in our list of words. For every word, we'll run a whole separate for-loop.
+Overall, the function `map_character_frequency` is responsible for making a dictionary that will contain every unique character and the number of times each occurs.
 
-We then loop through every character in each word. For every character, we will run this set of instructions: we'll check if the character is in our `char_map` dictionary as a key already. If it is _not_ in the `char_map` dictionary already, then this is the first time we're seeing it, and it should go in the dictionary with a count of one. Otherwise, it's already in the dictionary, and we can increment the frequency count.
+The function `map_character_frequency` takes in a list of words. In the function body, we create an empty dictionary `char_map` . Then, we use a for-loop to look at every word in our list of words. In this for-loop, the variable `word` will hold one word in `words`.
 
-Callout: Let's reword this logic!
+We then loop through every character in each `word`. Each character is represented with the variable `character`. For every character, we will run this set of instructions: we'll check whether it's in our `char_map` dictionary as a key already. If it is _not_ in the `char_map` dictionary already, then this is the first time we're seeing it, and it should be added to the dictionary as a key with a value of one. Otherwise, it's already in the dictionary, and we must increment the frequency count.
 
-We can trace the logic going from "most inner code" to "most outer": We are touching `char_map` in only one place in the code: the `if...else` block. However, `char_map` gets modified for every character, in every word from our original list of words.
+### !callout-info
+
+## Let's Repeat That Explanation in Different Words
+
+We can trace the logic going from "innermost code" to "outermost code". The innermost lines of code modify `char_map` within the `if...else` block. We perform this modification to `char_map` for every character of each word, for every word, from our original list of words.
 
 Tracing the logic going from the outermost to the innermost code, we loop through every word in our word list, then every character of each word, then check whether each character is in `char_map`.
 
-<!-- end callout -->
+### !end-callout
 
-The function ultimately returns `char_map` . The code outside of the function definition create an array of words in `colors` , and then passes it into the function. When we get the character frequency map back, we print it to the console.
+The function ultimately returns `char_map` . Before we invoke the `map_character_frequency` function, we create a list of words in `colors`. We pass the `colors` list into the function. When we get the character frequency map back, we print it to the console.
 
 ### Practice
 
@@ -153,31 +171,10 @@ print(char_map)
 | `deer` | `e` | `{"d": 1, "e": 2}` |
 | `deer` | `r` | `{"d": 1, "e": 2, "r": 1}` |
 | `reads` | `r` | `{"d": 1, "e": 2, "r": 2}` |
-| `reads` | `e` | `{"d": 1, "e": 2, "r": 2}` |
-| `reads` | `a` | `{"d": 1, "e": 2, "r": 2, "a": 1}` |
-| `reads` | `d` | `{"d": 2, "e": 2, "r": 2, "a": 1}` |
-| `reads` | `s` | `{"d": 2, "e": 2, "r": 2, "a": 1, "s": 1}` |
-
-<!-- | Outer loop # | Inner loop # | `word` | `character` | `char_map` |
-|--------------|--------------|--------|-------------|------------|
-| ---          | ---          | ---    | ---         | ---        |
-| 1            | 1            | `deer` | `d` | `{"d": 1}` |
-
-1 | 2 | `deer` | `e` | `{"d": 1, "e": 1}`
-
-1 | 3 | `deer` | `e` | `{"d": 1, "e": 2}`
-
-1 | 4 | `deer` | `r` | `{"d": 1, "e": 2, "r": 1}`
-
-2 | 1 | `reads` | `r` | `{"d": 1, "e": 2, "r": 2}`
-
-2 | 2 | `reads` | `e` | `{"d": 1, "e": 2, "r": 2}`
-
-2 | 3 | `reads` | `a` | `{"d": 1, "e": 2, "r": 2, "a": 1}`
-
-2 | 4 | `reads` | `d` | `{"d": 2, "e": 2, "r": 2, "a": 1}`
-
-2 | 5 | `reads` | `s` | `{"d": 2, "e": 2, "r": 2, "a": 1, "s": 1}` -->
+| `reads` | `e` | `{"d": 1, "e": 3, "r": 2}` |
+| `reads` | `a` | `{"d": 1, "e": 3, "r": 2, "a": 1}` |
+| `reads` | `d` | `{"d": 2, "e": 3, "r": 2, "a": 1}` |
+| `reads` | `s` | `{"d": 2, "e": 3, "r": 2, "a": 1, "s": 1}` |
 
 At this point, there are no more characters and no more words to loop through.
 
