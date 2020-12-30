@@ -23,7 +23,21 @@ If software fails for one person, it's likely that software is failing for _many
 
 ## Exceptions Are Python's Cry For Help
 
-### Python Raises Exceptions at Runtime
+An exception is a type of _thing_ (we can say "data type") that holds information about an error that the program encounters. Exceptions hold data like specifically what error occured and which line of code caused it.
+
+Python creates an exception whenever a syntax or runtime error occurs in a program. Python will then immediately try to stop the execution of the program and exit out of it. When an error happens, and we see details in the stack trace, we actually see details about the exception!
+
+The act of creating an exception is often called **raising an exception.**
+
+When an exception is raised, Python moves "up" through the stack of code execution. This act of the exception moving "up" is often called **throwing an exception** or **bubbling up.** We might imagine an exception raised in a deep layer of code gets thrown up through the each layer of code, eventually to the programmer's face.
+
+Python raises exceptions because exceptions are Python's cry for help. Python only raises exceptions when some code says, "I can't do this! I can't go on!"
+
+Of course, when Python surrenders and throws an exception, we can't force it to keep going. Ideally, however, should we see an exception, we'd love to recognize it, handle the situation, and then allow our program to move on.
+
+Code that recognizes a thrown exception is often called **catching an exception.** Catching an exception and then handling the situation, setting things back in order, and making it possible to move on, is often called **handling an exception** or **rescuing an exception.**
+
+It is wise and ideal to write code that rescues and helps out our program, should Python ever raise an exception.
 
 ## Common Exception Types
 
@@ -250,3 +264,5 @@ We won't cover that material, but it's a cool piece of syntax! Follow your curio
 Whether they're caused by programmers, insufficient memory, or user inputs errors are bound to happen. Raising and using the `try..except` clause are great ways to make our code more robust by handling errors before they crash our program.
 
 ## Check for Understanding
+
+<!-- Use the questions in the checking exceptions in tests lessons, and reverse them, lol -->
