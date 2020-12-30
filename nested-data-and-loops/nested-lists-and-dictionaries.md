@@ -173,7 +173,13 @@ Similarly to how we accessed one element in a nested list, we chain the syntax f
 example_dict[ key_to_find_inner_list ][ index_to_find_element ]
 ```
 
-Callout: Again, we practice reading this code from left-to-right. First, we evaluate the expression `example_dict[ key_to_find_inner_list ]`. Then, moving to the right, we index that list with `index_to_find_element`.
+### !callout-info
+
+## Reading Code From Left-to-Right
+
+Again, we practice reading this code from left-to-right. First, we evaluate the expression `example_dict[ key_to_find_inner_list ]`. Then, moving to the right, we index that list with `index_to_find_element`.
+
+### !end-callout
 
 Observe these examples:
 
