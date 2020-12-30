@@ -47,7 +47,7 @@ def map_character_frequency(words):
     char_map = {}
     for word in words:
         for character in word:
-            if character not in char_map.keys():
+            if character not in char_map:
                 char_map[character] = 1
             else:
                 char_map[character] += 1
@@ -90,7 +90,7 @@ def map_character_frequency(words):
     char_map = {}
     for word in words:
         for character in word:
-            if character not in char_map.keys():
+            if character not in char_map:
                 char_map[character] = 1
             else:
                 char_map[character] += 1
@@ -113,7 +113,7 @@ Which line of code best describes iterating over the list `words` ?
 
 * `for word in words:`
 * `for character in word:`
-* `if character in char_map.keys():`
+* `if character in char_map:`
 * `char_map[character] += 1`
 
 What is the local variable for each item in `words` ?
@@ -127,7 +127,7 @@ Which line of code best describes iterating over each character in `word` ?
 
 * `for word in words:`
 * `for character in word:`
-* `if character in char_map.keys():`
+* `if character in char_map:`
 * `char_map[character] += 1`
 
 What is the local variable for each item in `word` ?
@@ -152,7 +152,7 @@ def map_character_frequency(words):
     char_map = {}
     for word in words:
         for character in word:
-            if character not in char_map.keys():
+            if character not in char_map:
                 char_map[character] = 1
             else:
                 char_map[character] += 1
