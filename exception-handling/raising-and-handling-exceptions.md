@@ -45,7 +45,9 @@ Python can raise exceptions under the hood... and other packages and tests can r
 We can too! We use the `raise` keyword. We pair the `raise` keyword with the exception class (type) that we are expecting.
 
 ```python
-
+x = -1
+if x < 1:
+  raise ValueError
 ```
 
 ### !callout-info
@@ -65,7 +67,11 @@ Remember, the worst case scenario for any program and programmer is a crash, esp
 What can we do to protect our program from crashes? Of course, the first step is to review the logic, and see if there's a way to write it that won't raise errors. However, Python also lets us catch raised exceptions before it crashes our program-- and then handle them! We use the `try ... except` syntax for this.
 
 ```python
-
+try:
+  print(a)
+except:
+  print("An exception occurred")
+# An exception occurs because the variable 'a' is never defined.
 ```
 
 Try Clause
@@ -75,10 +81,20 @@ A raised exception from the `try` clause will check if it matches the exception 
 `as var_name:`
 Inside the `except` clause, it might be helpful to refer to the Exception itself. For example, we might want to `print` it. We use `as var_name` to say the exception is in the variable `var_name`. `var_name` can be any name.
 
-Example:
+Consider this example:
 
 ```python
+def calculate_circumference():
+  try:
+      radius = input("Enter radius of circle: ")
+      # Enter a letter to handle an exception
+      circumference = 2*3.14*radius
+      print(f"Circumference of circle is: {circumference}")
+  except TypeError as err:
+      print(f"Calculation input has an incorrect data type, {err}.")
 
+calculate_circumference()
+print("Notice how the program hasn't crashed. This is because exceptions change the flow of how programs execute rather than completely stop it.")
 ```
 
 The code execution of the code above is as follows:
@@ -95,11 +111,27 @@ The code execution of the code above is as follows:
 More Examples:
 
 ```python
-
+def enter_number():
+    try:
+        # Enter a letter to see handle an exception.
+        x = int(input("enter number: "))
+    except ValueError as error:
+        print(f"{error}. Please enter a valid number.")
+enter_number()
 ```
 
 ```python
 
+def enter_candy():
+  candy_list = ["lollipops", "m&ms", "gummy bears"]
+  try:
+    #Enter a number larger than 2 to handle an exception.
+    user = int(input("Enter a number to select piece of candy: "))
+    print(f"You selected {candy_list[user]}")
+  except IndexError as error:
+    print(f"A {error} was entered. Please enter 0, 1, or 2.")
+
+enter_candy()
 ```
 
 ### Handle Many Types of Exceptions
@@ -109,7 +141,25 @@ If we need to handle more than one kind of exception, we can add an infinite num
 This example will run the `try` clause. If an exception is raised, it will check if the exception is a `ZeroDivisionError ` first. If it isn't, then it will check if it's `UnboundLocalError`. Finally, if it isn't `UnboundLocalError`, then it will check if it's `NameError`. 
 
 ```python
+def num_size():
+  try:
+    a = 2
+    if a < 4 :
+      # throws ZeroDivisionError for a = 3
+      b = a/(a-3)
 
+    # throws UnboundLocalError if a >= 4
+    print("Value of b = ", b)
+    # throws NameError
+    print("Value of c", c)
+  except ZeroDivisionError as error:
+    print(f"\n{error}")
+  except UnboundLocalError as error:
+    print(f"\n{error}")
+  except NameError as error:
+    print(f"\n{error}")
+
+num_size()
 ```
 
 ## We Can Define Exceptions
