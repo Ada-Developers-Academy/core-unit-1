@@ -118,6 +118,14 @@ except ExampleError as error_as_a_variable:
 | `error_as_a_variable`:    | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!           |
 | Body of the except clause | The error clause should include code that needs to execute if an exception is raised. This code usually is used for printing details about `err`, and/or "rescuing" the situation and helping the program move on. |
 
+### !callout-info
+
+## Specifying Error Type is Optional...
+
+Technically, specifying the error type is optional. Specifying the local variable `err` is also optional. From the above syntax, we could omit `ExampleError as error_as_a_variable`, and it would still be valid code. Then, that except-clause would run if it catches _any_ exception. It's valuable to have the specificity and detail when handling exceptions, so this is a pattern we rarely see.
+
+### !end-callout
+
 ### Walking Through an Example: Circumference
 
 Consider this example. First, read through the code and its console output. Then, read through the explanation, and use it to trace the code.
@@ -262,5 +270,38 @@ We won't cover that material, but it's a cool piece of syntax! Follow your curio
 Whether they're caused by programmers, insufficient memory, or user inputs errors are bound to happen. Raising and using the `try..except` clause are great ways to make our code more robust by handling errors before they crash our program.
 
 ## Check for Understanding
+
+<!-- Question 1 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: ordering
+* id: e45ab433-76f7-46b8-8203-92f7df1a7515
+* title: try-except block
+
+##### !question
+
+Assume we have a function `process_list` which takes a list as an argument and performs an operation on it. If the function is passed something other than a list, it throws a `TypeError` exception. It may throw another type of exception if something else goes wrong.
+
+Re-order the following lines of code into a working try-except block.
+
+For this question, disregard proper indentation.
+
+##### !end-question
+
+##### !answer
+
+1. `try:`
+1. `process_list(my_list)`
+1. `except TypeError:`
+1. `print("Variable is not a list")`
+1. `except:`
+1.  `print("Something else went wrong")`
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Use the questions in the checking exceptions in tests lessons, and reverse them, lol -->
