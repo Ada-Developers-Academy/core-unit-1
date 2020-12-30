@@ -271,12 +271,49 @@ We will often make **local variables** within functions, that are scoped to that
 
 ## Check for Understanding
 
+<!-- Question 1 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 45954838-a89d-4b65-a5db-e6e52aae3ed7
+* title: Variable Scope
+
+##### !question
+
 Finish this sentence: Variable scope is...
 
-- the area of a program where a variable can be defined for the first time
-- the area of a program where a variable can be accessed
-- the area of a program where a variable can be released from memory
-- the area of a program where a variable can be renamed
+##### !end-question
+
+##### !options
+
+* the area of a program where a variable can be defined for the first time
+* the area of a program where a variable can be accessed
+* the area of a program where a variable can be released from memory
+* the area of a program where a variable can be renamed
+
+##### !end-options
+
+##### !answer
+
+* the area of a program where a variable can be accessed
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: e3584e35-5c7d-4e46-a210-a1a0b697e8c0
+* title: Local Variables
+
+##### !question
 
 Read this code, and assume `cut`, `cook`, and `plate` are all valid, defined functions.
 
@@ -289,13 +326,39 @@ def prepare_dinner(ingredients):
 
 prepare_dinner(["Jackfruit", "Onion", "Mango", "Avocado", "Ginger", "Cucumber", "Lime", "Jalapeño"])
 ```
-
 Variables that have can be read inside of the function are...
+##### !end-question
 
-- `ingredients`
-- `chopped_food`, `cooked_food`, `plated_food`
-- `ingredients`, `chopped_food`, `cooked_food`, `plated_food`
-- `ingredients`, `plated_food`
+##### !options
+
+* `ingredients`
+* `chopped_food`, `cooked_food`, `plated_food`
+* `ingredients`, `chopped_food`, `cooked_food`, `plated_food`
+* `ingredients`, `plated_food`
+
+
+##### !end-options
+
+##### !answer
+
+* `ingredients`, `chopped_food`, `cooked_food`, `plated_food`
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+
+<!-- Question 3 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: e9704a8e-e835-44c3-8bf0-57433d7654e9
+* title: Describe These Variables
+
+##### !question
 
 Read this code, and assume `cut`, `cook`, and `plate` are all valid, defined functions.
 
@@ -312,33 +375,22 @@ prepare_dinner(dinner_recipe)
 
 Which of these describe the variables (and their scope) inside of this code?
 
-- `dinner_recipe`, `chopped_food`, `cooked_food`, and `plated_food` are all local variables. They can all be accessed inside of the function.
-- `dinner_recipe`, `ingredients`, `chopped_food`, `cooked_food`, and `plated_food` are all local variables. They can all be accessed inside of the function.
-- `dinner_recipe` is a global variable. `ingredients` is a parameter. `chopped_food`, `cooked_food`, and `plated_food` are local variables. Only the parameters and local variables can be accessed inside of the function.
-- `dinner_recipe` is a global variable. `ingredients` is a parameter. `chopped_food`, `cooked_food`, and `plated_food` are local variables. They can all be accessed inside of the function.
+##### !end-question
 
-Rewrite this code so it **only** uses local variables and parameters in the `prepare_dinner` function, and does not create a `NameError` at runtime.
+##### !options
 
-```python
-def cut(foods):
-    print("We're cuttin' up some food!")
-    return foods
+* `dinner_recipe`, `chopped_food`, `cooked_food`, and `plated_food` are all local variables. They can all be accessed inside of the function.
+* `dinner_recipe`, `ingredients`, `chopped_food`, `cooked_food`, and `plated_food` are all local variables. They can all be accessed inside of the function.
+* `dinner_recipe` is a global variable. `ingredients` is a parameter. `chopped_food`, `cooked_food`, and `plated_food` are local variables. Only the parameters and local variables can be accessed inside of the function.
+* `dinner_recipe` is a global variable. `ingredients` is a parameter. `chopped_food`, `cooked_food`, and `plated_food` are local variables. They can all be accessed inside of the function.
 
-def cook(foods):
-    print("We're adding some tastiness to some food!")
-    return foods
+##### !end-options
 
-def plate(foods):
-    print("We're putting the food on the plates and bowls!")
-    return foods
+##### !answer
 
-def prepare_dinner():
-    chopped_food = cut(dinner_recipe)
-    cooked_food = cook(chopped_food)
-    plated_food = plate(cooked_food)
-    return plated_food
+* `dinner_recipe` is a global variable. `ingredients` is a parameter. `chopped_food`, `cooked_food`, and `plated_food` are local variables. They can all be accessed inside of the function.
 
-dinner_recipe = ["Jackfruit", "Onion", "Mango", "Avocado", "Ginger", "Cucumber", "Lime", "Jalapeño"]
-prepared_dinner = prepare_dinner(dinner_recipe)
-print("Ah, what a delicious looking prepared dinner.")
-```
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
