@@ -1,5 +1,11 @@
 # Iterating and Special Cases
 
+## Learning Goals
+
+- Define the "break" keyword as a way to exit a loop
+- Define the "continue" keyword as a way to advance an iteration in a loop
+- Use the "range()" syntax combined with a for loop
+
 ## Introduction
 
 There are more things we can do with loops!
@@ -7,12 +13,6 @@ There are more things we can do with loops!
 Are we able to stop a loop before it gets to the last element? Are we able to use `for` loops on other data structures?
 
 By learning these different pieces of syntax, we can learn to wield them wisely whenever it becomes relevant.
-
-## Learning Goals
-
-- Define the "break" keyword as a way to exit a loop
-- Define the "continue" keyword as a way to advance an iteration in a loop
-- Use the "range()" syntax combined with a for loop
 
 ## Vocabulary and Synonyms
 

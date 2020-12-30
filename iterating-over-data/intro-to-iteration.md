@@ -1,5 +1,9 @@
 # Intro to Iteration
 
+## Learning Goals
+
+- Define iteration
+
 ## Introduction
 
 Korey might have a summer reading list of a list of books she wants to read. She's an ambitious reader and so she needs to look through her long list all the time to find the right book. She might even want to proudly talk about her accomplishments at the end of the list, and find out how many pages she read.
@@ -7,10 +11,6 @@ Korey might have a summer reading list of a list of books she wants to read. She
 Korey is not the only reader. What if we needed to do these operations for every reader out there with a reading list? What if someone had a reading list of a thousand books?
 
 In programming, we can approach these problems with iteration.
-
-## Learning Goals
-
-- Define iteration
 
 ## Vocabulary and Synonyms
 

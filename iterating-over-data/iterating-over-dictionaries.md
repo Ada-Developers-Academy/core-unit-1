@@ -1,14 +1,14 @@
 # Iterating Over Dictionaries
 
+## Learning Goals
+
+- Practice using for loops to iterate through a dictionary
+
 ## Introduction
 
 The overall concept for iterating over dictionaries is the same as iterating over lists. We can use `for` loops to iterate over **each key-value pair in a dictionary.**
 
 However, because dictionaries are key-value pairs, there are a few differences to pay attention to.
-
-## Learning Goals
-
-- Practice using for loops to iterate through a dictionary
 
 ## `for` Loops for Keys and Values Need `.items()`
 

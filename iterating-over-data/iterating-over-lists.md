@@ -1,12 +1,12 @@
 # Iterating Over Lists
 
-## Introduction
-
-`for` Loops are one of the most common ways to iterate. `for` loops can iterate over **each element in a list.**
-
 ## Learning Goals
 
 - Practice using for loops to iterate through an array
+
+## Introduction
+
+`for` Loops are one of the most common ways to iterate. `for` loops can iterate over **each element in a list.**
 
 ## Vocabulary and Synonyms
 
