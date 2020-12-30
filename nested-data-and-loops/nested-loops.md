@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-* Apply knowledge about loops with nested loops
+- Apply knowledge about loops with nested loops
 
 ## Introduction
 
@@ -18,12 +18,11 @@ Nested loops do not require nested data structures; the only thing that nested l
 
 ### !end-callout
 
-
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Nested loop | A loop that runs inside of another loop | Loop in a loop | "The logic for checking whether the word has vowels is in the nested loop, " "While we're iterating through that list of strings, we should do a nested loop through each string and check whether it has vowels."
+| Vocab       | Definition                              | Synonyms       | How to Use in a Sentence                                                                                                                                                                                           |
+| ----------- | --------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Nested loop | A loop that runs inside of another loop | Loop in a loop | "The logic for checking whether the word has vowels is in the nested loop, " "While we're iterating through that list of strings, we should do a nested loop through each string and check whether it has vowels." |
 
 ## Observing Loops in Loops
 
@@ -41,8 +40,7 @@ This example relies on knowing that strings are iterable; they are secretly sequ
 
 ### !end-callout
 
-
-``` python
+```python
 def map_character_frequency(words):
     char_map = {}
     for word in words:
@@ -85,7 +83,7 @@ The function ultimately returns `char_map` . Before we invoke the `map_character
 
 Read through this code and answer these questions.
 
-``` python
+```python
 def map_character_frequency(words):
     char_map = {}
     for word in words:
@@ -104,50 +102,50 @@ print(colors_char_map)
 
 How many loops are in the function `map_character_frequency()` ?
 
-* 1 for-loop, 1 while-loop
-* 2 for-loops, 0 while-loops
-* 0 for-loops, 2 while-loops
-* 2 for-loops, 0 while-loops, 1 if-else loop
+- 1 for-loop, 1 while-loop
+- 2 for-loops, 0 while-loops
+- 0 for-loops, 2 while-loops
+- 2 for-loops, 0 while-loops, 1 if-else loop
 
 Which line of code best describes iterating over the list `words` ?
 
-* `for word in words:`
-* `for character in word:`
-* `if character in char_map:`
-* `char_map[character] += 1`
+- `for word in words:`
+- `for character in word:`
+- `if character in char_map:`
+- `char_map[character] += 1`
 
 What is the local variable for each item in `words` ?
 
-* `char_map`
-* `word`
-* `words`
-* `character`
+- `char_map`
+- `word`
+- `words`
+- `character`
 
 Which line of code best describes iterating over each character in `word` ?
 
-* `for word in words:`
-* `for character in word:`
-* `if character in char_map:`
-* `char_map[character] += 1`
+- `for word in words:`
+- `for character in word:`
+- `if character in char_map:`
+- `char_map[character] += 1`
 
 What is the local variable for each item in `word` ?
 
-* `char_map`
-* `word`
-* `words`
-* `character`
+- `char_map`
+- `word`
+- `words`
+- `character`
 
 ### Tips
 
-* Use indentation to understand the nesting
-* Take time to understand the local variables in each loop
-* Use words, comments, and pseudocode, and use the phrase "for each ..., we do ..." and "while ... is true, we do ..."
+- Use indentation to understand the nesting
+- Take time to understand the local variables in each loop
+- Use words, comments, and pseudocode, and use the phrase "for each ..., we do ..." and "while ... is true, we do ..."
 
 ## Visualizing Loops in Loops
 
 Sometimes it can be challenging to visualize how a particular loop runs. A _**loop table**_ is a tool we can use to help us visualize the operation of loops, both nested and unnested. Let's use our now-familiar character counting code as an example.
 
-``` python
+```python
 def map_character_frequency(words):
     char_map = {}
     for word in words:
@@ -164,17 +162,17 @@ char_map = map_character_frequency(words)
 print(char_map)
 ```
 
-| `word` | `character` | `char_map` |
-|--------|-------------|------------|
-| `deer` | `d` | `{"d": 1}` |
-| `deer` | `e` | `{"d": 1, "e": 1}` |
-| `deer` | `e` | `{"d": 1, "e": 2}` |
-| `deer` | `r` | `{"d": 1, "e": 2, "r": 1}` |
-| `reads` | `r` | `{"d": 1, "e": 2, "r": 2}` |
-| `reads` | `e` | `{"d": 1, "e": 3, "r": 2}` |
-| `reads` | `a` | `{"d": 1, "e": 3, "r": 2, "a": 1}` |
-| `reads` | `d` | `{"d": 2, "e": 3, "r": 2, "a": 1}` |
-| `reads` | `s` | `{"d": 2, "e": 3, "r": 2, "a": 1, "s": 1}` |
+| `word`  | `character` | `char_map`                                 |
+| ------- | ----------- | ------------------------------------------ |
+| `deer`  | `d`         | `{"d": 1}`                                 |
+| `deer`  | `e`         | `{"d": 1, "e": 1}`                         |
+| `deer`  | `e`         | `{"d": 1, "e": 2}`                         |
+| `deer`  | `r`         | `{"d": 1, "e": 2, "r": 1}`                 |
+| `reads` | `r`         | `{"d": 1, "e": 2, "r": 2}`                 |
+| `reads` | `e`         | `{"d": 1, "e": 3, "r": 2}`                 |
+| `reads` | `a`         | `{"d": 1, "e": 3, "r": 2, "a": 1}`         |
+| `reads` | `d`         | `{"d": 2, "e": 3, "r": 2, "a": 1}`         |
+| `reads` | `s`         | `{"d": 2, "e": 3, "r": 2, "a": 1, "s": 1}` |
 
 At this point, there are no more characters and no more words to loop through.
 
@@ -184,9 +182,9 @@ Writing loops in loops has no special syntax. However, here are some tips and an
 
 Logical errors are the most common errors with nested loops. Attempt to have a clear goal in mind:
 
-* What are you looping through?
-* Why do you need to nest these loops? Could we solve this without nested loops?
-* How can I prove to myself that my loops are working as intended?
+- What are you looping through?
+- Why do you need to nest these loops? Could we solve this without nested loops?
+- How can I prove to myself that my loops are working as intended?
 
 ### Debugging Loops in Loops
 
@@ -194,7 +192,7 @@ Debugging loops in loops is extremely challenging when we're unclear about how m
 
 When debugging, prioritize the process of stepping through each loop and checking each variable. Check each variable in each loop using:
 
-* a debugger tool
-* paper and pencil, write down each variable
-* a loop table
-* `print` statements
+- a debugger tool
+- paper and pencil, write down each variable
+- a loop table
+- `print` statements

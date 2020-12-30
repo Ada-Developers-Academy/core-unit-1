@@ -15,7 +15,7 @@ Nested lists and dictionaries can become the backbone of structuring data. If we
 We recommend working through this lesson in the following way:
 
 - Read through each section slowly
-    - Ensure that in each section, you recognize how to read an element, and how to modify an element
+  - Ensure that in each section, you recognize how to read an element, and how to modify an element
 - When you come across a block of code, practice reading through the code line-by-line
 - Take notes, either as you go, or at the end of each section to summarize
 - Notice when you think something was surprising or unexpected, and write it down
@@ -23,9 +23,9 @@ We recommend working through this lesson in the following way:
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-Two-dimensional arrays | A list where each element is a list. This often implies that all inner lists have the same length. When all inner lists have the same length, a two-dimensional array can resemble a grid, as the structure mimics rows and columns. | 2d array, nested lists, nested arrays | "To implement the game Tic-Tac-Toe, we used a 2d array to represent the spots in the grid, where the center spot was in `grid[0][0]`"
+| Vocab                  | Definition                                                                                                                                                                                                                           | Synonyms                              | How to Use in a Sentence                                                                                                              |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Two-dimensional arrays | A list where each element is a list. This often implies that all inner lists have the same length. When all inner lists have the same length, a two-dimensional array can resemble a grid, as the structure mimics rows and columns. | 2d array, nested lists, nested arrays | "To implement the game Tic-Tac-Toe, we used a 2d array to represent the spots in the grid, where the center spot was in `grid[0][0]`" |
 
 ## Lists Containing Lists
 
@@ -36,6 +36,7 @@ Lists can contain lists.
 ```
 
 In this example:
+
 - The outer list has five elements
 - The inner lists each have three elements
 
@@ -80,6 +81,7 @@ Depending on the structure of our data, additional chaining can be done. We must
 ### !end-callout
 
 Observe these examples:
+
 ```python
 sarahs_list = [
     ['a', 'b', 'c'],
@@ -107,6 +109,7 @@ c e g j n
 ### !callout-secondary
 
 ## A Variable Named `the_letter_c`? Really?
+
 Please note that we intentionally have kind of goofy variable names in this lesson. 😇
 
 ### !end-callout
@@ -120,6 +123,7 @@ example_list[ index_to_find_inner_list ][ index_to_find_element ] = 'This is my 
 ```
 
 Observe these examples:
+
 ```python
 sarahs_list = [
     ['a', 'b', 'c'],
@@ -146,7 +150,7 @@ This code produces the console output:
 
 ## Dictionaries Containing Lists
 
-Dictionary values can contain lists too.  However, lists _cannot_ be used as dictionary keys.
+Dictionary values can contain lists too. However, lists _cannot_ be used as dictionary keys.
 
 ```python
 {
@@ -156,6 +160,7 @@ Dictionary values can contain lists too.  However, lists _cannot_ be used as dic
 ```
 
 In this example:
+
 - The outer dictionary has two key-value pairs: `'oranges'` and `'apples'`
 - The list stored at the `'oranges'` key has four elements
 - The list stored at the `'apples'` key has four elements
@@ -171,6 +176,7 @@ example_dict[ key_to_find_inner_list ][ index_to_find_element ]
 Callout: Again, we practice reading this code from left-to-right. First, we evaluate the expression `example_dict[ key_to_find_inner_list ]`. Then, moving to the right, we index that list with `index_to_find_element`.
 
 Observe these examples:
+
 ```python
 sarahs_dict = {
     'oranges' : ['a', 'b', 'c', 'd'],
@@ -199,6 +205,7 @@ example_list[ index_to_find_inner_list ][ index_to_find_element ] = 'This is my 
 ```
 
 Observe these examples:
+
 ```python
 sarahs_dict = {
     'oranges': ['a', 'b', 'c', 'd'],
@@ -236,13 +243,14 @@ Lists can contain dictionaries.
 ```
 
 In this example:
+
 - The outer list has two items
 - The first inner dictionary has two key-value pairs
 - The second inner dictionary also has two key-value pairs
 
 ### Accessing One Value
 
-Accessing one value from a dictionary nested within a list continues the themes we've already seen.  We need to use the syntax for getting an index from a list, followed by the syntax for retrieving the value from a dictionary.
+Accessing one value from a dictionary nested within a list continues the themes we've already seen. We need to use the syntax for getting an index from a list, followed by the syntax for retrieving the value from a dictionary.
 
 ```python
 example_list[ index_to_find_item ][ key_to_access_value ]
@@ -251,6 +259,7 @@ example_list[ index_to_find_item ][ key_to_access_value ]
 Again, let's practice reading this code from left-to-right. First, we evaluate the expression `example_list[ index_to_find_item ]`, which evaluates to an inner dictionary. Then, continuing to the right, we use `[ key_to_access_value ]` to lookup the value of a key in that inner dictionary.
 
 Observe these examples:
+
 ```python
 sarahs_list = [
     {
@@ -276,6 +285,7 @@ The above code produces this console output:
 Modifying the contents of a nested dictionary follows the syntax rules we've seen before. To re-assign a value, we use the assignment operator.
 
 Observe these examples:
+
 ```python
 sarahs_list = [
     {
@@ -340,16 +350,11 @@ The above code produces this console output:
 
 <!-- Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure. -->
 
-
 <!-- A second time: Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure. -->
-
-
 
 <!-- Modify this function so it returns the value `25` -->
 
-
 <!-- Modify this function so it returns the value `"Electric"` -->
-
 
 <!-- MC:
 
@@ -360,7 +365,7 @@ game_data = {
         {
             "id": 25,
             "name_en": "Pikachu",
-            "type": "Electric" 
+            "type": "Electric"
         }
     ]
 }
