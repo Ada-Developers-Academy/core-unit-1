@@ -7,7 +7,7 @@
 
 ## Introduction
 
-If you didn't know, the absolute worst-case scenario for software is a crash caused by a syntax or runtime error\*. The software has gone to a state where the program can't do anything, the user can't do anything, and possibly the program can't even restart into a usable state!
+If you weren't sure, the absolute worst-case scenario for software is a crash caused by a syntax or runtime error\*. The software has gone to a state where the program can't do anything, the user can't do anything, and possibly the program can't even restart into a usable state!
 
 If software fails for one person, it's likely that software is failing for _many_ people. All of these consequences result in **chaos**.
 
@@ -45,19 +45,39 @@ We can too! We use the `raise` keyword. We pair the `raise` keyword with the exc
 ```python
 x = -1
 if x < 1:
-  raise ValueError
+    raise ValueError
 ```
 
-### !callout-info
+When we run this code, we see the following output in the console:
 
-## Creating Error Messages
+```
+Traceback (most recent call last):
+  File "main.py", line 3, in <module>
+    raise ValueError
+ValueError
+```
+
+Here, we should observe what our stack trace is telling us:
+
+- There is a `ValueError` that stopped the code execution
+- The line of code that caused this error is `raise ValueError`
+- This line of code is in `"main.py"` on line 3
+
+### Creating Error Messages
 
 We can actually pass in our own error message when we raise an exception! If we pass in an error message, the exception will use that string as its error description when needed.
 
-### !end-callout
-
 ```python
 raise ZeroDivisionError('Tried to divide by zero flowers.')
+```
+
+When we wrun this code, we see the following output, which now has our message about flowers!
+
+```
+Traceback (most recent call last):
+  File "main.py", line 1, in <module>
+    raise ZeroDivisionError('Tried to divide by zero flowers.')
+ZeroDivisionError: Tried to divide by zero flowers.
 ```
 
 ## We Can Rescue Any Raised Exception
@@ -68,71 +88,104 @@ What can we do to protect our program from crashes? Of course, the first step is
 
 ```python
 try:
-  print(a)
-except:
-  print("An exception occurred")
+    print(a)
+except ExampleError as error_as_a_variable:
+    print("An exception occurred")
 # An exception occurs because the variable 'a' is never defined.
 ```
 
-Try Clause
-If any exception is raised inside the `try` clause, the rest of the `try` clause is skipped, and code execution moves to the `except` clause
-Except Clause, with Exception Type next to it
-A raised exception from the `try` clause will check if it matches the exception type next to the `except` keyword. If it matches, the `except` clause executes
-`as var_name:`
-Inside the `except` clause, it might be helpful to refer to the Exception itself. For example, we might want to `print` it. We use `as var_name` to say the exception is in the variable `var_name`. `var_name` can be any name.
+Piece of Code | Notes
+--- | ---
+`try:` | This begins a _try-clause_. If any exception is raised by _any code_ executed inside the try-clause, the rest of the try-clause is skipped, and code execution moves to the `except` clause.
+Body of the try-clause | The try-clause should include all code that has the possibility of raising an exception that we want to rescue. The try-clause is indented once from `try:`
+`except` | A keyword that begins an _except-clause_. The except-clause will run if a matching exception is raised from the try-clause.
+`ExampleError` | **Replace this** with the type of exception that we are rescuing, such as `NameError` or `ZeroDivisionError`.
+`as` | A keyword that designates the rescued exception (that matches the type of `ExampleError`) can be accessed as the local variable to the right.
+`error_as_a_variable`: | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!
+Body of the except clause | The error clause should include code that needs to execute if an exception is raised. This code usually is used for printing details about `err`, and/or "rescuing" the situation and helping the program move on.
 
-Consider this example:
+### Walking Through an Example: Circumference
+
+Consider this example. First, read through the code and its console output. Then, read through the explanation, and use it to trace the code.
 
 ```python
-def calculate_circumference():
-  try:
-      radius = input("Enter radius of circle: ")
-      # Enter a letter to handle an exception
-      circumference = 2*3.14*radius
-      print(f"Circumference of circle is: {circumference}")
-  except TypeError as err:
-      print(f"Calculation input has an incorrect data type, {err}.")
+def calculate_circumference(radius):
+    try:
+        circumference = 2*3.14*radius
+        print(f"Circumference of circle is: {circumference}")
+        return circumference
+    except TypeError as err:
+        print(f"Calculation input has an incorrect data type, {err}.")
 
-calculate_circumference()
+
+calculate_circumference("Some text that is definitely not a valid radius value.")
+
 print("Notice how the program hasn't crashed. This is because exceptions change the flow of how programs execute rather than completely stop it.")
 ```
 
-The code execution of the code above is as follows:
+Running this code produces this console output:
+
+```
+Calculation input has an incorrect data type, can't multiply sequence by non-int of type 'float'.
+Notice how the program hasn't crashed. This is because exceptions change the flow of how programs execute rather than completely stop it.
+```
+
+Here's a step-by-step explanation of how the code above runs:
 
 1. First, the Python interpreter says "Okay, the function `calculate_circumference` is defined."
 1. Then, the Python interpreter calls `calculate_circumference`.
-1. We enter the `try` clause
+1. We enter the try-clause
 1. Then, the Python interpreter executes `circumference = 2*3.14*radius`. This line of code raises an exception.
-1. We skip the rest of the `try` clause, and then check if the exception is a `TypeError `.
-1. The exception is a `TypeError`, so we enter the `except` clause. There is a new variable `err`, whose value is the Exception raised.
-1. Then, we print the exception with a message. We could do other stuff too!
+1. We skip the rest of the try-clause, and then check if the exception is a `TypeError `.
+1. The exception is a `TypeError`, so we enter the except-clause. There is a new variable `err`, whose value is the Exception raised.
+1. Then, we print the exception with a message. We could do other stuff too, such as `return None`
 1. Finally, we exit this whole thing.
 
-More Examples:
+### More Examples
 
-```python
-def enter_number():
-    try:
-        # Enter a letter to see handle an exception.
-        x = int(input("enter number: "))
-    except ValueError as error:
-        print(f"{error}. Please enter a valid number.")
-enter_number()
-```
+For each example:
 
-```python
+- Identify the line of code that invokes the error
+- Identify what line of code inside the try-clause raises an error
+- Observe what happens during each except-clause
 
-def enter_candy():
-  candy_list = ["lollipops", "m&ms", "gummy bears"]
-  try:
-    #Enter a number larger than 2 to handle an exception.
-    user = int(input("Enter a number to select piece of candy: "))
-    print(f"You selected {candy_list[user]}")
-  except IndexError as error:
-    print(f"A {error} was entered. Please enter 0, 1, or 2.")
+1.
+    ```python
+    def is_valid_int(input_num):
+        try:
+            x = int(input_num)
+        except ValueError as error:
+            print(f"{error}. Please enter a valid number.")
 
-enter_candy()
-```
+
+    is_valid_int("Clearly not a valid int")
+    ```
+
+    Output:
+
+    ```
+    invalid literal for int() with base 10: 'Clearly not a valid int'. Please enter a valid number.
+    ```
+
+2.
+    ```python
+    def enter_candy(candy_choice):
+        candy_list = ["lollipops", "m&ms", "gummy bears"]
+        try:
+            print(f"Your candy choice is {candy_choice}")
+            print(f"You selected {candy_list[candy_choice]}")
+        except IndexError as error:
+            print(f"A {error} was entered. Please enter 0, 1, or 2.")
+
+    enter_candy(9999)
+    ```
+
+    Output:
+
+    ```
+    Your candy choice is 9999
+    A list index out of range was entered. Please enter 0, 1, or 2.
+    ```
 
 ### Handle Many Types of Exceptions
 
@@ -141,26 +194,50 @@ If we need to handle more than one kind of exception, we can add an infinite num
 This example will run the `try` clause. If an exception is raised, it will check if the exception is a `ZeroDivisionError ` first. If it isn't, then it will check if it's `UnboundLocalError`. Finally, if it isn't `UnboundLocalError`, then it will check if it's `NameError`.
 
 ```python
-def num_size():
-  try:
-    a = 2
-    if a < 4 :
-      # throws ZeroDivisionError for a = 3
-      b = a/(a-3)
+def do_weird_number_math(apple):
+    print("We're entering the do_weird_number_math function! Value of apple:", apple)
 
-    # throws UnboundLocalError if a >= 4
-    print("Value of b = ", b)
-    # throws NameError
-    print("Value of c", c)
-  except ZeroDivisionError as error:
-    print(f"\n{error}")
-  except UnboundLocalError as error:
-    print(f"\n{error}")
-  except NameError as error:
-    print(f"\n{error}")
+    try:
+        if apple < 10:
+            banana = apple / (apple - 3)
 
-num_size()
+        print("Value of banana:", banana)
+        print("Value of carrot:", carrot)
+    except ZeroDivisionError as err:
+        print(f"apple is 3, so it tried to divide by zero. {err}")
+    except UnboundLocalError as err:
+        print(f"apple is valid, but banana was never given a value, so we get an error. {err}")
+    except NameError as err:
+        print(f"We're trying to print carrot, but carrot is never defined before this. {err}")
+
+    print("**************")
+
+# The following line raises a ZeroDivisionError
+do_weird_number_math(3)
+
+# The following line raises an UnboundLocalError
+do_weird_number_math(5555)
+
+# This line raises a NameError
+do_weird_number_math(8)
 ```
+
+This code produces this console output:
+
+```
+We're entering the do_weird_number_math function! Value of apple: 3
+apple is 3, so it tried to divide by zero. division by zero
+**************
+We're entering the do_weird_number_math function! Value of apple: 5555
+apple is valid, but banana was never given a value, so we get an error. local variable 'banana' referenced before assignment
+**************
+We're entering the do_weird_number_math function! Value of apple: 8
+Value of banana: 1.6
+We're trying to print carrot, but carrot is never defined before this. name 'carrot' is not defined
+**************
+```
+
+In our try-clause, different situations will raise different exceptions. Chaining except-clauses allows us to rescue them in specific ways.
 
 ## We Can Define Exceptions
 
