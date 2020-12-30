@@ -108,15 +108,15 @@ except ExampleError as error_as_a_variable:
 # An exception occurs because the variable 'a' is never defined.
 ```
 
-Piece of Code | Notes
---- | ---
-`try:` | This begins a _try-clause_. If any exception is raised by _any code_ executed inside the try-clause, the rest of the try-clause is skipped, and code execution moves to the `except` clause.
-Body of the try-clause | The try-clause should include all code that has the possibility of raising an exception that we want to rescue. The try-clause is indented once from `try:`
-`except` | A keyword that begins an _except-clause_. The except-clause will run if a matching exception is raised from the try-clause.
-`ExampleError` | **Replace this** with the type of exception that we are rescuing, such as `NameError` or `ZeroDivisionError`.
-`as` | A keyword that designates the rescued exception (that matches the type of `ExampleError`) can be accessed as the local variable to the right.
-`error_as_a_variable`: | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!
-Body of the except clause | The error clause should include code that needs to execute if an exception is raised. This code usually is used for printing details about `err`, and/or "rescuing" the situation and helping the program move on.
+| Piece of Code             | Notes                                                                                                                                                                                                              |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `try:`                    | This begins a _try-clause_. If any exception is raised by _any code_ executed inside the try-clause, the rest of the try-clause is skipped, and code execution moves to the `except` clause.                       |
+| Body of the try-clause    | The try-clause should include all code that has the possibility of raising an exception that we want to rescue. The try-clause is indented once from `try:`                                                        |
+| `except`                  | A keyword that begins an _except-clause_. The except-clause will run if a matching exception is raised from the try-clause.                                                                                        |
+| `ExampleError`            | **Replace this** with the type of exception that we are rescuing, such as `NameError` or `ZeroDivisionError`.                                                                                                      |
+| `as`                      | A keyword that designates the rescued exception (that matches the type of `ExampleError`) can be accessed as the local variable to the right.                                                                      |
+| `error_as_a_variable`:    | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!           |
+| Body of the except clause | The error clause should include code that needs to execute if an exception is raised. This code usually is used for printing details about `err`, and/or "rescuing" the situation and helping the program move on. |
 
 ### Walking Through an Example: Circumference
 
@@ -163,8 +163,7 @@ For each example:
 - Identify what line of code inside the try-clause raises an error
 - Observe what happens during each except-clause
 
-1.
-    ```python
+1.  ```python
     def is_valid_int(input_num):
         try:
             x = int(input_num)
@@ -181,8 +180,7 @@ For each example:
     invalid literal for int() with base 10: 'Clearly not a valid int'. Please enter a valid number.
     ```
 
-2.
-    ```python
+2.  ```python
     def enter_candy(candy_choice):
         candy_list = ["lollipops", "m&ms", "gummy bears"]
         try:
