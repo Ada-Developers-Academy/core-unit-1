@@ -100,40 +100,170 @@ colors_char_map = map_character_frequency(colors)
 print(colors_char_map)
 ```
 
+<!-- Question 1 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: sF6pz1
+* title: Nested Loops
+
+##### !question
+
 How many loops are in the function `map_character_frequency()` ?
 
-- 1 for-loop, 1 while-loop
-- 2 for-loops, 0 while-loops
-- 0 for-loops, 2 while-loops
-- 2 for-loops, 0 while-loops, 1 if-else loop
+##### !end-question
+
+##### !options
+
+* 1 for-loop, 1 while-loop
+* 2 for-loops, 0 while-loops
+* 0 for-loops, 2 while-loops
+* 2 for-loops, 0 while-loops, 1 if-else loop
+
+##### !end-options
+
+##### !answer
+
+* 2 for-loops, 0 while-loops
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 9fw2wh
+* title: Nested Loops
+
+##### !question
 
 Which line of code best describes iterating over the list `words` ?
 
-- `for word in words:`
-- `for character in word:`
-- `if character in char_map:`
-- `char_map[character] += 1`
+##### !end-question
+
+##### !options
+
+* `for word in words:`
+* `for character in word:`
+* `if character in char_map:`
+* `char_map[character] += 1`
+
+##### !end-options
+
+##### !answer
+
+* `for word in words:`
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: myW4kq
+* title: Nested Loops
+
+##### !question
 
 What is the local variable for each item in `words` ?
 
-- `char_map`
-- `word`
-- `words`
-- `character`
+##### !end-question
+
+##### !options
+
+* `char_map`
+* `word`
+* `words`
+* `character`
+
+##### !end-options
+
+##### !answer
+
+* `word`
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 4 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: hAerR2
+* title: Nested Loops
+
+##### !question
 
 Which line of code best describes iterating over each character in `word` ?
 
-- `for word in words:`
-- `for character in word:`
-- `if character in char_map:`
-- `char_map[character] += 1`
+##### !end-question
+
+##### !options
+
+* `for word in words:`
+* `for character in word:`
+* `if character in char_map:`
+* `char_map[character] += 1`
+
+##### !end-options
+
+##### !answer
+
+* `for character in word:`
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 5 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 9ShXFW
+* title: Nested Loops
+
+##### !question
 
 What is the local variable for each item in `word` ?
 
-- `char_map`
-- `word`
-- `words`
-- `character`
+##### !end-question
+
+##### !options
+
+* `char_map`
+* `word`
+* `words`
+* `character`
+
+##### !end-options
+
+##### !answer
+
+* `character`
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
 
 ### Tips
 
