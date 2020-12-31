@@ -102,10 +102,9 @@ What can we do to protect our program from crashes? Of course, the first step is
 
 ```python
 try:
-    print(a)
+    any_number_of_python_lines_that_may_raise_an_error()
 except ExampleError as error_as_a_variable:
-    print("An exception occurred")
-# An exception occurs because the variable 'a' is never defined.
+    print(f"An exception occurred. Here are the error details: {error_as_a_variable}")
 ```
 
 | Piece of Code             | Notes                                                                                                                                                                                                              |

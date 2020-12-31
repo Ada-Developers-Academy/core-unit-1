@@ -200,15 +200,3 @@ AttributeError
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-Given these tests, implement the function that will pass.
-
-```python
-def test_valid_name():
-    result = claim_unreserved_code_school_name("Some Code School")
-    assert result is True
-
-
-def test_invalid_name():
-    with pytest.raises(ValueError):
-        claim_unreserved_code_school_name("Ada Developers Academy")
-```
