@@ -1,6 +1,88 @@
 ---
 Standards:
   -
+    Title: Ada Orientation
+    Description: What is Ada?, Online Communcation Norms, Learn LMS, Slack, Google Calendar, Attendance, Project Feedback, One on Ones, Online Meeting Rooms, Retrospectives
+    UID: sEk2C7
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 1o47Ox
+        Path: /ada-orientation/what-is-ada.md
+      -
+        Type: Lesson
+        UID: aKkd3p
+        Path: /ada-orientation/online-communication-norms.md
+      -
+        Type: Lesson
+        UID: FyXbJn
+        Path: /ada-orientation/learn-lms.md
+      -
+        Type: Lesson
+        UID: SdrsII
+        Path: /ada-orientation/slack.md
+      -
+        Type: Lesson
+        UID: 96fbha
+        Path: /ada-orientation/google-calendar.md
+      -
+        Type: Lesson
+        UID: xn8tqi
+        Path: /ada-orientation/attendance.md
+      -
+        Type: Lesson
+        UID: tj7R4n
+        Path: /ada-orientation/project-feedback.md
+      -
+        Type: Lesson
+        UID: Asf7p8
+        Path: /ada-orientation/one-on-ones.md
+      -
+        Type: Lesson
+        UID: tjHiWE
+        Path: /ada-orientation/one-on-ones.instructor.md
+      -
+        Type: Lesson
+        UID: O6okIU
+        Path: /ada-orientation/online-meeting-rooms.md
+      -
+        Type: Lesson
+        UID: 63F66B
+        Path: /ada-orientation/retrospectives.md
+  -
+    Title: What Is Software Development
+    Description: "What is Software?, Study Like a Programmer, Activity: Intention Setting Our Careers, Activity: Study Plan"
+    UID: 9db5757cd4ec665b52cdc40eb2e6c184
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 79b2e5a13c74e07f670ad4f6e0c9be75
+        Path: /what-is-software-development/what-is-software.md
+      -
+        Type: Lesson
+        UID: f1ec9a5d833e26f643c2aa2be8cec25f
+        Path: /what-is-software-development/study-like-a-programmer.md
+      -
+        Type: Instructor
+        UID: 2208effa2c7f806e68a4a11493d42391
+        Path: /what-is-software-development/activity-intention-setting-our-careers.instructor.md
+      -
+        Type: Lesson
+        UID: c0730743994de39e585f6c6a3718b26c
+        Path: /what-is-software-development/activity-intention-setting-our-careers.md
+      -
+        Type: Instructor
+        UID: 99be5734a0b03b94f8dbb3879d6e02e2
+        Path: /what-is-software-development/activity-study-plan.instructor.md
+      -
+        Type: Lesson
+        UID: d0b4410f501e2fd84af60ab3f7195403
+        Path: /what-is-software-development/activity-study-plan.md
+  -
     Title: Approaching a Problem
     Description: Breaking down a problem, Pseudocode, Pair Programming
     UID: pSGW3x
@@ -47,7 +129,7 @@ Standards:
         Path: /intro-to-dev-environment/intro-to-command-line.md
   -
     Title: Intro To Functions
-    Description: Invoking and Defining Functions
+    Description: Functions Overview, Invoking Functions, Defining Functions
     UID: e30a742083b7afa72ec565afafb9f64b
     SuccessCriteria:
       - success criteria
@@ -64,6 +146,17 @@ Standards:
         Type: Lesson
         UID: 692aeabdceb105d82aed2187db381860
         Path: /intro-to-functions/defining-functions.md
+  -
+    Title: Functions, Continued
+    Description: How to Read Documentation
+    UID: 6736abef6aad93ad0fdb8d10e1849b62
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 0ea7bd4c9be9469bd0232744edf2a80d
+        Path: /functions-continued/how-to-read-documentation.md
   -
     Title: Intro To Tests
     Description: Packages and Managing Packages, Automated Tests, Intro to pytest
@@ -85,7 +178,7 @@ Standards:
         Path: /intro-to-tests/intro-to-pytest.md
   -
     Title: Representing Data
-    Description: Representing Data in Lists and Dictionaries, Data and JSON
+    Description: "Representing Data in Lists and Dictionaries, Data and JSON, Activity: Representing Data, Practice: Representing Data"
     UID: hxB08H
     SuccessCriteria:
       - success criteria
@@ -100,5 +193,51 @@ Standards:
         Path: /representing-data/data-and-json.md
       -
         Type: Lesson
+        UID: 1f3084593d9eed2a8ec8a797cbfdd89b
+        Path: /representing-data/activity-representing-data.md
+      -
+        Type: Lesson
         UID: p4Pb0s
         Path: /representing-data/practice-representing-data.md
+  -
+    Title: Nested Data and Nested Loops
+    Description: "Nested Lists and Dictionaries, Nested Loops"
+    UID: DcrO5J
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: PuRG5U
+        Path: /nested-data-and-nested-loops/nested-lists-and-dictionaries.md
+      -
+        Type: Lesson
+        UID: Mo0XXv
+        Path: /nested-data-and-nested-loops/nested-loops.md
+  -
+    Title: Big O
+    Description: Time and Space Complexity, Big O Notation, Big O Analysis
+    UID: f2703dfead197309bf41c0a2d8ff1daf
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Instructor
+        UID: 81281faf1d71e4872fb5ca286cc3618e
+        Path: /big-o/big-o.instructor.md
+      -
+        Type: Lesson
+        UID: b0ad60b6fe7116d3b63fdb9b4cc4bfde
+        Path: /big-o/time-and-space-complexity.md
+      -
+        Type: Lesson
+        UID: 97a53b0bc90b67970a5b0f0c61472464
+        Path: /big-o/big-o-notation.md
+      -
+        Type: Lesson
+        UID: 46f8d000785c9cd1b0112854c419f232
+        Path: /big-o/big-o-analysis.md
+      -
+        Type: Lesson
+        UID: 90465d8c4c1af56aed98039f4e95687c
+        Path: /big-o/practice-big-o.md

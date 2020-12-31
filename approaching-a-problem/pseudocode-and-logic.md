@@ -286,8 +286,6 @@ for number in numbers:
 print("The number of even numbers is #{num_of_even_nums}")
 ```
 
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
-
 <!-- prettier-ignore-start -->
 ### !challenge
 
@@ -300,7 +298,6 @@ print("The number of even numbers is #{num_of_even_nums}")
 Which of the following is an accurate description of the process in Examples 1 and 2?
 
 ##### !end-question
-
 ##### !options
 
 * The developer started with equal parts of readable pseudocode and working Python code
@@ -312,7 +309,6 @@ Which of the following is an accurate description of the process in Examples 1 a
 * The developer started with a working Python solution, and then replaced the Python code with pseudocode
 
 ##### !end-options
-
 ##### !answer
 
 * The developer started with a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
@@ -322,11 +318,9 @@ Which of the following is an accurate description of the process in Examples 1 a
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-<!-- ======================= END CHALLENGE ======================= -->
-
 ## Check for Understanding
 
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Question 1 -->
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -340,7 +334,6 @@ Which of the following is an accurate description of the process in Examples 1 a
 Which of these is the best definition of pseudocode?
 
 ##### !end-question
-
 ##### !options
 
 * Pseudocode is a set of comments in code intended to give explanation to non-programmers
@@ -352,18 +345,15 @@ Which of these is the best definition of pseudocode?
 * Pseudocode is the code in a programming solution that can be understood by developers
 
 ##### !end-options
-
 ##### !answer
 
 * Pseudocode is an informal, non-working, non-functioning system of writing code intended to help a developer work through a problem
 
 ##### !end-answer
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-<!-- ======================= END CHALLENGE ======================= -->
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Question 2 -->
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -377,7 +367,6 @@ Which of these is the best definition of pseudocode?
 Which of these is not a benefit of writing pseudocode?
 
 ##### !end-question
-
 ##### !options
 
 * Makes Changes Easier
@@ -386,15 +375,15 @@ Which of these is not a benefit of writing pseudocode?
 * Automatically verifies that your code works and is complete
 
 ##### !end-options
-
 ##### !answer
 
 * Automatically verifies that your code works and is complete
 
 ##### !end-answer
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -408,9 +397,7 @@ Which of these is not a benefit of writing pseudocode?
 Which of these describes a general process of incorporating pseudocode into solving a problem
 
 ##### !end-question
-
 ##### !options
-
 
 * Read the problem, clarify the problem, write pseudocode, write Python code, repeat
 * Read the problem, clarify the problem, break it into smaller sub-problems, write pseudocode, write Python code, repeat
@@ -418,12 +405,10 @@ Which of these describes a general process of incorporating pseudocode into solv
 * Write Python code, write pseudocode, rewrite Python code, repeat
 
 ##### !end-options
-
 ##### !answer
 
 * Read the problem, clarify the problem, break it into smaller sub-problems, write pseudocode, write Python code, repeat
 
 ##### !end-answer
-
 ### !end-challenge
 <!-- prettier-ignore-end -->

@@ -38,7 +38,7 @@ Describe some ways you can recognize that a problem's solution might use a list.
 | 2020-09-07               | 1                                          |
 | 2020-09-08               | 0                                          |
 
-Imagine this data is from an organization called "The Fellowship of Simon's Neighbors" that collects data on Simon's neighbors. Look through the data and make a prediction about what this data means and represents, and how you would explain it to a 10 year old.
+Imagine this data is from an organization called "The Fellowship of Kiri's Neighborhood Friends" that collects data on Kiri's neighborhood friends. Look through the data and make a prediction about what this data means and represents, and how you would explain it to a 10 year old.
 
 Type the most important data out as one list, and store it in a variable. Choose your variable name wisely.
 
@@ -86,7 +86,7 @@ def steal_top_food(my_groceries, their_groceries):
     # Replace pass with a new function body
     # that fulfills the requirements
 
-simons_groceries = ["Spinach", "Broccoli", "Eggplants", "Potatoes"]
-devins_groceries = ["Avocados", "Oat Milk", "Mangoes"]
-steal_top_food(simons_groceries, devins_groceries)
+kiris_groceries = ["Spinach", "Broccoli", "Eggplants", "Potatoes"]
+tiegans_groceries = ["Avocados", "Oat Milk", "Mangoes"]
+steal_top_food(kiris_groceries, tiegans_groceries)
 ```

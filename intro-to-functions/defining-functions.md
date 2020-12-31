@@ -503,6 +503,8 @@ For the `sing_happy_birthday(name)` function, I could invoke this function with 
 
 ## Check for Understanding
 
+<!-- Question 1 -->
+
 <!-- prettier-ignore-start -->
 ### !challenge
 

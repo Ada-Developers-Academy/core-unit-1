@@ -121,7 +121,14 @@ The function name is the name of the test, and it should imply what the test is 
 
 The function body contains the details of the test.
 
-`pytest` has a rule about naming tests: **It will only recognize test names beginning with `test_`**. The rest of the test name should imply the scenario you're testing. Possible example test names include, `test_creates_chart`, `test_returns_none_for_invalid_date`, `test_handles_yyyymmdd_date_format`, or `test_raises_error_for_empty_location`.
+`pytest` has a rule about naming individual tests: **It will only recognize test names begin with `test_` or end with `_test`**. The rest of the test name should imply the scenario you're testing.
+
+Possible example test names include:
+
+- `test_creates_chart` or `creates_chart_test`
+- `test_returns_none_for_invalid_date` or `returns_none_for_invalid_date_test`
+- `test_handles_yyyymmdd_date_format` or `handles_yyyymmdd_date_format_test`
+- `test_raises_error_for_empty_location` or `raises_error_for_empty_location_test`
 
 ### `assert`
 
@@ -129,7 +136,7 @@ The function body contains the details of the test.
 
 The `assert` statement checks if what's on the right is **truthy**. If the expression to the right is truthy, then the assertion will pass, and the test execution will move to the next line. If the expression is falsey, then the assertion will fail, the test execution will leave that test, and move on to the running the rest of the test suite.
 
-We can use comparisons, and the wide range of Python comparisons in our `assert` statements.
+We can use the wide range of Python comparisons in our `assert` statements.
 
 Read through these example `assert` statements as passing examples that prove we can compare numbers, strings,
 
@@ -200,9 +207,37 @@ This curriculum will go deeper into raising exceptions eventually! For now, awar
 
 ### !end-callout
 
+### !callout-danger
+
+## This Curriculum Uses unittest, Not pytest
+
+This curriculum teaches pytest, a testing framework that has wide adoption in the Python community. This curriculum's projects will use pytest. However, **the code challenges within this curriculum will use unittest,** a different testing framework. This is due to a limitation in the curriculum tools.
+
+---
+
+Working with unittest, rather than pytest, will have some differences in syntax. However, conceptually, they are the exact same; the structure, error output, error messages, passed test messages, etc. will all be extremely alike.
+
+This curriculum believes in a learner's ability to smoothly work with these differences.
+
+### !end-callout
+
 ## Check for Understanding
 
 Here, we are displaying the contents of the test.
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
+
+<!-- Question 1 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: VarpJ0
+* title: Intro to pytest
+
+### !question
 
 Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
@@ -211,6 +246,50 @@ def test_returns_true():
     result = func_that_always_returns_true()
     assert result
 ```
+### !end-question
+### !placeholder
+
+```python
+def func_that_always_returns_true():
+    pass
+```
+### !end-placeholder
+### !tests
+```python
+import unittest
+from main import *
+
+class TestChallenge(unittest.TestCase):
+  def test_returns_true(self):
+      self.assertTrue(func_that_always_returns_true())
+```
+### !end-tests
+### !explanation
+
+We are expecting this implementation, although returning anything truthy will work too.
+
+```python
+def func_that_always_returns_true():
+    return True
+```
+
+### !end-explanation
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 621ce40e-a848-4429-a100-76e6001f77c3
+* title: Intro to pytest
+
+##### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
 ```python
 def test_returns_true_if_odd():
@@ -219,12 +298,87 @@ def test_returns_true_if_odd():
     assert result
 ```
 
+##### !end-question
+##### !tests
+
+```py
+import unittest
+from main import *
+
+class TestPython1(unittest.TestCase):
+    def test_returns_true_if_odd(self):
+        number = 5
+        result = is_odd(number)
+        self.assertTrue(result)
+```
+
+##### !end-tests
+##### !hint
+
+Logic to find that something is odd or even is best solved using the modulo operator.
+
+##### !end-hint
+##### !hint
+
+Don't forget to put your code in a function with the right name and parameters.
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 71615b90-7562-480f-b868-50e23812a0f3
+* title: Intro to pytest
+
+##### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
+
 ```python
 def test_returns_false_if_even():
     number = 6
     result = is_odd(number)
     assert not result
 ```
+
+##### !end-question
+
+##### !tests
+
+```py
+import unittest
+from main import *
+
+class TestPython1(unittest.TestCase):
+    def test_returns_false_if_even(self):
+        number = 6
+        result = is_odd(number)
+        self.assertFalse(result)
+```
+
+##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 4 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 386b0492-77de-4132-a81c-8746090296c2
+* title: Intro to pytest
+
+##### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
 ```python
 def test_returns_None_if_negative():
@@ -233,8 +387,57 @@ def test_returns_None_if_negative():
     assert result is None
 ```
 
+##### !end-question
+##### !tests
+
+```py
+import unittest
+from main import *
+
+class TestPython1(unittest.TestCase):
+    def test_returns_None_if_negative(self):
+        number = -1000
+        result = is_odd(number)
+        assert result is None
+```
+
+##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 5 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: a18259ec-848d-4ec4-99c1-c6a71ec1fab7
+* title: Intro to pytest
+
+##### !question
+
+Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
+
 ```python
 def test_raises_runtime_error():
     with pytest.raises(RuntimeError):
-        my_func()
+        runs_mystery_algorithm()
 ```
+
+##### !end-question
+##### !tests
+
+```py
+import unittest
+from main import *
+
+class TestPython1(unittest.TestCase):
+    def test_raises_runtime_error(self):
+        with self.assertRaises(RuntimeError):
+            p.runs_mystery_algorithm()
+```
+
+##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->

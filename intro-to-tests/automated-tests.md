@@ -64,7 +64,7 @@ Addison could come up with the following scenarios:
 | Do we get an accurate birth chart if we pass in a date, location, and time? | `"January 1, 1980"`, `"Seattle"`, `"12:00"` | `{"Sun": "Capricorn", ...}` |
 | What happens if the function receives `None` for time?                      | `"January 1, 1980"`, `"Seattle"`, `None`    | `None`                      |
 | What happens if the `date` argument comes as a different format?            | `"1980-01-01"`, `"Seattle"`, `"12:00"`      | `{"Sun": "Capricorn", ...}` |
-| What happens if the function receives an empty string for `location`?       | `"January 1, 1980"`, `"Seattle"`, `"12:00"` | should raise an exception   |
+| What happens if the function receives an empty string for `location`?       | `"January 1, 1980"`, `""`, `"12:00"` | should raise an exception   |
 
 ### !callout-info
 
@@ -104,6 +104,8 @@ To incorporate testing into our development workflow, our workflow may adjust to
 6. Repeat!
 
 ## Check for Understanding
+
+<!-- Question 1 -->
 
 <!-- prettier-ignore-start -->
 ### !challenge
