@@ -85,7 +85,7 @@ We can actually pass in our own error message when we raise an exception! If we 
 raise ZeroDivisionError('Tried to divide by zero flowers.')
 ```
 
-When we wrun this code, we see the following output, which now has our message about flowers!
+When we run this code, we see the following output, which now has our message about flowers!
 
 ```
 Traceback (most recent call last):
