@@ -37,7 +37,12 @@ The following are examples of expressions, because when our code runs, these tur
 | `999 == 0`        | `False`                                 |
 | `my_list[0]`      | The first element of the list `my_list` |
 
-Callout: For functions, we can interpret a function call used as an evaluated value as an expression.
+### !callout-info
+
+## Function Calls are Expressions
+For functions, we can interpret a function call used as an evaluated value as an _expression_.
+
+### !end-callout
 
 ## Statements
 
