@@ -56,7 +56,12 @@ The following are examples of statements.
 
 Many of these statements use syntax that will be covered more in-depth with deeper knowledge.
 
-Callout: For functions, we can interpret a function call used execute a change as a statement.
+### !callout-info
+
+## Statement
+For functions, we can interpret a function call used to execute a change as a _statement_.
+
+### !end-callout
 
 ## Values Have Data Types
 
@@ -80,7 +85,12 @@ This is a list of all data types available in the Python programming language.
 | Set, frozenset   | An unordered collection. Cannot access values with index or key; must use a loop.                                                                            |
 | bytes, bytearray | A collection of binary digits (bits).                                                                                                                        |
 
-Callout: We will not go into depth with tuples or sets in this curriculum, but they are interesting and useful data types. You are free to learn more and apply them; follow your curiosity!
+### !callout-info
+
+## Explore Data Types
+We will not go into depth with tuples or sets in this curriculum, but they are interesting and useful data types. You are free to learn more and apply them; follow your curiosity!
+
+### !end-callout
 
 ### Get the Data Type with `type()`
 
@@ -109,7 +119,7 @@ print(type(my_bicycle_details))
 print(type(my_bicycle_details["num_of_wheels"]))
 ```
 
-### Forcing a Data Type
+### Casting
 
 We can convert a value to a different data type.
 
@@ -136,7 +146,11 @@ my_fraction_as_int = int(my_lucky_fraction)
 print(my_fraction_as_int)
 ```
 
-Callout: Often times, the behavior of converting isn't very predictable. What happens when we cast an empty list into a string? Or an integer into a boolean? It is best to experiment with converting in a REPL before using it in code.
+### !callout-info
+
+## Experiment with Casting
+Often times, the behavior of converting isn't very predictable. What happens when we cast an empty list into a string? Or an integer into a boolean? It is best to experiment with converting in a REPL before using it in code.
+### !end-callout
 
 ## Literals Are The Thing Itself
 
