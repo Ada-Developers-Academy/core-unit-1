@@ -208,24 +208,24 @@ Choose all of options that will evaluate to true:
 ##### !end-question
 ##### !options
 
-* var1 or var2
-* var3 or (var1 and var2)
-* var5 and var2
-* var4 or var3
-* not var5 and var2
-* var5 or var3
-* var2 or not var5
-* not (var3 or var1)
+* `var1 or var2`
+* `var3 or (var1 and var2)`
+* `var5 and var2`
+* `var4 or var3`
+* `not var5 and var2`
+* `var5 or var3`
+* `var2 or not var5`
+* `not (var3 or var1)`
 
 ##### !end-options
 ##### !answer
 
-* var1 or var2
-* var5 and var2
-* var4 or var3
-* var5 or var3
-* var2 or not var5
-* not (var3 or var1)
+* `var1 or var2`
+* `var5 and var2`
+* `var4 or var3`
+* `var5 or var3`
+* `var2 or not var5`
+* `not (var3 or var1)`
 
 ##### !end-answer
 ##### !hint

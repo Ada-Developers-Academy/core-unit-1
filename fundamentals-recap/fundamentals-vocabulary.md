@@ -203,3 +203,84 @@ print(f"Here is {pineapples}!")
 ```
 
 There are many other ways to combine strings and non-string values. Some methods include concatenation, or the `format()` method. Feel free to research these and use them; follow your curiosity!
+
+## Check for Understanding
+
+<!-- Question 1 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: short-answer
+* id: e255bf2d-f703-4a22-ba13-f142584bba93
+* title: Expressions and Statements
+
+##### !question
+
+Using the code snippet below, on line 2, what is the expression?
+
+```python
+
+1   test_num = 5
+2   if test_num > 10:
+3       print "Bigger than ten!"
+
+```
+##### !end-question
+##### !answer
+
+test_num > 10
+
+##### !end-answer
+##### !hint
+
+An expression is a piece of code that evaluates to a value.  In the conditional `if` statement, what is the portion that evaluates to True or False?
+
+##### !end-hint
+##### !explanation
+
+In the `if` statement, `test_num > 10` will evaluate to False.  It is the expression that is being evaluated in the statement.
+
+##### !end-explanation
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: short-answer
+* id: f07c693b-b2f2-4e16-a114-74cf6fcfe43a
+* title: Literals
+
+##### !question
+
+Using the code snippet below, identify at least 1 literal:
+
+```python
+
+1   test_num = 5
+2   if test_num > 10:
+3       print "Bigger than ten!"
+
+```
+
+##### !end-question
+##### !answer
+
+/5|10|"Bigger than ten!"/
+
+##### !end-answer
+##### !hint
+
+There are three literals in the code snippet.  Remember, the literal is the value written as itself.
+
+##### !end-hint
+##### !explanation
+
+There are three literals in the code snippet, `5`, `10` and `"Bigger than ten!"`.
+
+##### !end-explanation
+### !end-challenge
+<!-- prettier-ignore-end -->
