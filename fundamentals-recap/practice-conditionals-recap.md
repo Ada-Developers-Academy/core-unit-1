@@ -20,7 +20,7 @@ When you finish, write down any remaining questions you have in your notes, and 
 
 ##### !question
 
-A grocery store's point of sale system generates notifications when an item reaches low inventory levels. For this example, the low inventory threshold is 10 units. Select the option that best describes the logic for this notification.
+A grocery store's point of sale system generates notifications when a product reaches low inventory levels. For this example, the low inventory threshold is 10 units or lower. Select the option that best describes the logic for this notification.
 
 ##### !end-question
 
@@ -30,21 +30,21 @@ A grocery store's point of sale system generates notifications when an item reac
 ```python
 
 def check_inventory_level():
-    if len(item) < 10:
-        print(item + " is low in stock.")
+    if product_details["inventory"] < 10:
+        print(product_details["name"] + " is low in stock.")
 ```
 
 * 
 ```python
 def check_inventory_level():
-    if len(item) <= 10:
-        print(item + " is low in stock.")
+    if product_details["inventory"] <= 10:
+        print(product_details["name"] + " is low in stock.")
 ```
 * 
 ```python
 def check_inventory_level():
-    if len(item) == 10:
-        print(item + " is low in stock.")
+    if product_details["inventory"] == 10:
+        print(product_details["name"] + " is low in stock.")
 ```
 
 ##### !end-options
@@ -54,15 +54,14 @@ def check_inventory_level():
 * 
 ```python
 def check_inventory_level():
-    if len(item) <= 10:
-        print(item + " is low in stock.")
+    if product_details["inventory"] <= 10:
+        print(product_details["name"] + " is low in stock.")
 ```
 
 ##### !end-answer
 
-
 #### !hint 
-Make assumptions! There are several reasons why an item decreases in inventory. Think about whether the item count can be lower than the low inventory threshold.
+Make assumptions! Consider whether the item count can be lower than the low inventory threshold.
 
 #### !end-hint 
 ### !end-challenge
@@ -150,12 +149,12 @@ Select the option that best describes how a smart car would behave when detectin
 
 * 
 ``` Python
-if traffic_light_color == "green":
+if traffic_light_color = "green":
     print("continue driving at current speed")
-elif traffic_light_color == "red":
+elif traffic_light_color = "red":
     print("reduce speed to stop")
-elif traffic_light_color == "yellow":
-    print("reduce speed by half and check traffic_light_color again")
+elif traffic_light_color = "yellow":
+    print("reduce speed by half and check traff_light_color again")
 else:
     print("prepare to reduce speed")
 ```
@@ -174,12 +173,12 @@ else:
 
 * 
 ``` Python
-if traffic_light_color = "green":
+if traffic_light_color == "green":
     print("continue driving at current speed")
-elif traffic_light_color = "red":
+elif traffic_light_color == "red":
     print("reduce speed to stop")
-elif traffic_light_color = "yellow":
-    print("reduce speed by half and check traff_light_color again")
+elif traffic_light_color == "yellow":
+    print("reduce speed by half and check traffic_light_color again")
 else:
     print("prepare to reduce speed")
 ```
@@ -204,7 +203,7 @@ else:
 
 ##### !hint 
 
-Always practice safe driving!
+Read the conditional expressions very carefully, even character by character. Always practice safe driving!
 
 ##### !end-hint
 ### !end-challenge
@@ -222,7 +221,7 @@ Always practice safe driving!
 
 ##### !question
 
-During holiday seasons, stores will often offer discounts based on membership tiers. Select the option that best describes the logic to create this discount system.
+During holiday seasons, stores will often offer discounts based on membership tiers. If the customer is not a member, they will not have any discount, and should be encouraged to become a member. Select the option that best describes the logic to create this discount system.
 
 ##### !end-question
 
@@ -262,6 +261,7 @@ elif membership_tier == "Platinum":
     discount = .20
 else membership_tier == "None":
     discount = 0
+    print("Become a member and have access to discounts today! Terms and conditions will apply.")
 ```
 
 ##### !end-options
@@ -276,14 +276,14 @@ elif membership_tier == "Premium":
     discount = .15
 elif membership_tier == "Platinum":
     discount = .20
-else:
+else membership_tier == "None":
+    discount = 0
     print("Become a member and have access to discounts today! Terms and conditions will apply.")
 ```
 
 ##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
-
 
 ## Boolean Operations
 
@@ -299,7 +299,7 @@ else:
 
 ##### !question
 
-Online-retailers often provide free shipping to members if their cart total reaches $100. Select the option that describes the logic to determine if a customer will receive free shipping or not.
+Online-retailers often provide free shipping to members if their cart total reaches at least $100. Select the option that describes the logic to determine if a customer will receive free shipping or not.
 
 ##### !end-question
 
@@ -307,27 +307,27 @@ Online-retailers often provide free shipping to members if their cart total reac
 
 * 
 ``` Python
-if is_account_member and cart = $100:
+if is_account_member and cart = 100:
     print("You are qualified for free shipping. Proceed to checkout.")
-elif is_account_member is False and cart = $100:
+elif is_account_member is False and cart = 100:
     print("Sign up today for free shipping on your next order.")
 else:
     print("Save on shipping by becoming a member and spending $100 on your order. Offer ends soon!")
 ```
 * 
 ``` Python
-if is_account_member and cart == $100:
+if is_account_member and cart == 100:
     print("You are qualified for free shipping. Proceed to checkout.")
-elif is_account_member is False and cart == $100:
+elif is_account_member is False and cart == 100:
     print("Sign up today for free shipping on your next order.")
 else:
     print("Save on shipping by becoming a member and spending $100 on your order. Offer ends soon!")
 ```
 * 
 ``` Python
-if is_account_member and cart >= $100:
+if is_account_member and cart >= 100:
     print("You are qualified for free shipping. Proceed to checkout.")
-elif is_account_member is False and cart >= $100:
+elif is_account_member is False and cart >= 100:
     print("Sign up today for free shipping on your next order.")
 else:
     print("Save on shipping by becoming a member and spending $100 on your order. Offer ends soon!")
@@ -339,9 +339,9 @@ else:
 
 * 
 ``` Python
-if is_account_member and cart >= $100:
+if is_account_member and cart >= 100:
     print("You are qualified for free shipping. Proceed to checkout.")
-elif is_account_member is False and cart >= $100:
+elif is_account_member is False and cart >= 100:
     print("Sign up today for free shipping on your next order.")
 else:
     print("Save on shipping by becoming a member and spending $100 on your order. Offer ends soon!")
@@ -351,7 +351,7 @@ else:
 
 ##### !hint
 
-The is_account_member variable is a Boolean.
+The `is_account_member` variable is a Boolean. Also, discover the differences between the options by reading the conditionals very carefully, even character by character.
 
 ##### !end-hint
 
@@ -370,7 +370,7 @@ The is_account_member variable is a Boolean.
 
 ##### !question
 
-Pretend you are a game developer for a new Mario Kart game. You are developing the game mechanic to unlock stages. In order for the player to unlock Peach's Castle, Mario needs to reach a skill level of 10 and earn at least 8 stars from previous stages. Which option best describes the conditional to build this feature?
+Imagine you are a game developer for a new Mario Kart game. You are developing the game mechanic to unlock stages. In order for the player to unlock Peach's Castle, Mario needs to reach a skill level of at least 10 and earn at least 8 stars from previous stages. Which option best describes the conditional to build this feature?
 
 ##### !end-question
 
@@ -378,14 +378,14 @@ Pretend you are a game developer for a new Mario Kart game. You are developing t
 
 * 
 ``` Python
-if skill_level == 10 OR total_stars_count == 8:
+if skill_level == 10 or total_stars_count == 8:
     print("Peach's Castle is unlocked!")
 else:
     print("Must reach level 10 and achieve 8 stars")
 ```
 * 
 ``` Python
-if skill_level >= 10 AND total_stars_count >= 8:
+if skill_level >= 10 and total_stars_count >= 8:
     print("Peach's Castle is unlocked!")
 else:
     print("Must reach level 10 and achieved 8 stars")
@@ -393,7 +393,7 @@ else:
 
 * 
 ``` Python
-if skill_level >= 10 OR total_stars_count >= 8:
+if skill_level >= 10 or total_stars_count >= 8:
     print("Peach's Castle is unlocked!")
 else:
     print("Must reach level 10 and achieved 8 stars")
@@ -405,7 +405,7 @@ else:
 
 * 
 ``` Python
-if skill_level >= 10 AND total_stars_count >= 8:
+if skill_level >= 10 and total_stars_count >= 8:
     print("Peach's Castle is unlocked!")
 else:
     print("Must reach level 10 and achieved 8 stars")
@@ -426,7 +426,7 @@ else:
 
 ##### !question
 
-The Cinnamon Cinema prices movie tickets based on age, however, a new promotion is being implemented to reward individuals for pursuing an education, regardless of level. 
+The Cinnamon Cinema always prices movie tickets based on age. There is a new promotion for additional discounts to reward individuals for pursuing an education. The discounted ticket prices per age are listed below.
 
 | Age Groups | Ticket Price|
 |-----|-------------|
@@ -475,7 +475,7 @@ elif customer_age > 11 and customer_age <= 17:
     ticket_price = 13.00
 elif customer_age >= 18 and customer_age < 60:
     ticket_price = 15.00
-elif customer_age > 60:
+elif customer_age >= 60:
     ticket_price = 11.00
 else:
     print("please enter a valid age.")
@@ -493,7 +493,7 @@ elif customer_age > 11 and customer_age <= 17:
     ticket_price = 13.00
 elif customer_age >= 18 and customer_age < 60:
     ticket_price = 15.00
-elif customer_age > 60:
+elif customer_age >= 60:
     ticket_price = 11.00
 else:
     print("please enter a valid age.")
@@ -515,7 +515,7 @@ else:
 
 ##### !question
 
-Voice assistants like Alexa will turn on when their 'wake word' is announced nearby. Which option best describes this behavior?
+Voice assistants like Alexa will turn on when any of its "wake words" is announced nearby. Which option best describes this behavior?
 
 ##### !end-question
 ##### !options
@@ -548,14 +548,14 @@ if "alexa" in users_speech or "echo" in users_speech:
 ##### !end-answer
 ##### !hint 
 
-`users_speech` is a string. 
+Assume that `users_speech` is a string that holds all of the recent speech that is announced nearby.
 
 ##### !end-hint
 
 ##### !explanation
 
-Alexa software requires at least one wake word in order to turn on and process requests. The `or` ensures that `print("processing your request...")` will execute if EITHER alexa or echo is used. `and` would require the user to say "Alexa echo" in order to turn on Alexa. 
+Alexa software requires at least one wake word in order to turn on and process requests. The `or` ensures that `print("processing your request...")` will execute if EITHER alexa or echo is used. `and` would require the user to say both "Alexa" AND "echo" in order to turn on Alexa.
 
 ##### !end-explanation
 ### !end-challenge
-<!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
