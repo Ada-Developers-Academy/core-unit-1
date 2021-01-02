@@ -19,7 +19,7 @@ Our goal is to practice this without actually typing and running these commands 
 
 ### Preparation
 
-Part 1 and Part 2 will be a combination of discussion and individual writing:
+Part 1 and Part 2 are a combination of discussion and individual writing:
 
 - Each individual should have note-taking materials
 - Bring up any Git references, resources, lessons, and notes
@@ -47,16 +47,16 @@ The group members will use these details to name the specific commands needed.
 
 ### Instructions
 
-Group members should take turns making one step. During your turn, you should say out loud what your step is, and the Git command that goes with it. Each group member should collaborate, discuss, help, and confirm that the other group members are on the right track.
+Group members will take turns making one step. During your turn, you should say out loud what your step is, and the Git command that goes with it. Each group member should collaborate, discuss, help, and confirm that the other group members are on the right track.
 
 These are the steps:
 
-1. Using the information from your commit, write down one new file or modified file into "Untracked Changes" or "Local Changes"
+1. Using the information from your selected commit, write down a new file in "Untracked Changes" or a modified file in "Local Changes"
 1. Repeat step 1 until there are no more files to name
 1. Move a file into "Staging," and erase it from its previous area
 1. Repeat step 1 until there are no more files to add to staging
 1. Create a commit with the specified commit message
-1. Write down the commit's commit hash into the "Log"
+1. Write down the commit's commit hash in the "Log"
 
 ## Part 2
 
@@ -64,7 +64,7 @@ Imagine your group is a dev team that works on the product Hike Planner.
 
 Repeat the same process described in Part 1. However, the goal for part 2 is to describe the steps to pull and push commits, and diagram what Git "looks like" at each step.
 
-Each member will pick one of the commits in the Setup section. These specific commits will only have the detail of the commit hash.
+Each member will pick one of the commits in the Setup section. The only detail provided for these commits is the commit hash.
 
 ### Part 2 Setup
 
@@ -84,12 +84,14 @@ Each member will pick one of the commits in the Setup section. These specific co
 
 Each group member should take turns making one step. Each group member should collaborate, discuss, help, and confirm that the other group members are on the right track.
 
-1. "Clone" the repo; copy the Git Log from the team repo into the individual Git Log box
-1. Make your commit; add your commit hash to the top of your individual Git Log. (Since it is the newest, it should go on top)
+1. "Clone" the repo.
+   - Copy the Git Log from the team repo into the individual Git Log box.
+1. Make your commit.
+   - Add your commit hash to the top of your individual Git Log. (Since it is the newest, it should go on top)
 1. "Push" to the team repo:
    1. First, you **must** "pull" from the team repo. Check if there are any new commits on the team's Git Log. Copy new commits to your own Git Log, and make your Git Log identical.
-   1. Write down your commit hash back to the top of your individual Git Log
-   1. Add your commit hash to the top of the Hike Planner Git Log
+   1. Write down your commit hash back to the top of your individual Git Log.
+   1. Add your commit hash to the top of the Hike Planner Git Log.
 1. Once everyone has successfully pushed their commit, pull from the team repo.
 
 ## How to Review
