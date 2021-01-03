@@ -2,20 +2,21 @@
 
 ## Learning Goals
 
-- Explain how Git is version control system used to version code
+- Explain the role of Git as a version control system used to version code
 - Define a repository in Git
 - Compare a Git repository to a project
 - Define a commit in Git
 
 ## Introduction
 
-Recall that _versions_ in software are different states of a codebase.
+When we refer to _versions_ in software, we are describing a set of changes to a codebase as it has been modified over time.
 
-Consider how the version of you from 10 years ago is different from the version of you from 10 minutes ago (which is different from the you of right now). Are those three versions of you very different from each other? Between the you from 10 years ago and the present you, **what was lost? What was gained? And what was modified?**
+Consider how the version of you from 10 years ago is different from the version of you from 10 minutes ago (which is different from the you of right now). Are those three versions of you very different from each other?
 
-Between the you from 10 minutes ago and the present you, what was lost, gained, or modified? The difference between those two versions of you could be huge, or they could be small, incremental, barely noticeable changes.
+Comparing the you from 10 minutes ago and the present you, have you gained, dropped, or changed anything? The difference between those two versions of you could be huge, or they could be small, incremental, barely noticeable changes.
+![spiderman pointing meme](https://user-images.githubusercontent.com/16619004/103394724-17a84c00-4adf-11eb-8b8a-83eb716960cd.jpeg)
 
-What a codebase looked like at one point in time could be a different version of the code right now. We can say that there is a version of a codebase that passed three tests, and a version of the same codebase that passed four tests.
+What a codebase looked like at one point in time could be very different from how it looks now. If we used to have three tests, and later added a fourth, then we can say that there is a version of the codebase that passes three tests, and a version of the same codebase that passes four tests.
 
 How can the idea of versioning help us build software?
 
@@ -23,13 +24,11 @@ How can the idea of versioning help us build software?
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence |
 | ----- | ---------- | -------- | ------------------------ |
-
-Version
-Version Control System
-Git
-Repository
-Tracking (in Git)
-Commit
+| Version | Code at a specific point in time labeled with a number based identifier | copy | "I created a separate version of this file that updated previous version."
+| Version Control System | A tool that records changes to a file or set of files over time as versions | VCS | "As a project grows, it's wise to use a VCS to keep track of all its changes and progressions.","Good thing the VCS kept track of my previous commits, otherwise, I would have lost all that work!" |
+| Git | A distributed version control system that makes snapshots of files or multiple files in a repository to be later referenced as a version. | - | "The problem with *git* jokes is, everyone has their own version" | 
+| Repository | A directory that stores project files | Repo, folder, directory | "The project is in a local repository on my machine." |
+Commit | An individual change to file(s), identified with a hash | - | "The recent commit fixed the bug in our project" | 
 
 ## Version Control Systems Let Us Version Our Code
 
@@ -37,10 +36,11 @@ Version Control Systems (VCSs) are tools that allow programmers to create, view,
 
 There are plenty of different Version Control Systems, each with their own set of vocabulary and concepts. **Git** is a version control system that has widespread use and acceptance.
 
-Git gives us the tooling to:
+Git gives us tools to:
 
 - create different versions of our codebases
-- give names, ids, and information between different versions
+- give names and ids to different versions
+- record additional details between versions
 - follow a specific history of versions
 - collaborate on the same codebase at the same time with many people
 - configure codebases and developer workflows to help programmers
@@ -49,7 +49,7 @@ Git gives us the tooling to:
 
 ## Git vs. GitHub
 
-Git is the name of the version control system we will use. Git is a tool, and we'll primarily use this tool in the command line or using an IDE. GitHub is a service that can host our codebases. GitHub's hosting service is made for programmers who use Git in their projects. The primary way we interact with GitHub is through github.com
+Git is the name of the version control system we will use. Git is a tool, and we'll primarily use this tool in the command line or using an IDE. GitHub is a service that can host our codebases. GitHub's hosting service is made for programmers who use Git in their projects. The primary way we interact with GitHub is through github.com.
 
 ### !end-callout
 
@@ -61,7 +61,7 @@ Being able to get all the benefits of a version control system will require us t
 
 ## Each Repository is a Distinct "Project" Code Base
 
-Git has the concept of a **repository,** or repo. A **repo** is a way to describe a project codebase that is being versioned Git.
+Git operations are organized around the concept of a **repository**, or repo. A **repo** represents a project codebase that is being versioned with Git.
 
 Often, a repo will directly correlate to a folder on your machine that contains all of a project's files.
 
@@ -81,40 +81,38 @@ In order to use Git to compare versions, sometimes we will need to tell Git to _
 
 We will build commits as we build software; we will create commits, and over time, these commits will represent different versions of code and build a history.
 
-Commits not only represent a version of code, but also they contain a lot of extra information. Every commit can also contain the following information:
+Commits are able to capture more than just a snapshot of our code. They can also contain lots of extra information, including:
 
 - A summary of lines of code that were added, deleted, or changed, compared to the last commit
 - A way to refer to the last commit, or its "parent" commit
 - A unique ID for the commit, often called the commit hash
-- A commit message, which will be a string that describes the commit's contents
+- A commit message, a string describing the contents of the commit
 - The date and time that the commit was made
 
-Large projects will be made of hundreds or thousands of commits.
+Large projects often have hundreds or thousands of commits.
 
 ## Teams Collaborate by Merging Histories
 
-In a work day, we want any number of programmers to be able to write code, contribute commits, and build software.
+Over the course of a work day, a team of programmers writes code, contributes commits, and builds software. In order to work together effectively, we need to contribute our own changes, as well as review changes made by other team members.
 
-Git is a version control system that allows for team collaboration. How?
+We need to collaborate! But how can we do this while we are each working on our own code?
 
-Collaboration in this sense means that everyone can contribute changes to code, and look at those changes of code.
+We can enable team collaboration by using Git! Let's examine how.
 
 Every codebase that a team will collaborate on will have a **repository,** or a project folder that contains the files, versioned with Git. (This repository will likely be hosted on github.com)
 
-Every developer who wants to contribute code will need access to the code and files, the repo's commit history, and a way to reference the team's repo. In order to get these three things, every developer will **clone that repo** onto their own machine.
+Every developer who wants to contribute code will need access to the code and files, the repo's commit history, and a way to reference the team's repo. In order to get these three things, every developer will **clone** that repo onto their own machine.
 
 When a developer clones the repo onto their machine, it will create a project folder on their computer, with all of the files inside of it. Then, each developer will write code, run tests, build features, **get updates from the team**, and **make commits.**
 
-Then, each dev who has built commits will send the commits to the team's repository.
+Each dev who makes commits eventually sends the commits to the team's repository.
 
 Recall that each commit includes this information:
 
 - A summary of lines of code that were added, deleted, or changed, compared to the last commit
-- A way to refer to the last commit/its "parent" commit
+- A way to refer to the last commit, its "parent" commit
 
-Using that information, Git (the tool) will go through a series of merging steps to create a unified history of commits.
-
-Now, with a unified history of commits, the repo's history will grow. Software development with Git is a cycle of this process.
+Using that information, Git must go through a series of merging steps to create a unified history of commits. As each commit is merged in, the repo's history grows. Software development with Git is a cycle of this process.
 
 ### !callout-info
 

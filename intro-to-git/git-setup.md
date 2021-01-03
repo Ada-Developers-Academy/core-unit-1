@@ -8,7 +8,7 @@ Git has so many concepts to learn! Creating commits, reviewing commits, and coll
 
 However, it's important to recognize some actions needed to set up a Git repo. The following topics will probably not affect a developer's daily workflow, and will happen infrequently.
 
-This document will be written more like a resource. These topics are necessary to understand, but are less frequently used than concepts for commits and collaboration. Use this lesson as a reference guide, and to inspire you to read more.
+This document is written more like a resource. These topics are necessary to understand, but are less frequently used than concepts for commits and collaboration. Use this lesson as a reference guide, and to inspire you to read more.
 
 ## Vocabulary and Synonyms
 
@@ -17,7 +17,7 @@ This document will be written more like a resource. These topics are necessary t
 
 ## Navigating GitHub.com
 
-GitHub.com is a great and huge platform. There are a lot of features, and it's worth getting to know how to locate and use the following site features:
+GitHub.com is a massive platform. There are a ton of features, but right from the start, it's worth getting to know how to locate and use the following:
 
 - Going to your own profile page
 - Going to the page that lists your own repositories
@@ -44,13 +44,20 @@ To turn any folder into a Git project, run this command in the project root:
 $ git init
 ```
 
-Callout: On a technical level, this is creating a hidden folder named `.git` in the project root. This hidden folder contains a lot of Git settings for this project (including the Git history!)
+### !callout-info
 
-## Forking an Existing Git Project For Yourself
+## The Hidden Truth About Git
+
+On a technical level, this creates a hidden folder named `.git` in the project root. This hidden folder contains a lot of Git settings for this project (including the Git history!)
+
+### !end-callout
+
+
+## Forking an Existing Git Project for Yourself
 
 The community model for GitHub encourages forking repos.
 
-When developers see a repo that would be a good _base_ for a project, and the developer wants to remix this project for themselves, they can **fork** a project.
+When developers see a repo that would be a good _base_ for a project, and the developer wants to remix this project for themselves, they can **fork** it.
 
 Forking creates a copy of the repo (including its code _and_ its Git history up to that point). This copy of the repo will belong to your own user account.
 
@@ -61,7 +68,7 @@ To fork a repo, use GitHub.com:
 - Confirm that there is a new repo with the same name, but owned by your account
   - You can check the page that lists your repositories, too
 
-### When Do You Fork?
+### When to Fork
 
 A developer forks a repo when they need these things:
 
@@ -69,13 +76,13 @@ A developer forks a repo when they need these things:
 1. More ownership, control, and access over the repo, such as permissions to add collaborators or push commits
 1. Separation from the original repo
 
-## Cloning a Repo Onto Your Computer
+## Cloning a Repo onto Your Computer
 
 When developers see a repo on GitHub.com, and want a copy of this repo on their own computer, they can **clone** the repo.
 
-Cloning will create a new folder onto the computer. This folder will have the name of the repo. This folder will contain all of the folders, files, and Git history that was in the repo.
+Cloning creates a new folder on the local computer. This folder has the same name as the remote repo. Also, this folder contains all of the remote repo's current folders, files, and Git history.
 
-The process of cloning requires a clone URL that GitHub usually provides. Once you have this clone URL, the command to clone is:
+To clone a repo, we need a Clone URL that can be obtained from the GitHub site for the project. Once we have this Clone URL, the command to clone is:
 
 ```bash
 $ git clone <clone url>
@@ -88,17 +95,22 @@ To clone a repo, the full process is:
 1. This button opens details about cloning. Select "HTTPS" as a setting for cloning the project.
 1. Locate the clone URL inside of this pop-up. Copy this URL.
 1. Switch back to your terminal
-1. Run the `$ git clone <clone URL>` command
+1. Run the `$ git clone <clone URL>` command, where `<clone URL>` is replaced with the URL copied previously.
 1. Confirm there's a new project folder and `cd` into it
 
 ### Clone with HTTPS
 
-In the process above, it specified choosing "HTTPS" as a setting for cloning the project. This setting determines the protocol used for Git commands and operations; "HTTPS" will be more appropriate for our projects.
+In the process above, we specified choosing HTTPS for cloning the project. This setting determines the protocol used for Git commands and operations. HTTPS is a little more straightforward to use, so we will be using it throughout the curriculum.
 
-Callout: No really, Clone with HTTPS
-Cloning with SSH is welcome, and is a great and wonderful way to clone! However, it requires additional setup not covered in this curriculum. This curriculum officially recommends cloning with HTTPS for now, but follow your curiosity!
+### !callout-info
 
-### When Do You Clone?
+## No Really, Clone with HTTPS
+
+The ability to clone with SSH is welcome, and is a great and wonderful way to clone! However, it requires additional setup not covered in this curriculum. This curriculum officially recommends cloning with HTTPS for now, but follow your curiosity!
+
+### !end-callout
+
+### When to Clone
 
 A developer clones a repo when they need these things:
 

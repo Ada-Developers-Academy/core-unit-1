@@ -33,7 +33,7 @@ vim
 
 ## Format
 
-The goal of this lesson is to learn how to build commits in Git. However, there is plenty of information to consider before that.
+The goal of this lesson is to learn how to make commits in Git. However, there is plenty of information to consider before that.
 
 This lesson is organized into three sections: We'll learn about...
 
@@ -41,19 +41,19 @@ This lesson is organized into three sections: We'll learn about...
 1. the overall process of making a commit
 1. the steps to take to make a commit
 
-## How Do We See Differences in Code?
+## Displaying Differences in Code
 
-One piece of information that commits contain is the differences (diff) in code between this version, and the last version.
+Recall from the previous lesson that a commit records the differences in code between the commit version, and the previous version.
 
 We can generalize that each change in software is a set of files and...
 
-- The lines of code that were added; what they are, what file, and what line number
+- The lines of code that were added
 - The lines of code that were deleted
 - The lines of code that were modified
 
 Let's look at an example.
 
-Nakita is working on a project named Hike Planner, that helps plan her hiking trips.
+Nakita is working on a project named Hike Planner, which helps plan her hiking trips.
 
 Nakita starts with this code...
 
@@ -89,13 +89,13 @@ The diff of these changes can be displayed like this:
 
 Note the `+` and `-` symbols at the beginning of each line to describe lines added and removed.
 
-## When Do We Make a Commit?
+## When to Make a Commit
 
 Commits can come in different sizes; we can build a commit when the diff is 2 lines long or 2000 lines long. However, the best commits are:
 
 - atomic; as small as possible
 - focused on one meaningful change
-- not a work in progress, or leave the code in a confusing, broken state
+- not a work in progress, leaving the code in a confusing, broken state
 
 As a recommendation, good times to make a commit are...
 
@@ -118,16 +118,16 @@ As we keep programming, we may see that large commits can make the git history m
 
 ## In Git, There Are Local and Staging Areas
 
-Because we get a lot of value when we intentionally construct a commit, we want to be selective about the specific code changes (lines added and removed) that go into a commit.
+It is valuable to intentionally construct small, concise commits. We can achieve such commits by being selective about the specific code changes (lines added and removed) that we include in a commit.
 
-Git allows us to be selective about changes that go into a commit. It lets us do that by creating two areas that code changes can be categorized in: the _local changes area_ and the _staging area_.
+Git allows us to be selective about the changes that go into a commit. It does this by providing two areas we can use to categorize them: the _local changes area_ and the _staging area_.
 
-The two areas give us visibility and control about what goes into a commit, before we build it.
+The two areas give us visibility and control about what will go into a commit, before we apply it.
 
 - The _local changes area_ is for new code changes that only exist on this local machine. It's the first area that code changes go to.
 - The _staging area_ is for code changes that a developer indicates should go into the next commit.
 
-Most of the code changes that happen constantly as the developer types, adds code, deletes files, etc., automatically get categorized into the _local changes area_.
+Most of the changes that we make, such as adding or modifying code, or deleting code or files, automatically get categorized into the _local changes area_.
 
 ### Viewing Local and Staging Areas
 
@@ -137,7 +137,7 @@ In a Git project, we can view a summary of the changes in the local and staging 
 $ git status
 ```
 
-Below is an example of what the `git status` command could print out.
+Below is an example of what the `$ git status` command could print out.
 
 Read this output. Then, read through the explanation below. Then re-read this output to check for understanding.
 
@@ -159,13 +159,13 @@ Untracked files:
 	tests/test_wave_06.py
 ```
 
-This `git status` output describes the code changes:
+This `$ git status` output describes the code changes:
 
 - "Changes to be committed:"
 
   - This section describes the **staging area**
   - These are the code changes have been moved from local to staging
-  - There's a tip from Git for the command to unstage that change, `"git restore --staged <file>..."`
+  - There's a tip from Git for the command to unstage that change, `$ git restore --staged <file>...`
   - In this example, there are some modifications in the file `tests/test_wave_01.py`. We know that because it says `modified: tests/test_wave_01.py`
 
 - "Changes not staged for commit:"
@@ -178,22 +178,21 @@ This `git status` output describes the code changes:
 - "Untracked files:"
   - This section describes the untracked changes area
   - These are the files that Git understands are new and untracked, but the changes can't go into local changes until it's tracked
-  - Git gives us a tip for how to track that file
+  - Git gives us a tip for how to track and stage that file
   - In this example, there is one new file: `tests/test_wave_06.py`
 
 ### Moving Changes to the Staging Area
 
-We move changes from local to staging with the command `$ git add`. This command is very configurable, and there are many valid ways and options to use it:
+We move changes from local to staging with the command `$ git add`. This command has a variety of options and can be called many ways. We could further investigate its options with `$ git add --help`, but for now let's look at a few common ways to use it.
 
 - `$ git add <relative-path-to-file-or-folder>`
-  - ... where `<relative-path-to-file-or-folder>` is replaced
-  - This adds all code changes in the specified file or folder
-  - When given a folder, it adds all code changes in all files in it
+  - We replace `<relative-path-to-file-or-folder>` with the file name or path of the code changes we would like to add
+  - When given a folder, it adds all code changes in all files in it, including files in nested directories
   - A common way to use this is `$ git add .`, where `.` indicates the current directory
-  - This method can add large amounts of changes at once
+  - This method can add a large number of changes at once
 - `$ git add -p`
-  - This brings the developer to an interactive mode
-  - Code changes will be presented on the screen one at a time. At each chunk, the dev inputs if the chunk should go into staging: `y` then enter for "yes," `n` then enter for "no."
+  - This starts an interactive mode where local code changes will be presented on the screen one at a time.
+  - At each chunk, we can decide whether the change should go into staging: `y` then enter for "yes," `n` then enter for "no."
   - This mode cycles through all chunks in the local changes area, then exits the interactive mode
   - This method encourages reviewing code changes
 
@@ -203,7 +202,7 @@ Besides the local changes and staging areas, Git additionally has a third area: 
 
 By default, Git doesn't assume that it should watch for changes in every file in our project. By default, Git wants the programmer to intentionally say, "Hey! This file will contain code that I want to version and put in a repo."
 
-When a new file is created in a project, it is _untracked._ No matter how many times we change the contents of an untracked file, Git will never be able to understand the diff between versions.
+When a new file is created in a project, it is _untracked_. No matter how many times we change its contents, Git won't store the different versions of an untracked file. All Git will do is report that the file is untracked.
 
 The command to begin tracking (watching for changes) a new file is the same command to bring it to staging:
 
@@ -215,17 +214,17 @@ Where `<relative-path-to-untracked-file>` is replaced with a relative path to th
 
 ## Commits Are Made After Local and Staging
 
-Programmers create a commit _after their intended changes are in **staging.**_
+We create a commit _after our intended changes are in **staging**_.
 
-Every commit contains the following information:
+Recall from the previous lesson that every commit contains certain pieces of information:
 
 - The summary of lines of code that were added, deleted, or changed, compared to the last commit.
-- A way to refer to the last commit/its "parent" commit
+- A way to refer to the last commit, or its "parent" commit
 - A unique ID for the commit, often called the commit hash. This gets generated automatically
-- A commit message, which will be a string that describes the commit's contents. Programmers write this at the time of building a commit
+- A commit message, a string describing the contents of the commit
 - The date and time that the commit was made
 
-We create a commit with the command `$ git commit`. However, it is universally common to write the commit message at the time of making commit.
+We create a commit with the command `$ git commit`. For short, concise commits, it is very common to include the commit message as part of the commit command.
 
 The command to make a commit and write a commit message is:
 
@@ -247,7 +246,7 @@ There are no rules about commit messages, but these are common qualities of good
 - starts with a verb
 - finishes the sentence, "When we apply this commit, this commit will..."
 
-Specificity in commit messages helps you and your teammates understand the Git history when reviewing it. Most importantly, this helps you in the future, when you need to debug something and find what commit contains the bug. Specific commit messages could be difference between five hours or five minutes of debugging.
+Specificity in commit messages helps you and your teammates understand the Git history when reviewing it. Most importantly, this helps you in the future, when you need to debug something and find what commit contains the bug. Specific commit messages could be the difference between five hours or five minutes of debugging.
 
 ### Example Commit Messages
 
@@ -263,7 +262,7 @@ Many software teams will designate a template to follow for commit messages.
 
 ### My Terminal Gets Funky With Commit Messages
 
-Working with commit messages can often bring us to other text editor programs. By default, many commands around git commits use the vim program. The program vim is really great at displaying text! However, vim uses unique navigation keys.
+If we don't supply a commit message as part of the commit command, Git will try to open a text editor where we can supply a message interactively. Git is usually set up to use a program called `vim` by default. vim is really great at displaying text! However, the way we work with files in vim is somewhat unique.
 
 When a git commit command opens up the vim program, we navigate by:
 

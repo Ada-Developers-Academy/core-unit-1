@@ -7,7 +7,7 @@
 
 ## Introduction
 
-As we create many commits, it will be crucial to review Git histories. There are a series of commands that will give developers useful information about the Git history.
+As we make more commits, it will become crucial for us to be able to review and understand Git histories. There are several commands that give us useful information about the Git history.
 
 This resource will focus on:
 
@@ -17,20 +17,20 @@ This resource will focus on:
 - `$ git log`
 - `$ git show`
 
-All of these commands have many different options available. Using these options can make the information more useful and effective to you. To explore these options, look them up and follow your curiosity!
+Each of these commands has many optional parameters that can be used to tailor the information it displays to be more to your liking. To explore these options, look them up by adding the `--help` parameter to any of these commands, or break out your best web search techniques and follow your curiosity!
 
 ### !callout-info
 
-## Navigating with Less commands
+## Navigating with `less`
 
-There are many commands in Git that will open a screen with a program called Less. The program Less is really great at displaying text. However, Less uses unique navigation keys.
+Git commands that need to present more than a screensworth of data often show their results using a program called `less`. When this occurs, we say that the output is _paging_. Like `vim`, which we met in the previous lesson, less is really great at displaying text. Again like vim, navigating the results displayed by less can take some getting used to!
 
-When a git command brings us to a Less screen, we can navigate like so:
+When a Git command brings us to a `less` screen, we can navigate like so:
 
-- up or down arrows to scroll
-- `j` or `k` keys to scroll
-- use spacebar to scroll down by one page
-- use `b` to scroll up by one page
+- up or down arrows to scroll up or down
+- `k` or `j` keys to scroll up or down
+- spacebar to scroll down by one page
+- `b` to scroll up by one page
 - `q` to exit the screen
 
 ### !end-callout
@@ -50,7 +50,7 @@ Use this command all the time:
 
 ## `$ git status` Gives Us Clues to Debug Git
 
-Sometimes, developers will get into a weird "state" of Git. `$ git status` will often give clues about how to debug this state. `$ git status` will tell us if we're in the middle of a process, such as merging (explained later), or in a strange Git "location."
+Sometimes, Git can seem like its in a weird "state". `$ git status` will often give clues about how to debug this state. `$ git status` will tell us if we're in the middle of a process, such as merging, or in an unexpected Git "location," such as the wrong repo or branch.  Both of these situations are discussed in later lessons.
 
 ### !end-callout
 
@@ -60,7 +60,7 @@ The command `$ git diff` outputs a summary of all changes in the _local changes 
 
 By default, it displays chunks of the diff. It names the file that the change is in, some of the surrounding lines, and a summary of lines of code that were added, removed, or modified.
 
-If there are a lot of local changes, we'll need to navigate this screen with Less commands.
+If there are a lot of local changes, Git will start paging, and we'll need to navigate using `less` commands.
 
 Use this command all the time:
 
@@ -72,7 +72,7 @@ Use this command all the time:
 
 The command `$ git diff --staged` shows a summary of all changes in the _staging area_.
 
-It follows the same rules as `$ git diff`. If there are a lot of staged changes, we'll need to navigate this screen with Less commands.
+It follows the same rules as `$ git diff`. If there are a lot of staged changes, we'll need to navigate the output using `less` commands.
 
 Use this command all the time:
 
@@ -81,7 +81,7 @@ Use this command all the time:
 
 ### `git log` Reveals The Commit History
 
-The command `$ git log` will show all of the commits made on this git branch (details on branches are a separate subject. We may assume one default branch at this moment.)
+The command `$ git log` shows all of the commits made on this Git branch. Branches are covered in more detail in later lessons. For now, we can think of a branch as a sequence of commits within a repository. We will assume there is a single `main` branch, a single sequence of commits.
 
 The log will clearly show the order of commits, and highlight their commit messages.
 
@@ -93,19 +93,19 @@ Each commit is listed with the following details:
 - The date and time that the commit was made
 - The commit message
 
-If there are a lot of commits, we'll need to navigate this screen with Less commands.
+If there are a lot of commits, we'll need to navigate the output using `less` commands.
 
 Use this command frequently:
 
-- when you start a new task and should review the most recent work
-- to understand and recall the current history of commits
-- check a lot of commit information quickly, such as timestamps, authors, etc.
+- When starting a new task and you need to review the most recent work
+- To understand and recall the current history of commits
+- For checking a lot of commit information quickly, such as timestamps, authors, etc.
 
 ### `git show` Summarizes a Commit
 
 The command `$ git show` will show the details of a single commit.
 
-By default, `$ git show` will print this information:
+By default, `$ git show` prints this information:
 
 - The commit hash (ID)
 - The author(s)
@@ -127,18 +127,18 @@ Where `<commit hash, such as 26fb46ca8...>` is replaced with a commit hash.
 
 ## Commit Hashes Can Be Shortened
 
-The commit IDs of git are special. In general, each commit ID is very unique. They're so unique, that using even first several characters of it is enough to identify a commit. For example, anywhere that requires a commit hash, we can either use `06cde018c082dc4d936af278ba3b43ae5a3b9492`, or `06cde01`, and they would both work.
+The commit IDs of Git are special. In general, each commit ID is very unique. They're so unique, that using even the first several characters of it is enough to identify a commit. For example, anywhere that requires a commit hash, we can either use `06cde018c082dc4d936af278ba3b43ae5a3b9492`, or `06cde01`, and they would both work.
 
-This notation is helpful to recognize as commit hashes are often shortened.
+Being able to recognize this notation is important, as commit hashes are often shortened.
 
 ### !end-callout
 
-If the commit has a big diff, we'll need to navigate this screen with Less commands.
+If the commit has a big diff, we'll need to navigate the output using `less` commands.
 
 Use this command often:
 
-- when you want to review a commit
-- to recall the contents of the most previous commit
+- When you want to review a commit
+- To recall the contents of the most previous commit
 
 ## All of These Should Be in the Project Root
 
@@ -160,7 +160,7 @@ It is natural for code to constantly evolve and for learning and exploration to 
 
 ## No really, I just made a commit and I need to undo it
 
-Git has many ways to modify, uncommit, or revert commits. Some search terms to use to look up these commands may be, "git reset," "git commit amend," "git revert," and "git squash." As a goal, programmers should not change shared Git history, unless it is an emergency.
+Git has many ways to modify, uncommit, or revert commits. Some search terms to use to look up these commands may be, "git reset," "git commit amend," "git revert," and "git squash." As a goal, **we should not change shared Git history**, unless it is an emergency.
 
 For convenience, this command will "uncommit" the most recent commit, and put all of the commit's changes into the staging area:
 
@@ -168,6 +168,7 @@ For convenience, this command will "uncommit" the most recent commit, and put al
 $ git reset --soft HEAD^
 ```
 
+With great power comes great responsibility, so be sure to use with caution.
 ### !end-callout
 
 ## Check for Understanding
