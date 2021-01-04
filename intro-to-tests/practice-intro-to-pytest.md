@@ -1,3 +1,13 @@
+# Practice: Intro to Pytest
+
+## Directions
+
+Complete all questions below.
+
+## Practice
+
+### Determining Best Test Cases
+
 <!-- Question 1 -->
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -358,6 +368,8 @@ Rearrange these lines of code so they become a valid unit test. Assume that each
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
+### Reading Test Reports
+
 <!-- Question 8 -->
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -669,6 +681,8 @@ E       AttributeError: 'int' object has no attribute 'append'
 ##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
+
+### Test-Driven Development
 
 Here, we are displaying the contents of the test.
 
