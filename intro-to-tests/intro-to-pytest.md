@@ -256,7 +256,7 @@ class TestChallenge(unittest.TestCase):
 ### !end-tests
 ### !explanation
 
-We are expecting this implementation, although returning anything truthy will work too.
+An example of a working implementation:
 
 ```python
 def func_that_always_returns_true():
@@ -429,5 +429,69 @@ class TestPython1(unittest.TestCase):
 ```
 
 ##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: ordering
+* id: a1NxH7
+* title: Intro to Pytest
+##### !question
+
+Rearrange these lines so they follow the logical order that a unit test is normally in.
+
+##### !end-question
+##### !answer
+
+1. Test name
+1. Arrange step, where setting up any variables is
+1. Act step, where we call the tested function
+1. Assert step, where we check that the result of the tested function is what we expected
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: ordering
+* id: M9WsZl
+* title: Intro to Pytest
+##### !question
+
+Rearrange these lines of code so they become a valid unit test. Assume that each line would be indented correctly.
+
+##### !end-question
+##### !answer
+
+1. `def test_my_func_returns_hello_world():`
+1. `result = my_func()`
+1. `assert result == "Hello, World!"`
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: ordering
+* id: lImr91
+* title: Intro to Pytest
+##### !question
+
+Rearrange these lines of code so they become a valid unit test. Assume that each line would be indented correctly.
+
+##### !end-question
+##### !answer
+
+1. `def test_zero_division():`
+1. `with pytest.raises(ZeroDivisionError):`
+1. `1 / 0`
+
+##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
