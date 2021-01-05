@@ -22,13 +22,13 @@ How can the idea of versioning help us build software?
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence |
-| ----- | ---------- | -------- | ------------------------ |
-| Version | Code at a specific point in time labeled with a number based identifier | copy | "I created a separate version of this file that updated previous version."
-| Version Control System | A tool that records changes to a file or set of files over time as versions | VCS | "As a project grows, it's wise to use a VCS to keep track of all its changes and progressions.","Good thing the VCS kept track of my previous commits, otherwise, I would have lost all that work!" |
-| Git | A distributed version control system that makes snapshots of files or multiple files in a repository to be later referenced as a version. | - | "The problem with *git* jokes is, everyone has their own version" | 
-| Repository | A directory that stores project files | Repo, folder, directory | "The project is in a local repository on my machine." |
-Commit | An individual change to file(s), identified with a hash | - | "The recent commit fixed the bug in our project" | 
+| Vocab                  | Definition                                                                                                                                | Synonyms                | How to Use in a Sentence                                                                                                                                                                            |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Version                | Code at a specific point in time labeled with a number based identifier                                                                   | copy                    | "I created a separate version of this file that updated previous version."                                                                                                                          |
+| Version Control System | A tool that records changes to a file or set of files over time as versions                                                               | VCS                     | "As a project grows, it's wise to use a VCS to keep track of all its changes and progressions.","Good thing the VCS kept track of my previous commits, otherwise, I would have lost all that work!" |
+| Git                    | A distributed version control system that makes snapshots of files or multiple files in a repository to be later referenced as a version. | -                       | "The problem with _git_ jokes is, everyone has their own version"                                                                                                                                   |
+| Repository             | A directory that stores project files                                                                                                     | Repo, folder, directory | "The project is in a local repository on my machine."                                                                                                                                               |
+| Commit                 | An individual change to file(s), identified with a hash                                                                                   | -                       | "The recent commit fixed the bug in our project"                                                                                                                                                    |
 
 ## Version Control Systems Let Us Version Our Code
 

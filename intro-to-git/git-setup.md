@@ -78,6 +78,8 @@ To fork a repo, use GitHub.com:
 
 - Navigate to the repo's page on Github.com
 - Locate the button to fork this repo. This button is likely towards the top right corner.
+- Click on this "Fork" button
+    - ![Screenshot of GitHub.com, focusing on a button labeled "Fork." To the left is a button labeled "Watch" and a button labeled "Star"](../assets/intro-to-git_git-setup_fork.png)
 - Confirm that there is a new repo with the same name, but owned by your account
   - You can check the page that lists your repositories, too
 
@@ -105,9 +107,11 @@ To clone a repo, the full process is:
 
 1. Go to the repo's page on GitHub.com
 1. Locate the button that opens details on downloading the code or cloning the project. This button is labeled "Code" and located towards the top right corner.
+    - ![Screenshot of GitHub.com, with green button labeled "Code" to the right of a "Go to file" button and "Add file" button](../assets/intro-to-git_git-setup_clone-btn.png)
 1. Click the "Code" button. This will open a pop-up where we can set a few cloning options.
 1. Select "HTTPS".
 1. Locate the clone URL inside the same pop-up and copy it.
+    - ![Screenshot of GitHub.com, with dialogue box labeled "Clone" underneath a green button labeled "Code"](../assets/intro-to-git_git-setup_clone-dialogue.png)
 1. Switch back to your terminal
 1. Run the `$ git clone <clone URL>` command, where `<clone URL>` is replaced with the URL copied previously.
 1. Confirm there's a new project folder and `cd` into it
