@@ -23,13 +23,14 @@ Sometimes, we work on a project alone. Git is still an incredibly powerful and h
 | Vocab | Definition | Synonyms | How to Use in a Sentence |
 | ----- | ---------- | -------- | ------------------------ |
 
-Code Change
-Commit
-Local Changes Area
-Staging Area
-Untracked Area
-Tracking
-vim
+- Code Change
+- Diff
+- Commit
+- Local Changes Area
+- Staging Area
+- Untracked Area
+- Tracking
+- vim
 
 ## Format
 

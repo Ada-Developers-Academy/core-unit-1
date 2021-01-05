@@ -16,9 +16,9 @@ How would Nakita's workflow change if the Hike Planner team grows? Multiple deve
 
 ## Vocabulary and Synonyms
 
-| Vocab             | Definition | Synonyms                      | How to Use in a Sentence |
-| ----------------- | ---------- | ----------------------------- | ------------------------ |
-| Remote repository | asdf       | Remote, remote repo, `origin` | asdf                     |
+| Vocab             | Definition                                                              | Synonyms                      | How to Use in a Sentence                                                                                                                                                     |
+| ----------------- | ----------------------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Remote repository | A common repository that all team members use to exchange their changes | Remote, remote repo, `origin` | "I push my code to the remote `origin`, so my team members can pull those changes from it," "I pull changes from the remote `origin`, so I can get the shared code changes." |
 
 ## Collaboration Means Looking at the Same Source of Code
 
@@ -26,27 +26,30 @@ Nakita's friends, Frida and Raul, want to join Nakita and help her build Hike Pl
 
 Git is highly configurable, so most of these settings can change. However, in the vast majority of cases, Git enables collaboration with this setup:
 
-- The project should be hosted somewhere all team members have access. We call this hosted project the project "repo."
+- The project should be hosted somewhere all team members have access. We call this hosted project the project remote "repo."
 - Each developer will download the repo onto their machine using the Git command `clone`. This "download" includes the entire Git history!
 - All team members should contribute code changes by making commits on their own machines
-- All team members will receive commits and updates from the main hosted repo
-- All team members will send commits and updates to the main hosted repo
+- All team members will receive commits and updates from the main remote repo
+- All team members will send commits and updates to the main remote repo
 - All team members will follow and repeat this cycle, enabling a smooth team workflow
 
-<!-- ### Example: The Hike Planner Team
+### Example of the Entire Process: The Hike Planner Team
 
-For the Hike Planner team, we might imagine:
+For the Hike Planner team, we can imagine this story:
 
-- Nakita will host the project codebase somewhere, and give access to Frida and Raul
-- Frida will clone this repo onto her laptop. Raul will clone this repo onto his laptop.
-- Nakita will make code changes and commits on her machine. Frida will make other code changes and commits on her machine. Raul will, too.
-- When Nakita wants the updates and new commits that are on the main hosted repo, she will ask for them. These updates and commits will be applied to the code she currently has on her laptop.
-    - When Frida wants updates, she'll ask for them too. The updates/commits will be applied to her current code.
-    - When Raul wants updates, he'll also ask for them, and the updates will be applied to his current code.
-- When Nakita wants to send commits that are on her laptop to the main hosted repo, she will push her commits. This process will use Git's merging tools, and the main hosted repo will now have a new, updated Git history.
+1. Nakita hosts the project codebase somewhere, and gives access to Frida and Raul.
+1. Friday clones this repo onto her laptop. Raul clones this repo onto his laptop.
+1. Nakita makes code changes and commits on her machine. Friday makes her own code changes and commits on his machine. Raul does, too.
+
+After setup, during development...
+
+-  When Nakita wants the new commits that are on the remote, she will ask for them. These updates and commits will be applied to the code she currently has on her laptop.
+    - When Frida wants updates, she'll need to ask for them too. Then, these updates get applied to her current code.
+    - When Raul wants updates, he'll also ask for them before they're applied to his current code.
+- When Nakita wants to send commits that are on her laptop to the main hosted repo, she will push her commits. This process will use Git's merging tools, and the main remote repo will now have a new, updated Git history.
     - When Frida pushes her commits, the main hosted repo will also work to have a new, updated Git history.
     - Raul's commits and contributions work the same way, too.
-- All three team members will contribute through making commits, pulling commits from the main repo, and pushing commits to the main repo. -->
+- All three team members will contribute through making commits, pulling commits from the main repo, and pushing commits to the main repo.
 
 ## The Remote Repository and `origin`
 
@@ -108,10 +111,9 @@ What does it mean when two Git histories merge?
 
 To merge two histories, Git will take all the commits from both histories, and try to make one history. Git uses information like the timestamp of the commit and the parent (and order) of the commit. Git will then attempt to **apply** these commits in this new order. The result will be a codebase that has all commits.
 
-
 Git performs a merge by replaying and applying the commits one by one. During this process, Git may ask us for input if it is unable to determine how to merge multiple changes. We may need to step in to resolve conflicting code, skip a merge, or abort the merging process entirely.
 
-When more than one team member has modified a single file, Git will often need to perform a follow-up commit to finalize the merge order. This commit is called a **merge commit**.  Git generates a default message for merge commits, and it is usually sufficient to use that message unchanged.
+When more than one team member has modified a single file, Git will often need to perform a follow-up commit to finalize the merge order. This commit is called a **merge commit**. Git generates a default message for merge commits, and it is usually sufficient to use that message unchanged.
 
 ### !callout-info
 
@@ -123,7 +125,7 @@ There is much more to learn about Git pulling and merging. Due to the depth of t
 
 ## Pushing Commits to `origin`
 
-As described in our discussion of pulling, the remote repository stores all commits from each team member. Our local machine has the changes we made ourselves on it, but how do we make our changes available to the rest of our team? 
+As described in our discussion of pulling, the remote repository stores all commits from each team member. Our local machine has the changes we made ourselves on it, but how do we make our changes available to the rest of our team?
 
 As we work on our own code, we need to _push_ our new commits _to_ `origin`. We can do that with this command:
 
