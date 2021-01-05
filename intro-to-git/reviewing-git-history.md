@@ -171,4 +171,5 @@ $ git reset --soft HEAD^
 With great power comes great responsibility, so be sure to use with caution.
 ### !end-callout
 
-## Check for Understanding
+<!-- ## Check for Understanding -->
+<!-- Definitions -->

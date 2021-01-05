@@ -123,3 +123,79 @@ Different versioning tools have different collaboration strategies. Some older V
 ### !end-callout
 
 ## Check for Understanding
+
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 6ceb3b61-a46f-41a4-b649-5b7a1826b632
+* title: Git Vocab I
+
+##### !question
+What is Git?
+##### !end-question
+
+##### !options
+* Version Control System
+* Distributed Version Control System
+* Repository Control System
+##### !end-options
+
+##### !answer
+* Distributed Version Control System
+##### !end-answer
+
+### !end-challenge
+
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: fb75bb2b-258c-403c-a3ba-6f5923777cbe
+* title: Git Vocab II
+
+##### !question
+What is an example of a repository?
+##### !end-question
+
+##### !options
+* a folder with 1 or more files
+* a single file
+* a file version
+##### !end-options
+
+##### !answer
+* a folder with 1 or more files
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: b0961893-7591-4c5a-9430-0b0c4c0958ae
+* title: Git vocab III
+
+##### !question
+What is a commit?
+##### !end-question
+
+##### !options
+* Clones of file(s)
+* Version(s) of file(s)
+* Folder with multiple files
+##### !end-options
+
+##### !answer
+* Version(s) of file(s)
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->

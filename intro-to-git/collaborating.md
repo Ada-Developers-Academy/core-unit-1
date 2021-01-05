@@ -179,4 +179,5 @@ To summarize these concepts and commands, here is a proposed development workflo
 1. Send all of your commits to `origin` with `$ git push`
 1. Review your work with `$ git status` and `$ git log`
 
-## Check for Understanding
+<!-- ## Check for Understanding -->
+<!-- Definitions -->

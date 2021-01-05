@@ -289,4 +289,5 @@ It is common to change the default editor for git from vim to something else, su
 - We create a commit and a commit message with `$ git commit -m "Message"`
 - We may need to navigate some screens with alternative syntax
 
-## Check for Understanding
+<!-- ## Check for Understanding -->
+<!-- Definitions -->
