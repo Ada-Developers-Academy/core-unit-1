@@ -41,14 +41,14 @@ As we work with Python, we will encounter many types of exceptions. We will lear
 
 ## Common Exception Types
 
-| Exception Name    | When it occurs                                                                      |
-| ----------------- | ----------------------------------------------------------------------------------- |
-| NameError         | Raised when a local or global name is not found.                                    |
-| ZeroDivisionError | Raised when the second argument of a division or modulo operation is zero.          |
-| OverflowError     | Raised when the result of an arithmetic operation is too large to be represented.   |
-| SyntaxError       | Raised when the parser encounters a syntax error.                                   |
-| TypeError         | Raised when an operation or function is applied to an object of inappropriate type. |
-| KeyboardInterrupt | Raised when the user hits the interrupt key (normally Control-C or Delete).         |
+| Exception Name    | When it occurs                                                          |
+| ----------------- | ----------------------------------------------------------------------- |
+| NameError         | A local or global name is not found.                                    |
+| ZeroDivisionError | The second argument of a division or modulo operation is zero.          |
+| OverflowError     | The result of an arithmetic operation is too large to be represented.   |
+| SyntaxError       | The parser encounters a syntax error.                                   |
+| TypeError         | An operation or function is applied to an object of inappropriate type. |
+| KeyboardInterrupt | The user hits the interrupt key (normally Control-C or Delete).         |
 
 ## We Can Raise Exceptions
 
@@ -111,14 +111,14 @@ except ExampleError as error_as_a_variable:
     print(f"An exception occurred. Here are the error details: {error_as_a_variable}")
 ```
 
-| Piece of Code             | Notes                                                                                                                                                                                                              |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `try:`                    | This begins a _try-clause_. If any exception is raised by _any code_ executed inside the try-clause, the rest of the try-clause is skipped, and code execution moves to the `except` clause.                       |
-| Body of the try-clause    | The try-clause should include all code that has the possibility of raising an exception that we want to handle. The try-clause is indented once from `try:`                                                        |
-| `except`                  | A keyword that begins an _except-clause_. The except-clause will run if a matching exception is raised from the try-clause.                                                                                        |
-| `ExampleError`            | **Replace this** with the type of exception that we are handling, such as `NameError` or `ZeroDivisionError`.                                                                                                      |
-| `as`                      | A keyword that designates the caught exception (that matches the type of `ExampleError`) can be accessed as the local variable to the right.                                                                      |
-| `error_as_a_variable`:    | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!           |
+| Piece of Code             | Notes                                                                                                                                                                                                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `try:`                    | This begins a _try-clause_. If any exception is raised by _any code_ executed inside the try-clause, the rest of the try-clause is skipped, and code execution moves to the `except` clause.                                                               |
+| Body of the try-clause    | The try-clause should include all code that has the possibility of raising an exception that we want to handle. The try-clause is indented once from `try:`                                                                                                |
+| `except`                  | A keyword that begins an _except-clause_. The except-clause will run if a matching exception is raised from the try-clause.                                                                                                                                |
+| `ExampleError`            | **Replace this** with the type of exception that we are handling, such as `NameError` or `ZeroDivisionError`.                                                                                                                                              |
+| `as`                      | A keyword that designates the caught exception (that matches the type of `ExampleError`) can be accessed as the local variable to the right.                                                                                                               |
+| `error_as_a_variable`:    | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!                                                   |
 | Body of the except clause | The error clause should include code that needs to execute if an exception is raised. This code can be used for printing or logging details about `err`. More powerfully, this is where we can try handling the situation and helping the program move on. |
 
 ### !callout-info
