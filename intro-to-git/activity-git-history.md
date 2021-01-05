@@ -11,11 +11,14 @@ Our goal is to practice this without actually typing and running these commands 
 
 ## Activity Instructions
 
-1. Assemble into small groups
-1. Read through the instructions of Part 1
-1. Do Part 1
-1. Read through the instructions of Part 2
-1. Do Part 2
+Assemble into small groups.
+
+For each part,
+
+1. Read through the setup directions
+1. Setup as a group
+1. Read through the instructions
+1. Complete the instructions
 
 ### Preparation
 
@@ -45,6 +48,15 @@ The group members will use these details to name the specific commands needed.
    - box labeled "Git Log"
 1. Each individual should pick one of these commits:
 
+| Commit Hash | Commit Message                                  | Modifies files                                       | Adds new files            |
+| ----------- | ----------------------------------------------- | ---------------------------------------------------- | ------------------------- |
+| `1a91c`     | "refactors plan_trip() to for loop"             | `plan.py`                                            | -                         |
+| `2e7de`     | "adds ability to plan multi-day hikes"          | -                                                    | `plan.py`, `test_plan.py` |
+| `384ca`     | "deletes outdated mentions of weather advisory" | `report.py`, `test_report.py`                        | -                         |
+| `4o5em`     | "renames supplies to supply                     | `supplies.py`                                        | `supply.py`               |
+| `5JTrA`     | "adds error handling when loading hike data"    | `hike.py`, `test_hike.py`, `list.py`, `test_list.py` | -                         |
+| `6ee9f`     | "replaces hike report text with new copy"       | `report.py`, `test_report.py`, `hike.py`             | -                         |
+
 ### Instructions
 
 Group members will take turns making one step. During your turn, you should say out loud what your step is, and the Git command that goes with it. Each group member should collaborate, discuss, help, and confirm that the other group members are on the right track.
@@ -72,13 +84,21 @@ Each member will pick one of the commits in the Setup section. The only detail p
 1. Begin an individual diagram that represents each member's own laptop. Each individual should draw a box labeled "Git Log."
 1. Fill in the "Hike Planner Git Log" box with these commit hashes:
    - ```
-     43d8bf
-     01a66b
-     882c4a
-     c6f79p
+     43d8f
+     01a6b
+     882ca
+     c6f7p
      ```
    - The commits are ordered reverse-chronologically. Commit `43d8bf` is the newest commit. `c6f79p` is the oldest commit.
 1. Each individual should pick one of these commit hashes:
+   - ```
+     1a91c
+     2e7de
+     384ca
+     4o5em
+     5JTrA
+     6ee9f
+     ```
 
 ### Instructions
 
@@ -95,3 +115,16 @@ Each group member should take turns making one step. Each group member should co
 1. Once everyone has successfully pushed their commit, pull from the team repo.
 
 ## How to Review
+
+Consider what you observed during this activity.
+
+In Part 1:
+
+- What common traits did the commit messages have?
+- Between the commits, when was the process of making a commit different? What caused those differences?
+- Did anyone come up with a way to make this process "stick," with a metaphor, mnemonic, diagram, or something else?
+
+In Part 2:
+
+- How would you describe the relationship between the team's Git Log vs. your individual Git Log?
+- Predict: What are the advantages of pulling new commits often?
