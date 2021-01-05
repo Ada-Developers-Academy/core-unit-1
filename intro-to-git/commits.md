@@ -86,9 +86,11 @@ The diff of these changes can be displayed like this:
 +    return (deg_celsius * 1.8) + 32
 ```
 
-<!-- Include code screenshot in order to show color -->
+![Screenshot of a diff: two lines are removed: 1. "result = (deg_celsius * 1.8) + 32" 2. "return result". one line is added: "return (deg_celsius * 1.8) + 32"](../assets/intro-to-git_commits_diff.png)
 
 Note the `+` and `-` symbols at the beginning of each line to describe lines added and removed.
+
+We refer to the collection of differences between two resources, such as files or versions, as a **diff**.  A VCS can display a set of changes as a **diff**, allowing us to confirm our modifications before committing to our repo, or to review modifications made by others on our team.
 
 ## When to Make a Commit
 
