@@ -1,7 +1,5 @@
 # Git Setup
 
-## Learning Goals
-
 ## Introduction
 
 Git has so many concepts to learn! Creating commits, reviewing commits, and collaborating truly are the most important parts of Git.
@@ -10,10 +8,26 @@ However, it's important to recognize some actions needed to set up a Git repo. T
 
 This document is written more like a resource. These topics are necessary to understand, but are less frequently used than concepts for commits and collaboration. Use this lesson as a reference guide, and to inspire you to read more.
 
+### !callout-info
+
+## Our Goal
+
+The goal of this lesson is to help us understand how to setup our Git workflow, so we can start!
+
+Setup happens pretty infrequently. The energy of this lesson may be best used to focus on learning how to recognize different setup steps, rather than committing commands to memory.
+
+Additionally, these setup steps are useful for beginning independent projects outside of this curriculum, too!
+
+### !end-callout
+
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence |
-| ----- | ---------- | -------- | ------------------------ |
+| Vocab          | Definition                                                                                                                                                                                                                                   | Synonyms | How to Use in a Sentence                                                                                                                                                                                                                   |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Fork           | A repo that is based on another repo. These two repos share a Git history up until a certain point.                                                                                                                                          | -        | "I want to remix a project and manage it myself, I should make a fork of it," "On this project, I want to push code changes to my own fork," "That package is actually a fork of another package, but developed in a different direction." |
+| Forking a Repo | The act of making a forked repo from a base repo. This creates a repo of the same name, but under ownership of a different user or organization. The forked repo shares the same Git history as the base repo up until the point of forking. | -        | "I forked the project repo yesterday, so that's why I have all of the project code that was added until yesterday."                                                                                                                        |
+| Clone          | A directory that contains a repo's code and Git history, and can keep track of the remote repo it's a clone of. We usually clone a repo onto a local machine.                                                                                | -        | "When I wanted to start working on this repo's code, I put a clone of it onto my computer."                                                                                                                                                |
+| Cloning a Repo | The act of cloning a remote repo into another directory, usually performed on a local machine.                                                                                                                                               | -        | "I can clone a single repo on my computer as I want, and they'll all make different folders on my computer."                                                                                                                               |
 
 ## Navigating GitHub.com
 
@@ -32,7 +46,7 @@ Every repo has a name.
 
 Every repo either belongs to a user or to an organization.
 
-For example, this repo that lives here is named ` ` and belongs to ` `.
+For example, the [`pallets/flask` repo](https://github.com/pallets/flask) is named `flask` and belongs to the organization `pallets`.
 
 ## Initializing a New Git Project
 
@@ -51,7 +65,6 @@ $ git init
 On a technical level, this creates a hidden folder named `.git` in the project root. This hidden folder contains a lot of Git settings for this project (including the Git history!)
 
 ### !end-callout
-
 
 ## Forking an Existing Git Project for Yourself
 
@@ -112,10 +125,20 @@ The ability to clone with SSH is welcome, and is a great and wonderful way to cl
 
 ### When to Clone
 
-A developer clones a repo when they need these things:
+A developer clones a repo when they need these things a repo's code and Git history to be downloaded onto their computer.
 
-1. A repo's code and Git history to be downloaded onto their computer
+Cloning allows us to start actively performing development on our own machines!
 
 ## Configuring Defaults
 
+<!-- Add in details about configuring details if not covered in precourse or it becomes higher priority -->
+
 ### Configuring the Default Text Editor
+
+It is common to change the default editor for git from `vim` to something else, such as Nano or VS Code. If you have set up your computer to enable launching VS Code from the command line, you can configure Git to use it instead of vim with the following command:
+
+```bash
+$ git config --global core.editor "code --wait"
+```
+
+Instead of using vim, Git will open VS Code, and _it will wait until the window in VS Code is saved and closed._
