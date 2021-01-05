@@ -7,7 +7,7 @@
 
 ## Introduction
 
-If you weren't sure, the absolute worst-case scenario for software is a crash caused by a syntax or runtime error\*. The software has gone to a state where the program can't do anything, the user can't do anything, and possibly the program can't even restart into a usable state!
+The absolute worst-case scenario for software is a crash caused by a syntax or runtime error\*. The software has gone to a state where the program can't do anything, the user can't do anything, and possibly the program can't even restart into a usable state!
 
 If software fails for one person, it's likely that software is failing for _many_ people. All of these consequences result in **chaos**.
 
@@ -29,15 +29,15 @@ Python creates an exception whenever a syntax or runtime error occurs in a progr
 
 The act of creating an exception is often called **raising an exception.**
 
-When an exception is raised, Python moves "up" through the stack of code execution. This act of the exception moving "up" is often called **throwing an exception** or **bubbling up.** We might imagine an exception raised in a deep layer of code gets thrown up through the each layer of code, eventually to the programmer's face.
+When an exception is raised, Python moves "up" through the stack of code execution. This act of the exception moving "up" is often called **throwing an exception** or **bubbling up.** We might imagine an exception raised in a deep layer of code getting thrown up through each layer above, eventually to the programmer's face.
 
 Python raises exceptions because exceptions are Python's cry for help. Python only raises exceptions when some code says, "I can't do this! I can't go on!"
 
-Of course, when Python surrenders and throws an exception, we can't force it to keep going. Ideally, however, should we see an exception, we'd love to recognize it, handle the situation, and then allow our program to move on.
+However, when Python surrenders and throws an exception, sometimes we can lend it a hand. While some exceptions really do represent irrecoverable conditions, others report situations that we might be able to handle so that Python can keep running our program normally!
 
-Code that recognizes a thrown exception is often called **catching an exception.** Catching an exception and then handling the situation, setting things back in order, and making it possible to move on, is often called **handling an exception** or **rescuing an exception.**
+Code that recognizes a thrown exception is often called **catching an exception.** Catching an exception and then handling the situation, setting things back in order, and making it possible to move on, is also often called **handling an exception.**
 
-It is wise and ideal to write code that rescues and helps out our program, should Python ever raise an exception.
+As we work with Python, we will encounter many types of exceptions. We will learn which kinds we tend to handle, and counterintuitively, which might actually be better to allow to crash our programs!
 
 ## Common Exception Types
 
@@ -54,7 +54,7 @@ It is wise and ideal to write code that rescues and helps out our program, shoul
 
 Python can raise exceptions under the hood... and other packages and tests can raise exceptions...
 
-We can too! We use the `raise` keyword. We pair the `raise` keyword with the exception class (type) that we are expecting.
+We can too! We use the `raise` keyword. We pair the `raise` keyword with the exception class name (type) that we want to report.
 
 ```python
 x = -1
@@ -71,7 +71,7 @@ Traceback (most recent call last):
 ValueError
 ```
 
-Here, we should observe what our stack trace is telling us:
+Let's observe what our stack trace is telling us:
 
 - There is a `ValueError` that stopped the code execution
 - The line of code that caused this error is `raise ValueError`
@@ -79,7 +79,7 @@ Here, we should observe what our stack trace is telling us:
 
 ### Creating Error Messages
 
-We can actually pass in our own error message when we raise an exception! If we pass in an error message, the exception will use that string as its error description when needed.
+We can pass in our own error message when we raise an exception! If we pass in an error message, that message will be available to any exception handling code, which can provide additional details about the error.
 
 ```python
 raise ZeroDivisionError('Tried to divide by zero flowers.')
@@ -94,11 +94,15 @@ Traceback (most recent call last):
 ZeroDivisionError: Tried to divide by zero flowers.
 ```
 
-## We Can Rescue Any Raised Exception
+## We Can Handle Any Raised Exception
 
-Remember, the worst case scenario for any program and programmer is a crash, especially from a raised exception.
+Crashes are annoying. Crashes interrupt our work and inconvenience users who run our software. But our programs don't run in isolation. We run software in a complicated environment, and sometimes things beyond our control go wrong. When this happens, crashing is sometimes the best thing to do!
 
-What can we do to protect our program from crashes? Of course, the first step is to review the logic, and see if there's a way to write it that won't raise errors. However, Python also lets us catch raised exceptions before it crashes our program-- and then handle them! We use the `try ... except` syntax for this.
+But there are many cases where we can do something to fix a problematic situation before it becomes a catastrophe. What can we do to protect our program from crashes?
+
+The first step is to review our logic, and see if there's a way to write it that won't raise errors. Additionally, Python lets us catch raised exceptions before they crash our program— and then handle them!
+
+We use the `try ... except` syntax for this.
 
 ```python
 try:
@@ -110,16 +114,16 @@ except ExampleError as error_as_a_variable:
 | Piece of Code             | Notes                                                                                                                                                                                                              |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `try:`                    | This begins a _try-clause_. If any exception is raised by _any code_ executed inside the try-clause, the rest of the try-clause is skipped, and code execution moves to the `except` clause.                       |
-| Body of the try-clause    | The try-clause should include all code that has the possibility of raising an exception that we want to rescue. The try-clause is indented once from `try:`                                                        |
+| Body of the try-clause    | The try-clause should include all code that has the possibility of raising an exception that we want to handle. The try-clause is indented once from `try:`                                                        |
 | `except`                  | A keyword that begins an _except-clause_. The except-clause will run if a matching exception is raised from the try-clause.                                                                                        |
-| `ExampleError`            | **Replace this** with the type of exception that we are rescuing, such as `NameError` or `ZeroDivisionError`.                                                                                                      |
-| `as`                      | A keyword that designates the rescued exception (that matches the type of `ExampleError`) can be accessed as the local variable to the right.                                                                      |
+| `ExampleError`            | **Replace this** with the type of exception that we are handling, such as `NameError` or `ZeroDivisionError`.                                                                                                      |
+| `as`                      | A keyword that designates the caught exception (that matches the type of `ExampleError`) can be accessed as the local variable to the right.                                                                      |
 | `error_as_a_variable`:    | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!           |
-| Body of the except clause | The error clause should include code that needs to execute if an exception is raised. This code usually is used for printing details about `err`, and/or "rescuing" the situation and helping the program move on. |
+| Body of the except clause | The error clause should include code that needs to execute if an exception is raised. This code can be used for printing or logging details about `err`. More powerfully, this is where we can try handling the situation and helping the program move on. |
 
 ### !callout-info
 
-## Specifying Error Type is Optional...
+## Error Specifications Are Optional
 
 Technically, specifying the error type is optional. Specifying the local variable `err` is also optional. From the above syntax, we could omit `ExampleError as error_as_a_variable`, and it would still be valid code. Then, that except-clause would run if it catches _any_ exception. It's valuable to have the specificity and detail when handling exceptions, so this is a pattern we rarely see.
 
@@ -166,7 +170,7 @@ Here's a step-by-step explanation of how the code above runs:
 
 For each example:
 
-- Identify the line of code that invokes the error
+- Identify the function call that leads to the error condition, and describe what about it is problematic
 - Identify what line of code inside the try-clause raises an error
 - Observe what happens during each except-clause
 
@@ -206,7 +210,7 @@ For each example:
     A list index out of range was entered. Please enter 0, 1, or 2.
     ```
 
-### Handle Many Types of Exceptions
+### Handling Multiple Types of Exceptions
 
 If we need to handle more than one kind of exception, we can add an infinite number of `except` clauses. Much like the `if..elif` statements, the raised exception will check if it matches one-at-a-time, starting from the top.
 
@@ -260,13 +264,13 @@ In our try-clause, different situations will raise different exceptions. Chainin
 
 ## We Can Define Exceptions
 
-If none of the built-in functions don't suit the logic and context of our code, what can we do? We can define custom exceptions, or exceptions with our own names and implementations.
+If none of the built-in exception types are suitable for our code needs, what can we do? We can define custom exceptions, or exceptions with our own names and implementations.
 
 We won't cover that material, but it's a cool piece of syntax! Follow your curiosity!
 
 ## Summary
 
-Whether they're caused by programmers, insufficient memory, or user inputs errors are bound to happen. Raising and using the `try..except` clause are great ways to make our code more robust by handling errors before they crash our program.
+Whether they're caused by programmers, insufficient memory, or user inputs, errors are bound to happen. Raising and using the `try...except` clause are great ways to make our code more robust by handling errors before they crash our program.
 
 ## Check for Understanding
 
@@ -296,7 +300,7 @@ For this question, disregard proper indentation.
 1. `except TypeError:`
 1. `print("Variable is not a list")`
 1. `except:`
-1.  `print("Something else went wrong")`
+1. `print("Something else went wrong")`
 
 ##### !end-answer
 

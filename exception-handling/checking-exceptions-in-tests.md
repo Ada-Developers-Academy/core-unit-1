@@ -8,13 +8,15 @@
 
 We've learned that raising exceptions stops the execution of our program to inform the developer about important errors.
 
-Sometimes, our projects will need to raise exceptions. As a developer, we find it valuable to raise an exception in our code at certain points; raising an exception and stopping a program might be what prevents even bigger catastrophes down the line.
+Sometimes we will need to raise exceptions in our own projects at certain points. Raising an exception and stopping a program might prevent even bigger catastrophes down the line.
 
 ### !callout-info
 
 ## Example: Stop Money Transfers
 
-For example, imagine writing a banking webapp that allows customers to transfer money between accounts. Now imagine the customer Jordi. She likes using a web browser that doesn't allow web forms to enforce form validations. Jordi types in that she wants to withdraw $400 from her account. However, she makes a typo, and says inputs $4,000,000; more than she has! The web form wouldn't stop her from doing this, and the Python language wouldn't throw a Runtime error. However, we can stop the program from withdrawing $4,000,000 by throwing an exception.
+For example, imagine writing a banking web app that allows customers to transfer money between accounts. Now imagine the customer Jordi. Unfortunately, her web browser doesn't allow web forms to enforce form validations. Jordi types in that she wants to withdraw $400 from her account. However, she makes a typo and inputs $4,000,000. That's more than she has!
+
+The web form wouldn't stop her from doing this, and the Python language wouldn't throw a Runtime error. However, we can stop the program from withdrawing $4,000,000 by throwing an exception of our own.
 
 ### !end-callout
 
@@ -22,12 +24,10 @@ When it's important for us to raise errors, we should use unit tests to verify t
 
 ## pytest Syntax
 
-To prepare to write a test that expects a raised exception, we should determine two things:
+When preparing to write a test that expects a raised exception, we should determine two things:
 
-Given specific input...
-
-1. What is the function call that we expect to raise an exception?
-1. What kind of exception that we are expecting from this function call?
+1. What function call and input do we expect to raise the exception?
+1. What kind of exception do we expect from this function call?
 
 With those two pieces of info in mind, we can understand the pytest syntax:
 
@@ -39,16 +39,16 @@ def test_exceptional_function():
 
 | Code                                         | Description                                                                                                                                                                           |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `with pytest.raises(...):`                   | pytest needs to know beforehand that we're expecting an exception; otherwise it will allow crashes! We use `with pytest.raises(...):` to begin a code block for the rest of our test. |
-| `SomeTypeOfException`                        | **Replace this** with the exact kind of exception we're expecting. Examples include `TypeError`, `NotImplementedError`.                                                               |
+| `with pytest.raises(...):`                   | pytest needs to know beforehand that we're expecting an exception. We use `with pytest.raises(...):` to begin a code block that will be able to handle it. If we don't, the test itself will crash! |
+| `SomeTypeOfException`                        | **Replace this** with the exact kind of exception we're expecting. Examples include `TypeError`, `NotImplementedError`, or any other Python error. |
 | `exceptional_function(exceptional_argument)` | **Replace this** with the function call that will raise the exception.                                                                                                                |
 
 ### Read This Example
 
 Read this example and predict your answers for:
 
-1. What is the function call that we expect to raise an exception?
-1. What kind of exception that we are expecting from this function call?
+1. What function call will raise an exception?
+1. What kind of exception will this function call raise?
 
 ```python
 def divide_two_nums(apples, oranges):
@@ -121,7 +121,7 @@ def test_check_is_phone_num_valid():
 ##### !end-question
 ##### !placeholder
 
-function_name(args)
+NameOfException
 
 ##### !end-placeholder
 ##### !answer
@@ -199,4 +199,3 @@ AttributeError
 ##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
-

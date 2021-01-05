@@ -18,7 +18,7 @@ Complete all questions below.
 
 ### !question
 
-Given these tests, implement the function that will pass. Assume that the only invalid, claimed code school name is `"Ada Developers Academy"`.
+Given these tests, provide the function body that will make them pass. Assume that the only invalid, claimed code school name is `"Ada Developers Academy"`.
 
 ```python
 def test_valid_name():
@@ -81,7 +81,7 @@ def claim_unreserved_code_school_name(name):
 
 ### !question
 
-Given these tests, implement the function that will pass. Assume that any phone number that is a string is valid.
+Given these tests, provide the function body that will make them pass. Assume that any phone number that is a string is valid.
 
 Hint: The function `type(phone_num)` will return `str` if `phone_num` is a string.
 
@@ -102,7 +102,7 @@ def test_invalid_phone_nums_raise_error():
 
 ```python
 def is_phone_num_valid(phone_num):
-    return True
+    pass
 ```
 ### !end-placeholder
 ### !tests
@@ -149,7 +149,7 @@ def is_phone_num_valid(phone_num):
 
 ### !question
 
-Given these tests, refactor this function so it will pass. Use `try ... except` syntax.
+Given these tests, refactor this function to make them pass. Use `try ... except` syntax.
 
 - If no error is raised, return `cost_per_person`
 - If a `ZeroDivsionError` is raised, catch it, and return `0`
@@ -220,7 +220,7 @@ def split_cost_evenly(total_cost, num_of_people, tip_percentage):
 
 ### !question
 
-Given these tests, refactor **_only_** the **`get_celebration_treat`** function so it will pass. Use `try ... except` syntax.
+Given these tests, refactor **_only_** the **`get_celebration_treat`** function to make them pass. Use `try ... except` syntax.
 
 In `get_celebration_treat`...
 
@@ -324,7 +324,7 @@ def get_celebration_treat(treats):
 
 ### !question
 
-Given these tests, refactor **_only_** the **`prepare_meal`** function so it will pass. Use `try ... except` syntax.
+Given these tests, refactor **_only_** the **`prepare_meal`** function to make them pass. Use `try ... except` syntax.
 
 In `prepare_meal`...
 
