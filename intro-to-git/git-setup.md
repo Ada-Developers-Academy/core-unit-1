@@ -104,9 +104,10 @@ $ git clone <clone url>
 To clone a repo, the full process is:
 
 1. Go to the repo's page on GitHub.com
-1. Locate the button that opens details on downloading the code or cloning the project. This button is likely labeled "Code" and located towards the top right corner.
-1. This button opens details about cloning. Select "HTTPS" as a setting for cloning the project.
-1. Locate the clone URL inside of this pop-up. Copy this URL.
+1. Locate the button that opens details on downloading the code or cloning the project. This button is labeled "Code" and located towards the top right corner.
+1. Click the "Code" button. This will open a pop-up where we can set a few cloning options.
+1. Select "HTTPS".
+1. Locate the clone URL inside the same pop-up and copy it.
 1. Switch back to your terminal
 1. Run the `$ git clone <clone URL>` command, where `<clone URL>` is replaced with the URL copied previously.
 1. Confirm there's a new project folder and `cd` into it

@@ -265,7 +265,7 @@ Many software teams will designate a template to follow for commit messages.
 
 If we don't supply a commit message as part of the commit command, Git will try to open a text editor where we can supply a message interactively. Git is usually set up to use a program called `vim` by default. vim is really great at displaying text! However, the way we work with files in vim is somewhat unique.
 
-When a git commit command opens up the vim program, we navigate by:
+When a Git commit command opens up vim, we navigate by:
 
 - Typing `:wq` and pressing enter to _write_ (save) and then _quit_ vim.
 - Typing `i` to go into "insert mode," if we must write text. Insert mode will let us type characters, and use left and right arrows to navigate.

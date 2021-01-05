@@ -133,7 +133,7 @@ As we work on our own code, we need to _push_ our new commits _to_ `origin`. We 
 $ git push
 ```
 
-It's important to note that this command will send every commit to the remote repo; Git will need to merge these two Git histories! While debugging Git, it's helpful to understand that these two Git histories become merged. As part of merging, the commits are replayed and applied to make one history onto the remote.
+This command sends every commit in our local history to the remote repo. As with a pull, Git must merge these two Git histories! Unlike pulling, we as individual devs don't have a ready way to step in if Git encounters a problem during the merge. How might we try to prevent merge issues when we push? We'll revisit this shortly!
 
 ### !callout-info
 

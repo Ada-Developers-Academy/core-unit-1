@@ -99,13 +99,13 @@ We need to collaborate! But how can we do this while we are each working on our 
 
 We can enable team collaboration by using Git! Let's examine how.
 
-Every codebase that a team will collaborate on will have a **repository,** or a project folder that contains the files, versioned with Git. (This repository will likely be hosted on github.com)
+Every codebase that a team collaborates on will have a **repository**, or a project folder that contains the files, versioned with Git. This repository is often stored on a hosting site such as github.com.
 
 Every developer who wants to contribute code will need access to the code and files, the repo's commit history, and a way to reference the team's repo. In order to get these three things, every developer will **clone** that repo onto their own machine.
 
 When a developer clones the repo onto their machine, it will create a project folder on their computer, with all of the files inside of it. Then, each developer will write code, run tests, build features, **get updates from the team**, and **make commits.**
 
-Each dev who makes commits eventually sends the commits to the team's repository.
+Each dev who makes commits eventually will send the commits to the team's repository.
 
 Recall that each commit includes this information:
 
@@ -118,7 +118,7 @@ Using that information, Git must go through a series of merging steps to create 
 
 ## Comparing Different Ways to Collaborate
 
-Different versioning tools have different strategies. An older VCS used a system of _checking out a file for a period of time,_ much like checking out a book from a library. This VCS said that other team members couldn't work on, or even **_open_** that file until that dev checked it back in!
+Different versioning tools have different collaboration strategies. Some older VCSs used a process of _checking out a file for a period of time_, much like checking out a book from a library. Such VCSs said that other team members couldn't work on, or sometimes even **_open_** that file until the first dev checked it back in!
 
 ### !end-callout
 
