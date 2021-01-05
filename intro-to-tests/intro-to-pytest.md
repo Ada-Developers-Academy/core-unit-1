@@ -199,9 +199,18 @@ def test_zero_division():
 | `ZeroDivisionError`       | The kind of exception we expect should be specified here                                      |
 | `1 / 0`                   | In this code block, we should do our **Act** step, or invoke the function we're testing here. |
 
+### !callout-info
+
+## Testing Raised Exceptions?
+
+This curriculum will go deeper into raising exceptions eventually! For now, awareness of syntax is our friend.
+
+### !end-callout
+
 ### !callout-danger
 
 ## This Curriculum Uses unittest, Not pytest
+
 This curriculum teaches pytest, a testing framework that has wide adoption in the Python community. This curriculum's projects will use pytest. However, **the code challenges within this curriculum will use unittest,** a different testing framework. This is due to a limitation in the curriculum tools.
 
 ---
@@ -209,6 +218,7 @@ This curriculum teaches pytest, a testing framework that has wide adoption in th
 Working with unittest, rather than pytest, will have some differences in syntax. However, conceptually, they are the exact same; the structure, error output, error messages, passed test messages, etc. will all be extremely alike.
 
 This curriculum believes in a learner's ability to smoothly work with these differences.
+
 ### !end-callout
 
 ## Check for Understanding
