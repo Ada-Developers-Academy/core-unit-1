@@ -262,6 +262,21 @@ We're trying to print carrot, but carrot is never defined before this. name 'car
 
 In our try-clause, different situations will raise different exceptions. Chaining except-clauses allows us to rescue them in specific ways.
 
+### !callout-secondary
+
+## Multiple Exception Types with One Handler
+
+Sometimes we have code that can trigger multiple exception types, but a single exception handler would be able to handle all of them. To catch multiple types with one handler, consider the following example syntax:
+
+```python
+try:
+    # ...
+except (ZeroDivisionError, UnboundLocalError, NameError) as err:
+    print(f"Either a ZeroDivisionError, UnboundLocalError, or NameError happened. Details: {err}")
+```
+
+### !end-callout
+
 ## We Can Define Exceptions
 
 If none of the built-in exception types are suitable for our code needs, what can we do? We can define custom exceptions, or exceptions with our own names and implementations.
