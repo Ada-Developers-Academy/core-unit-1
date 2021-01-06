@@ -215,6 +215,25 @@ Standards:
         UID: Mo0XXv
         Path: /nested-data-and-nested-loops/nested-loops.md
   -
+    Title: Exception Handling
+    Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Practice: Exception Handling"
+    UID: xT5cCv
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: N27mMR
+        Path: /exception-handling/raising-and-handling-exceptions.md
+      -
+        Type: Lesson
+        UID: 6bbws8
+        Path: /exception-handling/checking-exceptions-in-tests.md
+      -
+        Type: Lesson
+        UID: b72TBD
+        Path: /exception-handling/practice-exception-handling.md
+  -
     Title: Big O
     Description: Time and Space Complexity, Big O Notation, Big O Analysis
     UID: f2703dfead197309bf41c0a2d8ff1daf
@@ -241,3 +260,42 @@ Standards:
         Type: Lesson
         UID: 90465d8c4c1af56aed98039f4e95687c
         Path: /big-o/practice-big-o.md
+  -
+    Title: Intro to Git
+    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Activity: Git History, Practice: Git Commands"
+    UID: DaSCfO
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: qCKw66
+        Path: /intro-to-git/intro-to-git-vocab-and-concepts.md
+      -
+        Type: Lesson
+        UID: EgvjDl
+        Path: /intro-to-git/git-setup.md
+      -
+        Type: Lesson
+        UID: CltvdV
+        Path: /intro-to-git/commits.md
+      -
+        Type: Lesson
+        UID: wGkqyQ
+        Path: /intro-to-git/collaborating.md
+      -
+        Type: Lesson
+        UID: w3WLGs
+        Path: /intro-to-git/reviewing-git-history.md
+      -
+        Type: Instructor
+        UID: NvHa7v
+        Path: /intro-to-git/activity-git-history.instructor.md
+      -
+        Type: Lesson
+        UID: tSg96d
+        Path: /intro-to-git/activity-git-history.md
+      -
+        Type: Lesson
+        UID: g1zQGU
+        Path: /intro-to-git/practice-git-commands.md
