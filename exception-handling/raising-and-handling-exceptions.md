@@ -166,6 +166,34 @@ Here's a step-by-step explanation of how the code above runs:
 1. Then, we print the exception with a message. We could do other stuff too, such as `return None`
 1. Finally, we exit this whole thing.
 
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: ordering
+* id: e45ab433-76f7-46b8-8203-92f7df1a7515
+* title: try-except block
+##### !question
+
+Assume we have a function `process_list` which takes a list as an argument and performs an operation on it. If the function is passed something other than a list, it throws a `TypeError` exception. It may throw another type of exception if something else goes wrong.
+
+Re-order the following lines of code into a working try-except block.
+
+For this question, disregard proper indentation.
+
+##### !end-question
+##### !answer
+
+1. `try:`
+1. `process_list(my_list)`
+1. `except TypeError:`
+1. `print("Variable is not a list")`
+1. `except:`
+1. `print("Something else went wrong")`
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
 ### More Examples
 
 For each example:
@@ -174,41 +202,43 @@ For each example:
 - Identify what line of code inside the try-clause raises an error
 - Observe what happens during each except-clause
 
-1.  ```python
-    def is_valid_int(input_num):
-        try:
-            x = int(input_num)
-        except ValueError as error:
-            print(f"{error}. Please enter a valid number.")
+1.
+```python
+def is_valid_int(input_num):
+    try:
+        x = int(input_num)
+    except ValueError as error:
+        print(f"{error}. Please enter a valid number.")
 
 
-    is_valid_int("Clearly not a valid int")
-    ```
+is_valid_int("Clearly not a valid int")
+```
 
-    Output:
+Output:
 
-    ```
-    invalid literal for int() with base 10: 'Clearly not a valid int'. Please enter a valid number.
-    ```
+```
+invalid literal for int() with base 10: 'Clearly not a valid int'. Please enter a valid number.
+```
 
-2.  ```python
-    def enter_candy(candy_choice):
-        candy_list = ["lollipops", "m&ms", "gummy bears"]
-        try:
-            print(f"Your candy choice is {candy_choice}")
-            print(f"You selected {candy_list[candy_choice]}")
-        except IndexError as error:
-            print(f"A {error} was entered. Please enter 0, 1, or 2.")
+2.
+```python
+def enter_candy(candy_choice):
+    candy_list = ["lollipops", "m&ms", "gummy bears"]
+    try:
+        print(f"Your candy choice is {candy_choice}")
+        print(f"You selected {candy_list[candy_choice]}")
+    except IndexError as error:
+        print(f"A {error} was entered. Please enter 0, 1, or 2.")
 
-    enter_candy(9999)
-    ```
+enter_candy(9999)
+```
 
-    Output:
+Output:
 
-    ```
-    Your candy choice is 9999
-    A list index out of range was entered. Please enter 0, 1, or 2.
-    ```
+```
+Your candy choice is 9999
+A list index out of range was entered. Please enter 0, 1, or 2.
+```
 
 ### Handling Multiple Types of Exceptions
 
@@ -287,39 +317,6 @@ We won't cover that material, but it's a cool piece of syntax! Follow your curio
 
 Whether they're caused by programmers, insufficient memory, or user inputs, errors are bound to happen. Raising and using the `try...except` clause are great ways to make our code more robust by handling errors before they crash our program.
 
-## Check for Understanding
-
-<!-- Question 1 -->
-
-<!-- prettier-ignore-start -->
-### !challenge
-
-* type: ordering
-* id: e45ab433-76f7-46b8-8203-92f7df1a7515
-* title: try-except block
-
-##### !question
-
-Assume we have a function `process_list` which takes a list as an argument and performs an operation on it. If the function is passed something other than a list, it throws a `TypeError` exception. It may throw another type of exception if something else goes wrong.
-
-Re-order the following lines of code into a working try-except block.
-
-For this question, disregard proper indentation.
-
-##### !end-question
-
-##### !answer
-
-1. `try:`
-1. `process_list(my_list)`
-1. `except TypeError:`
-1. `print("Variable is not a list")`
-1. `except:`
-1. `print("Something else went wrong")`
-
-##### !end-answer
-
-### !end-challenge
-<!-- prettier-ignore-end -->
+<!-- ## Check for Understanding -->
 
 <!-- Use the questions in the checking exceptions in tests lessons, and reverse them, lol -->
