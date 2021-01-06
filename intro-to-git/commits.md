@@ -20,8 +20,8 @@ Sometimes, we work on a project alone. Git is still an incredibly powerful and h
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence |
-| ----- | ---------- | -------- | ------------------------ |
+<!-- | Vocab | Definition | Synonyms | How to Use in a Sentence |
+| ----- | ---------- | -------- | ------------------------ | -->
 
 - Code Change
 - Diff
