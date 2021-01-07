@@ -13,10 +13,12 @@ Let's ensure we're on the same page about some programming fundamentals by revie
 
 ## Vocabulary and Synonyms
 
-Expression
-Statement
-Literal
-Variable
+| Vocab      | Definition                                                                                                                             | Synonyms | How to Use in a Sentence                                                                                                                                                                                                                                                                                   |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Expression | A unit of code that can be evaluated into one value                                                                                    | -        | "The expression `999 > 0` is `True`!" "We use the expression `999 > 0` to determine if our code prints `"Hello!"`," "While I'm debugging, I need to keep checking what the expression `total_price * 1.1` evaluates into"                                                                                  |
+| Statement  | A unit of code that is used to execute a change                                                                                        | -        | "Variable assignment is a statement that changes what a variable refers to," "I put some print statements on lines 14-17 to help me figure out what's going on," "Don't forget to check the syntax on your if statement!"                                                                                  |
+| Variable   | A name that is a reference to a specific place in memory, and the value stored there. Variables can be assigned and reassigned values. | var      | "I assigned the list `["red", "green", "blue]` to my variable named `my_rainbow`," "I can read my variable `my_rainbow` and get back the value it holds"                                                                                                                                                   |
+| Literal    | A value that is the value itself.                                                                                                      | -        | "Variables are not literals, because they don't look like their value," "I can index a list literal like this: `["red", "blue", "yellow"][0]`. I didn't use a variable that holds a list, but a list value itself," "Literals help me experiment with code, because I'm looking at the values themselves." |
 
 ## Expressions: Everything Becomes a Value
 
@@ -40,6 +42,7 @@ The following are examples of expressions, because when our code runs, these tur
 ### !callout-info
 
 ## Function Calls are Expressions
+
 For functions, we can interpret a function call used as an evaluated value as an _expression_.
 
 ### !end-callout
@@ -64,6 +67,7 @@ Many of these statements use syntax that will be covered more in-depth with deep
 ### !callout-info
 
 ## Statement
+
 For functions, we can interpret a function call used to execute a change as a _statement_.
 
 ### !end-callout
@@ -93,6 +97,7 @@ This is a list of all data types available in the Python programming language.
 ### !callout-info
 
 ## Explore Data Types
+
 We will not go into depth with tuples or sets in this curriculum, but they are interesting and useful data types. You are free to learn more and apply them; follow your curiosity!
 
 ### !end-callout
@@ -154,7 +159,9 @@ print(my_fraction_as_int)
 ### !callout-info
 
 ## Experiment with Casting
+
 Often times, the behavior of converting isn't very predictable. What happens when we cast an empty list into a string? Or an integer into a boolean? It is best to experiment with converting in a REPL before using it in code.
+
 ### !end-callout
 
 ## Literals Are The Thing Itself
