@@ -108,3 +108,22 @@ Consider this problem: You have an address book, and you want to find the contac
 <!-- Question about comparing Big Os for more efficient -->
 
 <!-- Question about comparing Big Os for more efficient -->
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: RskXE0
+* title: Big O Notation
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->

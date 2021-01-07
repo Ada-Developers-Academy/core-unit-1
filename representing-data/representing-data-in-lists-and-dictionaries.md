@@ -176,3 +176,24 @@ Enter notes here
 | Mentions of frequency                                            | Dictionaries are great structures to map some data to its frequency. In this situation, the data would be the key, and its frequency (as an integer that starts at `0`) is the value                                                                                 | -        |
 | Accessing values by key                                          | Dictionaries allow us to use keys as the primary way of accessing data. If two pieces of data have a close relationship, and contextually we may have more exposure to the key, we might want to use a dictionary. (Accessing data by value is a trickier operation) | -        |
 | Modifying values                                                 | Dictionaries allow us to modify the values to key-value pairs easily. If two pieces of data have a close relationship, and contextually we are modifying the value often, we might want to use a dictionary.                                                         | -        |
+
+## Check for Understanding
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: u6kzil
+* title: Representing Data in Lists and Dictionaries
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->

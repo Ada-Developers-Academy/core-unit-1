@@ -124,3 +124,22 @@ An efficient algorithm is one that runs as fast as possible and requires as litt
 The answer will ultimately on the context of the algorithm! That being said, we can and will use formal measurements to inform our decisions more confidently.
 
 ## Check for Understanding
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: VW43GM
+* title: Time and Space Complexity
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->

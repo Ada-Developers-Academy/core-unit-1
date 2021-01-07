@@ -179,5 +179,24 @@ To summarize these concepts and commands, here is a proposed development workflo
 1. Send all of your commits to `origin` with `$ git push`
 1. Review your work with `$ git status` and `$ git log`
 
-<!-- ## Check for Understanding -->
+## Check for Understanding
 <!-- Definitions -->
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: gK1g0y
+* title: Collaborating
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->

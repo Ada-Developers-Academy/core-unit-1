@@ -289,5 +289,24 @@ It is common to change the default editor for git from vim to something else, su
 - We create a commit and a commit message with `$ git commit -m "Message"`
 - We may need to navigate some screens with alternative syntax
 
-<!-- ## Check for Understanding -->
+## Check for Understanding
 <!-- Definitions -->
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: BU1uRr
+* title: Commits
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->

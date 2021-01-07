@@ -165,3 +165,24 @@ What is "one thing"? This principle intentionally relies on abstraction, design,
 We can talk about a function's responsibility with the sentence, "The responsibility of this function is to..."
 
 **Look at this example:** Our `convert_temperature` function is responsible for converting a temperature in celsius to a temperature in fahrhenheit.
+
+## Check for Understanding
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: fSSOtc
+* title: Functions Overview
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->
