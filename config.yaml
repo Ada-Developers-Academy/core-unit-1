@@ -52,6 +52,29 @@ Standards:
         UID: 63F66B
         Path: /ada-orientation/retrospectives.md
   -
+    Title: Fundamentals Recap
+    Description: "Fundamentals Vocabulary, Practice: Fundamentals Vocabulary, Conditionals Recap, Practice: Conditionals Recap"
+    UID: w7RhPU
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: k3byvO
+        Path: /fundamentals-recap/fundamentals-vocabulary.md
+      -
+        Type: Lesson
+        UID: wsrfiY
+        Path: /fundamentals-recap/practice-fundamentals-vocabulary.md
+      -
+        Type: Lesson
+        UID: 0pDSN5
+        Path: /fundamentals-recap/conditionals-recap.md
+      -
+        Type: Lesson
+        UID: v2CqP7
+        Path: /fundamentals-recap/practice-conditionals-recap.md
+  -
     Title: What Is Software Development
     Description: "What is Software?, Study Like a Programmer, Activity: Intention Setting Our Careers, Activity: Study Plan"
     UID: 9db5757cd4ec665b52cdc40eb2e6c184
