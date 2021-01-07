@@ -227,6 +227,17 @@ Standards:
         UID: Mo0XXv
         Path: /nested-data-and-nested-loops/nested-loops.md
   -
+    Title: While Loops
+    Description: While Loops
+    UID: 3P0q44
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: KyZkme
+        Path: /while-loops/while-loops.md
+  -
     Title: Exception Handling
     Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Practice: Exception Handling"
     UID: xT5cCv
