@@ -16,14 +16,14 @@ The rules in programming about how we can access those variables in code is call
 
 ## Vocabulary and Synonyms
 
-| Vocab                | Definition                                                                                                                                                                    | Synonyms                                                 | How to Use in a Sentence                                                                                                                                                                                                          |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Variable             | A variable is a name that references a value, or piece of data, stored in computer memory. We can assign values to variables, and read values from variables. | holder of a value, reference                             | "That variable is named `foo`," "We should use `foo` on this line," "I need to pass the value of `foo` to this function"                                                                                                          |
-| Variable Declaration | The line of code where we first introduce a variable, usually the first place where we give a variable a name and a value                                                     | Where the variable is defined, initializing the variable | "I declared the variable `bar` on line 3, and accessed it on line 4," "I defined the variable `bar` with the initial value `42`," "I got a `NameError` on line 50 because I never initialized the variable `bar` before line 50." |
-| Scope                | The area of a program where a given variable can be accessed or used                                                                                                          | Variable Scope                                           | "The variable `baz` is in scope in the function `qux`," "`baz` is out of scope on this line of code," "This variable is scoped to this function."                                                                                 |
-| Local Variable       | A kind of variable that has the smallest scope: local scope. The most common kind of variable.                                                                                | Variable                                                 | "`foo` is a local variable," "Let's create a local variable called `foo`"                                                                                                                                                         |
-| Function             | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again.                | Method                                                   | "I defined a function," "I used a function," "I wrote a function"                                                                                                                                                                 |
-| Global Variable      | A kind of variable that has the largest scope: global scope.                                                                                                                  | global                                                   | "It's dangerous to use the global variable `bar` inside of the function," "We can read the global variable `bar` anywhere in the file."                                                                                           |
+| Vocab                | Definition                                                                                                                                                     | Synonyms                                                 | How to Use in a Sentence                                                                                                                                                                                                          |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Variable             | A variable is a name that references a value, or piece of data, stored in computer memory. We can assign values to variables, and read values from variables.  | holder of a value, reference                             | "That variable is named `foo`," "We should use `foo` on this line," "I need to pass the value of `foo` to this function"                                                                                                          |
+| Variable Declaration | The line of code where we first introduce a variable, usually the first place where we give a variable a name and a value                                      | Where the variable is defined, initializing the variable | "I declared the variable `bar` on line 3, and accessed it on line 4," "I defined the variable `bar` with the initial value `42`," "I got a `NameError` on line 50 because I never initialized the variable `bar` before line 50." |
+| Scope                | The area of a program where a given variable can be accessed or used                                                                                           | Variable Scope                                           | "The variable `baz` is in scope in the function `qux`," "`baz` is out of scope on this line of code," "This variable is scoped to this function."                                                                                 |
+| Local Variable       | A kind of variable that has the smallest scope: local scope. The most common kind of variable.                                                                 | Variable                                                 | "`foo` is a local variable," "Let's create a local variable called `foo`"                                                                                                                                                         |
+| Function             | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again. | Method                                                   | "I defined a function," "I used a function," "I wrote a function"                                                                                                                                                                 |
+| Global Variable      | A kind of variable that has the largest scope: global scope.                                                                                                   | global                                                   | "It's dangerous to use the global variable `bar` inside of the function," "We can read the global variable `bar` anywhere in the file."                                                                                           |
 
 ## Variable Scope Is Where a Variable Can Be Read
 
@@ -83,7 +83,7 @@ Properties of local variables:
 
 ## Variables in Short Examples
 
-Most of the variables in our short examples so far have actually been _global_ variables!  Let's take a look at how we can create a new scope so we can continue our discussion of _local_ variables.
+Most of the variables in our short examples so far have actually been _global_ variables! Let's take a look at how we can create a new scope so we can continue our discussion of _local_ variables.
 
 ### !end-callout
 
@@ -147,7 +147,7 @@ print("Instead of trying to access breakfast_message, let's return breakfast_mes
 print(f"The value of resulting_message is {resulting_message}")
 ```
 
-In this example, the `display_breakfast` function creates a new string value stored in the `breakfast_message` local variable. After printing the value, it goes on to return that string back to the caller.  While the local variable `breakfast_message` is not accessible outside the function, we _are_ able to return the _value_ to which it referred. We store that value in the `resulting_message` variable, outside the function.
+In this example, the `display_breakfast` function creates a new string value stored in the `breakfast_message` local variable. After printing the value, it goes on to return that string back to the caller. While the local variable `breakfast_message` is not accessible outside the function, we _are_ able to return the _value_ to which it referred. We store that value in the `resulting_message` variable, outside the function.
 
 In general, we can say this function performs some useful operation, then returns the result of that operation to the outer scope. **This is one of the main patterns that we use in programming.**
 
@@ -326,7 +326,6 @@ Variables that can be read inside of the `prepare_dinner` function are...
 
 ### !end-challenge
 <!-- prettier-ignore-end -->
-
 
 <!-- Question 3 -->
 
