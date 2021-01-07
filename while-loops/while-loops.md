@@ -206,12 +206,19 @@ Possible example uses cases:
 
 ## Check for Understanding
 
-<!-- Need to figure out the best, most meaningful way to do a question in Learn -->
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: code-snippet
+* language: python3.6
+* id: AJC4nw
+* title: While Loops
+### !question
 
-<!-- question stubs -->
+Fix this loop so it loops while `i` is less than `5` .
 
-Fix this loop so it uses the counter variable `i` , and runs while `i` is less than `5` .
-
+### !end-question
+### !placeholder
 ``` python
 def loop_until_five():
     i = 0
@@ -223,8 +230,86 @@ def loop_until_five():
 
 result = loop_until_five()
 ```
+### !end-placeholder
+### !tests
+```python
+import unittest
+from main import *
 
-<!-- Answer: i should be 5 -->
+class TestPython1(unittest.TestCase):
+    def test_loop_until_five(self):
+        self.assertEqual(loop_until_five(), 5)
+```
+### !end-tests
+### !explanation
+
+An example of a working implementation:
+
+```python
+def loop_until_five():
+    i = 0
+
+    while i < 5:
+        i += 1
+
+    return i
+```
+
+Here are the tests:
+
+```python
+def test_loop_until_five():
+    assert loop_until_five() == 5
+```
+
+### !end-explanation
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: jMroBQ
+* title: While Loops
+##### !question
+
+Think about the function named `loop_until_five()` from the previous question. What value does `loop_until_five()` return?
+
+##### !end-question
+##### !answer
+5
+##### !end-answer
+##### !explanation
+
+Even though the loop only ran while `i` was less than five, when `i` was the value `4`, it incremented to `5`.
+
+Prove this to yourself by running this code!
+
+```python
+def loop_until_five():
+    i = 0
+
+    while i < 5:
+        print("new loop")
+        print("before inc, aka i < 5 is true:", i)
+        i += 1
+        print("after inc:", i)
+
+    return i
+```
+
+##### !end-explanation
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: UZgKoW
+* title: While Loops
+##### !question
 
 Which of these loop table options most accurately describes this loop?
 
@@ -240,38 +325,137 @@ while i < 5:
     i += 1
 ```
 
-<!-- Answer: This is the correct answer. False answers should toggle True/False on result, or be off-by-one on the i increments -->
+### Loop Table Apple
 
-| Value of `i` at the beginning of the loop | `i < 5` ? | `i` at the end of loop body | `result` at end of loop body |
-|-------------------------------------------|----------|-----------------------------|------------------------------|
-| `0` | `True` | `1` | `True` |
-| `1` | `True` | `2` | `False` |
-| `2` | `True` | `3` | `True` |
-| `3` | `True` | `4` | `False` |
-| `4` | `True` | `5` | `True` |
-| `5` | `False` | Loop body doesn't execute   | -                            |
+| `i` at beginning of loop | `i < 5` ? | `i` at the end of loop body | `result` at end of loop body |
+| ------------------------ | --------- | --------------------------- | ---------------------------- |
+| `0`                      | `True`    | `1`                         | `False`                      |
+| `1`                      | `True`    | `2`                         | `True`                       |
+| `2`                      | `True`    | `3`                         | `False`                      |
+| `3`                      | `True`    | `4`                         | `True`                       |
+| `4`                      | `True`    | `5`                         | `False`                      |
+| Loop doesn't execute     | -         | Loop body doesn't execute   | -                            |
 
-Read this code. The function `look_for_treasure` should exit after we find treasure. Add in the `break` keyword in the right line to make this happen and pass the test.
+### Loop Table Banana
 
-``` python
+| `i` at beginning of loop | `i < 5` ? | `i` at the end of loop body | `result` at end of loop body |
+| ------------------------ | --------- | --------------------------- | ---------------------------- |
+| `0`                      | `True`    | `1`                         | `True`                       |
+| `1`                      | `True`    | `2`                         | `False`                      |
+| `2`                      | `True`    | `3`                         | `True`                       |
+| `3`                      | `True`    | `4`                         | `False`                      |
+| `4`                      | `True`    | `5`                         | `True`                       |
+| Loop doesn't execute     | -         | Loop body doesn't execute   | -                            |
+
+### Loop Table Carrot
+
+| `i` at beginning of loop | `i < 5` ? | `i` at the end of loop body | `result` at end of loop body |
+| ------------------------ | --------- | --------------------------- | ---------------------------- |
+| `0`                      | `True`    | `0`                         | `True`                       |
+| `1`                      | `True`    | `1`                         | `False`                      |
+| `2`                      | `True`    | `2`                         | `True`                       |
+| `3`                      | `True`    | `3`                         | `False`                      |
+| `4`                      | `True`    | `4`                         | `True`                       |
+| Loop doesn't execute     | -         | Loop body doesn't execute   | -                            |
+
+### Loop Table Durian
+
+| `i` at beginning of loop | `i < 5` ? | `i` at the end of loop body | `result` at end of loop body |
+| ------------------------ | --------- | --------------------------- | ---------------------------- |
+| `0`                      | `True`    | `1`                         | `True`                       |
+| `1`                      | `True`    | `2`                         | `False`                      |
+| `2`                      | `True`    | `3`                         | `True`                       |
+| `3`                      | `True`    | `4`                         | `False`                      |
+| `4`                      | `True`    | `5`                         | `True`                       |
+| `5`                      | `False`   | Loop body doesn't execute   | -                            |
+
+##### !end-question
+##### !options
+
+* Loop Table Apple
+* Loop Table Banana
+* Loop Table Carrot
+* Loop Table Durian
+
+##### !end-options
+##### !answer
+
+* Loop Table Durian
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: code-snippet
+* language: python3.6
+* id: SLx1UM
+* title: While Loops
+### !question
+
+The function `look_for_treasure` has an error in it! `look_for_treasure` should exit after we find treasure. Add in the `break` keyword in the right location so the test passes.
+
+### !end-question
+### !placeholder
+
+```python
 import random
+
 
 def check_if_treasure(item):
     is_treasure = random.randrange(100) < 25
     # The line below uses the ternary operator.
     return "Treasure!" if is_treasure else item + 1
 
+
 def look_for_treasure():
     i = 0
 
     while True:
-      if i == "Treasure!":
-        print("We found treasure instead of a number!")
-        print("Let's leave while we can.")
-      print(f"Counting: i is {i}")
-      i = check_if_treasure(i)
+        if i == "Treasure!":
+            print("We found treasure instead of a number!")
+            print("Let's leave while we can.")
+        print(f"Counting: i is {i}")
+        i = check_if_treasure(i)
 
-result = look_for_treasure()
+    print("I broke out of the loop!")
+    return "I'm free!"
+```
+### !end-placeholder
+### !tests
+```python
+import unittest
+import random
+from main import *
+
+class TestPython2(unittest.TestCase):
+    def test_look_for_treasure(self):
+        self.assertEqual(look_for_treasure(), "I'm free!")
+```
+### !end-tests
+### !explanation
+
+An example of a working implementation:
+
+```python
+def look_for_treasure():
+    i = 0
+
+    while True:
+        if i == "Treasure!":
+            print("We found treasure instead of a number!")
+            print("Let's leave while we can.")
+            break
+        print(f"Counting: i is {i}")
+        i = check_if_treasure(i)
+
+    print("I broke out of the loop!")
+    return "I'm free!"
 ```
 
-<!-- Answer: i should be "Treasure" -->
+### !end-explanation
+### !end-challenge
+<!-- prettier-ignore-end -->
