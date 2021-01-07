@@ -114,6 +114,8 @@ The code snippet below returns a `TypeError: can't multiply sequence by non-int 
 
 In this code, we need to cast some value into an integer with `int()`. Pick all lines of code where _it's possible_ to cast a value into an int with `int()`.
 
+In this code, we need to cast some value into an integer with `int()`. Pick all lines of code where _it's possible_ to cast a value into an int with `int()`.
+
 ```python
 1 n1 = input("enter a number: ")
 2 n2 = input("enter another number: ")
