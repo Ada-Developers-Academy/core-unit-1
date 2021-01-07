@@ -47,16 +47,17 @@ In this example, we access the variable `my_daily_fruit` on the line `print(f"An
 
 When we try to access a variable that is **not** in scope, the Python interpreter raises a runtime error `NameError` for that variable.
 
-Observe and run this code that attempts to access `my_daily_fruit` even though `my_daily_fruit` is not defined within this code.
+Observe and run this code that attempts to access `my_undefined_fruit` even though `my_undefined_fruit` is not defined within this code.
 
 ```python
-print(f"An {my_daily_fruit} a day keeps the doctor away?")
+# No definition of my_undefined_fruit found here!
+print(f"An {my_undefined_fruit} a day keeps the doctor away?")
 ```
 
-Our error message gives us a clue that **the variable `my_daily_fruit` isn't defined within this scope.** Therefore, we got an error for accessing a variable not in scope.
+Our error message gives us a clue that **the variable `my_undefined_fruit` isn't defined within this scope.** Therefore, we got an error for accessing a variable not in scope.
 
 ```bash
-NameError: name 'my_daily_fruit' is not defined
+NameError: name 'my_undefined_fruit' is not defined
 ```
 
 ## Variable Scope Is Defined by Kind and Location
@@ -78,7 +79,7 @@ Properties of local variables:
 - the most common kind of variable (and account for 90% of the variables we will use).
 - variables with the smallest scope. Details to be discovered over time.
 
-### !callout-warning
+### !callout-secondary
 
 ## Variables in Short Examples
 
@@ -150,12 +151,6 @@ In this example, the `display_breakfast` function creates a new string value sto
 
 In general, we can say this function performs some useful operation, then returns the result of that operation to the outer scope. **This is one of the main patterns that we use in programming.**
 
-### Recognizing Variable Scope
-
-Beyond functions, other kinds of **blocks of code** in Python also create variable scope. We will learn about those in detail in the future.
-
-For now, here is **one tip**: there is **a pattern** between **local variable scope** and **its level of indentation** in code.
-
 ## There Are More Kinds of Variables
 
 **Global variables** are a kind of variable with global variable scope. Global variables can be accessed inside **or** outside of any functions.
@@ -188,9 +183,9 @@ In this example, `breakfast_message` is a global variable, because it was declar
 
 Because global variable scope is so large and so powerful, global variable scope gives programmers more opportunities to create bugs. Over time, observe what tools and strategies are introduced to help lower this risk!
 
-### !callout-info
+### !callout-warning
 
-## Variables Best Practices
+## Using Global Variables
 
 Python has one specific rule about global variables: we can **read** global variables anywhere. However, **declaring** global variables _inside of a function_ is a little trickier. In fact, declaring global variables inside of functions is discouraged! It's discouraged so much, that this curriculum won't even teach you how to do it!
 
@@ -202,19 +197,13 @@ On your own, feel free to look up more about this topic. A search engine term to
 
 We will apply our knowledge about variable scope to help us solve future programming problems.
 
-### It's Extremely Helpful That Local Variables "Leave"
-
-Recall: Inside of functions, what happens to every local variable after a function finishes (returns or exits)? After a function finishes, every local variable "gets released," or becomes unusuable. The local variable only "comes back" if we call the function again, when it will be re-initialized with a new value and a new place in memory.
-
-When we want to reliably call a function multiple times, knowing that local variables "leave" after each function call, and "restart" in each function call, creates more reliable code.
-
 In this example, follow these steps in order:
 
 1. Read the code and comments. Trace the values of the local variable after each function call.
 2. Predict what the code will print out.
 3. Run the code.
 4. Compare your predictions against what you actually see.
-5. Write down your conclusions about how local variables "leave" at the end of each function call, and get re-initialized at the beginning of each function call.
+5. Write down your conclusions about how local variables get released at the end of each function call, and get re-initialized at the beginning of each function call.
 
 ```python
 def display_breakfast(breakfast_of_champions):
@@ -239,35 +228,15 @@ display_breakfast("coffee and toast")
 
 At first, it may be frustrating that we can't access `breakfast_of_champions` or `breakfast_message` outside of the function.
 
-On the bright side, it makes our code extremely consistent and predictable: Python will **never** think `breakfast_of_champions` has any value, except when we pass a value into the `display_breakfast` function call. Programming and using variables to know what values they **aren't** is just as valuable as knowing what values they are.
+On the bright side, it makes our code extremely consistent and predictable. The only way to set the value of the `breakfast_of_champions` parameter is to pass a value in to the `display_breakfast` function call. Then the only place we can read that value is within the function body.
 
-### Our Strategies Will Evolve!
+### !callout-success
 
-As we learn about more concepts, such as _iteration_ and _classes_, we'll see that local variables have special scope within those kinds of blocks.
+## Variables With Different Scopes and the Same Name 🎉
 
-It will be crucial to understand the local variable scope for those cases, too, and to rely on them.
+Even if there were another variable outside the function which shared the name `breakfast_of_champions` the value will **never** "leak" out from the function to affect the outer value. Variables declared in different scopes, **even if they share the same name**, are two separate variables with no inherent relationship. When using variables, knowing what values they **aren't** can be just as valuable as knowing what values they are.
 
-Looking ahead: When we learn about _iteration_ in programming, most syntaxes for iteration create their own variable scope.
-
-In this example, follow these steps in order:
-
-1. Read this code and make a prediction about what it does and what will happen when you run it
-2. Run it
-3. Make predictions about where the local variables are, and what rules about scope they may follow
-4. Write down your predictions
-
-```python
-def announce_lunch_menu(lunch_items):
-    print("It is now time to declare each lunch item, slowly, and dramatically.")
-    for lunch_item in lunch_items:
-        print("Today we will eat......")
-        print("a.....")
-        print(lunch_item)
-    print("I hope you're hungry!")
-
-packed_lunchbox_contents = ["sandwich", "salad", "chips", "appy juice"]
-announce_lunch_menu(packed_lunchbox_contents)
-```
+### !end-callout
 
 ## Summary
 
