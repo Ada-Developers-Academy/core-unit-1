@@ -91,12 +91,24 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
+        UID: LrjdJa
+        Path: /approaching-a-problem/breaking-down-a-problem.md
+      -
+        Type: Lesson
         UID: DkCHnM
         Path: /approaching-a-problem/pseudocode-and-logic.md
       -
         Type: Lesson
         UID: YUccLN
         Path: /approaching-a-problem/intro-to-pair-programming.md
+      -
+        Type: Instructor
+        UID: oFxeWF
+        Path: /approaching-a-problem/activity-breaking-down-a-problem.instructor.md
+      -
+        Type: Lesson
+        UID: qutJWB
+        Path: /approaching-a-problem/activity-breaking-down-a-problem.md
   -
     Title: Intro to Debugging
     Description: Intro to Errors, Identifying Errors, Intro to Debugging
