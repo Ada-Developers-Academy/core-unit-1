@@ -10,7 +10,7 @@ Our goal is to help our record our current goals and aspirations in tech at this
 
 ## Activity Instructions
 
-Follow the instructions about how and when to fill in the prompts below. Share in the text box whatever you feel comfortable sharing; we are expecting 1-5 sentences for each prompt. Consider writing longer answers in your own notes!
+Follow the instructions about how and when to fill in the prompts below. Share in the text box whatever you would feel comfortable sharing with an instructor. We are expecting 1-5 sentences for each prompt. Consider writing longer answers in your own notes!
 
 Write these for your future self.
 
