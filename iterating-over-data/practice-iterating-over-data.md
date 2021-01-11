@@ -84,9 +84,8 @@ def sum_list(list):
 ##### !tests
 ```python
 
-import main
 import unittest
-
+from main import *
 
 class TestPython1(unittest.TestCase):
 def test_sum_list(self):
@@ -144,7 +143,7 @@ my_profile = {"icecream_flavor": "chocolate", has_siblings: True}
 
 ```
 
-Which loop(s) *can* I use if I want to print out each key?
+Which loop(s) *can* be used to print out each key?
 
 ##### !end-question
 
@@ -202,7 +201,7 @@ my_profile = {"icecream_flavor": "chocolate", has_siblings: True}
 
 ```
 
-Which loop(s) *can* I use if I want to print out each value?
+Which loop(s) *can* be used to print out each value?
 
 ##### !end-question
 
@@ -260,7 +259,7 @@ my_profile = {"icecream_flavor": "chocolate", has_siblings: True}
 
 ```
 
-Which loop(s) *can* I use if I want to print out both keys and values?
+Which loop(s) *can* be used to print out both keys and values?
 
 ##### !end-question
 
@@ -330,13 +329,13 @@ def search_dictionary(dict,check):
 ##### !tests
 ```python
 
-import main
 import unittest
+from main import *
 
 dict = {"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34], has_pets: True}
 class TestPython1(unittest.TestCase):
 def test_one(self):
-  self.assertEqual(search_dictionary(dict, "has_dogs"),False)
+  self.assertEqual(search_dictionary(dict, "has_dogs"))
   self.assertEqual(search_dictionary(dict, "icecream_flavor"),"chocolate")
 
 ```
@@ -361,7 +360,7 @@ Two examples of working implementations:
 
 def search_dictionary(dict,check):
   for i in dict:
-    if i === check:
+    if i == check:
       return dict[i]
 
 ```
@@ -369,9 +368,94 @@ def search_dictionary(dict,check):
 
 def search_dictionary(dict,check):
   for key, value in dict.items():
-    if key === check:
+    if key == check:
       return value
-  return
+
+```
+
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 7 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: Ny72-sS0Y
+* title: Match the Output, Cont.
+
+##### !question
+
+Given the function `search_dictionary` created above, let's add to it. If function runs through the `dict` and find no `check` key, then return `False`.
+
+For example, given: `{"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34], has_pets: True}` and `has_dogs`, return `False`.
+
+##### !end-question
+
+##### !placeholder
+
+```python
+
+def search_dictionary(dict,check):
+  # add your code here from the previous challenge,
+  # and then add to it
+  pass
+
+```
+
+##### !end-placeholder
+
+##### !tests
+```python
+
+import unittest
+from main import *
+
+dict = {"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34], has_pets: True}
+class TestPython1(unittest.TestCase):
+def test_one(self):
+  self.assertEqual(search_dictionary(dict, "has_dogs"),False)
+  self.assertEqual(search_dictionary(dict, "icecream_flavor"),"chocolate")
+
+```
+##### !end-tests
+
+
+##### !hint
+
+If you're stuck, consider reviewing the information on pairing an `else` statement with a `for loop`.
+
+##### !end-hint
+
+
+##### !rubric
+
+##### !end-rubric
+
+
+##### !explanation
+
+Two examples of working implementations:
+
+``` python
+
+def search_dictionary(dict,check):
+  for i in dict:
+    if i == check:
+      return dict[i]
+  else:
+    return False
+
+```
+``` python
+
+def search_dictionary(dict,check):
+  for key, value in dict.items():
+    if key == check:
+      return value
+  return False
 
 ```
 
