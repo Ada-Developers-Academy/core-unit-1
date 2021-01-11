@@ -373,6 +373,7 @@ def search_dictionary(dict,check):
 
 ```
 
+##### !end-explanation
 
 ### !end-challenge
 <!-- prettier-ignore-end -->
@@ -458,7 +459,7 @@ def search_dictionary(dict,check):
   return False
 
 ```
-
+##### !end-explanation
 
 ### !end-challenge
 <!-- prettier-ignore-end -->
