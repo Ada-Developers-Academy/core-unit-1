@@ -6,7 +6,8 @@ Complete all questions below.
 
 ## Practice
 
-
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
@@ -52,9 +53,10 @@ Python's `range` has an *exclusive nature*, meaning that it does not include the
 ##### !end-explanation
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- CHALLENGE BREAK -->
-
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: code-snippet
@@ -122,10 +124,10 @@ def sum_list(list):
 ##### !end-explanation
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- CHALLENGE BREAK -->
-
-
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: checkbox
@@ -180,9 +182,10 @@ Which loop(s) *can* I use if I want to print out each key?
 ##### !end-explanation
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- CHALLENGE BREAK -->
-
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: checkbox
@@ -237,9 +240,10 @@ Which loop(s) *can* I use if I want to print out each value?
 ##### !end-explanation
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- CHALLENGE BREAK -->
-
+<!-- Question 5 -->
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: checkbox
@@ -293,10 +297,10 @@ Which loop(s) *can* I use if I want to print out both keys and values?
 ##### !end-explanation
 
 ### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- CHALLENGE BREAK -->
-
-
+<!-- Question 6 -->
+<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: code-snippet
@@ -371,8 +375,6 @@ def search_dictionary(dict,check):
 
 ```
 
-##### !end-explanation
 
 ### !end-challenge
-
-<!-- CHALLENGE BREAK -->
+<!-- prettier-ignore-end -->
