@@ -208,19 +208,51 @@ We can even put loops inside of loops! We will explore this in a future lesson.
 * title: Loop Review
 
 ##### !question
-Loops can iterate over which of the options below?
+
+Consider this code:
+
+```python
+def display_most_spoken_languages():
+    languages = ["Chinese", "Hindi", "English", "Spanish", "Arabic"]
+
+    for language in languages:
+        print(f"{language} is one of the top 5 most spoken languages in the world.")
+
+    return languages
+```
+
+What does the variable `language` represent?
+
 ##### !end-question
 
 ##### !options
-* Lists
-* Strings
-* Code blocks
-* All of the above
+* A list of the most spoken language. The elements are strings.
+* A single element in the `languages` list. The value changes during iteration.
+* The return value of the function `display_most_spoken_languages()`
 ##### !end-options
 
 ##### !answer
-* All of the above
+* A single element in the `languages` list. The value changes during iteration.
 ##### !end-answer
 
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: JPDZnt
+* title: Iterating Over Lists
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
 ### !end-challenge
 <!-- prettier-ignore-end -->
