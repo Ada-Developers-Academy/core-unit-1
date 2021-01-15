@@ -26,9 +26,9 @@ for my_element in my_list:
 | Piece of Code        | Notes                                                                                                                                                                                  |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `for`                | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                                                       |
-| `my_element`         | **Replace this** part with a name that represents what each element is. This is the name of the local variable we can use in this `for` loop to represent each element, one at a time. |
-| `in`                 | `in` is a reserved keyword in Python. It separates the name of the `my_element` variable and the list we're iterating on.                                                              |
-| `my_list`            | **Replace this** part with the desired list to iterate over. This can be a variable that holds a list, a list literal, or any expression that becomes a list                           |
+| `my_element`         | **Replace this** part with a name that represents what each list element is. It will be used as a variable, which during iteration will take on the value of each list element, one at a time. |
+| `in`                 | `in` is a reserved keyword in Python. It separates the name of the `my_element` variable and the list we're iterating over.                                                              |
+| `my_list`            | **Replace this** part with the desired list to iterate over. This can be a list literal, a variable that holds a list, or any other expression that evaluates to a list.                           |
 | `:`                  | This colon begins the `for` loop's body                                                                                                                                                |
 | ` print(my_element)` | **Replace this** with any code that should execute during each loop. This is the loop's body.                                                                                          |
 
@@ -36,28 +36,36 @@ for my_element in my_list:
 
 The variable `my_element` gets assigned and re-assigned through a `for` loop.
 
-When a `for` loop starts, `my_element` gets assigned the value of the first element in the list. Then value of `my_element` changes with each following iteration.
+When a `for` loop starts, `my_element` gets assigned the value of the first element in the list. The value of `my_element` changes with each following iteration.
 
 1. In the first iteration, the value of `my_element` will be the first element in the list.
 2. In the second iteration, the value of `my_element` will be the second element in the list.
 3. In the third, it will be the third element...
 4. ... etc., until there are no more elements in the list.
 
-We should always change `my_element` to be a variable name appropriate to the context of the list. What does each element in the list represent?
+We should always change `my_element` to be a variable name appropriate to the context of the list. Think about what each element in the list represents. If we are iterating over a list of books, we might change `my_element` to `book`. For a list of rooms, the name `room` might be more appropriate.
+
+The name we choose doesn't affect the underlying iteration value in any way, but it can help us remember what data we're processing in the loop body.
 
 ### About the Loop Body
 
-1. All lines of code inside a for loop **must start at one deeper indentation level compared to the beginning of the loop.**
-   - The loop's body ends when the indentation level returns back.
-1. All Python logic and syntax still applies inside the loop!
+1. The loop body **must be indented one level deeper than the** `for` **statement that begins the loop.**
+   - The loop's body ends when the code indentation returns to the previous level.
+1. All Python logic and syntax still applies inside the loop! For example, a loop might contain conditionals, calculations, or function calls.
 
 ### Examples
 
 Follow these steps for each example:
 
-1. Read through the code. What is the list? What is each element? What do we name each element? How do we use each element in the loop?
+1. Read through the code and identify:
+    - What is the list?
+    - What is each element?
+    - What do we name each element?
+    - How do we use each element in the loop?
 2. Predict what will print
 3. Run the code and check your prediction
+
+#### Example: Dining Out
 
 ```python
 options = ["the place I'm craving but is too far away", "the place we always go to", "that place that just opened but looks too fancy"]
@@ -66,7 +74,7 @@ for option in options:
     print(f"What about getting food from {option} tonight?")
 ```
 
-**Another Example:**
+#### Example: Calculating Taxes
 
 ```python
 prices = [18.99, 56.00, 48.50, 18.50]
@@ -84,7 +92,7 @@ print("That sure was a meal!")
 
 One way we can visualize how the value of `my_element` changes over each iteration with a table.
 
-Each column can be some data we want to track, and every row can be one iteration.
+We set up our table by making a column for each piece of data we'd like to track. Then we add a row for each iteration through the loop.
 
 | iteration # | index of `my_element` | value of `my_element` |
 | ----------- | --------------------- | --------------------- |
@@ -92,6 +100,8 @@ Each column can be some data we want to track, and every row can be one iteratio
 | 2           | 1                     | ...                   |
 
 For example, we can fill out tables for our examples like so:
+
+#### Example: Dining Out Explained
 
 ```python
 options = ["the place I'm craving but is too far away", "the place we always go to", "that place that just opened but looks too fancy"]
@@ -106,7 +116,7 @@ for option in options:
 | 2           | 1                                                 | `"the place we always go to"`                       | `"What about getting food from the place we always go to?"`                         |
 | 3           | 2                                                 | `"that place that just opened but looks too fancy"` | `"What about getting food from that place that just opened but looks too fancy?"`   |
 
-**Another Example:**
+#### Example: Calculating Taxes Explained
 
 ```python
 prices = [18.99, 56.00, 48.50, 18.50]
@@ -125,19 +135,19 @@ print("That sure was a meal!")
 | 3           | 2                | `48.50`          | `53.3985`                                     |
 | 4           | 3                | `18.50`          | `20.3685`                                     |
 
-## Variable Scope
+## Building up a List of Results
 
-Inside `for` loops, we can access and use any variables that are within scope.
+In our iteration examples so far, all we've really done is print out the values. A more common coding pattern is to process each list value and store the result in a _new_ list that we can use somewhere else.
 
-A common pattern we'll use is to initialize a variable before a `for` loop, and modify it within a `for` loop.
+To achieve this, we create a new, empty list before our loop. Then as we process each value, we append the result to the new list. At the end of the loop, our new list contains a processed version of the original list, with the processed values matching the ordering of the original list.
 
-Read through this code, and answer these questions:
+Take a moment to think about why this must be true. Then answer the following questions.
 
-Is `taxed_prices`
+Is `taxed_prices`:
 
-- ... initialized as an empty array inside the `for` loop?
-- ... accessed or modified inside the `for` loop? How?
-- ... accessed or modified after the `for` loop? How?
+- initialized as an empty array inside the `for` loop? Why or why not?
+- accessed or modified inside the `for` loop? How?
+- accessed or modified after the `for` loop? How?
 
 ```python
 prices = [18.99, 56.00, 48.50, 18.50]
@@ -152,7 +162,7 @@ print(taxed_prices)
 
 ## Increasing Complexity
 
-Our loop logic can be more complex, and include conditionals, calculations, and function calls.
+As mentioned earlier in this lesson, our loop logic can be more complex, and include conditionals, calculations, and function calls.
 
 ```python
 prices = [18.99, 56.00, 48.50, 18.50]
@@ -167,7 +177,9 @@ for price in prices:
 print("That sure was a meal!")
 ```
 
-Loops will often live in functions. We can use a `for` loop on a list that was passed into a function, too!
+When we use a `for` loop in a function, we can iterate over any lists passed in as a parameter, too!
+
+Note that this isn't a special case. It follows from one of the properties of `for` loops we learned about earlier. The `my_list` value used in the `for` loop can be any variable, including a function parameter, that refers to a list.
 
 ```python
 def consider_options(options):
@@ -178,7 +190,7 @@ pizza_places = ["your favorite pizza place", "my favorite pizza place"]
 consider_options(pizza_places)
 ```
 
-We can also put loops inside of loops! We will explore that in a future lesson.
+We can even put loops inside of loops! We will explore this in a future lesson.
 
 ## Check for Understanding
 
@@ -191,7 +203,7 @@ We can also put loops inside of loops! We will explore that in a future lesson.
 * title: Loop Review
 
 ##### !question
-Loops can iterate through which of these options below?
+Loops can iterate over which of the options below?
 ##### !end-question
 
 ##### !options

@@ -6,13 +6,13 @@
 
 ## Introduction
 
-The overall concept for iterating over dictionaries is the same as iterating over lists. We can use `for` loops to iterate over **each key-value pair in a dictionary.**
+The overall concept for iterating over dictionaries is the same as iterating over lists. We use `for` loops to iterate over each dictionary item.
 
-However, because dictionaries are key-value pairs, there are a few differences to pay attention to.
+However, because dictionary items are key-value pairs, there are a few ways that we can iterate over them: **by key-value pair**, **by key alone**, or **by value alone**.
 
 ## `for` Loops for Keys and Values Need `.items()`
 
-To iterate over a dictionary, we can use the following syntax:
+To iterate over the key-value pairs of a dictionary, we use the following syntax:
 
 ```python
 for my_key, my_value in my_dict.items():
@@ -22,10 +22,10 @@ for my_key, my_value in my_dict.items():
 | Piece of Code              | Notes                                                                                                                                                        |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `for`                      | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                             |
-| `my_key`                   | **Replace this** part with a name that represents what each key is. This local variable represents the _key_ in each key-value pair, one at a time.          |
-| `my_value`                 | **Replace this** part with a name that represents what each value is. This local variable represents the _value_ in each key-value pair, one at a time.      |
-| `in`                       | `in` is a reserved keyword in Python. It separates the name of the `my_element` variable and the list we're iterating on.                                    |
-| `my_dict`                  | **Replace this** part with the desired list to iterate over. This can be a variable that holds a list, a list literal, or any expression that becomes a list |
+| `my_key`                   | **Replace this** part with a name that represents what each key is. This will be used as a variable name that will receive the _key_ in each key-value pair during the iteration, one key at a time.          |
+| `my_value`                 | **Replace this** part with a name that represents what each value is. It will be used as a variable, which during iteration will receive the _value_ in each key-value pair, one at a time.      |
+| `in`                       | `in` is a reserved keyword in Python. It separates the name of the iteration variables (`my_key` and `my_value` in the example) and the dictionary we're iterating over.                                    |
+| `my_dict`                  | **Replace this** part with the desired dictionary to iterate over. This can be a dictionary literal, a variable that holds a dictionary, or any other expression that evaluates to a dictionary. |
 | `.items()`                 | `.items()` is a method that dictionaries have. It returns a view of the dictionary, or a version of the dictionary's key-value pairs that are iterable.      |
 | `:`                        | This colon begins the `for` loop's body                                                                                                                      |
 | ` print(my_key, my_value)` | **Replace this** with any code that should execute during each loop. This is the loop's body.                                                                |
@@ -61,7 +61,11 @@ Similar rules about the `for` loop that we stated for arrays also apply to loopi
 
 Follow these steps for each example:
 
-1. Read through the code. What is the list? What is each element? What do we name each element? How do we use each element in the loop?
+1. Read through the code and identify:
+    - What is the dictionary?
+    - What is each key and value?
+    - What do we name each key and value?
+    - How do we use each key and value in the loop?
 2. Predict what will print
 3. Run the code and check your prediction
 
@@ -134,7 +138,7 @@ for my_key in my_dict:
     print(my_key)
 ```
 
-This syntax only names a local variable `my_key`, which will be each key, and does not require us to call `.items()` on our dictionary.
+This syntax only names `my_key`, which will be each key, and does not require us to call `.items()` on our dictionary.
 
 We can see in this example, our code does not raise a `ValueError` when we use this syntax! Of course, we can access the keys and values.
 
@@ -152,15 +156,17 @@ for dish in menu:
 
 ## Loop Styles
 
-If this syntax accomplishes the same thing, which `for` loop style should we prefer? It is always up to the developer, but most Python developers prefer having keys and values available and iterating with `.items()`.
+If this syntax accomplishes the same thing, which `for` loop style should we prefer? It is always up to the developer, but usually we'll prefer having keys and values available and iterating with `.items()`.
 
 ### !end-callout
 
 ## Iterating With `.keys()` or `.values()`
 
-Dictionaries have a method `.keys()`, which returns a list of every key in the dictionary.
+Similar to the `items` method, dictionaries also have a `keys` method to explicitly retrieve the dictionary keys, and a `values` method for retrieving the dictionary values.
 
-If we wanted to iterate over all the keys in a dictionary, we could call `.keys()` on it, and then iterate over it as an array.
+While we have seen that we can iterate over the dictionary keys by leaving off the `.items()` method call from our `for` loop, we can accomplish the same thing by explicitly calling the `keys` method. This `keys` method is most commonly used for iteration, but we can also use it as a source of data for creating a list of the keys.
+
+Calling the `keys` method, is performed as for the `items` method. We use a `.` between the object and the method name, and follow the name with `()`, resulting in `.keys()`. We can then iterate as usual.
 
 Consider this example:
 
@@ -183,13 +189,13 @@ print(categories)
 
 ## Loop Patterns
 
-For this example, alternatively, we could have printed the categories inside the for loop. We thought it would be nice to see this pattern again, as it accomplishes something slightly different.
+Alternatively, we could have printed the categories inside the for loop. We thought it would be nice to see this pattern again, as it accomplishes something slightly different.
 
 ### !end-callout
 
-Dictionaries also have a method `.values()`, which returns a list of every value in the dictionary!
+Dictionaries also provide the `values` method, which gives us access to just the values of a dictionary. The `values` method is most commonly used for iteration, but we can also use it as a source of data for creating a list of the values.
 
-We can iterate over every value by calling `.values()` on the dictionary, and iterating it as an array.
+Calling the `values` method, is performed as we have done for `items` and `keys`. We use a `.` between the object and the method name, and follow the name with `()`, resulting in `.values()`. We can then iterate as usual.
 
 Consider this example:
 
@@ -241,8 +247,8 @@ for drink_type in drink_menu.keys():
 
 *
 ```python
-for drink_type in drink_menu.values():
-  print(drink_type)
+for drink in drink_menu.values():
+  print(drink)
 ```
 
 *

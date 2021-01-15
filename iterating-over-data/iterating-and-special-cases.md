@@ -2,9 +2,9 @@
 
 ## Learning Goals
 
-- Define the "break" keyword as a way to exit a loop
-- Define the "continue" keyword as a way to advance an iteration in a loop
-- Use the "range()" syntax combined with a for loop
+- Define the `break` keyword as a way to exit a loop
+- Define the `continue` keyword as a way to advance an iteration in a loop
+- Use the `range()` syntax combined with a for loop
 
 ## Introduction
 
@@ -24,7 +24,7 @@ By learning these different pieces of syntax, we can learn to wield them wisely 
 
 ## `break` Exits a Loop
 
-`break` is a keyword that we can put in a `for` loop. When our code comes across `break`, it will exit the `for` loop entirely.
+`break` is a keyword that can be used in a `for` loop. When the Python interpreter encounters a `break`, it will immediately exit the current loop, skipping any instructions from after the `break` until the end of the loop. We also say that it _breaks out_ of the loop.
 
 ```python
 for fruit in ["apples", "oranges", "bananas"]:
@@ -52,7 +52,7 @@ for field_item in ["grass", "grass", "more grass", "four-leaf clover", "rocks", 
 
 ## for-else
 
-Turns out we can pair a `for` loop with an `else` clause! The `else` clause will run after a `for` loop finishes **if** it did **not** encounter a `break`. The `else` is on the same level of indentation as the `for`.
+It turns out we can pair a `for` loop with an `else` clause! The `else` clause will run after a `for` loop finishes **if** it did **not** encounter a `break`. The `else` keyword must be at the same level of indentation as the `for`, and be followed by a `:`. The `else` body begins indented one level on the following line.
 
 ### !end-callout
 
@@ -71,7 +71,7 @@ else:
 
 ## `continue` Advances One Loop
 
-`continue` is another keyword we can put in a `for` loop. When our code sees `continue`, it will immediately move to the next iteration.
+`continue` is another keyword that can be used in a `for` loop. When the Python interpreter encounters a `continue`, it will immediately jump to the beginning of the current loop, skipping any instructions from after the `continue` until the end of the loop. The loop will resume execution with the next item in the iteration, if one exists. Otherwise, the loop will terminate.
 
 ```python
 lucky_charms_quantities = {
@@ -102,7 +102,7 @@ The function signature of `range` is:
 range(start, stop, step)
 ```
 
-Where `start` is the number the range should start at, `stop` is the number the range should stop at, and `step` is the amount the range should increment by. `step` is an **optional** argment, and its default value is `1`.
+Where `start` is the number at which the range should start, and `stop` is the number at which the range should stop. `stop` is exclusive, which means the `stop` number itself will _not_ be included in the range. `step` is the amount by which the range should increment. `step` is an **optional** argument, and its default value is `1`.
 
 ### Ranges in `for` Loops
 
@@ -113,10 +113,9 @@ We can pair ranges with `for` loops so that we iterate over a sequence of number
 ```python
 for number in range(0, 6):
     print(number)
-
 ```
 
-Note that it printed up to `5`, and it didn't print 6. That's because the end is _non-inclusive_, or it goes **up** to the end value.
+Note that it printed up to `5`, and it didn't print `6`. Recall that the `stop` parameter, is _exclusive_. It goes **up** to, but excludes, the end value.
 
 Another example:
 
