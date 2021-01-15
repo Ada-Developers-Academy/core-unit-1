@@ -23,14 +23,14 @@ for my_element in my_list:
     print(my_element)
 ```
 
-| Piece of Code        | Notes                                                                                                                                                                                  |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `for`                | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                                                       |
+| Piece of Code        | Notes                                                                                                                                                                                          |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `for`                | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                                                               |
 | `my_element`         | **Replace this** part with a name that represents what each list element is. It will be used as a variable, which during iteration will take on the value of each list element, one at a time. |
-| `in`                 | `in` is a reserved keyword in Python. It separates the name of the `my_element` variable and the list we're iterating over.                                                              |
-| `my_list`            | **Replace this** part with the desired list to iterate over. This can be a list literal, a variable that holds a list, or any other expression that evaluates to a list.                           |
-| `:`                  | This colon begins the `for` loop's body                                                                                                                                                |
-| ` print(my_element)` | **Replace this** with any code that should execute during each loop. This is the loop's body.                                                                                          |
+| `in`                 | `in` is a reserved keyword in Python. It separates the name of the `my_element` variable and the list we're iterating over.                                                                    |
+| `my_list`            | **Replace this** part with the desired list to iterate over. This can be a list literal, a variable that holds a list, or any other expression that evaluates to a list.                       |
+| `:`                  | This colon begins the `for` loop's body                                                                                                                                                        |
+| ` print(my_element)` | **Replace this** with any code that should execute during each loop. This is the loop's body.                                                                                                  |
 
 ### About `my_element`
 
@@ -58,17 +58,20 @@ The name we choose doesn't affect the underlying iteration value in any way, but
 Follow these steps for each example:
 
 1. Read through the code and identify:
-    - What is the list?
-    - What is each element?
-    - What do we name each element?
-    - How do we use each element in the loop?
+   - What is the list?
+   - What is each element?
+   - What do we name each element?
+   - How do we use each element in the loop?
 2. Predict what will print
 3. Run the code and check your prediction
 
 #### Example: Dining Out
 
 ```python
-options = ["the place I'm craving but is too far away", "the place we always go to", "that place that just opened but looks too fancy"]
+options = ["the place I'm craving but is too far away",
+           "the place we always go to",
+           "that place that just opened but looks too fancy"
+           ]
 
 for option in options:
     print(f"What about getting food from {option} tonight?")
@@ -90,7 +93,7 @@ print("That sure was a meal!")
 
 <!-- TODO: Add a diagram to visualize loops, and describe it. -->
 
-One way we can visualize how the value of `my_element` changes over each iteration with a table.
+One way we can visualize how the value of `my_element` changes over each iteration is to create a table in our notes, on a whiteboard, or with any other medium.
 
 We set up our table by making a column for each piece of data we'd like to track. Then we add a row for each iteration through the loop.
 
@@ -104,7 +107,10 @@ For example, we can fill out tables for our examples like so:
 #### Example: Dining Out Explained
 
 ```python
-options = ["the place I'm craving but is too far away", "the place we always go to", "that place that just opened but looks too fancy"]
+options = ["the place I'm craving but is too far away",
+           "the place we always go to",
+           "that place that just opened but looks too fancy"
+           ]
 
 for option in options:
     print(f"What about getting food from {option} tonight?")
@@ -195,7 +201,6 @@ We can even put loops inside of loops! We will explore this in a future lesson.
 ## Check for Understanding
 
 <!-- Question 1 -->
-
 <!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice

@@ -22,7 +22,6 @@ In programming, we can approach these problems with iteration.
 
 Iteration in programming is a sequence of instructions that repeats.
 
-
 ## Iteration Solves Problems
 
 As programmers, as we see and solve more problems, we'll see a pattern about when to consider using iteration.
@@ -35,11 +34,11 @@ We can also use iteration to find a specific kind of element, or an element with
 
 Iteration is often used to find the _first_ element that matches the criteria.
 
-**Example:** Looking through a reading list, and finding the tenth book.
+#### Examples: Finding One Element
 
-**Example:** Looking through a reading list, and finding the first book with the title `"all about love"`.
-
-**Example:** Looking through a reading list, and finding the first book that is a biography.
+1. Looking through a reading list, and finding the tenth book.
+1. Looking through a reading list, and finding the first book with the title `"all about love"`.
+1. Looking through a reading list, and finding the first book that is a biography.
 
 ### Operating on Each Element
 
@@ -51,11 +50,11 @@ We can use iteration to do operations like...
 - collect each item in a list, modifying it, and put it in another list
 - comparing each element to something else
 
-**Example:** Looking through a reading list, and collecting the total number of pages of every book in the list
+#### Examples: Operating on Each Element
 
-**Example:** Looking through a reading list, and putting each book into my shopping cart.
-
-**Example:** Looking through a reading list, and seeing if each book is bigger than the English dictionary.
+1. Looking through a reading list, and collecting the total number of pages of every book in the list
+1. Looking through a reading list, and putting each book into my shopping cart.
+1. Looking through a reading list, and seeing if each book is bigger than the English dictionary.
 
 ## Summary
 

@@ -71,7 +71,7 @@ else:
 
 ## `continue` Advances One Loop
 
-`continue` is another keyword that can be used in a `for` loop. When the Python interpreter encounters a `continue`, it will immediately jump to the beginning of the current loop, skipping any instructions from after the `continue` until the end of the loop. The loop will resume execution with the next item in the iteration, if one exists. Otherwise, the loop will terminate.
+`continue` is another keyword that can be used in a `for` loop. When the Python interpreter encounters a `continue`, it will immediately jump to the beginning of the loop, skipping any instructions from after the `continue` until the end of the loop. The loop will resume execution with the next item in the iteration, if one exists. Otherwise, the loop will terminate.
 
 ```python
 lucky_charms_quantities = {
@@ -102,7 +102,7 @@ The function signature of `range` is:
 range(start, stop, step)
 ```
 
-Where `start` is the number at which the range should start, and `stop` is the number at which the range should stop. `stop` is exclusive, which means the `stop` number itself will _not_ be included in the range. `step` is the amount by which the range should increment. `step` is an **optional** argument, and its default value is `1`.
+`start` is the number at which the range should start, and `stop` is the number at which the range should stop. `stop` is exclusive, which means the `stop` number itself will _not_ be included in the range. `step` is the amount by which the range should increment. `step` is an **optional** argument, and its default value is `1`.
 
 ### Ranges in `for` Loops
 
@@ -129,6 +129,7 @@ print("Blast off!")
 ```
 
 ## Check for Understanding
+
 <!-- Question 1 -->
 <!-- prettier-ignore-start -->
 ### !challenge

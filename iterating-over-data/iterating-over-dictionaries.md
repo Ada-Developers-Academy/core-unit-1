@@ -19,22 +19,22 @@ for my_key, my_value in my_dict.items():
     print(my_key, my_value)
 ```
 
-| Piece of Code              | Notes                                                                                                                                                        |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `for`                      | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                             |
-| `my_key`                   | **Replace this** part with a name that represents what each key is. This will be used as a variable name that will receive the _key_ in each key-value pair during the iteration, one key at a time.          |
-| `my_value`                 | **Replace this** part with a name that represents what each value is. It will be used as a variable, which during iteration will receive the _value_ in each key-value pair, one at a time.      |
-| `in`                       | `in` is a reserved keyword in Python. It separates the name of the iteration variables (`my_key` and `my_value` in the example) and the dictionary we're iterating over.                                    |
-| `my_dict`                  | **Replace this** part with the desired dictionary to iterate over. This can be a dictionary literal, a variable that holds a dictionary, or any other expression that evaluates to a dictionary. |
-| `.items()`                 | `.items()` is a method that dictionaries have. It returns a view of the dictionary, or a version of the dictionary's key-value pairs that are iterable.      |
-| `:`                        | This colon begins the `for` loop's body                                                                                                                      |
-| ` print(my_key, my_value)` | **Replace this** with any code that should execute during each loop. This is the loop's body.                                                                |
+| Piece of Code              | Notes                                                                                                                                                                                                |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `for`                      | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                                                                     |
+| `my_key`                   | **Replace this** part with a name that represents what each key is. This will be used as a variable name that will receive the _key_ in each key-value pair during the iteration, one key at a time. |
+| `my_value`                 | **Replace this** part with a name that represents what each value is. It will be used as a variable, which during iteration will receive the _value_ in each key-value pair, one at a time.          |
+| `in`                       | `in` is a reserved keyword in Python. It separates the name of the iteration variables (`my_key` and `my_value` in the example) and the dictionary we're iterating over.                             |
+| `my_dict`                  | **Replace this** part with the desired dictionary to iterate over. This can be a dictionary literal, a variable that holds a dictionary, or any other expression that evaluates to a dictionary.     |
+| `.items()`                 | `.items()` is a method that dictionaries have. It returns a view of the dictionary, or a version of the dictionary's key-value pairs that are iterable.                                              |
+| `:`                        | This colon begins the `for` loop's body                                                                                                                                                              |
+| ` print(my_key, my_value)` | **Replace this** with any code that should execute during each loop. This is the loop's body.                                                                                                        |
 
 ### About `.items()`
 
 The most unique part about iterating over dictionaries is that we should call `.items()` next to each dictionary when starting the for loop.
 
-Python is unable to iterate over dictionaries as is; `.items()` lets us use the `for` loop with it. If we neglect to add `.items()`, we'll likely get this error:
+Python is unable to iterate over dictionaries as is; `.items()` lets us use the `for` loop with it. If we neglect to add `.items()`, we'll likely get something similar to this error:
 
 ```bash
 ValueError: too many values to unpack (expected 2)
@@ -62,10 +62,10 @@ Similar rules about the `for` loop that we stated for arrays also apply to loopi
 Follow these steps for each example:
 
 1. Read through the code and identify:
-    - What is the dictionary?
-    - What is each key and value?
-    - What do we name each key and value?
-    - How do we use each key and value in the loop?
+   - What is the dictionary?
+   - What is each key and value?
+   - What do we name each key and value?
+   - How do we use each key and value in the loop?
 2. Predict what will print
 3. Run the code and check your prediction
 
@@ -114,7 +114,7 @@ for food, price in menu.items():
 print("That sure was a meal!")
 ```
 
-Loops will often live in functions. We can use a `for` loop on a list that was passed into a function, too!
+Loops will often live in functions. We can use a `for` loop on a dictionary that was passed into a function, too!
 
 ```python
 def consider_specials(specials):
@@ -140,7 +140,9 @@ for my_key in my_dict:
 
 This syntax only names `my_key`, which will be each key, and does not require us to call `.items()` on our dictionary.
 
-We can see in this example, our code does not raise a `ValueError` when we use this syntax! Of course, we can access the keys and values.
+We can see in this example, our code does not raise a `ValueError` when we use this syntax!
+
+Of course, even if we only have the key, we can access the value using dictionary syntax.
 
 ```python
 menu = {
@@ -166,7 +168,7 @@ Similar to the `items` method, dictionaries also have a `keys` method to explici
 
 While we have seen that we can iterate over the dictionary keys by leaving off the `.items()` method call from our `for` loop, we can accomplish the same thing by explicitly calling the `keys` method. This `keys` method is most commonly used for iteration, but we can also use it as a source of data for creating a list of the keys.
 
-Calling the `keys` method, is performed as for the `items` method. We use a `.` between the object and the method name, and follow the name with `()`, resulting in `.keys()`. We can then iterate as usual.
+The syntax to use the `keys` method is similar to using `items` method. We use a `.` between the object and the method name, and follow the name with `()`, resulting in `.keys()`. We can then iterate as usual.
 
 Consider this example:
 
