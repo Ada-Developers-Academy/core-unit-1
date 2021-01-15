@@ -129,3 +129,116 @@ print("Blast off!")
 ```
 
 ## Check for Understanding
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: NkOZhxvAK
+* title: Using a For Loop
+
+
+##### !question
+
+True of False: Once a `for` loop is executed, it cannot be stopped early. It must complete its loop from start to finish.
+
+##### !end-question
+
+##### !options
+
+* True
+* False
+
+##### !end-options
+
+##### !answer
+
+* False
+
+##### !end-answer
+
+##### !explanation
+
+A `break` statement can be used to stop a `for` loop early.
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: short-answer
+* id: 4yWezZDAY
+* title: Using a Break Statement
+
+##### !question
+
+Looking at the code below, what is the role of the `continue` statement?
+
+<!-- ```python
+for i in range(33):
+  if i % 3 != 0:
+    continue
+  print(f"{i} is divisible by 3!")
+``` -->
+
+##### !end-question
+
+##### !placeholder
+
+Your explanation here...
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+##### !explanation
+
+For each iteration `i` is checked to see if it is evenly divisible by 3. If it's not, then the `continue` statement moves the loop to the next iteration of `i` and checks again.
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: short-answer
+* id: VJnx3ZvRt
+* title: Using a Range
+
+##### !question
+
+What is the role of the `range` function? What three arguments does it take? Are they all required?
+
+##### !end-question
+
+##### !placeholder
+
+Your answer here...
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+##### !explanation
+
+`Range` function iterates through a sequence of numbers. It can take three arguments: `start`, `stop`, `step`. `Start` tells it what number to begin the sequence on, `stop` tells it when to stop (not including the number), `step` tells it how many times to increase per iteration. Only `stop` is a required argument.
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
