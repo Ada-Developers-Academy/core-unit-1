@@ -18,7 +18,9 @@ Complete all questions below.
 
 ```python
 def calculate(num_a, num_b, operator):
-    if (isinstance(num_a, int) or isinstance(num_a, float)) and (isinstance(num_b, int) or isinstance(num_b, float)):
+    if not (
+        (isinstance(num_a, int) or isinstance(num_a, float)) and
+            (isinstance(num_b, int) or isinstance(num_b, float))):
         return "Type Error: num_a and num_b must be integer or float"
     
     operator = operator.lower()
@@ -79,7 +81,9 @@ The following guideline is challenging to master, but the best test names tend t
 
 ```python
 def calculate(num_a, num_b, operator):
-    if (isinstance(num_a, int) or isinstance(num_a, float)) and (isinstance(num_b, int) or isinstance(num_b, float)):
+    if not (
+        (isinstance(num_a, int) or isinstance(num_a, float)) and
+            (isinstance(num_b, int) or isinstance(num_b, float))):
         return "Type Error: num_a and num_b must be integer or float"
     
     operator = operator.lower()
@@ -138,7 +142,9 @@ The following guideline is challenging to master, but the best test names tend t
 
 ```python
 def calculate(num_a, num_b, operator):
-    if (isinstance(num_a, int) or isinstance(num_a, float)) and (isinstance(num_b, int) or isinstance(num_b, float)):
+    if not (
+        (isinstance(num_a, int) or isinstance(num_a, float)) and
+            (isinstance(num_b, int) or isinstance(num_b, float))):
         return "Type Error: num_a and num_b must be integer or float"
     
     operator = operator.lower()
@@ -197,7 +203,9 @@ The following guideline is challenging to master, but the best test names tend t
 
 ```python
 def calculate(num_a, num_b, operator):
-    if (isinstance(num_a, int) or isinstance(num_a, float)) and (isinstance(num_b, int) or isinstance(num_b, float)):
+    if not (
+        (isinstance(num_a, int) or isinstance(num_a, float)) and
+            (isinstance(num_b, int) or isinstance(num_b, float))):
         return "Type Error: num_a and num_b must be integer or float"
     
     operator = operator.lower()
@@ -256,7 +264,9 @@ The following guideline is challenging to master, but the best test names tend t
 
 ```python
 def calculate(num_a, num_b, operator):
-    if (isinstance(num_a, int) or isinstance(num_a, float)) and (isinstance(num_b, int) or isinstance(num_b, float)):
+    if not (
+        (isinstance(num_a, int) or isinstance(num_a, float)) and
+            (isinstance(num_b, int) or isinstance(num_b, float))):
         return "Type Error: num_a and num_b must be integer or float"
     
     operator = operator.lower()
