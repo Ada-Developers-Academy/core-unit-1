@@ -417,7 +417,7 @@ Read through this test report. What is the cause of the test failure?
 ##### !end-answer
 ##### !explanation
 
-We conclude this answer from reading this:
+We reach this conclusion using the following lines:
 
 ```bash
 >       assert mystery_function("apples", "oranges") == False
@@ -428,6 +428,10 @@ main.py:31: TypeError
 FAILED main.py::test_mystery_function - TypeError: mystery_function() takes 0 positional arguments but 2 were given
 ```
 
+* The line marked `>` shows the line where the error was encountered.
+* The line marked `E` shows _what_ error was encountered.
+* `main.py:31: TypeError` reinforces that a TypeError occurred during the test.
+* In the summary, the `FAILED` notice repeats any error messages from this test and any others which may have been found.
 ##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
@@ -479,7 +483,7 @@ In this test report, what line of what file caused the error?
 ##### !end-answer
 ##### !explanation
 
-We conclude this answer from reading this:
+We reach this conclusion using the following lines:
 
 ```bash
 main.py:31: TypeError
@@ -537,7 +541,7 @@ Read through this test report. What is the cause of the test failure?
 ##### !end-answer
 ##### !explanation
 
-We conclude this answer from reading this:
+We reach this conclusion using the following lines:
 
 ```bash
 E       AssertionError: assert True == False
@@ -598,7 +602,7 @@ Read through this test report. What is the cause of the test failure?
 
 Recall that `assert` is checking that whatever is to the right of it is truthy.
 
-We conclude this answer from reading this:
+We reach this conclusion using the following lines:
 
 ```bash
 >       assert is_passenger
@@ -608,6 +612,11 @@ main.py:31: AssertionError
 ============================================== short test summary info ==============================================
 FAILED main.py::test_mystery_function - assert False
 ```
+
+* The line marked `>` shows the line where the error was encountered.
+* The line marked `E` appearing on the `assert` line indicates the assertion itself failed.
+* `main.py:31: AssertionError` reinforces that an AssertionError occurred during the test.
+* In the summary, the `FAILED` notice repeats any error messages from this test and any others which may have been found.
 
 ##### !end-explanation
 ### !end-challenge
@@ -668,7 +677,7 @@ Read through this test report. What is the cause of the test failure?
 ##### !end-answer
 ##### !explanation
 
-We conclude this answer from reading this:
+We reach this conclusion using the following lines:
 
 ```bash
 a = 100, b = 0
@@ -676,17 +685,23 @@ a = 100, b = 0
     def mystery_function(a, b):
 >       a.append(b)
 E       AttributeError: 'int' object has no attribute 'append'
+main.py:26: AttributeError
+============================================== short test summary info ==============================================
+FAILED main.py::test_mystery_function - AttributeError: 'int' object has no attribute 'append'
 ```
 
+* `a = 100, b = 0` shows us with what arguments the function that failed was called.
+* The line marked `>` shows the line where the error was encountered.
+* The line marked `E` shows _what_ error was encountered.
+* `main.py:26: AttributeError` reinforces that an AttributeError occurred during the test.
+* In the summary, the `FAILED` notice repeats any error messages from this test and any others which may have been found.
 ##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
 ### Test-Driven Development
 
-Here, we are displaying the contents of the test.
-
-Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
+The following questions present a number of tests.  For each question, write a function that makes the test pass.
 
 <!-- Question 13 -->
 <!-- prettier-ignore-start -->
@@ -773,11 +788,6 @@ class TestPython1(unittest.TestCase):
 Logic to find that something is odd or even is best solved using the modulo operator.
 
 ##### !end-hint
-##### !hint
-
-Don't forget to put your code in a function with the right name and parameters.
-
-##### !end-hint
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -830,7 +840,7 @@ class TestPython1(unittest.TestCase):
 Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
 ```python
-def test_returns_None_if_negative():
+def test_returns_none_if_negative():
     number = -1000
     result = is_odd(number)
     assert result is None
@@ -844,7 +854,7 @@ import unittest
 from main import *
 
 class TestPython1(unittest.TestCase):
-    def test_returns_None_if_negative(self):
+    def test_returns_none_if_negative(self):
         number = -1000
         result = is_odd(number)
         assert result is None
@@ -869,7 +879,7 @@ Write a function to make the test pass. Use the information from the test to hel
 ```python
 def test_raises_runtime_error():
     with pytest.raises(RuntimeError):
-        runs_mystery_algorithm()
+        run_mystery_algorithm()
 ```
 
 ##### !end-question
@@ -882,7 +892,7 @@ from main import *
 class TestPython1(unittest.TestCase):
     def test_raises_runtime_error(self):
         with self.assertRaises(RuntimeError):
-            p.runs_mystery_algorithm()
+            run_mystery_algorithm()
 ```
 
 ##### !end-tests
