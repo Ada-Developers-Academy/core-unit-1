@@ -10,23 +10,91 @@ Our goal is to practice going from word problem to data structure, and to catch 
 
 ## Activity Instructions
 
-1. Get into small groups
-1. Spend a short amount of time answering one prompt individually. Record your answers in your own notes
-1. After some time, check your answer with the other group members
-    - Each member should speak at least once. Talk out loud, practice vocabulary, practice talking through reasoning and your thought process.
-1. If there are differences, talk with each other to discuss why
-1. If there are questions, questions, or ambiguity, find the answers with each other
-    - We encourage curiosity, but don't let your group get stuck in the details!
-1. Move to the next prompt and repeat the process
+Get into small groups. Find an environment where each member is able to share notes with the rest of the group.
+
+For each prompt...
+
+1. Spend 3-5 minutes answering individually, recording your answers in your own notes
+1. Go around the group, sharing answers in 1-3 sentences
+   - Each member should speak at least once. Talk out loud, practice vocabulary, and practice talking through your reasoning and thought process.
+1. Collect any questions that arose, and find the answers with each other
+   - We encourage curiosity, but don't let your group get stuck in the details!
+   - Collecting questions to answer later is also a great strategy
+
+The group should go at their own pace. However, don't get stuck in the details.
+
+When there are 15 minutes remaining, all groups should work on Prompt #5 if they haven't started already.
 
 ## Prompts
 
-Q1: Give them a table of data. Tell them to adapt part of it into a list
-Q2: Give them a table of data, tell them to adapt it to a dictionary
-Q3: Give them a generic scenario. Tell them to create a table to represent the data
-Q4: Tell them to adapt part of it into a list or dictionary
-Q5: tell them to come up with something in their life to get data from
-Suggestions: family tree, shopping list, some game you play, catalog of comic books 
+### !callout-info
+
+## There Are No Wrong Answers
+
+In this entire activity, there are no wrong interpretations for any prompt.
+
+### !end-callout
+
+### Question 1: Adapt to a List
+
+Consider this table of data, which represents a history of monthly high scores for a competitive mobile game.
+
+| Month     | Highest Score of the Month | Username         | User's Overall Ranking for the Year |
+| --------- | -------------------------- | ---------------- | ----------------------------------- |
+| January   | 1,099                      | nikki_long       | 3                                   |
+| February  | 1,402                      | batwing.ardala   | 5                                   |
+| March     | 1,398                      | josephj4         | 8                                   |
+| April     | 989                        | danalikesanimals | 15                                  |
+| May       | 972                        | nikki_long       | 3                                   |
+| June      | 1,092                      | wary.berry       | 2                                   |
+| July      | 1,115                      | stephie933       | 12                                  |
+| August    | 1,108                      | wary.berry       | 2                                   |
+| September | 1,100                      | alexarivera      | 1                                   |
+| October   | 1,142                      | alexarivera      | 1                                   |
+| November  | 1,136                      | alexarivera      | 1                                   |
+| December  | 1,025                      | alexarivera      | 1                                   |
+
+From any part of this data, make a meaningful list.
+
+### Question 2: Adapt to a Dictionary
+
+Consider this table of data, which represents the summary of a patient's last doctor visit.
+
+| Form Field         | Patient Answer                                      |
+| ------------------ | --------------------------------------------------- |
+| Patient First Name | Nelly                                               |
+| Date Registered    | 06/01/2015                                          |
+| Mailing Address    | 4829 Hazelwood Ave., Apt. 712, Des Moines, IA 50309 |
+| Email              | nelly.the.jelly                                     |
+| Policy Number      | 4001337200                                          |
+| RBC                | 5.78                                                |
+| Hematocrit %       | 17.9                                                |
+| Test Summary       | Satisfactory                                        |
+
+From any part of this data, make a meaningful dictionary.
+
+### Question 3: Create a Table
+
+Consider this situation:
+
+Imagine there is a small online conference named "Cool Dev Conf." The organizers collect and analyze attendee info during each conference, so they can understand which years and conference events were the most popular. Cool Dev Conf is held yearly. The conference has many different event types: long talks, short talks, panels, workshops, and affinity groups. After 3 years of running Cool Dev Conf, Cool Dev Conf started to provide different tiers of scholarship tickets in order to encourage new attendees.
+
+Make a table that is meaningful to this situation. Add in some example data. Be intentional about the rows and columns in the table.
+
+### Question 4: Adapt to a Data Structure
+
+Consider your table of data from Question 3. Adapt any part of that data into either a list or a dictionary.
+
+### Question 5: Data in Your Life
+
+Come up with something in your life that has data. Make a table from that data. Then, make either a list or dictionary from it.
+
+Feel free to use or be inspired by any of our suggestions.
+
+1. Family tree
+1. Shopping list for your hobby
+1. Items and resources from a game
+1. A catalog of comic books
 
 ## How to Review
 
