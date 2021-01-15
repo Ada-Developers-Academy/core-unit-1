@@ -16,7 +16,7 @@ For each prompt...
 
 1. Spend 3-5 minutes answering individually, recording your answers in your own notes
 1. Go around the group, sharing answers in 1-3 sentences
-   - Each member should speak at least once. Talk out loud, practice vocabulary, practice talking through reasoning and thought process.
+   - Each member should speak at least once. Talk out loud, practice vocabulary, and practice talking through your reasoning and thought process.
 1. Collect any questions that arose, and find the answers with each other
    - We encourage curiosity, but don't let your group get stuck in the details!
    - Collecting questions to answer later is also a great strategy
@@ -58,7 +58,7 @@ From any part of this data, make a meaningful list.
 
 ### Question 2: Adapt to a Dictionary
 
-Consider this table of data, which represents a summary of the patient's last visit.
+Consider this table of data, which represents the summary of a patient's last doctor visit.
 
 | Form Field         | Patient Answer                                      |
 | ------------------ | --------------------------------------------------- |
@@ -77,7 +77,7 @@ From any part of this data, make a meaningful dictionary.
 
 Consider this situation:
 
-Imagine there is a small online conference named "Cool Dev Conf." The organizers collect and analyze attendee info during each conference, so they can understand which years and programming were the most popular. Cool Dev Conf is held yearly. The conference has many different event types: long talks, short talks, panels, workshops, and affinity groups. After 3 years of running Cool Dev Conf, Cool Dev Conf started to provide different tiers of scholarship tickets in order to encourage new attendees.
+Imagine there is a small online conference named "Cool Dev Conf." The organizers collect and analyze attendee info during each conference, so they can understand which years and conference events were the most popular. Cool Dev Conf is held yearly. The conference has many different event types: long talks, short talks, panels, workshops, and affinity groups. After 3 years of running Cool Dev Conf, Cool Dev Conf started to provide different tiers of scholarship tickets in order to encourage new attendees.
 
 Make a table that is meaningful to this situation. Add in some example data. Be intentional about the rows and columns in the table.
 

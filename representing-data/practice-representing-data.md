@@ -301,11 +301,11 @@ def sort_contestants_age_desc():
 
 | Field                    | Expected Data Type | Value |
 | ------------------------ | ------------------ | ----- |
-| name                     | string             | -     |
-| is_morning_person        | boolean            | -     |
-| is_night_owl             | boolean            | -     |
-| fav_song_title           | string or `None`   | -     |
-| num_of_household_members | integer            | -     |
+| name                     | string             |       |
+| is_morning_person        | boolean            |       |
+| is_night_owl             | boolean            |       |
+| fav_song_title           | string or `None`   |       |
+| num_of_household_members | integer            |       |
 
 Fill out this table's data.
 
