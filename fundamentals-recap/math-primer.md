@@ -2,7 +2,7 @@
 
 ## Goal
 
-Problem-solving in programming is almost always centered on _data_. Often times, it's useful to be aware of the following math concepts. Knowing the definition of these concepts can become tools you remember to use in the future.
+Problem-solving in programming is almost always centered on _data_. To work with that data effectively, it can be useful to be aware of the following math concepts. By knowing the definitions of these concepts, they become problem-solving tools for us to use in the future.
 
 The goal of this document is to be a resource. We recommend spending your energy on this document reading through it and taking notes on it once, and then reviewing briefly every few months.
 
@@ -23,9 +23,12 @@ Working with collections of numbers:
 
 ## Decimal Number System
 
-The _decimal number system_ or _base-ten number system_ is the numbering system most humans use in everyday life.
+The _decimal number system_ or _base-ten number system_ is the numbering system most commonly used in everyday life.
 
-This numbering system includes - ten unique symbols known as digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 - the decimal point (floating point/dot) symbol to represent decimal fractions, such as 2.45
+This numbering system includes
+* ten unique symbols known as **digits**: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+* the **decimal point** (floating point/dot) symbol to represent decimal fractions, such as 2.45
+* the **minus sign** to indicate whether a number is positive or negative
 
 ### !callout-info
 
@@ -41,9 +44,9 @@ When we describe problems, we might want to say, "any number of things."
 
 For example, we might be building an email webapp, and we want to say, "An email can have any number of recipients... It can have 1 recipient, 3, 13, or 50 recipients."
 
-We wouldn't want to say "An email can have infinite recipients," because that just may not be true. However, when we want to discuss numbers of things, we may start to use variables as we talk.
+It would be annoying if we always had to say that an email might have 1, 3, 13, etc., recipients. Instead, we can use a variable to talk about this unknown number.
 
-We can imagine a variable _`n`_ as the name of a variable that holds any number.
+We can imagine a variable _`n`_ as the name of a variable that holds any number. Then we could say that the email has _`n`_ recipients.
 
 We could also use variable names _`x`_, _`y`_, _`tacocat`_, or whatever is most appropriate in the situation, but _`n`_ is a good default.
 
@@ -79,7 +82,7 @@ Consider the following list of numbers:
 
 ## Sorting
 
-Sorting is the action of arranging a list of items following a certain logical pattern. A list of objects that can be ordered may be sorted in **ascending** or **descending** order.
+Sorting is the action of arranging a list of items following a certain logical pattern. We can sort a list of objects in **ascending** or **descending** order.
 
 Consider the following list of numbers:
 
@@ -91,7 +94,7 @@ When the objects are _ordered from lowest value to highest value, the sorting or
 
 When the objects are _ordered from highest value to lowest value, the sorting order is said to be in descending order_. In our example, that would be `42, 21, 20, 17, 13, 9, 8, 4`.
 
-We can also sort things other than numbers, like words. Programming the logic for how to sort words must be very precise.
+Anything that we can give a numerical value to can be sorted, even words. The way to assign values to every word of every writing system is a very complex topic! As a smaller example, we can take the English alphabet, and say that A is 1, B is 2, and so on down the line, to Z being 26. This gives us enough information to think about sorting a list of words.
 
 For example, the list
 
@@ -104,6 +107,8 @@ sorted in **ascending** order is
 ```
 apple, banana, coconut, strawberry
 ```
+
+since A is 1, B is 2, C is 3, and S is 19. But what happens if our list has more than one word that starts with the same letter? Follow your curiosity!
 
 ## Average or Mean
 
@@ -126,8 +131,8 @@ For example, given the list
 
 Given any number _`n`_...
 
-- The **floor** of _`n`_ is the biggest integer that's less than or equal to _`n`_
-- The **ceiling** of _`n`_ is the smallest integer that's greater than or equal to _`n`_
+- The **floor** of _`n`_ is the biggest integer less than or equal to _`n`_
+- The **ceiling** of _`n`_ is the smallest integer greater than or equal to _`n`_
 
 | Example | Floor | Ceiling |
 | ------- | ----- | ------- |
