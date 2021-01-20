@@ -53,7 +53,7 @@ Standards:
         Path: /ada-orientation/retrospectives.md
   -
     Title: Fundamentals Recap
-    Description: "Fundamentals Vocabulary, Practice: Fundamentals Vocabulary, Conditionals Recap, Practice: Conditionals Recap"
+    Description: "Fundamentals Vocabulary, Conditionals Recap, Practice: Fundamentals Vocabulary, Practice: Conditionals Recap"
     UID: w7RhPU
     SuccessCriteria:
       - success criteria
@@ -64,12 +64,12 @@ Standards:
         Path: /fundamentals-recap/fundamentals-vocabulary.md
       -
         Type: Lesson
-        UID: wsrfiY
-        Path: /fundamentals-recap/practice-fundamentals-vocabulary.md
-      -
-        Type: Lesson
         UID: 0pDSN5
         Path: /fundamentals-recap/conditionals-recap.md
+      -
+        Type: Lesson
+        UID: wsrfiY
+        Path: /fundamentals-recap/practice-fundamentals-vocabulary.md
       -
         Type: Lesson
         UID: v2CqP7
@@ -217,7 +217,7 @@ Standards:
         Path: /intro-to-tests/intro-to-pytest.md
   -
     Title: Representing Data
-    Description: "Representing Data in Lists and Dictionaries, Data and JSON, Activity: Representing Data, Practice: Representing Data"
+    Description: "Representing Data in Lists and Dictionaries, Data and JSON, Practice: Representing Data, Activity: Representing Data"
     UID: hxB08H
     SuccessCriteria:
       - success criteria
@@ -232,12 +232,12 @@ Standards:
         Path: /representing-data/data-and-json.md
       -
         Type: Lesson
-        UID: 1f3084593d9eed2a8ec8a797cbfdd89b
-        Path: /representing-data/activity-representing-data.md
-      -
-        Type: Lesson
         UID: p4Pb0s
         Path: /representing-data/practice-representing-data.md
+      -
+        Type: Lesson
+        UID: 1f3084593d9eed2a8ec8a797cbfdd89b
+        Path: /representing-data/activity-representing-data.md
   -
     Title: Iterating Over Data
     Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, Iterating and Special Cases"
@@ -335,7 +335,7 @@ Standards:
         Path: /big-o/practice-big-o.md
   -
     Title: Intro to Git
-    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Activity: Git History, Practice: Git Commands"
+    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Practice: Git Commands, Activity: Git History"
     UID: DaSCfO
     SuccessCriteria:
       - success criteria
@@ -361,6 +361,10 @@ Standards:
         UID: w3WLGs
         Path: /intro-to-git/reviewing-git-history.md
       -
+        Type: Lesson
+        UID: g1zQGU
+        Path: /intro-to-git/practice-git-commands.md
+      -
         Type: Instructor
         UID: NvHa7v
         Path: /intro-to-git/activity-git-history.instructor.md
@@ -368,7 +372,3 @@ Standards:
         Type: Lesson
         UID: tSg96d
         Path: /intro-to-git/activity-git-history.md
-      -
-        Type: Lesson
-        UID: g1zQGU
-        Path: /intro-to-git/practice-git-commands.md
