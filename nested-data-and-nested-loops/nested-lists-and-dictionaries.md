@@ -356,7 +356,48 @@ The above code produces this console output:
 
 <!-- Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure. -->
 
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+##### !question
+Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure.
+
+``` Python
+clothes = [
+  ["hat", "beanie", "fedora"],
+  ["tshirt", "hoodie", "cardigan"],
+  ["jeans", "joggers", "shorts"]
+]
+```
+##### !end-question
+##### !placeholder
+Describe this data structure here.
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->
+
 <!-- A second time: Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure. -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+##### !question
+Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure.
+
+``` Python
+sandwich = {
+  "blt": ["bacon", "lettuce", "tomato"],
+  "grilled cheese": ["american cheese", "gruyere"],
+  "pbj": ["grape jelly", "peanut butter"]
+}
+
+```
+##### !end-question
+##### !placeholder
+Describe this data structure here.
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Modify this function so it returns the value `25` -->
 
@@ -384,3 +425,4 @@ game_data{"pokedex"}["name_en"]
  -->
 
 <!-- More questions will be in the huge worksheet -->
+
