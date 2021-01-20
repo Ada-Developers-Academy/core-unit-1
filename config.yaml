@@ -239,6 +239,29 @@ Standards:
         UID: p4Pb0s
         Path: /representing-data/practice-representing-data.md
   -
+    Title: Iterating Over Data
+    Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, Iterating and Special Cases"
+    UID: giOpFA
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: DH2nXe
+        Path: /iterating-over-data/intro-to-iteration.md
+      -
+        Type: Lesson
+        UID: bCBDvR
+        Path: /iterating-over-data/iterating-over-lists.md
+      -
+        Type: Lesson
+        UID: OiwVkc
+        Path: /iterating-over-data/iterating-over-dictionaries.md
+      -
+        Type: Lesson
+        UID: 4oVaz5
+        Path: /iterating-over-data/iterating-and-special-cases.md
+  -
     Title: Nested Data and Nested Loops
     Description: "Nested Lists and Dictionaries, Nested Loops"
     UID: DcrO5J
