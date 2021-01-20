@@ -118,7 +118,7 @@ Standards:
         Path: /intro-to-dev-environment/intro-to-command-line.md
   -
     Title: Approaching a Problem
-    Description: Breaking down a problem, Pseudocode, Pair Programming
+    Description: "Breaking down a problem, Pseudocode and Logic, Pair Programming, Activity: Breaking Down a Problem"
     UID: pSGW3x
     SuccessCriteria:
       - success criteria
@@ -308,7 +308,7 @@ Standards:
         Path: /exception-handling/practice-exception-handling.md
   -
     Title: Big O
-    Description: Time and Space Complexity, Big O Notation, Big O Analysis
+    Description: "Time and Space Complexity, Big O Notation, Big O Analysis, Practice: Big O"
     UID: f2703dfead197309bf41c0a2d8ff1daf
     SuccessCriteria:
       - success criteria
