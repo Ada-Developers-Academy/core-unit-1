@@ -250,7 +250,7 @@ def get_third_place(finalists):
 * title: Functions, continued
 ### !question
 
-Create a function named `compare_votes`. It has two parameters, `cand_a` and `cand_b` (short for "candidate"). Both `cand_a` and `cand_b` will be dictionaries that look like this:
+Create a function named `compare_votes`. It has two parameters, `candidate_a` and `candidate_b` (short for "candidate"). Both `candidate_a` and `candidate_b` will be dictionaries that look like this:
 
 ```python
 {
@@ -259,9 +259,9 @@ Create a function named `compare_votes`. It has two parameters, `cand_a` and `ca
 }
 ```
 
-Compare the votes inside `cand_a` and `cand_b`. Find the candidate with more votes, and return their name.
+Compare the votes inside `candidate_a` and `candidate_b`. Find the candidate with more votes, and return their name.
 
-| Example `cand_a`                   | Example `cand_b`                     | Example return value |
+| Example `candidate_a`              | Example `candidate_b`                | Example return value |
 | ---------------------------------- | ------------------------------------ | -------------------- |
 | `{"name": "Pikachu", "votes": 25}` | `{"name": "Bulbasaur", "votes": 24}` | `"Pikachu"`          |
 | `{"name": "Pikachu", "votes": 0}`  | `{"name": "Bulbasaur", "votes": 1}`  | `"Bulbasaur"`        |
@@ -283,11 +283,11 @@ class TestChallenge(unittest.TestCase):
 An example of a working implementation:
 
 ```python
-def compare_votes(cand_a, cand_b):
-    if cand_a["votes"] > cand_b["votes"]:
-        return cand_a["name"]
+def compare_votes(candidate_a, candidate_b):
+    if candidate_a["votes"] > candidate_b["votes"]:
+        return candidate_a["name"]
     else:
-        return cand_b["name"]
+        return candidate_b["name"]
 ```
 
 ### !end-explanation
@@ -303,7 +303,7 @@ def compare_votes(cand_a, cand_b):
 * title: Functions, continued
 ### !question
 
-Create a function named `compare_ids`. It has two parameters, `cand_a` and `cand_b` (short for "candidate"). Both `cand_a` and `cand_b` will be dictionaries that look like this:
+Create a function named `compare_ids`. It has two parameters, `candidate_a` and `candidate_b` (short for "candidate"). Both `candidate_a` and `candidate_b` will be dictionaries that look like this:
 
 ```python
 {
@@ -312,9 +312,9 @@ Create a function named `compare_ids`. It has two parameters, `cand_a` and `cand
 }
 ```
 
-Compare the IDs inside `cand_a` and `cand_b`. Find the candidate that has an ID with a smaller numerical value, and return the candidate dictionary itself.
+Compare the IDs inside `candidate_a` and `candidate_b`. Find the candidate that has an ID with a smaller numerical value, and return the candidate dictionary itself.
 
-| Example `cand_a`                | Example `cand_b`                  | Example return value             |
+| Example `candidate_a`                | Example `candidate_b`                  | Example return value             |
 | ------------------------------- | --------------------------------- | -------------------------------- |
 | `{"id": 25, "name": "Pikachu"}` | `{"id": 1, "name": "Bulbasaur"}`  | `{"id": 1, "name": "Bulbasaur"}` |
 | `{"id": 25, "name": "Pikachu"}` | `{"id": 26, "name": "Bulbasaur"}` | `{"id": 25, "name": "Pikachu"}`  |
@@ -333,13 +333,13 @@ class TestChallenge(unittest.TestCase):
 ### !end-tests
 ### !explanation
 
-An example of a working implementation. Note how this solution does not have an `else` condition. With this particular logic, if `cand_a["id"] < cand_b["id"]` is `True`, it will exit the function by returning `cand_a`. If `cand_a["id"] < cand_b["id"]` is `False`, then there is no other return value besides `cand_b`.
+An example of a working implementation. Note how this solution does not have an `else` condition. With this particular logic, if `candidate_a["id"] < candidate_b["id"]` is `True`, it will exit the function by returning `candidate_a`. If `candidate_a["id"] < candidate_b["id"]` is `False`, then there is no other return value besides `candidate_b`.
 
 ```python
-def compare_ids(cand_a, cand_b):
-    if cand_a["id"] < cand_b["id"]:
-        return cand_a
-    return cand_b
+def compare_ids(candidate_a, candidate_b):
+    if candidate_a["id"] < candidate_b["id"]:
+        return candidate_a
+    return candidate_b
 ```
 
 ### !end-explanation
