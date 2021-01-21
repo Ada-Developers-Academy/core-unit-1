@@ -1,4 +1,4 @@
-# Activity: Nested Loops 
+# Activity: 
 
 ## Directions
 
