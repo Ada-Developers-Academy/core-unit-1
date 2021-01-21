@@ -2,7 +2,7 @@
 Standards:
   -
     Title: Fundamentals Recap
-    Description: "Fundamentals Vocabulary, Conditionals Recap, Practice: Fundamentals Vocabulary, Practice: Conditionals Recap"
+    Description: "Fundamentals Vocabulary, Conditionals Recap, Practice: Fundamentals Vocabulary, Practice: Conditionals Recap, Math Primer"
     UID: w7RhPU
     SuccessCriteria:
       - success criteria
@@ -23,6 +23,10 @@ Standards:
         Type: Lesson
         UID: v2CqP7
         Path: /fundamentals-recap/practice-conditionals-recap.md
+      -
+        Type: Lesson
+        UID: oTncbU
+        Path: /fundamentals-recap/math-primer.md
   -
     Title: What Is Software Development
     Description: "What is Software?, Study Like a Programmer, Activity: Intention Setting Our Careers, Activity: Study Plan"
@@ -155,7 +159,7 @@ Standards:
         Path: /functions-continued/practice-functions-continued.md
   -
     Title: Intro To Tests
-    Description: Packages and Managing Packages, Automated Tests, Intro to pytest
+    Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Practice: Intro to pytest"
     UID: cxnH0Z
     SuccessCriteria:
       - success criteria
@@ -172,6 +176,10 @@ Standards:
         Type: Lesson
         UID: xGvLQz
         Path: /intro-to-tests/intro-to-pytest.md
+      -
+        Type: Lesson
+        UID: qcZisA
+        Path: /intro-to-tests/practice-intro-to-pytest.md
   -
     Title: Representing Data
     Description: "Representing Data in Lists and Dictionaries, Data and JSON, Practice: Representing Data, Activity: Representing Data"
