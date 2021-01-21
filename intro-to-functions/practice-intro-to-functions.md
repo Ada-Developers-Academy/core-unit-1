@@ -163,7 +163,7 @@ def maintain_plant(plant):
     return plant
 ```
 
-In specifically the line `def maintain_plant(plant):`, identify this piece of syntax: `plant`
+Specifically in the line `def maintain_plant(plant):`, identify this piece of syntax: `plant`
 
 ##### !end-question
 ##### !options
@@ -203,7 +203,7 @@ def maintain_plant(plant):
     return plant
 ```
 
-In specifically the line `def maintain_plant(plant):`, identify this piece of syntax: `maintain_plant`
+Specifically in the line `def maintain_plant(plant):`, identify this piece of syntax: `maintain_plant`
 
 ##### !end-question
 ##### !options
@@ -341,19 +341,19 @@ Pick the best description for what this code is doing: `new_location = find_avai
 * Invokes the function `find_available_sunny_spot(plant)`
 * Checks if `needs_sunlight(plant)` is `True`. If it is, invoke the function `find_available_sunny_spot(plant)`
 * `new_location` is the name of the return value for the function `find_available_sunny_spot()`
-* `new_location` is assigned to the value that `find_available_sunny_spot(plant)` evaluates into
+* `new_location` is set to the value that `find_available_sunny_spot(plant)` evaluates to
 
 ##### !end-options
 ##### !answer
 
-* `new_location` is assigned to the value that `find_available_sunny_spot(plant)` evaluates into
+* `new_location` is set to the value that `find_available_sunny_spot(plant)` evaluates to
 
 ##### !end-answer
 ##### !explanation
 
-`new_location = ` begins assignment to the variable `new_location`. `new_location` is assigned to whatever the function call `find_available_sunny_spot(plant)`.
+`new_location = ` begins assignment to the variable `new_location`. `new_location` is assigned the returned value from the function call `find_available_sunny_spot(plant)`.
 
-This line does _not_ check `plant` needs sunlight. This line does not _only_ invoke the function. `new_location` is _not_ part of the function definition for `find_available_sunny_spot()`.
+This line does _not_ check whether `plant` needs sunlight. This line does not _only_ invoke the function. `new_location` is _not_ part of the function definition for `find_available_sunny_spot()`.
 
 ##### !end-explanation
 ### !end-challenge
@@ -483,7 +483,7 @@ Passing a function means...
 ##### !end-answer
 ##### !explanation
 
-An example description: Passing something into a function means that we are calling a function and supplying an argument to it. We pass in values as arguments. We can also say that the values we expect to be passed into a function are the parameters. We can say that "passing something into a function" is giving "input" into the function.
+An example description: Passing something into a function means that we are calling a function and supplying an argument to it. We pass in values as arguments. We can also say that the values we expect to be passed into a function are the parameters. We can say that "passing something into a function" is giving "input" to the function.
 
 ##### !end-explanation
 ### !end-challenge
@@ -530,7 +530,9 @@ An example description: Getting a return value from a function means receiving w
 * title: Intro to Functions
 ##### !question
 
-Of the lines of code below, re-order them to its ideal order. Assume that each line would be indented correctly.
+Reorder the lines of code below to create a function that assembles the lyrics of the song "I'm a Little Teapot." If multiple arrangements would generate the same result, be sure to pick the _least surprising_ arrangement. Assume that each line would be indented correctly.
+
+The song lyrics are, "I'm a little teapot, Short and stout. Here is my handle, Here is my spout!"
 
 ##### !end-question
 ##### !answer
@@ -558,7 +560,7 @@ def sing_im_a_little_teapot():
     return entire_song
 ```
 
-Technically, we could re-orer the assignments of `line_1`, `line_2`, `line_3`, and `line_4` to any combination we want. However, it's ideal to have them ordered because of readability and coherence to all programmers. :)
+Technically, we could order the assignments of `line_1`, `line_2`, `line_3`, and `line_4` any way we want. However, we should prefer putting them into an order that minimizes potential confusion for other programmers who read it.
 
 ##### !end-explanation
 ### !end-challenge
@@ -578,8 +580,6 @@ Read through this code. Assume that `get_season()` and `get_day_of_week()` are v
 
 ```python
 def get_daily_special(todays_date):
-    special = ""
-
     current_season = get_season(todays_date)
 
     if current_season == "Spring":
@@ -630,9 +630,7 @@ Assuming that `get_season()` and `get_day_of_week()` are valid functions, given 
 
 ```python
 def get_daily_special(todays_date):
-special = ""
-
-    current_season = get_season(todays_date)
+current_season = get_season(todays_date)
 
     if current_season == "Spring":
         special = "Eggplants"
@@ -662,7 +660,7 @@ There is a syntax or runtime error in this code. What is the cause of this error
 * Missing colon
 * Missing parentheses
 * Reads a variable that has no value
-* Mispelling
+* Misspelling
 
 ##### !end-options
 ##### !answer
@@ -672,7 +670,7 @@ There is a syntax or runtime error in this code. What is the cause of this error
 ##### !end-answer
 ##### !hint
 
-If there are typos within a string literal, it may be wrong spelling, but it will not cause a syntax or runtime error.
+If there are typos within a string literal, the spelling may be wrong, but it will not cause a syntax or runtime error.
 
 ##### !end-hint
 ### !end-challenge
@@ -690,8 +688,6 @@ Assuming that `get_season()` and `get_day_of_week()` are valid functions, given 
 
 ```python
 def get_daily_special(todays_date):
-    special = ""
-
     current_season = get_season(todays_date)
 
     if current_season == "Spring":
@@ -722,7 +718,7 @@ There is a syntax or runtime error in this code. What is the cause of this error
 * Missing colon
 * Missing parentheses
 * Reads a variable that has no value
-* Mispelling
+* Misspelling
 
 ##### !end-options
 ##### !answer
@@ -750,8 +746,6 @@ Assuming that `get_season()` and `get_day_of_week()` are valid functions, given 
 
 ```python
 def get_daily_special(todays_date):
-    special = ""
-
     current_season = get_season(todays_date)
 
     if current_season == "Spring":
@@ -782,7 +776,7 @@ There is a syntax or runtime error in this code. What is the cause of this error
 * Missing colon
 * Missing parentheses
 * Reads a variable that has no value
-* Mispelling
+* Misspelling
 
 ##### !end-options
 ##### !answer
@@ -797,7 +791,7 @@ If there are typos within a string literal, it may be wrong spelling, but it wil
 ##### !end-hint
 ##### !explanation
 
-There may be many ways to describe this error. We might call it a logical error. However, in general, the logic is correct. Ultimately, the error comes from needing to read the variable `day_of_week`, which has no value assigned to it.
+Though we might consider calling this error a logical error, in general, the logic is correct. Ultimately, the error comes from reading the variable `day_of_week`, which has no value assigned to it. We should have set it to the return value from the call to `get_day_of_week`.
 
 ##### !end-explanation
 ### !end-challenge
@@ -815,8 +809,6 @@ Assuming that `get_season()` and `get_day_of_week()` are valid functions, given 
 
 ```python
 def get_daily_special(todays_date):
-    special = ""
-
     current_season = get_season(todays_date)
 
     if current_season == "Spring":
@@ -847,12 +839,12 @@ There is a syntax or runtime error in this code. What is the cause of this error
 * Missing colon
 * Missing parentheses
 * Reads a variable that has no value
-* Mispelling
+* Misspelling
 
 ##### !end-options
 ##### !answer
 
-* Mispelling
+* Misspelling
 
 ##### !end-answer
 ##### !hint
@@ -875,7 +867,7 @@ If there are typos within a string literal, it may be wrong spelling, but it wil
 * title: Intro to Functions
 ### !question
 
-Following the current pattern in the function, modify the function so that invoking `get_example_sentence("they/them")` returns `"They went to the park. I went with them. They brought their frisbee."`, and doesn't modify the rest of the functionality.
+Following the current pattern in the code below, modify the function so that invoking `get_example_sentence("they/them")` returns `"They went to the park. I went with them. They brought their frisbee."`, and doesn't alter the rest of the functionality.
 
 ### !end-question
 ### !placeholder

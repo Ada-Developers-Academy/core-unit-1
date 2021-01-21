@@ -312,7 +312,7 @@ Create a function named `compare_ids`. It has two parameters, `cand_a` and `cand
 }
 ```
 
-Compare the IDs inside `cand_a` and `cand_b`. Find the candidate that has an ID smaller numerical value, and return the candidate dictionary itself.
+Compare the IDs inside `cand_a` and `cand_b`. Find the candidate that has an ID with a smaller numerical value, and return the candidate dictionary itself.
 
 | Example `cand_a`                | Example `cand_b`                  | Example return value             |
 | ------------------------------- | --------------------------------- | -------------------------------- |
@@ -350,7 +350,7 @@ def compare_ids(cand_a, cand_b):
 
 ## Comparing Strings
 
-Python supports comparing strings with `<`, `>`, etc. Python will say that strings are compared alphabetically. Strings that begin with `"A"` are less than `"Z"`. Python orders capital letters as less than lowercase letters, so `"a"` is less than `"z"`. Consider the table below.
+Python supports comparing strings with `<`, `>`, etc. Python compares strings alphabetically. Strings that begin with `"A"` are less than `"Z"`. Python orders capital letters as less than lowercase letters, so `"A"` is less than `"a"`. Consider the table below.
 
 | Code                 | Output  |
 | -------------------- | ------- |
@@ -361,7 +361,7 @@ Python supports comparing strings with `<`, `>`, etc. Python will say that strin
 | `"Apple" < "apple"`  | `True`  |
 | `"Apple" > "apple"`  | `False` |
 
-What's going on? In computing, each character in text has a value from Unicode, where Unicode is a standard for converting all characters and emojis across different platforms. Follow your curiosity!
+What's going on? In modern computing, each character is given a numerical Unicode value. Unicode is a standard for representing all characters and emojis across different platforms. Follow your curiosity!
 
 ### !end-callout
 
@@ -481,6 +481,8 @@ If `num` is a multiple of 3, it should return `"Fizz"`. If `num` is a multiple o
 
 | Example `num` | Example return value |
 | ------------- | -------------------- |
+| `1`           | `1`                  |
+| `2`           | `2`                  |
 | `3`           | `"Fizz"`             |
 | `327`         | `"Fizz"`             |
 | `5`           | `"Buzz"`             |
@@ -496,6 +498,7 @@ from main import *
 
 class TestChallenge(unittest.TestCase):
     def test_fizz_buzz(self):
+        self.assertEqual(fizz_buzz(1), 1)
         self.assertEqual(fizz_buzz(3), "Fizz")
         self.assertEqual(fizz_buzz(327), "Fizz")
         self.assertEqual(fizz_buzz(5), "Buzz")
