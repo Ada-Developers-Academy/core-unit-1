@@ -65,6 +65,8 @@ In tests, long test names are welcome. For each test case, the best test names u
 
 The following guideline is challenging to master, but the best test names tend to describe a situation, and not name exact variable names. If the variable name changes, then the test name could become inaccurate.
 
+Pytest will only recognize test names begin with `test_` or end with `_test`.
+
 ##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->

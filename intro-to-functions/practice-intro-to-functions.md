@@ -150,7 +150,7 @@ Identify this piece of syntax: `def maintain_plant(plant):`
 * title: Intro to Functions
 ##### !question
 
-Given this code...
+Given this code (duplicated from above)...
 
 ```python
 def maintain_plant(plant):
@@ -190,7 +190,7 @@ Specifically in the line `def maintain_plant(plant):`, identify this piece of sy
 * title: Intro to Functions
 ##### !question
 
-Given this code...
+Given this code (duplicated from above)...
 
 ```python
 def maintain_plant(plant):
@@ -230,7 +230,7 @@ Specifically in the line `def maintain_plant(plant):`, identify this piece of sy
 * title: Intro to Functions
 ##### !question
 
-Given this code...
+Given this code (duplicated from above)...
 
 ```python
 def maintain_plant(plant):
@@ -275,7 +275,7 @@ Although a "function name and arguments" is in this line of code, this is the sy
 * title: Intro to Functions
 ##### !question
 
-Given this code...
+Given this code (duplicated from above)...
 
 ```python
 def maintain_plant(plant):
@@ -320,7 +320,7 @@ Identify this piece of syntax: `"A Mellow Mood for Maidenhair"`
 * title: Intro to Functions
 ##### !question
 
-Given this code...
+Given this code (duplicated from above)...
 
 ```python
 def maintain_plant(plant):
@@ -367,7 +367,7 @@ This line does _not_ check whether `plant` needs sunlight. This line does not _o
 * title: Intro to Functions
 ##### !question
 
-Given this code...
+Given this code (duplicated from above)...
 
 ```python
 def maintain_plant(plant):
@@ -414,7 +414,7 @@ This line returns the value in the variable `plant`.
 * title: Intro to Functions
 ##### !question
 
-Given this code...
+Given this code (duplicated from above)...
 
 ```python
 def maintain_plant(plant):
