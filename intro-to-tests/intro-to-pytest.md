@@ -223,222 +223,67 @@ This curriculum believes in a learner's ability to smoothly work with these diff
 
 ## Check for Understanding
 
-Here, we are displaying the contents of the test.
-
-Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
-
 <!-- Question 1 -->
-
 <!-- prettier-ignore-start -->
 ### !challenge
+* type: ordering
+* id: a1NxH7
+* title: Intro to Pytest
+##### !question
 
-* type: code-snippet
-* language: python3.6
-* id: VarpJ0
-* title: Intro to pytest
+Rearrange these lines so they follow the logical order that a unit test is normally in.
 
-### !question
+##### !end-question
+##### !answer
 
-Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
+1. Test name
+1. Arrange step, where setting up any variables is
+1. Act step, where we call the tested function
+1. Assert step, where we check that the result of the tested function is what we expected
 
-```python
-def test_returns_true():
-    result = func_that_always_returns_true()
-    assert result
-```
-### !end-question
-### !placeholder
-
-```python
-def func_that_always_returns_true():
-    pass
-```
-### !end-placeholder
-### !tests
-```python
-import unittest
-from main import *
-
-class TestChallenge(unittest.TestCase):
-  def test_returns_true(self):
-      self.assertTrue(func_that_always_returns_true())
-```
-### !end-tests
-### !explanation
-
-We are expecting this implementation, although returning anything truthy will work too.
-
-```python
-def func_that_always_returns_true():
-    return True
-```
-
-### !end-explanation
+##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
 <!-- Question 2 -->
-
 <!-- prettier-ignore-start -->
 ### !challenge
-
-* type: code-snippet
-* language: python3.6
-* id: 621ce40e-a848-4429-a100-76e6001f77c3
-* title: Intro to pytest
-
+* type: ordering
+* id: M9WsZl
+* title: Intro to Pytest
 ##### !question
 
-Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
-
-```python
-def test_returns_true_if_odd():
-    number = 5
-    result = is_odd(number)
-    assert result
-```
+Rearrange these lines of code so they become a valid unit test. Assume that each line would be indented correctly.
 
 ##### !end-question
-##### !tests
+##### !answer
 
-```py
-import unittest
-from main import *
+1. `def test_my_func_returns_hello_world():`
+1. `result = my_func()`
+1. `assert result == "Hello, World!"`
 
-class TestPython1(unittest.TestCase):
-    def test_returns_true_if_odd(self):
-        number = 5
-        result = is_odd(number)
-        self.assertTrue(result)
-```
-
-##### !end-tests
-##### !hint
-
-Logic to find that something is odd or even is best solved using the modulo operator.
-
-##### !end-hint
-##### !hint
-
-Don't forget to put your code in a function with the right name and parameters.
-
-##### !end-hint
+##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
 <!-- Question 3 -->
-
 <!-- prettier-ignore-start -->
 ### !challenge
-
-* type: code-snippet
-* language: python3.6
-* id: 71615b90-7562-480f-b868-50e23812a0f3
-* title: Intro to pytest
-
+* type: ordering
+* id: lImr91
+* title: Intro to Pytest
 ##### !question
 
-Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
-
-```python
-def test_returns_false_if_even():
-    number = 6
-    result = is_odd(number)
-    assert not result
-```
+Rearrange these lines of code so they become a valid unit test. Assume that each line would be indented correctly.
 
 ##### !end-question
+##### !answer
 
-##### !tests
+1. `def test_zero_division():`
+1. `with pytest.raises(ZeroDivisionError):`
+1. `1 / 0`
 
-```py
-import unittest
-from main import *
-
-class TestPython1(unittest.TestCase):
-    def test_returns_false_if_even(self):
-        number = 6
-        result = is_odd(number)
-        self.assertFalse(result)
-```
-
-##### !end-tests
-### !end-challenge
-<!-- prettier-ignore-end -->
-
-<!-- Question 4 -->
-
-<!-- prettier-ignore-start -->
-### !challenge
-
-* type: code-snippet
-* language: python3.6
-* id: 386b0492-77de-4132-a81c-8746090296c2
-* title: Intro to pytest
-
-##### !question
-
-Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
-
-```python
-def test_returns_None_if_negative():
-    number = -1000
-    result = is_odd(number)
-    assert result is None
-```
-
-##### !end-question
-##### !tests
-
-```py
-import unittest
-from main import *
-
-class TestPython1(unittest.TestCase):
-    def test_returns_None_if_negative(self):
-        number = -1000
-        result = is_odd(number)
-        assert result is None
-```
-
-##### !end-tests
-### !end-challenge
-<!-- prettier-ignore-end -->
-
-<!-- Question 5 -->
-
-<!-- prettier-ignore-start -->
-### !challenge
-
-* type: code-snippet
-* language: python3.6
-* id: a18259ec-848d-4ec4-99c1-c6a71ec1fab7
-* title: Intro to pytest
-
-##### !question
-
-Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
-
-```python
-def test_raises_runtime_error():
-    with pytest.raises(RuntimeError):
-        runs_mystery_algorithm()
-```
-
-##### !end-question
-##### !tests
-
-```py
-import unittest
-from main import *
-
-class TestPython1(unittest.TestCase):
-    def test_raises_runtime_error(self):
-        with self.assertRaises(RuntimeError):
-            p.runs_mystery_algorithm()
-```
-
-##### !end-tests
+##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
