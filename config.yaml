@@ -113,7 +113,7 @@ Standards:
         Path: /intro-to-debugging/intro-to-debugging.md
   -
     Title: Intro To Functions
-    Description: Functions Overview, Invoking Functions, Defining Functions
+    Description: "Functions Overview, Invoking Functions, Defining Functions, Practice: Intro to Functions"
     UID: e30a742083b7afa72ec565afafb9f64b
     SuccessCriteria:
       - success criteria
@@ -130,9 +130,13 @@ Standards:
         Type: Lesson
         UID: 692aeabdceb105d82aed2187db381860
         Path: /intro-to-functions/defining-functions.md
+      -
+        Type: Lesson
+        UID: rjEdAe
+        Path: /intro-to-functions/practice-intro-to-functions.md
   -
     Title: Functions, Continued
-    Description: Variable Scope, How to Read Documentation
+    Description: "Variable Scope, How to Read Documentation, Practice: Functions Continued"
     UID: 6736abef6aad93ad0fdb8d10e1849b62
     SuccessCriteria:
       - success criteria
@@ -145,6 +149,10 @@ Standards:
         Type: Lesson
         UID: 0ea7bd4c9be9469bd0232744edf2a80d
         Path: /functions-continued/how-to-read-documentation.md
+      -
+        Type: Lesson
+        UID: POpDU4
+        Path: /functions-continued/practice-functions-continued.md
   -
     Title: Intro To Tests
     Description: Packages and Managing Packages, Automated Tests, Intro to pytest
