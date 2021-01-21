@@ -359,6 +359,9 @@ The above code produces this console output:
 <!-- Question 1 -->
 <!-- prettier-ignore-start -->
 ### !challenge
+* type: paragraph
+* id: c49169ab-1a7c-447b-9399-4ee331e5d596
+* title: Nested Lists and Dictionaries I
 ##### !question
 Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure.
 
@@ -381,6 +384,9 @@ Describe this data structure here.
 <!-- Question 2 -->
 <!-- prettier-ignore-start -->
 ### !challenge
+* type: paragraph
+* id: e4927780-c756-4b5d-9cbe-acdfa0859d1f
+* title: Nested Lists and Dictionaries II
 ##### !question
 Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure.
 
@@ -401,7 +407,94 @@ Describe this data structure here.
 
 <!-- Modify this function so it returns the value `25` -->
 
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: code-snippet
+* language: python3.6
+* id: 4beb07e1-2d7c-4aa1-a6c1-88b3f2a7dba6
+* title: Nested Lists and Dictionaries III
+* topics: python
+
+##### !question
+Modify `get_price()` so it returns the value `25`.
+##### !end-question
+##### !placeholder
+```python
+
+shopping_cart = {
+  't-shirt': {
+    'description': 'a white tee',
+    'price': 15
+  },  
+  'jeans': {
+    'description': 'dark blue denim',
+    'price': 25
+  }
+}
+
+def get_price():
+  pass
+
+```
+##### !end-placeholder
+##### !tests
+```python
+import main
+import unittest
+
+class TestPrice(unittest.TestCase):
+  def test_get_jean_price(self):
+    price = get_jean_price()
+    expected = 25
+    self.assertEqual(price, expected)
+```
+##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->
+
 <!-- Modify this function so it returns the value `"Electric"` -->
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: code-snippet
+* language: python3.6
+* id: 3dfa0464-3e4a-4f5d-89e7-e2feff199580
+* title: Nested Lists and Dictionaries IV
+* topics: python
+
+##### !question
+Modify `get_favorite_dance()` so it returns the value `Electric Slide`.
+##### !end-question
+##### !placeholder
+```python
+
+dances = [
+  {'Los Del Rio': "Macarena"},
+  {"Marcia Griffiths": "Electric Slide"},
+  {'DJ Casper': "Cha Cha Slide"}
+]
+
+def get_favorite_dance():
+  pass
+
+```
+##### !end-placeholder
+##### !tests
+```python
+import main
+import unittest
+
+class TestPrice(unittest.TestCase):
+  def test_get_jean_price(self):
+    price = get_jean_price()
+    expected = 25
+    self.assertEqual(price, expected)
+```
+##### !end-tests
+### !end-challenge
+<!-- prettier-ignore-end -->
+
 
 <!-- MC:
 
@@ -426,3 +519,36 @@ game_data{"pokedex"}["name_en"]
 
 <!-- More questions will be in the huge worksheet -->
 
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: d98f75a2-0ef4-4f90-a7c5-83f237c7b922
+* title: Nested Lists and Dictionaries V
+
+##### !question
+Nested data structures can go three layers deep! Extend your knowledge. Which of these is the syntax to get the value `"Pikachu"`?
+
+```python
+game_data = {
+    "pokedex": [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+}
+```
+##### !end-question
+##### !options
+* pokedex["name_en"]
+* pokedex{"name_en"}
+* game_data["pokedex"][1]["name_en"]
+* game_data{"pokedex"}[0]["name_en"]
+* game_data["pokedex"][0]["name_en"]
+##### !end-options
+##### !answer
+* game_data["pokedex"][0]["name_en"]
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
