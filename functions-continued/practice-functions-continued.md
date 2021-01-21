@@ -15,7 +15,7 @@ Complete all questions below.
 * title: Functions, continued
 ### !question
 
-Create a function named `adds_five`. It has one parameter, `num`. The function should add `5` to `num`, and return the sum.
+Create a function named `add_five`. It has one parameter, `num`. The function should add `5` to `num`, and return the sum.
 
 | Example arguments | Example return value |
 | ----------------- | -------------------- |
@@ -26,7 +26,7 @@ Create a function named `adds_five`. It has one parameter, `num`. The function s
 ### !placeholder
 
 ```python
-def adds_five(num):
+def add_five(num):
     pass
 ```
 ### !end-placeholder
@@ -36,9 +36,9 @@ import unittest
 from main import *
 
 class TestChallenge(unittest.TestCase):
-    def test_adds_five(self):
-        self.assertEqual(adds_five(22), 27)
-        self.assertEqual(adds_five(0), 5)
+    def test_add_five(self):
+        self.assertEqual(add_five(22), 27)
+        self.assertEqual(add_five(0), 5)
 ```
 ### !end-tests
 ### !explanation
@@ -46,13 +46,13 @@ class TestChallenge(unittest.TestCase):
 Two examples of a working implementation:
 
 ```python
-def adds_five(num):
+def add_five(num):
     sum = num + 5
     return sum
 ```
 
 ```python
-def adds_five(num):
+def add_five(num):
     return num + 5
 ```
 
@@ -69,7 +69,7 @@ def adds_five(num):
 * title: Functions, continued
 ### !question
 
-Create a function named `doubles_and_adds_two`. It has one parameter, `num`. The function should add `num` + `num` + `2`, and return the sum.
+Create a function named `double_and_add_two`. It has one parameter, `num`. The function should add `num` + `num` + `2`, and return the sum.
 
 | Example arguments | Example return value |
 | ----------------- | -------------------- |
@@ -83,9 +83,9 @@ import unittest
 from main import *
 
 class TestChallenge(unittest.TestCase):
-    def test_doubles_and_adds_two(self):
-        self.assertEqual(doubles_and_adds_two(50), 102)
-        self.assertEqual(doubles_and_adds_two(0), 2)
+    def test_double_and_add_two(self):
+        self.assertEqual(double_and_add_two(50), 102)
+        self.assertEqual(double_and_add_two(0), 2)
 ```
 ### !end-tests
 ### !explanation
@@ -93,13 +93,13 @@ class TestChallenge(unittest.TestCase):
 Two examples of a working implementation:
 
 ```python
-def adds_five(num):
+def double_and_add_two(num):
     sum = num + num + 2
     return sum
 ```
 
 ```python
-def adds_five(num):
+def double_and_add_two(num):
     return (num * 2) + 2
 ```
 
@@ -116,7 +116,7 @@ def adds_five(num):
 * title: Functions, continued
 ### !question
 
-Create a function named `doubles`. It has one parameter, `input`. If `input` is a number, the function should double `input` and return it. If `input` is a string, the function should concatenate `input` twice together.
+Create a function named `double`. It has one parameter, `input`. If `input` is a number, the function should double `input` and return it. If `input` is a string, the function should concatenate `input` twice together.
 
 | Example arguments | Example return value           |
 | ----------------- | ------------------------------ |
@@ -134,11 +134,11 @@ import unittest
 from main import *
 
 class TestChallenge(unittest.TestCase):
-    def test_doubles(self):
-        self.assertEqual(doubles(3), 6)
-        self.assertEqual(doubles(4), 8)
-        self.assertEqual(doubles("4"), "44")
-        self.assertEqual(doubles("Hello, World!"), "Hello, World!Hello, World!")
+    def test_double(self):
+        self.assertEqual(double(3), 6)
+        self.assertEqual(double(4), 8)
+        self.assertEqual(double("4"), "44")
+        self.assertEqual(double("Hello, World!"), "Hello, World!Hello, World!")
 ```
 ### !end-tests
 ### !explanation
@@ -146,7 +146,7 @@ class TestChallenge(unittest.TestCase):
 An example of a working implementation:
 
 ```python
-def doubles(input):
+def double(input):
     return input + input
 ```
 
