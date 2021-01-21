@@ -442,6 +442,10 @@ FAILED main.py::test_mystery_function - TypeError: mystery_function() takes 0 po
 * The line marked `E` shows _what_ error was encountered.
 * `main.py:31: TypeError` reinforces that a TypeError occurred during the test.
 * In the summary, the `FAILED` notice repeats any error messages from this test and any others which may have been found.
+* The line marked `>` shows the line where the error was encountered.
+* The line marked `E` shows _what_ error was encountered.
+* `main.py:31: TypeError` reinforces that a TypeError occurred during the test.
+* In the summary, the `FAILED` notice repeats any error messages from this test and any others which may have been found.
 ##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
@@ -628,6 +632,11 @@ FAILED main.py::test_mystery_function - assert False
 * `main.py:31: AssertionError` reinforces that an AssertionError occurred during the test.
 * In the summary, the `FAILED` notice repeats any error messages from this test and any others which may have been found.
 
+* The line marked `>` shows the line where the error was encountered.
+* The line marked `E` appearing on the `assert` line indicates the assertion itself failed.
+* `main.py:31: AssertionError` reinforces that an AssertionError occurred during the test.
+* In the summary, the `FAILED` notice repeats any error messages from this test and any others which may have been found.
+
 ##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
@@ -698,8 +707,16 @@ E       AttributeError: 'int' object has no attribute 'append'
 main.py:26: AttributeError
 ============================================== short test summary info ==============================================
 FAILED main.py::test_mystery_function - AttributeError: 'int' object has no attribute 'append'
+main.py:26: AttributeError
+============================================== short test summary info ==============================================
+FAILED main.py::test_mystery_function - AttributeError: 'int' object has no attribute 'append'
 ```
 
+* `a = 100, b = 0` shows us with what arguments the function that failed was called.
+* The line marked `>` shows the line where the error was encountered.
+* The line marked `E` shows _what_ error was encountered.
+* `main.py:26: AttributeError` reinforces that an AttributeError occurred during the test.
+* In the summary, the `FAILED` notice repeats any error messages from this test and any others which may have been found.
 * `a = 100, b = 0` shows us with what arguments the function that failed was called.
 * The line marked `>` shows the line where the error was encountered.
 * The line marked `E` shows _what_ error was encountered.
