@@ -815,6 +815,16 @@ class TestPython1(unittest.TestCase):
 Logic to find that something is odd or even is best solved using the modulo operator.
 
 ##### !end-hint
+### !explanation
+
+An example of a working implementation:
+
+```python
+def is_odd(num):
+    return True
+```
+
+### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -852,6 +862,19 @@ class TestPython1(unittest.TestCase):
 ```
 
 ##### !end-tests
+### !explanation
+
+An example of a working implementation:
+
+```python
+def is_odd(num):
+    if num % 2 == 0:
+        return False
+    else:
+        return True
+```
+
+### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -888,6 +911,21 @@ class TestPython1(unittest.TestCase):
 ```
 
 ##### !end-tests
+### !explanation
+
+An example of a working implementation:
+
+```python
+def is_odd(num):
+    if num < 0:
+        return None
+    elif num % 2 == 0:
+        return False
+    else:
+        return True
+```
+
+### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -923,5 +961,15 @@ class TestPython1(unittest.TestCase):
 ```
 
 ##### !end-tests
+### !explanation
+
+An example of a working implementation:
+
+```python
+def run_mystery_algorithm():
+    raise RuntimeError
+```
+
+### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
