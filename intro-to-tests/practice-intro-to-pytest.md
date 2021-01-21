@@ -4,9 +4,7 @@
 
 Complete all questions below.
 
-## Practice
-
-### Determining Best Test Cases
+## Determining Best Test Cases
 
 <!-- Question 1 -->
 <!-- prettier-ignore-start -->
@@ -378,7 +376,9 @@ Rearrange these lines of code so they become a valid unit test. Assume that each
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-### Reading Test Reports
+## Reading Test Reports
+
+We encourage you to copy and paste the large test output into a different file, program, editor, etc. if it helps you read it.
 
 <!-- Question 8 -->
 <!-- prettier-ignore-start -->
@@ -726,9 +726,9 @@ FAILED main.py::test_mystery_function - AttributeError: 'int' object has no attr
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-### Test-Driven Development
+## Test-Driven Development
 
-The following questions present a number of tests.  For each question, write a function that makes the test pass.
+The following questions present a number of tests. For each question, write a function that makes the test pass.
 
 <!-- Question 13 -->
 <!-- prettier-ignore-start -->
