@@ -107,6 +107,14 @@ my_bicycle_details = {
 }
 print(type(my_bicycle_details))
 print(type(my_bicycle_details["num_of_wheels"]))
+
+# Output:
+# <class 'str'>
+# <class 'int'>
+# <class 'float'>
+# <class 'list'>
+# <class 'dict'>
+# <class 'int'>
 ```
 
 ### Forcing a Data Type
@@ -126,14 +134,14 @@ my_num_as_float = float(my_lucky_number)
 my_num_as_str = str(my_lucky_number)
 my_num_as_bool = bool(my_lucky_number)
 
-print(my_num_as_float)
-print(my_num_as_str)
-print(my_num_as_bool)
+print(my_num_as_float) # prints 7.0
+print(my_num_as_str)   # prints 7
+print(my_num_as_bool)  # prints True
 
 my_lucky_fraction = 3.33
 my_fraction_as_int = int(my_lucky_fraction)
 
-print(my_fraction_as_int)
+print(my_fraction_as_int) # prints 3
 ```
 
 Callout: Often times, the behavior of converting isn't very predictable. What happens when we cast an empty list into a string? Or an integer into a boolean? It is best to experiment with converting in a REPL before using it in code.
@@ -176,11 +184,15 @@ f"The string to format and include Python syntax, where expressions inside curly
 We can observe these examples:
 
 ```python
-print(f"The sum of 2 + 3 is {2 + 3}")
+print(f"The sum of 2 + 3 is {2 + 3}") 
 
 pineapples = "mY pInEaPpLe mEsSaGe"
 
-print(f"Here is {pineapples}!")
+print(f"Here is {pineapples}!") 
+
+# Output
+# "The sum of 2 + 3 is 5"
+# "Here is mY pInEaPpLe mEsSaGe!"
 ```
 
 There are many other ways to combine strings and non-string values. Some methods include concatenation, or the `format()` method. Feel free to research these and use them; follow your curiosity!
