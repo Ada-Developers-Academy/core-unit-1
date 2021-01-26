@@ -83,6 +83,16 @@ if score > 150000:
 
 The code snippet below returns a `TypeError: can't multiply sequence by non-int of type 'str’` which means we cannot multiply strings. Let's check the data type of the inputs, starting with `n1`. Which option holds the syntax we use to check `n1`'s data type in a print statement?
 
+```python
+1 n1 = input("enter a number: ")
+2 n2 = input("enter another number: ")
+3
+4 def multiply(n1, n2):
+5  	return n1*n2
+6
+7 multiply(n1,n2)
+```
+
 ##### !end-question
 
 ##### !options
