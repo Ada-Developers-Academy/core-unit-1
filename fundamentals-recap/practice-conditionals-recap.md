@@ -410,6 +410,12 @@ else:
     print("Must reach level 10 and achieved 8 stars")
 ```
 ##### !end-answer
+
+##### !hint 
+
+Read this line carefully: Mario needs to reach a skill level of at least 10 **and** earn at least 8 stars from previous stages.
+
+##### !end-hint
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
