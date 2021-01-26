@@ -41,7 +41,7 @@ Using truthiness and falsiness, we can create control statements in Python. Thes
 
 ```python
 this_expression_is_truthy = True
-a_different_experssion_is_truthy = True
+a_different_expression_is_truthy = True
 
 if this_expression_is_truthy:
     print("The expression is truthy!")
@@ -81,7 +81,7 @@ True and 100
 3 > 0 and 100 <= 999
 ```
 
-For `or`, if at least one side is truthy, then the entire experssion is `True`. Otherwise, it's `False`. The following examples evaluate as `True`:
+For `or`, if at least one side is truthy, then the entire expression is `True`. Otherwise, it's `False`. The following examples evaluate as `True`:
 
 ```python
 False or True
