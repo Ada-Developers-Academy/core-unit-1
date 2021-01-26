@@ -559,7 +559,7 @@ Assume that `users_speech` is a string that holds all of the recent speech that 
 
 ##### !explanation
 
-Alexa software requires at least one wake word in order to turn on and process requests. The `or` ensures that `print("processing your request...")` will execute if EITHER alexa or echo is used. `and` would require the user to say both "Alexa" AND "echo" in order to turn on Alexa.
+Alexa software requires at least one wake word in order to turn on and process requests. The `or` ensures that `print("processing your request...")` will execute if EITHER alexa or echo is used. The `and` would require the user to say both "Alexa" AND "echo" in order to turn on Alexa.
 
 ##### !end-explanation
 ### !end-challenge
