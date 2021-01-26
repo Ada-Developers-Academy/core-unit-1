@@ -276,8 +276,7 @@ elif membership_tier == "Premium":
     discount = .15
 elif membership_tier == "Platinum":
     discount = .20
-else membership_tier == "None":
-    discount = 0
+else:
     print("Become a member and have access to discounts today! Terms and conditions will apply.")
 ```
 
