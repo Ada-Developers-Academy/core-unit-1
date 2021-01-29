@@ -276,8 +276,7 @@ elif membership_tier == "Premium":
     discount = .15
 elif membership_tier == "Platinum":
     discount = .20
-else membership_tier == "None":
-    discount = 0
+else:
     print("Become a member and have access to discounts today! Terms and conditions will apply.")
 ```
 
@@ -411,6 +410,12 @@ else:
     print("Must reach level 10 and achieved 8 stars")
 ```
 ##### !end-answer
+
+##### !hint 
+
+Read this line carefully: Mario needs to reach a skill level of at least 10 **and** earn at least 8 stars from previous stages.
+
+##### !end-hint
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -554,7 +559,7 @@ Assume that `users_speech` is a string that holds all of the recent speech that 
 
 ##### !explanation
 
-Alexa software requires at least one wake word in order to turn on and process requests. The `or` ensures that `print("processing your request...")` will execute if EITHER alexa or echo is used. `and` would require the user to say both "Alexa" AND "echo" in order to turn on Alexa.
+Alexa software requires at least one wake word in order to turn on and process requests. The `or` ensures that `print("processing your request...")` will execute if EITHER alexa or echo is used. The `and` would require the user to say both "Alexa" AND "echo" in order to turn on Alexa.
 
 ##### !end-explanation
 ### !end-challenge
