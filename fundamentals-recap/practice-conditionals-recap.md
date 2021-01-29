@@ -471,7 +471,7 @@ else:
 ``` Python
 if customer_age <= 10:
     ticket_price = 10.00
-elif customer_age > 11 and customer_age <= 17:
+elif customer_age >= 11 and customer_age <= 17:
     ticket_price = 13.00
 elif customer_age >= 18 and customer_age < 60:
     ticket_price = 15.00
@@ -489,7 +489,7 @@ else:
 ``` Python
 if customer_age <= 10:
     ticket_price = 10.00
-elif customer_age > 11 and customer_age <= 17:
+elif customer_age >= 11 and customer_age <= 17:
     ticket_price = 13.00
 elif customer_age >= 18 and customer_age < 60:
     ticket_price = 15.00
