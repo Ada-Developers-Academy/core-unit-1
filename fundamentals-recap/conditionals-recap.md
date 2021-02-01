@@ -203,7 +203,7 @@ var4 = [0, 0]
 var5 = "None"
 ```
 
-Select all the options that will evaluate to true:
+Select all options that will evaluate to true:
 
 ##### !end-question
 ##### !options
