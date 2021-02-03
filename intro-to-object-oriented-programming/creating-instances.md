@@ -60,7 +60,7 @@ Album("Purple Rain")
 
 ## Don't Pass in `self`
 
-**We do not need to pass in a value for the first `self` argument.** When we instantiate a class, Python will automatically pass in the correct value for `self`.
+**We do not need to pass in a value for the first argument, `self`.** When we instantiate a class, Python will automatically pass in the correct value for `self`.
 
 ### !end-callout
 
