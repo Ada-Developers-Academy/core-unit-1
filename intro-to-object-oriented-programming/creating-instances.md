@@ -7,7 +7,9 @@
 
 ## Creating Instances
 
-Instances are concrete manifestations of classes. The following expression creates an instance of a class:
+An instance is a concrete example of a class.  Each instance has its own state, stored in its attributes.
+
+The following expression creates an instance of a class:
 
 ```python
 ExampleClassName()
@@ -15,7 +17,7 @@ ExampleClassName()
 
 We take the exact class name and attach `()` to the right of it, as if invoking it like a function.
 
-This tells Python to start a series of processes, such as running the `__init__` method. The expression turns into a new instance.
+This tells Python to start the sequence of steps it must perform to create a new instance. This includes running the `__init__` method of the class referred to in the expression. The expression evaluates to a reference to the new instance.
 
 We can create multiple, different instances with the same syntax. The code below will make three different instances:
 
@@ -62,7 +64,7 @@ Album("Purple Rain")
 
 ### !end-callout
 
-It's worth it to recognize that, even if the arguments are the same, calling `Album(...)` will _always_ make another instance. The following code still makes _two_ instances of `Album`:
+It's worth it to recognize that, even if the arguments are the same, calling `Album(...)` will _always_ make another instance. The following code still makes _two_ instances of `Album`, each of which happens to have its title set to "Dirty Computer."
 
 ```python
 Album("Dirty Computer")
@@ -160,7 +162,7 @@ def get_specific_driver_instance():
 We can read and use an instance of a class just like any other variable.
 
 ```python
-name_of_instance
+name_of_instance  # assume contains an instance of <class name here>
 ```
 
 We can use this variable in a lot of different ways, such as printing it, or passing it into a function:
@@ -174,10 +176,10 @@ class Album:
 # After the class definition...
 
 purple_rain = Album("Purple Rain")
-print( type(purple_rain) )
+print(type(purple_rain))
 ```
 
-When we run the above code, we'll get output similar to this:
+When we run the above code, we get output similar to this:
 
 ```
 <class '__main__.Album'>
@@ -185,9 +187,15 @@ When we run the above code, we'll get output similar to this:
 
 We can call `type()` and pass in `purple_rain` in order to see what data type `purple_rain` is. It prints out `<class '__main__.Album'>`, which indicates that it's of class `Album` (located inside a namespace named `__main__`. This detail is less relevant).
 
+### !callout-info
+
+We use `type()` mostly for debugging purposes. We usually won't write code that uses `type()` as part of our program logic.
+
+### !end-callout
+
 ### Reading Attributes
 
-We can read an attribute from an instance using the dot-operator:
+We can read an attribute from an instance using the dot operator:
 
 ```python
 example_instance.name_of_attribute
@@ -202,7 +210,7 @@ To get the value of the `title` attribute from the album "Purple Rain," we need 
 
 ```python
 purple_rain = Album("Purple Rain")
-print( purple_rain.title )
+print(purple_rain.title)
 ```
 
 This example outputs `Purple Rain`.
@@ -212,7 +220,7 @@ Of course, we can assign this value to yet another local variable:
 ```python
 purple_rain = Album("Purple Rain")
 album_title = purple_rain.title
-print( album_title )
+print(album_title)
 ```
 
 <!-- Question 2 -->
@@ -300,13 +308,15 @@ class Album:
         self.title = title
 
 album = Album("Purple Rain")
-print( album.title )
+print(album.title)
 
 album.title = "Dirty Computer"
-print( album.title )
+print(album.title)
 ```
 
-What will the output be? We should see that the `title` attribute of the instance on `album` goes from `"Purple Rain"` to `"Dirty Computer"`.
+What will the output be?
+
+First we create an album with a title of "Purple Rain" and print that title. Then we re-assign the title to be "Dirty Computer" and print the title again. So we get the following output:
 
 ```
 Purple Rain
@@ -315,9 +325,9 @@ Dirty Computer
 
 ## Multiple Instances in One Program
 
-Not only do we want to make one or two `Album`s and `Driver`s, we may want to make hundreds of them, all within one program.
+For larger programs, making only one or two `Album`s or `Driver`s may not be enough. We might need to make hundreds of them or more, all within the same program. Think of an application that tracks your music library, or a ride-share service with hundreds of drivers, and even more passengers!
 
-Understanding instances requires us to understand that instances will occupy separate places in memory, and will keep track of different values for attributes.
+To use multiple instances effectively, we must remember that each instance keeps track of its own values for the attributes defined by the class. The values of these attributes for each instance makes up that instance's state. The state of each instance occupies its own place in memory, separate from any other instance.
 
 ### Experiment: Printing Objects and Seeing Different IDs
 
@@ -337,9 +347,9 @@ purple_rain = Album("Purple Rain")
 print(f"This is what happens when we print purple_rain: {purple_rain}")
 ```
 
-The output `<__main__.Album object at 0x1020fcaf0>` is Python's default behavior for how to print and represent an `Album` object. The `0x1020fcaf0` is a unique identifier.
+The output `<__main__.Album object at 0x1020fcaf0>` is Python's default behavior for how to print and represent an `Album` object. The `0x1020fcaf0` is a unique identifier. If you run this code yourself, you will likely get a different unique identifier.
 
-Now, observe this code. When looking at the output, we should count how many unique instances there are, how many unique IDs there are, and to see if any of these IDs change over the duration of the program.
+Now, observe this code. When looking at the output, we can count how many unique instances there are, how many unique IDs there are, and we can see whether any of these IDs change over the duration of the program.
 
 ```python
 class Album:
@@ -365,6 +375,6 @@ Another album named Purple Rain: <__main__.Album object at 0x10b31c0a0>
 Dirty Computer: <__main__.Album object at 0x10b28c850>
 ```
 
-Note that even though two instances of `Album` both have the same title, `"Purple Rain"`, they are separate instances that have different IDs.
+Note that even though two instances of `Album` both have the same title, `"Purple Rain"`, they are separate instances that have different IDs. Again, when you run this yourself, the ID values will most likely differ from the values shown here, but each will be distinct from the other `Album` IDs.
 
 <!-- No CFU; this lesson has several questions throughout the lesson -->
