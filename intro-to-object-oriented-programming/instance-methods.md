@@ -2,27 +2,25 @@
 
 ## Learning Goals
 
-Define instance methods
-Practice building classes with instance methods
+- Define instance methods
+- Practice building classes with instance methods
 
-## Instance Methods are Behaviors Instances Can Do
+## Instance Methods Are Behaviors Instances Can Do
 
 Class definitions can contain functions. When a function is inside of a class, we call those functions **methods.**
 
 **Instance methods** are behaviors that _instances_ of classes can do.
 
-| Class  | Instances                                                                                                                 | Something Kept in                                                            | Behavior it Can Do |
-| ------ | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------ |
-| String | `"Hello World! I am an instance of a String!"`                                                                            | Become CAPITALIZED if it needs to                                            |
-| List   | `["red", "orange", "yellow"]`                                                                                             | Reverse the order of its elements                                            |
-| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67                                     | Calculate its own average rating, tell you the number of trips they've taken |
-| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has                          |
+| Class  | Instances | Behavior It Can Do |
+|-|-|-|
+| String | `"Hello World! I am an instance of a String!"`| Become CAPITALIZED if it needs to |
+| List   | `["red", "orange", "yellow"]` | Reverse the order of its elements |
+| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67 | Calculate its own average rating, tell you the number of trips they've taken |
+| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has |
 
 ## Defining Instance Methods
 
-Because instance methods are functions inside of the class definition, instance methods can use `self`... In fact, in some ways it _must_!
-
-Instance methods are defined with similar syntax to other functions. But, just like the `__init__` method, the first parameter listed **must** be `self`.
+Instance methods are defined with similar syntax to other functions. But to be an instance method, they must appear inside a class definition, and just like the `__init__` method, the first parameter listed **must** be `self`.
 
 ```python
 class ExampleClassName:
@@ -31,9 +29,9 @@ class ExampleClassName:
         pass
 ```
 
-- We can specify a `return` value!
+- We can `return` a value
 - We can add as many parameters we want after `self`
-- Inside of this method, we can access attributes and _other_ methods, using `self`
+- Inside of this method, we can access attributes and _other_ methods of the instance, using `self`
 - We can do any other typical Python logic in here, such as loops, conditionals, etc.
 
 ### !callout-info
@@ -67,7 +65,7 @@ class Album:
         return self.track_list
 ```
 
-In the above example, the instance method `get_audio_data` reads the attribute `track_list`. It returns and reads this attribute with `return self.track_list`. It will return whatever the value of `self.track_list` is, which was defined in the `__init__` method; it was assigned to `tracks`.
+In the above example, the instance method `get_audio_data` reads the attribute `track_list`. It reads and returns this attribute with `return self.track_list`. It will return whatever the value of `self.track_list` is, which was defined in the `__init__` method. It was assigned the value passed in as the `tracks` parameter.
 
 ```python
 class Album:
@@ -78,13 +76,13 @@ class Album:
         self.track_list = tracks
 
     def get_audio_data(self, track_index):
-        if len(self.track_list) > 0:
+        if self.track_list:
             return self.track_list[track_index - 1]
         else:
             return "The track list is empty"
 ```
 
-In the above example, the instance method `get_audio_data` takes an additional parameter `track_index`. This means that whenever we call this method, we must pass in an argument for `track_list`. `track_list` will represent the index track we want audio data from.
+In the above example, the instance method `get_audio_data` takes an additional parameter `track_index`. This means that whenever we call this method, we must pass in an argument for `track_list`. `track_list` represents the index track we want audio data from.
 
 Inside the `get_audio_data` method, we use the attribute `self.track_list` _**and**_ the argument `track_index`. We assume `self.track_list` is a list, and we use a conditional statement.
 
@@ -158,7 +156,7 @@ class Driver:
 Create a `Driver` class that meets these specifications:
 
 - The constructor should expect one parameter, which will be a record of trips
-- The constructor should assign a value to an attribute that is the record of trips
+- The constructor should assign a value to an attribute that will hold the record of trips
     - We can assume that the attribute is a list
 - There should be an instance method named `get_number_of_trips`
     - Return the length of the list of trips
@@ -225,7 +223,7 @@ When we call an instance method, we never specify that the first parameter is `s
 
 Inside of a class definition, our reference to an instance is usually through `self`.
 
-This is an example where `Album` has two instance methods: `get_genre` and `get_audio_data`. We should observe that in `get_audio_data`, it calls the method `get_genre` through `self`.
+In this example, `Album` has two instance methods: `get_genre` and `get_audio_data`. Observe that in `get_audio_data`, it calls the method `get_genre` through `self`.
 
 ```python
 class Album:
@@ -258,10 +256,10 @@ Inside of the `get_audio_data`, we leverage all of the other Python knowledge we
 
 ##### !question
 
-Modify this existing `Driver` class:
+Modify the supplied `Driver` class:
 
 - Modify the line `avg_rating = total_rating / 1` inside of `get_avg_rating`
-- This line should call the method `get_number_of_trips`
+- This line should make use of the method `get_number_of_trips` so that it properly calculates the average trip rating.
 
 ##### !end-question
 
@@ -332,9 +330,11 @@ class Driver:
 
 ### Calling Instance Methods Outside a Class Definition
 
-Outside of a class definition, our reference to an instance is usually through a variable after making an instance.
+Outside of a class definition, our reference to an instance is often through a variable that was set after making the instance.
 
-This is an example of creating an instance of `Album` in the variable `purple_rain`. On the next line, this instance calls the method `get_genre`.
+We'll also see the instance being passed into other functions, or being stored in other objects as well. In those cases, we access the instance through the relevant parameter, or an attribute on some other object. The way we call instance methods on the object is the same for all those cases.
+
+This example creates two `Album` instances, storing each in their own variable. After storing the instances, we use the dot operator on each variable to call the method `get_genre` on each instance.
 
 ```python
 purple_rain = Album()
@@ -344,9 +344,9 @@ dirty_computer = Album()
 dirty_computer.get_genre()
 ```
 
-The above example, `get_genre` was defined with no parameters besides `self`.
+In the above example, we assume that both the constructor and `get_genre` were defined with no parameters besides `self`.
 
-This is an example of creating an instance of `Album` in the variable `purple_rain`. This instance calls the method `get_audio_data`, and passes in the argument `1`.
+This example creates two `Album` instances with their own track lists, storing each in their own variable. After storing the instances, we use the dot operator on each variable to call the method `get_audio_data` on each instance, passing in the track number for which to get the data.
 
 ```python
 purple_rain = Album(["When Doves Cry"])
@@ -356,9 +356,13 @@ dirty_computer = Album(["Dirty Computer", "Take a Byte"])
 dirty_computer.get_audio_data(2)
 ```
 
+In the above example, we assume that the constructor accepts a list of track data, and `get_audio_data` accepts a track number, in addition to the required `self` parameter.
+
 ## Tracing Code Through Instance Methods
 
-In OOP, with so many more class definitions and method definitions, a skill to practice is tracing code. When we trace code, we pick a line of code that gets executed, and follow the path to see other code gets called.
+It's important to practice tracing code when working with OOP, just as it is with any other programming paradigm. When we trace code, we pick a line of code to start from, and assume some current program state. Then we execute each line ourselves as Python would, and follow the path to see what other code gets called.
+
+Having somewhere to take notes about how the state changes can be very helpful!
 
 If we come across code that looks like this, we ask "What is happening when this method gets called?"
 
@@ -376,9 +380,9 @@ To answer that question, we might follow certain steps to trace code:
 - What do we know about the method being called?
   - What is to the right of the `.` (dot operator)?
   - Is it a method being invoked, with `()` at the end?
-  - Where is this method being defined? Is it inside of the class definition?
+  - Where is this method defined? Is it inside the class definition?
 
-Once we've determined where the method is being defined, we can trace the code into that method definition.
+Once we've determined where the method is defined, we can trace the code into that method definition.
 
 For example, let's consider debugging this:
 
@@ -399,9 +403,9 @@ These answers should lead us to the `get_audio_data` method inside of the `Album
 
 ## Debugging OOP and Instance Methods
 
-Recall that every instance keeps track of the values to their own attributes.
+Recall that every instance keeps track of the values of their own attributes.
 
-The debugger tool gives us great insight into the attributes of any instance. We can inspect each instance to see the details.
+The debugger tool gives us great insight into the attributes of any instance. We can inspect each instance to see the current value of any object attribute. We can also use the debugger to step into instance methods, just as we can step into regular functions. This can help us understand the operation of a complex piece of code more quickly!
 
 <!-- insert image and details relevant to the image ;_; -->
 <!-- TODO: insert more text lol -->
