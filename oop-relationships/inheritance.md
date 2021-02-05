@@ -14,6 +14,9 @@
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
+| Inheritance | A programming mechanism that allows classes to inherit attributes from another class. | ---      |"I'll use inheritance so the `Chocolate` class can inherit the `sugar serving` and `eat_in_one_sitting()` method from the `Candy` class. |
+| Parent class | A class that contains variables and methods that can be inherited to other classes | base class, super class     |"`Candy` class is the parent class to `Chocolate` class." |
+| Child class | A class that contains its own variables and methods but also inherits the variables and methods from a parent class | derived class, sub class     |"`Chocolate` class is the parent class to `Candy` class." |
 
 ## Syntax for Inheritance
 
@@ -29,7 +32,7 @@ Compared to classes without explicit inheritance, this syntax:
 - Adds `()`s to the right of the class name
 - Puts the name of the parent class in the `()`s
 
-Depending on how the project is organized, it's possible that this module needs to import the parent class, now:
+Depending on how the project is organized, we may need to import the parent class so that Python is able to find the name. Like this:
 
 ```python
 import ExampleParentClass
@@ -78,7 +81,7 @@ Read through these observations, and then predict what the console output is fro
     - `SendPaymentButton` did not define its own `__init__` method
     - Therefore, it looks to its parent class to see if it implements `__init__`
     - Because `Button` _does_ implement `__init__`, the child class will inherit it
-- When we print `submit_btn`, our instance of `SendPaymentButton`, Python will recognize that it is type `SendPaymentButton`, not `Button`
+- When we print `submit_btn`, our instance of `SendPaymentButton`, Python recognizes that it is type `SendPaymentButton`, not `Button`
 - We can successfully invoke the instance method `on_button_press`
     - `SendPaymentButton` did not define `on_button_press`
     - `Button` _does_ define `on_button_press`

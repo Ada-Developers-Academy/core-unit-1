@@ -13,11 +13,11 @@
 | Vocab | Definition | Synonyms | How to Use in a Sentence
 | --- | --- | --- | ---
 
-## Composition Affects Our Attributes
+## Initializing Components as Attributes in the Constructor
 
-This can manifest in code in a number of ways.
+It's common to set the attributes of a composite class to component instances provided by other code that uses our class. Python lets us assign to attributes directly. We can let all the components in our class be passed into the constructor of the composite class, and assign the attributes in the constructor itself.
 
-We could pass in an instance of the component class into the composite class's constructor, and assign it to an attribute:
+Consider this example:
 
 ```python
 class ExampleComponent:

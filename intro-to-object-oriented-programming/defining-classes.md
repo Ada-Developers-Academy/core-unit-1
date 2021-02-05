@@ -19,7 +19,7 @@ Classes represent _things_, _ideas_, _concepts_, or _other kinds of nouns_ that 
 
 Developers define classes after realizing that encapsulating (bundling together) state and behavior into one data type will make problem-solving easier.
 
-Developers define classes any time:
+Developers define classes any time! We might define new classes:
 
 - At the beginning of a project, after reading a problem statement
 - In the middle of a project, after discovering that a deeper part of the problem needs a new class
@@ -215,7 +215,7 @@ Exactly like that, the `self` parameter exists for every instance method. Howeve
 
 ## Attributes: Variables on `self`
 
-Recall that **attributes** hold pieces of data relevant to a class. These pieces of data are attached to particular object instances. The collection of attributes attached to an object holds that instance's _state_.
+Recall that **attributes** hold pieces of data relevant to a class. These pieces of data are attached to particular object instances. The collection of attributes attached to an object holds that instance's _state_. We can add to the state any attributes that we feel are necessary to capture the important features of a class.
 
 We define the attributes of an object instance in the instance methods of a class definition, usually in `__init__`. 
 

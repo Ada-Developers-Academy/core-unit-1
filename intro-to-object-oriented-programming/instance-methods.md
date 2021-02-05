@@ -76,15 +76,15 @@ class Album:
         self.track_list = tracks
 
     def get_audio_data(self, track_index):
-        if self.track_list:
+        if 0 < track_index <= len(self.track_list):
             return self.track_list[track_index - 1]
         else:
-            return "The track list is empty"
+            return "Invalid track"
 ```
 
 In the above example, the instance method `get_audio_data` takes an additional parameter `track_index`. This means that whenever we call this method, we must pass in an argument for `track_list`. `track_list` represents the index track we want audio data from.
 
-Inside the `get_audio_data` method, we use the attribute `self.track_list` _**and**_ the argument `track_index`. We assume `self.track_list` is a list, and we use a conditional statement.
+Inside the `get_audio_data` method, we use the attribute `self.track_list` _**and**_ the argument `track_index`. We assume `self.track_list` is a list, and we use it in a conditional statement. We use `track_index` in the line `return self.track_list[track_index - 1]`.
 
 <!-- Question 1 -->
 

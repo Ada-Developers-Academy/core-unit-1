@@ -47,7 +47,7 @@ These considerations are similar to how we solve problems in programming.
 
 | Vocab                   | Definition                                                                                                                                                    | Synonyms       | How to Use in a Sentence                                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Software design pattern | Reusable patterns commonly used to solve problems. Usually describes how classes/functions are structured and used. Usually conceptual and language-agnostic. | design pattern | "Janice has come across a similar problem before in a different project. To solve it, her team used the adapter design pattern, and made an adapter class." |
+| Software design pattern | Reusable patterns commonly used to solve problems. Usually describes how classes and functions are structured and used. Usually conceptual and language-agnostic. | design pattern | "Janice has come across a similar problem before in a different project. To solve it, her team used the adapter design pattern, and made an adapter class." |
 
 ## What are Design Patterns?
 
@@ -98,11 +98,11 @@ When the boxes are unloaded, Tatiana wishes that each box went directly to the c
 
 There is such a thing as "overdesigning," or using a design pattern that increases complexity way more than necessary.
 
-In general, it's often best to implement a solution without a design pattern, make a git commit, and then refactor.
+It's often best to implement a solution without a design pattern, make a git commit, and then refactor.
 
 ## Moving Forward: How Do We Use These?
 
-Design patterns are applied when it makes problem-solving easier. In general, it takes time, experience, research, context, and experimentation to apply design patterns effectively.
+Design patterns are applied when it makes problem-solving easier. It takes time, experience, research, context, and experimentation to apply design patterns effectively.
 
 When considering a design pattern, the team should consider:
 
