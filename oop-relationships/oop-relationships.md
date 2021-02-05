@@ -126,12 +126,123 @@ As classes interact with each other, code becomes more complex. By nature, inher
 
 ## Check for Understanding
 
-<!-- Make up a scenario of inheritance, identify parent class, child class -->
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 0375c3e0-7e50-49b4-bbbd-2d58951876c1
+* title: Inheritance
+##### !question
+Imagine we are creating a virtual petting zoo named "Ada Animals" ("Adanimals" for short).
 
-<!-- A second one of those if we're creative enough -->
+We have two classes so far: `Mammal` and `Bear`.
 
-<!-- Make up a scenario of composition, identify composite class and component class -->
+Select the option that best describes the parent-child relationship between the two classes.
+##### !end-question
+##### !options
+* `Bear` inherits methods from `Mammal`.
+* `Bear` inherits variables and methods from `Mammal`
+* `Mammal` inherits variables and methods from `Bear`
+##### !end-options
+##### !answer
+* `Bear` inherits variables and methods from `Mammal`
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- A second one of those if we're creative enough -->
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: Zl7xHN
+* title: Inheritance
+##### !question
+The Adanimals app needs help determining what information is shared between `Mammal` and `Bear`.
 
-<!-- Make up a scenario, MC on if it's inheritance, composition, or neither -->
+All mammals will identified with a name, having two or 4 legs, region, the ability to eat, and the ability to reproduce.
+
+Bears will be identified by their species name, fur, region, size, the ability to growl, and average hibernation cycle.
+
+Which of the following traits and behaviors are shared between `Mammal` and `Bear`?
+##### !end-question
+
+##### !options
+* `Mammal` will share name, fur, region, size, the abiity to growl, and average hibernation cycle with `Bear`.
+* `Bear` will share name, fur, region, size, the abiity to growl, and average hibernation cycle with `Mammal`.
+* `Mammal` will share name, having two or 4 legs, region, the ability to eat and the ability to reproduce with `Bear`.
+##### !end-options
+##### !answer
+* `Mammal` will share name, having two or 4 legs, region, the ability to eat and the ability to reproduce with `Bear`.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 6b0f49f3-853c-4158-a22f-af8a4818acc1
+* title: OOP-Relationships
+##### !question
+Harley's HR Company is using OOP to build a dashboard to display the benefits plan for employees. Every employee has a type of benefits plan. Harley plans on segmenting all data about employees in the `Employee` class and all info about benefits in the `BenefitPlan` class. With this information in mind, select the option that best describes the classes and their relationship to each other.
+##### !end-question
+##### !options
+* `BenefitPlan` is the child class. `Employee` is the parent class.
+* `BenefitPlan` is the composite class. `Employee` is the component class.
+* `BenefitPlan` is the component class. `Employee` is the composite class.
+##### !end-options
+##### !answer
+* `BenefitPlan` is the component class. `Employee` is the composite class.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 31f651e3-aa01-47f4-8e02-ece744f35515
+* title: OOP Relationships
+##### !question
+Dino's Donut store is creating an online store using OOP. Dino has two classes: `DonutStore` and `Donuts`.
+
+`DonutStore` can display donuts and provide images of each donut from the list of several instances of the `Donut` class.
+
+Select the option that best describes this relationship.
+##### !end-question
+##### !options
+
+* Composition
+* Inheritance
+* Composite
+
+##### !end-options
+##### !answer
+
+* Composition
+
+##### !end-answer
+### !end-challenge
+<!--prettier-ignore-end -->
+
+<!-- Question 5 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: m0s5n1
+* title: OOP Relationships
+##### !question
+Val's Vehicles is a mobile app that sells boats, motorcycles and more. In the app, each sale item will be identified as an instance of a specific class such as `Vehicle`, `Boat`, and `Motorcycle`. `Boat` and `Motorcyle` use a lot of the same attributes and methods that `Vehicle` has.
+
+Using what type of OOP relationship would best describe how the `Vehicle`, `Boat`, and `Motorcyle` classes interact with each other?
+##### !end-question
+##### !options
+* Composition
+* Inheritance
+* Composite
+##### !end-options
+##### !answer
+* Inheritance
+##### !end-answer
+### !end-challenge
+<!--prettier-ignore-end -->

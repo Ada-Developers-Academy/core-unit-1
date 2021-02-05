@@ -283,10 +283,60 @@ from driver import non_existing_class_or_function
 
 - An `ImportError` is raised because we're trying to import an object named `non_existing_class_or_function` from an existing module `driver`
 - There's an import statement that can't find what to import within the module
-    - Double-check that the module defines what you're trying to import with the exact same name
-    - This should be a class or function defined in the module
+  - Double-check that the module defines what you're trying to import with the exact same name
+  - The name should refer to a top-level class, function, or variable defined in the module
 
 ## Summary
 
 ## Check for Understanding
 
+<!-- The first question (Project Structure) should use a main.py, or some other file outside the package to hold the main logic. Generally, only logic related to the setup of the package or package-level exports should be in init.py
+
+For the second question (Importing modules)
+
+it refers to guest.py in the question and the file label, but the class shown is Host, so change the filenames to match
+consider rephrasing to something like "if we try to use the host.py module in our project" rather than "running" it. We shouldn't encourage running package modules directly. -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: f032adcb-c05b-4591-96b9-58bc24d7ee79
+* title: Importing modules
+
+##### !question
+
+Hosts for AdaBnB can host guests at multiple properties on the app. Each property is an instance of a `Place` class. If we ran `guest.py`, we would receive a `NameError`. Select the option that describes how to solve this `NameError`.
+
+`guest.py`
+``` Python
+class Host:
+    def __init__(self, host_properties):
+        self.name = name
+        self.host_properties = host_properties
+        print(f"I'm creating an instance of a Host named {self.name}!")
+
+    def create_places(self):
+        properties = []
+        for host_property in self.host_properties:
+            host_property = Place()
+            properties.append(host_property)
+        return properties
+```
+
+##### !end-question
+
+##### !options
+
+* `from place import Place` at the end of `guest.py`
+* `from place import Place` right before we create assign `host_property` to an instance of the `Place` class.
+* `from place import Place` at the beginning of `guest.py`
+
+##### !end-options
+
+##### !answer
+* `from place import Place` at the beginning of `guest.py`
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->

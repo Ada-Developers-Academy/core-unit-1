@@ -258,3 +258,153 @@ Class methods are great for:
 
 <!-- Use the static method decorator to create a static method that... -->
 <!-- Use the class method decorator to create a static method that... -->
+
+<!-- Problem 2 (Static Methods and Class Methods II):
+
+includes "has access to instance variables (attributes) or class variables." but it does not have access to instance variables. This should just be "has access to class variables, but not instance variables."
+Problem 4 (Static Methods and Class Methods IV):
+
+has a typo in the answer output "You"
+has weird stuff going on with an extra print in the classmethod
+the "wrong" answer prints the same correct answer string -->
+
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: 6d4dab23-bc9d-45fa-a4d8-07689ecf84c7
+* title: Static Methods and Class Methods
+##### !question
+Select the options that complete this sentence:
+
+> A static method ...
+##### !end-question
+##### !options
+* is bound to a class
+* does not have access to instance variables (attributes) or class variables
+* can access or modify class state
+* requires `cls` as first argument
+##### !end-options
+##### !answer
+* is bound to a class
+* does not have access to instance variables (attributes) or class variables
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: qt76TH
+* title: Static Methods and Class Methods
+##### !question
+Select the options that complete this sentence:
+
+> A class method ...
+##### !end-question
+##### !options
+* is bound to a class
+* has access to class variables, but not instance variables
+* can access or modify class state
+* requires `cls` as first argument
+##### !end-options
+##### !answer
+* is bound to a class
+* has access to class variables, but not instance variables
+* can access or modify class state
+* requires `cls` as first argument
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 3c69fae9-f63c-42f4-915a-9fca215bc374
+* title: Static Methods and Class Methods
+##### !question
+Select the best decorator to decorate the `subtract_numbers` method.
+
+```python
+class Calculator:
+    def subtract_numbers(x, y):
+        return x - y
+```
+##### !end-question
+##### !options
+* `@staticmethod`
+* `@classmethod`
+##### !end-options
+##### !answer
+* `@staticmethod`
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: 1d5979f7-0617-4a16-88f7-2da87c6c5a75
+* title: Static Methods and Class Methods
+##### !question
+Select the option that will print the following output after invoking `display_total(20)`:
+
+```
+Your total will be $20.
+Ask about our membership program to receive a 10% discount today!
+```
+##### !end-question
+##### !options
+* 
+```python
+class CalculateTotal:
+    summer_discount = 10
+    winter_discount = 15
+
+    @classmethod
+    def promote_membership(cls):
+        return(f"Ask about our membership program to receive a {cls.summer_discount}% discount today!")
+
+def display_total(amount):
+    print(f"You total will be ${amount}")
+    print(CalculateTotal.promote_membership())
+```
+
+* 
+```python
+class CalculateTotal:
+    summer_discount = 10
+    winter_discount = 15
+
+    @staticmethod
+    def promote_membership(cls):
+        return(f"Ask about our membership program to receive a {cls.summer_discount}% discount today!")
+
+
+def display_total(amount):
+    print(f"Your total will be ${amount}")
+    print(CalculateTotal.promote_membership())
+```
+
+##### !end-options
+##### !answer
+* 
+```python
+class CalculateTotal:
+    summer_discount = 10
+    winter_discount = 15
+
+    @classmethod
+    def promote_membership(cls):
+        return(f"Ask about our membership program to receive a {cls.summer_discount}% discount today!")
+
+def display_total(amount):
+    print(f"You total will be ${amount}")
+    print(CalculateTotal.promote_membership())
+```
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->

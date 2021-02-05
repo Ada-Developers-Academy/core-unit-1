@@ -111,6 +111,120 @@ When considering a design pattern, the team should consider:
 - What are the benefits of implementing this design pattern?
 - What are the alternatives?
 
+### !callout-info
+
+## Hungry for Examples?
+
+As mentioned, applying design patterns takes time, experience, research, context, and experimentation. If you're hungry to see examples of design patterns in Python, feel free to do extra research. One external resource to begin your research may be [python-patterns.guide](https://python-patterns.guide/).
+
+### !end-callout
+
 ## Check for Understanding
 
 <!-- Something like matching between design pattern and definition. x3 times. Test Iterator, Decorator, and Factory, as these are the most common patterns for a junior dev (IMHO) -->
+
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: be55b24a-8a6e-4bcc-9661-f5354cdd59b6
+* title: Intro to Design Patterns
+##### !question
+Which of these options are design patterns?
+##### !end-question
+##### !options
+* Iterator
+* Function
+* Decorator
+* Factory
+* Adapter
+##### !end-options
+##### !answer
+* Iterator
+* Decorator
+* Factory
+* Adapter
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: fae4bb8a-4879-44bc-83cb-3a3efb031908
+* title: Intro to Design Patterns
+##### !question
+
+Which options describes the design pattern of an Iterator?
+
+##### !end-question
+##### !options
+
+* A class that can iterate through an object. Available to other classes to use, however, if the object changes, the iterator will need to change.
+* A while or for loop.
+* A class whose responsibility is to know how to iterate through an object.
+
+##### !end-options
+##### !answer
+
+* A class that can iterate through an object. Available to other classes to use, however, if the object changes, the iterator will need to change.
+* A class whose responsibility is to know how to iterate through an object.
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: 0prltj
+* title: Intro to Design Patterns
+##### !question
+
+Which options describes the design pattern of a Factory?
+
+##### !end-question
+##### !options
+
+* A class that can iterate through an object. Available to other classes to use, however, if the object changes, the iterator will need to change.
+* A class or method whose responsibility is to create instances of some class.
+* A class that holds logic to create instances, which requires close attention to a constructor. If a constructor is updated, only the factory needs to change, rather than each line that calls the constructor.
+
+##### !end-options
+##### !answer
+
+* A class or method whose responsibility is to create instances of some class.
+* A class that holds logic to create instances, which requires close attention to a constructor. If a constructor is updated, only the factory needs to change, rather than each line that calls the constructor.
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: b64da97d-08cb-48d9-9165-2010c70bdcca
+* title: Intro to Design Patterns
+##### !question
+
+Which options describes the design pattern of a Decorator?
+
+##### !end-question
+##### !options
+
+* A class or method whose responsibility is to create instances of some class.
+* A class or method whose responsibility is to dynamically alter and extend the behavior of a function or class.
+* A class or method that can extend multiple objects without changing their implementation.
+
+##### !end-options
+##### !answer
+
+* A class or method whose responsibility is to dynamically alter and extend the behavior of a function or class.
+* A class or method that can extend multiple objects without changing their implementation.
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
