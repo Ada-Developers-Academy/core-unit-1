@@ -176,6 +176,14 @@ class TestDriverClass(unittest.TestCase):
 
 #### !explanation
 
+An implementation that works is this:
+
+```python
+class Driver:
+    def __init__(self):
+        print("This init method runs every time a new Driver is instantiated!")
+```
+
 Actually, this test will pass as long as there's a `Driver` class; it's challenging to write a test that verifies that the `__init__` method exists.
 
 ##### !end-explanation

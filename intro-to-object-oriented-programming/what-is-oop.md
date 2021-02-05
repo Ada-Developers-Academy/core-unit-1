@@ -153,14 +153,89 @@ Observe these examples of classes that already exist, or classes that could exis
 
 In OOP...
 
-We will represent an idea as a data type by defining a **class.** A class is a template, or blueprint of the idea. The class is where we define the idea's generic **state** and **behavior.**
+We represent an idea as a data type by defining a **class.** A class is a template, or blueprint of the idea. The class is where we define the idea's possible **state** and **behavior.**
 
-After we've defined the idea by defining a **class**, we will use this template/blueprint to create manifestations, or **instances** of this class. These instances are also known as **objects.**
+After we define the idea by defining a **class**, we use this class to create examples, or **instances** of the class. These instances are also known as **objects.**
 
 ## Check for Understanding
 
-<!-- Definition question about classes being templates/blueprints -->
+<!-- Question 1 -->
+<!--prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: 23cea37b-7937-4386-8f70-f3968d2e2b5c
+* title: What is OOP?
+##### !question
+What is a **class**?
+##### !end-question
+##### !options
+* A way to create our own data types
+* A template to create an object
+* A way to bundle data and its state and behavior
+##### !end-options
+##### !answer
+* A way to create our own data types
+* A template to create an object
+* A way to bundle data and its state and behavior
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- Definition question about instance -->
+<!-- Quesiton 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 287bf162-ad2d-4ce0-9f2a-5d82d497f129
+* title: What is OOP?
+##### !question
+Which option below describes an instance?
+##### !end-question
+##### !options
+* Instances are clones of a class, have the same attributes, and occupy the same place in memory.
+* Instances are distinct from each other, can hold different attributes, and occupy different places in memory.
+* Instance is a synonym for class. Instances are templates and create objects.
+##### !end-options
+##### !answer
+* Instances are distinct from each other, can hold different attributes, and occupy different places in memory.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- Definition question about state and behavior -->
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 868ae4c0-35ae-40eb-8d5f-fff31d1376ac
+* title: What is OOP?
+##### !question
+What is the difference between state and behavior?
+##### !end-question
+##### !options
+* State describes data or attributes that change the actions of the object, while behavior describes concrete actions of the object.
+* Behavior describes the data or attributes that should be kept over its lifetime, while state describes the actions the class should be able to do.
+* Behavior describes actions that objects should be able to do, while state describes the data or attributes of an object that should be kept over its lifetime.
+##### !end-options
+##### !answer
+* Behavior describes actions that objects should be able to do, while state describes the data or attributes of an object that should be kept over its lifetime.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: nBwx6O
+* title: What is OOP?
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->
