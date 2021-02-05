@@ -7,11 +7,11 @@
 
 ## Vocabulary and Synonyms
 
-| Vocab       | Definition                                                                                                                                       | Synonyms    | How to Use in a Sentence                                                                                                                                                                  |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Constructor | A method used when creating objects. Usually initializes an object's attributes. | Initializer | "The constructor gets called every time we make a new `User` instance," "The constructor has `username` as a parameter, so we need to pass in a username whenever we initialize a `User`" |
-| `__init__`  | Name of the method used by Python as the constructor. Pronounced "dunder init." One of many "dunder" (double underscore) methods that are reserved by Python for specific tasks. Because `__init__` is so common, the "dunder" is often dropped in spoken conversation. | - | "If I want to set up attributes, in my class definition I need to make an `__init__` method," "If I misspell `__init__`, my constructor won't work" |
-| `self` | The conventional name for a parameter that refers to an instance itself within a method of a class. | - | "We access attributes through `self`," "We assign attributes through `self`" |
+| Vocab       | Definition                                                                                                                                                                                                                                                              | Synonyms    | How to Use in a Sentence                                                                                                                                                                  |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Constructor | A method used when creating objects. Usually initializes an object's attributes.                                                                                                                                                                                        | Initializer | "The constructor gets called every time we make a new `User` instance," "The constructor has `username` as a parameter, so we need to pass in a username whenever we initialize a `User`" |
+| `__init__`  | Name of the method used by Python as the constructor. Pronounced "dunder init." One of many "dunder" (double underscore) methods that are reserved by Python for specific tasks. Because `__init__` is so common, the "dunder" is often dropped in spoken conversation. | -           | "If I want to set up attributes, in my class definition I need to make an `__init__` method," "If I misspell `__init__`, my constructor won't work"                                       |
+| `self`      | The conventional name for a parameter that refers to an instance itself within a method of a class.                                                                                                                                                                     | -           | "We access attributes through `self`," "We assign attributes through `self`"                                                                                                              |
 
 ## When Do We Make a Class?
 
@@ -51,12 +51,12 @@ class ClassName:
     pass
 ```
 
-| Piece of Code | Notes                                                                                                                                                                               |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `class`       | A keyword that indicates that a class definition is beginning                                                                                                                       |
-| `ClassName` | **Replace this** with the name of the class you're defining. The [PEP-8](https://www.python.org/dev/peps/pep-0008/#class-names) style guide prefers CapitalCamel case for class names. Class names should be singular nouns.                 |
-| `:`           | Don't forget the colon to indicate the beginning of the class body                                                                                                                  |
-| Class body | Code that describes the class definition. It must be indented one level deeper than the `class` keyword. The class body can include attributes and methods to describe state and behavior. Here we used the `pass` directive as a syntax placeholder, resulting in an empty class definition. |
+| Piece of Code | Notes                                                                                                                                                                                                                                                                                         |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `class`       | A keyword that indicates that a class definition is beginning                                                                                                                                                                                                                                 |
+| `ClassName`   | **Replace this** with the name of the class you're defining. The [PEP-8](https://www.python.org/dev/peps/pep-0008/#class-names) style guide prefers CapitalCamel case for class names. Class names should be singular nouns.                                                                  |
+| `:`           | Don't forget the colon to indicate the beginning of the class body                                                                                                                                                                                                                            |
+| Class body    | Code that describes the class definition. It must be indented one level deeper than the `class` keyword. The class body can include attributes and methods to describe state and behavior. Here we used the `pass` directive as a syntax placeholder, resulting in an empty class definition. |
 
 <!-- Question 1 -->
 
@@ -217,7 +217,7 @@ Exactly like that, the `self` parameter exists for every instance method. Howeve
 
 Recall that **attributes** hold pieces of data relevant to a class. These pieces of data are attached to particular object instances. The collection of attributes attached to an object holds that instance's _state_. We can add to the state any attributes that we feel are necessary to capture the important features of a class.
 
-We define the attributes of an object instance in the instance methods of a class definition, usually in `__init__`. 
+We define the attributes of an object instance in the instance methods of a class definition, usually in `__init__`.
 
 All attributes have names. The values of attributes will differ between instances.
 

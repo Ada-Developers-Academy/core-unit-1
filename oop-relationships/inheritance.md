@@ -9,14 +9,13 @@
 
 ## Introduction
 
-
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-| Inheritance | A programming mechanism that allows classes to inherit attributes from another class. | ---      |"I'll use inheritance so the `Chocolate` class can inherit the `sugar serving` and `eat_in_one_sitting()` method from the `Candy` class. |
-| Parent class | A class that contains variables and methods that can be inherited to other classes | base class, super class     |"`Candy` class is the parent class to `Chocolate` class." |
-| Child class | A class that contains its own variables and methods but also inherits the variables and methods from a parent class | derived class, sub class     |"`Chocolate` class is the parent class to `Candy` class." |
+| Vocab        | Definition                                                                                                          | Synonyms                 | How to Use in a Sentence                                                                                                                 |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Inheritance  | A programming mechanism that allows classes to inherit attributes from another class.                               | ---                      | "I'll use inheritance so the `Chocolate` class can inherit the `sugar serving` and `eat_in_one_sitting()` method from the `Candy` class. |
+| Parent class | A class that contains variables and methods that can be inherited to other classes                                  | base class, super class  | "`Candy` class is the parent class to `Chocolate` class."                                                                                |
+| Child class  | A class that contains its own variables and methods but also inherits the variables and methods from a parent class | derived class, sub class | "`Chocolate` class is the parent class to `Candy` class."                                                                                |
 
 ## Syntax for Inheritance
 
@@ -78,14 +77,14 @@ submit_btn.on_button_press()
 Read through these observations, and then predict what the console output is from the above `main.py`.
 
 - When we instantiate `SendPaymentButton`, we _must_ pass in `label_text`
-    - `SendPaymentButton` did not define its own `__init__` method
-    - Therefore, it looks to its parent class to see if it implements `__init__`
-    - Because `Button` _does_ implement `__init__`, the child class will inherit it
+  - `SendPaymentButton` did not define its own `__init__` method
+  - Therefore, it looks to its parent class to see if it implements `__init__`
+  - Because `Button` _does_ implement `__init__`, the child class will inherit it
 - When we print `submit_btn`, our instance of `SendPaymentButton`, Python recognizes that it is type `SendPaymentButton`, not `Button`
 - We can successfully invoke the instance method `on_button_press`
-    - `SendPaymentButton` did not define `on_button_press`
-    - `Button` _does_ define `on_button_press`
-    - `SendPaymentButton` inherits `on_button_press` from the `Button` class
+  - `SendPaymentButton` did not define `on_button_press`
+  - `Button` _does_ define `on_button_press`
+  - `SendPaymentButton` inherits `on_button_press` from the `Button` class
 
 Let's look at some possible console output from the `main.py` above. Check to see if your predictions are in the right direction:
 

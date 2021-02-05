@@ -17,10 +17,10 @@ Class relationships also form the basis for building up a set of general softwar
 
 ## Vocabulary and Synonyms
 
-| Vocab       | Definition | Synonyms | How to Use in a Sentence |
-| ----------- | ---------- | -------- | ------------------------ |
-| Inheritance | A class relationship in which one class inherits attributes and behavior from another class. | is-a relationship      |"My `Chocolate` class needs to act like my `Dessert` class in this dessert-processing part of the code, so I'll use inheritance so that `Chocolate` can inherit the `sugar_serving` and `eat_in_one_sitting` methods from `Dessert` so that I don't have to write them again." |
-| Composition | A class relationship in which a class references other classes as instance variables and makes use of their methods and attributes.  | has-a relationship      | "The `Trip` class in my ride share app needs to have a driver and a passenger, so I'll use composition to include a `Driver` class instance and a `Passenger` class instance in the `Trip` class."  
+| Vocab       | Definition                                                                                                                          | Synonyms           | How to Use in a Sentence                                                                                                                                                                                                                                                       |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Inheritance | A class relationship in which one class inherits attributes and behavior from another class.                                        | is-a relationship  | "My `Chocolate` class needs to act like my `Dessert` class in this dessert-processing part of the code, so I'll use inheritance so that `Chocolate` can inherit the `sugar_serving` and `eat_in_one_sitting` methods from `Dessert` so that I don't have to write them again." |
+| Composition | A class relationship in which a class references other classes as instance variables and makes use of their methods and attributes. | has-a relationship | "The `Trip` class in my ride share app needs to have a driver and a passenger, so I'll use composition to include a `Driver` class instance and a `Passenger` class instance in the `Trip` class."                                                                             |
 
 ## Inheritance: Passing on Implementation
 
@@ -37,6 +37,7 @@ Not only can child classes inherit state and behavior, they can also **override*
 ### !callout-info
 
 ## Synonyms
+
 We can refer to the parent class as a "super class." We can refer to the child class as a "sub class."
 
 ### !end-callout

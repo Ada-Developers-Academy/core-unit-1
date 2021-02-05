@@ -5,14 +5,6 @@
 - Use attributes to create composition between two classes
 - Use instance methods to access instances of objects composed inside another object
 
-## Introduction
-
-
-## Vocabulary and Synonyms
-
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-
 ## Initializing Components as Attributes in the Constructor
 
 It's common to set the attributes of a composite class to component instances provided by other code that uses our class. Python lets us assign to attributes directly. We can let all the components in our class be passed into the constructor of the composite class, and assign the attributes in the constructor itself.
@@ -21,7 +13,7 @@ Consider this example:
 
 ```python
 class ExampleComponent:
-    
+
     def __init__(self, name):
         self.name = name
 
@@ -134,16 +126,17 @@ orange.read_fruits()
 We should observe:
 
 - `ExampleComposite`...
-    - has an attribute `component`
-    - has an instance method `read_fruits`. Inside `read_fruits`:
-        - we print that we're inside it, and we read the `component` attr
-        - we call the `component` attr's instance method, `get_random_num` **with the line `self.component.get_random_num()`**
-        - we print the return value from that instance method
+
+  - has an attribute `component`
+  - has an instance method `read_fruits`. Inside `read_fruits`:
+    - we print that we're inside it, and we read the `component` attr
+    - we call the `component` attr's instance method, `get_random_num` **with the line `self.component.get_random_num()`**
+    - we print the return value from that instance method
 
 - `ExampleComponent`...
-    - has an instance method `get_random_num`. Inside `get_random_num`:
-        - we print that we're inside it
-        - we produce and return a random number
+  - has an instance method `get_random_num`. Inside `get_random_num`:
+    - we print that we're inside it
+    - we produce and return a random number
 
 This code can produce the console output:
 
@@ -162,11 +155,11 @@ This is what Component's method returned: 473
 
 ```python
 class Product:
-    
+
     def __init__(self, price, quantity):
         self.price = price
         self.quantity = quantity
-    
+
     def calculate_cost(self):
         return self.price * self.quantity
 
@@ -180,7 +173,7 @@ class ShoppingCart:
 
         for product in self.products:
             total_price += product.calculate_cost()
-        
+
         return total_price
 ```
 

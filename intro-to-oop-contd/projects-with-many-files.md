@@ -33,10 +33,10 @@ Let's take a look at what we need to do to use this method of organization in ou
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-| Module | Any `.py` file that contains functions, classes, variables, and/or other runnable code | - | "I used the `math.Euler()` from the `Math` module to calculate an angle" 
-| Package | A collection of modules  | - | "The methods and classes accessible in a package can be found in the `__init__.py` file 
+| Vocab   | Definition                                                                             | Synonyms | How to Use in a Sentence                                                                |
+| ------- | -------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------- |
+| Module  | Any `.py` file that contains functions, classes, variables, and/or other runnable code | -        | "I used the `math.Euler()` from the `Math` module to calculate an angle"                |
+| Package | A collection of modules                                                                | -        | "The methods and classes accessible in a package can be found in the `__init__.py` file |
 
 ## New File Organization
 
@@ -103,14 +103,14 @@ As Pythonists, it will benefit us to understand how Python defines packages and 
 In Python...
 
 - A **package** is a folder that:
-    - Contains _modules_
-    - Contains a special file named `__init__.py`
-        - The presence of this file informs Python that the folder containing it should be treated as a named package
-        - Often, this file is completely empty!
-        - Sometimes, it may contain configuration logic
-    - Can contain other packages
+  - Contains _modules_
+  - Contains a special file named `__init__.py`
+    - The presence of this file informs Python that the folder containing it should be treated as a named package
+    - Often, this file is completely empty!
+    - Sometimes, it may contain configuration logic
+  - Can contain other packages
 - A **module** is a `.py` file that can contain any number of functions, classes, and variables, as well as other runnable code
-    - Essentially, any Python file can be thought of as a module. In fact, we've been writing modules this whole time!
+  - Essentially, any Python file can be thought of as a module. In fact, we've been writing modules this whole time!
 
 "Packages and modules" may seem like fancy words for "folders and files," but this terminology allows us to understand their **namespaces**. A module located inside of a package can be referenced using namespacing with `.`s, such as `package_name.module_name`. The package and module names are derived from the name of the folder and file (without `.py`).
 
@@ -134,6 +134,7 @@ ride-share-app/
 ### !callout-info
 
 ## Package and Module Naming Conventions
+
 There aren't too many rules about package or module naming conventions, but a notable one is that they cannot contain hyphens (`-`) to be valid. [PEP-8](https://www.python.org/dev/peps/pep-0008/#package-and-module-names) recommends short, all-lowercase names. [PEP-423](https://www.python.org/dev/peps/pep-0423/) lists suggestions and guidelines for naming packages, namely for the purpose of public distribution.
 
 ### !end-callout
@@ -156,7 +157,7 @@ from package_name.module_name import ExampleClassName
 
 It may be helpful to read this line of code in "reverse order," as "Import an object named `ExampleClassName` that's defined in the `module_name` module that's located in the `package_name` package."
 
-The above statement looks for the matching _package_ and _module within that package_. The search for the matching module begins ***relative to the file***. First, the program will look for the matching package and module in the current directory of this file. If there is no match, then our program will search for a matching package/module among all the installations of Python packages.
+The above statement looks for the matching _package_ and _module within that package_. The search for the matching module begins **_relative to the file_**. First, the program will look for the matching package and module in the current directory of this file. If there is no match, then our program will search for a matching package/module among all the installations of Python packages.
 
 From that matching module, it will import anything defined in the module with the name `ExampleClassName`.
 
@@ -167,6 +168,7 @@ Conventionally, these import statements are always at the top of a module.
 ### !callout-info
 
 ## Modules Know They're in the Same Package
+
 Sometimes, it may be unnecessary to specify a package if both modules are in the same package already. For details on the locations that Python searches for modules (and their priority order), we can read about [Python's module search path order](https://docs.python.org/3/tutorial/modules.html#the-module-search-path).
 
 ### !end-callout
@@ -264,7 +266,7 @@ from non_existing_module import Driver
 
 - A `ModuleNotFoundError` is raised because the program can't find `non_existing_module`
 - There's an import statement that can't find the specified module
-    - Double-check the `from` part. Do we need to including the package name, if this file isn't in the same package? Or do we need to exclude it?
+  - Double-check the `from` part. Do we need to including the package name, if this file isn't in the same package? Or do we need to exclude it?
 
 ```
 Traceback (most recent call last):

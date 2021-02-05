@@ -45,8 +45,8 @@ These considerations are similar to how we solve problems in programming.
 
 ## Vocabulary and Synonyms
 
-| Vocab                   | Definition                                                                                                                                                    | Synonyms       | How to Use in a Sentence                                                                                                                                    |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Vocab                   | Definition                                                                                                                                                        | Synonyms       | How to Use in a Sentence                                                                                                                                    |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Software design pattern | Reusable patterns commonly used to solve problems. Usually describes how classes and functions are structured and used. Usually conceptual and language-agnostic. | design pattern | "Janice has come across a similar problem before in a different project. To solve it, her team used the adapter design pattern, and made an adapter class." |
 
 ## What are Design Patterns?

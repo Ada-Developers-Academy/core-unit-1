@@ -11,12 +11,12 @@ Class definitions can contain functions. When a function is inside of a class, w
 
 **Instance methods** are behaviors that _instances_ of classes can do.
 
-| Class  | Instances | Behavior It Can Do |
-|-|-|-|
-| String | `"Hello World! I am an instance of a String!"`| Become CAPITALIZED if it needs to |
-| List   | `["red", "orange", "yellow"]` | Reverse the order of its elements |
-| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67 | Calculate its own average rating, tell you the number of trips they've taken |
-| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has |
+| Class  | Instances                                                                                                                 | Behavior It Can Do                                                           |
+| ------ | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| String | `"Hello World! I am an instance of a String!"`                                                                            | Become CAPITALIZED if it needs to                                            |
+| List   | `["red", "orange", "yellow"]`                                                                                             | Reverse the order of its elements                                            |
+| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67                                     | Calculate its own average rating, tell you the number of trips they've taken |
+| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has                          |
 
 ## Defining Instance Methods
 
