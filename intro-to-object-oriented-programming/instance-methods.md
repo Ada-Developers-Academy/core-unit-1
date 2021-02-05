@@ -11,12 +11,12 @@ Class definitions can contain functions. When a function is inside of a class, w
 
 **Instance methods** are behaviors that _instances_ of classes can do.
 
-| Class  | Instances | Behavior It Can Do |
-|-|-|-|
-| String | `"Hello World! I am an instance of a String!"`| Become CAPITALIZED if it needs to |
-| List   | `["red", "orange", "yellow"]` | Reverse the order of its elements |
-| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67 | Calculate its own average rating, tell you the number of trips they've taken |
-| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has |
+| Class  | Instances                                                                                                                 | Behavior It Can Do                                                           |
+| ------ | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| String | `"Hello World! I am an instance of a String!"`                                                                            | Become CAPITALIZED if it needs to                                            |
+| List   | `["red", "orange", "yellow"]`                                                                                             | Reverse the order of its elements                                            |
+| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67                                     | Calculate its own average rating, tell you the number of trips they've taken |
+| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has                          |
 
 ## Defining Instance Methods
 
@@ -76,15 +76,15 @@ class Album:
         self.track_list = tracks
 
     def get_audio_data(self, track_index):
-        if self.track_list:
+        if 0 < track_index <= len(self.track_list):
             return self.track_list[track_index - 1]
         else:
-            return "The track list is empty"
+            return "Invalid track"
 ```
 
 In the above example, the instance method `get_audio_data` takes an additional parameter `track_index`. This means that whenever we call this method, we must pass in an argument for `track_list`. `track_list` represents the index track we want audio data from.
 
-Inside the `get_audio_data` method, we use the attribute `self.track_list` _**and**_ the argument `track_index`. We assume `self.track_list` is a list, and we use a conditional statement.
+Inside the `get_audio_data` method, we use the attribute `self.track_list` _**and**_ the argument `track_index`. We assume `self.track_list` is a list, and we use it in a conditional statement. We use `track_index` in the line `return self.track_list[track_index - 1]`.
 
 <!-- Question 1 -->
 

@@ -7,30 +7,37 @@
 
 ## Introduction
 
-When multiple objects interact with each other, they form a relationship. Like any relationship, two classes having a relationship should spark many questions for us: What do the classes do together? How do they communicate with each other? What's the nature of their relationship? Is one class in charge? Are the two classes changing and modifying each other, or is it one-way? What happens if one class changes, and the other stays stagnant?
+relationship, two classes having a relationship should spark many questions for us: What do the classes do together? How do they communicate with each other? What's the nature of their relationship? Is one class in charge? Are the two classes changing and modifying each other, or is it one-way? What happens if one class changes, and the other remains as it is?
 
-Because OOP is a paradigm that encourages forming relationships between these objects, OOP principles describe several types of these relationships. Two of these types of relationships are _inheritance_ and _composition_.
+Because OOP is a programming paradigm that approaches problem-solving by forming relationships between objects, it provides ways to describe these relationships. The two most fundamental class relationships in OOP are _inheritance_ and _composition_.
 
-These relationships will affect _how_ we solve problems that involve more than one class. Eventually, these types of relationships get applied when following software design patterns.
+These relationships will affect _how_ we solve problems that involve more than one class.
+
+Class relationships also form the basis for building up a set of general software design techniques known as software design patterns. There are many software design patterns and only a few will be touched on over the course of this curriculum, but there are many resources available online. Follow your curiosity!
 
 ## Vocabulary and Synonyms
 
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
+| Vocab       | Definition                                                                                                                          | Synonyms           | How to Use in a Sentence                                                                                                                                                                                                                                                       |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Inheritance | A class relationship in which one class inherits attributes and behavior from another class.                                        | is-a relationship  | "My `Chocolate` class needs to act like my `Dessert` class in this dessert-processing part of the code, so I'll use inheritance so that `Chocolate` can inherit the `sugar_serving` and `eat_in_one_sitting` methods from `Dessert` so that I don't have to write them again." |
+| Composition | A class relationship in which a class references other classes as instance variables and makes use of their methods and attributes. | has-a relationship | "The `Trip` class in my ride share app needs to have a driver and a passenger, so I'll use composition to include a `Driver` class instance and a `Passenger` class instance in the `Trip` class."                                                                             |
 
 ## Inheritance: Passing on Implementation
 
-Sometimes, two classes are similar... but different. The two classes share the same attributes and the same methods... but one class has additional attributes, additional methods, and a different name. We could formalize a relationship between these two classes with inheritance.
+Sometimes, two classes are similar... but different. The two classes share the same attributes and the same methods... but one class has additional attributes, additional methods, and a different name. We can formalize a relationship between these two classes with inheritance.
 
 Inheritance designates a **parent class** and a **child class**. Using inheritance, the _child class_ will "copy" the state and behavior defined in the _parent class_.
 
-When a _child class_ tries to use an attribute or method that it doesn't define in its own class, it will look up to the _parent class_. If the parent class has that attribute or method defined, the child class will use that implementation.
+Imagine reading an attribute or calling a method from an instance of a child class.
+
+If Python does not see a definition for that attribute or method in the _child class_, Python will try looking for it in the _parent class_. If the parent class has that attribute or method defined, the child class will be able to use that implementation.
 
 Not only can child classes inherit state and behavior, they can also **override** them. A child class may need to have attributes or methods of the same name, but different implementation. When a child class re-defines an inherited property, the child class _overrides_ it. When overriding, the child class can optionally still look to the parent class's implementation.
 
 ### !callout-info
 
 ## Synonyms
+
 We can refer to the parent class as a "super class." We can refer to the child class as a "sub class."
 
 ### !end-callout
@@ -41,9 +48,9 @@ Let's roleplay a non-programming example!
 
 Imagine a 10-year-old, Temmie, and her caregiver, Karen. It's Friday night, and the two of them have invited us over for dinner.
 
-We can ask Karen to make a call and order pizza on the phone. When we do that, Karen will go to her room, find her phone on the desk, and then call Dino's Pizza Palace.
+If we try to ask Temmie to do the same, she won't know how to do that on her own. However, Temmie _inherits_ the properties and behaviors of her caregiver. Temmie has never bought her own phone, and she's never called a pizza place, but she can look up to how Karen does it. Temmie will then go to her own room, look for her own phone on the desk, and then call Dino's Pizza Palace.
 
-When we ask Temmie to make a call and order pizza on the phone, but Temmie doesn't know how to do that on her own. However, Temmie _inherits_ the properties and behaviors of her caregiver. Temmie has never bought her own phone, and she's never called a pizza place, but she can look up to how Karen does it. Temmie will go to her own room, look for her own phone on the desk, and then call Dino's Pizza Palace.
+A week has passed, and we're back for another pizza dinner with Karen and Temmie. Temmie has learned about all of the different pizza places in the world. We can ask Temmie to call and order pizza on the phone. Temmie can _override_ the behavior she's inherited. This time, Temmie will go to her own room, look for her own phone on the desk, and then call _Pizza Planet_ instead. Karen's own behavior (and preference for Dino's) does not change.
 
 A week has passed, and we're back for more pizza dinner with Karen and Temmie. Temmie has learned about all of the different pizza places in the world. We can ask Temmie to call and order pizza on the phone. Temmie can _override_ the behavior she's inherited. This time, Temmie will go to her own room, look for her own phone on the desk, and then call _Pizza Planet_ instead. Karen's own behavior (and preference for Dino's) does not change.
 
@@ -67,13 +74,13 @@ We can often describe inheritance as an "is-a" relationship between two classes,
 
 Python has a special class named `object`. `object` is a class that defines the methods `__init__`, `__str__`, and a dozen other things.
 
-Python is designed so that every class and object eventually inherits from `object`. Following the rules of inheritance, we can see how every class has `__init__`, `__str__`, etc. defined-- these are _inherited methods_!
+Python is designed so that every class and object eventually inherits from `object`. Following the rules of inheritance, we can see how every class has `__init__`, `__str__`, etc. defined—these are _inherited methods_!
 
 For more details on `object`, run `help(object)` in a Python repl!
 
-## Composition: Expecting Instances to Hold onto Other Instances
+## Composition: Instances Holding Instances
 
-Most of the time, a class has attributes, and those attributes are strings, numbers, lists, dictionaries, booleans, and so on. Sometimes, however, the value of an attribute is an instance of another class.
+Most classes have attributes. Those attributes are things like strings, numbers, lists, dictionaries, booleans, and so on. It's easy to overlook that those types are all classes, and that any time we make a string, number, or any of the rest, we are making instances of classes. And of course we can also make instances of our own classes. Any of these potential instances can be stored as the value of an attribute is an instance of another class.
 
 This relationship is called composition. Composition means that one class is expected to have objects of another class stored or referenced inside of it.
 
@@ -83,11 +90,9 @@ Composition is interesting, because the _composite class_ is made that much more
 
 When a _composite class_ **has a** _component class_, the composite class can use that component class. The _composite class_ could possibly read attributes, modify attributes, and invoke methods from the _component class_.
 
-Any time that one class knows about another class's attributes and methods, we programmers should recognize that the other class is being _exposed_. One class might carelessly read or modify attributes, or invoke methods, that aren't intended to be used. Every time a class exposes its properties, the programmer should consider the trust that is built between these two classes.
-
 ### Composition is a "Has-A" Relationship
 
-We can describe composition as a **has-a** relationship, where the composite class "has a" component class. This implies that composition affects a class's state.
+We can describe composition as a **has-a** relationship, where the composite class "has a" component class. This is represented in the state of the composite class by attributes that hold the component class instances. So this is essentially a formal name for what we have already learned about Python class attributes!
 
 ### Example: The Good Book Club and Bus Fares
 
@@ -121,12 +126,123 @@ As classes interact with each other, code becomes more complex. By nature, inher
 
 ## Check for Understanding
 
-<!-- Make up a scenario of inheritance, identify parent class, child class -->
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 0375c3e0-7e50-49b4-bbbd-2d58951876c1
+* title: Inheritance
+##### !question
+Imagine we are creating a virtual petting zoo named "Ada Animals" ("Adanimals" for short).
 
-<!-- A second one of those if we're creative enough -->
+We have two classes so far: `Mammal` and `Bear`.
 
-<!-- Make up a scenario of composition, identify composite class and component class -->
+Select the option that best describes the parent-child relationship between the two classes.
+##### !end-question
+##### !options
+* `Bear` inherits methods from `Mammal`.
+* `Bear` inherits variables and methods from `Mammal`
+* `Mammal` inherits variables and methods from `Bear`
+##### !end-options
+##### !answer
+* `Bear` inherits variables and methods from `Mammal`
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- A second one of those if we're creative enough -->
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: Zl7xHN
+* title: Inheritance
+##### !question
+The Adanimals app needs help determining what information is shared between `Mammal` and `Bear`.
 
-<!-- Make up a scenario, MC on if it's inheritance, composition, or neither -->
+All mammals will identified with a name, having two or 4 legs, region, the ability to eat, and the ability to reproduce.
+
+Bears will be identified by their species name, fur, region, size, the ability to growl, and average hibernation cycle.
+
+Which of the following traits and behaviors are shared between `Mammal` and `Bear`?
+##### !end-question
+
+##### !options
+* `Mammal` will share name, fur, region, size, the abiity to growl, and average hibernation cycle with `Bear`.
+* `Bear` will share name, fur, region, size, the abiity to growl, and average hibernation cycle with `Mammal`.
+* `Mammal` will share name, having two or 4 legs, region, the ability to eat and the ability to reproduce with `Bear`.
+##### !end-options
+##### !answer
+* `Mammal` will share name, having two or 4 legs, region, the ability to eat and the ability to reproduce with `Bear`.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 6b0f49f3-853c-4158-a22f-af8a4818acc1
+* title: OOP-Relationships
+##### !question
+Harley's HR Company is using OOP to build a dashboard to display the benefits plan for employees. Every employee has a type of benefits plan. Harley plans on segmenting all data about employees in the `Employee` class and all info about benefits in the `BenefitPlan` class. With this information in mind, select the option that best describes the classes and their relationship to each other.
+##### !end-question
+##### !options
+* `BenefitPlan` is the child class. `Employee` is the parent class.
+* `BenefitPlan` is the composite class. `Employee` is the component class.
+* `BenefitPlan` is the component class. `Employee` is the composite class.
+##### !end-options
+##### !answer
+* `BenefitPlan` is the component class. `Employee` is the composite class.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 31f651e3-aa01-47f4-8e02-ece744f35515
+* title: OOP Relationships
+##### !question
+Dino's Donut store is creating an online store using OOP. Dino has two classes: `DonutStore` and `Donuts`.
+
+`DonutStore` can display donuts and provide images of each donut from the list of several instances of the `Donut` class.
+
+Select the option that best describes this relationship.
+##### !end-question
+##### !options
+
+* Composition
+* Inheritance
+* Composite
+
+##### !end-options
+##### !answer
+
+* Composition
+
+##### !end-answer
+### !end-challenge
+<!--prettier-ignore-end -->
+
+<!-- Question 5 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: m0s5n1
+* title: OOP Relationships
+##### !question
+Val's Vehicles is a mobile app that sells boats, motorcycles and more. In the app, each sale item will be identified as an instance of a specific class such as `Vehicle`, `Boat`, and `Motorcycle`. `Boat` and `Motorcyle` use a lot of the same attributes and methods that `Vehicle` has.
+
+Using what type of OOP relationship would best describe how the `Vehicle`, `Boat`, and `Motorcyle` classes interact with each other?
+##### !end-question
+##### !options
+* Composition
+* Inheritance
+* Composite
+##### !end-options
+##### !answer
+* Inheritance
+##### !end-answer
+### !end-challenge
+<!--prettier-ignore-end -->

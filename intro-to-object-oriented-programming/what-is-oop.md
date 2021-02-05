@@ -2,43 +2,47 @@
 
 ## Learning Goals
 
-- Define what Object-Oriented Programming as a programming paradigm is
+- Define what Object-Oriented Programming is as a programming paradigm
 
 ## Introduction
 
-A paradigm is a set of ideas that support a specific perspective. Programming paradigms influence how we solve problems. Programming paradigms are large ideas; sometimes, we even classify entire programming languages to fit into a programming paradigm.
+A paradigm is a set of ideas that support a specific perspective. Programming paradigms are large concepts that focus on particular approaches to problem solving.
 
 _Imperative programming_ is a programming paradigm that says programmers should solve problems by defining instructions for a computer to follow. You've programmed in the imperative programming paradigm if you've ever thought, "In order to solve that problem, I need to write down what steps a computer needs to take first, then second, then third."
 
-_Object-oriented programming_ is a programming paradigm that is a subset of imperative programming, and it will influence how we think about data.
+_Object-oriented programming_ is a programming paradigm that is a subset of imperative programming that focuses on how we arrange and operate on data.
+
+We can classify entire programing languages according to the programming paradigms they emphasize.
 
 ## Vocabulary and Synonyms
 
-| Vocab                       | Definition                                                                                                                                                | Synonyms                | How to Use in a Sentence                                                                                                                                                                                      |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Object-oriented programming | A programming paradigm based on "objects," which contain state (attributes) and behavior (methods)                                                        | OOP                     | "OOP means we will define classes, and use classes to make objects"                                                                                                                                           |
-| Object                      | A data structure that can be its own specific data types, hold unique data, and can do unique behavior. Can often mean one instance.                      | Instance                | "In OOP, we'll be making a lot of objects," "We should invoke the `add_friend` method on the `User` object," "Each `User` object in the `User` list will have an ID"                                          |
-| Class                       | A template or blueprint used to create objects of a specific data type. A class is generic and bastract; it defines what concrete objects will look like. | Template, blueprint     | "The `String` class defines all of the attributes and methods that `String` objects have," "                                                                                                                  |
-| Instance                    | One particular object of a certain data type/class. Follows the format defined by its class, and has specific, individual state.                          | Object                  | "That specific `User` instance has an ID of `25`," "We should instantiate a new `User` instance here, then save it to the database," "The method `add_friend` takes in one instance of `User` as a parameter" |
-| State                       | A generic term for the data that an object "knows" at one point in time. Usually, state can change over time.                                             | -                       | "The `User` object keeps `online_status` on state," "When a `User` object sends a message, the program checks the state of `online_status`"                                                                   |
-| Attribute                   | A named property of a class. Attributes are usually used to keep track of state.                                                                          | Property, field, "attr" | "The `User` class defines the attribute `online_status`," "The `online_status` attribute is a boolean," "We check the `online_status` property before we send a message"                                      |
-| Behavior                    | A generic term for what an object can "do."                                                                                                               | -                       | "The `User` class should have the behavior of adding a friend to the friend list"                                                                                                                             |
-| Method                      | A function that is defined inside of a class. Methods are usually used to describe behavior.                                                              | Function                | "We need to call the `add_friend` method on `User`," "`User`'s `send_message` method checks the state of `online_status` at the beginning"                                                                    |
+| Vocab                       | Definition                                                                                                                       | Synonyms                | How to Use in a Sentence                                                                                                                                                                                      |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Object-oriented programming | A programming paradigm based on "objects," which contain state (attributes) and behavior (methods)                               | OOP                     | "OOP means we will define classes, and use classes to make objects"                                                                                                                                           |
+| Object                      | A collection of structured data along with the operations that can be performed on that data. Often means one instance.          | Instance                | "In OOP, we'll be making a lot of objects," "We should invoke the `add_friend` method on the `User` object," "Each `User` object in the `User` list will have an ID"                                          |
+| Class                       | A template or blueprint used to create objects of a specific data type. Defines what concrete objects will look like.            | Prototype               | "The `String` class defines all of the attributes and methods that `String` objects have."                                                                                                                    |
+| Instance                    | One particular object of a certain data type/class. Follows the format defined by its class, and has specific, individual state. | Object                  | "That specific `User` instance has an ID of `25`," "We should instantiate a new `User` instance here, then save it to the database," "The method `add_friend` takes in one instance of `User` as a parameter" |
+| State                       | A generic term for the data that an object "knows" at one point in time. Usually, state can change over time.                    | -                       | "When a `User` object sends a message, the program checks the state of `online_status`"                                                                                                                       |
+| Attribute                   | A named property of a class. Attributes are usually used to keep track of state.                                                 | Property, field, "attr" | "The `User` class defines the attribute `online_status`," "The `online_status` attribute is a boolean," "We check the `online_status` property before we send a message"                                      |
+| Behavior                    | A generic term for what an object can "do."                                                                                      | -                       | "The `User` class should have the behavior of adding a friend to the friend list"                                                                                                                             |
+| Method                      | A function that is defined inside of a class. Methods are usually used to describe behavior.                                     | Function                | "We need to call the `add_friend` method on `User`," "`User`'s `send_message` method checks the state of `online_status` at the beginning"                                                                    |
 
 ## Object-Oriented Programming
 
 Object-oriented programming (OOP) is a programming paradigm that encourages structuring data as **objects.**
 
-Objects are _things_ that can be their own specific data types, hold unique data, and can do unique behavior.
+Objects are _things_ that represent concepts as data, hold their own distinct state, and carry out behaviors related to the concept they represent.
 
-For example, Python, the programming language, demonstrates using OOP to solve problems.
+Objects are the primary building blocks for problem solving in object-oriented programming languages like Python.
 
-Numbers, text, sequences, maps, sets, and the idea of true and false can be used to solve problems. Python captures each of these ideas into different data types. Python has defined the data types `int`, `float`, `str`, `dict`, `set`, `bool`, and more.
+Python lets us create objects that represent concepts like numbers, text, lists, the idea of true and false, and more. Even concepts that we define ourselves! Each of these ideas is represented as a different data type.
+
+For example, Python defines `int` and `float` data types to represent certain kinds of numbers. The `str` (string) data type represents text, which is a bunch of letters, strung together. When we need to work with conditions that can be true or false, the `bool` (Boolean) data type has us covered.
 
 Each of these data types:
 
-- represent a different, unique idea as data
-- have unique behavior that is meaningful to itself
+- represents a different, specific idea as data
+- has particular behavior that is meaningful to its concept
 
 For example...
 
@@ -47,10 +51,10 @@ For example...
   - can be subtracted with another integer or float
 - Strings
   - represent text
-  - can be concatenated with other strings
+  - can be concatenated (joined) with other strings
 - Booleans
   - represent true or false
-  - can be negated
+  - can be negated—true becomes false, while false becomes true
 
 ### Defining Classes
 
@@ -62,10 +66,10 @@ Each class definition will have:
 
 - A class name
   - This name is used as the "data type" name
-- Generic **attributes**
+- Concept-related **attributes**
   - An attribute is a piece of data
   - A class definition holding an attribute means we expect this class to hold a specific piece of data
-- Generic **methods**
+- Concept-related **methods**
   - A method is a function that describes behavior or action
 - Logic to describe what happens every time the class is used to make an **instance.**
 
@@ -75,12 +79,12 @@ Each class definition will have:
 
 Observe these examples of classes that already exist, or classes that could exist.
 
-| Idea to represent                                                                                         | Class Name |
-| --------------------------------------------------------------------------------------------------------- | ---------- |
-| A class that describes the idea of a sequence of text                                                     | String     |
-| A class that describes an ordered list                                                                    | List       |
-| A class that describes a vehicle driver working at a ride-share app, who has a ride history and a vehicle | Driver     |
-| A class that describes a music album sold in a digital music store, and all its data                      | Album      |
+| Idea to represent                                                                                              | Class Name |
+| -------------------------------------------------------------------------------------------------------------- | ---------- |
+| A class that describes the idea of a sequence of text                                                          | str        |
+| A class that describes an ordered list                                                                         | list       |
+| A class that describes a vehicle driver enrolled in a ride-share service, who has a ride history and a vehicle | Driver     |
+| A class that describes a music album sold in a digital music store, and all its data                           | Album      |
 
 ### !end-callout
 
@@ -88,11 +92,11 @@ Observe these examples of classes that already exist, or classes that could exis
 
 An **instance** is a concrete, literal manifestation of a class.
 
-A _class_ defines a data type _generically_, much like a template, or blueprint. It determines what that data type _can potentially_ hold as state or behavior.
+A _class_ defines the plans for a data type, much like a template, blueprint, or recipe. It determines the initial—or base—state, and the behaviors of that data type. The class definition is used to build instances.
 
-On the other hand, an _instance_ of a class is a _concrete thing_ of that data type, with concrete state and behavior. One instance is one specific thing that has literal state and literal behavior. Each instance allocates and uses memory, just like other pieces of data.
+An _instance_ is a single example of a class. The class provides the recipe to bake a cookie and the instance is the actual cookie (in its physical and yummy form)! Class instances, like other pieces of data, allocate and use memory, and have concrete state and behavior.
 
-In our code, after a class is defined, we can create one instance, 50 instances, or thousands of instances. All of these instances will be unique from each other, because they can all hold different attributes, and occupy different places in memory.
+In our code, after a class is defined, we can create one instance, 50 instances, or thousands of instances. All of these instances will be distinct from one another, because they can all hold different attributes, and each occupies a different place in memory.
 
 ### !callout-info
 
@@ -102,8 +106,8 @@ Observe these examples of classes that already exist, or classes that could exis
 
 | Class  | One Instance of the Class                      | Another Instance of the Class                     |
 | ------ | ---------------------------------------------- | ------------------------------------------------- |
-| String | `"Hello World! I am an instance of a String!"` | `"The quick brown fox jumped over the lazy dog."` |
-| List   | `["red", "orange", "yellow"]`                  | `["June", "July", "August"]`                      |
+| str    | `"Hello World! I am an instance of a String!"` | `"The quick brown fox jumped over the lazy dog."` |
+| list   | `["red", "orange", "yellow"]`                  | `["June", "July", "August"]`                      |
 | Driver | A driver with a driver ID of `DR0004`          | A driver with a driver ID of `DR0005`             |
 | Album  | Dirty Computer (2018)                          | Purple Rain (1984)                                |
 
@@ -124,9 +128,9 @@ We might say...
 
 ### State and Behavior
 
-When we start defining our own classes, we will define their generic **state** and their generic **behavior.**
+When we start defining our own classes, we will specify their **state** and their generic **behavior.**
 
-**State** describes any data or attributes that should be kept over its lifetime.
+**State** describes any data or attributes that should be kept over its lifetime—from the moment we create an instance until we let the system reclaim its resources.
 
 **Behavior** describes any actions that objects of this class should be able to do.
 
@@ -136,12 +140,12 @@ When we start defining our own classes, we will define their generic **state** a
 
 Observe these examples of classes that already exist, or classes that could exist.
 
-| Class  | Instances                                                                                                                 | Something Kept in State                                                         | Behavior it Can Do                                                           |
-| ------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| String | `"Hello World! I am an instance of a String!"`                                                                            | These specific characters, in this specific order                               | Become CAPITALIZED if it needs to                                            |
-| List   | `["red", "orange", "yellow"]`                                                                                             | These specific items, in this specific order                                    | Reverse the order of its elements                                            |
-| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67                                     | Its ID, number of trips, total amount of money earned, and total average rating | Calculate its own average rating, tell you the number of trips they've taken |
-| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Tracks (number and order), release date, total album length                     | Return the audio data for any specific track it has                          |
+| Class  | Instances                                                                                                                 | Something Kept in State                                                           | Behavior it Can Do                                                             |
+| ------ | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| str    | `"Hello World! I am an instance of a String!"`                                                                            | These specific characters, in this specific order                                 | Become CAPITALIZED if it needs to                                              |
+| list   | `["red", "orange", "yellow"]`                                                                                             | These specific items, in this specific order                                      | Reverse the order of its elements                                              |
+| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67                                     | Their ID, number of trips, total amount of money earned, and total average rating | Calculate their own average rating, tell you the number of trips they've taken |
+| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Tracks (number and order), release date, total album length                       | Return the audio data for any specific track it has                            |
 
 ### !end-callout
 
@@ -149,14 +153,89 @@ Observe these examples of classes that already exist, or classes that could exis
 
 In OOP...
 
-We will represent an idea as a data type by defining a **class.** A class is a template, or blueprint of the idea. The class is where we define the idea's generic **state** and **behavior.**
+We represent an idea as a data type by defining a **class.** A class is a template, or blueprint of the idea. The class is where we define the idea's possible **state** and **behavior.**
 
-After we've defined the idea by defining a **class**, we will use this template/blueprint to create manifestations, or **instances** of this class. These instances are also known as **objects.**
+After we define the idea by defining a **class**, we use this class to create examples, or **instances** of the class. These instances are also known as **objects.**
 
 ## Check for Understanding
 
-<!-- Definition question about classes being templates/blueprints -->
+<!-- Question 1 -->
+<!--prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: 23cea37b-7937-4386-8f70-f3968d2e2b5c
+* title: What is OOP?
+##### !question
+What is a **class**?
+##### !end-question
+##### !options
+* A way to create our own data types
+* A template to create an object
+* A way to bundle data and its state and behavior
+##### !end-options
+##### !answer
+* A way to create our own data types
+* A template to create an object
+* A way to bundle data and its state and behavior
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- Definition question about instance -->
+<!-- Quesiton 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 287bf162-ad2d-4ce0-9f2a-5d82d497f129
+* title: What is OOP?
+##### !question
+Which option below describes an instance?
+##### !end-question
+##### !options
+* Instances are clones of a class, have the same attributes, and occupy the same place in memory.
+* Instances are distinct from each other, can hold different attributes, and occupy different places in memory.
+* Instance is a synonym for class. Instances are templates and create objects.
+##### !end-options
+##### !answer
+* Instances are distinct from each other, can hold different attributes, and occupy different places in memory.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- Definition question about state and behavior -->
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 868ae4c0-35ae-40eb-8d5f-fff31d1376ac
+* title: What is OOP?
+##### !question
+What is the difference between state and behavior?
+##### !end-question
+##### !options
+* State describes data or attributes that change the actions of the object, while behavior describes concrete actions of the object.
+* Behavior describes the data or attributes that should be kept over its lifetime, while state describes the actions the class should be able to do.
+* Behavior describes actions that objects should be able to do, while state describes the data or attributes of an object that should be kept over its lifetime.
+##### !end-options
+##### !answer
+* Behavior describes actions that objects should be able to do, while state describes the data or attributes of an object that should be kept over its lifetime.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: nBwx6O
+* title: What is OOP?
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->

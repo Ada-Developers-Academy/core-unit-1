@@ -5,23 +5,15 @@
 - Use attributes to create composition between two classes
 - Use instance methods to access instances of objects composed inside another object
 
-## Introduction
+## Initializing Components as Attributes in the Constructor
 
+It's common to set the attributes of a composite class to component instances provided by other code that uses our class. Python lets us assign to attributes directly. We can let all the components in our class be passed into the constructor of the composite class, and assign the attributes in the constructor itself.
 
-## Vocabulary and Synonyms
-
-| Vocab | Definition | Synonyms | How to Use in a Sentence
-| --- | --- | --- | ---
-
-## Composition Affects Our Attributes
-
-This can manifest in code in a number of ways.
-
-We could pass in an instance of the component class into the composite class's constructor, and assign it to an attribute:
+Consider this example:
 
 ```python
 class ExampleComponent:
-    
+
     def __init__(self, name):
         self.name = name
 
@@ -134,16 +126,17 @@ orange.read_fruits()
 We should observe:
 
 - `ExampleComposite`...
-    - has an attribute `component`
-    - has an instance method `read_fruits`. Inside `read_fruits`:
-        - we print that we're inside it, and we read the `component` attr
-        - we call the `component` attr's instance method, `get_random_num` **with the line `self.component.get_random_num()`**
-        - we print the return value from that instance method
+
+  - has an attribute `component`
+  - has an instance method `read_fruits`. Inside `read_fruits`:
+    - we print that we're inside it, and we read the `component` attr
+    - we call the `component` attr's instance method, `get_random_num` **with the line `self.component.get_random_num()`**
+    - we print the return value from that instance method
 
 - `ExampleComponent`...
-    - has an instance method `get_random_num`. Inside `get_random_num`:
-        - we print that we're inside it
-        - we produce and return a random number
+  - has an instance method `get_random_num`. Inside `get_random_num`:
+    - we print that we're inside it
+    - we produce and return a random number
 
 This code can produce the console output:
 
@@ -162,11 +155,11 @@ This is what Component's method returned: 473
 
 ```python
 class Product:
-    
+
     def __init__(self, price, quantity):
         self.price = price
         self.quantity = quantity
-    
+
     def calculate_cost(self):
         return self.price * self.quantity
 
@@ -180,7 +173,7 @@ class ShoppingCart:
 
         for product in self.products:
             total_price += product.calculate_cost()
-        
+
         return total_price
 ```
 
@@ -203,4 +196,94 @@ This code produces the console output:
 The total cost of the products in the shopping cart is $213.48
 ```
 
-<!-- Three reading code comp questions for this example, that's it -->
+## Check for Understanding
+
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: acd9c2f0-3dfb-4c76-a5b1-fcf8af7522cc
+* title: Composition
+##### !question
+Moana just moved to Europe and is having trouble converting to the metric system. To cope, she is creating an Alexa skill to convert metric measurements to imperial measurements.
+
+Provided is her code so far. Select the option that best describes the relationship between `Temperature` and `MetricConverter`.
+
+```python
+class Temperature:
+  def __init__(self, celsius):
+    self.celsius = celsius
+    self.metric_converter = Metric_Converter(self.celsius)
+
+  def display_temperature(self):
+    return "It is " + str(self.metric_converter.convert_to_fahrenheit()) + " degrees Fahrenheit today."
+
+class MetricConverter:
+    def __init__(self, celsius):
+      self.celsius = celsius
+
+    def convert_to_fahrenheit(self):
+      return (int(self.celsius * (9/5) + 32))
+
+today = Temperature(37)
+print(today.display_temperature())
+```
+##### !end-question
+##### !options
+* `Temperature` is the component class. `MetricConverter` is the composite.
+* `Temperature` is the composite class.`MetricConverter` is the component.
+##### !end-options
+##### !answer
+* `Temperature` is the composite class.`MetricConverter` is the component.
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: 00c359fc-58a7-4c95-94ac-3c718ed43e0a
+* title: Composition
+
+##### !question
+Composition can be initiated by a single line of code. In this code snippet, which line is responsible for starting the relationship between `Bedroom` and `Area`?
+
+```python
+1   class Room:
+2
+3       def __init__(self, width, length):
+4           self.width = width
+5           self.length = length
+6           self.area = Area(self.width, self.length)
+7
+8       def display_room_details(self):
+9           return "This room is " + str(self.area.calculate_area()) + " sq.ft."
+10
+11
+12  class Area:
+13
+14      def __init__(self, width, length):
+15          self.width = width
+16          self.length = length
+17
+18      def calculate_area(self):
+19          return self.width * self.length
+20
+21
+22  bedroom = Room(20, 20)
+23  print(bedroom.display_room_details())
+```
+##### !end-question
+
+##### !options
+* 6
+* 12
+* 22
+##### !end-options
+
+##### !answer
+* 6
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
