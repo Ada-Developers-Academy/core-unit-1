@@ -129,55 +129,30 @@ As classes interact with each other, code becomes more complex. By nature, inher
 <!-- Question 1 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-* type: multiple-choice
-* id: 0375c3e0-7e50-49b4-bbbd-2d58951876c1
+* type: checkbox
+* id: 85c8a657-1907-418a-9020-7b7baf02b9d1
 * title: Inheritance
 ##### !question
-Imagine we are creating a virtual petting zoo named "Ada Animals" ("Adanimals" for short).
 
-We have two classes so far: `Mammal` and `Bear`.
+What is a key difference between inheritance and composition?
 
-Select the option that best describes the parent-child relationship between the two classes.
 ##### !end-question
 ##### !options
-* `Bear` inherits methods from `Mammal`.
-* `Bear` inherits variables and methods from `Mammal`
-* `Mammal` inherits variables and methods from `Bear`
+
+* Composition is an extension of a parent class, and inheritance is more of a distant cousin twice removed.
+* Inheritance describes an **is-a** relationship. Composition describes a **has-a** relationship.
+* Inheritance can be described as an extension of a parent class. Composition adds supportive logic to a class.
+
 ##### !end-options
+
 ##### !answer
-* `Bear` inherits variables and methods from `Mammal`
+* Inheritance describes an **is-a** relationship. Composition describes a **has-a** relationship.
+* Inheritance can be described as an extension of a parent class. Composition adds supportive logic to a class.
 ##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
 <!-- Question 2 -->
-<!-- prettier-ignore-start -->
-### !challenge
-* type: multiple-choice
-* id: Zl7xHN
-* title: Inheritance
-##### !question
-The Adanimals app needs help determining what information is shared between `Mammal` and `Bear`.
-
-All mammals will identified with a name, having two or 4 legs, region, the ability to eat, and the ability to reproduce.
-
-Bears will be identified by their species name, fur, region, size, the ability to growl, and average hibernation cycle.
-
-Which of the following traits and behaviors are shared between `Mammal` and `Bear`?
-##### !end-question
-
-##### !options
-* `Mammal` will share name, fur, region, size, the abiity to growl, and average hibernation cycle with `Bear`.
-* `Bear` will share name, fur, region, size, the abiity to growl, and average hibernation cycle with `Mammal`.
-* `Mammal` will share name, having two or 4 legs, region, the ability to eat and the ability to reproduce with `Bear`.
-##### !end-options
-##### !answer
-* `Mammal` will share name, having two or 4 legs, region, the ability to eat and the ability to reproduce with `Bear`.
-##### !end-answer
-### !end-challenge
-<!-- prettier-ignore-end -->
-
-<!-- Question 3 -->
 <!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
@@ -197,35 +172,7 @@ Harley's HR Company is using OOP to build a dashboard to display the benefits pl
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-<!-- Question 4 -->
-<!-- prettier-ignore-start -->
-### !challenge
-* type: multiple-choice
-* id: 31f651e3-aa01-47f4-8e02-ece744f35515
-* title: OOP Relationships
-##### !question
-Dino's Donut store is creating an online store using OOP. Dino has two classes: `DonutStore` and `Donuts`.
-
-`DonutStore` can display donuts and provide images of each donut from the list of several instances of the `Donut` class.
-
-Select the option that best describes this relationship.
-##### !end-question
-##### !options
-
-* Composition
-* Inheritance
-* Composite
-
-##### !end-options
-##### !answer
-
-* Composition
-
-##### !end-answer
-### !end-challenge
-<!--prettier-ignore-end -->
-
-<!-- Question 5 -->
+<!-- Question 3 -->
 <!-- prettier-ignore-start -->
 ### !challenge
 * type: multiple-choice
@@ -246,3 +193,22 @@ Using what type of OOP relationship would best describe how the `Vehicle`, `Boat
 ##### !end-answer
 ### !end-challenge
 <!--prettier-ignore-end -->
+
+<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: 6UWHLc
+* title: OOP Relationships
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->

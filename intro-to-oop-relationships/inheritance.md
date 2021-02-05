@@ -370,146 +370,21 @@ As always, follow your curiosity!
 
 ## Check for Understanding
 
-<!-- Question 3 -->
+<!-- Question Takeaway -->
 <!-- prettier-ignore-start -->
 ### !challenge
-* type: multiple-choice
-* id: eozPHg
+* type: paragraph
+* id: ohpI0z
 * title: Inheritance
-
 ##### !question
-Given this code, select the option that best describes how inheritance works between the `Bear` and `Mammal` class.
 
-```python
-class Mammal:
-    def __init__(self, name, region):
-        self.name = name
-        self.region = region
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
 
-    def make_noise():
-        print("AHHHHHHH")
-
-class Bear(Mammal):
-    def __init__(self, color, size):
-        self.color = color
-        self.size = size
-
-    def make_appearance():
-        print("ʕ •ᴥ• ʔ")
-```
 ##### !end-question
-##### !options
-* `Bear` inherits `name`, `region`, and `make_appearance()` from `Mammal`.
-* `Mammal` inherits `color`, `size`, and `make_appearance()` from `Mammal`.
-* `Bear` inherits `name`, `region`, and `make_noise()` from `Mammal`.
-##### !end-options
+##### !placeholder
 
-##### !answer
-* `Bear` inherits `name`, `region`, and `make_noise()` from `Mammal`.
-##### !end-answer
-### !end-challenge
-<!-- prettier-ignore-end -->
+My biggest takeaway from this lesson is...
 
-<!-- Question 4 -->
-<!-- prettier-ignore-start -->
-### !challenge
-* type: checkbox
-* id: 3963ffe6-78b6-47cd-8267-a4ff80ed0f47
-* title: Inheritance
-
-##### !question
-Select the option that would generate the output:
-
-```
-ʕ •ᴥ• ʔ
-ROOAAAR!!
-```
-##### !end-question
-##### !options
-* 
-```python
-class Mammal:
-    def __init__(self, name, region):
-        self.name = name
-        self.region = region
-
-    def make_noise(self):
-        return "AHHHHHHH"
-
-class Bear(Mammal):
-    def make_appearance(self):
-        return "ʕ •ᴥ• ʔ"
-
-bear = Bear("bear", "wa")
-print(bear.make_appearance())
-print(bear.make_noise())
-```
-
-* 
-```python
-class Mammal:
-    def __init__(self, name, region):
-        self.name = name
-        self.region = region
-
-    def make_noise(self):
-        return "AHHHHHHH"
-
-class Bear(Mammal):
-    def make_appearance(self):
-        return "ʕ •ᴥ• ʔ"
-
-    def make_noise(self):
-        return "ROOAAAR!!"
-
-bear = Bear("bear", "wa")
-print(bear.make_appearance())
-print(bear.make_noise())
-```
-* 
-```python
-class Mammal:
-    def __init__(self, name, region):
-        self.name = name
-        self.region = region
-
-    def make_noise(self):
-        return "AHHHHHHH"
-
-class Bear(Mammal):
-    def make_appearance(self):
-        return "ʕ •ᴥ• ʔ"
-
-    def make_noise(self):
-        return "ROOAAAR!!"
-
-bear = Mammal("bear", "wa")
-print(bear.make_appearance())
-print(bear.make_noise())
-```
-##### !end-options
-
-##### !answer
-```python
-class Mammal:
-    def __init__(self, name, region):
-        self.name = name
-        self.region = region
-
-    def make_noise(self):
-        return "AHHHHHHH"
-
-class Bear(Mammal):
-    def make_appearance(self):
-        return "ʕ •ᴥ• ʔ"
-
-    def make_noise(self):
-        return "ROOAAAR!!"
-
-bear = Bear("bear", "wa")
-print(bear.make_appearance())
-print(bear.make_noise())
-```
-##### !end-answer
+##### !end-placeholder
 ### !end-challenge
 <!-- prettier-ignore-end -->
