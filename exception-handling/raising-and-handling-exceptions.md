@@ -166,34 +166,6 @@ Here's a step-by-step explanation of how the code above runs:
 1. Then, we print the exception with a message. We could do other stuff too, such as `return None`
 1. Finally, we exit this whole thing.
 
-<!-- Question 1 -->
-<!-- prettier-ignore-start -->
-### !challenge
-* type: ordering
-* id: e45ab433-76f7-46b8-8203-92f7df1a7515
-* title: try-except block
-##### !question
-
-Assume we have a function `process_list` which takes a list as an argument and performs an operation on it. If the function is passed something other than a list, it throws a `TypeError` exception. It may throw another type of exception if something else goes wrong.
-
-Re-order the following lines of code into a working try-except block.
-
-For this question, disregard proper indentation.
-
-##### !end-question
-##### !answer
-
-1. `try:`
-1. `process_list(my_list)`
-1. `except TypeError:`
-1. `print("Variable is not a list")`
-1. `except:`
-1. `print("Something else went wrong")`
-
-##### !end-answer
-### !end-challenge
-<!-- prettier-ignore-end -->
-
 ### More Examples
 
 For each example:
@@ -291,6 +263,35 @@ We're trying to print carrot, but carrot is never defined before this. name 'car
 ```
 
 In our try-clause, different situations will raise different exceptions. Chaining except-clauses allows us to rescue them in specific ways.
+
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: ordering
+* id: e45ab433-76f7-46b8-8203-92f7df1a7515
+* title: try-except block
+##### !question
+
+Assume we have a function `process_list` which takes a list as an argument and performs an operation on it. If the function is passed something other than a list, it throws a `TypeError` exception. It may throw another type of exception if something else goes wrong.
+
+Re-order the following lines of code into a working try-except block.
+
+For this question, disregard proper indentation.
+
+##### !end-question
+##### !answer
+
+1. `try:`
+1. `process_list(my_list)`
+1. `except TypeError:`
+1. `print("Variable is not a list")`
+1. `except:`
+1. `print("Something else went wrong")`
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
 
 ### !callout-secondary
 
