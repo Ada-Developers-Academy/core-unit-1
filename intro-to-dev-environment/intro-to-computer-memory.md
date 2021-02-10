@@ -14,6 +14,7 @@ What does it mean when our Activity Monitor says a program takes 100% CPU utiliz
 
 - CPU
 - RAM
+- Volatile memory
 
 ## CPU
 
@@ -50,9 +51,9 @@ RAM, or Random-access memory, is a form of computer memory. RAM sticks are physi
 
 RAM is fast! For one, it's directly connected to the CPU. And no matter the address, the CPU can access any location in RAM in the same amount of time. Imagine being able to access a storage unit on the top floor just as quickly as a unit near the front door! This property is what the "random-access" part of RAM describes.
 
-Ram holds data temporarily. When a computer turns off, and no more power is supplied to the RAM sticks, RAM stops holding memory. RAM holds data temporarily, and can't be used for long-term data storage.
+RAM holds data temporarily. When a computer turns off, and no more power is supplied to the RAM sticks, RAM stops holding memory. RAM holds data temporarily, and can't be used for long-term data storage. We refer to this data impermanence as being "volatile."
 
-If RAM is fast, but temporary, what do we use RAM for?
+If RAM is fast, but volatile, what do we use RAM for?
 
 ### How the CPU Uses RAM
 
