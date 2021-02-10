@@ -51,6 +51,14 @@ RAM, or Random-access memory, is a form of computer memory. RAM sticks are physi
 
 RAM is fast! For one, it's directly connected to the CPU. And no matter the address, the CPU can access any location in RAM in the same amount of time. Imagine being able to access a storage unit on the top floor just as quickly as a unit near the front door! This property is what the "random-access" part of RAM describes.
 
+### !callout-info
+
+## Sequential Access Memory
+
+In contrast to RAM, there is another memory configuration called SAM, or sequential access memory. It is less common these days, and is most typically used as long-term storage, often in the form of magnetic tape. It's referred to as "sequential" because if we need to access some data stored in the middle of the tape, we must inspect the tape sequentially, from the beginning, until we reach the data of interest. Compared to RAM, it's relatively inexpensive, high capacity, and _very_ slow.
+
+### !end-callout
+
 RAM holds data temporarily. When a computer turns off, and no more power is supplied to the RAM sticks, RAM stops holding memory. RAM holds data temporarily, and can't be used for long-term data storage. We refer to this data impermanence as being "volatile."
 
 If RAM is fast, but volatile, what do we use RAM for?
