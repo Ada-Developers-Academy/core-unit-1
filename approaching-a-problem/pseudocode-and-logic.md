@@ -100,14 +100,14 @@ Calculate the average of the numbers 3, 5, 6, 15, and 27 using a loop.
 1.
 
 ```python
-make a numbers variable, and it is an array
-make a sum variable, and it starts with a value of 0
+make a numbers variable, which is an array
+make a sum variable, which starts with a value of 0
 
 loop through each number in numbers array
   add number to sum
 end the loop
 
-the average is sum / number
+the average is sum / size of numbers array
 ```
 
 2.
@@ -121,7 +121,7 @@ loop each number in numbers
   increment sum by number amount with sum += number
 end
 
-average = sum / number
+average = sum / len(numbers)
 ```
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
