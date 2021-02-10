@@ -161,7 +161,7 @@ In our problem-solving steps, we can use pseudocode to think through the solutio
 
 In the two examples below, we should witness these things:
 
-1. Break down the problem into sub-problems
+1. Break down the problem into a list of sub-problems
 1. Write pseudocode first
 1. Then Python code
 1. Repeat
