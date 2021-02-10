@@ -56,9 +56,9 @@ If RAM is fast, but temporary, what do we use RAM for?
 
 ### How the CPU Uses RAM
 
-Since the CPU is responsible for running computer programs, the CPU will use RAM to hold temporary data while an application is running.
+The CPU is responsible for running computer programs. When we start a program, first it gets copied into RAM. Then the CPU starts fetching instructions from the RAM containing the program code. As it carries out those instructions, it will also use RAM to read and write the temporary data the application needs while it's running.
 
-The CPU can directly access RAM, so the CPU can rely on it a lot!
+Modern CPUs are very fast, and need a lot of data to stay busy. As a result, the CPU will end up accessing RAM billions of times every second! Fortunately, the connection between the CPU and RAM is direct and dependable, allowing this incredible system to operate reliably.
 
 ## Check for Understanding
 
