@@ -301,7 +301,7 @@ Which of the following is an accurate description of the process in Examples 1 a
 ##### !end-options
 ##### !answer
 
-* The developer started with a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
+* The developer started by writing out subproblems in a numbered list, then used that list to write a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
 
 ##### !end-answer
 
