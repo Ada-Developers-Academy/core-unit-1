@@ -36,11 +36,11 @@ Each piece of data in memory occupies a memory location, which has an assigned m
 
 ### Metaphor: Storage Units With Addresses
 
-We can compare a memory device to a [Self-Storage Unit Center](https://en.wikipedia.org/wiki/Self_storage), where each self-storage unit has an address like 100, 101, 102, etc. We can put the data from a `taxes` program into the storage units with the addresses 301, 302, and 303. We can put the data from a `weather` program into the storage units 304, 305, and 306.
+We can compare a memory device to a [Self-Storage Unit Center](https://en.wikipedia.org/wiki/Self_storage), where each self-storage unit has an address like 100, 101, 102, etc. We can put the data from a `taxes` program into the storage units with the addresses 301, 302, and 303. We can put the data from a `weather` program into the storage units 754, 755, and 756.
 
-When we want to get our data and possessions from our `taxes` program, we go to units 301, 302, and 303, and grab whatever is in there. To get data from our `weather` program, we go to units 304, 305, and 306, and get what's in those units.
+When we want to get our data and possessions from our `taxes` program, we go to units 301, 302, and 303, and grab whatever is in there. To get data from our `weather` program, we go to units 754, 755, and 756, and get what's in those units.
 
-If we need to change our `weather` program data, we go back to units 304, 305, and 306, and add our rain data and rain boots. The next time we _get_ data from 304, 305, and 306, we'll end up grabbing our updated rain data and rain boots too!
+If we need to change our `weather` program data, we go back to units 754, 755, and 756, and add our rain data and rain boots. The next time we _get_ data from 754, 755, and 756, we'll end up grabbing our updated rain data and rain boots too!
 
 ## RAM
 
