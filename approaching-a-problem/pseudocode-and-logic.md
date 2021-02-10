@@ -290,13 +290,13 @@ Which of the following is an accurate description of the process in Examples 1 a
 ##### !end-question
 ##### !options
 
-* The developer started with equal parts of readable pseudocode and working Python code
+* The developer started by writing out subproblems in a numbered list, then used that list to write working Python code
 
-* The developer started with a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
+* The developer started by writing out subproblems in a numbered list, then used that list to write a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
 
-* The developer started with a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "innermost" (indented) pseudocode
+* The developer started by writing out subproblems in a numbered list, then used that list to write a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "innermost" (most indented) pseudocode
 
-* The developer started with a working Python solution, and then replaced the Python code with pseudocode
+* The developer started by writing working Python solution, and then replaced the Python code with pseudocode
 
 ##### !end-options
 ##### !answer
