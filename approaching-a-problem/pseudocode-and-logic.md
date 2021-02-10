@@ -176,9 +176,9 @@ Calculate the average of the numbers 3, 5, 6, 15, and 27 using a loop.
 ```
 1. setup array of numbers
 
-1. calculate the sum of the numbers
+2. calculate the sum of the numbers
 
-2. calculate the average (using the sum)
+3. calculate the average (using the sum)
 ```
 
 2.
