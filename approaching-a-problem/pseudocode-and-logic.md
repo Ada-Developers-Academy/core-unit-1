@@ -174,23 +174,27 @@ Calculate the average of the numbers 3, 5, 6, 15, and 27 using a loop.
 1.
 
 ```
-1. setup array of numbers
+Subproblem 1: setup array of numbers
 
-2. calculate the sum of the numbers
+Subproblem 2: calculate the sum of the numbers
 
-3. calculate the average (using the sum)
+Subproblem 3: calculate the average (using the sum)
 ```
 
 2.
 
 ```
+# Subproblem 1: setup array of numbers
 make a numbers variable, which is an array
+
+# Subproblem 2: calculate the sum of the numbers
 make a sum variable, which starts with a value of 0
 
 loop through each number in numbers array
   add number to sum
 end the loop
 
+# Subproblem 3: calculate the average (using the sum)
 the average is sum / the length of the numbers array
 ```
 
@@ -227,14 +231,17 @@ Count the number of even numbers from the numbers 3, 5, 6, 15, and 27 using a lo
 1.
 
 ```
-1. create a variable with all the required numbers
-2. count the number of even numbers in the variable
+Subproblem 1: create a variable with all the required numbers
+Subproblem 2: count the number of even numbers in the variable
 ```
 
 2.
 
 ```
+# Subproblem 1: create a variable with all the required numbers
 numbers = array, 3, 5, 6, 15, and 27
+
+# Subproblem 2: count the number of even numbers in the variable
 num_of_even_nums = start at 0
 
 for each number in numbers
