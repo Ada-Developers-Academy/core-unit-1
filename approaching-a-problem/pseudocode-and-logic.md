@@ -113,7 +113,6 @@ the average is sum / size of numbers array
 2.
 
 ```python
-# numbers is numbers from prompt
 numbers = [3, 5, 6, 15, 27]
 sum = 0
 
