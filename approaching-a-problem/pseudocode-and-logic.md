@@ -200,14 +200,16 @@ the average is sum / the length of the numbers array
 3.
 
 ```python
-# numbers is numbers from prompt
+# Subproblem 1: setup array of numbers
 numbers = [3, 5, 6, 15, 27]
+# Subproblem 2: calculate the sum of the numbers
 sum = 0
 
 loop through each number in numbers array
   increment sum by number amount with sum += number
 end
 
+# Subproblem 3: calculate the average (using the sum)
 average = sum / len(numbers)
 ```
 
@@ -256,7 +258,9 @@ end
 3.
 
 ```python
+# Subproblem 1: create a variable with all the required numbers
 numbers = [3, 5, 6, 15, 27]
+# Subproblem 2: count the number of even numbers in the variable
 num_of_even_nums = 0
 
 for number in numbers
