@@ -173,20 +173,19 @@ Calculate the average of the numbers 3, 5, 6, 15, and 27 using a loop.
 
 1.
 
-```python
-make a numbers variable, and it is an array
-make a sum variable, and it starts with a value of 0
+```
+1. setup array of numbers
 
-add each number in numbers to sum using a loop
+1. calculate the sum of the numbers
 
-the average is sum / the total number of numbers
+2. calculate the average (using the sum)
 ```
 
 2.
 
-```python
-make a numbers variable, and it is an array
-make a sum variable, and it starts with a value of 0
+```
+make a numbers variable, which is an array
+make a sum variable, which starts with a value of 0
 
 loop through each number in numbers array
   add number to sum
@@ -227,23 +226,14 @@ Count the number of even numbers from the numbers 3, 5, 6, 15, and 27 using a lo
 
 1.
 
-```python
-make numbers variable: array, 3, 5, 6, 15, and 27 from prompt
-make number of even numbers variable: start at 0
-
-loop through each number in numbers
-  if the number is even
-    then add 1 to number of even numbers
-  else
-    then the number is odd
-    dont do anything
-  end else
-end loop
+```
+1. create a variable with all the required numbers
+2. count the number of even numbers in the variable
 ```
 
 2.
 
-```python
+```
 numbers = array, 3, 5, 6, 15, and 27
 num_of_even_nums = start at 0
 
