@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this lesson is to introduce computer memory. We believe that having an introduction to the stack and heap will allow us to better understand and debug memory allocation, variables, and references vs. values moving forward.
+The goal of this lesson is to introduce computer memory. We believe this introductory content will help us better understand the machines we work on.
 
 ## Introduction
 
@@ -14,8 +14,6 @@ What does it mean when our Activity Monitor says a program takes 100% CPU utiliz
 
 - CPU
 - RAM
-- Stack
-- Heap
 
 ## CPU
 
@@ -61,88 +59,6 @@ If RAM is fast, but temporary, what do we use RAM for?
 Since the CPU is responsible for running computer programs, the CPU will use RAM to hold temporary data while an application is running.
 
 The CPU can directly access RAM, so the CPU can rely on it a lot!
-
-## The Stack and Heap
-
-RAM has two special regions: the stack and the heap.
-
-The stack and the heap are both used to store temporary data within RAM.
-
-However, these two regions manage, optimize, organize, and store temporary data using different strategies.
-
-### !callout-info
-
-## Stacks and Heaps Self-Storage Metaphor
-
-We could call the stack and heap two different neighborhoods in our Self-Storage Unit Center, where the different neighborhoods follow different rules for filling up self-storage units.
-
-### !end-callout
-
-### Stack
-
-The stack is a region of memory that is strong at being _really_ fast at managing the most recently stored data. The more recently pushed or stored the data is, the faster it is to manage the data.
-
-### !callout-info
-
-## Stacks Self-Storage Metaphor
-
-We could say that storage units are aligned in a row (mimicking a "stack" structure). If we want to hold more rainboots, we'll add the new storage unit 307 to our storage unit stack, and put the rainboots in there. When we want to grab our rainboots, we'll go directly to the top storage unit, 307, and grab whatever is in there. We didn't have to navigate with too much difficulty, as long as we knew the rainboots were recently added.
-
-### !end-callout
-
-### Heap
-
-The heap is a region of memory that is strong at holding a lot of data, or an unknown amount of data. The heap doesn't manage memory allocation in a special shape like the stack. This form more organically and dynamically allocate memory for any data.
-
-When we don't know how big data is, the heap is more reliable. Data stored on the heap can be accessed by a lot of different functions in a program.
-
-### !callout-info
-
-## Heaps Self-Storage Metaphor
-
-We could say that in this region, self-storage units are assigned whenever someone comes in and asks for a certain number of storage units. The self-storage unit manager will do their best to give the customer a row of storage units all next to each other. When a renter is finished with their storage unit and is done with it, the manager could consider re-renting that unit again. However, navigating the storage units here may be trickier, or just take a little longer.
-
-### !end-callout
-
-### Stack and Heap Summary
-
-| Region | How it stores data                                                                                                                                                       | Strength                                                 |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
-| Stack  | Like a stack of dishes. New data gets placed "on top" of the stack of dishes. The data that is the last to come into the stack is the data that's the first to come out. | _Very_ fast for occasions where data is _very_ temporary |
-| Heap   | Determines how much and where memory is allocated as data of varying sizes comes in.                                                                                     | Stores data of unknown sizes well                        |
-
-## Applied to Variables
-
-Consider variable assignment:
-
-```python
-apples = "Hello, World!"
-```
-
-When this program runs, our CPU begins to process it.
-
-Every time our CPU runs into variable assignment, our CPU wants to put that data in memory. However, the CPU doesn't want to store the full idea "the variable `apples` has the value `"Hello, World!"`. Instead, the CPU thinks of **_two things_** that should be held in memory:
-
-1. On the heap, store the value of the variable at a specific memory address
-2. On the stack, store the variable and the specific memory address that it _points to_
-
-### Example
-
-When running the line `apples = "Hello, World!"`, the CPU wants to store these two things in memory:
-
-1. The value `"Hello, World!"`
-2. The variable `apples`
-
-The CPU decides to process `apples = "Hello, World!"` by allocating memory like this:
-
-1. On the heap, the string value `"Hello, World!"` gets stored with a memory address of `5555`
-2. On the stack, the variable named `apples` gets stored. Along with the variable name, it stores the information "the value that this variable points to is in the memory address `5555`."
-
-## Summary
-
-This primer on computer memory should help us think more like a computer, and empathize with how a computer stores data just a little bit more.
-
-We can also feel a closer relationship between the physical computer hardware, the data in memory, and the variables we work with in Python code.
 
 ## Check for Understanding
 
