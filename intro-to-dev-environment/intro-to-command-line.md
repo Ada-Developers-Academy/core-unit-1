@@ -1,5 +1,7 @@
 # Intro to Command Line
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=5d739e22-8056-42d3-96f0-accc003af3dc&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Create commands to navigate the file system through the command line using cd, ls, and pwd.
