@@ -31,7 +31,7 @@ Given a function called `stopwatch` that takes in the argument `22`, which of th
 
 ##### !answer
 
-* `for i in range(1,23):`
+* `for i in range(1, 23):`
 
 ##### !end-answer
 
@@ -116,8 +116,8 @@ An example of a working implementation:
 
 def sum_list(list):
   sum = 0
-  for i in list:
-    sum += i
+  for item in list:
+    sum += item
   return sum
 
 ```
@@ -138,50 +138,69 @@ def sum_list(list):
 
 ##### !question
 
-Given this dictionary: 
+Given this dictionary...
+
 ``` python
-
-my_profile = {"icecream_flavor": "chocolate", has_siblings: True}
-
+my_profile = {"icecream_flavor": "chocolate", "has_siblings": True}
 ```
 
-Which loop(s) *can* be used to print out each key?
+Which of the loops below will produce the following output?
+
+```
+icecream_flavor
+has_siblings
+```
 
 ##### !end-question
-
 ##### !options
 
-* `for x in my_profile:`
-* `for x in my_profile.keys():`
-* `for x in my_profile.values():`
-* `for x, y in my_profile.items():`
+* 
+```python
+for x in my_profile:
+    print(x)
+```
+
+* 
+```python
+for x in my_profile:
+    print(my_profile[x])
+```
+
+* 
+```python
+for x in my_profile.keys():
+    print(x)
+```
+
+* 
+```python
+for x, y in my_profile.items():
+    print(y)
+```
 
 
 ##### !end-options
 
 ##### !answer
 
-* `for x in my_profile:`
-* `for x in my_profile.keys():`
-* `for x, y in my_profile.items():`
+* 
+```python
+for x in my_profile:
+    print(x)
+```
+
+* 
+```python
+for x in my_profile.keys():
+    print(x)
+```
 
 ##### !end-answer
-
-
 ##### !hint
 
+This question purposefully uses unreadable variable names. Replace the variable names `x` and `y` for more clarity.
+
 ##### !end-hint
-
-
-##### !rubric
-
-##### !end-rubric
-
-
-##### !explanation
-
-##### !end-explanation
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -193,114 +212,73 @@ Which loop(s) *can* be used to print out each key?
 * id: NyhIeJG0K
 * title: Choose the Best Option(s)
 
-
 ##### !question
 
-Given this dictionary: 
+Given this dictionary...
+
 ``` python
-
-my_profile = {"icecream_flavor": "chocolate", has_siblings: True}
-
+my_profile = {"icecream_flavor": "chocolate", "has_siblings": True}
 ```
 
-Which loop(s) *can* be used to print out each value?
+Which of the loops below will produce the following output?
+
+```
+chocolate
+True
+```
 
 ##### !end-question
-
 ##### !options
 
-* `for x in my_profile:`
-* `for x in my_profile.keys()`
-* `for x in my_profile.values()`
-* `for x, y in my_profile.items()`
+* 
+```python
+for x in my_profile:
+    print(x)
+```
 
+* 
+```python
+for x in my_profile:
+    print(my_profile[x])
+```
+
+* 
+```python
+for x in my_profile.keys():
+    print(x)
+```
+
+* 
+```python
+for x, y in my_profile.items():
+    print(y)
+```
 
 ##### !end-options
-
 ##### !answer
 
-* `for x in my_profile:`
-* `for x in my_profile.values()`
-* `for x, y in my_profile.items()`
+* 
+```python
+for x in my_profile:
+    print(my_profile[x])
+```
+
+* 
+```python
+for x, y in my_profile.items():
+    print(y)
+```
 
 ##### !end-answer
-
-
 ##### !hint
 
+This question purposefully uses unreadable variable names. Replace the variable names `x` and `y` for more clarity.
+
 ##### !end-hint
-
-
-##### !rubric
-
-##### !end-rubric
-
-
-##### !explanation
-
-##### !end-explanation
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
 <!-- Question 5 -->
-<!-- prettier-ignore-start -->
-### !challenge
-
-* type: checkbox
-* id: V1VRgkzAY
-* title: Choose the Best Option(s)
-
-
-##### !question
-
-Given this dictionary: 
-``` python
-
-my_profile = {"icecream_flavor": "chocolate", has_siblings: True}
-
-```
-
-Which loop(s) *can* be used to print out both keys and values?
-
-##### !end-question
-
-##### !options
-
-* `for x in my_profile:`
-* `for x in my_profile.keys()`
-* `for x in my_profile.values()`
-* `for x, y in my_profile.items()`
-
-
-##### !end-options
-
-##### !answer
-
-* `for x in my_profile:`
-* `for x, y in my_profile.items()`
-
-##### !end-answer
-
-
-##### !hint
-
-##### !end-hint
-
-
-##### !rubric
-
-##### !end-rubric
-
-
-##### !explanation
-
-##### !end-explanation
-
-### !end-challenge
-<!-- prettier-ignore-end -->
-
-<!-- Question 6 -->
 <!-- prettier-ignore-start -->
 ### !challenge
 
@@ -311,78 +289,76 @@ Which loop(s) *can* be used to print out both keys and values?
 
 ##### !question
 
-Given a function named `search_dictionary` that takes two parameters: `dict` (a dictionary) and `check` (a string), check if the key `check` is found in `dict`, and then return the value at that key.
+Create a function named `search_dictionary`. This function...
 
-For example, given: `{"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34], has_pets: True}` and `has_pets`, return `True`.
+- Has two parameters, `dict` and `needle`
+    - `dict` is a dictionary
+    - `needle` is a string
+- If `needle` is a key found in `dict`, then return the value at that key.
+
+**Required**: Use a for-loop.
+
+Here is the test:
+
+```python
+def test_search_dictionary_finds_value():
+    dict = {"icecream_flavor": "chocolate",
+            "lucky_nums": [7, 18, 34],
+            "has_pets": True}
+    assert search_dictionary(dict, "icecream_flavor") == "chocolate"
+```
 
 ##### !end-question
 
 ##### !placeholder
 
 ```python
-
-def search_dictionary(dict, check):
+def search_dictionary(dict, needle):
     # Note: the word "dict" may be highlighted because the Learn platform believes it's reserved
     # This should not affect our code
     pass
-
 ```
 
 ##### !end-placeholder
-
 ##### !tests
 ```python
 
 import unittest
 from main import *
 
-dict = {"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34], has_pets: True}
 class TestPython1(unittest.TestCase):
-    def test_one(self):
-        self.assertEqual(search_dictionary(dict, "has_dogs"))
-        self.assertEqual(search_dictionary(dict, "icecream_flavor"),"chocolate")
+    def test_search_dictionary_finds_value(self):
+        dict = {"icecream_flavor": "chocolate",
+                "lucky_nums": [7, 18, 34],
+                "has_pets": True}
+        self.assertEqual(search_dictionary(
+            dict, "icecream_flavor"), "chocolate")
 
 ```
 ##### !end-tests
-
-
-##### !hint
-
-##### !end-hint
-
-
-##### !rubric
-
-##### !end-rubric
-
-
 ##### !explanation
 
 Two examples of working implementations:
 
 ``` python
-
-def search_dictionary(dict,check):
-  for i in dict:
-    if i == check:
-      return dict[i]
-
+def search_dictionary(dict, needle):
+    for item in dict:
+        if item == needle:
+            return dict[needle]
 ```
+
 ``` python
-
-def search_dictionary(dict,check):
-  for key, value in dict.items():
-    if key == check:
-      return value
-
+def search_dictionary(dict, needle):
+    for key, value in dict.items():
+        if key == needle:
+            return dict[needle]
 ```
 
 ##### !end-explanation
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-<!-- Question 7 -->
+<!-- Question 6 -->
 <!-- prettier-ignore-start -->
 ### !challenge
 
@@ -393,77 +369,74 @@ def search_dictionary(dict,check):
 
 ##### !question
 
-Given the function `search_dictionary` created above, let's add to it. If function runs through the `dict` and find no `check` key, then return `False`.
+Continue the function named `search_dictionary` from above. This function still has two parameters, `dict` and `needle`, and returns the value if there is a key that matches `needle`.
 
-For example, given: `{"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34], has_pets: True}` and `has_dogs`, return `False`.
+Now, if `dict` does not contain the `needle` key, the function returns `False`.
 
-##### !end-question
+**Required**: Use a for-loop.
 
-##### !placeholder
+Here are the tests:
 
 ```python
+def test_search_dictionary_finds_value():
+    dict = {"icecream_flavor": "chocolate",
+            "lucky_nums": [7, 18, 34],
+            "has_pets": True}
+    assert search_dictionary(dict, "icecream_flavor") == "chocolate"
 
-def search_dictionary(dict,check):
-  # add your code here from the previous challenge,
-  # and then add to it
-  pass
 
+def test_search_dictionary_key_not_found_is_false():
+    dict = {"icecream_flavor": "chocolate",
+            "lucky_nums": [7, 18, 34],
+            "has_pets": True}
+    assert search_dictionary(dict, "has_dogs") == False
 ```
 
-##### !end-placeholder
-
+##### !end-question
 ##### !tests
 ```python
-
 import unittest
 from main import *
 
-dict = {"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34], has_pets: True}
 class TestPython1(unittest.TestCase):
-def test_one(self):
-  self.assertEqual(search_dictionary(dict, "has_dogs"),False)
-  self.assertEqual(search_dictionary(dict, "icecream_flavor"),"chocolate")
+    def test_search_dictionary_finds_value(self):
+        dict = {"icecream_flavor": "chocolate",
+                "lucky_nums": [7, 18, 34],
+                "has_pets": True}
+        self.assertEqual(search_dictionary(
+            dict, "icecream_flavor"), "chocolate")
 
+    def test_search_dictionary_key_not_found_is_false(self):
+        dict = {"icecream_flavor": "chocolate",
+                "lucky_nums": [7, 18, 34],
+                "has_pets": True}
+        self.assertEqual(search_dictionary(dict, "has_dogs"), False)
 ```
 ##### !end-tests
-
-
 ##### !hint
 
 If you're stuck, consider reviewing the information on pairing an `else` statement with a `for loop`.
 
 ##### !end-hint
-
-
-##### !rubric
-
-##### !end-rubric
-
-
 ##### !explanation
 
 Two examples of working implementations:
 
 ``` python
-
-def search_dictionary(dict,check):
-  for i in dict:
-    if i == check:
-      return dict[i]
-  else:
+def search_dictionary(dict, needle):
+    for item in dict:
+        if item == needle:
+            return dict[needle]
     return False
-
 ```
 ``` python
-
-def search_dictionary(dict,check):
-  for key, value in dict.items():
-    if key == check:
-      return value
-  return False
-
+def search_dictionary(dict, needle):
+    for item in dict:
+        if item == needle:
+            return dict[needle]
+    else:
+        return False
 ```
 ##### !end-explanation
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
