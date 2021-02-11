@@ -16,22 +16,22 @@ Complete all questions below.
 
 ##### !question
 
-Given a function called `stopwatch` that takes in the argument `22`, which of the following loops would  correctly start at `1` and increment all the way up to *and include* `22`?
+Given a function called `stopwatch` that takes in the argument `22`, which of the following loops would start at `1` and increment all the way up to *and include* `22`?
 
 ##### !end-question
 
 ##### !options
 
 * `for i in 22:`
-* `for i in range(22)`
-* `for i in range(1,22)`
-* `for i in range(1,23)`
+* `for i in range(22):`
+* `for i in range(1, 22):`
+* `for i in range(1, 23):`
 
 ##### !end-options
 
 ##### !answer
 
-`for i in range(1,23)`
+* `for i in range(1,23):`
 
 ##### !end-answer
 
@@ -75,7 +75,9 @@ Create a function named `sum_list` that takes a parameter `list` (a list of inte
 ```python
 
 def sum_list(list):
-  pass
+    # Note: the word "list" may be highlighted because the Learn platform believes it's reserved
+    # This should not affect our code
+    pass
 
 ```
 
@@ -88,9 +90,9 @@ import unittest
 from main import *
 
 class TestPython1(unittest.TestCase):
-def test_sum_list(self):
-  self.assertEqual(sum_list([3,5,7,9]),24)
-  self.assertEqual(sum_list([0,-3,6,6]),9)
+    def test_sum_list(self):
+        self.assertEqual(sum_list([3,5,7,9]),24)
+        self.assertEqual(sum_list([0,-3,6,6]),9)
 
 ```
 ##### !end-tests
@@ -150,9 +152,9 @@ Which loop(s) *can* be used to print out each key?
 ##### !options
 
 * `for x in my_profile:`
-* `for x in my_profile.keys()`
-* `for x in my_profile.values()`
-* `for x, y in my_profile.items()`
+* `for x in my_profile.keys():`
+* `for x in my_profile.values():`
+* `for x, y in my_profile.items():`
 
 
 ##### !end-options
@@ -160,8 +162,8 @@ Which loop(s) *can* be used to print out each key?
 ##### !answer
 
 * `for x in my_profile:`
-* `for x in my_profile.keys()`
-* `for x, y in my_profile.items()`
+* `for x in my_profile.keys():`
+* `for x, y in my_profile.items():`
 
 ##### !end-answer
 
@@ -319,8 +321,10 @@ For example, given: `{"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34],
 
 ```python
 
-def search_dictionary(dict,check):
-  pass
+def search_dictionary(dict, check):
+    # Note: the word "dict" may be highlighted because the Learn platform believes it's reserved
+    # This should not affect our code
+    pass
 
 ```
 
@@ -334,9 +338,9 @@ from main import *
 
 dict = {"icecream_flavor": "chocolate", "lucky_nums": [7, 18, 34], has_pets: True}
 class TestPython1(unittest.TestCase):
-def test_one(self):
-  self.assertEqual(search_dictionary(dict, "has_dogs"))
-  self.assertEqual(search_dictionary(dict, "icecream_flavor"),"chocolate")
+    def test_one(self):
+        self.assertEqual(search_dictionary(dict, "has_dogs"))
+        self.assertEqual(search_dictionary(dict, "icecream_flavor"),"chocolate")
 
 ```
 ##### !end-tests
