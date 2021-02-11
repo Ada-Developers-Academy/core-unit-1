@@ -37,7 +37,7 @@ RAM, or Random-access memory, is a form of computer memory. RAM sticks are physi
 1. RAM is fast
 1. RAM holds data temporarily
 
-RAM is fast! For one, it's directly connected to the CPU. And no matter the address, the CPU can access any location in RAM in the same amount of time. Imagine being able to access a storage unit on the top floor just as quickly as a unit near the front door! This property is what the "random-access" part of RAM describes.
+RAM is fast! For one, it's directly connected to the CPU. And no matter the address, the CPU can access any location in RAM in the same amount of time. Imagine being able to access a room on the top floor of a skyscraper just as quickly as a room near the front door! This property is what the "random-access" part of RAM describes.
 
 ### !callout-info
 
@@ -83,7 +83,7 @@ Each bin has a label like 100, 101, 102, etc. The CPU chef can put data from a `
 
 When the chef wants to get data and supplies from their `taxes` program, they go to bins 301, 302, and 303, and grab whatever is in there. To get data from their `weather` program, the chef goes to bins 754, 755, and 756, and gets what's in those bins.
 
-If they need to change our `weather` program data, the CPU chef goes back to units 754, 755, and 756, and adds their onions and potatoes. The next time they get data from bins 754, 755, and 756, they'll end up grabbing their updated onions and potatoes, too!
+If they need to change our `weather` program data, the CPU chef goes back to bins 754, 755, and 756, and adds their onions and potatoes. The next time they get data from bins 754, 755, and 756, they'll end up grabbing their updated onions and potatoes, too!
 
 ## Check for Understanding
 
