@@ -9,17 +9,14 @@ Complete all questions below.
 <!-- Question 1 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-
 * type: multiple-choice
 * id: EJew-RW0t
-* title: Which Range is Correct?
-
+* title: Iterating Over Data
 ##### !question
 
 Given a function called `stopwatch` that takes in the argument `22`, which of the following loops would start at `1` and increment all the way up to *and include* `22`?
 
 ##### !end-question
-
 ##### !options
 
 * `for i in 22:`
@@ -28,48 +25,31 @@ Given a function called `stopwatch` that takes in the argument `22`, which of th
 * `for i in range(1, 23):`
 
 ##### !end-options
-
 ##### !answer
 
 * `for i in range(1, 23):`
 
 ##### !end-answer
-
-
-##### !hint
-
-##### !end-hint
-
-
-##### !rubric
-
-##### !end-rubric
-
-
 ##### !explanation
 
 Python's `range` has an *exclusive nature*, meaning that it does not include the last integer in its range, ie the `stop` parameter. That's why we must use `23` instead of just `22`.
 
 ##### !end-explanation
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
 <!-- Question 2 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-
 * type: code-snippet
 * language: python3.6
 * id: EkdvU6Z0K
-* title: Iterate Over a List
-
+* title: Iterating Over Data
 ##### !question
 
 Create a function named `sum_list` that takes a parameter `list` (a list of integers). Iterate through the list and sum up each integer. Then return the total.
 
 ##### !end-question
-
 ##### !placeholder
 
 ```python
@@ -82,7 +62,6 @@ def sum_list(list):
 ```
 
 ##### !end-placeholder
-
 ##### !tests
 ```python
 
@@ -96,18 +75,6 @@ class TestPython1(unittest.TestCase):
 
 ```
 ##### !end-tests
-
-
-##### !hint
-
-##### !end-hint
-
-
-##### !rubric
-
-##### !end-rubric
-
-
 ##### !explanation
 
 An example of a working implementation:
@@ -123,19 +90,15 @@ def sum_list(list):
 ```
 
 ##### !end-explanation
-
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
 <!-- Question 3 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-
 * type: checkbox
 * id: N1iCy1fCF
-* title: Choose the Best Option(s)
-
-
+* title: Iterating Over Data
 ##### !question
 
 Given this dictionary...
@@ -180,7 +143,6 @@ for x, y in my_profile.items():
 
 
 ##### !end-options
-
 ##### !answer
 
 * 
@@ -207,11 +169,9 @@ This question purposefully uses unreadable variable names. Replace the variable 
 <!-- Question 4 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-
 * type: checkbox
 * id: NyhIeJG0K
-* title: Choose the Best Option(s)
-
+* title: Iterating Over Data
 ##### !question
 
 Given this dictionary...
@@ -281,12 +241,10 @@ This question purposefully uses unreadable variable names. Replace the variable 
 <!-- Question 5 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-
 * type: code-snippet
 * language: python3.6
 * id: NkbCNAWCF
-* title: Match the Output
-
+* title: Iterating Over Data
 ##### !question
 
 Create a function named `search_dictionary`. This function...
@@ -309,7 +267,6 @@ def test_search_dictionary_finds_value():
 ```
 
 ##### !end-question
-
 ##### !placeholder
 
 ```python
@@ -361,12 +318,10 @@ def search_dictionary(dict, needle):
 <!-- Question 6 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-
 * type: code-snippet
 * language: python3.6
 * id: Ny72-sS0Y
-* title: Match the Output, Cont.
-
+* title: Iterating Over Data
 ##### !question
 
 Continue the function named `search_dictionary` from above. This function still has two parameters, `dict` and `needle`, and returns the value if there is a key that matches `needle`.
