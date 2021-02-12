@@ -19,11 +19,11 @@ We can classify entire programing languages according to the programming paradig
 | Vocab                       | Definition                                                                                                                       | Synonyms                | How to Use in a Sentence                                                                                                                                                                                      |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Object-oriented programming | A programming paradigm based on "objects," which contain state (attributes) and behavior (methods)                               | OOP                     | "OOP means we will define classes, and use classes to make objects"                                                                                                                                           |
-| Object                      | A collection of structured data along with the operations that can be performed on that data. Often means one instance.          | Instance                | "In OOP, we'll be making a lot of objects," "We should invoke the `add_friend` method on the `User` object," "Each `User` object in the `User` list will have an ID"                                          |
+| Object                      | A collection of structured data along with the operations that can be performed on that data. An object is one instance of a class.          | Instance                | "In OOP, we'll be making a lot of objects," "We should invoke the `add_friend` method on the `User` object," "Each `User` object in the `User` list will have an ID"                                          |
 | Class                       | A template or blueprint used to create objects of a specific data type. Defines what concrete objects will look like.            | Prototype               | "The `String` class defines all of the attributes and methods that `String` objects have."                                                                                                                    |
 | Instance                    | One particular object of a certain data type/class. Follows the format defined by its class, and has specific, individual state. | Object                  | "That specific `User` instance has an ID of `25`," "We should instantiate a new `User` instance here, then save it to the database," "The method `add_friend` takes in one instance of `User` as a parameter" |
 | State                       | A generic term for the data that an object "knows" at one point in time. Usually, state can change over time.                    | -                       | "When a `User` object sends a message, the program checks the state of `online_status`"                                                                                                                       |
-| Attribute                   | A named property of a class. Attributes are usually used to keep track of state.                                                 | Property, field, "attr" | "The `User` class defines the attribute `online_status`," "The `online_status` attribute is a boolean," "We check the `online_status` property before we send a message"                                      |
+| Attribute                   | A named property of a class. Attributes are used to keep track of state.                                                 | Property, field, "attr" | "The `User` class defines the attribute `online_status`," "The `online_status` attribute is a boolean," "We check the `online_status` property before we send a message"                                      |
 | Behavior                    | A generic term for what an object can "do."                                                                                      | -                       | "The `User` class should have the behavior of adding a friend to the friend list"                                                                                                                             |
 | Method                      | A function that is defined inside of a class. Methods are usually used to describe behavior.                                     | Function                | "We need to call the `add_friend` method on `User`," "`User`'s `send_message` method checks the state of `online_status` at the beginning"                                                                    |
 
@@ -66,12 +66,13 @@ Each class definition will have:
 
 - A class name
   - This name is used as the "data type" name
-- Concept-related **attributes**
+- **Attributes**
   - An attribute is a piece of data
   - A class definition holding an attribute means we expect this class to hold a specific piece of data
-- Concept-related **methods**
-  - A method is a function that describes behavior or action
-- Logic to describe what happens every time the class is used to make an **instance.**
+- **Methods**
+  - A **method** is a function that describes behavior or action of a class
+- Logic to describe what happens every time the class is used to make an **instance.** (This is called the `__init__` method. We'll see it in action shortly)
+
 
 ### !callout-info
 
@@ -128,11 +129,15 @@ We might say...
 
 ### State and Behavior
 
-When we start defining our own classes, we will specify their **state** and their generic **behavior.**
+When we start defining our own classes, we will specify their **state** and their generic **behavior**.
 
-**State** describes any data or attributes that should be kept over its lifetime—from the moment we create an instance until we let the system reclaim its resources.
+**State**, **Attribute**, **Behavior**, and **Method** are all new terms we haven't heard before, but don't be intimidated by them! 
 
-**Behavior** describes any actions that objects of this class should be able to do.
+**State** is just a term that means "all the **attributes** of an object". **Attribute** is really just a specific type of **variable** defined within a class. 
+
+These **attributes** will be kept over the object's lifetime—-from the moment we create an instance until the object goes out of scope.
+
+**Behavior** describes any actions that objects of this class should be able to do. In other words, **behavior** is just a term that means "all the **methods** of a class". **method** is really just a specific type of **Function** defined within a class.
 
 ### !callout-info
 
