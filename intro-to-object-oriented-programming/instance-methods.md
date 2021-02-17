@@ -86,17 +86,17 @@ In the above example, the instance method `get_audio_data` takes an additional p
 
 Inside the `get_audio_data` method, we use the attribute `self.track_list` _**and**_ the argument `track_index`. We assume `self.track_list` is a list, and we use it in a conditional statement. We use `track_index` in the line `return self.track_list[track_index - 1]`.
 
-### callout-info
+### !callout-info
 
 ## Instances of a Class do not share State but they do share Behavior
 
-As we've been learning, the two building-blocks of a class are **State** (ie. its attributes) and **Behavior** (ie. its methods). 
+As we've been learning, the two building-blocks of a class are **state** (ie. its attributes) and **behavior** (ie. its methods). 
 
 Like we saw in the [Creating Instances lesson](creating-instances.md), **each instance of a Class has its own state**. This means that one album object can have the title "When Doves Cry" and another album object have the title "Dirty Computer". 
 
 We will see now that **all instances of a class have the same behavior**. This means that the method `get_audio_data` will be the same for all album objects. The only thing that will change from one instance to another is the value of the `track_list` attribute.
 
-### end-callout
+### !end-callout
 
 <!-- Question 1 -->
 
