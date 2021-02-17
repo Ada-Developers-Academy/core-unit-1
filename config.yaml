@@ -419,7 +419,7 @@ Standards:
         Path: /composition/practice-composition.md
   -
     Title: Python OOP
-    Description: "Intro to Design Patterns, Intro to Decorators, Static Methods and Class Methods"
+    Description: "Intro to Design Patterns, Intro to Decorators, Static Methods and Class Methods, Practice: Static Methods and Class Methods"
     UID: 53ff8a562d3c8ba58b02a9b3ef612df5
     SuccessCriteria:
       - success criteria
