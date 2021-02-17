@@ -82,7 +82,7 @@ class Album:
             return "Invalid track"
 ```
 
-In the above example, the instance method `get_audio_data` takes an additional parameter `track_index`. This means that whenever we call this method, we must pass in an argument for `track_list`. `track_list` represents the index track we want audio data from.
+In the above example, the instance method `get_audio_data` takes an additional parameter `track_index`. This means that whenever we call this method, we must pass in an argument for `track_index`. `track_index` represents the index track we want audio data from.
 
 Inside the `get_audio_data` method, we use the attribute `self.track_list` _**and**_ the argument `track_index`. We assume `self.track_list` is a list, and we use it in a conditional statement. We use `track_index` in the line `return self.track_list[track_index - 1]`.
 
