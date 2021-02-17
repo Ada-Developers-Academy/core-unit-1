@@ -271,7 +271,7 @@ def listify_series(max_value):
 * title: Iterating Over Data
 ### !question
 
-Create a function named `sum_series` that takes one parameter `max_value` (an integer). Starting with `0`, add each number in the range from `0` to `max_value` together. Then return that total.
+Create a function named `sum_series` that takes one parameter `max_value` (an integer). Starting with `1`, add each number in the range from `1` to `max_value` together. Then return that total.
 
 **Required**: Use a for-loop and `range()`.
 
@@ -411,7 +411,7 @@ Assume that `min_value` and `max_value` are positive integers, where `min_value`
 ### !placeholder
 
 ```python
-def test_sum_even_nums_in_series(min_value, max_value):
+def sum_even_nums_series(min_value, max_value):
     pass
 ```
 ### !end-placeholder
@@ -530,7 +530,7 @@ def search_dictionary(dict, needle):
 def search_dictionary(dict, needle):
     for key, value in dict.items():
         if key == needle:
-            return dict[needle]
+            return value
 ```
 
 ##### !end-explanation
