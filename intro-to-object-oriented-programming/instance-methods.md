@@ -88,7 +88,7 @@ Inside the `get_audio_data` method, we use the attribute `self.track_list` _**an
 
 ### !callout-info
 
-## Instances of a Class do not share State but they do share Behavior
+## Instances of a Class Do Not Share State but They Do Share Behavior
 
 As we've been learning, the two building-blocks of a class are **state** (ie. its attributes) and **behavior** (ie. its methods). 
 

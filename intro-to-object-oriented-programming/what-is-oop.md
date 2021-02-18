@@ -133,11 +133,11 @@ When we start defining our own classes, we will specify their **state** and thei
 
 **State**, **Attribute**, **Behavior**, and **Method** are all new terms we haven't heard before, but don't be intimidated by them! 
 
-**State** is just a term that means "all the **attributes** of an object". **Attribute** is really just a specific type of **variable** defined within a class. 
+**State** is just a term that means "all the **attributes** of an object". **Attribute** is simply a specific type of **variable** defined within a class. 
 
-These **attributes** will be kept over the object's lifetime—-from the moment we create an instance until the object goes out of scope.
+These **attributes** will be kept over the object's lifetime-from the moment we create an instance until the object goes out of scope.
 
-**Behavior** describes any actions that objects of this class should be able to do. In other words, **behavior** is just a term that means "all the **methods** of a class". **method** is really just a specific type of **Function** defined within a class.
+**Behavior** describes any actions that objects of this class should be able to do. In other words, **behavior** is simply a term that means "all the **methods** of a class". A **method** is simply a specific type of **Function** defined within a class.
 
 ### !callout-info
 
