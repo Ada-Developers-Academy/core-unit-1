@@ -81,7 +81,7 @@ These complexities are ordered! We can describe their order in all of these ways
 
 You can see a chart comparing these complexities below.  This chart illustrates for a given input size, how the output of the given expressions change.  Look at the curve of each line.  Which curve accellerates most quickly?  Which curve barely increases at all as the input size increases.
 
-![Complexities comparison chart](images/time-complexities.png)
+![Complexities comparison chart](../assets/big-o-notation_time-complexities.png)
 ### !callout-info
 
 ## How do we say it out loud?
