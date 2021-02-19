@@ -135,7 +135,7 @@ Consider this problem: You have an address book, and you want to find the contac
 
 ##### !question
 
-Arrange the following complexities from worst to best
+Arrange the following complexities from worst to best.
 
 ##### !end-question
 
