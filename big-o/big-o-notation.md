@@ -111,6 +111,43 @@ Consider this problem: You have an address book, and you want to find the contac
 
 <!-- Question about comparing Big Os for more efficient -->
 
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: ordering
+* id: d2d156f6-aaab-4aba-9cf7-b9cdaceed013
+* title: Time/Space Complexities Worst-to-best
+* points: 1
+* topics: big-o
+
+##### !question
+
+Arrange the following complexities from worst to best
+
+##### !end-question
+
+##### !answer
+
+1. O(1)
+1. O(2^n)
+1. O(n log n)
+1. O(log n)
+1. O(n^2)
+1. O(n)
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
 <!-- Question about comparing Big Os for more efficient -->
 
 <!-- Question about comparing Big Os for more efficient -->
