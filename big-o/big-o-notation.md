@@ -95,6 +95,17 @@ Developers talk about Big O a lot, so it's useful to know how to talk about this
 
 ### !end-callout
 
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-warning
+
+## Big-O Doesn't give an exact number
+
+The complexities listed above are **not** intended to calculate an exact runtime or memory usage for an algorithm.  Different types of computers and different input sets will perform differently.  
+
+Instead the curve of the expression describes how the algorithm will perform as the input dataset increases.  A steeper curve means it will take longer and longer or consume more and more memory.
+
+### !end-callout
+
 ## Examples
 
 Let's consider and compare some "real-world" algorithms.
