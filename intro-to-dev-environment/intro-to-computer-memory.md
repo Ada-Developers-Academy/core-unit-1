@@ -8,7 +8,7 @@ The goal of this lesson is to introduce computer memory. We believe this introdu
 
 Computers are machines that carry out sequences of operations. We call these sequences of operations programs. Programs tell a computer what operations to perform, in what order, and on what data. The instructions of a program, its operations and data, are loaded into a part of the computer called memory.
 
-What does it mean when our Activity Monitor says a program takes 100% CPU utilization? What do we mean when we say "memory"? Knowing a bit more about what's going on inside a computer can help us be more comfortable when we sit down to write programs.
+What does it mean when our [Activity Monitor](https://support.apple.com/guide/activity-monitor) says a program takes 100% CPU utilization? What do we mean when we say "memory"? Knowing a bit more about what's going on inside a computer can help us be more comfortable when we sit down to write programs.
 
 ## Vocabulary and Synonyms
 
@@ -59,11 +59,11 @@ Modern CPUs are very fast, and need a lot of data to stay busy. As a result, the
 
 ### Metaphor Pt 1: RAM As the Countertop
 
-We've discussed that memory and RAM that is responsible for storing instructions. There are other parts of a computer that are responsible for long-term storage (such as a hard disk drive).
+We've discussed that the memory we call RAM is responsible for storing instructions and data while a program is executing. There are other parts of a computer that are responsible for holding that data when a program _isn't_ actively running. Somewhat confusingly, modern devices sometimes refer to this as memory too, but it is better described as **storage**, where data can be kept for the long-term. A common example of this is a hard disk drive in a computer.
 
-To illustrate the difference between these memory and storage, we can compare a computer to a kitchen.
+To illustrate the difference between memory and storage, we can compare a computer to a kitchen.
 
-The CPU is the chef. _RAM_ is countertop space. Long-term storage is a pantry or fridge.
+The CPU is the chef. _RAM_ (memory) is countertop space. Long-term storage is a pantry, fridge, or recipe box.
 
 The chef is limited in how much they can do at once by their countertop space, which is for putting things temporarily while doing something with them.
 
@@ -79,11 +79,21 @@ To illustrate how the CPU uses memory addresses to temporarily put and locate in
 
 Again, the CPU is the chef and RAM is countertop space. The CPU chef organizes their countertop space (memory) into labeled and numbered bins.
 
-Each bin has a label like 100, 101, 102, etc. The CPU chef can put data from a `taxes` program into the bins with the labels 301, 302, and 303. We can put the data from a `weather` program into the bins 754, 755, and 756.
+When they want to prepare a meal (run a program), they pick a recipe card from their recipe box, get the ingredients from the pantry and fridge, and place the recipe card and ingredients in the numbered bins on the counter. If they were making pancakes, then the recipe card might go in bin 1 so they can easily see it, and the milk, eggs, flour, etc. could go in bins 2, 3, 4, and so forth.
 
-When the chef wants to get data and supplies from their `taxes` program, they go to bins 301, 302, and 303, and grab whatever is in there. To get data from their `weather` program, the chef goes to bins 754, 755, and 756, and gets what's in those bins.
+The CPU chef prepares the pancakes by consulting the recipe card, then taking and combining each ingredient in the counter space in front of them according to the directions.
 
-If they need to change our `weather` program data, the CPU chef goes back to bins 754, 755, and 756, and adds their onions and potatoes. The next time they get data from bins 754, 755, and 756, they'll end up grabbing their updated onions and potatoes, too!
+Maybe the CPU chef works in a restaurant kitchen, and an order for waffles also comes in. If there's room in the counter top bins, they can go find the recipe card for waffles, again gather the ingredients, and place them in another set of bins at the counter.  Maybe this time, the recipe is in bin 11, and the waffle ingredients are placed in the bins starting with bin 12, then 13, and so on.
+
+### !callout-info
+
+## Mise en place
+
+Does this sound like a strange way of cooking to you? The practice of laying out all the ingredients needed for a recipe is called [_mise en place_](https://en.wikipedia.org/wiki/Mise_en_place) (pronounced [meezahn plahs](https://www.youtube.com/watch?v=MyJZeZpPdVw)) and helps a chef keep things organized if they are expecting to cook a variety of dishes!
+
+### !end-callout
+
+The CPU chef can prepare multiple recipes at the same time, as long as there is still space on the counter and in the bins. They can follow each recipe, a little at a time, taking out ingredients from the bins, and putting them back again when done.
 
 ## Check for Understanding
 
