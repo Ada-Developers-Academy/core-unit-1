@@ -61,6 +61,8 @@ Modern CPUs are very fast, and need a lot of data to stay busy. As a result, the
 
 We've discussed that the memory we call RAM is responsible for storing instructions and data while a program is executing. There are other parts of a computer that are responsible for holding that data when a program _isn't_ actively running. Somewhat confusingly, modern devices sometimes refer to this as memory too, but it is better described as **storage**, where data can be kept for the long-term. A common example of this is a hard disk drive in a computer.
 
+![Screenshot of locating the Macintosh HD (Hard Drive) on the desktop on macOS](../assets/intro-to-computer-memory_storage.png)
+
 To illustrate the difference between memory and storage, we can compare a computer to a kitchen.
 
 The CPU is the chef. _RAM_ (memory) is countertop space. Long-term storage is a pantry, fridge, or recipe box.
