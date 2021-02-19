@@ -14,7 +14,7 @@ Imagine that we're developers working on a unique project: we are writing softwa
 
 Let's imagine that we could write our Arduino program with two different solutions. We know that we should compare the space complexity between the two algorithms. However, **_how_** do we compare space complexity?
 
-Computer science uses concepts from mathematics to measure time and space complexity. By using Big O notation, we can concretely evaluate which is more efficient. Then, our program will work better on the Arduino!
+Computer science uses concepts from mathematics to measure time and space complexity. By using Big O notation, we can concretely compare algorithms and evaluate which is more efficient. Then, our program will work better on the Arduino!
 
 ## Vocabulary and Synonyms
 
