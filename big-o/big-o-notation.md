@@ -88,7 +88,7 @@ You can see a chart comparing these complexities below.  This chart illustrates 
 
 Developers talk about Big O a lot, so it's useful to know how to talk about this out loud. Here are some example sentences to help start the pattern:
 
-- "The Big O of linear search is O of 1. It runs in constant time."
+- "The Big O of linear search is O of n. It runs in linear time."
 - "An algorithm with a Big O of log n is better than O of n log n."
 - "O of n-squared is one of the slowest!"
 - "The algorithm does a lot of work on each item in the input, but it's still order n!"
