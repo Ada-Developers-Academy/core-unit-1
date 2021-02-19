@@ -354,8 +354,6 @@ The above code produces this console output:
 
 ## Check for Understanding
 
-<!-- Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure. -->
-
 <!-- Question 1 -->
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -379,14 +377,12 @@ Describe this data structure here.
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-<!-- A second time: Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure. -->
-
 <!-- Question 2 -->
 <!-- prettier-ignore-start -->
 ### !challenge
 * type: paragraph
 * id: e4927780-c756-4b5d-9cbe-acdfa0859d1f
-* title: Nested Lists and Dictionaries II
+* title: Nested Lists and Dictionaries
 ##### !question
 Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure.
 
@@ -405,128 +401,98 @@ Describe this data structure here.
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-<!-- Modify this function so it returns the value `25` -->
-
 <!-- Question 3 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-* type: code-snippet
-* language: python3.6
-* id: 4beb07e1-2d7c-4aa1-a6c1-88b3f2a7dba6
-* title: Nested Lists and Dictionaries III
-* topics: python
-
+* type: short-answer
+* id: gKsPNt
+* title: Nested Lists and Dictionaries
 ##### !question
-Modify `get_price()` so it returns the value `25`.
+
+What is the syntax to get `25` from `pokedex`?
+
+```python
+pokedex = [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+```
+
+Conform to using `[]` syntax and double-quotes.
+
 ##### !end-question
-##### !placeholder
-```python
+##### !answer
 
-shopping_cart = {
-  't-shirt': {
-    'description': 'a white tee',
-    'price': 15
-  },  
-  'jeans': {
-    'description': 'dark blue denim',
-    'price': 25
-  }
-}
+pokedex[0]["id"]
 
-def get_price():
-  pass
+##### !end-answer
+##### !hint
 
-```
-##### !end-placeholder
-##### !tests
-```python
-import main
-import unittest
+Conform to using `[]` syntax and double-quotes.
 
-class TestPrice(unittest.TestCase):
-  def test_get_jean_price(self):
-    price = get_jean_price()
-    expected = 25
-    self.assertEqual(price, expected)
-```
-##### !end-tests
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-<!-- Modify this function so it returns the value `"Electric"` -->
+
 <!-- Question 4 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-* type: code-snippet
-* language: python3.6
-* id: 3dfa0464-3e4a-4f5d-89e7-e2feff199580
-* title: Nested Lists and Dictionaries IV
-* topics: python
-
+* type: short-answer
+* id: yqGKmA
+* title: Nested Lists and Dictionaries
 ##### !question
-Modify `get_favorite_dance()` so it returns the value `Electric Slide`.
+
+What is the syntax to get `'Electric'` from `pokedex`?
+
+```python
+pokedex = [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+```
+
+Conform to using `[]` syntax and double-quotes.
+
 ##### !end-question
-##### !placeholder
-```python
+##### !answer
 
-dances = [
-  {'Los Del Rio': "Macarena"},
-  {"Marcia Griffiths": "Electric Slide"},
-  {'DJ Casper': "Cha Cha Slide"}
-]
+pokedex[0]["type"]
 
-def get_favorite_dance():
-  pass
+##### !end-answer
+##### !hint
 
-```
-##### !end-placeholder
-##### !tests
-```python
-import main
-import unittest
+Conform to using `[]` syntax and double-quotes.
 
-class TestPrice(unittest.TestCase):
-  def test_get_jean_price(self):
-    price = get_jean_price()
-    expected = 25
-    self.assertEqual(price, expected)
-```
-##### !end-tests
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-
-<!-- MC:
-
-Nested data structures can go three layers deep! Extend your knowledge. Which of these is the syntax to get the value `"Pikachu"`?
-
-game_data = {
-    "pokedex": [
-        {
-            "id": 25,
-            "name_en": "Pikachu",
-            "type": "Electric"
-        }
-    ]
-}
-
-pokedex["name_en"]
-pokedex{"name_en"}
-game_data["pokedex"]["name_en"]
-game_data{"pokedex"}["name_en"]
-
- -->
-
-<!-- More questions will be in the huge worksheet -->
-
+<!-- Question 5 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-* type: multiple-choice
-* id: d98f75a2-0ef4-4f90-a7c5-83f237c7b922
-* title: Nested Lists and Dictionaries V
-
+* type: short-answer
+* id: wfpvr0
+* title: Nested Lists and Dictionaries
 ##### !question
-Nested data structures can go three layers deep! Extend your knowledge. Which of these is the syntax to get the value `"Pikachu"`?
+
+What is the syntax to get `'Pikachu'` from `game_data`?
 
 ```python
 game_data = {
@@ -539,16 +505,24 @@ game_data = {
     ]
 }
 ```
+
+Conform to using `[]` syntax and double-quotes.
+
 ##### !end-question
-##### !options
-* pokedex["name_en"]
-* pokedex{"name_en"}
-* game_data["pokedex"][1]["name_en"]
-* game_data{"pokedex"}[0]["name_en"]
-* game_data["pokedex"][0]["name_en"]
-##### !end-options
 ##### !answer
-* game_data["pokedex"][0]["name_en"]
+
+game_data["pokedex"][0]["name_en"]
+
 ##### !end-answer
+##### !hint
+
+Conform to using `[]` syntax and double-quotes.
+
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
 ### !end-challenge
 <!-- prettier-ignore-end -->
