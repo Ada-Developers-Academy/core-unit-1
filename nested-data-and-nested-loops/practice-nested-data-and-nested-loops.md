@@ -36,7 +36,7 @@ restaurants = [
 ]
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -46,7 +46,7 @@ restaurants[1]["address"]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 
@@ -158,7 +158,7 @@ students = [
 ]
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -168,7 +168,7 @@ students[2][1]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 
@@ -278,7 +278,7 @@ schools = {
 }
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -288,7 +288,7 @@ schools["school 2"]["name"]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 
@@ -419,7 +419,7 @@ karaoke_queue = {
 }
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -429,7 +429,7 @@ karaoke_queue["Rajan"][1]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 

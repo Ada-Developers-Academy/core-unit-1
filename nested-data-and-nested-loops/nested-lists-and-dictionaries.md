@@ -421,7 +421,7 @@ pokedex = [
     ]
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -431,7 +431,7 @@ pokedex[0]["id"]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 
@@ -463,7 +463,7 @@ pokedex = [
     ]
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -473,7 +473,7 @@ pokedex[0]["type"]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 
@@ -508,7 +508,7 @@ game_data = {
 }
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -518,7 +518,7 @@ game_data["pokedex"][0]["name_en"]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 
@@ -551,7 +551,7 @@ game_data = {
 }
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -561,7 +561,7 @@ game_data["pokedex"]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 
@@ -594,7 +594,7 @@ game_data = {
 }
 ```
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 ##### !end-question
 ##### !answer
@@ -604,7 +604,7 @@ game_data["pokedex"][0]
 ##### !end-answer
 ##### !hint
 
-Conform to using `[]` syntax and double-quotes.
+Use `[]` syntax with double-quotes where needed.
 
 Examples:
 
