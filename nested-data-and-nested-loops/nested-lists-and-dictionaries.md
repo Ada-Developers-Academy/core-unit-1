@@ -359,7 +359,7 @@ The above code produces this console output:
 ### !challenge
 * type: paragraph
 * id: c49169ab-1a7c-447b-9399-4ee331e5d596
-* title: Nested Lists and Dictionaries I
+* title: Nested Lists and Dictionaries
 ##### !question
 Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure.
 
@@ -492,6 +492,8 @@ Examples:
 * title: Nested Lists and Dictionaries
 ##### !question
 
+Let's practice with a nested data structure that is three layers deep!
+
 What is the syntax to get `'Pikachu'` from `game_data`?
 
 ```python
@@ -512,6 +514,92 @@ Conform to using `[]` syntax and double-quotes.
 ##### !answer
 
 game_data["pokedex"][0]["name_en"]
+
+##### !end-answer
+##### !hint
+
+Conform to using `[]` syntax and double-quotes.
+
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 6 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: 1gcwNk
+* title: Nested Lists and Dictionaries
+##### !question
+
+What is the syntax to get `[{'id': 25, 'name_en': 'Pikachu', 'type': 'Electric'}]` from `game_data`?
+
+```python
+game_data = {
+    "pokedex": [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+}
+```
+
+Conform to using `[]` syntax and double-quotes.
+
+##### !end-question
+##### !answer
+
+game_data["pokedex"]
+
+##### !end-answer
+##### !hint
+
+Conform to using `[]` syntax and double-quotes.
+
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 7 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: mXiwq8
+* title: Nested Lists and Dictionaries
+##### !question
+
+What is the syntax to get `{'id': 25, 'name_en': 'Pikachu', 'type': 'Electric'}` from `game_data`?
+
+```python
+game_data = {
+    "pokedex": [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+}
+```
+
+Conform to using `[]` syntax and double-quotes.
+
+##### !end-question
+##### !answer
+
+game_data["pokedex"][0]
 
 ##### !end-answer
 ##### !hint
