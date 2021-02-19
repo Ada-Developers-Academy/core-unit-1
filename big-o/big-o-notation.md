@@ -148,9 +148,88 @@ Arrange the following complexities from worst to best
 
 <!-- ======================= END CHALLENGE ======================= -->
 
-<!-- Question about comparing Big Os for more efficient -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: db5bbef4-04da-4474-8aa1-5a86e7047e6a
+* title: Purpose of Big-O Notation
+* points: 1
+* topics: Big-o
+
+##### !question
+
+Big-O notation serve to:
+
+##### !end-question
+
+##### !options
+
+* Calculate the exact run time or space usage of a given algorithm
+* Describe how the algorithm performs in terms of both space and time as the input size increases
+* Describe only how well an algorithm will perform in terms of **speed** as the input size increases
+* Describe only how well an algorithm will perform in terms of **memory usage** as the input size increases
+  
+##### !end-options
+
+##### !answer
+
+* Describe how the algorithm performs in terms of both space and time as the input size increases
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
 
 <!-- Question about comparing Big Os for more efficient -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 6b2620b0-f164-4722-8a55-a000a6b3690a
+* title: Pick the best performing algorithm
+* points: 1
+* topics: Big-O
+
+##### !question
+
+Given the following algorithms for a contact list project, which is the best choice in terms of time/space complexity?
+
+##### !end-question
+
+##### !options
+
+* Store all contacts in a list and seach for each contact, iterating from beginning until end until the contact is found or the list is completely searched.  O(n)
+* Store all contacts in a dictionary with the contact name as a key and retrieve contacts using the name.  O(1)
+* Store all contacts in a list sorted by names and search for a contact by looking at the middle contact.  If that is the desired contact return them.  If the desired contact comes later repeat the search in the 2nd half of the list, otherwise repeat the search in the 1st half of the remaining contacts.  Repeat until the contact is found or there are no more contacts left to search O(log n).
+
+##### !end-options
+
+##### !answer
+
+* Store all contacts in a dictionary with the contact name as a key and retrieve contacts using the name.  O(1)
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
 
 <!-- Question Takeaway -->
 <!-- prettier-ignore-start -->
