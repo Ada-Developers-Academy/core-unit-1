@@ -172,7 +172,7 @@ Arrange the following complexities from worst to best.
 
 ##### !question
 
-Big-O notation serve to:
+Big O notation serves to:
 
 ##### !end-question
 
