@@ -60,15 +60,23 @@ Standards:
         Path: /what-is-software-development/activity-study-plan.md
   -
     Title: Intro to Dev Environment
-    Description: Intro to Command Line
+    Description: "Intro to Command Line, Intro to Computer Memory"
     UID: QkZshi
     SuccessCriteria:
       - success criteria
     ContentFiles:
       -
         Type: Lesson
+        UID: 8QL8Gs
+        Path: /intro-to-dev-environment/intro-to-dev-environment.instructor.md
+      -
+        Type: Lesson
         UID: SxcEt0
         Path: /intro-to-dev-environment/intro-to-command-line.md
+      -
+        Type: Lesson
+        UID: Bp7qUb
+        Path: /intro-to-dev-environment/intro-to-computer-memory.md
   -
     Title: Approaching a Problem
     Description: "Breaking down a problem, Pseudocode and Logic, Pair Programming, Activity: Breaking Down a Problem"
