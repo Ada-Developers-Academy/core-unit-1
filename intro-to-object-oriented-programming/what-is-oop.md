@@ -129,15 +129,21 @@ We might say...
 
 ### State and Behavior
 
-When we start defining our own classes, we will specify their **state** and their generic **behavior**.
+When we start defining our own classes, we will specify two main things: their **state** and their **behavior**.
 
-**State**, **Attribute**, **Behavior**, and **Method** are all new terms we haven't heard before, but don't be intimidated by them! 
+In the context of Object-Oriented Programming, **state** is used to refer to all the variables packaged within a class and **behavior** is used to refer to all the functions packaged within a class.
 
-**State** is just a term that means "all the **attributes** of an object". **Attribute** is simply a specific type of **variable** defined within a class. 
+### Attributes and Methods
 
-These **attributes** will be kept over the object's lifetime-from the moment we create an instance until the object goes out of scope.
+There are two more words you will often see in the context of OOP: **attribute** and **method**.
 
-**Behavior** describes any actions that objects of this class should be able to do. In other words, **behavior** is simply a term that means "all the **methods** of a class". A **method** is simply a specific type of **Function** defined within a class.
+For whatever reason, engineers long-ago decided we needed new words to describe variables and functions that make up a class's state and behavior. 
+
+An **attribute** is just a specific type of **variable**: one defined within a class. Similarly a **method** is just a specific type of function **function**: one defined within a class. 
+
+These four words (state, behavior, attributes, and methods) aren't introducing anything new, just giving us new ways to talk about things we already know: variables and functions!
+
+<img src="../assets/what-is-oop_class-breakdown.png" alt="Class Breakdown" width="800" height="500"/>
 
 ### !callout-info
 
@@ -145,7 +151,7 @@ These **attributes** will be kept over the object's lifetime-from the moment we 
 
 Observe these examples of classes that already exist, or classes that could exist.
 
-| Class  | Instances                                                                                                                 | Something Kept in State                                                           | Behavior it Can Do                                                             |
+| Class  | Instances                                                                                                                 | Something Kept in State  (an Attribute)                                             | Behavior it Can Do  (a Method)                                                |
 | ------ | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | str    | `"Hello World! I am an instance of a String!"`                                                                            | These specific characters, in this specific order                                 | Become CAPITALIZED if it needs to                                              |
 | list   | `["red", "orange", "yellow"]`                                                                                             | These specific items, in this specific order                                      | Reverse the order of its elements                                              |
