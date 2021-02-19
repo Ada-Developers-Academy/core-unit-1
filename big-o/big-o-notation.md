@@ -215,7 +215,9 @@ Big O notation serves to:
 
 ##### !question
 
-Given the following algorithms for a contact list project, which is the best choice in terms of time/space complexity?
+Imagine creating an app that allows a user to store all of their contacts and contact information. There is a feature that allows users to search for a specific contact.
+
+Given the following algorithms for this search feature, which is the best choice in terms of time and space complexity?
 
 ##### !end-question
 
