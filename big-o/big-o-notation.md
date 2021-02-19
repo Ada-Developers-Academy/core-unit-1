@@ -5,7 +5,7 @@
 ## Learning Goals
 
 - Define Big O Notation
-- Recognize Big O notation and the common complexity categories: constant, logarithmic, constant, loglinear, quadratic, exponential
+- Recognize Big O notation and the common complexity categories: constant, logarithmic, linear, loglinear, quadratic, exponential
 - Compare and rank the common complexity categories between least and most complex
 
 ## Introduction
