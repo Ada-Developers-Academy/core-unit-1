@@ -67,7 +67,7 @@ Given an algorithm with some input, how many variables do we put in memory?
 
 When our data set grows by one or a million, how many more variables are stored in memory?
 
-Space complexity is the measurement of how the amount of memory an algorithm uses as the size of the input changes.
+Space complexity is the measurement of how the amount of memory an algorithm uses changes as the size of the input increases.
 
 ### !callout-info
 
