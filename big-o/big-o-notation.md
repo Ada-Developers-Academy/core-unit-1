@@ -225,7 +225,7 @@ Given the following algorithms for this search feature, which is the best choice
 
 * Store all contacts in a list and seach for each contact, iterating from beginning until end until the contact is found or the list is completely searched.  O(n)
 * Store all contacts in a dictionary with the contact name as a key and retrieve contacts using the name.  O(1)
-* Store all contacts in a list sorted by names and search for a contact by looking at the middle contact.  If that is the desired contact return them.  If the desired contact comes later repeat the search in the 2nd half of the list, otherwise repeat the search in the 1st half of the remaining contacts.  Repeat until the contact is found or there are no more contacts left to search O(log n).
+* Store all contacts in a list sorted by names and search for a contact by looking at the middle contact.  If that is the desired contact return them.  If the desired contact comes later repeat the search in the 2nd half of the list, otherwise repeat the search in the 1st half of the remaining contacts.  Repeat until the contact is found or there are no more contacts left to search. O(log n).
 
 ##### !end-options
 
