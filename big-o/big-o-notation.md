@@ -76,8 +76,12 @@ These complexities are ordered! We can describe their order in all of these ways
 | O(n)             | Linear      | The algorithm will grow in time or space directly proprotional to the input size. The complexity increases at the same rate that the input increases.                                                                                                                                         |
 | O(n log n)       | Log Linear  | A term used to describe an algorithm which will grow in time or space complexity proportional to the n log n of the input size. "n log n" means that the input size is multiplied by the base-2 log of the input size.                                                                                                                                                              |
 | O(n<sup>2</sup>) | Quadratic   | The algorithm will have a runtime or memory usage proportional to the size of the input squared. This often involves 2 nested loops.                                                                                                                                                    |
-| O(2<sup>n</sup>) | Exponential | The algorithm's complexity doubles each time the input size increases by one.                                                                                                                                                                                                                 |
+| O(2<sup>n</sup>) | Exponential | The algorithm's complexity doubles each time the input size increases by one.                                                                                                                                      |
 
+
+You can see a chart comparing these complexities below.  This chart illustrates for a given input size, how the output of the given expressions change.  Look at the curve of each line.  Which curve accellerates most quickly?  Which curve barely increases at all as the input size increases.
+
+![Complexities comparison chart](images/time-complexities.png)
 ### !callout-info
 
 ## How do we say it out loud?
