@@ -141,7 +141,7 @@ For whatever reason, engineers long-ago decided we needed new words to describe 
 
 An **attribute** is just a specific type of **variable**: one defined within a class. Similarly a **method** is just a specific type of **function**: one defined within a class.
 
-These four words (state, behavior, attributes, and methods) aren't introducing anything new, just giving us new ways to talk about things we already know: variables and functions!
+These four words (state, behavior, attributes, and methods) aren't introducing anything new. Instead, they let us talk about things we already know (variables and functions) in a new context (being in a class)!
 
 <img src="../assets/what-is-oop_class-breakdown.png" alt="Class Breakdown" width="800" height="500"/>
 
