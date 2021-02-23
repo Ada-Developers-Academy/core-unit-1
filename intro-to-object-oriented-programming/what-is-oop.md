@@ -135,7 +135,7 @@ In the context of Object-Oriented Programming, **state** is used to refer to all
 
 ### Attributes and Methods
 
-There are two more words you will often see in the context of OOP: **attribute** and **method**.
+There are two more words we will often see in the context of OOP: **attribute** and **method**.
 
 For whatever reason, engineers long-ago decided we needed new words to describe variables and functions that make up a class's state and behavior. 
 
