@@ -8,7 +8,7 @@ The goal of this document is to be a resource. We recommend spending your energy
 
 This document covers the following:
 
-Thinking about numbers:
+Thinking about numbers: 
 
 1. Decimal Number System
 1. Using _n_ as a Variable in Math
