@@ -70,8 +70,7 @@ Each class definition will have:
   - An attribute is a piece of data
   - A class definition holding an attribute means we expect this class to hold a specific piece of data
 - **Methods**
-  - A **method** is a function that describes behavior or action of a class
-- Logic to describe what happens every time the class is used to make an **instance.** (This is called the `__init__` method. We'll see it in action shortly)
+  - A **method** is a function that describes behavior or action
 
 
 ### !callout-info
@@ -139,7 +138,7 @@ There are two more words we will often see in the context of OOP: **attribute** 
 
 For whatever reason, engineers long-ago decided we needed new words to describe variables and functions that make up a class's state and behavior. 
 
-An **attribute** is just a specific type of **variable**: one defined within a class. Similarly a **method** is just a specific type of **function**: one defined within a class.
+An **Attribute** is a specific kind of **variable**: one defined within a class. Similarly, a **method** is a specific kind of **function**: one defined within a class.
 
 These four words (state, behavior, attributes, and methods) aren't introducing anything new. Instead, they let us talk about things we already know (variables and functions) in a new context (being in a class)!
 
