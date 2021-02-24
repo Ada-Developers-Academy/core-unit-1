@@ -1,7 +1,5 @@
 # Creating Instances
 
-<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=975073eb-9e47-4e6d-99a7-acd9004e4953&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
 ## Learning Goals
 
 - Define instances in Object-Oriented Programming
