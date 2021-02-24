@@ -21,9 +21,9 @@ Developers define classes after realizing that encapsulating (bundling together)
 
 Developers define classes any time! We might define new classes:
 
-- At the beginning of a project, after reading a problem statement
-- In the middle of a project, after discovering that a deeper part of the problem needs a new class
-- While refactoring, if seeing that variables and functions can be better organized as a class
+- At the beginning of a project, after we read a problem statement
+- In the middle of a project, after we discover that a deeper part of the problem needs a new class
+- While refactoring, if we notice that variables and functions can be better organized as a class
 
 Some considerations for making a class:
 
