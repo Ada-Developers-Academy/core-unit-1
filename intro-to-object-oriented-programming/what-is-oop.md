@@ -19,11 +19,11 @@ We can classify entire programing languages according to the programming paradig
 | Vocab                       | Definition                                                                                                                       | Synonyms                | How to Use in a Sentence                                                                                                                                                                                      |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Object-oriented programming | A programming paradigm based on "objects," which contain state (attributes) and behavior (methods)                               | OOP                     | "OOP means we will define classes, and use classes to make objects"                                                                                                                                           |
-| Object                      | A collection of structured data along with the operations that can be performed on that data. Often means one instance.          | Instance                | "In OOP, we'll be making a lot of objects," "We should invoke the `add_friend` method on the `User` object," "Each `User` object in the `User` list will have an ID"                                          |
+| Object                      | A collection of structured data along with the operations that can be performed on that data. An object is one instance of a class.          | Instance                | "In OOP, we'll be making a lot of objects," "We should invoke the `add_friend` method on the `User` object," "Each `User` object in the `User` list will have an ID"                                          |
 | Class                       | A template or blueprint used to create objects of a specific data type. Defines what concrete objects will look like.            | Prototype               | "The `String` class defines all of the attributes and methods that `String` objects have."                                                                                                                    |
 | Instance                    | One particular object of a certain data type/class. Follows the format defined by its class, and has specific, individual state. | Object                  | "That specific `User` instance has an ID of `25`," "We should instantiate a new `User` instance here, then save it to the database," "The method `add_friend` takes in one instance of `User` as a parameter" |
 | State                       | A generic term for the data that an object "knows" at one point in time. Usually, state can change over time.                    | -                       | "When a `User` object sends a message, the program checks the state of `online_status`"                                                                                                                       |
-| Attribute                   | A named property of a class. Attributes are usually used to keep track of state.                                                 | Property, field, "attr" | "The `User` class defines the attribute `online_status`," "The `online_status` attribute is a boolean," "We check the `online_status` property before we send a message"                                      |
+| Attribute                   | A named property of a class. Attributes are used to keep track of state.                                                 | Property, field, "attr" | "The `User` class defines the attribute `online_status`," "The `online_status` attribute is a boolean," "We check the `online_status` property before we send a message"                                      |
 | Behavior                    | A generic term for what an object can "do."                                                                                      | -                       | "The `User` class should have the behavior of adding a friend to the friend list"                                                                                                                             |
 | Method                      | A function that is defined inside of a class. Methods are usually used to describe behavior.                                     | Function                | "We need to call the `add_friend` method on `User`," "`User`'s `send_message` method checks the state of `online_status` at the beginning"                                                                    |
 
@@ -66,12 +66,12 @@ Each class definition will have:
 
 - A class name
   - This name is used as the "data type" name
-- Concept-related **attributes**
+- **Attributes**
   - An attribute is a piece of data
   - A class definition holding an attribute means we expect this class to hold a specific piece of data
-- Concept-related **methods**
-  - A method is a function that describes behavior or action
-- Logic to describe what happens every time the class is used to make an **instance.**
+- **Methods**
+  - A **method** is a function that describes behavior or action
+
 
 ### !callout-info
 
@@ -128,11 +128,21 @@ We might say...
 
 ### State and Behavior
 
-When we start defining our own classes, we will specify their **state** and their generic **behavior.**
+When we start defining our own classes, we will specify two main things: their **state** and their **behavior**.
 
-**State** describes any data or attributes that should be kept over its lifetime—from the moment we create an instance until we let the system reclaim its resources.
+In the context of Object-Oriented Programming, **state** is used to refer to all the variables packaged within a class and **behavior** is used to refer to all the functions packaged within a class.
 
-**Behavior** describes any actions that objects of this class should be able to do.
+### Attributes and Methods
+
+There are two more words we will often see in the context of OOP: **attribute** and **method**.
+
+For whatever reason, engineers long-ago decided we needed new words to describe variables and functions that make up a class's state and behavior. 
+
+An **Attribute** is a specific kind of **variable**: one defined within a class. Similarly, a **method** is a specific kind of **function**: one defined within a class.
+
+These four words (state, behavior, attributes, and methods) aren't introducing anything new. Instead, they let us talk about things we already know (variables and functions) in a new context (being in a class)!
+
+<img src="../assets/what-is-oop_class-breakdown.png" alt="Class Breakdown" width="800" height="500"/>
 
 ### !callout-info
 
@@ -140,7 +150,7 @@ When we start defining our own classes, we will specify their **state** and thei
 
 Observe these examples of classes that already exist, or classes that could exist.
 
-| Class  | Instances                                                                                                                 | Something Kept in State                                                           | Behavior it Can Do                                                             |
+| Class  | Instances                                                                                                                 | Something Kept in State  (an Attribute)                                             | Behavior it Can Do  (a Method)                                                |
 | ------ | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | str    | `"Hello World! I am an instance of a String!"`                                                                            | These specific characters, in this specific order                                 | Become CAPITALIZED if it needs to                                              |
 | list   | `["red", "orange", "yellow"]`                                                                                             | These specific items, in this specific order                                      | Reverse the order of its elements                                              |
