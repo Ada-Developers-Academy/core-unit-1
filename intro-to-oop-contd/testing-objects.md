@@ -355,10 +355,13 @@ Re-arrange the following lines of code for a test of this `Order` class
 
 ##### !answer
 
-* def test_create_order():
-* may = Customer("May", "may@may.com")
-* order = Order(["Hair Spray", "Orange Juice"], may)
-* assert len(order.products) == 2
+1. def test_create_order():
+1.     # Arrange
+1.     may = Customer("May", "may@may.com")
+1.     # Act
+1.     order = Order(["Hair Spray", "Orange Juice"], may)
+1.     # Assert
+1.     assert len(order.products) == 2
 
 ##### !end-answer
 
