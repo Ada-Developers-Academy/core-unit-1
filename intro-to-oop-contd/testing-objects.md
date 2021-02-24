@@ -100,7 +100,9 @@ Imagine and make up assumptions about the logic of `add_product` and `remove_pro
 
 From the given project description, make a list of all relevant test cases. Make up reasonable assumptions about the logic of `add_product` and `remove_product`, particularly around the **edge cases**.
 
-##### !hint
+##### !end-question
+
+##### !answer
 
 Some test cases could include:
 
@@ -115,10 +117,7 @@ Some test cases could include:
   * adding a product and removing it and verifying that the length decreases and the product no longer appears in `products`.
   * trying to remove a product which is not in the list and verifying that the method performs as you expect (raising an error for example).
 
-##### !end-hint
-
-
-##### !end-question
+##### !end-answer
 ### !end-challenge
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
