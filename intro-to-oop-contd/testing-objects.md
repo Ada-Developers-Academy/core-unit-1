@@ -102,7 +102,7 @@ From the given project description, make a list of all relevant test cases. Make
 
 ##### !end-question
 
-##### !answer
+##### !hint
 
 Some test cases could include:
 
@@ -117,7 +117,7 @@ Some test cases could include:
   * adding a product and removing it and verifying that the length decreases and the product no longer appears in `products`.
   * trying to remove a product which is not in the list and verifying that the method performs as you expect (raising an error for example).
 
-##### !end-answer
+##### !end-hint
 ### !end-challenge
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
@@ -140,30 +140,35 @@ class Order:
     def __init__(self, products, customer):
         self.products = products
         self.customer = customer
+    
+    def add_product(self, product):
+      ...
 ```
 
 ##### !end-question
 
 ##### !options
 
-*    may = Customer("May", "may@may.com")
-*    assert len(order.products) == 2
-*    order = Order(["Hair Spray", "Orange Juice"], may)
-* def test_create_order():
+* That you can create a product with correct values for products and a customer.
+* That `add_product` will increase the `products` list by one.
+* That `add_product` will **remove** an element from the `products` list.
+* That `add_product` will **add** the argument into the `products` list.
 
 ##### !end-options
 
 ##### !answer
 
-* def test_create_order():
-*    may = Customer("May", "may@may.com")
-*    order = Order(["Hair Spray", "Orange Juice"], may)
-*    assert len(order.products) == 2
+* That you can create a product with correct values for products and a customer.
+* That `add_product` will increase the `products` list by one.
+* That `add_product` will **add** the argument into the `products` list.
 
 ##### !end-answer
 
 <!-- other optional sections -->
-<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+##### !hint
+
+Do you really think `add_product` would remove an element?
+##### !end-hint
 <!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
 <!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
 
@@ -350,9 +355,10 @@ Re-arrange the following lines of code for a test of this `Order` class
 
 ##### !answer
 
-1. [Option 1 in the correct first position, options will be randomized for students]
-1. [Option 2 in the correct second position]
-1. [Option 3 in the correct third position]
+* def test_create_order():
+* may = Customer("May", "may@may.com")
+* order = Order(["Hair Spray", "Orange Juice"], may)
+* assert len(order.products) == 2
 
 ##### !end-answer
 
