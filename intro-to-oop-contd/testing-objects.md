@@ -100,8 +100,78 @@ Imagine and make up assumptions about the logic of `add_product` and `remove_pro
 
 From the given project description, make a list of all relevant test cases. Make up reasonable assumptions about the logic of `add_product` and `remove_product`, particularly around the **edge cases**.
 
+##### !hint
+
+Some test cases could include:
+
+* You can create an instance of Customer with `Customer()` and verify the valid `name` and `email_address` initial values.
+* You can create an `Order` and verify the initial values of:
+  * `products`
+  * `customer`
+* You can test `add_product` by adding a product and
+  * verifying that the length increases
+  * verifying that the added product shows up in `products`
+* You can test `remove_product` by
+  * adding a product and removing it and verifying that the length decreases and the product no longer appears in `products`.
+  * trying to remove a product which is not in the list and verifying that the method performs as you expect (raising an error for example).
+
+##### !end-hint
+
+
 ##### !end-question
 ### !end-challenge
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: checkbox
+* id: a9d13159-6af9-4568-a9e8-fe44c12ca66d
+* title: Testing Instances
+* points: 1
+* topics: oop, oop-testing
+
+##### !question
+
+What should you look for when testing instances of this Order class?
+
+```python
+class Order:
+    def __init__(self, products, customer):
+        self.products = products
+        self.customer = customer
+```
+
+##### !end-question
+
+##### !options
+
+*    may = Customer("May", "may@may.com")
+*    assert len(order.products) == 2
+*    order = Order(["Hair Spray", "Orange Juice"], may)
+* def test_create_order():
+
+##### !end-options
+
+##### !answer
+
+* def test_create_order():
+*    may = Customer("May", "may@may.com")
+*    order = Order(["Hair Spray", "Orange Juice"], may)
+*    assert len(order.products) == 2
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
 <!-- prettier-ignore-end -->
 
 ## Revisit pytest Syntax
@@ -261,6 +331,40 @@ from ride_share_app.trip import Trip
 ```
 
 Here, we import a class named `Driver` from the `driver` module inside of the `ride_share_app` package. Then, we import a class named `Trip` from `ride_share_app.trip`.
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: ordering
+* id: 33713c9e-4a1e-45f6-afea-6f67723ce2b9
+* title: [text, a short question title]
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+Re-arrange the following lines of code for a test of this `Order` class
+
+##### !end-question
+
+##### !answer
+
+1. [Option 1 in the correct first position, options will be randomized for students]
+1. [Option 2 in the correct second position]
+1. [Option 3 in the correct third position]
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
 
 ## Check for Understanding
 
