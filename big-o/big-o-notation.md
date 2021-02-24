@@ -142,11 +142,11 @@ Arrange the following complexities from worst to best.
 ##### !answer
 
 1. O(1)
-1. O(2^n)
-1. O(n log n)
 1. O(log n)
-1. O(n^2)
 1. O(n)
+1. O(n log n)
+1. O(n^2)
+1. O(2^n)
 
 ##### !end-answer
 
