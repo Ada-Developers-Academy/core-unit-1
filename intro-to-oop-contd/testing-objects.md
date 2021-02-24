@@ -336,6 +336,67 @@ from ride_share_app.trip import Trip
 
 Here, we import a class named `Driver` from the `driver` module inside of the `ride_share_app` package. Then, we import a class named `Trip` from `ride_share_app.trip`.
 
+
+
+## Check for Understanding
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 4534544e-ab34-4ba7-bb0f-b28dfc0d2912
+* title: [text, a short question title]
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+Given this project structure, inside of `test_customer.py` file, which is the correct import statement? 
+
+```
+.
+├── README.md
+├── requirements.txt
+├── store_app
+│   ├── __init__.py
+│   ├── customer.py
+└── tests
+    ├── __init__.py
+    ├── test_customer.py
+```
+
+##### !end-question
+
+##### !options
+
+* import customer
+* from store_app import Customer
+* from store_app.customer import Customer
+* from tests import test_customer
+
+##### !end-options
+
+##### !answer
+
+* from store_app.customer import Customer
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+Since we run the tests from the root directory of the project to find the Customer class we need to use the `store_app` folder and the `customer.py` file inside that folder so `from store_app.customer` and we want to import the `Customer` class so the full line should read `from store_app.customer import Customer`.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
 
@@ -343,13 +404,20 @@ Here, we import a class named `Driver` from the `driver` module inside of the `r
 
 * type: ordering
 * id: 33713c9e-4a1e-45f6-afea-6f67723ce2b9
-* title: [text, a short question title]
-<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
-<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+* title: Writing a test
+* points: 1
+* topics: oop, oop-testing
 
 ##### !question
 
 Re-arrange the following lines of code for a test of this `Order` class
+
+```python
+class Order:
+    def __init__(self, products, customer):
+        self.products = products
+        self.customer = customer
+```
 
 ##### !end-question
 
@@ -362,6 +430,7 @@ Re-arrange the following lines of code for a test of this `Order` class
 1.     order = Order(["Hair Spray", "Orange Juice"], may)
 1.     # Assert
 1.     assert len(order.products) == 2
+1.     assert order.customer == may
 
 ##### !end-answer
 
@@ -373,9 +442,3 @@ Re-arrange the following lines of code for a test of this `Order` class
 ### !end-challenge
 
 <!-- ======================= END CHALLENGE ======================= -->
-
-## Check for Understanding
-
-<!-- Given this project structure, inside of this test file, which is the correct import statement? -->
-
-<!-- Given this project structure, inside of this test file, which is the correct import statement? -->
