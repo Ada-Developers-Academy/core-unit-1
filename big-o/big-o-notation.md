@@ -98,7 +98,7 @@ Developers talk about Big O a lot, so it's useful to know how to talk about this
 <!-- available callout types: info, success, warning, danger, secondary  -->
 ### !callout-warning
 
-## Big O Doesn't give an exact number
+## Big O Doesn't Give an Exact Number
 
 The complexities listed above are **not** intended to calculate an exact runtime or memory usage for an algorithm.  Different types of computers and different input sets will perform differently.  
 
