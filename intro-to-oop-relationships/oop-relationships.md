@@ -52,8 +52,6 @@ If we try to ask Temmie to do the same, she won't know how to do that on her own
 
 A week has passed, and we're back for another pizza dinner with Karen and Temmie. Temmie has learned about all of the different pizza places in the world. We can ask Temmie to call and order pizza on the phone. Temmie can _override_ the behavior she's inherited. This time, Temmie will go to her own room, look for her own phone on the desk, and then call _Pizza Planet_ instead. Karen's own behavior (and preference for Dino's) does not change.
 
-A week has passed, and we're back for more pizza dinner with Karen and Temmie. Temmie has learned about all of the different pizza places in the world. We can ask Temmie to call and order pizza on the phone. Temmie can _override_ the behavior she's inherited. This time, Temmie will go to her own room, look for her own phone on the desk, and then call _Pizza Planet_ instead. Karen's own behavior (and preference for Dino's) does not change.
-
 Another week has passed, and it's time for pizza #3. This time, Temmie has learned so much more, and she can completely override how she orders pizza. Temmie might go to her room, look for her own phone on the desk, and then open up a food delivery app. Or, Temmie could completely forego this whole process, and go outside, walk to the nearby pizza joint, and get pizza that way. However, the important thing is that Temmie _knows_ that she even has an "order pizza" behavior. It's important that Temmie _knows_ that she _does_ own a phone.
 
 ### Example: Form Buttons
