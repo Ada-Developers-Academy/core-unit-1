@@ -43,7 +43,7 @@ Otherwise you can simpily select "Python: Current File" from the drop down list.
 
 Then you can run the debugger by opening `app.py` and pressing the green triangle "Play" button.
 
-[Debugger Play Button](../assets/vs-code-debugger/debugger-play.png)
+[Debugger Play Button](../assets/vs-code-debugger/start-debugger.png)
 
 You will notice that the application stops in `order.py`.
 
