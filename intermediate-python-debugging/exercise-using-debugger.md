@@ -31,7 +31,7 @@ Lets put a breakpoint at line 14 of `grocery_store/order.py`.
 
 Then go to the debugger icon.
 
-![Debugger Icon](../assets/vs-code-debugger/debugger-play.png)
+![Debugger Icon](../assets/vs-code-debugger/debugger-icon.png)
 
 You **may** need to click on the select list, select `Add Configuration` and choose select `Python: Current File`.
 
