@@ -27,15 +27,15 @@ Hmmmm... It seems that it crashes at line 14 of `grocery_store/order.py`.
 
 Lets put a breakpoint at line 14 of `grocery_store/order.py`.
 
-![Visual of a breakpoint in order.py at line 14](assets/order-py-breakpoint.png)
+![Visual of a breakpoint in order.py at line 14](../assets/vs-code-debugger/order-py-breakpoint.png)
 
 Then go to the debugger icon.
 
-![Debugger Icon](assets/debugger-icon.png)
+![Debugger Icon](../assets/vs-code-debugger/debugger-play.png)
 
 You **may** need to click on the select list, select `Add Configuration` and choose select `Python: Current File`.
 
-![select debug current python file](assets/debug-current-python-file.png)
+![select debug current python file](../assets/vs-code-debugger/debug-current-python-file.png)
 
 Otherwise you can simpily select "Python: Current File" from the drop down list.  
 
@@ -43,17 +43,17 @@ Otherwise you can simpily select "Python: Current File" from the drop down list.
 
 Then you can run the debugger by opening `app.py` and pressing the green triangle "Play" button.
 
-[Debugger Play Button](assets/debugger-play.png)
+[Debugger Play Button](../assets/vs-code-debugger/debugger-play.png)
 
 You will notice that the application stops in `order.py`.
 
-![Running Debugger](assets/running-debugger.png)
+![Running Debugger](../assets/vs-code-debugger/running-debugger.png)
 
 ### Finding the bug...
 
 Notice that the loop attempts to add up all the product prices.  In Watch add a watch for `self.products[i].price`
 
-![Adding a watch on price](assets/watch-price.png)
+![Adding a watch on price](../assets/vs-code-debugger/watch-price.png)
 
 Do you see the problem?  The price for the products gets set in `product.py`, see if you can find the error, and then re-run the debugger.  Does it crash now?  If you need add another breakpoint to `product.py` in the `__init__` function and step through the program.
 
