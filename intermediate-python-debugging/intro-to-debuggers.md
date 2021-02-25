@@ -31,16 +31,16 @@ By the end of this lesson, we will be able to...
 
 | Vocab     | Definition                                                                        | Synonyms           | How to Use in a Sentence                                                                                       |
 | --------- | --------------------------------------------------------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------- |
-| Debugging | The process of identifying and removing errors from computer hardware or software | Fixing, inspecting | "I need to debug my view and figure out why it wasn't displaying right," "Have you tried to debug your error?" |
-| Debugger | A program that assists in detection and fixing of errors in code.  It is often integrated into an editor | Debugging Tool | "I have a bug I just can't seem to find!  Have you launched the debugger?" |
-| Breakpoint | In programming a breakpoint is an intentional pausing place in a program usually for the purpose of debugging. | Pause | "I needed to see why my method failed, so I put in a breakpoint to inspect the running code" |
-| Watch | Any  item of data or expression a programming wants to observe when debugging. |  | "I created a watch to see the value of items[i] as the loop executed." |
-| Stepping Over | Executing a function call on the current line and pausing on the line _after_ the function call.  Essentially skipping over the called function in the debugger. | | "I know the `sum` function isn't the problem so I stepped over that function." |
-| Stepping Into | While running a debugger, entering a function call on the current line of execution and pausing execution on the 1st line of the function. | | "I know the `sum` function isn't the problem so I stepped over that function." |
+| Debugging | The process of identifying and removing errors from computer hardware or software | Fixing, inspecting | "I need to debug my view and figure out why it wasn't displaying right," "Have you tried to _debug_ your error?" |
+| Debugger | A program that assists in detection and fixing of errors in code.  It is often integrated into an editor | Debugging Tool | "I have a bug I just can't seem to find!  Have you launched the _debugger_?" |
+| Breakpoint | In programming a breakpoint is an intentional pausing place in a program usually for the purpose of debugging. | Pause | "I needed to see why my method failed, so I put in a _breakpoint_ to inspect the running code" |
+| Watch | Any  item of data or expression a developer wants to observe when debugging. |  | "I created a _watch_ to see the value of `items[i]` as the loop executed." |
+| Stepping Over | Executing a function call on the current line and pausing on the line _after_ the function call.  Essentially skipping over the called function in the debugger. | | "I know the `sum` function isn't the problem so I _stepped over_ that function." |
+| Stepping Into | While running a debugger, entering a function call on the current line of execution and pausing execution on the 1st line of the function. | | "I needed to see what that `average_rating` function did, so I _stepped into_ it." |
 
 ## Debuggers in General
 
-Sometimes it can be difficult to trace through a program's execution and understand which lines are being executing and the values of each variable as the program runs.  So developers created debugger programs.  A **debugger** is a program designed to help us identify errors in our code.  Typically a debuggers can be integrated into an editor like Visual Studio Code.  The Python library comes with a [debugger](https://docs.python.org/3/library/pdb.html) and the [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) integrates with it.  We will see how to use the Python debugger in the next lesson.
+Sometimes it can be difficult to trace through a program's execution and understand which lines are being executing and the values of each variable as the program runs.  So developers created debugger programs.  A **debugger** is a program designed to help us identify errors in our code.  Typically a debuggers can be integrated into an editor like Visual Studio Code.  The Python library comes with a [debugger](https://docs.python.org/3/library/pdb.html) and the standard [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) integrates with it.  We will see how to use the Python debugger in the next lesson.
 
 Debuggers allow us to pause program execution, examine the state of the program and either resume execution, or execute the application line-by-line.  This is amazing, you can tell the program to pause when it reaches a particular line and inspect any variable in scope!  No `print` statements!  Woo hoo!
 
@@ -54,7 +54,7 @@ Editors typically indicate breakpoints visually with a red-dot next to the line 
 
 So in short, you can think of a breakpoint as a pause button for a program which allows you to "snoop-around" in the state of the currently executing application.
 
-One neat thing about breakpoints is that you can have more than one and the program will pause at it encounters each breakpoint.
+One neat thing about breakpoints is that you can have more than one and the program will pause at it encounters each breakpoint.  This lets you to jump between different points in the program, inspecting the state of the application at each breakpoint.
 
 ### Watches
 
