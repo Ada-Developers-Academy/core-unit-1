@@ -1,0 +1,69 @@
+# Intro to Debuggers
+
+## Introduction
+
+In the past we've used a few tools for debugging our Python code.  This has included:
+
+- Asking the Questions
+  - **What** is happening?
+  - **Why** is it happening
+  - **How** do we fix it
+- Answering these questions by:
+  - Using Rubber Ducking to explain the problem and walk through potential solutions
+  - Reading the stack trace to identify the location of runtime and syntax errors
+  - Writing `print` statements to output the values of variables and ensure our code "reached" specific points in the program
+  - Using tests to ensure our functions and classes performed as we expected them to and using failures to identify malfunctioning code
+
+These are very valuable techniques and will often be your 1st choice to debug your application.  However, VS Code and other editors have useful tools to inspect your code as it executes and identify problems.
+
+## Learning Goals
+
+By the end of this lesson, we will be able to...
+
+- Explain the concepts of 
+  - debugger
+  - breakpoint
+  - watch
+  - stepping over code
+  - stepping into code
+
+## Vocabulary
+
+| Vocab     | Definition                                                                        | Synonyms           | How to Use in a Sentence                                                                                       |
+| --------- | --------------------------------------------------------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------- |
+| Debugging | The process of identifying and removing errors from computer hardware or software | Fixing, inspecting | "I need to debug my view and figure out why it wasn't displaying right," "Have you tried to debug your error?" |
+| Debugger | A program that assists in detection and fixing of errors in code.  It is often integrated into an editor | Debugging Tool | "I have a bug I just can't seem to find!  Have you launched the debugger?" |
+| Breakpoint | In programming a breakpoint is an intentional pausing place in a program usually for the purpose of debugging. | Pause | "I needed to see why my method failed, so I put in a breakpoint to inspect the running code" |
+| Watch | Any  item of data or expression a programming wants to observe when debugging. |  | "I created a watch to see the value of items[i] as the loop executed." |
+| Stepping Over | Executing a function call on the current line and pausing on the line _after_ the function call.  Essentially skipping over the called function in the debugger. | | "I know the `sum` function isn't the problem so I stepped over that function." |
+| Stepping Into | While running a debugger, entering a function call on the current line of execution and pausing execution on the 1st line of the function. | | "I know the `sum` function isn't the problem so I stepped over that function." |
+
+## Debuggers in General
+
+Sometimes it can be difficult to trace through a program's execution and understand which lines are being executing and the values of each variable as the program runs.  So developers created debugger programs.  A **debugger** is a program designed to help us identify errors in our code.  Typically a debuggers can be integrated into an editor like Visual Studio Code.
+
+Debuggers allow us to pause program execution, examine the state of the program and either resume execution, or execute the application line-by-line.
+
+### Breakpoints & Stepping Through Code
+
+A **breakpoint** is a place (line of code) which indicates to the debugger that you want to pause the program at this point of execution.  While the program is paused the developer can examine the state of variables currently in scope.  Then the developer can resume execution or execute the program, line-by-line. 
+
+Editors typically indicate breakpoints visually with a red-dot next to the line number.  This is a very common convention in many languages and editors, however other editors may use different visual clues.
+
+![VS Code Breakpoint Example](../assets/vs-code-debugger/breakpoint.png)
+
+So in short, you can think of a breakpoint as a pause button for a program which allows you to "snoop-around" in the state of the currently executing application.
+
+One neat thing about breakpoints is that you can have more than one and the program will pause at it encounters each breakpoint.
+
+### Watches
+
+Sometimes you do not care about the exact values of specific variables, sometimes you want to "watch" the value of an expression like, `drivers[0].name`.  That's really all a watch is.  You put in a bit of code and the debugger shows you the current value of that expression.  
+
+![Watch Example in VS Code](../assets/vs-code-debugger/watch.png)
+
+## Summary
+
+In this lesson we introduced the concept of a debugger and some of the common features you will find in a debugger.  A debugger allows us to place breakpoints in our program to pause execution where we want to examine what's happening in our code at that particular point.  After the program is paused, we can use watches to examine the state of our application and continue execution line-by-line of our program, or resume our application until the next breakpoint.
+
+These features are really language-independent as most languages will have debuggers which provide these services.
