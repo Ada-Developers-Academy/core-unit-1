@@ -35,6 +35,11 @@ That's it!  You are set up!  You can close `launch.json` now.
 
 ### Adding Breakpoints
 
+You can add a breakpoint by clicking to the **left** of the line number.  You will see a red dot appear to indicate the breakpoint.  You can click again to make it dissapear.  
+
+![Breakpoint](../assets/vscode-debugger/../vs-code-debugger/breakpoint.png)
+
+
 ### Running the Debugger
 
 ### Watches
