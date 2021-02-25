@@ -42,6 +42,11 @@ You can add a breakpoint by clicking to the **left** of the line number.  You wi
 
 ### Running the Debugger
 
+You can then run the debugger at any time with the green triangle play button.
+
+![Debugger play button](../assets/vscode-debugger/debugger-play.png)
+
+Notice that the program will pause at the 1st breakpoint it encounters.
 ### Watches
 
 ### Stepping Over & Stepping Into
