@@ -49,6 +49,12 @@ You can then run the debugger at any time with the green triangle play button.
 Notice that the program will pause at the 1st breakpoint it encounters.
 ### Watches
 
+You can create a watch by clicking on the `+` icon and enter any expression.
+
+![Entering a Watch](../assets/vs-code-debugger/watch-price.png)
+
+![Watches](../assets/vs-code-debugger/watch.png)
+
 ### Stepping Over & Stepping Into
 
 ## Summary
