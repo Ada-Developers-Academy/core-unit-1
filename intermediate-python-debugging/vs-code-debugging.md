@@ -12,6 +12,35 @@ By the end of this lesson we should be able to...
 - Run the Python debugger in VS Code to step through a program
 - Use breakpoints, and watches to identify errors in code
 
+## Before Starting
+
+Create a new project folder and Python file.
+
+```
+$ mkdir testing-example # make a testing-example folder
+$ cd testing-example    # change into that folder
+$ touch guess_number.py # create an empty python fole
+$ code .                # Open the folder as a project in VS Code
+```
+
+Fill `guess_number.py` with the following python code.
+
+```python
+from random import randrange
+
+number = randrange(10)
+
+guess = -1
+while number != guess:
+  guess = int(input('Please enter a guess between 0-10  ==>'))
+  if guess < number:
+    print(f"{guess} is too low")
+  elif number > guess:
+    print(f"{guess} is too high")
+  else:
+    print("You guessed it!")
+
+```
 
 ## Setting Up
 
