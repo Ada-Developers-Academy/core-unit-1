@@ -69,6 +69,9 @@ You can add a breakpoint by clicking to the **left** of the line number.  You wi
 ![Breakpoint](../assets/vscode-debugger/../vs-code-debugger/breakpoint.png)
 
 
+Add a breakpoint to lines 5 and 11.  See how you can toggle them on and off.
+
+
 ### Running the Debugger
 
 You can then run the debugger at any time with the green triangle play button.
@@ -76,6 +79,9 @@ You can then run the debugger at any time with the green triangle play button.
 ![Debugger play button](../assets/vscode-debugger/debugger-play.png)
 
 Notice that the program will pause at the 1st breakpoint it encounters.
+
+**What are the values of the variables?**  
+
 ### Watches
 
 You can create a watch by clicking on the `+` icon and enter any expression.
@@ -83,6 +89,11 @@ You can create a watch by clicking on the `+` icon and enter any expression.
 ![Entering a Watch](../assets/vs-code-debugger/watch-price.png)
 
 ![Watches](../assets/vs-code-debugger/watch.png)
+
+
+**In the watch box, enter `number < guess`**  What does it evaluate to?  Try a few more expressions.
+
+![Watch example](../assets/vs-code-debugger/watch_example.png)
 
 ### Stepping Over & Stepping Into
 
