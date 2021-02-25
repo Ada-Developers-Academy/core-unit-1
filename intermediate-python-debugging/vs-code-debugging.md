@@ -6,7 +6,12 @@ In this lesson we will learn to connect VS Code and the Python debugger to help 
 
 ## Learning Goals
 
-## Practice Repository
+By the end of this lesson we should be able to...
+
+- Set up VS Code to run the Python debugger
+- Run the Python debugger in VS Code to step through a program
+- Use breakpoints, and watches to identify errors in code
+
 
 ## Setting Up
 
