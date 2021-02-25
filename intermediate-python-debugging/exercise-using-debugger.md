@@ -1,6 +1,6 @@
 # Problem Set: Using the Debugger
 
-In this exercise we will use the debugger to identify two errors.
+In this exercise we will use the debugger to identify two errors.  You can find the code at [AdaGold/python-debugging](https://github.com/AdaGold/python-debugging).
 
 The code here has two bugs, one runtime error crashes the program on execution and the other is a logic error which calculates the incorrect sum for an Order instance.  
 
