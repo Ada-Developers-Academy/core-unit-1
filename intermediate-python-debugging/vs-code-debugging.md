@@ -57,4 +57,22 @@ You can create a watch by clicking on the `+` icon and enter any expression.
 
 ### Stepping Over & Stepping Into
 
+Notice when the debugger is paused at a breakpoint you get the menu below.
+
+![Debugger Menu](../assets/vs-code-debugger/debugger-menu.png)
+
+This menu has the following buttons:
+
+- **Resume** - Continues the debugger executing until it gets to the next breakpoint, or the program exits.
+- **Step Over** - This button executes the current line and moves to the next line.  It will execute any function invoked on the current line, without pausing inside that function.
+- **Step Into** - This button goes into any function invoked on the current line and pauses at the 1st line.
+- **Step Out** - This button finishes the rest of the current function and pauses at the calling function.
+- **Restart** - This button restarts the debugger from the start.
+- **Stop** - This button stops the debugger.
+
+These buttons let you deliberately navigate through the program's execution allowing you to examine the state of the application at any step in the process.
+
 ## Summary
+
+In this lesson we examined how to get set up using the debugger in VS Code.  We also learned to create breakpoints watch programmatic expressions and trace through the application using step over, step into and step out.  
+
