@@ -67,7 +67,7 @@ Given an algorithm with some input, how many variables do we put in memory?
 
 When our data set grows by one or a million, how many more variables are stored in memory?
 
-Space complexity is the measurement of how the amount of memory an algorithm uses as the size of the input changes.
+Space complexity is the measurement of how the amount of memory an algorithm uses changes as the size of the input increases.
 
 ### !callout-info
 
@@ -100,7 +100,9 @@ Re-read the examples again, imagining having a million contacts. Did any of thes
 We could consider performance of an algorithm in three different scenarios: best case, worst case and average case scenarios.
 
 - The best case scenario means a scenario where the algorithm finishes the most efficiently it could ever, truly, mathematically be
-- The worst case scenario is the specific scenario where the algorithm would perform the most inefficiently
+- The worst case scenario is the specific scenario where the algorithm would perform the most inefficiently in one or both aspects:
+  - The algorithm takes the maximum amount of time
+  - The algorithm consumes the maximum amount of memory to solve the problem
 - The average case scenario would be the more common scenario that is neither the best nor worst case
 
 ### Example: The Address Book's Best, Worse, and Average Case
