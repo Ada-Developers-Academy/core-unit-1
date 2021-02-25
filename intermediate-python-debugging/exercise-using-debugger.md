@@ -8,6 +8,10 @@ The code here has two bugs, one runtime error crashes the program on execution a
 
 ### 1st Bug
 
+When you execute the program with:
+
+`$ python3 app.py`
+
 The program crashes with the following stack trace:
 
 ```
@@ -53,11 +57,11 @@ Notice that the loop attempts to add up all the product prices.  In Watch add a 
 
 Do you see the problem?  The price for the products gets set in `product.py`, see if you can find the error, and then re-run the debugger.  Does it crash now?  If you need add another breakpoint to `product.py` in the `__init__` function and step through the program.
 
-
 ### The 2nd Bug
 
 One of the tests is failing, find the failing test in `tests/test_order.py`.  
 
 ![Failing test](../assets/vs-code-debugger/exercise-failing-test.png)
 
-Create a breakpoint and use the step-into and step over commands to trace through the code and see why the test is failing.
+Create a breakpoint and use the step-into and step over commands to trace through the code and see why the test is failing.  You can click on the `Debug Test` link above the test function to run that one test in the debugger.
+
