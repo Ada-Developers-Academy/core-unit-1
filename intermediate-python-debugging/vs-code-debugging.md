@@ -15,6 +15,22 @@ By the end of this lesson we should be able to...
 
 ## Setting Up
 
+To get started with the VS Code debugger, first find the debugger button on the left sidebar.
+
+![Debugger Icon](../assets/vs-code-debugger/debugger-icon.png)
+
+You may then need to create a `launch.json` file by clicking on `Run and Debug`.
+
+![Run and debug button](../assets/vs-code-debugger/run-and-debug.png)
+
+Then Select `create a launch.json file` To make a configuration.  
+
+![Debug Python File](../assets/vs-code-debugger/debug-configuration.png)
+
+Save the resulting `launch.json` file.
+
+That's it!  You are set up!  You can close `launch.json` now.
+
 ## Debugging
 
 ### Adding Breakpoints
