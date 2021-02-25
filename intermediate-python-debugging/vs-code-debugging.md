@@ -66,7 +66,7 @@ That's it!  You are set up!  You can close `launch.json` now.
 
 You can add a breakpoint by clicking to the **left** of the line number.  You will see a red dot appear to indicate the breakpoint.  You can click again to make it dissapear.  
 
-![Breakpoint](../assets/vscode-debugger/../vs-code-debugger/breakpoint.png)
+![Breakpoint](../assets/vscode-debugger/breakpoint.png)
 
 
 Add a breakpoint to lines 5 and 11.  See how you can toggle them on and off.
@@ -76,7 +76,7 @@ Add a breakpoint to lines 5 and 11.  See how you can toggle them on and off.
 
 You can then run the debugger at any time with the green triangle play button.
 
-![Debugger play button](../assets/vscode-debugger/debugger-play.png)
+![Debugger play button](../assets/vs-code-debugger/debugger-play.png)
 
 Notice that the program will pause at the 1st breakpoint it encounters.
 
