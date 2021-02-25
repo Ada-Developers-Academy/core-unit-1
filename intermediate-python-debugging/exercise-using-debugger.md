@@ -1,8 +1,8 @@
 # Problem Set: Using the Debugger
 
-In this exercise we will use the debugger to identify two errors.  You can find the code at [AdaGold/python-debugging](https://github.com/AdaGold/python-debugging).
+In this exercise we will use the debugger to identify two errors.  To run the activity clone the code at [AdaGold/python-debugging](https://github.com/AdaGold/python-debugging).  Then set up the project by creating a virtual environment and installing pytest.
 
-The code here has two bugs, one runtime error crashes the program on execution and the other is a logic error which calculates the incorrect sum for an Order instance.  
+The code contains two bugs, one runtime error crashes the program on execution and the other is a logic error which calculates the incorrect sum for an Order instance.  
 
 ## Activity
 
@@ -55,7 +55,16 @@ Notice that the loop attempts to add up all the product prices.  In Watch add a 
 
 ![Adding a watch on price](../assets/vs-code-debugger/watch-price.png)
 
-Do you see the problem?  The price for the products gets set in `product.py`, see if you can find the error, and then re-run the debugger.  Does it crash now?  If you need add another breakpoint to `product.py` in the `__init__` function and step through the program.
+
+<details style="max-width: 700px; margin: auto;">
+  <summary>
+    Do you see the problem?
+  </summary>
+
+  The price for the products gets set in `product.py`, see if you can find the error, fix it, and then re-run the debugger.  Does it crash now?  If you need add another breakpoint to `product.py` in the `__init__` function and step through the program.
+</details>
+
+  
 
 ### The 2nd Bug
 
