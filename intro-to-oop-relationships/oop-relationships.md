@@ -7,7 +7,7 @@
 
 ## Introduction
 
-relationship, two classes having a relationship should spark many questions for us: What do the classes do together? How do they communicate with each other? What's the nature of their relationship? Is one class in charge? Are the two classes changing and modifying each other, or is it one-way? What happens if one class changes, and the other remains as it is?
+When multiple objects interact with each other, they form a relationship. Like any relationship, two classes having a relationship should spark many questions for us: What do the classes do together? How do they communicate with each other? What's the nature of their relationship? Is one class in charge? Are the two classes changing and modifying each other, or is it one-way? What happens if one class changes, and the other remains as it is?
 
 Because OOP is a programming paradigm that approaches problem-solving by forming relationships between objects, it provides ways to describe these relationships. The two most fundamental class relationships in OOP are _inheritance_ and _composition_.
 
