@@ -40,15 +40,15 @@ By the end of this lesson, we will be able to...
 
 ## Debuggers in General
 
-Sometimes it can be difficult to trace through a program's execution and understand which lines are being executing and the values of each variable as the program runs.  So developers created debugger programs.  A **debugger** is a program designed to help us identify errors in our code.  Typically a debuggers can be integrated into an editor like Visual Studio Code.
+Sometimes it can be difficult to trace through a program's execution and understand which lines are being executing and the values of each variable as the program runs.  So developers created debugger programs.  A **debugger** is a program designed to help us identify errors in our code.  Typically a debuggers can be integrated into an editor like Visual Studio Code.  The Python library comes with a [debugger](https://docs.python.org/3/library/pdb.html) and the [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) integrates with it.  We will see how to use the Python debugger in the next lesson.
 
-Debuggers allow us to pause program execution, examine the state of the program and either resume execution, or execute the application line-by-line.
+Debuggers allow us to pause program execution, examine the state of the program and either resume execution, or execute the application line-by-line.  This is amazing, you can tell the program to pause when it reaches a particular line and inspect any variable in scope!  No `print` statements!  Woo hoo!
 
 ### Breakpoints & Stepping Through Code
 
 A **breakpoint** is a place (line of code) which indicates to the debugger that you want to pause the program at this point of execution.  While the program is paused the developer can examine the state of variables currently in scope.  Then the developer can resume execution or execute the program, line-by-line. 
 
-Editors typically indicate breakpoints visually with a red-dot next to the line number.  This is a very common convention in many languages and editors, however other editors may use different visual clues.
+Editors typically indicate breakpoints visually with a red-dot next to the line number.  This is a very common convention in many languages and editors, however some editors may use different visual clues.
 
 ![VS Code Breakpoint Example](../assets/vs-code-debugger/breakpoint.png)
 
@@ -67,3 +67,5 @@ Sometimes you do not care about the exact values of specific variables, sometime
 In this lesson we introduced the concept of a debugger and some of the common features you will find in a debugger.  A debugger allows us to place breakpoints in our program to pause execution where we want to examine what's happening in our code at that particular point.  After the program is paused, we can use watches to examine the state of our application and continue execution line-by-line of our program, or resume our application until the next breakpoint.
 
 These features are really language-independent as most languages will have debuggers which provide these services.
+
+In the next lesson we will learn how to and practice using the Python debugger.
