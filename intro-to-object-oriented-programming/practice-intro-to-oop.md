@@ -20,7 +20,7 @@ Which option contains the correct syntax to define a class?
 ##### !options
 * 
 ```python
-class Dog():
+class Dog
     pass
 ```
 * 
@@ -125,7 +125,7 @@ Read the following prompts. Then, arrange the code snippets below so they match 
 1. Reads the instance of the `Pizza` class
 1. Reads the attribute `size` from the instance of `Pizza`
 1. Sets the instance's `size` to a new value
-1. Produces a syntax error
+1. Produces an error
 
 ##### !end-question
 ##### !answer
@@ -236,7 +236,7 @@ The fictional Pokemon in this problem set were [randomly generated](https://poke
 * title: Intro to OOP
 ##### !question
 
-Assume this definition of the `Pokemon` class. Note that it uses the keyword argument syntax.
+Assume this definition of the `Pokemon` class. Note that it uses keyword argument syntax.
 
 ```python
 class Pokemon:
@@ -591,8 +591,8 @@ class Automobile:
     def __init__(self):
         self.speed = 0
 
-    def accelerate(self, speed_increase):
-        self.speed += speed_increase
+    def accelerate(self, speed_delta):
+        self.speed += speed_delta
         return self.speed
 ```
 ### !end-placeholder
@@ -646,7 +646,7 @@ class Automobile:
 
         if difference <= -5:
             self.accelerate(2)
-        elif difference < 0 and difference > -5:
+        elif -5 < difference < 0:
             self.accelerate(1)
         elif difference > 0:
             self.accelerate(-1)
