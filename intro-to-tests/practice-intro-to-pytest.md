@@ -776,6 +776,25 @@ def func_that_always_returns_true():
 ```
 
 ### !end-explanation
+##### !hint
+
+Read through the test. Determine:
+
+- Which line is the "Arrange" step?
+- Which line is the "Act" step?
+- Which line is the "Assert" step?
+- In the "Act" step, what is the name of the function called? What are the arguments passed into it? How many arguments are there?
+- What does this test assume the value of `result` is?
+
+---
+
+Using this information, apply it to the function we need to write:
+
+- The name of the function in the "Act" step is the function we're testing, and the function to define
+- The number of arguments passed into this function is the number of parameters that the function signature needs
+- The assumed value of `result` is what the function call needs to _return_
+
+##### !end-hint
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -814,7 +833,21 @@ class TestPython1(unittest.TestCase):
 ##### !end-tests
 ##### !hint
 
-Logic to find that something is odd or even is best solved using the modulo operator.
+Read through the test. Determine:
+
+- Which line is the "Arrange" step?
+- Which line is the "Act" step?
+- Which line is the "Assert" step?
+- In the "Act" step, what is the name of the function called? What are the arguments passed into it? How many arguments are there?
+- What does this test assume the value of `result` is?
+
+---
+
+Using this information, apply it to the function we need to write:
+
+- The name of the function in the "Act" step is the function we're testing, and the function to define
+- The number of arguments passed into this function is the number of parameters that the function signature needs
+- The assumed value of `result` is what the function call needs to _return_
 
 ##### !end-hint
 ### !explanation
@@ -825,6 +858,8 @@ An example of a working implementation:
 def is_odd(num):
     return True
 ```
+
+Note: Recall that the instructions are to write a function to make the test pass. :)
 
 ### !end-explanation
 ### !end-challenge
@@ -864,6 +899,25 @@ class TestPython1(unittest.TestCase):
 ```
 
 ##### !end-tests
+##### !hint
+
+Read through the test. Determine:
+
+- Which line is the "Arrange" step?
+- Which line is the "Act" step?
+- Which line is the "Assert" step?
+- In the "Act" step, what is the name of the function called? What are the arguments passed into it? How many arguments are there?
+- What does this test assume the value of `result` is?
+
+---
+
+Using this information, apply it to the function we need to write:
+
+- The name of the function in the "Act" step is the function we're testing, and the function to define
+- The number of arguments passed into this function is the number of parameters that the function signature needs
+- The assumed value of `result` is what the function call needs to _return_
+
+##### !end-hint
 ### !explanation
 
 An example of a working implementation:
@@ -913,6 +967,25 @@ class TestPython1(unittest.TestCase):
 ```
 
 ##### !end-tests
+##### !hint
+
+Read through the test. Determine:
+
+- Which line is the "Arrange" step?
+- Which line is the "Act" step?
+- Which line is the "Assert" step?
+- In the "Act" step, what is the name of the function called? What are the arguments passed into it? How many arguments are there?
+- What does this test assume the value of `result` is?
+
+---
+
+Using this information, apply it to the function we need to write:
+
+- The name of the function in the "Act" step is the function we're testing, and the function to define
+- The number of arguments passed into this function is the number of parameters that the function signature needs
+- The assumed value of `result` is what the function call needs to _return_
+
+##### !end-hint
 ### !explanation
 
 An example of a working implementation:
@@ -963,6 +1036,22 @@ class TestPython1(unittest.TestCase):
 ```
 
 ##### !end-tests
+##### !hint
+
+Read through the test. Determine:
+
+- Which line is the "Arrange" step?
+- What are the "Act" and "Assert" steps?
+- In the "Act" step, what is the name of the function called? What are the arguments passed into it? How many arguments are there?
+- What does this test assert?
+
+Using this information, apply it to the function we need to write:
+
+- The name of the function in the "Act" step is the function we're testing, and the function to define
+- The number of arguments passed into this function is the number of parameters that the function signature needs
+- Use the clues from the test syntax to understand what the intended outcome of this function is
+
+##### !end-hint
 ### !explanation
 
 An example of a working implementation:
