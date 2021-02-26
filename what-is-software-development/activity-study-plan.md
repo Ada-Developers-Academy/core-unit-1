@@ -69,15 +69,20 @@ Take 5 minutes to reflect on the following questions. Write down your answers fo
 
 1. _Where_ do you work on your computer? On a desk? On a couch? Upside-down? In a noisy kitchen? In a quiet cave?
 
-If you listed multiple places, how would you rank each place for maintaining focus, comfort, ambiance, or any other quality that's important to you? 
+    - If you listed multiple places, how would you rank each place for maintaining focus, comfort, ambiance, or any other quality that's important to you? 
     - What are the ways that this can be helpful?
     - ... or challenging?
+
 1. _When_ do you do work? Early in the morning? Late at night? Does it fluctuate or is it consistent? 
     - What are the ways that this can be helpful?
     - ... or challenging?
+
 1. How do you plan to keep a healthy balance between Ada and the other things in your life?
+
 1. What challenges do you anticipate?
+
 1. What are ways that work to help keep yourself motivated?
+
 1. What other factors in your environment impact your studying? How can we support and help you?
 
 ### Discussion
