@@ -1,356 +1,454 @@
 ---
 Standards:
-  - Title: Fundamentals Recap
+  -
+    Title: Fundamentals Recap
     Description: "Fundamentals Vocabulary, Conditionals Recap, Problem Set: Fundamentals Vocabulary, Problem Set: Conditionals Recap, Math Primer"
     UID: w7RhPU
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: k3byvO
         Path: /fundamentals-recap/fundamentals-vocabulary.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 0pDSN5
         Path: /fundamentals-recap/conditionals-recap.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: wsrfiY
         Path: /fundamentals-recap/problem-set-fundamentals-vocabulary.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: v2CqP7
         Path: /fundamentals-recap/problem-set-conditionals-recap.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: oTncbU
         Path: /fundamentals-recap/math-primer.md
-  - Title: What Is Software Development
+  -
+    Title: What Is Software Development
     Description: "What is Software?, Study Like a Programmer, Activity: Intention Setting Our Careers, Activity: Study Plan"
     UID: 9db5757cd4ec665b52cdc40eb2e6c184
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 79b2e5a13c74e07f670ad4f6e0c9be75
         Path: /what-is-software-development/what-is-software.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: f1ec9a5d833e26f643c2aa2be8cec25f
         Path: /what-is-software-development/study-like-a-programmer.md
-      - Type: Instructor
+      -
+        Type: Instructor
         UID: 2208effa2c7f806e68a4a11493d42391
         Path: /what-is-software-development/activity-intention-setting-our-careers.instructor.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: c0730743994de39e585f6c6a3718b26c
         Path: /what-is-software-development/activity-intention-setting-our-careers.md
-      - Type: Instructor
+      -
+        Type: Instructor
         UID: 99be5734a0b03b94f8dbb3879d6e02e2
         Path: /what-is-software-development/activity-study-plan.instructor.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: d0b4410f501e2fd84af60ab3f7195403
         Path: /what-is-software-development/activity-study-plan.md
-  - Title: Intro to Dev Environment
+  -
+    Title: Intro to Dev Environment
     Description: "Intro to Command Line, Intro to Computer Memory"
     UID: QkZshi
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 8QL8Gs
         Path: /intro-to-dev-environment/intro-to-dev-environment.instructor.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: SxcEt0
         Path: /intro-to-dev-environment/intro-to-command-line.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: Bp7qUb
         Path: /intro-to-dev-environment/intro-to-computer-memory.md
-  - Title: Approaching a Problem
+  -
+    Title: Approaching a Problem
     Description: "Breaking down a problem, Pseudocode and Logic, Pair Programming, Activity: Breaking Down a Problem"
     UID: pSGW3x
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: LrjdJa
         Path: /approaching-a-problem/breaking-down-a-problem.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: DkCHnM
         Path: /approaching-a-problem/pseudocode-and-logic.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: YUccLN
         Path: /approaching-a-problem/intro-to-pair-programming.md
-      - Type: Instructor
+      -
+        Type: Instructor
         UID: oFxeWF
         Path: /approaching-a-problem/activity-breaking-down-a-problem.instructor.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: qutJWB
         Path: /approaching-a-problem/activity-breaking-down-a-problem.md
-  - Title: Intro to Debugging
+  -
+    Title: Intro to Debugging
     Description: Intro to Errors, Identifying Errors, Intro to Debugging
     UID: aGJLyn
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: amY0J6
         Path: /intro-to-debugging/intro-to-errors.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: B6OYlI
         Path: /intro-to-debugging/identifying-errors.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: VvrMFH
         Path: /intro-to-debugging/intro-to-debugging.md
-  - Title: Intro To Functions
+  -
+    Title: Intro To Functions
     Description: "Functions Overview, Invoking Functions, Defining Functions, Problem Set: Intro to Functions"
     UID: e30a742083b7afa72ec565afafb9f64b
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 8b4b8d39fd4f56926aa6181cb77ed45f
         Path: /intro-to-functions/functions-overview.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 2a192a35477f1d52a01849d3b778609c
         Path: /intro-to-functions/invoking-functions.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 692aeabdceb105d82aed2187db381860
         Path: /intro-to-functions/defining-functions.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: rjEdAe
         Path: /intro-to-functions/problem-set-intro-to-functions.md
-  - Title: Functions, Continued
+  -
+    Title: Functions, Continued
     Description: "Variable Scope, How to Read Documentation, Problem Set: Functions Continued"
     UID: 6736abef6aad93ad0fdb8d10e1849b62
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: k7GVFX
         Path: /functions-continued/variable-scope.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 0ea7bd4c9be9469bd0232744edf2a80d
         Path: /functions-continued/how-to-read-documentation.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: POpDU4
         Path: /functions-continued/problem-set-functions-continued.md
-  - Title: Intro To Tests
+  -
+    Title: Intro To Tests
     Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Problem Set: Intro to pytest"
     UID: cxnH0Z
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: abirop
         Path: /intro-to-tests/packages-and-managing-packages.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: qGalfB
         Path: /intro-to-tests/automated-tests.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: xGvLQz
         Path: /intro-to-tests/intro-to-pytest.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: qcZisA
         Path: /intro-to-tests/problem-set-intro-to-pytest.md
-  - Title: Representing Data
+  -
+    Title: Representing Data
     Description: "Representing Data in Lists and Dictionaries, Data and JSON, Problem Set: Representing Data, Activity: Representing Data"
     UID: hxB08H
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 88DgSp
         Path: /representing-data/representing-data-in-lists-and-dictionaries.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: r7MHqf
         Path: /representing-data/data-and-json.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: p4Pb0s
         Path: /representing-data/problem-set-representing-data.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 1f3084593d9eed2a8ec8a797cbfdd89b
         Path: /representing-data/activity-representing-data.md
-  - Title: Iterating Over Data
+  -
+    Title: Iterating Over Data
     Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, Iterating and Special Cases, Problem Set: Iterating Over Data"
     UID: giOpFA
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: DH2nXe
         Path: /iterating-over-data/intro-to-iteration.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: bCBDvR
         Path: /iterating-over-data/iterating-over-lists.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: OiwVkc
         Path: /iterating-over-data/iterating-over-dictionaries.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 4oVaz5
         Path: /iterating-over-data/iterating-and-special-cases.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: maPjmo
         Path: /iterating-over-data/problem-set-iterating-over-data.md
-  - Title: Nested Data and Nested Loops
+  -
+    Title: Nested Data and Nested Loops
     Description: "Nested Lists and Dictionaries, Nested Loops"
     UID: DcrO5J
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: PuRG5U
         Path: /nested-data-and-nested-loops/nested-lists-and-dictionaries.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: Mo0XXv
         Path: /nested-data-and-nested-loops/nested-loops.md
-  - Title: While Loops
+  -
+    Title: While Loops
     Description: While Loops
     UID: 3P0q44
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: KyZkme
         Path: /while-loops/while-loops.md
-  - Title: Exception Handling
+  -
+    Title: Exception Handling
     Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Problem Set: Exception Handling"
     UID: xT5cCv
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: N27mMR
         Path: /exception-handling/raising-and-handling-exceptions.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 6bbws8
         Path: /exception-handling/checking-exceptions-in-tests.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: b72TBD
         Path: /exception-handling/problem-set-exception-handling.md
-  - Title: Big O
+  -
+    Title: Big O
     Description: "Time and Space Complexity, Big O Notation, Big O Analysis, Problem Set: Big O"
     UID: f2703dfead197309bf41c0a2d8ff1daf
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Instructor
+      -
+        Type: Instructor
         UID: 81281faf1d71e4872fb5ca286cc3618e
         Path: /big-o/big-o.instructor.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: b0ad60b6fe7116d3b63fdb9b4cc4bfde
         Path: /big-o/time-and-space-complexity.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 97a53b0bc90b67970a5b0f0c61472464
         Path: /big-o/big-o-notation.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 46f8d000785c9cd1b0112854c419f232
         Path: /big-o/big-o-analysis.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 90465d8c4c1af56aed98039f4e95687c
         Path: /big-o/problem-set-big-o.md
-  - Title: Intro to Git
+  -
+    Title: Intro to Git
     Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Problem Set: Git Commands, Activity: Git History"
     UID: DaSCfO
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: qCKw66
         Path: /intro-to-git/intro-to-git-vocab-and-concepts.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: EgvjDl
         Path: /intro-to-git/git-setup.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: CltvdV
         Path: /intro-to-git/commits.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: wGkqyQ
         Path: /intro-to-git/collaborating.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: w3WLGs
         Path: /intro-to-git/reviewing-git-history.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: g1zQGU
         Path: /intro-to-git/problem-set-git-commands.md
-      - Type: Instructor
+      -
+        Type: Instructor
         UID: NvHa7v
         Path: /intro-to-git/activity-git-history.instructor.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: tSg96d
         Path: /intro-to-git/activity-git-history.md
-  - Title: Intro To Object-Oriented Programming
+  -
+    Title: Intro To Object-Oriented Programming
     Description: "What is OOP?, Defining Classes, Creating Instances, Instance Methods, Problem Set: Intro to OOP"
     UID: dfa81f9898dba334bbda0cdf7b32c9f6
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 56c780d52a039c59bdbc844d9de154f1
         Path: /intro-to-object-oriented-programming/what-is-oop.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 69b59c74feaa92e40b2a5b238e546de4
         Path: /intro-to-object-oriented-programming/defining-classes.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 3e5c6be7ed788302010d3515fcc938d4
         Path: /intro-to-object-oriented-programming/creating-instances.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 04e31443d6167d3ffb3b9728804b82ff
         Path: /intro-to-object-oriented-programming/instance-methods.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: ecf610c94fd56dbcc8dcfa0f774342ec
         Path: /intro-to-object-oriented-programming/problem-set-intro-to-oop.md
-  - Title: Intro To OOP, Cont'd
+  -
+    Title: Intro To OOP, Cont'd
     Description: "Testing Objects, Projects With Many Files"
     UID: 984638c124b588e0298c09ecf6316b44
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 613e336a5248766041367235ba6bca58
         Path: /intro-to-oop-contd/testing-objects.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: f6e28e9bf4561ab0a666f1e046e52a83
         Path: /intro-to-oop-contd/projects-with-many-files.md
-  - Title: Intro to OOP Relationships
+  -
+    Title: Intro to OOP Relationships
     Description: "OOP Relationships, Inheritance, Problem Set: OOP Relationships"
     UID: 6aa5a5d28d6c39bc5381c77a1e222232
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 017e51e2f57ac181b0a4b89dd39e598d
         Path: /intro-to-oop-relationships/oop-relationships.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 13417be7f72da4eeb97ff9ce94f5df6a
         Path: /intro-to-oop-relationships/inheritance.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: e760a85b2f7705d0d4e42d26947b6f6c
         Path: /intro-to-oop-relationships/problem-set-oop-relationships.md
-  - Title: Composition
+  -
+    Title: Composition
     Description: "Composition, Problem Set: Composition"
     UID: 1jtO4N
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: b1f8cf43e4ccc8039055e4f7b8cf6411
         Path: /composition/composition.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: eedb1f62ad21bb5e478b414c25e17998
         Path: /composition/problem-set-composition.md
-  - Title: Python OOP
+  -
+    Title: Python OOP
     Description: "Intro to Design Patterns, Intro to Decorators, Static Methods and Class Methods, Problem Set: Static Methods and Class Methods"
     UID: 53ff8a562d3c8ba58b02a9b3ef612df5
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      - Type: Instructor
+      -
+        Type: Instructor
         UID: 79ab0f6a47bee8ef7904918484d14ec3
         Path: /python-oop/python-oop.instructor.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 2e1f6e9e38e6f594e6a86cfb15b494ed
         Path: /python-oop/intro-to-design-patterns.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: 533f8f6dada668c242e332613c0052ef
         Path: /python-oop/intro-to-decorators.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: fec017fec392028400734ad89c0ebde2
         Path: /python-oop/static-methods-and-class-methods.md
-      - Type: Lesson
+      -
+        Type: Lesson
         UID: d70afaf7a11cea145281fd76ca10f1ab
         Path: /python-oop/problem-set-static-methods-and-class-methods.md
