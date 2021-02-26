@@ -1,4 +1,4 @@
-# Practice: Fundamentals Vocabulary
+# Problem Set: Fundamentals Vocabulary
 
 ## Directions
 
@@ -70,7 +70,6 @@ if score > 150000:
 
 ### !end-challenge
 <!-- prettier-ignore-end -->
-
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -155,7 +154,6 @@ The int() function could be used anywhere to convert a piece of data into an int
 
 ### !end-challenge
 <!-- prettier-ignore-end -->
-
 
 <!-- prettier-ignore-start -->
 ### !challenge
