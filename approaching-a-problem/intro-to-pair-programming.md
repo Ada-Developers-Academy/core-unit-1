@@ -124,7 +124,7 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 
 ##### !question
 
-Describe how [VS Code Live Share] works as a tool that enables remote collaborating.
+Describe how [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) works as a tool that enables remote collaborating.
 
 ##### !end-question
 
