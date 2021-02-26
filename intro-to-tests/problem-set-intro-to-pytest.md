@@ -1,4 +1,4 @@
-# Practice: Intro to Pytest
+# Problem Set: Intro to Pytest
 
 ## Directions
 

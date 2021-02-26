@@ -1,4 +1,4 @@
-# Practice: Static Methods and Class Methods
+# Problem Set: Static Methods and Class Methods
 
 ## Directions
 

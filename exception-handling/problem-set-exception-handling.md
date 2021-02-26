@@ -1,4 +1,4 @@
-# Practice: Exception Handling
+# Problem Set: Exception Handling
 
 ## Directions
 
