@@ -17,17 +17,17 @@ The program crashes with the following stack trace:
 ```
 Traceback (most recent call last):
   File "/Users/username/ada/python/python-debugging/app.py", line 16, in <module>
-    f"{kamala_order.calculate_total()}")
-  File "/Users/username/ada/python/python-debugging/grocery_store/order.py", line 14, in calculate_total
-    total += self.products[i].price
+    f"{calculate_total(kamala_order)}")
+  File "/Users/username/ada/python/python-debugging/grocery_store/order.py", line 16, in calculate_total
+    total += order["products"][i]["price"]
 TypeError: unsupported operand type(s) for +=: 'int' and 'str'
 ```
 
-Hmmmm... It seems that it crashes at line 14 of `grocery_store/order.py`.
+Hmmmm... It seems that it crashes at line 16 of `grocery_store/order.py`.
 
-Lets put a breakpoint at line 14 of `grocery_store/order.py`.
+Lets put a breakpoint at line 16 of `grocery_store/order.py`.
 
-![Visual of a breakpoint in order.py at line 14](../assets/vs-code-debugger/order-py-breakpoint.png)
+![Visual of a breakpoint in order.py at line 16](../assets/vs-code-debugger/order-py-breakpoint.png)
 
 Then go to the debugger icon.
 
@@ -51,9 +51,9 @@ You will notice that the application stops in `order.py`.
 
 ### Finding the bug...
 
-Notice that the loop attempts to add up all the product prices.  In Watch add a watch for `self.products[i].price`
+Notice that the loop attempts to add up all the product prices.  In Watch add a watch for `order["products"][i]`
 
-![Adding a watch on price](../assets/vs-code-debugger/watch-price.png)
+![Adding a watch on a product](../assets/vs-code-debugger/watch-price.png)
 
 
 <details style="max-width: 700px; margin: auto;">
@@ -61,7 +61,7 @@ Notice that the loop attempts to add up all the product prices.  In Watch add a 
     Do you see the problem?
   </summary>
 
-  The price for the products gets set in `product.py`, see if you can find the error, fix it, and then re-run the debugger.  Does it crash now?  If you need add another breakpoint to `product.py` in the `__init__` function and step through the program.
+  The price for the products gets set in `product.py`, see if you can find the error, fix it, and then re-run the debugger.  Does it crash now?  If you need add another breakpoint to `product.py` in the `create_product` function and step through the program.
 </details>
 
   
@@ -72,5 +72,5 @@ One of the tests is failing, find the failing test in `tests/test_order.py`.
 
 ![Failing test](../assets/vs-code-debugger/exercise-failing-test.png)
 
-Create a breakpoint and use the step-into and step over commands to trace through the code and see why the test is failing.  You can click on the `Debug Test` link above the test function to run that one test in the debugger.
+Create a breakpoint in the failing test `test_calculate_total_with_multiple_products` and use the step-into and step over commands to trace through the code and see why the test is failing.  You can click on the `Debug Test` link above the test function to run that one test in the debugger.
 
