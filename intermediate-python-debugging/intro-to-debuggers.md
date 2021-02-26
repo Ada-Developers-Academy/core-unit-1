@@ -58,9 +58,9 @@ One neat thing about breakpoints is that you can have more than one and the prog
 
 ### Watches
 
-Sometimes you do not care about the exact values of specific variables, sometimes you want to "watch" the value of an expression like, `drivers[0].name`.  That's really all a watch is.  You put in a bit of code and the debugger shows you the current value of that expression.  
+Sometimes you do not care about the exact values of specific variables, sometimes you want to "watch" the value of an expression like, `drivers[0]["name"]`.  That's really all a watch is.  You put in a bit of code and the debugger shows you the current value of that expression.  
 
-![Watch Example in VS Code](../assets/vs-code-debugger/watch.png)
+![Watch Example in VS Code](../assets/vs-code-debugger/watch-price.png)
 
 ## Summary
 
