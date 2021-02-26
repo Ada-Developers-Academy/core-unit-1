@@ -111,7 +111,45 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 
 ## Check for Understanding
 
-<!-- Question 1 -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: short-answer
+* id: 4810dbd6-286c-4eb9-976e-4480811114f1
+* title: [text, a short question title]
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+Describe how [VS Code Live Share] works as a tool that enables remote collaborating.
+
+##### !end-question
+
+##### !placeholder
+
+Enter notes here
+
+##### !end-placeholder
+
+##### !answer
+
+/.*/
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE 1======================= -->
+
+<!-- Question 2 -->
 
 <!-- prettier-ignore-start -->
 ### !challenge
