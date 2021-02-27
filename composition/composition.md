@@ -289,9 +289,9 @@ An instance of a `ShoppingCart` has many `Product`s.
 
 ### !challenge
 
-* type: Composition
+* type: multiple-choice
 * id: cd47699d-3533-4d5d-990c-470cd0b254c4
-* title: [text, a short question title]
+* title: Composition
 <!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
 <!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
 
