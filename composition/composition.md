@@ -237,6 +237,8 @@ This code produces the console output:
 The total cost of the products in the shopping cart is $213.48
 ```
 
+## Check for Understanding
+
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
 
@@ -256,16 +258,16 @@ In the example above, `Product` is the
 
 ##### !options
 
-* [Component Class]
-* [Composite Class]
-* [Child Class]
-* [Parent Class]
+* Component Class
+* Composite Class
+* Child Class
+* Parent Class
 
 ##### !end-options
 
 ##### !answer
 
-* [Component Class]
+* Component Class
 
 ##### !end-answer
 
@@ -303,16 +305,16 @@ In the example above, one line 21, `calculate_cost()` is
 
 ##### !options
 
-* [An attribute of the `Product` class]
-* [An attribute of the `ShoppingCart` class]
-* [An instance method invoked on an instance of the `Product` class]
-* [An instance method invoked on an instance of the `ShoppingCart` class]
+* An attribute of the `Product` class
+* An attribute of the `ShoppingCart` class
+* An instance method invoked on an instance of the `Product` class
+* An instance method invoked on an instance of the `ShoppingCart` class
 
 ##### !end-options
 
 ##### !answer
 
-* [An instance method invoked on an instance of the `Product` class]
+* An instance method invoked on an instance of the `Product` class
 
 ##### !end-answer
 
@@ -325,7 +327,7 @@ In the example above, one line 21, `calculate_cost()` is
 
 <!-- ======================= END CHALLENGE ======================= -->
 
-## Check for Understanding
+
 
 <!-- Question Takeaway -->
 <!-- prettier-ignore-start -->
