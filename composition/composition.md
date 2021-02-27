@@ -3,13 +3,21 @@
 ## Learning Goals
 
 - Use attributes to create composition between two classes
+- Define one-to-one and on-to-many composition relationships
 - Use instance methods to access instances of objects composed inside another object
+
+## Vocabulary and Synonyms
+
+| Vocab <div style="width:100px;">| Definition |Synonym|How to Use in a Sentence |
+| ----- | ---------- |----|------------------------ |
+| One-to-one | One composite object is associated with one component object  | has-a |On an e-commerce site, each order has a *one-to-one* relationship with each shipment (destination address, tracking number, etc). <br/> In a gradebook application, each student *has a* final grade. <br/> On a social media platform, each user *has one* profile picture|
+| One-to-many | One composite object is associated with a collection of component objects. | has-many | In a gradebook application, one class *has many* students and *has many* assignments. <br/> On a social media platform, one user has a *one-to-many* relationship with posts.|
 
 ## Initializing Components as Attributes in the Constructor
 
 It's common to set the attributes of a composite class to component instances provided by other code that uses our class. Python lets us assign to attributes directly. We can let all the components in our class be passed into the constructor of the composite class, and assign the attributes in the constructor itself.
 
-Consider this example:
+Consider this example of a one-to-one composition relationship:
 
 ```python
 class ExampleComponent:
@@ -40,7 +48,7 @@ Orange has an attr named my_favorite_component: <__main__.ExampleComponent objec
 We can read the name from Orange's fav component using dot notation: apple
 ```
 
-This works similarly even with a list of instances:
+This works similarly even with a list of instances, a one-to-many composition relationship:
 
 ```python
 class ExampleComponent:
@@ -151,30 +159,63 @@ Now, I'm going to leave Component's instance method
 This is what Component's method returned: 473
 ```
 
-## A Longer Example: Product and ShoppingCart
+## One-to-One and One-to-Many Composition Relationships
+
+We just saw examples of one-to-one and one-to-many composition relationships.
+
+A one-to-one relationship is one where a composite class has an attribute single instance of a component class as in this example:
 
 ```python
-class Product:
+class ExampleComponent:
 
-    def __init__(self, price, quantity):
-        self.price = price
-        self.quantity = quantity
+    def __init__(self, name):
+        self.name = name
 
-    def calculate_cost(self):
-        return self.price * self.quantity
+class ExampleComposite:
 
-class ShoppingCart:
+    def __init__(self, name, component):
+        self.name = name
+        self.component = component
+```
 
-    def __init__(self, products):
-        self.products = products
+A one-to-many relationship is one where a composite class has an attribute that is a list of instances of a component class as in this example:
 
-    def calculate_total_cost(self):
-        total_price = 0.0
+```python
+class ExampleComposite:
 
-        for product in self.products:
-            total_price += product.calculate_cost()
+    def __init__(self, name, components):
+        self.name = name
+        self.components = components
+```
 
-        return total_price
+Note that `components` is a list of `component` objects.
+
+## A Longer Example: Product and ShoppingCart
+
+Now we will look at one more example of a one-to-many composition relationship.
+
+```python
+1 class Product:
+2 
+3    def __init__(self, price, quantity):
+4        self.price = price
+5        self.quantity = quantity
+6
+7    def calculate_cost(self):
+8        return self.price * self.quantity
+9
+10 class ShoppingCart:
+11
+12    def __init__(self, products):
+13        self.products = products
+14
+15    def calculate_total_cost(self):
+16        total_price = 0.0
+17
+18        for product in self.products:
+19            total_price += product.calculate_cost()
+20
+21        return total_price
 ```
 
 ```python
@@ -195,6 +236,94 @@ This code produces the console output:
 ```
 The total cost of the products in the shopping cart is $213.48
 ```
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: bcd60833-bf2b-442d-b5b2-05afd630944f
+* title: Composition
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+In the example above, `Product` is the
+
+##### !end-question
+
+##### !options
+
+* [Component Class]
+* [Composite Class]
+* [Child Class]
+* [Parent Class]
+
+##### !end-options
+
+##### !answer
+
+* [Component Class]
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+##### !explanation
+
+An instance of a `ShoppingCart` has many `Product`s.
+
+##### !end-explanation
+
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: Composition
+* id: cd47699d-3533-4d5d-990c-470cd0b254c4
+* title: [text, a short question title]
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+In the example above, one line 21, `calculate_cost()` is 
+
+##### !end-question
+
+##### !options
+
+* [An attribute of the `Product` class]
+* [An attribute of the `ShoppingCart` class]
+* [An instance method invoked on an instance of the `Product` class]
+* [An instance method invoked on an instance of the `ShoppingCart` class]
+
+##### !end-options
+
+##### !answer
+
+* [An instance method invoked on an instance of the `Product` class]
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
 
 ## Check for Understanding
 
