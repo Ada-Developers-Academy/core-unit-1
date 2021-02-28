@@ -16,6 +16,7 @@ For most of us Lists were our first _data structure_, that is, rather than a var
 |  List | An ordered list of values. Items in the list are sometimes called elements. Can get the value of an item by using square brackets and the index of the item. | Array | I needed an ordered collection of student names, so I used a list. |
 | Memory | Information and the medium on which it is stored for immediate use by a computing system.  Memory can also refer to the device which stores the information. | RAM (Random Access Memory) | There was too much data to load at once so we ran out of memory. |
 | Reference | A value which enables a program to directly access a datum (a piece of data). | Handle | I passed a reference to the student records into the function |
+| Contiguous | Things that are directly next to one another.  In many languages data in an array is stored in contiguous chunks. | adjacent | It's easier to write a collection of data to media when it is contiguous or adjacent to one another. |
 
 ## Memory
 
