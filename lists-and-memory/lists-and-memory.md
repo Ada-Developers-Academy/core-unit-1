@@ -20,10 +20,20 @@ For most of us Lists were our first _data structure_, that is, rather than a var
 
 ## Memory
 
-Every time your program stores a value in a variable, it is using _memory_.  Memory or RAM is a part of the computer which functions kind of like a series of post-it-notes on a fridge.  The information is quick to retrieve, and intended to be temporary.  When the program ends or the computer shuts down, information stored in RAM is erased.  Computer programs use memory to store information like variables they need while the program is executing.  
+Every time your program stores a value in a variable, it is using _memory_.  Memory or RAM is a part of the computer which functions kind of like a series of post-it-notes on a fridge.  The information is quick to retrieve, and intended to be temporary.  When the program ends or the computer shuts down, information stored in RAM is erased.  Computer programs use memory to store information like variables they need while the program is executing.
 
-In python, if you make a variable like:
+You can think of RAM as a series of blocks of memory, each with their own address, very much like the index in a list.
 
+![Memory Addresses](../assets/lists-and-memory/ram-addresses.png)
+
+Note that different types of data can take up more or less units of memory and the size of each unit of memory can depend on the type of computer system.
+
+In the version of Python we are using CPython, you can see the memory address for any variable with the `id` function.
+
+```python
+>>> name = "Aubrey"
+>>> id(name)
+4305075184
 ```
 sales_tax = 0.09
 ```
