@@ -1,4 +1,4 @@
-# Practice: Iterating Over Data
+# Problem Set: Iterating Over Data
 
 ## Directions
 

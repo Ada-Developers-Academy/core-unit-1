@@ -1,4 +1,4 @@
-# Practice: Representing Data
+# Problem Set: Representing Data
 
 ## Directions
 

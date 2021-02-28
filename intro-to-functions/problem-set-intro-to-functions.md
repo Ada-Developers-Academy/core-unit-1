@@ -1,4 +1,4 @@
-# Practice: Intro to Functions
+# Problem Set: Intro to Functions
 
 ## Directions
 
