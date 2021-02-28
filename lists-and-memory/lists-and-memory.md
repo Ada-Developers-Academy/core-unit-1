@@ -84,7 +84,26 @@ So if:
 - The `items` collection started at the memory address 100
 - Each reference is 8 Bytes in size
 
-Long term storage like hard drives or SSDs which are persistent are another topic.
+We could find a reference to index 3 of a list with:
+
+`reference_address = 100 + 8 * 3`
+
+Python can then use the following steps to find any element a list of an arbitrary size. 
+
+1.  Find the starting address of the items collection
+1.  Use `start_of_items_collection + size_of_reference * index_number` to find the reference to the given item
+1.  Use the reference to find the given item
+
+Each step is an O(1) operation in time/space complexity and nothing in this algorithm changes as the list gets bigger.  Therefore retrieving an element from a list by it's index number is a very efficient operation.
+
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-warning
+
+## Caveat
+
+Like many general rules, this is an oversimplification.  Things can get more complicated than we will go into here for huge datasets or environments with limited memory.  As an application developer in Python however, you can assume that looking up a specific index in a list will be a fast and efficient operation.
+
+### !end-callout
 
 ## Summary
 
