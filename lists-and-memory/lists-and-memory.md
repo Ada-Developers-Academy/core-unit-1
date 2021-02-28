@@ -107,5 +107,144 @@ Like many general rules, this is an oversimplification.  Things can get more com
 
 ## Summary
 
+In memory Python variables contain references to where the actual data is stored.  A list variable refers to a memory location that contains metadata and a collection of references to where the actual data is stored, like a link to an addressbook.  This collection of references are contiguous in memory and that makes it very quick for Python to look up an element by it's index number, with some arithmetic.
 
 ## Check for Understanding
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 7e08e867-3d1e-4ea4-9465-c6a4f38d0ef0
+* title: In Python how are variables stored?
+* points: 1
+* topics: python, references
+
+##### !question
+
+In Python variables store...
+
+##### !end-question
+
+##### !options
+
+* values directly
+* references to where data is stored
+* values directly, except for lists which contain a reference
+
+##### !end-options
+
+##### !answer
+
+* references to where data is stored
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+All variables contain a reference to the location where data is stored.  Lists variables simply contain a reference which then contains references to the elements of the list.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: short-answer
+* id: a25e5d9f-13d4-438a-a256-21f4ae2f0835
+* title: Big O:  List elements by Index
+* points: 1
+* topics: Big O, python-lists
+
+##### !question
+
+What is the Big O of for changing an element by it's index number like `students[n] = "Ceicil"`?
+
+##### !end-question
+
+##### !placeholder
+
+O(...)
+
+##### !end-placeholder
+
+##### !answer
+
+/([oO]\(1\))|1/
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+Since looking up an element by it's index just involves some arithmetic and does **not** depend on the size of the given array, the time/space complexity are both O(1) 
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: short-answer
+* id: 34ea7bcc-c959-4f61-830f-7bf835726f65
+* title: How does an array look like in memory
+* points: 1
+* topics: python, python-lists
+
+##### !question
+
+Describe how the following array `data` would look like in memory.  Draw a picture for yourself if it helps.
+
+```python
+data = [
+  3,
+  "pasta",
+  4,
+  5,
+]
+```
+
+##### !end-question
+
+##### !placeholder
+
+Describe how data is organized in memory.
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+`data` would refer to a location in memory which stores metadata and a collection of references to the values.
+
+![Example diagram](../assets/lists-and-memory-exercise-answer.png)
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
