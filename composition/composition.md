@@ -195,27 +195,29 @@ Note that `components` is a list of `component` objects. As usual, we use good n
 Let's look at one more example of a one-to-many composition relationship.
 
 ```python
-1 class Product:
-2 
-3    def __init__(self, price, quantity):
-4        self.price = price
-5        self.quantity = quantity
-6
-7    def calculate_cost(self):
-8        return self.price * self.quantity
-9
-10 class ShoppingCart:
-11
-12    def __init__(self, products):
-13        self.products = products
-14
-15    def calculate_total_cost(self):
-16        total_price = 0.0
-17
-18        for product in self.products:
-19            total_price += product.calculate_cost()
-20
-21        return total_price
+#----Question 1----
+class Product:
+ 
+    def __init__(self, price, quantity):
+        self.price = price
+        self.quantity = quantity
+
+    def calculate_cost(self):
+        return self.price * self.quantity
+
+class ShoppingCart:
+
+    def __init__(self, products):
+        self.products = products
+
+    def calculate_total_cost(self):
+        total_price = 0.0
+
+        for product in self.products:
+            #----Question 2----
+            total_price += product.calculate_cost()
+
+        return total_price
 ```
 
 ```python
@@ -299,7 +301,7 @@ An instance of a `ShoppingCart` has many `Product`s. Since instances of `Product
 
 ##### !question
 
-In the example above, one line 21, `calculate_cost()` is 
+In the example above, refer to the line of code below `#----Question 2----`. <br/> `calculate_cost()` is 
 
 ##### !end-question
 
