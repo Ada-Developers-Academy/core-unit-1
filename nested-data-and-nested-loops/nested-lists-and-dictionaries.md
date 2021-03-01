@@ -1,4 +1,5 @@
 # Nested Lists and Dictionaries
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=0c757d3b-17c0-4b26-bdc3-acd101351f7d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## Learning Goals
 
@@ -354,18 +355,149 @@ The above code produces this console output:
 
 ## Check for Understanding
 
-<!-- Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure. -->
+<!-- Question 1 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: c49169ab-1a7c-447b-9399-4ee331e5d596
+* title: Nested Lists and Dictionaries
+##### !question
+Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure.
 
-<!-- A second time: Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure. -->
+``` Python
+clothes = [
+  ["hat", "beanie", "fedora"],
+  ["tshirt", "hoodie", "cardigan"],
+  ["jeans", "joggers", "shorts"]
+]
+```
+##### !end-question
+##### !placeholder
+Describe this data structure here.
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->
 
-<!-- Modify this function so it returns the value `25` -->
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: e4927780-c756-4b5d-9cbe-acdfa0859d1f
+* title: Nested Lists and Dictionaries
+##### !question
+Use 1-4 sentences to describe this data structure. Describe each layer of the data structure, starting with the outer data structure.
 
-<!-- Modify this function so it returns the value `"Electric"` -->
+``` Python
+sandwich = {
+  "blt": ["bacon", "lettuce", "tomato"],
+  "grilled cheese": ["american cheese", "gruyere"],
+  "pbj": ["grape jelly", "peanut butter"]
+}
 
-<!-- MC:
+```
+##### !end-question
+##### !placeholder
+Describe this data structure here.
+##### !end-placeholder
+### !end-challenge
+<!-- prettier-ignore-end -->
 
-Nested data structures can go three layers deep! Extend your knowledge. Which of these is the syntax to get the value `"Pikachu"`?
+<!-- Question 3 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: gKsPNt
+* title: Nested Lists and Dictionaries
+##### !question
 
+What is the syntax to get `25` from `pokedex`?
+
+```python
+pokedex = [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+```
+
+Use `[]` syntax with double-quotes where needed.
+
+##### !end-question
+##### !answer
+
+pokedex[0]["id"]
+
+##### !end-answer
+##### !hint
+
+Use `[]` syntax with double-quotes where needed.
+
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: yqGKmA
+* title: Nested Lists and Dictionaries
+##### !question
+
+What is the syntax to get `"Electric"` from `pokedex`?
+
+```python
+pokedex = [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+```
+
+Use `[]` syntax with double-quotes where needed.
+
+##### !end-question
+##### !answer
+
+pokedex[0]["type"]
+
+##### !end-answer
+##### !hint
+
+Use `[]` syntax with double-quotes where needed.
+
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 5 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: wfpvr0
+* title: Nested Lists and Dictionaries
+##### !question
+
+Let's practice with a nested data structure that is three layers deep!
+
+What is the syntax to get `"Pikachu"` from `game_data`?
+
+```python
 game_data = {
     "pokedex": [
         {
@@ -375,12 +507,111 @@ game_data = {
         }
     ]
 }
+```
 
-pokedex["name_en"]
-pokedex{"name_en"}
-game_data["pokedex"]["name_en"]
-game_data{"pokedex"}["name_en"]
+Use `[]` syntax with double-quotes where needed.
 
- -->
+##### !end-question
+##### !answer
 
-<!-- More questions will be in the huge worksheet -->
+game_data["pokedex"][0]["name_en"]
+
+##### !end-answer
+##### !hint
+
+Use `[]` syntax with double-quotes where needed.
+
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 6 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: 1gcwNk
+* title: Nested Lists and Dictionaries
+##### !question
+
+What is the syntax to get `[{"id": 25, "name_en": "Pikachu", "type": "Electric"}]` from `game_data`?
+
+```python
+game_data = {
+    "pokedex": [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+}
+```
+
+Use `[]` syntax with double-quotes where needed.
+
+##### !end-question
+##### !answer
+
+game_data["pokedex"]
+
+##### !end-answer
+##### !hint
+
+Use `[]` syntax with double-quotes where needed.
+
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- Question 7 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: mXiwq8
+* title: Nested Lists and Dictionaries
+##### !question
+
+What is the syntax to get `{"id": 25, "name_en": "Pikachu", "type": "Electric"}` from `game_data`?
+
+```python
+game_data = {
+    "pokedex": [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+}
+```
+
+Use `[]` syntax with double-quotes where needed.
+
+##### !end-question
+##### !answer
+
+game_data["pokedex"][0]
+
+##### !end-answer
+##### !hint
+
+Use `[]` syntax with double-quotes where needed.
+
+Examples:
+
+- `some_list[0]`
+- `some_dictionary["some key"]`
+
+##### !end-hint
+### !end-challenge
+<!-- prettier-ignore-end -->

@@ -1,4 +1,4 @@
-# Practice: Intro to OOP
+# Problem Set: Intro to OOP
 
 ## Directions
 

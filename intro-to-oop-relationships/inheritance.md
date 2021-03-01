@@ -5,7 +5,6 @@
 - Use Python syntax to create inheritance between two classes
 - Recall that all objects inherit from Object
 - Define overriding
-- Use the super() function call in inheritance
 
 ## Introduction
 
@@ -360,9 +359,7 @@ def test_fancy_pizza():
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-## Not Covered: `super()` and Multiple Inheritance
-
-Python allows us to get a reference to the superclass of any class with the special function `super()`. This allows a child class to explicitly use things from the definition of the parent class, such as attributes or methods. `super()` can be very useful, but we won't encounter it further in this curriculum. Don't let that stop you from researching and using it in your own code!
+## Not Covered: Multiple Inheritance
 
 Many programming languages decree that each class shall inherit implementation from only one other class; each class only has one parent class. Python supports multiple inheritance, or the ability for a class to inherit from more than one parent class. This concept has many possible uses, but learning to apply it effectively is not a task to be undertaken lightly. As a result, we will not be spending time with multiple inheritance in this curriculum. But it can be a fascinating topic for further self-directed study.
 

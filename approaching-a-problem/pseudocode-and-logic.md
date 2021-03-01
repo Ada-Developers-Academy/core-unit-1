@@ -1,5 +1,7 @@
 # Pseudocode and Logic
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=4eeb732f-e855-45c8-9827-acd20000bebf&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 By the end of this lesson, we will be able to...
@@ -100,20 +102,19 @@ Calculate the average of the numbers 3, 5, 6, 15, and 27 using a loop.
 1.
 
 ```python
-make a numbers variable, and it is an array
-make a sum variable, and it starts with a value of 0
+make a numbers variable, which is an array
+make a sum variable, which starts with a value of 0
 
 loop through each number in numbers array
   add number to sum
 end the loop
 
-the average is sum / number
+the average is sum / size of numbers array
 ```
 
 2.
 
 ```python
-# numbers is numbers from prompt
 numbers = [3, 5, 6, 15, 27]
 sum = 0
 
@@ -121,7 +122,7 @@ loop each number in numbers
   increment sum by number amount with sum += number
 end
 
-average = sum / number
+average = sum / len(numbers)
 ```
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
@@ -162,7 +163,7 @@ In our problem-solving steps, we can use pseudocode to think through the solutio
 
 In the two examples below, we should witness these things:
 
-1. Break down the problem into sub-problems
+1. Break down the problem into a list of sub-problems
 1. Write pseudocode first
 1. Then Python code
 1. Repeat
@@ -173,39 +174,44 @@ Calculate the average of the numbers 3, 5, 6, 15, and 27 using a loop.
 
 1.
 
-```python
-make a numbers variable, and it is an array
-make a sum variable, and it starts with a value of 0
+```
+Subproblem 1: setup array of numbers
 
-add each number in numbers to sum using a loop
+Subproblem 2: calculate the sum of the numbers
 
-the average is sum / the total number of numbers
+Subproblem 3: calculate the average (using the sum)
 ```
 
 2.
 
-```python
-make a numbers variable, and it is an array
-make a sum variable, and it starts with a value of 0
+```
+# Subproblem 1: setup array of numbers
+make a numbers variable, which is an array
+
+# Subproblem 2: calculate the sum of the numbers
+make a sum variable, which starts with a value of 0
 
 loop through each number in numbers array
   add number to sum
 end the loop
 
+# Subproblem 3: calculate the average (using the sum)
 the average is sum / the length of the numbers array
 ```
 
 3.
 
 ```python
-# numbers is numbers from prompt
+# Subproblem 1: setup array of numbers
 numbers = [3, 5, 6, 15, 27]
+# Subproblem 2: calculate the sum of the numbers
 sum = 0
 
 loop through each number in numbers array
   increment sum by number amount with sum += number
 end
 
+# Subproblem 3: calculate the average (using the sum)
 average = sum / len(numbers)
 ```
 
@@ -227,24 +233,18 @@ Count the number of even numbers from the numbers 3, 5, 6, 15, and 27 using a lo
 
 1.
 
-```python
-make numbers variable: array, 3, 5, 6, 15, and 27 from prompt
-make number of even numbers variable: start at 0
-
-loop through each number in numbers
-  if the number is even
-    then add 1 to number of even numbers
-  else
-    then the number is odd
-    dont do anything
-  end else
-end loop
+```
+Subproblem 1: create a variable with all the required numbers
+Subproblem 2: count the number of even numbers in the variable
 ```
 
 2.
 
-```python
+```
+# Subproblem 1: create a variable with all the required numbers
 numbers = array, 3, 5, 6, 15, and 27
+
+# Subproblem 2: count the number of even numbers in the variable
 num_of_even_nums = start at 0
 
 for each number in numbers
@@ -260,7 +260,9 @@ end
 3.
 
 ```python
+# Subproblem 1: create a variable with all the required numbers
 numbers = [3, 5, 6, 15, 27]
+# Subproblem 2: count the number of even numbers in the variable
 num_of_even_nums = 0
 
 for number in numbers
@@ -300,18 +302,18 @@ Which of the following is an accurate description of the process in Examples 1 a
 ##### !end-question
 ##### !options
 
-* The developer started with equal parts of readable pseudocode and working Python code
+* The developer started by writing out subproblems in a numbered list, then used that list to write working Python code
 
-* The developer started with a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
+* The developer started by writing out subproblems in a numbered list, then used that list to write a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
 
-* The developer started with a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "innermost" (indented) pseudocode
+* The developer started by writing out subproblems in a numbered list, then used that list to write a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "innermost" (most indented) pseudocode
 
-* The developer started with a working Python solution, and then replaced the Python code with pseudocode
+* The developer started by writing working Python solution, and then replaced the Python code with pseudocode
 
 ##### !end-options
 ##### !answer
 
-* The developer started with a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
+* The developer started by writing out subproblems in a numbered list, then used that list to write a lot of readable pseudocode, and replaced the pseudocode with Python code step-by-step, starting with the "outermost" (non-indented) pseudocode
 
 ##### !end-answer
 

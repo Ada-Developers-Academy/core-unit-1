@@ -1,5 +1,7 @@
 # Intro to Command Line
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=5d739e22-8056-42d3-96f0-accc003af3dc&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Create commands to navigate the file system through the command line using cd, ls, and pwd.
@@ -64,7 +66,7 @@ In our terminal, **there is only one current working directory at a time;** the 
 
 | Command in the Command Line | Description                                                                                                                | Notes                                                                                                                                                                                   |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `pwd`                       | Print the path of the current working directory                                                                            | Use this command when you're lost in the terminal or need to confirm where you are; you can read this path to understand the pathway to get to the current working directory from root. |
+| <div style="min-width:170px;">`pwd`</div>                      | Print the path of the current working directory                                                                            | Use this command when you're lost in the terminal or need to confirm where you are; you can read this path to understand the pathway to get to the current working directory from root. |
 | `ls`                        | List the visible files and folders that are inside of the current directory                                                | This command does not list hidden files or folders; there is a separate argument for that                                                                                               |
 | `ls -A`                     | List all the files and folders inside of the current directory                                                             | The `-A` is an _argument_ to the `ls` command                                                                                                                                           |
 | `cd somefolder`             | Change the working directory to the given path. This path is a relative path from the current location                     | In this example, `cd somefolder` will navigate to a sub-folder named `somefolder`                                                                                                       |
@@ -105,7 +107,7 @@ We can create and delete files and folders from the command line.
 
 | Command in the Command Line | Description                                                                                                                                          | Notes                                                                                                                             |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `mkdir new-folder-name`     | Creates a new folder with the given path and folder name. By default, this will create a new folder as a sub-folder in the current working directory | In this example, `mkdir new-folder-name` makes a new folder named `new-folder-name` inside the current directory.                 |
+| <div style="min-width:220px;">`mkdir new-folder-name`</div>     | Creates a new folder with the given path and folder name. By default, this will create a new folder as a sub-folder in the current working directory | In this example, `mkdir new-folder-name` makes a new folder named `new-folder-name` inside the current directory.                 |
 | `touch new_file.py`         | Creates a new file with the given path and file name. By default, this creates a new file inside the current working dierctory                       | In this example, `touch new_file.py` makes a new file named `new_file.py`. We should include the file extension in this filename. |
 
 ### Commands for Deleting Files and Folders
@@ -114,7 +116,7 @@ Files and folders deleted with these commands are difficult to recover; use them
 
 | Command in the Command Line | Description                                                                                                                                                                 | Notes                                                                                                                             |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `rm -rf folder-name`        | Deletes the folder with the given path and folder name, and all of the files and folders inside of it. By default, this deletes the folder in the current working directory | In this example, `rm -rf folder-name` deletes the folder named `folder-name` inside the current directory.                        |
+| <div style="min-width:220px;">`rm -rf folder-name`</div>        | Deletes the folder with the given path and folder name, and all of the files and folders inside of it. By default, this deletes the folder in the current working directory | In this example, `rm -rf folder-name` deletes the folder named `folder-name` inside the current directory.                        |
 | `rm some_file.py`           | Deletes the file with the given path and file name. By default, this creates a new file inside the current working dierctory                                                | In this example, `touch new_file.py` makes a new file named `new_file.py`. We should include the file extension in this filename. | In this examle, `rm some_file.py` deletes the file named `some_file.py` inside the current directory. |
 
 ## Recommended File System Structure

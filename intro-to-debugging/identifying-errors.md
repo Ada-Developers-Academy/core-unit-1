@@ -1,5 +1,6 @@
 # Identifying Errors with the Stack Trace
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=53dc0ac6-b769-4dc6-a630-accc0144b435&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 ## Introduction
 
 When we call `print("Hello World")` in our Python code, the text `Hello World` gets printed somewhere: the terminal.

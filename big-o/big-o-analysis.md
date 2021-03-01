@@ -1,5 +1,7 @@
 # Big O Analysis
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=551bc8d2-271a-48ab-8c8b-acd301548fbd&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Apply time complexity analysis to arrays and operations on arrays

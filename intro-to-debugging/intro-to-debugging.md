@@ -1,5 +1,7 @@
 # Intro to Debugging
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=83e131eb-5c94-482a-9d4a-accc0158bf36&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Introduction
 
 Imagine finishing a coding exercise. You had to loop through an array and print out the numbers 1-5. You run your Python program, and there it goes... printing... `1`...`2`...`3`...`16`... What?! That's not what's supposed to happen.

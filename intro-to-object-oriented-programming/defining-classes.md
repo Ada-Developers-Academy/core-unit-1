@@ -1,5 +1,7 @@
 # Defining Classes
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=9698a179-04e5-4051-8d8b-acdb0134fe9e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Define a class
@@ -21,9 +23,9 @@ Developers define classes after realizing that encapsulating (bundling together)
 
 Developers define classes any time! We might define new classes:
 
-- At the beginning of a project, after reading a problem statement
-- In the middle of a project, after discovering that a deeper part of the problem needs a new class
-- While refactoring, if seeing that attributes and methods can be better organized as a class
+- At the beginning of a project, after we read a problem statement
+- In the middle of a project, after we discover that a deeper part of the problem needs a new class
+- While refactoring, if we notice that variables and functions can be better organized as a class
 
 Some considerations for making a class:
 
@@ -231,10 +233,10 @@ All attributes have names. The values of attributes will differ between instance
 
 Here are some examples of attributes that could exist on classes:
 
-| Class  | Attribute                    | Instance Example                                                                      | Value of Attribute for Example |
+| Class  | Instance Example                                                                     | Attribute                     | Value of Attribute for Example |
 | ------ | ---------------------------- | ------------------------------------------------------------------------------------- | ------------------------------ |
-| Driver | Total amount of money earned | A driver with ID `DR0004`, 3 rides, who has earned $35, has an average rating of 4.67 | `35`                           |
-| Album  | Release date                 | Dirty Computer                                                                        | `"2018"`                       |
+| Driver | A driver with ID `DR0004`, 3 rides, who has earned $35, has an average rating of 4.67 | Total amount of money earned |`35`                           |
+| Album  |  Dirty Computer                                                                        | Release date                 |`"2018"`                       |
 
 Attributes look and act exactly like variables. But because they are attached to an object instance, they are accessed through `self`. The syntax for both reading and writing attributes uses the `self` parameter.
 

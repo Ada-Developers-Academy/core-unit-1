@@ -1,4 +1,4 @@
-# Practice: Conditionals Recap
+# Problem Set: Conditionals Recap
 
 ## Directions
 

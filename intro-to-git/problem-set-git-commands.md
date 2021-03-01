@@ -1,4 +1,4 @@
-# Practice: Git Commands
+# Problem Set: Git Commands
 
 ## Directions
 

@@ -1,9 +1,11 @@
 # Big O Notation
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=688b0923-c1f7-4a36-96cb-acd30143427a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Define Big O Notation
-- Recognize Big O notation and the common complexity categories: constant, logarithmic, constant, loglinear, quadratic, exponential
+- Recognize Big O notation and the common complexity categories: constant, logarithmic, linear, loglinear, quadratic, exponential
 - Compare and rank the common complexity categories between least and most complex
 
 ## Introduction
@@ -12,7 +14,7 @@ Imagine that we're developers working on a unique project: we are writing softwa
 
 Let's imagine that we could write our Arduino program with two different solutions. We know that we should compare the space complexity between the two algorithms. However, **_how_** do we compare space complexity?
 
-Computer science uses concepts from mathematics to measure time and space complexity. By using Big O notation, we can concretely evaluate which is more efficient. Then, our program will work better on the Arduino!
+Computer science uses concepts from mathematics to measure time and space complexity. By using Big O notation, we can concretely compare algorithms and evaluate which is more efficient. Then, our program will work better on the Arduino!
 
 ## Vocabulary and Synonyms
 
@@ -74,18 +76,33 @@ These complexities are ordered! We can describe their order in all of these ways
 | O(n)             | Linear      | The algorithm will grow in time or space directly proprotional to the input size. The complexity increases at the same rate that the input increases.                                                                                                                                         |
 | O(n log n)       | Log Linear  | A term used to describe an algorithm which will grow in time or space complexity proportional to the n log n of the input size. "n log n" means that the input size is multiplied by the base-2 log of the input size.                                                                                                                                                              |
 | O(n<sup>2</sup>) | Quadratic   | The algorithm will have a runtime or memory usage proportional to the size of the input squared. This often involves 2 nested loops.                                                                                                                                                    |
-| O(2<sup>n</sup>) | Exponential | The algorithm's complexity doubles each time the input size increases by one.                                                                                                                                                                                                                 |
+| O(2<sup>n</sup>) | Exponential | The algorithm's complexity doubles each time the input size increases by one.                                                                                                                                      |
 
+
+You can see a chart comparing these complexities below.  This chart illustrates for a given input size, how the output of the given expressions change.  Look at the curve of each line.  Which curve accellerates most quickly?  Which curve barely increases at all as the input size increases.
+
+![Complexities comparison chart](../assets/big-o-notation_time-complexities.png)
 ### !callout-info
 
 ## How do we say it out loud?
 
 Developers talk about Big O a lot, so it's useful to know how to talk about this out loud. Here are some example sentences to help start the pattern:
 
-- "The Big O of linear search is O of 1. It runs in constant time."
+- "The Big O of linear search is O of n. It runs in linear time."
 - "An algorithm with a Big O of log n is better than O of n log n."
 - "O of n-squared is one of the slowest!"
 - "The algorithm does a lot of work on each item in the input, but it's still order n!"
+
+### !end-callout
+
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-warning
+
+## Big O Doesn't Give an Exact Number
+
+The complexities listed above are **not** intended to calculate an exact runtime or memory usage for an algorithm.  Different types of computers and different input sets will perform differently.  
+
+Instead the curve of the expression describes how the algorithm will perform as the input dataset increases.  A steeper curve means it will take longer and longer or consume more and more memory.
 
 ### !end-callout
 
@@ -105,9 +122,127 @@ Consider this problem: You have an address book, and you want to find the contac
 
 <!-- Question about comparing Big Os for more efficient -->
 
-<!-- Question about comparing Big Os for more efficient -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: ordering
+* id: d2d156f6-aaab-4aba-9cf7-b9cdaceed013
+* title: Time/Space Complexities Worst-to-best
+* points: 1
+* topics: big-o
+
+##### !question
+
+Arrange the following complexities from **worst** to **best**.
+
+##### !end-question
+
+##### !answer
+
+1. O(2<sup>n</sup>)
+1. O(n<sup>2</sup>)
+1. O(n log n)
+1. O(n)
+1. O(log n)
+1. O(1)
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: db5bbef4-04da-4474-8aa1-5a86e7047e6a
+* title: Purpose of Big-O Notation
+* points: 1
+* topics: Big-o
+
+##### !question
+
+Big O notation serves to:
+
+##### !end-question
+
+##### !options
+
+* Calculate the exact run time or space usage of a given algorithm
+* Describe how the algorithm performs in terms of both space and time as the input size increases
+* Describe only how well an algorithm will perform in terms of **speed** as the input size increases
+* Describe only how well an algorithm will perform in terms of **memory usage** as the input size increases
+  
+##### !end-options
+
+##### !answer
+
+* Describe how the algorithm performs in terms of both space and time as the input size increases
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
 
 <!-- Question about comparing Big Os for more efficient -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 6b2620b0-f164-4722-8a55-a000a6b3690a
+* title: Pick the best performing algorithm
+* points: 1
+* topics: Big-O
+
+##### !question
+
+Imagine creating an app that allows a user to store all of their contacts and contact information. There is a feature that allows users to search for a specific contact.
+
+Given the following algorithms for this search feature, which is the best choice in terms of time and space complexity?
+
+##### !end-question
+
+##### !options
+
+* Store all contacts in a list and seach for each contact, iterating from beginning until end until the contact is found or the list is completely searched.  O(n)
+* Store all contacts in a dictionary with the contact name as a key and retrieve contacts using the name.  O(1)
+* Store all contacts in a list sorted by names and search for a contact by looking at the middle contact.  If that is the desired contact return them.  If the desired contact comes later repeat the search in the 2nd half of the list, otherwise repeat the search in the 1st half of the remaining contacts.  Repeat until the contact is found or there are no more contacts left to search. O(log n).
+
+##### !end-options
+
+##### !answer
+
+* Store all contacts in a dictionary with the contact name as a key and retrieve contacts using the name.  O(1)
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
 
 <!-- Question Takeaway -->
 <!-- prettier-ignore-start -->

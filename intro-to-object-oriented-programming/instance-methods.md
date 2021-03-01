@@ -1,5 +1,6 @@
 # Instance Methods
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=fa0b6e67-0d85-4412-822d-acdb01359706&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 ## Learning Goals
 
 - Define instance methods
@@ -11,12 +12,12 @@ Class definitions can contain functions. When a function is inside of a class, w
 
 **Instance methods** are behaviors that _instances_ of classes can do.
 
-| Class  | Instances                                                                                                                 | Behavior It Can Do                                                           |
-| ------ | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| String | `"Hello World! I am an instance of a String!"`                                                                            | Become CAPITALIZED if it needs to                                            |
-| List   | `["red", "orange", "yellow"]`                                                                                             | Reverse the order of its elements                                            |
-| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67                                     | Calculate its own average rating, tell you the number of trips they've taken |
-| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has                          |
+| Class  | Instances                                                                                                                 | Behavior It Can Do                                                           | Method Name |
+| ------ | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| String | `"Hello World! I am an instance of a String!"`                                                                            | Become CAPITALIZED if it needs to                                            | upper()   |
+| List   | `["red", "orange", "yellow"]`                                                                                             | Reverse the order of its elements                                            | reverse() |
+| Driver | A driver with ID `DR0004`, 3 trips, who has earned $35, has an average rating of 4.67                                     | Calculate its own average rating, tell you the number of trips they've taken | stats()  |
+| Album  | Dirty Computer (2018), which has 14 tracks in a certain order, was released April 2018, has a total album length of 48:42 | Return the audio data for any specific track it has                          |  get_audio_data()
 
 ## Defining Instance Methods
 
@@ -82,9 +83,21 @@ class Album:
             return "Invalid track"
 ```
 
-In the above example, the instance method `get_audio_data` takes an additional parameter `track_index`. This means that whenever we call this method, we must pass in an argument for `track_list`. `track_list` represents the index track we want audio data from.
+In the above example, the instance method `get_audio_data` takes an additional parameter `track_index`. This means that whenever we call this method, we must pass in an argument for `track_index`. `track_index` represents the index track we want audio data from.
 
 Inside the `get_audio_data` method, we use the attribute `self.track_list` _**and**_ the argument `track_index`. We assume `self.track_list` is a list, and we use it in a conditional statement. We use `track_index` in the line `return self.track_list[track_index - 1]`.
+
+### !callout-info
+
+## Instances of a Class Do Not Share State but They Do Share Behavior
+
+As we've been learning, the two building-blocks of a class are **state** (its attributes) and **behavior** (its methods). 
+
+**Each instance of a class has its own state**. This means that one album object might have the title "When Doves Cry" and another album object might have the title "Dirty Computer."
+
+We will see that **all instances of a class have the same behavior**. This means that the method `get_audio_data` will be the same for all album objects. The only thing that will change from one instance to another is the value of the `track_list` attribute.
+
+### !end-callout
 
 <!-- Question 1 -->
 

@@ -1,5 +1,7 @@
 # How to Read Documentation
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=8ad747b5-8cae-47ae-a3ce-acd1016cd7db&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Identify parts of programming documentation: Method description, name, parameter list, return value; Method list

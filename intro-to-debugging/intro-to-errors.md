@@ -1,5 +1,7 @@
 # Intro to Errors
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=c0a1dba3-6f2e-4af8-a5f5-accc0135448c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Introduction
 
 Frequently, we'll see our programs become broken. They're broken because the program isn't running the way we want them to run. So much of our responsibility as developers is to fix broken code.
