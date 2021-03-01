@@ -3,11 +3,16 @@
 
 All the previous lessons on debugging apply to running tests, but VS Code has the ability to run individual tests from the editor and it allows you to run tests in the debugger.  This can help you get tests to pass and identify why they fail.
 
-## Learning Goals
+## Goals
 
-By the end of this lesson, we will be able to...
+We have practiced using a debugger tool while running Python programs. Our goal is to apply those same debugger skills when we are running unit tests.
 
-- Run the debugger on individual tests
+This lesson is structured like a follow-along exercise to illustrate:
+
+- Setting up Pytest for the VS Code debugger
+- Running tests using the VS Code debugger
+
+Besides setup, overall we should observe that our familiar tools of setting breakpoints, running, pausing, and debugging, are overall similar between tests and programs.
 
 ## Setting Up Pytest for VS Code Debugger
 
