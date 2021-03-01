@@ -241,7 +241,7 @@ Describe how data is organized in memory.
 
 `data` would refer to a location in memory which stores metadata and a collection of references to the values.
 
-![Example diagram](../assets/lists-and-memory-exercise-answer.png)
+![Example diagram](../assets/lists-and-memory/lists-and-memory-exercise-answer.png)
 
 ##### !end-explanation
 

@@ -171,14 +171,12 @@ def get_fire_students(students):
     while students:
         student = students.pop()
         if student["class"] == "fire":
-            temp.push(student)
+            temp.append(student)
 
     while temp:
-        students.push(temp.pop())
+        students.append(temp.pop())
 
     return students  
-
-#   return 1
 ```
 
 ##### !end-placeholder
@@ -235,7 +233,7 @@ class TestGetFireStudents(unittest.TestCase):
 
     index = 0
     for student in answer:
-        self.assertEqual(student, input[index], f"input[{index}]  ({input[index]}) should equal answer[{index}]  ({answer[index])")
+        self.assertTrue(student in input, f"{student} should be in both lists")
 
   def test_all_not_fire(self):
     # Arrange
@@ -341,7 +339,7 @@ class TestGetFireStudents(unittest.TestCase):
     for student in answer:
         self.assertEqual("fire", student["class"], f"All returned students should be in the fire class - {student} is not")
     
-    assertEqual("Jae", answer[0]["name"], "Jae should be the only fire student")
+    self.assertEqual("Jae", answer[0]["name"], "Jae should be the only fire student")
 
     
 
