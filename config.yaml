@@ -240,7 +240,7 @@ Standards:
         Path: /iterating-over-data/problem-set-iterating-over-data.md
   -
     Title: Nested Data and Nested Loops
-    Description: "Nested Lists and Dictionaries, Nested Loops"
+    Description: "Nested Lists and Dictionaries, Nested Loops, Problem Set: Nested Data and Nested Loops"
     UID: DcrO5J
     SuccessCriteria:
       - success criteria
@@ -253,6 +253,10 @@ Standards:
         Type: Lesson
         UID: Mo0XXv
         Path: /nested-data-and-nested-loops/nested-loops.md
+      -
+        Type: Lesson
+        UID: bqPsZH
+        Path: /nested-data-and-nested-loops/problem-set-nested-data-and-nested-loops.md
   -
     Title: While Loops
     Description: While Loops
