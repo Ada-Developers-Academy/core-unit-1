@@ -3,14 +3,14 @@
 ## Learning Goals
 
 - Use attributes to create composition between two classes
-- Define one-to-one and on-to-many composition relationships
+- Define one-to-one and one-to-many composition relationships
 - Use instance methods to access instances of objects composed inside another object
 
 ## Vocabulary and Synonyms
 
 | Vocab <div style="width:100px;">| Definition |Synonym|How to Use in a Sentence |
 | ----- | ---------- |----|------------------------ |
-| One-to-one | One composite object is associated with one component object  | has-a |On an e-commerce site, each order has a *one-to-one* relationship with each shipment (destination address, tracking number, etc). <br/> In a gradebook application, each student *has a* final grade. <br/> On a social media platform, each user *has one* profile picture|
+| One-to-one | One composite object is associated with one component object  | has-a |On an e-commerce site, each order has a *one-to-one* relationship with each shipment (destination address, tracking number, etc). <br/> In a gradebook application, each student *has a* final grade. <br/> On a social media platform, each user *has a* profile picture|
 | One-to-many | One composite object is associated with a collection of component objects. | has-many | In a gradebook application, one class *has many* students and *has many* assignments. <br/> On a social media platform, one user has a *one-to-many* relationship with posts.|
 
 ## Initializing Components as Attributes in the Constructor
@@ -48,7 +48,7 @@ Orange has an attr named my_favorite_component: <__main__.ExampleComponent objec
 We can read the name from Orange's fav component using dot notation: apple
 ```
 
-This works similarly even with a list of instances, a one-to-many composition relationship:
+This works similarly even with a _list_ of instances, which expresses a one-to-many composition relationship:
 
 ```python
 class ExampleComponent:
@@ -163,7 +163,7 @@ This is what Component's method returned: 473
 
 We just saw examples of one-to-one and one-to-many composition relationships.
 
-A one-to-one relationship is one where a composite class has an attribute single instance of a component class as in this example:
+A one-to-one relationship is a relationship in which a composite class has an attribute representing a single instance of a component class as in this example:
 
 ```python
 class ExampleComponent:
@@ -178,7 +178,7 @@ class ExampleComposite:
         self.component = component
 ```
 
-A one-to-many relationship is one where a composite class has an attribute that is a list of instances of a component class as in this example:
+A one-to-many relationship is a relationship in which a composite class has an attribute representing a _list_ of instances of a component class as in this example:
 
 ```python
 class ExampleComposite:
@@ -188,11 +188,11 @@ class ExampleComposite:
         self.components = components
 ```
 
-Note that `components` is a list of `component` objects.
+Note that `components` is a list of `component` objects. As usual, we use good naming, here the plural `components`, to help us remember what we expect an attribute to contain.
 
 ## A Longer Example: Product and ShoppingCart
 
-Now we will look at one more example of a one-to-many composition relationship.
+Let's look at one more example of a one-to-many composition relationship.
 
 ```python
 1 class Product:
@@ -277,7 +277,7 @@ In the example above, `Product` is the
 <!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
 ##### !explanation
 
-An instance of a `ShoppingCart` has many `Product`s.
+An instance of a `ShoppingCart` has many `Product`s. Since instances of `Product` are contained in `ShoppingCart`, `Product` is the component class, while `ShoppingCart` is the composite class.
 
 ##### !end-explanation
 
