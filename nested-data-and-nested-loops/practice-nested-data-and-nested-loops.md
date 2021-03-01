@@ -14,7 +14,7 @@ Complete all questions below.
 * title: Nested Data and Nested Loops
 ##### !question
 
-What is the syntax to get `'6501 Island St. SE'` from `restaurants`?
+What is the syntax to get `"6501 Island St. SE"` from `restaurants`?
 
 ```python
 restaurants = [
@@ -66,7 +66,7 @@ Examples:
 * title: Nested Data and Nested Loops
 ### !question
 
-Implement `get_restaurant_addresses()`. This method takes in one parameter, `restaurants`. The method should return a list of strings, which are restaurant addresses.
+Implement `get_restaurant_addresses()`. This method takes in one parameter, `restaurants`. The method should return a list of restaurant addresses, which are strings.
 
 Here are the tests:
 
@@ -148,13 +148,13 @@ def get_restaurant_addresses(restaurants):
 * title: Nested Data and Nested Loops
 ##### !question
 
-What is the syntax to get `'Lizzie'` from `student_groups`?
+What is the syntax to get `"Lizzie"` from `student_groups`?
 
 ```python
 students = [
-    ['Michelle', 'Beyonce', 'Kelly'],
-    ['Luke', 'Leia', 'Han'],
-    ['Gordon', 'Lizzie', 'Miranda']
+    ["Michelle", "Beyonce", "Kelly"],
+    ["Luke", "Leia", "Han"],
+    ["Gordon", "Lizzie", "Miranda"]
 ]
 ```
 
@@ -188,22 +188,22 @@ Examples:
 * title: Nested Data and Nested Loops
 ##### !question
 
-Implement `get_student_names()`. This method takes in one parameter, `student_groups`. The method should return a list of strings, which are student names.
+Implement `get_student_names()`. This method takes in one parameter, `student_groups`. The method should return a list of student names, which are strings.
 
 Here are the tests:
 
 ```python
 def test_get_student_names():
     students = [
-        ['Michelle', 'Beyonce', 'Kelly'],
-        ['Luke', 'Leia', 'Han'],
-        ['Gordon', 'Lizzie', 'Miranda']
+        ["Michelle", "Beyonce", "Kelly"],
+        ["Luke", "Leia", "Han"],
+        ["Gordon", "Lizzie", "Miranda"]
     ]
 
     names = get_student_names(students)
 
-    assert names == ['Michelle', 'Beyonce', 'Kelly', 'Luke',
-                     'Leia', 'Han', 'Gordon', 'Lizzie', 'Miranda']
+    assert names == ["Michelle", "Beyonce", "Kelly", "Luke",
+                     "Leia", "Han", "Gordon", "Lizzie", "Miranda"]
 
 
 def test_get_student_names_no_names():
@@ -259,7 +259,7 @@ def get_student_names(student_groups):
 * title: Nested Data and Nested Loops
 ##### !question
 
-What is the syntax to get `'University of Washington'` from `schools`?
+What is the syntax to get `"University of Washington"` from `schools`?
 
 ```python
 schools = {
@@ -308,7 +308,7 @@ Examples:
 * title: Nested Data and Nested Loops
 ##### !question
 
-Implement `get_school_names()`. This method takes in one parameter, `schools`. The method should return a list of strings, which are school names.
+Implement `get_school_names()`. This method takes in one parameter, `schools`. The method should return a list of school names, which are strings.
 
 Here are the tests:
 
@@ -409,7 +409,7 @@ def get_school_names(schools):
 
 It's karaoke night!
 
-What is the syntax to get `'Jolene'` from `karaoke_queue`?
+What is the syntax to get `"Jolene"` from `karaoke_queue`?
 
 ```python
 karaoke_queue = {
@@ -451,7 +451,7 @@ Examples:
 
 It's karaoke night!
 
-Implement `get_song_list()`. This method takes in one parameter, `karaoke_queue`. The method should return a list of strings, which are song titles.
+Implement `get_song_list()`. This method takes in one parameter, `karaoke_queue`. The method should return a list of song titles, which are strings.
 
 Here are the tests:
 

@@ -451,7 +451,7 @@ Examples:
 * title: Nested Lists and Dictionaries
 ##### !question
 
-What is the syntax to get `'Electric'` from `pokedex`?
+What is the syntax to get `"Electric"` from `pokedex`?
 
 ```python
 pokedex = [
@@ -494,7 +494,7 @@ Examples:
 
 Let's practice with a nested data structure that is three layers deep!
 
-What is the syntax to get `'Pikachu'` from `game_data`?
+What is the syntax to get `"Pikachu"` from `game_data`?
 
 ```python
 game_data = {
@@ -537,7 +537,7 @@ Examples:
 * title: Nested Lists and Dictionaries
 ##### !question
 
-What is the syntax to get `[{'id': 25, 'name_en': 'Pikachu', 'type': 'Electric'}]` from `game_data`?
+What is the syntax to get `[{"id": 25, "name_en": "Pikachu", "type": "Electric"}]` from `game_data`?
 
 ```python
 game_data = {
@@ -580,7 +580,7 @@ Examples:
 * title: Nested Lists and Dictionaries
 ##### !question
 
-What is the syntax to get `{'id': 25, 'name_en': 'Pikachu', 'type': 'Electric'}` from `game_data`?
+What is the syntax to get `{"id": 25, "name_en": "Pikachu", "type": "Electric"}` from `game_data`?
 
 ```python
 game_data = {
