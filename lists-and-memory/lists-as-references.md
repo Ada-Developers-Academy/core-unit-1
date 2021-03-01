@@ -114,7 +114,6 @@ Functions with side effects like this can be quite helpful, for example if we wa
 
 However functions with side effects, especially when they are unintened or not communicated can be very problematic.
 
-
 *  Functions with side effects especially when it is unintended could lead to a lot of potential bugs which are harder to debug.
 *  It is easier to write tests for functions with no side-effects.
 *  If the function is supposed to change anything in the environment, like modify a list parameter.  It must be clearly documented to avoid confusion.
@@ -349,6 +348,52 @@ class TestGetFireStudents(unittest.TestCase):
 
 <!-- other optional sections -->
 <!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: checkbox
+* id: 405c0a8c-d9b9-428e-8a72-3cf173bbff4a
+* title: Why Side Effects Are Problematic
+* points: 1
+* topics: python-lists, python-side-effects
+
+##### !question
+
+Why are functions with side effects problematic?
+
+##### !end-question
+
+##### !options
+
+* They make our functions harder to test
+* They can introduce hard-to-find bugs in our programs
+* Side effects mean we don't need return statements
+* Functions with side effects require more communication among team members
+
+##### !end-options
+
+##### !answer
+
+* They make our functions harder to test
+* They can introduce hard-to-find bugs in our programs
+* Functions with side effects require more communication among team members
+##### !end-answer
+
+<!-- other optional sections -->
+##### !hint
+
+Take a look at the bulleted list above.
+
+##### !end-hint
 <!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
 <!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
 
