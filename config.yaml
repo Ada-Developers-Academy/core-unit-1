@@ -254,6 +254,21 @@ Standards:
         UID: Mo0XXv
         Path: /nested-data-and-nested-loops/nested-loops.md
   -
+    Title: Lists & Memory
+    Description: "How lists work behind the scenes"
+    UID: fc8d96af-1277-4efc-8e4c-a7bb2facddb9
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 0180eb42-ed8d-4f51-bcc2-2fe1e2f575c8
+        Path: /lists-and-memory/lists-and-memory.md
+      -
+        Type: Lesson
+        UID: f7fda59b-c157-49bb-aaf9-fe305904d0b7
+        Path: /lists-and-memory/lists-as-references.md
+  -
     Title: While Loops
     Description: While Loops
     UID: 3P0q44
