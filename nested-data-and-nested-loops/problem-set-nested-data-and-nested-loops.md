@@ -1,4 +1,4 @@
-# Practice: Nested Data and Nested Loops
+# Problem Set: Nested Data and Nested Loops
 
 ## Directions
 
