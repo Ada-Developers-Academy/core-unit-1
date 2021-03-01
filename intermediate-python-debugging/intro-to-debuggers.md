@@ -16,9 +16,7 @@ In the past we've used a few tools for debugging our Python code.  This has incl
 
 These are very valuable techniques and will often be your 1st choice to debug your application.  However, VS Code and other editors have useful tools to inspect your code as it executes and identify problems.
 
-## Learning Goals
-
-By the end of this lesson, we will be able to...
+## Goals
 
 - Explain the concepts of 
   - debugger
