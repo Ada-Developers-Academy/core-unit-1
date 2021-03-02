@@ -26,9 +26,9 @@ You can think of RAM as a series of blocks of memory, each with their own addres
 
 ![Memory Addresses](../assets/lists-and-memory/ram-addresses.png)
 
-Note that different types of data can take up more or less units of memory and the size of each unit of memory can depend on the type of computer system.
+Different types of data can take up different amounts of memory and the size of each unit of memory can depend on the type of computer system.
 
-In the version of Python we are using CPython, you can see the memory address for any variable with the `id` function.
+In the version of Python we are using CPython, you can see the memory address for data referenced by any variable with the `id` function.
 
 ```python
 >>> name = "Aubrey"
@@ -67,7 +67,7 @@ You can see the identify that both refer to the same value in memory using our f
 4304253904 
 ```
 
-Lists are no different except that instead of a variable containing a reference to the entire data, it contains a reference to an object which contains metadata (information about the object like it's length etc) and an _array of references_, where each element in the list refers to a different object in memory, just like a normal variable.
+Lists are no different except that instead of a variable containing a reference to the entire data set, it contains a reference to an object which contains metadata (information about the object like it's length etc) and an _array of references_, where each element in the list refers to a different object in memory, just like a normal variable.
 
 ![Lists in memory](../assets/lists-and-memory/lists-in-memory.png)
 
@@ -75,14 +75,14 @@ Notice that the section of the List in memory with the small set of blocks next 
 
 ### Indexing
 
-Notice the references in the `items` section of a list are contiguous.  Further each reference is the same size, so Python only needs to know where the collection of `items` begins and then it can use the following formula to quickly retrieve a specific list element.
+Notice the references in the `items` section of a list are _contiguous_.  Further each reference is the same size, so Python only needs to know where the collection of `items` begins and then it can use the following formula to quickly retrieve a specific list element.
 
 `reference_address = start_of_items_collection + size_of_reference * index_number`
 
 So if:
 
 - The `items` collection started at the memory address 100
-- Each reference is 8 Bytes in size
+- Each reference is 8 units in size
 
 We could find a reference to index 3 of a list with:
 
@@ -101,7 +101,7 @@ Each step is an O(1) operation in time/space complexity and nothing in this algo
 
 ## Caveat
 
-Like many general rules, this is an oversimplification.  Things can get more complicated than we will go into here for huge datasets or environments with limited memory.  As an application developer in Python however, you can assume that looking up a specific index in a list will be a fast and efficient operation.
+Like many general rules, this is an oversimplification.  Things can get more complicated than we will go into here for huge datasets or environments with limited memory.  As an application developer in Python however, you can assume that looking up an element within a list by an index number is a fast and efficient O(1) operation.
 
 ### !end-callout
 
