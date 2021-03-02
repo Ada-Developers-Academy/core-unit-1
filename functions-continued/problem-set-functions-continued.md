@@ -1,4 +1,4 @@
-# Practice: Functions, Continued
+# Problem Set: Functions, Continued
 
 ## Directions
 
