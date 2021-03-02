@@ -41,11 +41,8 @@ print(f"After calculating the the total of the order, products_total is \
 While the function `calculate_total` is running both the parameter `subtotal` and the argument `products_total` both refer to the same value in memory.  
 
 ![Integer references from above](../assets/lists-and-memory/lists-and-memory_lists-as-references_int-references.png)
-<<<<<<< HEAD
 
-<figcaption style="max-width: 700px; margin: auto;">A variable in Python contains a reference to the location where the data is stored.</figcaption>
-=======
->>>>>>> 902b8adedfd870e2ad20f0a580df35040a89a96c
+*Fig. A variable in Python contains a reference to the location where the data is stored.
 
 
 **Question:** When the line: `subtotal += subtotal * tax_rate` executes, subtotal changes in value.  Why doesn't `products_total` change?
@@ -96,13 +93,13 @@ This is because both `friends` and `names` refer to the same list in memory.
 
 ![Diagram of `names` and `friends` in memory](../assets/lists-and-memory/lists-and-memory_lists-as-references_reference-example.png)
 
-<figcaption style="max-width: 700px; margin: auto;">Both `friends` and `names` refer to the same list in memory.</figcaption>
+*Fig. Both `friends` and `names` refer to the same list in memory.*
 
 Following the reference to the specific elements with `names[index] = name[0:5]` will follow the reference to the specific element and then change the internal reference to a new value.  For example when `index` is 0.
 
 ![Changing a reference at an index](../assets/lists-and-memory/lists-and-memory_lists-as-references_changing-index.png)
 
-<figcaption style="max-width: 700px; margin: auto;">Modifying an element in a list</figcaption>
+*Fig. Modifying an element in a list*
 
 
 Notice that both `names` and `friends` refer to the same object, with updated items in the end.
