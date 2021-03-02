@@ -243,7 +243,7 @@ ravis_address = ShippingAddress(
     street_address="123 John St", 
     city="Seattle",
     state="WA",
-    zip="98112"
+    zip_code="98112"
     )
 
 sc = ShoppingCart(products, ravis_address)
