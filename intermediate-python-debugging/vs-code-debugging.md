@@ -77,6 +77,7 @@ Add a breakpoint to lines 5 and 11.  See how you can toggle them on and off.
 You can then run the debugger at any time with the green triangle play button.
 
 ![Debugger play button](../assets/vs-code-debugger/debugger-play.png)
+*Fig. The start debugging button*
 
 Notice that the program will pause at the 1st breakpoint it encounters.
 
@@ -87,19 +88,23 @@ Notice that the program will pause at the 1st breakpoint it encounters.
 You can create a watch by clicking on the `+` icon and enter any expression.
 
 ![Entering a Watch](../assets/vs-code-debugger/watch-price.png)
+*Fig. Creating a watch*
 
 ![Watches](../assets/vs-code-debugger/watch.png)
+*Fig. A watch while the debugger is running*
 
 
 **In the watch box, enter `number < guess`**  What does it evaluate to?  Try a few more expressions.
 
 ![Watch example](../assets/vs-code-debugger/watch_example.png)
+*Fig. Watching an expression*
 
 ### Stepping Over & Stepping Into
 
 Notice when the debugger is paused at a breakpoint you get the menu below.
 
 ![Debugger Menu](../assets/vs-code-debugger/debugger-menu.png)
+*Fig. The debugger buttons*
 
 This menu has the following buttons:
 
