@@ -55,7 +55,7 @@ You will notice that the application stops in `order.py`.
 ![Running Debugger](../assets/vs-code-debugger/running-debugger.png)
 *Fig. Pausing at a breakpoint.*
 
-### Finding the bug...
+### Finding the Bug with Watches
 
 Notice that the loop attempts to add up all the product prices.  In Watch add a watch for `order["products"][i]`
 
@@ -81,4 +81,3 @@ One of the tests is failing, find the failing test in `tests/test_order.py`.
 *Fig. An example of a failing test in VS Code*
 
 Create a breakpoint in the failing test `test_calculate_total_with_multiple_products` and use the step-into and step over commands to trace through the code and see why the test is failing.  You can click on the `Debug Test` link above the test function to run that one test in the debugger.
-

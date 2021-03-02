@@ -258,8 +258,8 @@ Standards:
         UID: bqPsZH
         Path: /nested-data-and-nested-loops/problem-set-nested-data-and-nested-loops.md
   -
-    Title: Python Debugger
-    Description: "Using the Python debugger in VS Code"
+    Title: Intermediate Python Debugging
+    Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Excercise??: Using Debugger"
     UID: eb702636-a782-4ed3-8fb5-daca0aea5206
     SuccessCriteria:
       - success criteria

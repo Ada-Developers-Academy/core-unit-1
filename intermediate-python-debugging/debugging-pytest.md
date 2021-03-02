@@ -1,7 +1,7 @@
 # Debugging Tests With Pytest
 
 
-All the previous lessons on debugging apply to running tests, but VS Code has the ability to run individual tests from the editor and it allows you to run tests in the debugger.  This can help you get tests to pass and identify why they fail.
+All the previous learnings on debugging apply to running and debugging code when running unit tests. However, VS Code has the ability to run individual tests from the editor and it allows you to run tests in the debugger.  This can help us identify why tests fail and get them to pass.
 
 ## Goals
 

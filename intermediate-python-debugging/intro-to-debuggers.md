@@ -44,20 +44,24 @@ Debuggers allow us to pause program execution, examine the state of the program 
 
 ### Breakpoints & Stepping Through Code
 
-A **breakpoint** is a place (line of code) which indicates to the debugger that you want to pause the program at this point of execution.  While the program is paused the developer can examine the state of variables currently in scope.  Then the developer can resume execution or execute the program, line-by-line. 
+A **breakpoint** is a place (line of code) which indicates to the debugger to pause the program at this point of execution.  While the program is paused, the dev running the debugger can examine the state of variables currently in scope.  After that, the dev can resume execution or execute the program, line-by-line. 
 
-Editors typically indicate breakpoints visually with a red-dot next to the line number.  This is a very common convention in many languages and editors, however some editors may use different visual clues.
+Editors typically indicate breakpoints visually with a red-dot next to the line number.  This is a very common convention in many languages and editors, although some editors may use different visual clues.
 
 ![VS Code Breakpoint Example](../assets/vs-code-debugger/breakpoint.png)
 *Fig. A breakpoint*
 
-So in short, you can think of a breakpoint as a pause button for a program which allows you to "snoop-around" in the state of the currently executing application.
+So in short, we can think of a breakpoint as a pause button for a program which allows devs to "snoop-around" in the state of the currently executing application.
 
-One neat thing about breakpoints is that you can have more than one and the program will pause at it encounters each breakpoint.  This lets you to jump between different points in the program, inspecting the state of the application at each breakpoint.
+When using a debugger, we can create multiple breakpoints. In that case, program will pause multiple times, because it will pause as it encounters each breakpoint.
+
+Multiple breakpoints lets us jump between different points in a program, inspecting the state of the application at each breakpoint. Neat!
 
 ### Watches
 
-Sometimes you do not care about the exact values of specific variables, sometimes you want to "watch" the value of an expression like, `drivers[0]["name"]`.  That's really all a watch is.  You put in a bit of code and the debugger shows you the current value of that expression.  
+Sometimes we need to track the value of an expression that is never stored in a variable. We can supply the debugger tool with expressions to _watch_. The debugger lists and shows the current value of each watched expression through the entire program execution.
+
+For example, imagine debugging an app that manages delivery drivers, and our driver names seem to be glitchy. However, in our code, there's no variable that holds driver names. Instead of using a variable, we can watch the value of the name of the first driver by watching the expression `drivers[0]["name"]`.
 
 ![Watch Example in VS Code](../assets/vs-code-debugger/watch-price.png)
 *Fig. An example of a watch*
