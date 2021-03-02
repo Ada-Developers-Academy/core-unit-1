@@ -30,10 +30,12 @@ def calculate_total(subtotal, tax_rate):
 
 products_total = 113
 
-print(f"Before calculating the the total of the order, products_total is {products_total}")
+print(f"Before calculating the the total of the order, products_total is \
+{products_total}")
 bill_total = calculate_subtotal(products_total, 0.08)
 print(f"The total bill is {bill_total}")
-print(f"After calculating the the total of the order, products_total is {products_total}")
+print(f"After calculating the the total of the order, products_total is \
+{products_total}")
 ```
 
 While the function `calculate_total` is running both the parameter `subtotal` and the argument `products_total` both refer to the same value in memory.  
@@ -41,14 +43,14 @@ While the function `calculate_total` is running both the parameter `subtotal` an
 ![Integer references from above](../assets/lists-and-memory/lists-memory-int-references.png)
 
 
-<details>
-<summary>
-  When the line:
+<details style="max-width: 700px; margin: auto;">
+    <summary>
+        When the line:
 
-  `subtotal += subtotal * tax_rate`
+        `subtotal += subtotal * tax_rate`
 
-  executes, subtotal changes in value.  Why doesn't `products_total` change?
-</summary>
+        executes, subtotal changes in value.  Why doesn't `products_total` change?
+    </summary>
 
 Because any operation using the equals sign `=` including `+=` changes the _reference_ for `subtotal` to a new location in memory.  Essentially Python performs the calculation (addition in this case) and creates a new integer in memory to store the result.  
 
