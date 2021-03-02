@@ -101,7 +101,81 @@ Imagine and make up assumptions about the logic of `add_product` and `remove_pro
 From the given project description, make a list of all relevant test cases. Make up reasonable assumptions about the logic of `add_product` and `remove_product`, particularly around the **edge cases**.
 
 ##### !end-question
+
+##### !hint
+
+Some test cases could include:
+
+* You can create an instance of Customer with `Customer()` and verify the valid `name` and `email_address` initial values.
+* You can create an `Order` and verify the initial values of:
+  * `products`
+  * `customer`
+* You can test `add_product` by adding a product and
+  * verifying that the length increases
+  * verifying that the added product shows up in `products`
+* You can test `remove_product` by
+  * adding a product and removing it and verifying that the length decreases and the product no longer appears in `products`.
+  * trying to remove a product which is not in the list and verifying that the method performs as you expect (raising an error for example).
+
+##### !end-hint
 ### !end-challenge
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: checkbox
+* id: a9d13159-6af9-4568-a9e8-fe44c12ca66d
+* title: Testing Instances
+* points: 1
+* topics: oop, oop-testing
+
+##### !question
+
+What should you look for when testing instances of this Order class?
+
+```python
+class Order:
+    def __init__(self, products, customer):
+        self.products = products
+        self.customer = customer
+    
+    def add_product(self, product):
+      ...
+```
+
+##### !end-question
+
+##### !options
+
+* That you can create a product with correct values for products and a customer.
+* That `add_product` will increase the `products` list by one.
+* That `add_product` will **remove** an element from the `products` list.
+* That `add_product` will **add** the argument into the `products` list.
+
+##### !end-options
+
+##### !answer
+
+* That you can create a product with correct values for products and a customer.
+* That `add_product` will increase the `products` list by one.
+* That `add_product` will **add** the argument into the `products` list.
+
+##### !end-answer
+
+<!-- other optional sections -->
+##### !hint
+
+Do you really think `add_product` would remove an element?
+##### !end-hint
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
 <!-- prettier-ignore-end -->
 
 ## Revisit pytest Syntax
@@ -262,8 +336,106 @@ from ride_share_app.trip import Trip
 
 Here, we import a class named `Driver` from the `driver` module inside of the `ride_share_app` package. Then, we import a class named `Trip` from `ride_share_app.trip`.
 
+
+
 ## Check for Understanding
 
-<!-- Given this project structure, inside of this test file, which is the correct import statement? -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
 
-<!-- Given this project structure, inside of this test file, which is the correct import statement? -->
+### !challenge
+
+* type: multiple-choice
+* id: 4534544e-ab34-4ba7-bb0f-b28dfc0d2912
+* title: Importing a class
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+Given this project structure, inside of `test_customer.py` file, which is the correct import statement? 
+
+```
+.
+├── README.md
+├── requirements.txt
+├── store_app
+│   ├── __init__.py
+│   ├── customer.py
+└── tests
+    ├── __init__.py
+    ├── test_customer.py
+```
+
+##### !end-question
+
+##### !options
+
+* import customer
+* from store_app import Customer
+* from store_app.customer import Customer
+* from tests import test_customer
+
+##### !end-options
+
+##### !answer
+
+* from store_app.customer import Customer
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+Since we run the tests from the root directory of the project to find the Customer class we need to use the `store_app` folder and the `customer.py` file inside that folder so `from store_app.customer` and we want to import the `Customer` class so the full line should read `from store_app.customer import Customer`.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: ordering
+* id: 33713c9e-4a1e-45f6-afea-6f67723ce2b9
+* title: Writing a test
+* points: 1
+* topics: oop, oop-testing
+
+##### !question
+
+Re-arrange the following lines of code for a test of this `Order` class
+
+```python
+class Order:
+    def __init__(self, products, customer):
+        self.products = products
+        self.customer = customer
+```
+
+##### !end-question
+
+##### !answer
+
+1. def test_create_order():
+1.     may = Customer("May", "may@may.com")
+1.     order = Order(["Hair Spray", "Orange Juice"], may)
+1.     assert len(order.products) == 2
+1.     assert order.customer == may
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->

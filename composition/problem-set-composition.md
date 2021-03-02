@@ -1,4 +1,4 @@
-# Practice: Composition
+# Problem Set: Composition
 
 ## Directions
 
