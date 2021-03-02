@@ -229,7 +229,7 @@ class ShoppingCart:
         return total_price
 
     def.summary(self):
-        print(len(self.products),"products will be shipped to", self.shipping_address.name,".")
+        return f"{len(self.products)} products will be shipped to {self.shipping_address.name}."
 ```
 
 ```python
@@ -251,7 +251,7 @@ sc = ShoppingCart(products, ravis_address)
 total_cost = sc.calculate_total_cost()
 
 print(f"The total cost of the products in the shopping cart is ${total_cost}")
-sc.summary()
+print(sc.summary())
 ```
 
 This code produces the console output:
