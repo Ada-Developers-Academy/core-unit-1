@@ -206,12 +206,12 @@ class Product:
 
 class ShippingAddress:
 
-    def __init__(self, name, street_address, city, state, zip):
+    def __init__(self, name, street_address, city, state, zip_code):
         self.name = name
         self.street_address = street_address
         self.city = city
         self.state = state
-        self.zip = zip
+        self.zip_code = zip_code
 
 class ShoppingCart:
 
@@ -228,7 +228,7 @@ class ShoppingCart:
 
         return total_price
 
-    def.summary(self):
+    def summary(self):
         return f"{len(self.products)} products will be shipped to {self.shipping_address.name}."
 ```
 
