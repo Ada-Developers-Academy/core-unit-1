@@ -279,7 +279,7 @@ Standards:
       -
         Type: Lesson
         UID: a8e761cc-0d1f-49f9-a80a-6d2f79579a04
-        Path: /intermediate-python-debugging/exercise-using-debugger.md
+        Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
   -
     Title: While Loops
     Description: While Loops
