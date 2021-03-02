@@ -8,7 +8,7 @@
 
 ## Introduction
 
-
+Lists are our first data structure.  As we saw in the last lesson a list is a more sophisticated data structure storing references to each element indirectly.  In this lesson we will look at some of the implications we need to keep in mind as developers.
 
 ## Vocabulary and Synonyms
 
@@ -112,9 +112,9 @@ When a function has an effect, like changing a variable, outside of it's return 
 
 ## Problems With Side Effects
 
-Functions with side effects like this can be quite helpful, for example if we wanted to read in and add a name to our list.  
+Functions with side effects like this can be quite useful for some situation, for example if we wanted to read in a name from the terminal and append it to a list argument.
 
-However functions with side effects, especially when they are unintened or not communicated can be very problematic.
+However functions with side effects, especially when they are unintened or not communicated among the team can be very problematic.
 
 *  Functions with side effects especially when it is unintended could lead to a lot of potential bugs which are harder to debug.
 *  It is easier to write tests for functions with no side-effects.
