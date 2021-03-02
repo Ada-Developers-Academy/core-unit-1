@@ -43,11 +43,7 @@ While the function `calculate_total` is running both the parameter `subtotal` an
 ![Integer references from above](../assets/lists-and-memory/lists-memory-int-references.png)
 
 
-When the line:
-
-`subtotal += subtotal * tax_rate`
-
-executes, subtotal changes in value.  Why doesn't `products_total` change?
+**Question:** When the line: `subtotal += subtotal * tax_rate` executes, subtotal changes in value.  Why doesn't `products_total` change?
 
 <details style="max-width: 700px; margin: auto;">
     <summary>
@@ -101,7 +97,7 @@ Following the reference to the specific elements with `names[index] = name[0:5]`
 
 Notice that both `names` and `friends` refer to the same object, with updated items in the end.
 
-Because list arguments passed into a function can be modified during the function execution, they are considered a _mutable_ data type.  Integers, strings and float arguments by contrast cannot have their values changed in a function call and are called _immutable data types_.
+Because list elements passed into a function can be modified during the function execution, lists are considered a _mutable_ data type.  Integers, strings and float arguments by contrast cannot have their values changed in a function call and are called _immutable data types_.
 
 <!-- available callout types: info, success, warning, danger, secondary  -->
 ### !callout-info
