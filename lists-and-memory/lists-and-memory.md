@@ -26,7 +26,7 @@ You can think of RAM as a series of blocks of memory, each with their own addres
 
 ![Memory Addresses](../assets/lists-and-memory/lists-and-memory_lists-and-memory_ram-addresses.png)
 
-<figcaption>Each location in memory is addressed by a unique id number, like an index in a list.</figcaption>
+<figcaption style="max-width: 700px; margin: auto;">Each location in memory is addressed by a unique id number, like an index in a list.</figcaption>
 
 Different types of data can take up different amounts of memory and the size of each unit of memory can depend on the type of computer system.
 
@@ -50,7 +50,7 @@ Python connects with the operating system (macOS in our case) and allocates an u
 
 ![Variable sales_tax referring to it's value in memory](../assets/lists-and-memory/lists-and-memory_lists-and-memory_reference-example.png)
 
-<figcaption>A variable in Python stores the location in memory, represented by the arrow, of the actual data.</figcaption>
+<figcaption style="max-width: 700px; margin: auto;">A variable in Python stores the location in memory, represented by the arrow, of the actual data.</figcaption>
 
 Further when you use the equal sign (`=`) assign another variable to `sales_tax` Python simply has the new variable use the same reference and it "refers" to the same value in memory.
 
@@ -60,7 +60,7 @@ fees = sales_tax
 
 ![Multiple variables referring to the same value](../assets/lists-and-memory/lists-and-memory_lists-and-memory_reference_multiple-references.png)
 
-<figcaption>Multiple variables can reference the same data in memory</figcaption>
+<figcaption style="max-width: 700px; margin: auto;">Multiple variables can reference the same data in memory</figcaption>
 
 You can see the identify that both refer to the same value in memory using our friend the `id` function and see that both variables refer to the same memory address.
 
@@ -77,7 +77,7 @@ Lists are no different except that instead of a variable containing a reference 
 
 ![Lists in memory](../assets/lists-and-memory/lists-and-memory_lists-and-memory_lists-in-memory.png)
 
-<figcaption>Lists reference their elements, indirectly.</figcaption>
+<figcaption style="max-width: 700px; margin: auto;">Lists reference their elements, indirectly.</figcaption>
 
 Notice that the section of the List in memory with the small set of blocks next to each other.  Each of those represent a reference.  In Python, a List maintains metadata about the list (Type, length etc) and contiguous chunks of memory which contain _references_ to where the actual data is stored.  So you can think of the data as twice removed from the actual array variable.  A primitive variable like an `int` is like a friend who can show you where their things are, while a list is like a person who can show you to a collection of people, each of whom can direct you to their belongings. 
 
@@ -251,7 +251,7 @@ Describe how data is organized in memory.
 
 ![Example diagram](../assets/lists-and-memory/lists-and-memory_lists-and-memory_exercise-answer.png)
 
-<figcaption>A list references the elements indirectly through a collection of references.</figcaption>
+<figcaption style="max-width: 700px; margin: auto;">A list references the elements indirectly through a collection of references.</figcaption>
 
 ##### !end-explanation
 
