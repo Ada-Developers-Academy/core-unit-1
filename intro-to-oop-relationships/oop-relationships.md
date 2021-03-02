@@ -7,7 +7,7 @@
 
 ## Introduction
 
-relationship, two classes having a relationship should spark many questions for us: What do the classes do together? How do they communicate with each other? What's the nature of their relationship? Is one class in charge? Are the two classes changing and modifying each other, or is it one-way? What happens if one class changes, and the other remains as it is?
+When multiple objects interact with each other, they form a relationship. Like any relationship, two classes having a relationship should spark many questions for us: What do the classes do together? How do they communicate with each other? What's the nature of their relationship? Is one class in charge? Are the two classes changing and modifying each other, or is it one-way? What happens if one class changes, and the other remains as it is?
 
 Because OOP is a programming paradigm that approaches problem-solving by forming relationships between objects, it provides ways to describe these relationships. The two most fundamental class relationships in OOP are _inheritance_ and _composition_.
 
@@ -51,8 +51,6 @@ Imagine a 10-year-old, Temmie, and her caregiver, Karen. It's Friday night, and 
 If we try to ask Temmie to do the same, she won't know how to do that on her own. However, Temmie _inherits_ the properties and behaviors of her caregiver. Temmie has never bought her own phone, and she's never called a pizza place, but she can look up to how Karen does it. Temmie will then go to her own room, look for her own phone on the desk, and then call Dino's Pizza Palace.
 
 A week has passed, and we're back for another pizza dinner with Karen and Temmie. Temmie has learned about all of the different pizza places in the world. We can ask Temmie to call and order pizza on the phone. Temmie can _override_ the behavior she's inherited. This time, Temmie will go to her own room, look for her own phone on the desk, and then call _Pizza Planet_ instead. Karen's own behavior (and preference for Dino's) does not change.
-
-A week has passed, and we're back for more pizza dinner with Karen and Temmie. Temmie has learned about all of the different pizza places in the world. We can ask Temmie to call and order pizza on the phone. Temmie can _override_ the behavior she's inherited. This time, Temmie will go to her own room, look for her own phone on the desk, and then call _Pizza Planet_ instead. Karen's own behavior (and preference for Dino's) does not change.
 
 Another week has passed, and it's time for pizza #3. This time, Temmie has learned so much more, and she can completely override how she orders pizza. Temmie might go to her room, look for her own phone on the desk, and then open up a food delivery app. Or, Temmie could completely forego this whole process, and go outside, walk to the nearby pizza joint, and get pizza that way. However, the important thing is that Temmie _knows_ that she even has an "order pizza" behavior. It's important that Temmie _knows_ that she _does_ own a phone.
 

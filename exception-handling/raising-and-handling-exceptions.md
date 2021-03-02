@@ -113,14 +113,14 @@ except ExampleError as error_as_a_variable:
     print(f"An exception occurred. Here are the error details: {error_as_a_variable}")
 ```
 
-| Piece of Code             | Notes                                                                                                                                                                                                                                                      |
+| <div style="width:220px;">Piece of Code</div>            | Notes                                                                                                                                                                                                                                                      |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `try:`                    | This begins a _try-clause_. If any exception is raised by _any code_ executed inside the try-clause, the rest of the try-clause is skipped, and code execution moves to the `except` clause.                                                               |
 | Body of the try-clause    | The try-clause should include all code that has the possibility of raising an exception that we want to handle. The try-clause is indented once from `try:`                                                                                                |
 | `except`                  | A keyword that begins an _except-clause_. The except-clause will run if a matching exception is raised from the try-clause.                                                                                                                                |
 | `ExampleError`            | **Replace this** with the type of exception that we are handling, such as `NameError` or `ZeroDivisionError`.                                                                                                                                              |
 | `as`                      | A keyword that designates the caught exception (that matches the type of `ExampleError`) can be accessed as the local variable to the right.                                                                                                               |
-| `error_as_a_variable`:    | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!                                                   |
+| `error_as_a_variable:`    | **Replace this** with any valid variable name. This variable's value will be the exception data, and can be accessed inside of the except-clause. `err` is a common variable name. Don't forget the `:`!                                                   |
 | Body of the except clause | The error clause should include code that needs to execute if an exception is raised. This code can be used for printing or logging details about `err`. More powerfully, this is where we can try handling the situation and helping the program move on. |
 
 ### !callout-info
