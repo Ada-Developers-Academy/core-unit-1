@@ -268,6 +268,10 @@ Standards:
         Type: Lesson
         UID: f7fda59b-c157-49bb-aaf9-fe305904d0b7
         Path: /lists-and-memory/lists-as-references.md
+      -
+        Type: Lesson
+        UID: 36a61d83-b47f-414f-a6f0-3bd4331e713f
+        Path: /lists-and-memory/lists-and-memory-problem-set.md
   -
     Title: While Loops
     Description: While Loops
