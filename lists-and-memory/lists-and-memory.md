@@ -252,6 +252,7 @@ Describe how data is organized in memory.
 ![Example diagram](../assets/lists-and-memory/lists-and-memory_lists-and-memory_exercise-answer.png)
 
 <figcaption style="max-width: 700px; margin: auto;">A list references the elements indirectly through a collection of references.</figcaption>
+![Example diagram](../assets/lists-and-memory/llists-and-memory_lists-and-memory_exercise-answer.png)
 
 ##### !end-explanation
 

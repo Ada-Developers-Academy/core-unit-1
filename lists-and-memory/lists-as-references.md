@@ -41,8 +41,11 @@ print(f"After calculating the the total of the order, products_total is \
 While the function `calculate_total` is running both the parameter `subtotal` and the argument `products_total` both refer to the same value in memory.  
 
 ![Integer references from above](../assets/lists-and-memory/lists-and-memory_lists-as-references_int-references.png)
+<<<<<<< HEAD
 
 <figcaption style="max-width: 700px; margin: auto;">A variable in Python contains a reference to the location where the data is stored.</figcaption>
+=======
+>>>>>>> 902b8adedfd870e2ad20f0a580df35040a89a96c
 
 
 **Question:** When the line: `subtotal += subtotal * tax_rate` executes, subtotal changes in value.  Why doesn't `products_total` change?
