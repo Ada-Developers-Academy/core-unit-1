@@ -19,14 +19,18 @@ Besides setup, overall we should observe that our familiar tools of setting brea
 You can set up VS Code to run the tests in the editor with `command-shift-p` and enter `Python: Configure Tests`.  
 
 ![configure tests](../assets/vs-code-debugger/python-configure-tests.png)
+*Fig. Telling VS Code you want to configure tests with Python.*
+
 
 VS Code will ask you which test framework you want to use.  Select Pytest.  VS Code might ask you to install Pytest, which you can do so.
 
 ![Select Test framework to use](../assets/vs-code-debugger/select-pytest.png)
+*Fig. Telling VS code which test framework you use (Pytest).*
 
 Then select the folder containing your tests.
 
 ![Select the tests folder](../assets/vs-code-debugger/select-tests-dir.png)
+*Fig. Selecting the tests directory*
 
 Then VS code will provide feedback on your tests allowing you to run them in the editor individually or run a test in the debugger with a click.
 
@@ -37,10 +41,12 @@ Once configured VS Code can run tests in the debugger using links above each tes
 The image below is an example of a test in VS code which is failing.
 
 ![Failing test](../assets/vs-code-debugger/failing-test-vs-code.png)
+*Fig. An example of a failing test in VS Code.*
 
 While the image below shows another test which passes.  Notice the checkmarks next to `Run Test` and `Debug Test`.
 
 ![Passing test](../assets/vs-code-debugger/passing-test-vs-code.png)
+*Fig. An example of a passing test in VS Code*
 
 You can then add breakpoints and use watches to examine why the test is not passing.
 
