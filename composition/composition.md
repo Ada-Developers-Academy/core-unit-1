@@ -4,7 +4,7 @@
 
 - Use attributes to create composition between two classes
 - Define one-to-one and one-to-many composition relationships
-- Use instance methods to access instances of objects composed inside another object
+- Use instance methods on objects composed inside other objects
 
 ## Vocabulary and Synonyms
 
