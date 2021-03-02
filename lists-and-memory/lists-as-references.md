@@ -43,13 +43,15 @@ While the function `calculate_total` is running both the parameter `subtotal` an
 ![Integer references from above](../assets/lists-and-memory/lists-memory-int-references.png)
 
 
+When the line:
+
+`subtotal += subtotal * tax_rate`
+
+executes, subtotal changes in value.  Why doesn't `products_total` change?
+
 <details style="max-width: 700px; margin: auto;">
     <summary>
-        When the line:
-
-        `subtotal += subtotal * tax_rate`
-
-        executes, subtotal changes in value.  Why doesn't `products_total` change?
+      Our answer        
     </summary>
 
 Because any operation using the equals sign `=` including `+=` changes the _reference_ for `subtotal` to a new location in memory.  Essentially Python performs the calculation (addition in this case) and creates a new integer in memory to store the result.  
