@@ -2,14 +2,14 @@
 
 ## Our Goal
 
-Our goal today is to understand what it means to say "variables are references."
+Our goal in this lesson is to understand what it means to say "variables are references."
 
 Creating a mental model of how references work will:
 
 - increase our programming skills
 - increase our debugging skills
 - give us better understanding about computers
-- give us better ways to talk about programming
+- give us more precise ways to talk about programming
 - <del>help us make null pointer exception jokes</del>
 
 The best way we can use our energy in this lesson is to read it, take notes on it, and constantly experiment with code using a Python REPL. Much of this material is learned through typing out code and seeing the output inside a Python REPL. Feel free to use the Python REPL or to make a `.py` file. Copy and paste the code as you go, and modify examples to help understanding.
@@ -50,7 +50,7 @@ The `is` operator compares object IDs. **_An object's identity never changes onc
 
 ## Variables Are References
 
-Variables are references that point to objects in memory.
+Variables are references that point to objects in memory. By calling them references, we mean that variables _don't_ store the _value_ of an object. Instead, we can think of variables as holding a copy of the _object ID_.
 
 Consider this code:
 
@@ -78,11 +78,11 @@ Variables are like the special ticket. The **ticket pointed to where the car was
 
 **The actual car is the actual value**. The actual car took up space in parking spot #151.
 
-There could be multiple identifiers for whatever car, bike, or vehicle is in parking spot #151. Maybe there's another, different ticket that points to the car in spot #151. Maybe there are hundreds of them.
+There could be multiple tickets for whatever car, bike, or vehicle is in parking spot #151. Stevie can bring their friend and ask the valet to issue them a ticket for the vehicle in spot #151. Maybe all Stevie's friends have gotten a ticket. And then all of _their_ friends! Stevie really needs to get some better friends!
 
-Variables work very similarly. Whenever a new value is stored in memory in a running program, that value occupies some space in memory. **Variables point to different spaces in memory**. When we read a variable, the computer grabs and presents the value at that spot in memory.
+Variables work very similarly. Whenever a new value is stored in memory in a running program, that value occupies some location in memory (a numbered spot) represented by its object ID. When we assign a value to a variable, it's like issuing a ticket (the named variable) with the data location noted on the ticket. **Variables point to different spaces in memory, not the value at that location itself**. When we read a variable, the computer grabs the value from that spot in memory for us to use.
 
-In this world, maybe we could take our special ticket, and say that it points to the very nice red car in spot #152 instead. Maybe everyone could!
+In this world, if we know someone who has a ticket to a different spot (say #152), we can go with them to the valet and have our ticket updated to refer to spot #152. If we use this ticket now, anything we do will be to the vehicle in #152, but whatever was in #151 will be safe and sound for Stevie and their friends to keep using.
 
 Changing the parking spot that the tickets point to is **reassignment**.
 
@@ -96,11 +96,11 @@ Changing the parking spot that the tickets point to is **reassignment**.
 
 ## Immutable vs. Mutable Data Types
 
-The different data types that we commonly work with in Python are `int`, `str`, `float`, `list`, `dict`, and `bool`.
+The data types we most commonly work with in Python are `int`, `str`, `float`, `list`, `dict`, and `bool`.
 
 These data types can be classified as either **immutable** or **mutable** data types.
 
-_Mutability_ means an object's ability to change. An object of an _immutable_ data type _cannot be changed_. An object of a _mutable_ data type can be changed, modified, altered, and "mutated," and still be considered the same object.
+_Mutability_ means an object's ability to change. An object of an _immutable_ data type _cannot be changed_. An object of a _mutable_ data type can be changed, modified, altered, in other words "mutated."
 
 Some of Python's immutable data types are:
 
@@ -299,8 +299,7 @@ melons = berries
 We can describe the relationship between `melons` and `berries` in any of these following ways:
 
 - The value of `melons` is whatever the value of `berries` is
-- The variable `melons` refers to the object that `berries` refers
-- `melons` points to `berries`
+- The variable `melons` refers to the object to which `berries` refers
 - `melons` and `berries` both refer to the same object
 
 Let's prove this with object IDs:
@@ -368,7 +367,7 @@ id of loquats: 4510649216
 
 ## Pro-Tip: Experiment!
 
-There are an infinite number of ways to assign and reassign and check this logic. Experiment in your own Python files!
+There are a huge number of ways to assign and reassign and check this logic. Experiment in your own Python files!
 
 ### !end-callout
 
@@ -417,11 +416,11 @@ value of melons: ['hearts', 'stars', 'horseshoes', 'clovers']
 
 Re-read through the code slowly, and take notes about how the modification to `berries` affects the value that `melons` points to.
 
-`berries` and `melons` both point to the same object. We modify the object with object ID `4369938880` with `berries.append("clovers")`. We see that the value of `melons` (which points to the object `4369938880`) is also modified.
+`berries` and `melons` both point to the same object. We modify the object with object ID `4369938880` with `berries.append("clovers")`. We see that the value of `melons` (which also points to the object `4369938880`) is modified as well.
 
 ## Applied in Function Arguments
 
-When we pass in values into a function call, we should have awareness about if we are passing a mutable object or immutable object.
+When we pass values into a function call, we should be aware of whether we are passing a mutable or an immutable object.
 
 As we've learned about parameters in functions, parameters are local variables.
 
@@ -475,7 +474,9 @@ We should observe:
 
 ### Immutable Objects Passed Into Functions
 
-When we pass an immutable object into a function, that function cannot modify the object passed in. Any "modifications" are likely reassignment.
+When we pass an _immutable_ object into a function, that function cannot modify the object passed in. Any "modifications" are likely reassignment.
+
+Recall that reassignment replaces a variable's reference with a reference to the new object. Since parameters are local variables, only the local reference is replaced. The external variable is left unchanged, as a brief example will show.
 
 Read through the code below.
 
@@ -523,7 +524,7 @@ We should observe:
 
 ## Extending the Concept: Nested Data Structures
 
-Lists and dictionaries are not only mutable data types, but they're also _containers_. As containers, they contain either mutable or immutable data types itself!
+Lists and dictionaries are not only mutable data types, but they're also _containers_. As containers, they contain either mutable or immutable data types themselves!
 
 The same principles extend to nested data structures.
 
@@ -596,7 +597,7 @@ value of peaches: [False, {'hello': 'modified value'}, False]
 
 `pears` and `peaches[1]` refer to the same dictionary object.
 
-Giving a new value to a key in a dictionary counts as modification. Modifying `pear` affects the item at `peaches[1]`.
+We modified the dictionary referred to by `pears` by storing a new value for the `"hello"` key. Modifying `pears` also affects the item at `peaches[1]`.
 
 ### !callout-info
 
@@ -614,9 +615,9 @@ When discussing object-oriented programming, we'll write user-defined classes. U
 
 ### !end-callout
 
-## Best Pattern: Reassign Often, Return Often
+## Prefer Returning Results Over Modifying Inputs
 
-References and immutability should primarily affect our programming with awareness.
+We must remain aware of how references and mutable objects interact within our functions.
 
 Without awareness, modifying a mutable object risks unintentionally affecting other references.
 
@@ -624,7 +625,8 @@ As general patterns to takeaway:
 
 1. Stay aware of the difference between modifying and reassigning
 1. While programming, create diagrams to help understand references between variables and objects
-1. It's more reliable to _return_ any important values from a function, rather than modify a value
+1. It's usually more desirable to _return_ important results from a function, rather than modifying a value that was passed in
+    1. Callers of our functions usually don't expect the values they pass in to be modified unless there is clear documentation that your function will do so
 
 ## Check for Understanding
 
