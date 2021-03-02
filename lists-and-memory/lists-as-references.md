@@ -42,6 +42,8 @@ While the function `calculate_total` is running both the parameter `subtotal` an
 
 ![Integer references from above](../assets/lists-and-memory/lists-and-memory_lists-as-references_int-references.png)
 
+<figcaption>A variable in Python contains a reference to the location where the data is stored.</figcaption>
+
 
 **Question:** When the line: `subtotal += subtotal * tax_rate` executes, subtotal changes in value.  Why doesn't `products_total` change?
 
@@ -91,9 +93,14 @@ This is because both `friends` and `names` refer to the same list in memory.
 
 ![Diagram of `names` and `friends` in memory](../assets/lists-and-memory/lists-and-memory_lists-as-references_reference-example.png)
 
+<figcaption>Both `friends` and `names` refer to the same list in memory.</figcaption>
+
 Following the reference to the specific elements with `names[index] = name[0:5]` will follow the reference to the specific element and then change the internal reference to a new value.  For example when `index` is 0.
 
 ![Changing a reference at an index](../assets/lists-and-memory/lists-and-memory_lists-as-references_changing-index.png)
+
+<figcaption>Modifying an element in a list</figcaption>
+
 
 Notice that both `names` and `friends` refer to the same object, with updated items in the end.
 
