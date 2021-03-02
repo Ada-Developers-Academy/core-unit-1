@@ -2,7 +2,7 @@
 Standards:
   -
     Title: Fundamentals Recap
-    Description: "Fundamentals Vocabulary, Conditionals Recap, Practice: Fundamentals Vocabulary, Practice: Conditionals Recap, Math Primer"
+    Description: "Fundamentals Vocabulary, Conditionals Recap, Problem Set: Fundamentals Vocabulary, Problem Set: Conditionals Recap, Math Primer"
     UID: w7RhPU
     SuccessCriteria:
       - success criteria
@@ -18,11 +18,11 @@ Standards:
       -
         Type: Lesson
         UID: wsrfiY
-        Path: /fundamentals-recap/practice-fundamentals-vocabulary.md
+        Path: /fundamentals-recap/problem-set-fundamentals-vocabulary.md
       -
         Type: Lesson
         UID: v2CqP7
-        Path: /fundamentals-recap/practice-conditionals-recap.md
+        Path: /fundamentals-recap/problem-set-conditionals-recap.md
       -
         Type: Lesson
         UID: oTncbU
@@ -125,7 +125,7 @@ Standards:
         Path: /intro-to-debugging/intro-to-debugging.md
   -
     Title: Intro To Functions
-    Description: "Functions Overview, Invoking Functions, Defining Functions, Practice: Intro to Functions"
+    Description: "Functions Overview, Invoking Functions, Defining Functions, Problem Set: Intro to Functions"
     UID: e30a742083b7afa72ec565afafb9f64b
     SuccessCriteria:
       - success criteria
@@ -145,10 +145,10 @@ Standards:
       -
         Type: Lesson
         UID: rjEdAe
-        Path: /intro-to-functions/practice-intro-to-functions.md
+        Path: /intro-to-functions/problem-set-intro-to-functions.md
   -
     Title: Functions, Continued
-    Description: "Variable Scope, How to Read Documentation, Practice: Functions Continued"
+    Description: "Variable Scope, How to Read Documentation, Problem Set: Functions Continued"
     UID: 6736abef6aad93ad0fdb8d10e1849b62
     SuccessCriteria:
       - success criteria
@@ -164,10 +164,10 @@ Standards:
       -
         Type: Lesson
         UID: POpDU4
-        Path: /functions-continued/practice-functions-continued.md
+        Path: /functions-continued/problem-set-functions-continued.md
   -
     Title: Intro To Tests
-    Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Practice: Intro to pytest"
+    Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Problem Set: Intro to pytest"
     UID: cxnH0Z
     SuccessCriteria:
       - success criteria
@@ -187,10 +187,10 @@ Standards:
       -
         Type: Lesson
         UID: qcZisA
-        Path: /intro-to-tests/practice-intro-to-pytest.md
+        Path: /intro-to-tests/problem-set-intro-to-pytest.md
   -
     Title: Representing Data
-    Description: "Representing Data in Lists and Dictionaries, Data and JSON, Practice: Representing Data, Activity: Representing Data"
+    Description: "Representing Data in Lists and Dictionaries, Data and JSON, Problem Set: Representing Data, Activity: Representing Data"
     UID: hxB08H
     SuccessCriteria:
       - success criteria
@@ -206,14 +206,14 @@ Standards:
       -
         Type: Lesson
         UID: p4Pb0s
-        Path: /representing-data/practice-representing-data.md
+        Path: /representing-data/problem-set-representing-data.md
       -
         Type: Lesson
         UID: 1f3084593d9eed2a8ec8a797cbfdd89b
         Path: /representing-data/activity-representing-data.md
   -
     Title: Iterating Over Data
-    Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, Iterating and Special Cases, Practice: Iterating Over Data"
+    Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, Iterating and Special Cases, Problem Set: Iterating Over Data"
     UID: giOpFA
     SuccessCriteria:
       - success criteria
@@ -237,10 +237,10 @@ Standards:
       -
         Type: Lesson
         UID: maPjmo
-        Path: /iterating-over-data/practice-iterating-over-data.md
+        Path: /iterating-over-data/problem-set-iterating-over-data.md
   -
     Title: Nested Data and Nested Loops
-    Description: "Nested Lists and Dictionaries, Nested Loops"
+    Description: "Nested Lists and Dictionaries, Nested Loops, Problem Set: Nested Data and Nested Loops"
     UID: DcrO5J
     SuccessCriteria:
       - success criteria
@@ -253,6 +253,10 @@ Standards:
         Type: Lesson
         UID: Mo0XXv
         Path: /nested-data-and-nested-loops/nested-loops.md
+      -
+        Type: Lesson
+        UID: bqPsZH
+        Path: /nested-data-and-nested-loops/problem-set-nested-data-and-nested-loops.md
   -
     Title: While Loops
     Description: While Loops
@@ -266,7 +270,7 @@ Standards:
         Path: /while-loops/while-loops.md
   -
     Title: Exception Handling
-    Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Practice: Exception Handling"
+    Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Problem Set: Exception Handling"
     UID: xT5cCv
     SuccessCriteria:
       - success criteria
@@ -282,10 +286,10 @@ Standards:
       -
         Type: Lesson
         UID: b72TBD
-        Path: /exception-handling/practice-exception-handling.md
+        Path: /exception-handling/problem-set-exception-handling.md
   -
     Title: Big O
-    Description: "Time and Space Complexity, Big O Notation, Big O Analysis, Practice: Big O"
+    Description: "Time and Space Complexity, Big O Notation, Big O Analysis, Problem Set: Big O"
     UID: f2703dfead197309bf41c0a2d8ff1daf
     SuccessCriteria:
       - success criteria
@@ -309,10 +313,10 @@ Standards:
       -
         Type: Lesson
         UID: 90465d8c4c1af56aed98039f4e95687c
-        Path: /big-o/practice-big-o.md
+        Path: /big-o/problem-set-big-o.md
   -
     Title: Intro to Git
-    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Practice: Git Commands, Activity: Git History"
+    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Problem Set: Git Commands, Activity: Git History"
     UID: DaSCfO
     SuccessCriteria:
       - success criteria
@@ -340,7 +344,7 @@ Standards:
       -
         Type: Lesson
         UID: g1zQGU
-        Path: /intro-to-git/practice-git-commands.md
+        Path: /intro-to-git/problem-set-git-commands.md
       -
         Type: Instructor
         UID: NvHa7v
@@ -351,7 +355,7 @@ Standards:
         Path: /intro-to-git/activity-git-history.md
   -
     Title: Intro To Object-Oriented Programming
-    Description: "What is OOP?, Defining Classes, Creating Instances, Instance Methods, Practice: Intro to OOP"
+    Description: "What is OOP?, Defining Classes, Creating Instances, Instance Methods, Problem Set: Intro to OOP"
     UID: dfa81f9898dba334bbda0cdf7b32c9f6
     SuccessCriteria:
       - success criteria
@@ -375,7 +379,7 @@ Standards:
       -
         Type: Lesson
         UID: ecf610c94fd56dbcc8dcfa0f774342ec
-        Path: /intro-to-object-oriented-programming/practice-intro-to-oop.md
+        Path: /intro-to-object-oriented-programming/problem-set-intro-to-oop.md
   -
     Title: Intro To OOP, Cont'd
     Description: "Testing Objects, Projects With Many Files"
@@ -393,7 +397,7 @@ Standards:
         Path: /intro-to-oop-contd/projects-with-many-files.md
   -
     Title: Intro to OOP Relationships
-    Description: "OOP Relationships, Inheritance, Practice: OOP Relationships"
+    Description: "OOP Relationships, Inheritance, Problem Set: OOP Relationships"
     UID: 6aa5a5d28d6c39bc5381c77a1e222232
     SuccessCriteria:
       - success criteria
@@ -409,10 +413,10 @@ Standards:
       -
         Type: Lesson
         UID: e760a85b2f7705d0d4e42d26947b6f6c
-        Path: /intro-to-oop-relationships/practice-oop-relationships.md
+        Path: /intro-to-oop-relationships/problem-set-oop-relationships.md
   -
     Title: Composition
-    Description: "Composition, Practice: Composition"
+    Description: "Composition, Problem Set: Composition"
     UID: 1jtO4N
     SuccessCriteria:
       - success criteria
@@ -424,10 +428,10 @@ Standards:
       -
         Type: Lesson
         UID: eedb1f62ad21bb5e478b414c25e17998
-        Path: /composition/practice-composition.md
+        Path: /composition/problem-set-composition.md
   -
     Title: Python OOP
-    Description: "Intro to Design Patterns, Intro to Decorators, Static Methods and Class Methods, Practice: Static Methods and Class Methods"
+    Description: "Intro to Design Patterns, Intro to Decorators, Static Methods and Class Methods, Problem Set: Static Methods and Class Methods"
     UID: 53ff8a562d3c8ba58b02a9b3ef612df5
     SuccessCriteria:
       - success criteria
@@ -451,4 +455,4 @@ Standards:
       -
         Type: Lesson
         UID: d70afaf7a11cea145281fd76ca10f1ab
-        Path: /python-oop/practice-static-methods-and-class-methods.md
+        Path: /python-oop/problem-set-static-methods-and-class-methods.md

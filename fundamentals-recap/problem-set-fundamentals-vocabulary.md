@@ -1,4 +1,4 @@
-# Practice: Fundamentals Vocabulary
+# Problem Set: Fundamentals Vocabulary
 
 ## Directions
 
@@ -431,34 +431,6 @@ Use the Python interpreter to experiment with code. We can evaluate any expressi
 ##### !question
 
 What is the value of the expression `bool("Hello, string!")`?
-
-If there is a string, use double-quotes where needed.
-
-##### !end-question
-##### !answer
-
-True
-
-##### !end-answer
-##### !hint
-
-Open up the Python interpreter with the command `python3` in the command line.
-
-Use the Python interpreter to experiment with code. We can evaluate any expression in the interpreter. For example, try typing in the expression `int("100")` and pressing enter, and see what output comes out.
-
-##### !end-hint
-### !end-challenge
-<!-- prettier-ignore-end -->
-
-<!-- Question 17 -->
-<!-- prettier-ignore-start -->
-### !challenge
-* type: short-answer
-* id: TOBAFq
-* title: Fundamentals Vocabulary
-##### !question
-
-What is the value of the expression `bool(["Hello, string!"])`?
 
 If there is a string, use double-quotes where needed.
 
