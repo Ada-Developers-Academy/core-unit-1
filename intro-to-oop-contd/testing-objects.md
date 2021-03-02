@@ -347,7 +347,7 @@ Here, we import a class named `Driver` from the `driver` module inside of the `r
 
 * type: multiple-choice
 * id: 4534544e-ab34-4ba7-bb0f-b28dfc0d2912
-* title: [text, a short question title]
+* title: Importing a class
 <!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
 <!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
 
