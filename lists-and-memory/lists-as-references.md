@@ -116,20 +116,17 @@ However functions with side effects, especially when they are unintened or not c
 
 *  Functions with side effects especially when it is unintended could lead to a lot of potential bugs which are harder to debug.
 *  It is easier to write tests for functions with no side-effects.
-*  If the function is supposed to change anything in the environment, like modify a list parameter.  It must be clearly documented to avoid confusion.
-*  Care must be taken in writing function definitions containing mutable data types (like Lists).
+*  If the function is supposed to change anything in the environment, like modifying a list parameter.  It must be clearly documented to avoid confusion.
+*  Because of the above concerns writing a function with side effects requires a great deal more care and effort than a function without.
 
 You can avoid introducing side effects by creating copies of mutable data types like lists and dictionaries and performing operations on the copies.
 
 ```python
 def shorten_names(names):
-    index = 0
     shortened_names = []
-    while index < len(names):
+    for name in names:
         # truncate the strings to 0-5 characters
-        name = names[index]
         shortened_names.append(name[0:5])
-        index += 1
     
     return shortened_names
 ```
