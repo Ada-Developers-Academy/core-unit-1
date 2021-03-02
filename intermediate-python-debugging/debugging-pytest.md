@@ -43,3 +43,9 @@ While the image below shows another test which passes.  Notice the checkmarks ne
 ![Passing test](../assets/vs-code-debugger/passing-test-vs-code.png)
 
 You can then add breakpoints and use watches to examine why the test is not passing.
+
+Find the problem and fix it so the test now passes.  Once you have finished, remove the breakpoints and run the test to verify the problem is solved.
+
+## Summary
+
+In this activity we used VS Code & the Python debugger to trace through our code and identify two bugs.  To do so we used breakpoints, watches and the step over and step into buttons.  These tools allow us to pause the program and see the values of our variables as the application is executing.
