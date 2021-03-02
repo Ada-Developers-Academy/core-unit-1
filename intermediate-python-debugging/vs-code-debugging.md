@@ -52,17 +52,17 @@ You may then need to create a `launch.json` file by clicking on `Run and Debug`.
 
 ![Run and debug button](../assets/vs-code-debugger/run-and-debug.png)
 
-Then Select `create a launch.json file` To make a configuration.  
+Then select `create a launch.json file` to make a configuration.  
 
 ![Debug Python File](../assets/vs-code-debugger/debug-configuration.png)
 
 Save the resulting `launch.json` file.
 
-That's it!  You are set up!  You can close `launch.json` now.
+You are set up!  You can close `launch.json` now.
 
 ## Debugging
 
-### Adding Breakpoints
+### Adding and Removing Breakpoints
 
 You can add a breakpoint by clicking to the **left** of the line number.  You will see a red dot appear to indicate the breakpoint.  You can click again to make it dissapear.  
 
@@ -79,7 +79,7 @@ You can then run the debugger at any time with the green triangle play button.
 ![Debugger play button](../assets/vs-code-debugger/debugger-play.png)
 *Fig. The start debugging button*
 
-Notice that the program will pause at the 1st breakpoint it encounters.
+Notice that the program will pause at the first breakpoint it encounters.
 
 **What are the values of the variables?**  
 
@@ -94,7 +94,7 @@ You can create a watch by clicking on the `+` icon and enter any expression.
 *Fig. A watch while the debugger is running*
 
 
-**In the watch box, enter `number < guess`**  What does it evaluate to?  Try a few more expressions.
+**In the watch box, enter `number < guess`**.  What does it evaluate to?  Try a few more expressions.
 
 ![Watch example](../assets/vs-code-debugger/watch_example.png)
 *Fig. Watching an expression*
@@ -160,10 +160,7 @@ It's because we don't have any functions that we have written and used  The debu
 
 <!-- ======================= END CHALLENGE ======================= -->
 
-## Summary
-
-In this lesson we examined how to get set up using the debugger in VS Code.  We also learned to create breakpoints watch programmatic expressions and trace through the application using step over, step into and step out.  
-
+## Check for Understanding
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
 

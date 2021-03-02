@@ -6,7 +6,7 @@ The code contains two bugs, one runtime error crashes the program on execution a
 
 ## Activity
 
-### 1st Bug
+### First Bug: Debugging with Breakpoints
 
 When you execute the program with:
 
@@ -68,12 +68,19 @@ Notice that the loop attempts to add up all the product prices.  In Watch add a 
     Do you see the problem?
   </summary>
 
-  The price for the products gets set in `product.py`, see if you can find the error, fix it, and then re-run the debugger.  Does it crash now?  If you need add another breakpoint to `product.py` in the `create_product` function and step through the program.
+The bug is in `product.py`, and it relates to the price of products.
+
+Hypothesize a cause for the error, make changes to fix it, and then re-run the debugger.
+
+Repeat this process until the program stops crashing, and the bug is fixed. During this debugger process, practice:
+
+- Adding another breakpoint to `product.py` inside the `create_product` function
+- Stepping through the program when re-running the debugger
 </details>
 
   
 
-### The 2nd Bug
+### Second Bug: Debugging a Failing Test
 
 One of the tests is failing, find the failing test in `tests/test_order.py`.  
 

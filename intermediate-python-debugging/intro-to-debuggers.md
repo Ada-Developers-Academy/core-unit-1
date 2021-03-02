@@ -38,9 +38,9 @@ These are very valuable techniques and will often be your 1st choice to debug yo
 
 ## Debuggers in General
 
-Sometimes it can be difficult to trace through a program's execution and understand which lines are being executing and the values of each variable as the program runs.  So developers created debugger programs.  A **debugger** is a program designed to help us identify errors in our code.  Typically a debuggers can be integrated into an editor like Visual Studio Code.  The Python library comes with a [debugger](https://docs.python.org/3/library/pdb.html) and the standard [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) integrates with it.  We will see how to use the Python debugger in the next lesson.
+Sometimes it can be difficult to trace through a program's execution and understand which lines are being executing and the values of each variable as the program runs.  So developers created debugger programs.  A **debugger** is a program designed to help us identify errors in our code.  Debuggers are typically integrated into an editor like Visual Studio Code.  The Python library comes with a [debugger](https://docs.python.org/3/library/pdb.html) and the standard [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) integrates with it.
 
-Debuggers allow us to pause program execution, examine the state of the program and either resume execution, or execute the application line-by-line.  This is amazing, you can tell the program to pause when it reaches a particular line and inspect any variable in scope!  No `print` statements!  Woo hoo!
+Most debuggers operate with the same general concepts. Debuggers allow us to pause program execution, examine the state of the program and either resume execution, or execute the application line-by-line.  This is amazing... you can tell the program to pause when it reaches a particular line and inspect any variable in scope!  No `print` statements!  Woo hoo!
 
 ### Breakpoints & Stepping Through Code
 
