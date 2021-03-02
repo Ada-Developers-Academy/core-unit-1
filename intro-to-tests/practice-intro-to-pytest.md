@@ -877,6 +877,12 @@ Note: Recall that the instructions are to write a function to make the test pass
 Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
 ```python
+def test_returns_true_if_odd():
+    number = 5
+    result = is_odd(number)
+    assert result
+
+
 def test_returns_false_if_even():
     number = 6
     result = is_odd(number)
@@ -892,6 +898,11 @@ import unittest
 from main import *
 
 class TestPython1(unittest.TestCase):
+    def test_returns_true_if_odd(self):
+        number = 5
+        result = is_odd(number)
+        self.assertTrue(result)
+
     def test_returns_false_if_even(self):
         number = 6
         result = is_odd(number)
@@ -946,6 +957,18 @@ def is_odd(num):
 Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
 ```python
+def test_returns_true_if_odd():
+    number = 5
+    result = is_odd(number)
+    assert result
+
+
+def test_returns_false_if_even():
+    number = 6
+    result = is_odd(number)
+    assert not result
+
+
 def test_returns_none_if_negative():
     number = -1000
     result = is_odd(number)
@@ -960,6 +983,16 @@ import unittest
 from main import *
 
 class TestPython1(unittest.TestCase):
+    def test_returns_true_if_odd(self):
+        number = 5
+        result = is_odd(number)
+        self.assertTrue(result)
+
+    def test_returns_false_if_even(self):
+        number = 6
+        result = is_odd(number)
+        self.assertFalse(result)
+
     def test_returns_none_if_negative(self):
         number = -1000
         result = is_odd(number)
@@ -1040,8 +1073,8 @@ class TestPython1(unittest.TestCase):
 
 Read through the test. Determine:
 
-- Which line is the "Arrange" step?
-- What are the "Act" and "Assert" steps?
+- Which line is the "Act" step?
+- What are the "Arrange" and "Assert" steps?
 - In the "Act" step, what is the name of the function called? What are the arguments passed into it? How many arguments are there?
 - What does this test assert?
 
