@@ -55,7 +55,7 @@ def bubble_sort(numbers):
     return numbers
 ```
 
-<details>
+<details style="max-width: 700px; margin: auto;">
   <summary>Look at the loops, what do you think the time complexity is?</summary>
 
   If the size of `numbers` is `n`.  The outer loop will execute roughly `n` times.  Inside that loop is `for j in range(0, length - i - 1):` which will also execute roughly `n` times.  When you have a loop within a loop their time complexities multiply O(n * n) = O(n<sup>2</sup>)
