@@ -40,7 +40,7 @@ print(f"After calculating the the total of the order, products_total is \
 
 While the function `calculate_total` is running both the parameter `subtotal` and the argument `products_total` both refer to the same value in memory.  
 
-![Integer references from above](../assets/lists-and-memory/lists-memory-int-references.png)
+![Integer references from above](../assets/lists-and-memory/lists-and-memory_lists-as-references_int-references.png)
 
 
 **Question:** When the line: `subtotal += subtotal * tax_rate` executes, subtotal changes in value.  Why doesn't `products_total` change?
@@ -89,11 +89,11 @@ After the function call the list `friends` has been modified!
 
 This is because both `friends` and `names` refer to the same list in memory.
 
-![Diagram of `names` and `friends` in memory](../assets/lists-and-memory/list-reference-example.png)
+![Diagram of `names` and `friends` in memory](../assets/lists-and-memory/lists-and-memory_lists-as-references_reference-example.png)
 
 Following the reference to the specific elements with `names[index] = name[0:5]` will follow the reference to the specific element and then change the internal reference to a new value.  For example when `index` is 0.
 
-![Changing a reference at an index](../assets/lists-and-memory/lists-and-memory-changing-index.png)
+![Changing a reference at an index](../assets/lists-and-memory/lists-and-memory_lists-as-references_changing-index.png)
 
 Notice that both `names` and `friends` refer to the same object, with updated items in the end.
 
