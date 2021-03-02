@@ -49,6 +49,7 @@ A **breakpoint** is a place (line of code) which indicates to the debugger that 
 Editors typically indicate breakpoints visually with a red-dot next to the line number.  This is a very common convention in many languages and editors, however some editors may use different visual clues.
 
 ![VS Code Breakpoint Example](../assets/vs-code-debugger/breakpoint.png)
+*Fig. A breakpoint*
 
 So in short, you can think of a breakpoint as a pause button for a program which allows you to "snoop-around" in the state of the currently executing application.
 
@@ -59,6 +60,7 @@ One neat thing about breakpoints is that you can have more than one and the prog
 Sometimes you do not care about the exact values of specific variables, sometimes you want to "watch" the value of an expression like, `drivers[0]["name"]`.  That's really all a watch is.  You put in a bit of code and the debugger shows you the current value of that expression.  
 
 ![Watch Example in VS Code](../assets/vs-code-debugger/watch-price.png)
+*Fig. An example of a watch*
 
 ## Summary
 
