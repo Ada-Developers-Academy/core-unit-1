@@ -6,8 +6,6 @@
 - Recall that all objects inherit from Object
 - Define overriding
 
-## Introduction
-
 ## Vocabulary and Synonyms
 
 | Vocab        | Definition                                                                                                          | Synonyms                 | How to Use in a Sentence                                                                                                                 |
