@@ -10,7 +10,7 @@
 
 | Vocab <div style="width:100px;">| Definition |Synonym|How to Use in a Sentence |
 | ----- | ---------- |----|------------------------ |
-| One-to-one | One composite object is associated with one component object  | has-a |On an e-commerce site, each order has a *one-to-one* relationship with each shipment (destination address, tracking number, etc). <br/> In a gradebook application, each student *has a* final grade. <br/> On a social media platform, each user *has a* profile picture|
+| One-to-one | One composite object is associated with one component object  | has-one |On an e-commerce site, each order has a *one-to-one* relationship with each shipment (destination address, tracking number, etc). <br/> In a gradebook application, each student *has one* final grade. <br/> On a social media platform, each user *has one* profile picture|
 | One-to-many | One composite object is associated with a collection of component objects. | has-many | In a gradebook application, one class *has many* students and *has many* assignments. <br/> On a social media platform, one user has a *one-to-many* relationship with posts.|
 
 ## Initializing Components as Attributes in the Constructor
