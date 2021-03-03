@@ -108,7 +108,7 @@ Then, we should **repeat** these steps for different sub-problems until we have 
 5. Solve a sub-problem. When programming, this is where we write code!
 6. Repeat steps necessary
 
-![Problem solving cycle](../assets/approaching-a-problem_breaking-down-a-problem_summarize-steps.png)
+![Problem solving cycle](../assets/approaching-a-problem_breaking-down-a-problem_summarize-steps.png)  
 *Fig. Problem solving cycle*
 
 ## Working First, Improve Second
