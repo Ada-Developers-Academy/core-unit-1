@@ -317,17 +317,23 @@ Which of the following is _not_ a category of studying skills that was covered a
 
 ## Activities and Techniques that are Tried and True
 
-<div style="width=100px;">Are you feeling like... </div>| Consider |
----- | ---- |
-...classroom time is overwhelming? | Look at the calendar and the lessons the night before, and pre-read the lectures
-...reading material on programming is unnatural? | Read this resource on [how to read programming books](http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html)
-...you lose focus on the task at hand? | Using physical paper and sticky notes to write down the specific task you are trying to accomplish
-...you lose focus over time? | Using a time management method like [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to help enable frequent breaks and frequent periods of flow
-...your knowledge and understanding level of vocabulary is lacking? | Utilize flashcards for specific vocabulary, concepts, and syntax
-...you are craving more review in your own words? | Making crib sheets (1-page review notes of the crucial knowledge) at the end of the week
-... you're isolated? | Please consider having proactive communication with other students and staff! Staff is on your side for your success, and your proactive communication with staff can lead to opportunities and resources
+
+
+
+ <div style="min-width: 330px;">Are you feeling like... </div> | <div style="min-width: 370px;">Consider</div> |
+ ---- | ---- 
+| ...classroom time is overwhelming? | Look at the calendar and the lessons the night before, and pre-read the lectures
+| ...reading material on programming is unnatural? | Read this resource on [how to read programming books](http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html)
+|  ...you lose focus on the task at hand? | Using physical paper and sticky notes to write down the specific task you are trying to accomplish| ...you lose focus over time? | Using a time management method like  [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to help enable frequent breaks and frequent periods of flow
+| ...your knowledge and understanding level of vocabulary is lacking? | Utilize flashcards for specific vocabulary, concepts, and syntax
+| ...you are craving more review in your own words? | Making crib sheets (1-page review notes of the crucial knowledge) at the end of the week
+| ... you're isolated? | Please consider having proactive communication with other students and staff! Staff is on your side for your success, and your proactive communication with staff can lead to opportunities and resources
 
 Want a video series we recommend? Consider: ["Crash Course" on study skills](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W)
+
+
+
+
 
 
 ## Past Adie Study-Skills Testimonials
