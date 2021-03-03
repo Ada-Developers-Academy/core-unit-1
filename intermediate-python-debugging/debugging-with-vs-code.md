@@ -4,13 +4,19 @@ Python is widely used with VS Code and so VS Code's developers have put the time
 
 In this lesson we will learn to connect VS Code and the Python debugger to help us fix errors in our code.
 
-## Goals
+## Goal and Structure
 
-By the end of this lesson we should be able to...
+In order to use a debugger in VS Code while working on Python projects, we need to set up our tools and then learn how to navigate and use them.
 
-- Set up VS Code to run the Python debugger
-- Run the Python debugger in VS Code to step through a program
-- Use breakpoints and watches to identify errors in code
+This lesson is broken up into the following sections:
+
+1. Setting up VS Code to use and run the Python debugger
+2. Using a small example Python program to learn how to and practice:
+    - Adding and removing breakpoints
+    - Running the debugger and watching the program pause
+    - Observing variable state at a breakpoint
+    - Creating and using a watch
+    - Resuming, stepping over, stepping into, step out, restart, and stop
 
 ## Before Starting
 
