@@ -58,7 +58,7 @@ We will use the command line (in the terminal) and learn several commands to hel
 
 **Here's a Metaphor:** Imagine our computer's entire file system is a house. This house contains main rooms that connect with each other. Each room can contain many pieces of furniture. A computer's file system is like the house, folders are like the rooms, and files are like the pieces of furniture.
 
-![Floorplan](../assets/intro-to-dev-tools_intro-to-command-line_box-blueprint.png)  
+![Floorplan](../assets/intro-to-dev-environment_intro-to-command-line_blueprint.png)  
 [(source)](https://en.wikipedia.org/wiki/File:Hills-DeCaro-House-First-Floor-Plan.jpg)
 
 We can only be in one room (folder) at a time. We can move pieces of furniture (files) between the different rooms (folders). In this house, we can also make or remove as many rooms (folders) or pieces of furniture (files) as we want!
