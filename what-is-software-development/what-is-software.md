@@ -14,6 +14,7 @@
 
 ## Software is a Set of Instructions
 
+
 As we jump into programming, it's good to know what it means to be a **_software developer_**. What is software? And what are we making and doing?
 
 Software is a collection of instructions for a computer to execute. Software is code that tells computers what to do, when to do it, and how to do it. It turns out that computers aren't very useful without being told what to do.
@@ -23,6 +24,10 @@ The category of software is broad. It includes system software, which tells a co
 "Software" also includes creating services that most people will never see, or can't be seen, even though it's moving and changing data. When we use an app to transfer money to a fund, software from one bank sends a message to software from another bank. When we use a third-party aggregator for flight tickets, that system has to reach out to a different software program for each airline.
 
 ## Applications Are For Users
+![Doge in front of computer](../assets/what-is-software_what-is-software_applications-are-for-users.jpg)
+
+
+[(source)](https://knowyourmeme.com/photos/582577-doge)
 
 Software also includes application software. **_Application software_** is software built to have an _end user,_ or a human/consumer/customer who ultimately uses it. By definition, all the software that likely we've encountered is application software!
 
@@ -35,6 +40,9 @@ Application software tends to have:
 Applications are often called apps, or web apps if they're on the web.
 
 ## Source Code
+![Matrix Code](../assets/what-is-software-development_what-is-software_source-code.jpg)
+[(source)](https://unsplash.com/photos/iar-afB0QQw)
+
 
 Source code is code that builds software and is readable to a human.
 
@@ -51,6 +59,8 @@ Open Source Software (OSS) means software that was intentionally built with an o
 ### !end-callout
 
 ## Code is as Big or Small as You Want
+![Doge Code Meme](../assets/what-is-software-development_what-is-software_big-small-code.jpg)
+[(source)](https://dogemuchwow.com/web-developer-doge/)
 
 Software can be as big or small as we want. Software can be as creative and weird and messy as we want, too!
 
