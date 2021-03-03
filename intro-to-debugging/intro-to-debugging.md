@@ -182,8 +182,8 @@ We can even break it up this way:
    - Make theories and then test them!
    - Use rubber ducking skills, experimentation, research, and ask for help!
 
-![What -> Why -> How](../assets/intro-to-debugging_intro-to-debugging_what-why-how.png)  
-*Fig. What -> Why -> How*
+![What ➔ Why ➔ How](../assets/intro-to-debugging_intro-to-debugging_what-why-how.png)  
+*Fig. What ➔ Why ➔ How*
 
 In conclusion, debugging is one of the main things we'll be doing as programmers. We will learn so many more debugging tools in the future!
 
