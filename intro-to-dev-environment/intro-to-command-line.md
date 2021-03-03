@@ -58,6 +58,9 @@ We will use the command line (in the terminal) and learn several commands to hel
 
 **Here's a Metaphor:** Imagine our computer's entire file system is a house. This house contains main rooms that connect with each other. Each room can contain many pieces of furniture. A computer's file system is like the house, folders are like the rooms, and files are like the pieces of furniture.
 
+![Floorplan](../assets/intro-to-dev-environment_intro-to-command-line_blueprint.png)  
+[(source)](https://en.wikipedia.org/wiki/File:Hills-DeCaro-House-First-Floor-Plan.jpg)
+
 We can only be in one room (folder) at a time. We can move pieces of furniture (files) between the different rooms (folders). In this house, we can also make or remove as many rooms (folders) or pieces of furniture (files) as we want!
 
 In our terminal, **there is only one current working directory at a time;** the command line is only working in one folder (room) at a time. Navigating the file system in the command line means learning the commands to go between folders (rooms) and manipulate files (furniture).
@@ -191,6 +194,8 @@ Some commands to learn include:
 - `echo`
 - `grep`
 
+For a fun way to learn more command line tools [check out these Bite Size Command Line comics by Julia Evans!](https://wizardzines.com/comics/#bite-size-command-line)
+
 ## Exiting Weird Screens on Terminal
 
 Terminal and some commands bring us to different text editors. If you're ever taken to a terminal screen where:
@@ -199,7 +204,7 @@ Terminal and some commands bring us to different text editors. If you're ever ta
 - there is a `:` on the bottom line
 - `ctrl+c` does not exit this screen
 
-Try using the up and down arrows to scroll, and tapping the `q` or `esc` key to quit. If you're ever in this situation, one of macOS's default text editors, [`vim`](https://en.wikipedia.org/wiki/Vim_(text_editor) is at play here! See more vim commands [with this vim resource](https://devhints.io/vim).
+Try using the up and down arrows to scroll, and tapping the `q` key to quit. If you're ever in this situation, one of macOS's default paging helpers, [less](https://en.wikipedia.org/wiki/Less_(Unix)) is at play here! See more `less` commands [with this cheatsheet](https://gist.github.com/glnds/8862214).
 
 ## Check for Understanding
 
