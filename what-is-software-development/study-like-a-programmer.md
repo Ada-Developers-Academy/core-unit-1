@@ -34,6 +34,10 @@ Today, we should learn about what it means to **be** a programmer and **study** 
 - Use these studying tools and techniques to improve studying skills
 
 ## Consider the Role
+![Art of a brain, one half looks like a circuit board, the other half is colorful art](../assets/what-is-software_study-like-a-programmer_programming-brain-art.png)
+
+
+Programming is a science and art [(source)](https://dogemuchwow.com/web-developer-doge/)
 
 There are so many ways to define the role of a software developer and programmer. We're sure you all spent a lot of time considering what it means to you.
 
