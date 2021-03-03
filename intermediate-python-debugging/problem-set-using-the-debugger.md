@@ -67,7 +67,7 @@ Notice that the loop attempts to add up all the product prices.  In Watch add a 
 
 <details style="max-width: 700px; margin: auto;">
   <summary>
-    Do you see the problem?
+    Try to identify the cause of the problem.  Open this to see our answer.
   </summary>
 
 The bug is in `product.py`, and it relates to the price of products.
