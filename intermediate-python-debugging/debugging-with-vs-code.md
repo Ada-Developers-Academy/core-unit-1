@@ -16,7 +16,7 @@ By the end of this lesson we should be able to...
 
 Create a new project folder and Python file.
 
-```
+```bash
 $ mkdir testing-example # make a testing-example folder
 $ cd testing-example    # change into that folder
 $ touch guess_number.py # create an empty python fole
