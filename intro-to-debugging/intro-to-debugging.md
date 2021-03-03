@@ -162,6 +162,9 @@ Sometimes, the solution to your problem is solved just by trying to explain your
 
 The idea of Rubber Ducking is common and often joked about, to the point that many software development teams will provide literal rubber ducks to developers.
 
+![Rubber duck meme](../assets/intro-to-debugging_intro-to-debugging_rubber-duck-meme.png)  
+[(source)](https://imgur.com/gallery/NAulxvn/comment/1417240139)
+
 ## All Together: Ask and Answer Questions with Debugging
 
 When we combine all these concepts, we get:
@@ -178,6 +181,9 @@ We can even break it up this way:
 3. Figure out **how** to fix it
    - Make theories and then test them!
    - Use rubber ducking skills, experimentation, research, and ask for help!
+
+![What -> Why -> How](../assets/intro-to-debugging_intro-to-debugging_what-why-how.png)  
+*Fig. What -> Why -> How*
 
 In conclusion, debugging is one of the main things we'll be doing as programmers. We will learn so many more debugging tools in the future!
 
