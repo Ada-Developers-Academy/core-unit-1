@@ -125,46 +125,9 @@ These buttons let you deliberately navigate through the program's execution allo
 
 **Try using the buttons to navigate through the code.**  Do you see the values of the variables changing?
 
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
-<!-- Replace everything in square brackets [] and remove brackets  -->
-
-### !challenge
-
-* type: short-answer
-* id: c3eb6210-5cbd-4507-b0a5-41db00b43fb5
-* title: Step over and Step into why no difference?
-* points: [1] (optional, the number of points for scoring as a checkpoint)
-<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
-
-##### !question
-
 In the code try using the step over and step into buttons, do you notice a difference?  No, why not?
-##### !end-question
 
-##### !placeholder
-
-Why don't we see a difference?
-
-##### !end-placeholder
-
-##### !answer
-
-/.+/
-
-##### !end-answer
-
-<!-- other optional sections -->
-<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
-<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
-##### !explanation 
-
-It's because we don't have any functions that we have written and used  The debugger is wisely deciding not to jump into the source code for the `input` function.
-
-##### !end-explanation
-
-### !end-challenge
-
-<!-- ======================= END CHALLENGE ======================= -->
+It's because we don't have any functions that we have written and used  The debugger is wisely deciding not to jump into the source code for the `input` function as that is part of the Python library.
 
 ## Check for Understanding
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
