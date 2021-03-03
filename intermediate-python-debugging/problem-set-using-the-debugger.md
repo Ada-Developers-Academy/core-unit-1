@@ -1,10 +1,13 @@
 # Problem Set: Using the Debugger
 
-In this exercise we will use the debugger to identify two errors.  To run the activity clone the code at [AdaGold/python-debugging](https://github.com/AdaGold/python-debugging).  Then set up the project by creating a virtual environment and installing pytest.
+## Directions
+
+
+In this exercise we will use the debugger to identify two errors.  To run the activity clone the code at [AdaGold/python-debugging](https://github.com/AdaGold/python-debugging).  Then follow the directions in the README to set up the repo.
 
 The code contains two bugs, one runtime error crashes the program on execution and the other is a logic error which calculates the incorrect sum for an Order instance.  
 
-## Activity
+## Practice
 
 ### First Bug: Debugging with Breakpoints
 
@@ -23,7 +26,7 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for +=: 'int' and 'str'
 ```
 
-Hmmmm... It seems that it crashes at line 16 of `grocery_store/order.py`.
+Hmmmm... The program is crashing at line 16 of `grocery_store/order.py`.
 
 Lets put a breakpoint at line 16 of `grocery_store/order.py`.
 
@@ -39,7 +42,6 @@ You **may** need to click on the select list, select `Add Configuration` and cho
 
 ![select debug current python file](../assets/vs-code-debugger/debug-current-python-file.png)
 *Fig. Select debug configuration*
-
 
 Otherwise you can simpily select "Python: Current File" from the drop down list.  
 
