@@ -71,5 +71,3 @@ For example, imagine debugging an app that manages delivery drivers, and our dri
 In this lesson we introduced the concept of a debugger and some of the common features you will find in a debugger.  A debugger allows us to place breakpoints in our program to pause execution where we want to examine what's happening in our code at that particular point.  After the program is paused, we can use watches to examine the state of our application and continue execution line-by-line of our program, or resume our application until the next breakpoint.
 
 These features are really language-independent as most languages will have debuggers which provide these services.
-
-In the next lesson we will learn how to and practice using the Python debugger.
