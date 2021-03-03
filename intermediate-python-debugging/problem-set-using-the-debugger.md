@@ -90,3 +90,9 @@ One of the tests is failing, find the failing test in `tests/test_order.py`.
 *Fig. An example of a failing test in VS Code*
 
 Create a breakpoint in the failing test `test_calculate_total_with_multiple_products` and use the step-into and step over commands to trace through the code and see why the test is failing.  You can click on the `Debug Test` link above the test function to run that one test in the debugger.
+
+Once you identify the cause of the failure, adjust the code to make the test pass and then remove all the break points.  Make sure to run the test to verify that it passes.
+
+## Summary
+
+We have now successfully used the debugger with breakpoints, watches to trace through a program and identify both a runtime and a logical error.  When we have problems withour applications in the future the debugger should be one tool we use to identify and repair malfunctioning code.
