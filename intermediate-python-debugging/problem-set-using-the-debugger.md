@@ -64,7 +64,6 @@ Notice that the loop attempts to add up all the product prices.  In Watch add a 
 ![Adding a watch on a product](../assets/vs-code-debugger/watch-price.png)
 *Fig. A watch*
 
-
 <details style="max-width: 700px; margin: auto;">
   <summary>
     Do you see the problem?
