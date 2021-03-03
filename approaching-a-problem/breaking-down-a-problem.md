@@ -48,7 +48,7 @@ There are even more questions we can ask! From these questions, let's say that f
 
 Did any of these questions and answers touch on things you would have otherwise assumed?
 
-![Possible question tree](../assets/approaching-a-problem_breaking-down-a-problem_decision-tree.png)
+![Possible question tree](../assets/approaching-a-problem_breaking-down-a-problem_question-tree.png)  
 *Fig. Example of a possible question tree*
 
 #### Create sub-problems
