@@ -34,27 +34,14 @@ Today, we should learn about what it means to **be** a programmer and **study** 
 - Use these studying tools and techniques to improve studying skills
 
 ## Consider the Role
-![Art of a brain, one half looks like a circuit board, the other half is colorful art](../assets/what-is-software_study-like-a-programmer_programming-brain-art.png)
-
-
-Programming is a science and art [(source)](https://www.nicepng.com/ourpic/u2t4u2r5w7e6r5o0_creative-brain-png-two-sides-brain-png/)
 
 There are so many ways to define the role of a software developer and programmer. We're sure you all spent a lot of time considering what it means to you.
 
-Some words that might describe what the role of a software developer is:
+Some words that might describe a software developer role are:
 
-- A career
-- A problem-solver who uses programming to build programs and software
-- Someone who can transform digital data
-- A team-player
-- A logician
-- A chef who remixes different "recipes" of code
-- Someone who writes stories for machines. These stories almost always build off others - like fan-fictions or sequels
-- Someone who gets paid to drink La Croix
-- A person who uses Google, Stack Overflow, and the Internet a lot
-- **Someone who will never get bored because there's always more to learn and more to improve**
-- A designer
-- Someone who can type a lot of things
+![Word Cloud consisting of words that describe a software developer role](../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png)  
+[(source)](https://wordart.com/create)
+
 
 ### !challenge
 
@@ -95,12 +82,17 @@ One of the biggest goals of the Ada program is to foster the skill of **learning
 As a programmer in a field that changes so quickly, your most valuable asset will be how you manage your own individual learning.
 
 ### Creative Writer
+![Art of a brain, one half looks like a circuit board, the other half is colorful art](../assets/what-is-software_study-like-a-programmer_programming-brain-art.png)  
+*Programming is science and art* [(source)](https://www.nicepng.com/ourpic/u2t4u2r5w7e6r5o0_creative-brain-png-two-sides-brain-png/)
 
 Writing software is a creative process. Us programmers work with abstract data and concepts. We organize, arrange, transform, and orchestrate data. We take input, and use creativity and logic with the constraints we're given, and make beautiful output.
 
 A maybe-helpful analogy: If our jobs were to paint color-by-numbers, we could probably maximize productivity and output by working long hours day after day. If our jobs are to create inspiring artwork, **practicing self-care (rest, etc.) is an essential part of our work.**
 
 ### Take Care of Your Brain
+![Drawing of person and their brain](../assets/what-is-software-development_study-like-a-programmer_brain.jpg.jpg)  
+[(source)](https://pixabay.com/illustrations/brain-binary-silhouette-head-5930645/)
+
 
 Visualize your brain as a tool that needs care and maintenance to be most effective. That means when something in your program isn't working and your brain is experiencing stress, your brain is probably not going to be very productive until you've given it a break and taken care to restore your brain to a less heightened state. 
 
