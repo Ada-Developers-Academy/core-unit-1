@@ -115,93 +115,86 @@ What does this _mean_ and how does it impact programming? One of the best ways t
 
 ## Numbers, Bools, and Strings Are Immutable
 
-Immutable objects don't change! Because they don't change, our computers do something cool: for every immutable object in a program, it only stores that object _once_ in computer memory.
+Immutable objects don't change! Even when we do something that looks like it changes an immutable object, like the examples above, we are really getting an entirely different object.
 
-### `25` Is In Computer Memory Once
+### Using `id()` to Investigate Immutabilty
 
-Read this example code, then read the story that goes along with it.
-
-```python
-apples = 25
-
-oranges = 25
-```
-
-The integer `25` is an immutable object. When our program runs, the first time it sees `25` with `apples = 25`, it will put that `25` into memory once. The _second_ time it sees `25` in `oranges = 25`, the program will say, "Hey! I already have this immutable object `25` in memory; I will go ahead and use that `25`. I won't create and put another `25` in memory.
-
-I feel good about my memory management because `25` is immutable. It will reliably occupy the same place in memory, and I can expect it to always mean `25`."
-
-### The Immutable `25` Has One Object ID
-
-We can prove that _an immutable object of one specific value takes up only one fixed place in memory_ by using object IDs.
+We saw that Python provides a function `id()` that tells us the object ID for any value in our program. We can use it to see whether performing an operation on a value modifies that value itself, or whether it produces a different object entirely. For example:
 
 ```python
-apples = 25
-oranges = 25
+apples = 1000
+oranges = apples
 
 print("id of apples:", id(apples))
 print("id of oranges:", id(oranges))
-
-bananas = 20 + 5
-
-print("id of bananas:", id(bananas))
 ```
 
-When we run the above code, we may see output like this:
+Running the above code gives us output like this:
 
 ```
 id of apples: 4317740336
 id of oranges: 4317740336
-id of bananas: 4317740336
 ```
 
-With this output, we see that `apples`, `oranges`, _and_ `bananas` all have the **same** object ID _only because_ they all refer to the same immutable object, `25`.
+From this output, we see that `apples` and `oranges`, share a reference to the **same** object ID. We started by storing a reference to `1000` in `apples`, then assigning that reference to `oranges`. As a result, `apples` and `oranges` both refer to the same object ID.
 
-### Every Immutable Object Has One Object ID
+### Modifying an Immutable Object Produces a Different Object
 
-Let's observe the power of immutable objects one more time:
+Continuing our investigation, let's consider what happens when we try to modify `oranges`.
 
 ```python
-apples = 25
-oranges = 25
-bananas = 20 + 5
+apples = 1000
+oranges = apples
 
-print("id of apples:", id(apples))
-print("id of oranges:", id(oranges))
-print("id of bananas:", id(bananas))
+print("[Before modification]", "id of apples:", id(apples))
+print("[Before modification]", "id of oranges:", id(oranges))
 
-print("---")
-
-apples = 26
 oranges += 1
-bananas = 12 + 14
 
-print("id of apples:", id(apples))
-print("id of oranges:", id(oranges))
-print("id of bananas:", id(bananas))
+print("[After modification]", "id of apples:", id(apples))
+print("[After modification]", "id of oranges:", id(oranges))
 ```
 
-Before reading the output, make a prediction:
-
-1. When `apples`, `oranges`, and `bananas` all have the value `25`, will they have the same or different object IDs?
-1. When `apples`, `oranges`, and `bananas` all have the value `26`, will they have the same or different object IDs?
-   - `apples`, `oranges`, and `bananas` have the value `26` because of different reasons (assignment, incrementing, or expression arithmetic). How does this affect their object IDs?
-
-Now read the sample output of this code:
+Now the code produces something like this:
 
 ```
-id of apples: 4347182384
-id of oranges: 4347182384
-id of bananas: 4347182384
----
-id of apples: 4347182416
-id of oranges: 4347182416
-id of bananas: 4347182416
+[Before modification] id of apples: 4500497616
+[Before modification] id of oranges: 4500497616
+[After modification] id of apples: 4500497616
+[After modification] id of oranges: 4499961936
 ```
 
-`apples`, `oranges`, and `bananas` **_all_** had the same object ID, because their value was `26`. `26` is an integer, and **_integers are immutable data types_**.
+As with the previous example, before the increment we see that `apples` and `oranges` both share a reference to the same object ID once more. But _after_ the increment, `apples` refers to the same object ID, while `oranges` refers to a different object ID. We can see that even though incrementing a number may seem like it's modifying the number, it actually gives us a reference to a different number entirely!
 
-This subtle detail may seem more clear after comparing it to mutable data types.
+This is true for any operation that appears to modify an immutable object. We get a reference to a different object.
+
+### Reassignment Replaces the Object
+
+If we reassign an object reference to a variable, the variable is updated to refer to the new object, and the original object is left unchanged.
+
+```python
+apples = 1000
+oranges = apples
+
+print("[Before modification]", "id of apples:", id(apples))
+print("[Before modification]", "id of oranges:", id(oranges))
+
+oranges = 1001
+
+print("[After modification]", "id of apples:", id(apples))
+print("[After modification]", "id of oranges:", id(oranges))
+```
+
+This code is similar to the previous example, and it has similar output:
+
+```
+[Before modification] id of apples: 4453532880
+[Before modification] id of oranges: 4453532880
+[After modification] id of apples: 4453532880
+[After modification] id of oranges: 4453533040
+```
+
+Again, before the reassignment, `apples` and `oranges` both refer to the same object ID. After the reassignment, `oranges` refers to a different object ID. So the variable is refering to a completely different object than it started with.
 
 ## Lists and Dictionaries Are Mutable
 
