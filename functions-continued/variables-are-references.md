@@ -110,6 +110,22 @@ Examples of mutation and modification include:
 
 - Appending or removing an item to a list
 - Adding or removing a key-value pair to a dictionary
+Examples of operations that do _not_ mutate or modify include:
+
+- Adding two numbers, resulting in a third number, such as `sum = 1 + 2`
+- Incrementing a number stored in a variable, like `num += 1`
+
+### !callout-info
+
+## Adding Integers Doesn't Modify
+
+When considering `sum = 1 + 2`, it may seem like we are modifying either the 1 or the 2 to turn it into a 3, which gets assigned to the variable `sum`. In reality, summing 1 and 2 changes neither 1 nor 2. Both retain their 1-ness and 2-ness, but they give us a new value, 3! Then `sum` gets a reference to 3, not the value 3 itself.
+
+<br>
+
+In the case of `sum += 1`, by default, this line is evaluated as `sum = sum + 1`. Therefore, it works like the situation above! 1 retains its 1-ness and `sum` gets re-assigned to the new integer value.
+
+### !end-callout
 
 What does this _mean_ and how does it impact programming? One of the best ways to witness the differences is to learn how a computer manages them in memory, discussed below.
 
