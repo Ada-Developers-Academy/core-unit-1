@@ -16,9 +16,9 @@ The best way we can use our energy in this lesson is to read it, take notes on i
 
 ## Vocabulary and Synonyms
 
-| Vocab           | Definition                                                                                                                                                                                                               | Synonyms | How to Use in a Sentence |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------------------------ |
-| Object Identity | An object's unique identity that never changes once it's been created. Usually a number. Similar to an object's address in memory. Find this with `id(obj)`. In a comparison that uses `is`, Python compares object IDs. | Object's address in memory | "I knew those two objects were different because they have different object IDs," "Maybe that variable's value is changing because two variables point to the same object with the same object ID"
+| Vocab           | Definition                                                                                                                                                                                                               | Synonyms                   | How to Use in a Sentence                                                                                                                                                                           |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Object Identity | An object's unique identity that never changes once it's been created. Usually a number. Similar to an object's address in memory. Find this with `id(obj)`. In a comparison that uses `is`, Python compares object IDs. | Object's address in memory | "I knew those two objects were different because they have different object IDs," "Maybe that variable's value is changing because two variables point to the same object with the same object ID" |
 
 ## Objects: Values, Types, and IDs
 
@@ -611,7 +611,7 @@ As general patterns to takeaway:
 1. Stay aware of the difference between modifying and reassigning
 1. While programming, create diagrams to help understand references between variables and objects
 1. It's usually more desirable to _return_ important results from a function, rather than modifying a value that was passed in
-    1. Callers of our functions usually don't expect the values they pass in to be modified unless there is clear documentation that your function will do so
+   1. Callers of our functions usually don't expect the values they pass in to be modified unless there is clear documentation that your function will do so
 
 ## Check for Understanding
 
