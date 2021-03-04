@@ -6,6 +6,327 @@ Complete all questions below.
 
 ## Practice
 
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 31402b5a-5d5a-409f-b5cd-a5c1a7f845d7
+* title: While Loops
+
+##### !question
+
+How many times will the body of this `while` loop run?
+
+```python
+counter = 0
+while counter < 5:
+    print('in the loop body')
+    counter += 1
+```
+
+##### !end-question
+
+##### !options
+
+* 0
+* 4
+* 5
+* 6
+* it runs forever
+* impossible to predict
+
+##### !end-options
+
+##### !answer
+
+* 5
+
+##### !end-answer
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: ce90bffc-5966-4486-8c2f-4d1d10ca58d3
+* title: While Loops
+
+##### !question
+
+How many times will the body of this `while` loop run?
+
+```python
+counter = 4
+while counter >= 0:
+    print('in the loop body')
+    counter -= 1
+```
+
+##### !end-question
+
+##### !options
+
+* 0
+* 4
+* 5
+* 6
+* it runs forever
+* impossible to predict
+
+##### !end-options
+
+##### !answer
+
+* 5
+
+##### !end-answer
+
+##### !explanation
+
+A loop like this, running from some value all the way down to 0, might be used to access the entries in a list in reverse order. This loop iterates from 4 down to 0, which are the indices of a list with 5 items.
+
+<br />
+
+Because this "off by one" can be confusing, we often prefer `for` loops in a situation like this rather than a `while` loop.
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 5fa25950-37c3-48d9-ae6c-81d41d85e85a
+* title: While Loops
+
+##### !question
+
+How many times will the body of this `while` loop run?
+
+```python
+counter = 0
+while counter < 10:
+    print('in the loop body')
+
+    if counter < 5:
+        continue
+
+    counter += 1
+```
+
+##### !end-question
+
+##### !options
+
+* 0
+* 1
+* 5
+* 10
+* it runs forever
+* impossible to predict
+
+##### !end-options
+
+##### !answer
+
+* it runs forever
+
+##### !end-answer
+
+##### !explanation
+
+Even though this loop has a statement to increment `counter`, it also has a condition in the loop body that skips it! Imagine how hard this might be to spot if it were buried in very complicated logic!
+
+<br />
+
+Infinite `while` loops don't always happen from forgetting to write a line that updates the loop control variable. Sometimes our own code gets in the way. This is why we often prefer `for` loops if we know how many times we want a loop to run ahead of time!
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 9401f1e3-778d-4559-a1ef-dee071d4db90
+* title: While Loops
+
+##### !question
+
+How many times will the body of this `while` loop run?
+
+```python
+import random
+
+num = random.randint(1, 10)
+while num <= 5:
+    print('in the loop body')
+    num = random.randint(1, 10)
+```
+
+##### !end-question
+
+##### !options
+
+* 0
+* 1
+* 5
+* 10
+* it runs forever
+* impossible to predict
+
+##### !end-options
+
+##### !answer
+
+* impossible to predict
+
+##### !end-answer
+
+##### !explanation
+
+This loop has a 50/50 chance of executing the loop body each time the condition is checked. We don't know for certain how many times it will run! Now, this isn't really a very useful loop, but image instead of a random number, we ask for user input. If some value of that input lets us decide to terminate the loop, then we also can't say for certain how many times _that_ loop will run. This is the most typical use for a `while` loop: loops that run an indeterminate number of times.
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 9016d79a-4d74-459f-a714-ca38bf9a176c
+* title: While Loops
+
+##### !question
+
+How many times will the body of this `while` loop run?
+
+```python
+while counter < 5:
+    print('in the loop body')
+    counter += 1
+```
+
+##### !end-question
+
+##### !options
+
+* 0
+* 4
+* 5
+* 6
+* it runs forever
+* impossible to predict
+
+##### !end-options
+
+##### !answer
+
+* 0
+
+##### !end-answer
+
+##### !explanation
+
+We forgot to initialize `counter`! This causes a `NameError` in the loop condition, so we don't run the loop body. In fact, this code will crash!
+
+<br />
+
+There are many things we have to remember when setting up `while` loops: initializing loop control variables, getting the loop condition right, properly updating the loop control variable, and that doesn't even consider the actual _logic_ we want to do in our loop! For these reasons, when possible, we often try to replace `while` loops with `for` loops. The next few questions explore this.
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: multiple-choice
+* id: 0a8cfa41-b770-4e80-8af0-f4d5127c8424
+* title: While Loops
+
+##### !question
+
+Which of the `for` loops below is equivalent to this `while` loop?
+
+```python
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+```
+
+##### !end-question
+
+##### !options
+
+* ```python
+for counter in range(4):
+    print(counter)
+```
+
+* ```python
+for counter in range(5):
+    print(counter)
+```
+* ```python
+for counter in range(5, 0):
+    print(counter)
+```
+
+* ```python
+for counter in range(5, 0, -1):
+    print(counter)
+```
+
+##### !end-options
+
+##### !answer
+
+* ```python
+for counter in range(5):
+    print(counter)
+```
+
+##### !end-answer
+
+##### !explanation
+
+The `while` loop runs from 0 to 4 (less than 5), printing each value. Recall that the `range` function
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### REWRITE FOR THE MULTIPLE HELPERS
 Some of the following coding questions use a helper function `input_int`.  It works just like the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except that instead of returning a string, we will assume that it returns an integer.
 
 In the question blocks below, we don't need to define `input_int`. We can just assume that it is available.
