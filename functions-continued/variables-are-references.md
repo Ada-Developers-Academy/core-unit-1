@@ -585,7 +585,7 @@ As general patterns to takeaway:
 1. Stay aware of the difference between modifying and reassigning
 1. While programming, create diagrams to help understand references between variables and objects
 1. It's usually more desirable to _return_ important results from a function, rather than modifying a value that was passed in
-   1. Callers of our functions usually don't expect the values they pass in to be modified unless there is clear documentation that your function will do so
+   1. Callers of our functions usually don't expect the values they pass in to be modified unless there is clear documentation that our function will do so
 
 ## Check for Understanding
 
