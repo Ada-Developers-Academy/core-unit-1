@@ -86,14 +86,6 @@ In this world, if we know someone who has a ticket to a different spot (say #152
 
 Changing the parking spot that the tickets point to is **reassignment**.
 
-### More Analogies
-
-- Variables are cups with a label on them. We give each cup a name, such as `stevies_drink` or `number`. The cup can hold different things and we can replace the value it holds.
-
-- Variables are like home addresses, such as 123 Main St. The value would be the literal residence located at 123 Main St., walls and doors and all.
-
-- "_The Little Prince_ was not written by Antoine de Saint-Exupéry, but _The Little Prince_ was written by a man named Antoine de Saint-Exupéry."
-
 ## Immutable vs. Mutable Data Types
 
 The data types we most commonly work with in Python are `int`, `str`, `float`, `list`, `dict`, and `bool`.
