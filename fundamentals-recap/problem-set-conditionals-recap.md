@@ -154,7 +154,7 @@ if traffic_light_color = "green":
 elif traffic_light_color = "red":
     print("reduce speed to stop")
 elif traffic_light_color = "yellow":
-    print("reduce speed by half and check traff_light_color again")
+    print("reduce speed by half and check traffic_light_color again")
 else:
     print("prepare to reduce speed")
 ```
