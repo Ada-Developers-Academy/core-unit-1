@@ -123,13 +123,16 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 
 ## Check for Understanding
 
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
 
-<!-- prettier-ignore-start -->
 ### !challenge
 
 * type: short-answer
 * id: 4810dbd6-286c-4eb9-976e-4480811114f1
-* title: Pair Programming Tool
+* title: [text, a short question title]
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
 
 ##### !question
 
@@ -149,8 +152,14 @@ Enter notes here
 
 ##### !end-answer
 
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
 ### !end-challenge
-<!-- prettier-ignore-end -->
+
+<!-- ======================= END CHALLENGE 1======================= -->
 
 <!-- Question 2 -->
 
