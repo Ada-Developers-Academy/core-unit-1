@@ -1,5 +1,7 @@
 # Iterating Over Lists
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=bafff635-d7fc-4a1d-9f02-ace10031ff1b&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Practice using for loops to iterate through an array
