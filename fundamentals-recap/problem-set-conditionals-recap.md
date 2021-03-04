@@ -448,40 +448,48 @@ Which option best describes the logic to implement this pricing system?
 
 * 
 ``` Python
+if customer_age < 0:
+    print("please enter a valid age.")
 if customer_age <= 10:
     ticket_price = 10.00
-elif customer_age > 11 and customer_age <= 17:
+if customer_age <= 17:
     ticket_price = 13.00
-elif customer_age >= 18 or customer_age < 60:
+if customer_age < 60:
     ticket_price = 15.00
-elif customer_age > 60:
+if customer_age => 60:
     ticket_price = 11.00
 else:
     print("please enter a valid age.")
 ```
 * 
 ``` Python
-if customer_age <= 10:
+if customer_age < 0:
+    print("please enter a valid age.")
+elif customer_age <= 10:
     ticket_price = 10.00
-elif customer_age > 11 or customer_age <= 17:
+elif customer_age <= 17:
     ticket_price = 13.00
-elif customer_age >= 18 or customer_age < 60:
+elif customer_age < 60:
     ticket_price = 15.00
-elif customer_age > 60:
+elif customer_age => 60:
     ticket_price = 11.00
 else:
     print("please enter a valid age.")
 ```
+
+
 * 
 ``` Python
-if customer_age <= 10:
-    ticket_price = 10.00
-elif customer_age >= 11 and customer_age <= 17:
-    ticket_price = 13.00
-elif customer_age >= 18 and customer_age < 60:
-    ticket_price = 15.00
-elif customer_age >= 60:
+if customer_age => 60:
     ticket_price = 11.00
+elif customer_age < 60:
+    ticket_price = 15.00
+elif customer_age <= 17:
+    ticket_price = 13.00
+elif customer_age <= 10:
+    ticket_price = 10.00
+elif customer_age < 0:
+    print("please enter a valid age.")
 else:
     print("please enter a valid age.")
 ```
@@ -492,13 +500,15 @@ else:
 
 * 
 ``` Python
+if customer_age < 0:
+    print("please enter a valid age.")
 if customer_age <= 10:
     ticket_price = 10.00
-elif customer_age >= 11 and customer_age <= 17:
+if customer_age <= 17:
     ticket_price = 13.00
-elif customer_age >= 18 and customer_age < 60:
+if customer_age < 60:
     ticket_price = 15.00
-elif customer_age >= 60:
+if customer_age => 60:
     ticket_price = 11.00
 else:
     print("please enter a valid age.")
