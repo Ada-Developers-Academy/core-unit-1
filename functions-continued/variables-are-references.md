@@ -46,7 +46,12 @@ We can see an object's ID by using the `id()` function.
 print('The ID of the string object "Hello, World!" is', id("Hello, World!"))
 ```
 
+<<<<<<< HEAD
 The `is` operator compares object IDs. **_An object's identity never changes once it has been created_**.
+=======
+The `is` operator compares object IDs. **_An object's identity never changes within its lifetime_**.
+
+> > > > > > > 3705a9addea895da20353292b8648f294f1596d7
 
 ## Variables Are References
 
@@ -209,38 +214,7 @@ Examples of mutation and modification include:
 - Removing a key-value pair from a dictionary
 - Changing the value of a key or value in a dictionary
 
-Mutation and modification **_does not_** include reassignment.
-
-### Identical Mutable Objects Can Have Different IDs
-
-Read this example code, then read the story that goes along with it.
-
-```python
-mangoes = ["hearts", "stars", "horseshoes"]
-
-kiwis = ["hearts", "stars", "horseshoes"]
-```
-
-Imagine running this code. After the first time our Python interpreter sees `["hearts", "stars", "horseshoes"]`, it puts this list object into memory. The _second_ time the program sees `["hearts", "stars", "horseshoes"]`, _because lists are mutable_, it puts this list into _another, separate_ place in memory.
-
-**Even if these objects have an identical value**, we can prove that these two mutable objects are **in different places in memory** by using object IDs.
-
-```python
-mangoes = ["hearts", "stars", "horseshoes"]
-kiwis = ["hearts", "stars", "horseshoes"]
-
-print("id of mangoes:", id(mangoes))
-print("id of kiwis:", id(kiwis))
-```
-
-When we run the above code, we may see output like this:
-
-```
-id of mangoes: 4346624576
-id of kiwis: 4346599360
-```
-
-The variables `mangoes` and `kiwis` both have a value of `["hearts", "stars", "horseshoes"]`. However, **they have different object IDs** and occupy different places in memory.
+Mutation and modification **_does not_** include reassignment. As with immutable objects, reassigning a different mutable object to a variable replaces the existing reference. The original object is unchanged, and the modified variable now refers to the new object.
 
 ### Modifying a Mutable Object Doesn't Affect Its ID
 
@@ -271,7 +245,7 @@ _Even after modification_, the mutable object's object ID remains the same.
 
 As mentioned earlier, variables are references to objects in memory.
 
-Two different variables can end up referring to _the same_ object in memory.
+As with immutable objects, we can end up with two different variables referring to _the same_ object in memory. But with mutable objects, the situation is a little more interesting.
 
 Imagine a variable `berries` that points to a list in memory. Then imagine a variable `melons` that is assigned to `berries`.
 
