@@ -39,8 +39,11 @@ There are so many ways to define the role of a software developer and programmer
 
 Some words that might describe a software developer role are:
 
-![Word Cloud consisting of words that describe a software developer role](../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png)  
-[(source)](https://wordart.com/create)
+<!-- ![Word cloud that describes the software developer role as a storywriter, code chef, team-player, logician, etc.](../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png)  
+[(source)](https://wordart.com/create) -->
+
+<img height=500 alt="Word cloud that describes the software developer role as a storywriter, code chef, team-player, logician, etc." src="../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png")>  
+[source)](https://wordart.com/create)
 
 
 ### !challenge
@@ -90,7 +93,11 @@ Writing software is a creative process. Us programmers work with abstract data a
 A maybe-helpful analogy: If our jobs were to paint color-by-numbers, we could probably maximize productivity and output by working long hours day after day. If our jobs are to create inspiring artwork, **practicing self-care (rest, etc.) is an essential part of our work.**
 
 ### Take Care of Your Brain
-![Illustration of person and their brain](../assets/what-is-software-development_study-like-a-programmer_brain.jpg.jpg)  
+
+<!-- ![Illustration of person and their brain](../assets/what-is-software-development_study-like-a-programmer_brain.jpg)  
+[(source)](https://pixabay.com/illustrations/brain-binary-silhouette-head-5930645/) -->
+
+<img src="../assets/what-is-software-development_study-like-a-programmer_brain.jpg" alt="Illustration of person and their brain looking away at incoming binary text">
 [(source)](https://pixabay.com/illustrations/brain-binary-silhouette-head-5930645/)
 
 
