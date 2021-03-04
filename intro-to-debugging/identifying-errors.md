@@ -73,7 +73,7 @@ Practically speaking, only use the term "Traceback" in a Python context, and fre
 
 As our programs get bigger, we'll find that our stack trace outputs may get really long.
 
-<details>
+<details style="max-width: 700px; margin: auto;">
 
   <summary>
     Skim through this example to appreciate how long this stack trace is
