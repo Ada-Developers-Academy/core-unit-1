@@ -88,6 +88,8 @@ Changing the parking spot that the tickets point to is **reassignment**.
 
 ### More Analogies
 
+These are several imperfect analogies that can illustrate how variables refer to values.
+
 - Variables are cups with a label on them. We give each cup a name, such as `stevies_drink` or `number`. The cup can hold different things and we can replace the value it holds.
 
 - Variables are like home addresses, such as 123 Main St. The value would be the literal residence located at 123 Main St., walls and doors and all.
