@@ -515,7 +515,7 @@ Consider the following questions:
 
 Make a prediction. Run an experiment.
 
-<!-- Question  -->
+<!-- Question 1 -->
 <!-- prettier-ignore-start -->
 ### !challenge
 * type: paragraph
@@ -609,6 +609,22 @@ As general patterns to takeaway:
    1. Callers of our functions usually don't expect the values they pass in to be modified unless there is clear documentation that our function will do so
 
 ## Check for Understanding
+
+<!-- Question 2 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: paragraph
+* id: AZDwBk
+* title: Variables Are References
+##### !question
+
+Create one (imperfect) analogy that illustrates how variables are references to values. Describe it in 2-4 sentences below.
+
+Use the analogies of Stevie's car and valet service, the cup, the house, or the author as inspiration.
+
+##### !end-question
+### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Question Takeaway -->
 <!-- prettier-ignore-start -->
