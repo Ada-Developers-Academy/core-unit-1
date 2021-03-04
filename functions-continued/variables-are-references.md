@@ -46,12 +46,7 @@ We can see an object's ID by using the `id()` function.
 print('The ID of the string object "Hello, World!" is', id("Hello, World!"))
 ```
 
-<<<<<<< HEAD
-The `is` operator compares object IDs. **_An object's identity never changes once it has been created_**.
-=======
 The `is` operator compares object IDs. **_An object's identity never changes within its lifetime_**.
-
-> > > > > > > 3705a9addea895da20353292b8648f294f1596d7
 
 ## Variables Are References
 
