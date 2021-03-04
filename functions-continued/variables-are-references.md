@@ -46,7 +46,7 @@ We can see an object's ID by using the `id()` function.
 print('The ID of the string object "Hello, World!" is', id("Hello, World!"))
 ```
 
-The `is` operator compares object IDs. **_An object's identity never changes once it has been created_**.
+The `is` operator compares object IDs. **_An object's identity never changes within its lifetime_**.
 
 ## Variables Are References
 
@@ -224,7 +224,7 @@ Examples of mutation and modification include:
 - Removing a key-value pair from a dictionary
 - Changing the value of a key or value in a dictionary
 
-Mutation and modification **_does not_** include reassignment.
+Mutation and modification **_does not_** include reassignment. As with immutable objects, reassigning a different mutable object to a variable replaces the existing reference. The original object is unchanged, and the modified variable now refers to the new object.
 
 ### Identical Mutable Objects Can Have Different IDs
 
@@ -286,7 +286,7 @@ _Even after modification_, the mutable object's object ID remains the same.
 
 As mentioned earlier, variables are references to objects in memory.
 
-Two different variables can end up referring to _the same_ object in memory.
+As with immutable objects, we can end up with two different variables referring to _the same_ object in memory. But with mutable objects, the situation is a little more interesting.
 
 Imagine a variable `berries` that points to a list in memory. Then imagine a variable `melons` that is assigned to `berries`.
 
