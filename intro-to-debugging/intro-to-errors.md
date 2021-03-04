@@ -64,6 +64,9 @@ Syntax errors are often caused by things such as:
 
 To debug syntax errors, we should review the syntax in our code, and compare it to the syntax that Python is looking for.
 
+![Example of a syntax error and a runtime error.](../assets/intro-to-debugging_intro-to-errors_syntax-runtime.png)  
+*Fig. Example of a syntax error caused by missing parentheses, shown in fuchsia on the left, and a division by zero runtime error, shown in cyan on the right. Runtime errors are discussed below.*
+
 ### Runtime Errors
 
 A runtime error is a kind of error that occurs while our program is already running.
