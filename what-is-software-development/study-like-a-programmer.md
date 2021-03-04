@@ -90,7 +90,7 @@ Writing software is a creative process. Us programmers work with abstract data a
 A maybe-helpful analogy: If our jobs were to paint color-by-numbers, we could probably maximize productivity and output by working long hours day after day. If our jobs are to create inspiring artwork, **practicing self-care (rest, etc.) is an essential part of our work.**
 
 ### Take Care of Your Brain
-![Drawing of person and their brain](../assets/what-is-software-development_study-like-a-programmer_brain.jpg.jpg)  
+![Illustration of person and their brain](../assets/what-is-software-development_study-like-a-programmer_brain.jpg.jpg)  
 [(source)](https://pixabay.com/illustrations/brain-binary-silhouette-head-5930645/)
 
 

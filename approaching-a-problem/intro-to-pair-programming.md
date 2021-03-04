@@ -8,17 +8,29 @@
 
 Different contexts call for different methods of programming: sometimes it's best to pair, and sometimes it's best to work solo.
 
+![Comic of two coworkers deciding to pair program](../assets/approaching-a-problem_pair-programming_pair-meme.png)  
+[(source)](https://www.monkeyuser.com/2020/pair-programming/)
+
+
 ## Pair Programming is Collaborative Problem-Solving
 
 Pair programming is a method of programming in which two people problem-solve together on the same code simultaneously. Typically, during a pair-programming session, the two people trade and alternate the two roles "drive" and "navigator."
 
 The driver is responsible for using the keyboard and mouse. This usually means this person types code and navigates the project.
 
+![Comic of two coworkers deciding to pair program](../assets/approaching-a-problem_pair-programming_driver-navigator.jpeg)  
+[(source)](https://medium.com/swlh/writing-code-efficiently-with-a-partner-e9c969674a3b)
+
+
 The navigator is responsible for guiding the problem-solving process. The navigator actively reviews each line of code as it is typed, checks for errors, and thinks about the overall solution and how to get there.
 
 ### It Benefits Everyone
 
 Study after study states that software built with the pair-programming process often has higher quality code than code written solo.
+
+![Patrick and Spongebob](../assets/approaching-a-problem_pair-programming_spongebob-patrick.jpg)  
+A great pair makes a great team [(source)](https://spongebob.fandom.com/wiki/Patrick-SpongeBob_relationship)
+
 
 When two people collaborate and pair, it often results in:
 
