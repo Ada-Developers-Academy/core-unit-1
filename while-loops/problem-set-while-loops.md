@@ -513,7 +513,7 @@ Assume that each line would be indented correctly.
 
 ##### !explanation
 
-This implementation uses `while True: ...` to run the loop forever. It exits the loop by using the `break` keyword. And it skips the `print` by using the `continue` keyword. There are other many approaches that are just as valid. For an extra challenge, try implementing this loop yourself without using `break` or `continue`!
+This implementation uses `while True: ...` to run the loop forever. It exits the loop by using the `break` keyword. And it skips the `print` by using the `continue` keyword. There are many other approaches that are just as valid. For an extra challenge, try implementing this loop yourself without using `break` or `continue`!
 
 ##### !end-explanation
 
@@ -536,7 +536,7 @@ This implementation uses `while True: ...` to run the loop forever. It exits the
 
 ##### !question
 
-Let's implement a function called `sidewinder`. It will take a parameter `number_list` which contains a list of _next indices_ to visit. Starting from position `0`, we will look in the current position, get the value stored there, and use it as the _next_ position to visit. We will continue doing this until we find a value of `0`, which means we have found the end of the index chain. Then we'll return the position where we found the `0`.
+Let's implement a function called `sidewinder`. It will take a parameter `number_list` which contains a list of the _next_ index in the list to visit. Starting from position `0`, we will look in the current position, get the value stored there, and use it as the _next_ position to visit. We will continue doing this until we find a value of `0`, which means we have found the end of the index chain. Then we'll return the position where we found the `0`.
 
 For example, if we received `[2, 0, 1]` as our `number_list`, starting from position `0` we find a `2`. We look in position `2` and find a `1`. So we look in position `1` and find `0`. `0` marks the end of the chain, so we return `1`, the position we just looked in.
 
@@ -566,19 +566,19 @@ def sidewinder(number_list):
 
 ##### !tests
 
-```py
+```python
 import unittest
-import main
+from main import sidewinder
 
 class TestPython1(unittest.TestCase):
   def test_one(self):
-    self.assertEqual(0, main.sidewinder([0]))
+    self.assertEqual(0, sidewinder([0]))
 
   def test_two(self):
-    self.assertEqual(1, main.sidewinder([2, 0, 1]))
+    self.assertEqual(1, sidewinder([2, 0, 1]))
 
   def test_three(self):
-    self.assertEqual(10, main.sidewinder([4, 9, 0, 0, 1, 8, 0, 0, 11, 5, 0, 10]))
+    self.assertEqual(10, sidewinder([4, 9, 0, 0, 1, 8, 0, 0, 11, 5, 0, 10]))
 ```
 
 ##### !end-tests
@@ -630,7 +630,7 @@ The following coding question uses a helper function called `input_int`.  It wor
 
 In the question block below, we don't need to define `input_int`. We can assume that it is available, the same way `input` is available.
 
-To experiment with the coding question in VS Code or repl.it, we will need an implementation for `input_int`. In Python, safely converting from a string to an integer requires handling exceptions. For anyone who has read ahead, or who would like to do some extra research, we can try implementing it ourselves! Otherwise, here's a working implementation.
+To experiment with the coding question in VS Code or repl.it, we will need an implementation for `input_int`. In Python, safely converting from a string to an integer requires handling exceptions. We haven't discussed that material yet, so here is a working implementation.
 
 <details style="max-width: 700px; margin: auto;">
     <summary>A working implementation of `input_int`</summary>
@@ -664,12 +664,12 @@ def input_int(*args):
 
 ##### !question
 
-Let's sum some numbers! We would like to read a series of numbers from user input and return the sum. To keep things interesting, let's also decide that entering 0 means the user is done entering input, and that we'll also stop asking for input if the sum exceeds 1000.
+Let's sum some numbers! We will write a function called `silly_sum` that reads a series of numbers from user input and returns the sum. To keep things interesting, let's also decide that entering `0` means the user is done entering input, and that we'll also stop asking for further input if the sum reaches or exceeds `1000`.
 
 Provide an implementation for `silly_sum` so that it
-- reads numbers from the user (use `input_int`) summing as we do until either
-    - the user enters 0, or
-    - the sum exceeds 1000
+- reads numbers from the user (use `input_int`) summing as we go until either
+    - the user enters `0`, or
+    - the sum reaches or exceeds `1000`
 
 ##### !end-question
 
@@ -677,8 +677,9 @@ Provide an implementation for `silly_sum` so that it
 
 ```python
 def silly_sum():
-    # be sure to call input_int when you need an integer from the user
-    # a default implementation is provided above for experimenting in VS Code or repl.it
+    # Be sure to call input_int when you need an integer from the user.
+    # A default implementation is provided above for experimenting in VS Code or repl.it.
+    # You should not paste that implementation here. It will be available automatically.
     pass
 ```
 
@@ -686,9 +687,10 @@ def silly_sum():
 
 ##### !tests
 
-```py
+```python
 import unittest
 import main
+from main import silly_sum
 
 num_src = None
 
@@ -696,7 +698,7 @@ def input_ints(nums):
     for num in nums:
         yield num
 
-def input_int(_):
+def input_int(*args):
     return next(num_src)
 
 # inject into main
@@ -706,13 +708,18 @@ class TestPython1(unittest.TestCase):
 
     def test_one(self):
         global num_src
-        num_src = input_ints([1, 1, 2, 3, 5, 8, 0])
-        self.assertEqual(20, main.silly_sum())
+        num_src = input_ints([1, 1, 2, 3, 5, 8, 0, 9])
+        self.assertEqual(20, silly_sum(), 'the provided input was 1, 1, 2, 3, 5, 8, 0, 9')
 
     def test_two(self):
         global num_src
-        num_src = input_ints([400, 400, 400])
-        self.assertEqual(1200, main.silly_sum())
+        num_src = input_ints([400, 400, 400, 400])
+        self.assertEqual(1200, silly_sum(), 'the provided input was 400, 400, 400, 400')
+
+    def test_three(self):
+        global num_src
+        num_src = input_ints([999, 1, 1])
+        self.assertEqual(1000, silly_sum(), 'the provided input was 999, 1, 1')
 ```
 
 ##### !end-tests
@@ -722,8 +729,20 @@ class TestPython1(unittest.TestCase):
 A possible interaction with a user could look like this:
 > Enter an integer (0 to stop): 999<br />
 > Enter an integer (0 to stop): 1<br />
+> The sum is: 1000
+
+Here's another possible example:
+> Enter an integer (0 to stop): 400<br />
+> Enter an integer (0 to stop): 400<br />
+> Enter an integer (0 to stop): 400<br />
+> The sum is: 1200
+
+This sum is halted by the user:
 > Enter an integer (0 to stop): 1<br />
-> The sum is: 1001
+> Enter an integer (0 to stop): 2<br />
+> Enter an integer (0 to stop): 3<br />
+> Enter an integer (0 to stop): 0<br />
+> The sum is: 6
 
 Note that printing the final sum line is not a listed requirement, but feel free to add additional output to your implementation to help think through the problem. It will not affect the results of the tests. Even if you _do_ print out the final sum, be sure to also _return_ it!
 
@@ -744,8 +763,8 @@ def silly_sum():
 
     # check our 2 conditions:
     #   user input must not be 0
-    #   the sum must not exceed 1000
-    while num != 0 and my_sum <= 1000:
+    #   don't ask for more input once the sum reaches at least 1000
+    while num != 0 and my_sum < 1000:
         # prompt for input
         num = input_int('Enter an integer (0 to stop): ')
 
