@@ -37,7 +37,7 @@ Today, we should learn about what it means to **be** a programmer and **study** 
 
 There are so many ways to define the role of a software developer and programmer. We're sure you all spent a lot of time considering what it means to you.
 
-A software developer may be described as: 
+Some words that might describe the role of a software developer include:
 <!-- ![Word cloud that describes the software developer role as a storywriter, code chef, team-player, logician, etc.](../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png)  
 [(source)](https://wordart.com/create) -->
 
