@@ -155,8 +155,8 @@ This is where functions define the **position** of their parameters.
 - lowercase
 - words separated by underscores to help with readability
 
-![Parts of function signature: def keyword, descriptive function name, and parameters](../assets/intro-to-functions_defining-functions_function-name-conventions.png)  
-*Fig 1. Function Signature*
+![Parts of function signature: def keyword, descriptive function name, and parameters](../assets/intro-to-functions_defining-functions_function-signature.png)  
+*Fig. Function Signature*
 
 Tips:
 
@@ -192,7 +192,7 @@ The part after the function signature, and the second and final part of the func
 A function body can one line of code, or it can be 10000 lines of code.
 
 ![Parts of function body: indentation, variable scope, logic](../assets/intro-to-functions_defining-functions_function-body.png)  
-*Fig 2. Parts of a Function Body*
+*Fig. Parts of a Function Body*
 
 The function body syntax has three things rules to keep in mind:
 

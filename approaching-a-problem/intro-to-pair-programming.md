@@ -29,7 +29,7 @@ The navigator is responsible for guiding the problem-solving process. The naviga
 Study after study states that software built with the pair-programming process often has higher quality code than code written solo.
 
 ![Patrick and Spongebob](../assets/approaching-a-problem_pair-programming_spongebob-patrick.jpg)  
-A great pair makes a great team [(source)](https://spongebob.fandom.com/wiki/Patrick-SpongeBob_relationship)
+*Fig. A great pair makes a great team* [(source)](https://spongebob.fandom.com/wiki/Patrick-SpongeBob_relationship)
 
 
 When two people collaborate and pair, it often results in:
@@ -70,7 +70,7 @@ There are many software solutions you can use to make remote pairing go smoothly
 You can also use some tools specifically made for remote pairing. If developing in VS Code, [VS Code's plugin Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is an example of one of these tools. The Live Share extension allows teams to write code, debug, chat, and have audio calls in Visual Studio Code. in Tools like these will make it easier to do hand off between driving and navigating like you would if you were sitting next to each other in person.
 
 ![Audrey and Claire on VS Code Liveshare](../assets/approaching-a-problem_pair-programming_vs-code-liveshare.png)  
-*Audrey and Claire collaborating on VS Code* [(source)](https://www.monkeyuser.com/2020/pair-programming/)
+*Fig. Audrey and Claire collaborating on VS Code* [(source)](https://www.monkeyuser.com/2020/pair-programming/)
 
 ### Rotating Roles
 
@@ -139,7 +139,7 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 
 * type: short-answer
 * id: 4810dbd6-286c-4eb9-976e-4480811114f1
-* title: [text, a short question title]
+* title: Pair Programming Tools
 <!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
 <!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
 
