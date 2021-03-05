@@ -103,7 +103,7 @@ As a programmer in a field that changes so quickly, your most valuable asset wil
 
 ### Creative Writer
 ![Art of a brain, one half looks like a circuit board, the other half is colorful art](../assets/what-is-software_study-like-a-programmer_programming-brain-art.png)  
-*Programming is science and art*  [(source)](https://www.nicepng.com/ourpic/u2t4u2r5w7e6r5o0_creative-brain-png-two-sides-brain-png/)
+*Fig. Programming is science and art*  [(source)](https://www.nicepng.com/ourpic/u2t4u2r5w7e6r5o0_creative-brain-png-two-sides-brain-png/)
 
 Writing software is a creative process. Us programmers work with abstract data and concepts. We organize, arrange, transform, and orchestrate data. We take input, and use creativity and logic with the constraints we're given, and make beautiful output.
 
