@@ -479,6 +479,56 @@ Compare the correct `for` loop to the other answers and try explaining why they 
 
 <!-- prettier-ignore-start -->
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 85dffbd3-2030-44b4-8b9f-cc86f0c7e9d1
+* title: While Loops
+
+##### !question
+
+Let's implment
+
+##### !end-question
+
+##### !placeholder
+
+[the code below is the starting code in the web editor]
+```py
+def sidewinder(number_list):
+    pass
+```
+
+##### !end-placeholder
+
+##### !tests
+
+[the unit tests below will run against the student submission]
+```py
+import unittest
+import main
+
+class TestPython1(unittest.TestCase):
+  def test_one(self):
+    self.assertEqual(1,p.doSomething())
+```
+
+##### !end-tests
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= --><!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 
 ### !challenge
 
@@ -651,6 +701,10 @@ def silly_sum():
     # return the sum
     return my_sum
 ```
+
+Read through this version and compare to yours. What's the same? What's different? Are there even more ways to approach this problem?
+
+For some extra challenge, on your own, try modifying `silly_sum` so that you can pass in the stop value and maximum sum as parameters. This would allow us to say that 1 is the stop value instead of 0. How does this affect the code? Does anything else need to change? We could also say that the maximum sum is -1000! What changes does that cause?  Simple changes can sometimes have complicated effects. Play around a bit and see what you can build!
 
 #### !end-explanation
 
