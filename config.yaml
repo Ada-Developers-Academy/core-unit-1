@@ -262,6 +262,29 @@ Standards:
         UID: bqPsZH
         Path: /nested-data-and-nested-loops/problem-set-nested-data-and-nested-loops.md
   -
+    Title: Intermediate Python Debugging
+    Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Problem Set: Using Debugger"
+    UID: eb702636-a782-4ed3-8fb5-daca0aea5206
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 26f0b589-cb0f-4539-a4a6-1cb64f9ee28b
+        Path: /intermediate-python-debugging/intro-to-debuggers.md
+      -
+        Type: Lesson
+        UID: 506303a8-2fab-4283-98b3-9b4576721620
+        Path: /intermediate-python-debugging/vs-code-debugging.md
+      -
+        Type: Lesson
+        UID: 0cf83e0c-4483-4a15-8713-f35c425a16e1
+        Path: /intermediate-python-debugging/debugging-with-pytest.md
+      -
+        Type: Lesson
+        UID: a8e761cc-0d1f-49f9-a80a-6d2f79579a04
+        Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
+  -
     Title: While Loops
     Description: While Loops
     UID: 3P0q44
