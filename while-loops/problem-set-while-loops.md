@@ -477,25 +477,51 @@ Compare the correct `for` loop to the other answers and try explaining why they 
 <!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 
+### !challenge
 
+* type: ordering
+* id: 879e5790-de4c-4a51-ac38-0330ffb98a67
+* title: While Loops
 
+##### !question
 
+Reorder the lines of code below to produce a `while` loop with the following behavior:
 
+- Prompt the user for input.
+- Ignore the input if the user enters 'skip.'
+- End the loop if the user enters 'done.'
+- Otherwise, print a message telling the user what they input.
 
+Assume that each line would be indented correctly.
 
+##### !end-question
 
+##### !answer
 
+1. while True:
+1.     user_input = input('enter input: ')
+1.     if user_input == 'done':
+1.         break
+1.     elif user_input == 'skip':
+1.         continue
+1.     print(f'you entered {user_input}')
 
+##### !end-answer
 
+##### !explanation
 
+This implementation uses `while True: ...` to run the loop forever. It exits the loop by using the `break` keyword. And it skips the `print` by using the `continue` keyword. There are other many approaches that are just as valid. For an extra challenge, try implementing this loop yourself without using `break` or `continue`!
 
+##### !end-explanation
 
+### !end-challenge
 
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- prettier-ignore-end -->
 
-
-
-### REWRITE FOR THE MULTIPLE HELPERS
 Some of the following coding questions use a helper function `input_int`.  It works just like the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except that instead of returning a string, we will assume that it returns an integer.
 
 In the question blocks below, we don't need to define `input_int`. We can just assume that it is available.
