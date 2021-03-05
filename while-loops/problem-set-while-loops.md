@@ -7,6 +7,7 @@ Complete all questions below.
 ## Practice
 
 <!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 ### !challenge
 
 * type: multiple-choice
@@ -44,9 +45,11 @@ while counter < 5:
 ##### !end-answer
 
 ### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 ### !challenge
 
 * type: multiple-choice
@@ -94,9 +97,11 @@ Because this "off by one" can be confusing, we often prefer `for` loops in a sit
 ##### !end-explanation
 
 ### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 ### !challenge
 
 * type: multiple-choice
@@ -148,9 +153,11 @@ Infinite `while` loops don't always happen from forgetting to write a line that 
 ##### !end-explanation
 
 ### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 ### !challenge
 
 * type: multiple-choice
@@ -196,9 +203,11 @@ This loop has a 50/50 chance of executing the loop body each time the condition 
 ##### !end-explanation
 
 ### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 ### !challenge
 
 * type: multiple-choice
@@ -245,9 +254,11 @@ There are many things we have to remember when setting up `while` loops: initial
 ##### !end-explanation
 
 ### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 ### !challenge
 
 * type: multiple-choice
@@ -278,6 +289,7 @@ for counter in range(4):
 for counter in range(5):
     print(counter)
 ```
+
 * ```python
 for counter in range(5, 0):
     print(counter)
@@ -301,13 +313,226 @@ for counter in range(5):
 
 ##### !explanation
 
-The `while` loop runs from 0 to 4 (less than 5), printing each value. Recall that the `range` function
+The `while` loop runs from 0 to 4 (less than 5), printing each value. Recall that when we use the `range` function with one argument, it produces a sequence of numbers from 0 to one less than the argument (it is exclusive). So `range(5)` produces the sequence 0, 1, 2, 3, 4, which is exactly what we want!
+
+<br />
+
+For a review of `range`, refer to the Iterating Over Data, Iterating and Special Cases lesson, or check the [official Python documentation](https://docs.python.org/3/library/stdtypes.html#range).
 
 ##### !end-explanation
 
 ### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+### !challenge
+
+* type: multiple-choice
+* id: c90cd73b-bb1d-4f6c-9027-c9db928c199e
+* title: While Loops
+
+##### !question
+
+Which of the `for` loops below is equivalent to this `while` loop?
+
+```python
+counter = 4
+while counter >= 0:
+    print(counter)
+    counter -= 1
+```
+
+##### !end-question
+
+##### !options
+
+* ```python
+for counter in range(4):
+    print(counter)
+```
+
+* ```python
+for counter in range(0, 4):
+    print(counter)
+```
+
+* ```python
+for counter in range(4, 0):
+    print(counter)
+```
+
+* ```python
+for counter in range(4, 0, -1):
+    print(counter)
+```
+
+* ```python
+for counter in range(4, -1):
+    print(counter)
+```
+
+* ```python
+for counter in range(4, -1, -1):
+    print(counter)
+```
+
+##### !end-options
+
+##### !answer
+
+* ```python
+for counter in range(4, -1, -1):
+    print(counter)
+```
+
+##### !end-answer
+
+##### !explanation
+
+The `while` loop runs from 4 to 0 (greater than or equal to 0), printing each value. When counting up from zero, we can use the short form of `range` with one argument, but to count down, we must use the long form of `range(start, stop, step)`. The stop is exclusive, so we must list one below the final value we want (so -1), and we must explicitly tell `range` to count _down_ (again -1), for a complete call of `range(4, -1, -1)`. Note that if you try out the answers that count down (`start` is bigger than `stop`) without the final -1, they produce _no output_!  Think about why that is.
+
+<br />
+
+For a review of `range`, refer to the Iterating Over Data, Iterating and Special Cases lesson, or check the [official Python documentation](https://docs.python.org/3/library/stdtypes.html#range).
+
+##### !end-explanation
+
+### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+### !challenge
+
+* type: multiple-choice
+* id: 74aac94d-ae5d-40f3-ba50-b8e4c0c2d255
+* title: While Loops
+
+##### !question
+
+Which of the `for` loops below is equivalent to this `while` loop?
+
+```python
+counter = 0
+cats = ['Grumpy Cat', 'Garfield', 'Lil Bub', 'Maru', 'Keyboard Cat', 'Hello Kitty']
+while counter < len(cats):
+    print(cats[counter])
+    counter += 1
+```
+
+##### !end-question
+
+##### !options
+
+* ```python
+cats = ['Grumpy Cat', 'Garfield', 'Lil Bub', 'Maru', 'Keyboard Cat', 'Hello Kitty']
+for counter in cats:
+    print(cats[counter])
+```
+
+* ```python
+cats = ['Grumpy Cat', 'Garfield', 'Lil Bub', 'Maru', 'Keyboard Cat', 'Hello Kitty']
+for counter in len(cats):
+    print(cats[counter])
+```
+
+* ```python
+cats = ['Grumpy Cat', 'Garfield', 'Lil Bub', 'Maru', 'Keyboard Cat', 'Hello Kitty']
+for cat in cats:
+    print(cat)
+```
+
+* ```python
+cats = ['Grumpy Cat', 'Garfield', 'Lil Bub', 'Maru', 'Keyboard Cat', 'Hello Kitty']
+for cat in cats.items():
+    print(cat)
+```
+
+##### !end-options
+
+##### !answer
+
+* ```python
+cats = ['Grumpy Cat', 'Garfield', 'Lil Bub', 'Maru', 'Keyboard Cat', 'Hello Kitty']
+for cat in cats:
+    print(cat)
+```
+
+##### !end-answer
+
+##### !explanation
+
+The `while` loop iterates over the contents of the list of famous cats in order, printing each out, one by one. The correct `for` loop does the same thing, but notice how much clearer it is. We don't have to set up the counter. We don't have to compare it to the length of the list. We don't have to index into the list values. And we don't have to advance the counter. `while` loops are very flexible, but for some tasks, like iterating over lists and dictionaries in order, a `for` loop is usually more appropriate.
+
+<br />
+
+Compare the correct `for` loop to the other answers and try explaining why they don't work. Try running them in the Python interpreter and notice the errors it reports for each.
+
+##### !end-explanation
+
+### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: checkbox
+* id: f44b4f27-82e7-4545-a4d0-766e307971b1
+* title: While Loops
+
+##### !question
+
+Thinking about how we use `while` loops and `for` loops, which of the following situations are handled more appropriately with a `while` loop?
+
+##### !end-question
+
+##### !options
+
+* Looping until a condition changes
+* Iterating over the values in a list or dictionary in order
+* Performing an action an indeterminate number of times
+* Iterating over the values in a list or dictionary in an arbitrary order
+* Looping until a user enters certain data
+* Performing an action a known number of times
+
+##### !end-options
+
+##### !answer
+
+* Iterating over the values in a list or dictionary in an arbitrary order
+* Looping until a condition changes
+* Looping until a user enters certain data
+* Performing an action an indeterminate number of times
+
+##### !end-answer
+
+##### !hint
+
+Think about which loop style can work directly with certain data types, which loop style makes it harder to leave out certain parts of syntax accidentally, and which loop style provides more flexibility when needed.
+
+##### !end-hint
+
+##### !explanation
+
+`for` loops are great at iterating over collections in order, such as `for my_value in my_list: ...`, but not so great if you need to read the first value, then the fifth value, then the third value. `for` loops are also great if we need to perform an action a known number of times, such as `for counter in range(5): ...`. We don't need to remember to set up a loop control variable, and we don't need to update it ourselves!
+
+<br />
+
+But `for` loops are less useful if we don't know how many times we'll do an action from the start. If there's some specific condition we need to check, or maybe we want the user to enter a certain value before we continue, then a `while` loop might be more appropriate.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- prettier-ignore-end -->
 
 
 
@@ -355,6 +580,7 @@ def input_int(*args):
 
 
 <!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 ### !challenge
 
 * type: code-snippet
@@ -451,5 +677,6 @@ def calculate_sum():
 #### !end-explanation
 
 ### !end-challenge
+<!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
