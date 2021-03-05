@@ -259,7 +259,7 @@ Standards:
         Path: /nested-data-and-nested-loops/problem-set-nested-data-and-nested-loops.md
   -
     Title: Intermediate Python Debugging
-    Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Excercise??: Using Debugger"
+    Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Problem Set: Using Debugger"
     UID: eb702636-a782-4ed3-8fb5-daca0aea5206
     SuccessCriteria:
       - success criteria

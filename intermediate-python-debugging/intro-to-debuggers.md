@@ -25,7 +25,7 @@ These are very valuable techniques and will often be your 1st choice to debug yo
   - stepping over code
   - stepping into code
 
-## Vocabulary
+## Vocabulary and Synonyms
 
 | Vocab     | Definition                                                                        | Synonyms           | How to Use in a Sentence                                                                                       |
 | --------- | --------------------------------------------------------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------- |
