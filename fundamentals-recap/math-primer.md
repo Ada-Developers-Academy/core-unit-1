@@ -30,6 +30,11 @@ This numbering system includes
 * the **decimal point** (floating point/dot) symbol to represent decimal fractions, such as 2.45
 * the **minus sign** to indicate whether a number is positive or negative
 
+<div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
+<img alt="A number line ranging from -5 to 5.  An orange point is displayed at -3, and a cyan point is displayed at 4." src="../assets/fundamentals-recap_math-primer_number-line.png">
+</div>
+*Fig. A number line. Every __real__ number appears somewhere on this line. The orange point (to the left) shows where -3 is, and the cyan point (to the right) shows where 4 is.*
+
 ### !callout-info
 
 ## Origin of Base 10
@@ -64,6 +69,9 @@ Coordinate planes help us solve problems where we need to consider points that h
 2D space means that we define locations with _**two**_ axes that cross each other. These two axes are typically named _`x`_ and _`y`_.
 
 If you've seen certain kinds of bar graphs or line graphs, and there's a horizontal x-axis, and a vertical y-axis, this is the exact same concept.
+
+![A cartesian coordinate plane. A cyan point is displayed as (2, 3) and a fuchsia point is displayed at (-4, 1).](../assets/fundamentals-recap_math-primer_coordinate-plane.png)  
+*Fig. A coordinate plane. Essentially two number lines arranged at right angles. We can describe any location on the plane with 2 numbers. The cyan point (top-right) is at location (2, 3) and the fuchsia point (bottom-left) is at location (-4, 1).*
 
 ## Maximum and Minimum
 
@@ -131,8 +139,8 @@ For example, given the list
 
 Given any number _`n`_...
 
-- The **floor** of _`n`_ is the biggest integer less than or equal to _`n`_
-- The **ceiling** of _`n`_ is the smallest integer greater than or equal to _`n`_
+- The **floor** of _`n`_, written `⌊n⌋`, is the biggest integer less than or equal to _`n`_
+- The **ceiling** of _`n`_, written `⌈n⌉`, is the smallest integer greater than or equal to _`n`_
 
 | Example | Floor | Ceiling |
 | ------- | ----- | ------- |

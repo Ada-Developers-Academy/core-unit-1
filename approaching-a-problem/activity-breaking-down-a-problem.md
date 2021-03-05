@@ -92,6 +92,9 @@ Problem: Getting a gift for a loved one
 
 ## How to Review
 
-- Share in small groups. Take notes about what steps and approaches others took that you didn't take.
-- Reflect on any patterns or trends you see
-- Reflect if you were more detailed, less detailed, or as detailed as your small group. (There are no right answers! Different answers are better for different things)
+We will
+- Work to answer the prompts for ~10 minutes individually.
+- Share in small groups. Take notes about what steps and approaches others took that we didn't take.
+- Reflect on any patterns or trends we see.
+- Reflect if we were more detailed, less detailed, or as detailed as our small group. (There are no right answers! Different answers are better for different things).
+- Share take-aways in the large group.

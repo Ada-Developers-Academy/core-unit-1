@@ -57,11 +57,14 @@ The CPU is responsible for running computer programs. When we start a program, f
 
 Modern CPUs are very fast, and need a lot of data to stay busy. As a result, the CPU will end up accessing RAM billions of times every second! Fortunately, the connection between the CPU and RAM is direct and dependable, allowing this incredible system to operate reliably.
 
-### Metaphor Pt 1: RAM As the Countertop
+### Memory Versus Storage
 
 We've discussed that the memory we call RAM is responsible for storing instructions and data while a program is executing. There are other parts of a computer that are responsible for holding that data when a program _isn't_ actively running. Somewhat confusingly, modern devices sometimes refer to this as memory too, but it is better described as **storage**, where data can be kept for the long-term. A common example of this is a hard disk drive in a computer.
 
-![Screenshot of locating the Macintosh HD (Hard Drive) on the desktop on macOS](../assets/intro-to-computer-memory_storage.png)
+![Screenshot of locating the Macintosh HD (Hard Drive) on the desktop on macOS](../assets/intro-to-computer-memory_storage.png)  
+*Fig. The highlighted areas show how the __storage__ on our systems is accessed.*
+
+### Metaphor Pt 1: RAM As the Countertop
 
 To illustrate the difference between memory and storage, we can compare a computer to a kitchen.
 
@@ -76,6 +79,9 @@ Memory devices organize the data it stores by having and using **memory addresse
 Each piece of data in memory occupies a memory location, which has an assigned memory address that the CPU can use to locate it.
 
 ### Metaphor Pt 2: The Countertop With Numbered Bins
+
+![A countertop with all our ingredients in organized bins](../assets/intro-to-dev-environment_intro-to-computer-memory_mise-en-place.jpg)  
+*Fig. A mise en place arrangement for our countertop chef.* [(source)](https://unsplash.com/photos/KVacTm0QeEA)
 
 To illustrate how the CPU uses memory addresses to temporarily put and locate instructions and data, let's continue to compare a computer to a kitchen.
 
