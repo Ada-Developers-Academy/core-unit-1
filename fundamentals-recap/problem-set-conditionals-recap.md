@@ -458,8 +458,6 @@ if customer_age < 60:
     ticket_price = 15.00
 if customer_age >= 60:
     ticket_price = 11.00
-else:
-    print("please enter a valid age.")
 ```
 * 
 ``` Python
@@ -473,8 +471,6 @@ elif customer_age < 60:
     ticket_price = 15.00
 else:
     ticket_price = 11.00
-else:
-    print("please enter a valid age.")
 ```
 
 
@@ -489,8 +485,6 @@ elif customer_age <= 17:
 elif customer_age <= 10:
     ticket_price = 10.00
 elif customer_age < 0:
-    print("please enter a valid age.")
-else:
     print("please enter a valid age.")
 ```
 
@@ -508,10 +502,8 @@ elif customer_age <= 17:
     ticket_price = 13.00
 elif customer_age < 60:
     ticket_price = 15.00
-elif customer_age => 60:
-    ticket_price = 11.00
 else:
-    print("please enter a valid age.")
+    ticket_price = 11.00
 ```
 
 ##### !end-answer
