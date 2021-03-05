@@ -28,7 +28,7 @@ The category of software is broad. It includes system software, which tells a co
 
 [(source)](https://knowyourmeme.com/photos/582577-doge) -->
 
-<img height=350 alt="Doge in front of computer" src="../assets/what-is-software_what-is-software_applications-are-for-users.jpg">
+<img height=350 width=400 alt="Doge in front of computer" src="../assets/what-is-software_what-is-software_applications-are-for-users.jpg">
 
 [(source)](https://knowyourmeme.com/photos/582577-doge)
 
@@ -46,7 +46,7 @@ Applications are often called apps, or web apps if they're on the web.
 <!-- ![Matrix Code](../assets/what-is-software-development_what-is-software_source-code.jpg)
 [(source)](https://unsplash.com/photos/iar-afB0QQw) -->
 
-<img height="400px" alt="Matrix Code" src="../assets/what-is-software-development_what-is-software_source-code.jpg">  
+<img height=350 width=450 alt="Matrix Code" src="../assets/what-is-software-development_what-is-software_source-code.jpg">  
 [(source)](https://unsplash.com/photos/iar-afB0QQw)
 
 Source code is code that builds software and is readable to a human.
@@ -67,7 +67,7 @@ Open Source Software (OSS) means software that was intentionally built with an o
 <!-- ![Doge Code Meme](../assets/what-is-software-development_what-is-software_big-small-code.jpg)
 [(source)](https://dogemuchwow.com/web-developer-doge/) -->
 
-<img height=350 alt="Doge Code Meme" src="../assets/what-is-software-development_what-is-software_big-small-code.jpg">  
+<img height=350 width=450 alt="Doge Code Meme" src="../assets/what-is-software-development_what-is-software_big-small-code.jpg">  
 [(source)](https://dogemuchwow.com/web-developer-doge/)
 
 Software can be as big or small as we want. Software can be as creative and weird and messy as we want, too!
