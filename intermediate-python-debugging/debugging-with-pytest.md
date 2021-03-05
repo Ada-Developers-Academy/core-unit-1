@@ -14,6 +14,10 @@ This lesson is structured like a follow-along exercise to illustrate:
 
 Besides setup, overall we should observe that our familiar tools of setting breakpoints, running, pausing, and debugging, are overall similar between tests and programs.
 
+## Sample Project
+
+Clone the [Python-FizzBuzz](https://github.com/adagold/python-fizzbuzz) project and follow instructions on the README to get it to run.  There is one test failing.  In this lesson we will set up VS Code to use the debugger.
+
 ## Setting Up Pytest for VS Code Debugger
 
 You can set up VS Code to run the tests in the editor with `command-shift-p` and enter `Python: Configure Tests`.  
