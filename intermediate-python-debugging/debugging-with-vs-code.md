@@ -1,5 +1,7 @@
 # Debugging With VS Code
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=af37992e-9059-48db-bb72-ace20062b52a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 Python is widely used with VS Code and so VS Code's developers have put the time in to integrate the Python debugger into the standard VS Code plugin for Python.
 
 In this lesson we will learn to connect VS Code and the Python debugger to help us fix errors in our code.
