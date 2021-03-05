@@ -477,62 +477,6 @@ Compare the correct `for` loop to the other answers and try explaining why they 
 <!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
-<!-- prettier-ignore-start -->
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
-<!-- Replace everything in square brackets [] and remove brackets  -->
-
-### !challenge
-
-* type: checkbox
-* id: f44b4f27-82e7-4545-a4d0-766e307971b1
-* title: While Loops
-
-##### !question
-
-Thinking about how we use `while` loops and `for` loops, which of the following situations are handled more appropriately with a `while` loop?
-
-##### !end-question
-
-##### !options
-
-* Looping until a condition changes
-* Iterating over the values in a list or dictionary in order
-* Performing an action an indeterminate number of times
-* Iterating over the values in a list or dictionary in an arbitrary order
-* Looping until a user enters certain data
-* Performing an action a known number of times
-
-##### !end-options
-
-##### !answer
-
-* Iterating over the values in a list or dictionary in an arbitrary order
-* Looping until a condition changes
-* Looping until a user enters certain data
-* Performing an action an indeterminate number of times
-
-##### !end-answer
-
-##### !hint
-
-Think about which loop style can work directly with certain data types, which loop style makes it harder to leave out certain parts of syntax accidentally, and which loop style provides more flexibility when needed.
-
-##### !end-hint
-
-##### !explanation
-
-`for` loops are great at iterating over collections in order, such as `for my_value in my_list: ...`, but not so great if you need to read the first value, then the fifth value, then the third value. `for` loops are also great if we need to perform an action a known number of times, such as `for counter in range(5): ...`. We don't need to remember to set up a loop control variable, and we don't need to update it ourselves!
-
-<br />
-
-But `for` loops are less useful if we don't know how many times we'll do an action from the start. If there's some specific condition we need to check, or maybe we want the user to enter a certain value before we continue, then a `while` loop might be more appropriate.
-
-##### !end-explanation
-
-### !end-challenge
-
-<!-- ======================= END CHALLENGE ======================= -->
-<!-- prettier-ignore-end -->
 
 
 
@@ -680,3 +624,59 @@ def calculate_sum():
 <!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: checkbox
+* id: f44b4f27-82e7-4545-a4d0-766e307971b1
+* title: While Loops
+
+##### !question
+
+Synthesizing what we've learned about `while` loops and `for` loops both from the previous lessons and the previous questions, which of the following situations are handled more appropriately with a `while` loop?
+
+##### !end-question
+
+##### !options
+
+* Looping until a condition changes
+* Iterating over the values in a list or dictionary in order
+* Performing an action an indeterminate number of times
+* Iterating over the values in a list or dictionary in an arbitrary order
+* Looping until a user enters certain data
+* Performing an action a known number of times
+
+##### !end-options
+
+##### !answer
+
+* Iterating over the values in a list or dictionary in an arbitrary order
+* Looping until a condition changes
+* Looping until a user enters certain data
+* Performing an action an indeterminate number of times
+
+##### !end-answer
+
+##### !hint
+
+Think about which loop style can work directly with certain data types, which loop style makes it harder to leave out certain parts of syntax accidentally, and which loop style provides more flexibility when needed.
+
+##### !end-hint
+
+##### !explanation
+
+`for` loops are great at iterating over collections in order, such as `for my_value in my_list: ...`, but not so great if you need to read the first value, then the fifth value, then the third value. `for` loops are also great if we need to perform an action a known number of times, such as `for counter in range(5): ...`. We don't need to remember to set up a loop control variable, and we don't need to update it ourselves!
+
+<br />
+
+But `for` loops are less useful if we don't know how many times we'll do an action from the start. If there's some specific condition we need to check, or maybe we want the user to enter a certain value before we continue, then a `while` loop might be more appropriate.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- prettier-ignore-end -->
