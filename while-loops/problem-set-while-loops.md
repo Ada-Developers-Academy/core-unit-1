@@ -522,11 +522,11 @@ This implementation uses `while True: ...` to run the loop forever. It exits the
 <!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
-Some of the following coding questions use a helper function `input_int`.  It works just like the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except that instead of returning a string, we will assume that it returns an integer.
+The following coding question uses a helper function called `input_int`.  It works just like the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except that instead of returning a string, we will assume that it returns an integer.
 
-In the question blocks below, we don't need to define `input_int`. We can just assume that it is available.
+In the question block below, we don't need to define `input_int`. We can assume that it is available, the same way `input` is available.
 
-But to experiment with the coding questions in VS Code or repl.it, we will need an implementation for `input_int`. In Python, safely converting from a string to an integer requires handling exceptions. For anyone who has read ahead, or who would like to do some extra research, we can try implementing it ourselves! Otherwise, here's a working implementation.
+To experiment with the coding question in VS Code or repl.it, we will need an implementation for `input_int`. In Python, safely converting from a string to an integer requires handling exceptions. For anyone who has read ahead, or who would like to do some extra research, we can try implementing it ourselves! Otherwise, here's a working implementation.
 
 <details style="max-width: 700px; margin: auto;">
     <summary>A working implementation of `input_int`</summary>
@@ -560,19 +560,19 @@ def input_int(*args):
 
 ##### !question
 
-We would like to prompt a user for a number of integers to sum, and then get each number, one by one, and return the sum of the input values.
+Let's sum some numbers! We would like to read a series of numbers from user input and return the sum. To keep things interesting, let's also decide that entering 0 means the user is done entering input, and that we'll also stop asking for input if the sum exceeds 1000.
 
-Provide the implementation for `calculate_sum` so that it
-- prompts the user for the number of values to input (be sure to use `input_int`)
-- reads as many numbers from the user as they originally entered (again, use `input_int`)
-- returns the sum of the entered integers
+Provide an implementation for `silly_sum` so that it
+- reads numbers from the user (use `input_int`) summing as we do until either
+    - the user enters 0, or
+    - the sum exceeds 1000
 
 ##### !end-question
 
 ##### !placeholder
 
 ```python
-def calculate_sum():
+def silly_sum():
     # be sure to call input_int when you need an integer from the user
     # a default implementation is provided above for experimenting in VS Code or repl.it
     pass
@@ -588,7 +588,7 @@ import main
 
 num_src = None
 
-def read_ints(nums):
+def input_ints(nums):
     for num in nums:
         yield num
 
@@ -602,13 +602,13 @@ class TestPython1(unittest.TestCase):
 
     def test_one(self):
         global num_src
-        num_src = read_ints([6, 1, 1, 2, 3, 5, 8])
-        self.assertEqual(20, main.calculate_sum())
+        num_src = input_ints([1, 1, 2, 3, 5, 8, 0])
+        self.assertEqual(20, main.silly_sum())
 
     def test_two(self):
         global num_src
-        num_src = read_ints([10, 0, 1, 2, 3, 4, 5, 6,7, 8, 9])
-        self.assertEqual(45, main.calculate_sum())
+        num_src = input_ints([400, 400, 400])
+        self.assertEqual(1200, main.silly_sum())
 ```
 
 ##### !end-tests
@@ -616,12 +616,12 @@ class TestPython1(unittest.TestCase):
 #### !hint
 
 A possible interaction with a user could look like this:
->How many numbers should we sum? 3<br />
->Enter an integer: 1<br />
->Enter an integer: 2<br />
->Enter an integer: 3<br />
->The sum of the numbers is 6
+> Enter an integer (0 to stop): 999<br />
+> Enter an integer (0 to stop): 1<br />
+> Enter an integer (0 to stop): 1<br />
+> The sum is: 1001
 
+Note that the final sum line is not a listed requirement, but feel free to add additional output to your implementation to help think through the problem. It will not affect the results of the tests.
 
 #### !end-hint
 
@@ -630,17 +630,25 @@ A possible interaction with a user could look like this:
 An example of a working implementation:
 
 ```python
-def calculate_sum():
-    loop_count = input_int('How many numbers should we sum? ')
-    counter = 0
+def silly_sum():
+    # accumulate the sum
     my_sum = 0
 
-    while counter < loop_count:
-        num = input_int('Enter an integer: ')
-        my_sum += num
-        counter += 1
+    # stores the most recent user input
+    # default to anything except 0 (think about why this is)
+    num = 1
 
-    print(f'The sum of the numbers is {my_sum}')
+    # check our 2 conditions:
+    #   user input must not be 0
+    #   the sum must not exceed 1000
+    while num != 0 and my_sum <= 1000:
+        # prompt for input
+        num = input_int('Enter an integer (0 to stop): ')
+
+        # add the input to the sum
+        my_sum += num
+
+    # return the sum
     return my_sum
 ```
 
@@ -662,7 +670,7 @@ def calculate_sum():
 
 ##### !question
 
-Synthesizing what we've learned about `while` loops and `for` loops both from the previous lessons and the previous questions, which of the following situations are handled more appropriately with a `while` loop?
+Combining what we've learned about `while` loops and `for` loops both from the previous lessons and the previous questions, which of the following situations are handled more appropriately with a `while` loop?
 
 ##### !end-question
 
