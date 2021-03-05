@@ -37,14 +37,31 @@ Today, we should learn about what it means to **be** a programmer and **study** 
 
 There are so many ways to define the role of a software developer and programmer. We're sure you all spent a lot of time considering what it means to you.
 
-Some words that might describe a software developer role are:
-
+A software developer may be described as: 
 <!-- ![Word cloud that describes the software developer role as a storywriter, code chef, team-player, logician, etc.](../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png)  
 [(source)](https://wordart.com/create) -->
 
 <img height=500 alt="Word cloud that describes the software developer role as a storywriter, code chef, team-player, logician, etc." src="../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png")>  
-[source)](https://wordart.com/create)
+[(Created using wordart)](https://wordart.com/)
 
+<details style="max-width: 700px; margin: auto;">
+    <summary>
+    Click this arrow to see the descriptions of a software developer in bullet form 
+    </summary>
+
+- A career
+- A problem-solver who uses programming to build programs and software
+- Someone who can transform digital data
+- A team-player
+- A logician
+- A chef who remixes different "recipes" of code
+- Someone who writes stories for machines. These stories almost always build off others - like fan-fictions or sequels
+- Someone who gets paid to drink La Croix
+- A person who uses Google, Stack Overflow, and the Internet a lot
+- **Someone who will never get bored because there's always more to learn and more to improve**
+- A designer
+- Someone who can type a lot of things
+</details>
 
 ### !challenge
 
@@ -86,7 +103,7 @@ As a programmer in a field that changes so quickly, your most valuable asset wil
 
 ### Creative Writer
 ![Art of a brain, one half looks like a circuit board, the other half is colorful art](../assets/what-is-software_study-like-a-programmer_programming-brain-art.png)  
-*Programming is science and art* [(source)](https://www.nicepng.com/ourpic/u2t4u2r5w7e6r5o0_creative-brain-png-two-sides-brain-png/)
+*Programming is science and art*  [(source)](https://www.nicepng.com/ourpic/u2t4u2r5w7e6r5o0_creative-brain-png-two-sides-brain-png/)
 
 Writing software is a creative process. Us programmers work with abstract data and concepts. We organize, arrange, transform, and orchestrate data. We take input, and use creativity and logic with the constraints we're given, and make beautiful output.
 
@@ -97,7 +114,7 @@ A maybe-helpful analogy: If our jobs were to paint color-by-numbers, we could pr
 <!-- ![Illustration of person and their brain](../assets/what-is-software-development_study-like-a-programmer_brain.jpg)  
 [(source)](https://pixabay.com/illustrations/brain-binary-silhouette-head-5930645/) -->
 
-<img src="../assets/what-is-software-development_study-like-a-programmer_brain.jpg" alt="Illustration of person and their brain looking away at incoming binary text">
+<img src="../assets/what-is-software-development_study-like-a-programmer_brain.jpg" alt="Illustration of person and their brain looking away at incoming binary text">  
 [(source)](https://pixabay.com/illustrations/brain-binary-silhouette-head-5930645/)
 
 
