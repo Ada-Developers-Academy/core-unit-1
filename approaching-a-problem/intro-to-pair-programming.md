@@ -43,6 +43,9 @@ When two people collaborate and pair, it often results in:
 - mitigating the <abbr title="How many of your team would have to win the lottery for you to be unable to function?">"Lottery Factor"</abbr> AKA the <abbr title="Like the 'Lottery Factor' but instead they get hit by a bus">"Bus Factor"</abbr>
 
 ## The Process of Pair Programming
+![Patrick and Spongebob drawing](../assets/approaching-a-problem_pair-programming_collaborative-problem-solving.png)  
+[(source)](https://www.facebook.com/patrickstar/photos/pretty-good-spongebob-but-its-lacking-basic-construction-and-your-perspective-le/10151824823840951/)
+
 
 When two developers begin a session of pair programming, they should begin the process by talking about the goal of the session. **Often, the goal of pair programming is to learn or explore.**
 
@@ -65,6 +68,9 @@ You can still accomplish pair programming remotely by following the principles a
 There are many software solutions you can use to make remote pairing go smoothly but even something as simple as screen sharing during a video call can do the trick.
 
 You can also use some tools specifically made for remote pairing. If developing in VS Code, [VS Code's plugin Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is an example of one of these tools. Tools like these will make it easier to do hand off between driving and navigating like you would if you were sitting next to each other in person.
+
+![Audrey and Claire on VS Code Liveshare](../assets/approaching-a-problem_pair-programming_vs-code-liveshare.png)  
+[(source)](https://www.monkeyuser.com/2020/pair-programming/)
 
 ### Rotating Roles
 
@@ -107,6 +113,9 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 > — [Lauren Mendoza, Humans’ Guide to Pair Programming](https://medium.com/@loorinm/pair-programming-b5fa56744a0f)
 
 ### 10 Ways to Improve Your Pairing Experience
+
+![Excited Patrick and Spongebob Raising arms](../assets/approaching-a-problem_pair-programming_improve-pairing-experience.jpg)  
+[(source)](https://nerdist.com/article/spongebob-squarepants-spinoff-patrick-star-show/)
 
 1. Do not centralize driving
 1. Manage the focus together
