@@ -1,5 +1,7 @@
 # Intro to Debuggers
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=e8b3ff4f-30e0-40cd-a8be-ace200624dca&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Introduction
 
 In the past we've used a few tools for debugging our Python code.  This has included:
