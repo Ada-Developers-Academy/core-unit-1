@@ -479,56 +479,6 @@ Compare the correct `for` loop to the other answers and try explaining why they 
 
 <!-- prettier-ignore-start -->
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
-<!-- Replace everything in square brackets [] and remove brackets  -->
-
-### !challenge
-
-* type: code-snippet
-* language: python3.6
-* id: 85dffbd3-2030-44b4-8b9f-cc86f0c7e9d1
-* title: While Loops
-
-##### !question
-
-Let's implment
-
-##### !end-question
-
-##### !placeholder
-
-[the code below is the starting code in the web editor]
-```py
-def sidewinder(number_list):
-    pass
-```
-
-##### !end-placeholder
-
-##### !tests
-
-[the unit tests below will run against the student submission]
-```py
-import unittest
-import main
-
-class TestPython1(unittest.TestCase):
-  def test_one(self):
-    self.assertEqual(1,p.doSomething())
-```
-
-##### !end-tests
-
-<!-- other optional sections -->
-<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
-<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
-<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
-
-### !end-challenge
-
-<!-- ======================= END CHALLENGE ======================= --><!-- prettier-ignore-end -->
-
-<!-- prettier-ignore-start -->
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 
 ### !challenge
 
@@ -571,6 +521,110 @@ This implementation uses `while True: ...` to run the loop forever. It exits the
 
 <!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
+
+
+<!-- prettier-ignore-start -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: code-snippet
+* language: python3.6
+* id: 85dffbd3-2030-44b4-8b9f-cc86f0c7e9d1
+* title: While Loops
+
+##### !question
+
+Let's implement a function called `sidewinder`. It will take a parameter `number_list` which contains a list of _next indices_ to visit. Starting from position `0`, we will look in the current position, get the value stored there, and use it as the _next_ position to visit. We will continue doing this until we find a value of `0`, which means we have found the end of the index chain. Then we'll return the position where we found the `0`.
+
+For example, if we received `[2, 0, 1]` as our `number_list`, starting from position `0` we find a `2`. We look in position `2` and find a `1`. So we look in position `1` and find `0`. `0` marks the end of the chain, so we return `1`, the position we just looked in.
+
+The diagram below shows a longer example. Notice that there are _multiple_ zeros in the list, so we _cannot_ iterate through in order and return the position of the first zero that we find.
+
+<div style="max-width: 700px; margin: 0 auto -28px auto; text-align: center;">
+<img alt="How to interpret the array input to sidewinder" src="../assets/while-loops_problem-set-while-loops_sidewinder.png">
+</div>
+*Fig. Given the list `[4, 9, 0, 0, 1, 8, 0, 0, 11, 5, 0, 10]` for `number_list`, this diagram shows how to move through the list values to find the 'end.' Starting from index `0`, we find the value `4`. We go to index `4` where we find the value `1`. We go to index `1` where we find the value `9`, and so on. Eventually we reach index `10` where we find the value `0`, so this is the end and the result is `10`.*
+
+Provide an implementation for `sidewinder` so that it
+- follows the chain of indices to the end, and
+- returns the position of the end of the chain
+
+You may assume that `number_list` will never be an empty list, and that all of the values in the list are valid indices (none will be below zero, or be beyond the end of the list).
+
+##### !end-question
+
+##### !placeholder
+
+```python
+def sidewinder(number_list):
+    pass
+```
+
+##### !end-placeholder
+
+##### !tests
+
+```py
+import unittest
+import main
+
+class TestPython1(unittest.TestCase):
+  def test_one(self):
+    self.assertEqual(0, main.sidewinder([0]))
+
+  def test_two(self):
+    self.assertEqual(1, main.sidewinder([2, 0, 1]))
+
+  def test_three(self):
+    self.assertEqual(10, main.sidewinder([4, 9, 0, 0, 1, 8, 0, 0, 11, 5, 0, 10]))
+```
+
+##### !end-tests
+
+##### !hint
+
+It may be useful to print out the positions you visit and the final position where the end of the list is to help think about this problem. Any print statements you add will not affect the test results. Even if you _do_ print the final position, be sure to also _return_ it!
+
+##### !end-hint
+
+##### !explanation
+
+An example of a working implementation:
+
+```python
+def sidewinder(number_list):
+    # set our starting position
+    next_position = 0
+
+    # iterate as long as the next position value is not 0
+    while number_list[next_position] != 0:
+        # update the next position value
+        next_position = number_list[next_position]
+
+    # return the position of the end of the chain
+    return next_position
+```
+
+Read through this version and compare to yours. What's the same? What's different? Are there even more ways to approach this problem?
+
+<br />
+
+For extra challenge, consider how we might handle bad inputs, like a missing or empty list. What if the list _does_ contain values that aren't valid indices? Or what if there's a loop in the indices like in `[1, 2, 1]`. Can you write a version of `sidewinder` which instead of returning the end of the chain, returns `True` if it visits _every_ position in the list, and `False` otherwise?
+
+<br />
+
+Be creative!
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- prettier-ignore-end -->
+
+### A Little Helper for the Next Question
 
 The following coding question uses a helper function called `input_int`.  It works just like the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except that instead of returning a string, we will assume that it returns an integer.
 
@@ -671,7 +725,7 @@ A possible interaction with a user could look like this:
 > Enter an integer (0 to stop): 1<br />
 > The sum is: 1001
 
-Note that the final sum line is not a listed requirement, but feel free to add additional output to your implementation to help think through the problem. It will not affect the results of the tests.
+Note that printing the final sum line is not a listed requirement, but feel free to add additional output to your implementation to help think through the problem. It will not affect the results of the tests. Even if you _do_ print out the final sum, be sure to also _return_ it!
 
 #### !end-hint
 
@@ -704,7 +758,13 @@ def silly_sum():
 
 Read through this version and compare to yours. What's the same? What's different? Are there even more ways to approach this problem?
 
-For some extra challenge, on your own, try modifying `silly_sum` so that you can pass in the stop value and maximum sum as parameters. This would allow us to say that 1 is the stop value instead of 0. How does this affect the code? Does anything else need to change? We could also say that the maximum sum is -1000! What changes does that cause?  Simple changes can sometimes have complicated effects. Play around a bit and see what you can build!
+<br />
+
+For some extra challenge, on your own, try modifying `silly_sum` so that you can pass in the stop value and maximum sum as parameters. This would allow us to say that 1 is the stop value instead of 0. How does this affect the code? Does anything else need to change? We could also say that the maximum sum is -1000! What changes does that cause?  
+
+<br />
+
+Simple changes can sometimes have complicated effects. Play around a bit and see what you can build!
 
 #### !end-explanation
 

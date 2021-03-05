@@ -264,6 +264,10 @@ Standards:
         Type: Lesson
         UID: KyZkme
         Path: /while-loops/while-loops.md
+      -
+        Type: Lesson
+        UID: 3302a20d
+        Path: /while-loops/problem-set-while-loops.md
   -
     Title: Exception Handling
     Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Problem Set: Exception Handling"
