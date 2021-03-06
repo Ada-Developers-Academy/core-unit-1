@@ -551,7 +551,7 @@ Provide an implementation for `sidewinder` so that it
 - follows the chain of indices to the end, and
 - returns the position of the end of the chain
 
-You may assume that `number_list` will never be an empty list, and that all of the values in the list are valid indices (none will be below zero, or be beyond the end of the list).
+You may assume that `number_list` will never be an empty list, and that all of the values in the list are valid indices in the list.
 
 ##### !end-question
 
