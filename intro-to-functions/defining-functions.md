@@ -26,7 +26,7 @@ If, in a given project, we want to **define** our own reusable chunks of code, t
 
 Remember, functions do things, and have a responsibility to do certain things when they are called.
 
-![Fish thinking about shapes](../assets/intro-to-functions_defining-functions_functions-responsiblity-shapes.png)  
+![Fish thinking about shapes](../assets/intro-to-functions_defining-functions_function-responsibility.png)  
 [(source)](https://www.popmatters.com/queering-the-sponge-the-transcendent-queerness-of-spongebob-squarepants-2495410105.html)
 
 Before we create a function, we should do our best to determine:
