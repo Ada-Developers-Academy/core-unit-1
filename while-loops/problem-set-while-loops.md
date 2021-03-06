@@ -626,7 +626,7 @@ Be creative!
 
 ### A Little Helper for the Next Question
 
-The following coding question uses a helper function called `input_int`.  It works just like the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except that instead of returning a string, we will assume that it returns an integer.
+The following coding question uses a helper function called `input_int`. It works just like the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except that instead of returning a string, we will assume that it returns an integer.
 
 In the question block below, we don't need to define `input_int`. We can assume that it is available, the same way `input` is available.
 
