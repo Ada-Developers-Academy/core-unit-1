@@ -8,17 +8,29 @@
 
 Different contexts call for different methods of programming: sometimes it's best to pair, and sometimes it's best to work solo.
 
+![Comic of two coworkers deciding to pair program](../assets/approaching-a-problem_pair-programming_pair-meme.png)  
+[(source)](https://www.monkeyuser.com/2020/pair-programming/)
+
+
 ## Pair Programming is Collaborative Problem-Solving
 
 Pair programming is a method of programming in which two people problem-solve together on the same code simultaneously. Typically, during a pair-programming session, the two people trade and alternate the two roles "drive" and "navigator."
 
 The driver is responsible for using the keyboard and mouse. This usually means this person types code and navigates the project.
 
+![Comic of two coworkers deciding to pair program](../assets/approaching-a-problem_pair-programming_driver-navigator.jpeg)  
+[(source)](https://medium.com/swlh/writing-code-efficiently-with-a-partner-e9c969674a3b)
+
+
 The navigator is responsible for guiding the problem-solving process. The navigator actively reviews each line of code as it is typed, checks for errors, and thinks about the overall solution and how to get there.
 
 ### It Benefits Everyone
 
 Study after study states that software built with the pair-programming process often has higher quality code than code written solo.
+
+![Patrick and Spongebob](../assets/approaching-a-problem_pair-programming_spongebob-patrick.jpg)  
+*Fig. A great pair makes a great team* [(source)](https://spongebob.fandom.com/wiki/Patrick-SpongeBob_relationship)
+
 
 When two people collaborate and pair, it often results in:
 
@@ -31,6 +43,9 @@ When two people collaborate and pair, it often results in:
 - mitigating the <abbr title="How many of your team would have to win the lottery for you to be unable to function?">"Lottery Factor"</abbr> AKA the <abbr title="Like the 'Lottery Factor' but instead they get hit by a bus">"Bus Factor"</abbr>
 
 ## The Process of Pair Programming
+![Patrick and Spongebob drawing](../assets/approaching-a-problem_pair-programming_collaborative-problem-solving.png)  
+[(source)](https://www.facebook.com/patrickstar/photos/pretty-good-spongebob-but-its-lacking-basic-construction-and-your-perspective-le/10151824823840951/)
+
 
 When two developers begin a session of pair programming, they should begin the process by talking about the goal of the session. **Often, the goal of pair programming is to learn or explore.**
 
@@ -52,7 +67,10 @@ You can still accomplish pair programming remotely by following the principles a
 
 There are many software solutions you can use to make remote pairing go smoothly but even something as simple as screen sharing during a video call can do the trick.
 
-You can also use some tools specifically made for remote pairing. If developing in VS Code, [VS Code's plugin Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is an example of one of these tools. Tools like these will make it easier to do hand off between driving and navigating like you would if you were sitting next to each other in person.
+You can also use some tools specifically made for remote pairing. If developing in VS Code, [VS Code's plugin Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is an example of one of these tools. The Live Share extension allows teams to write code, debug, chat, and have audio calls in Visual Studio Code. in Tools like these will make it easier to do hand off between driving and navigating like you would if you were sitting next to each other in person.
+
+![Audrey and Claire on VS Code Liveshare](../assets/approaching-a-problem_pair-programming_vs-code-liveshare.png)  
+*Fig. Audrey and Claire collaborating on VS Code* [(source)](https://www.monkeyuser.com/2020/pair-programming/)
 
 ### Rotating Roles
 
@@ -96,6 +114,9 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 
 ### 10 Ways to Improve Your Pairing Experience
 
+![Excited Patrick and Spongebob Raising arms](../assets/approaching-a-problem_pair-programming_improve-pairing-experience.jpg)  
+[(source)](https://nerdist.com/article/spongebob-squarepants-spinoff-patrick-star-show/)
+
 1. Do not centralize driving
 1. Manage the focus together
 1. Avoid working alone
@@ -118,7 +139,7 @@ A common pattern is to set a timer for thirty minutes, and to switch roles every
 
 * type: short-answer
 * id: 4810dbd6-286c-4eb9-976e-4480811114f1
-* title: [text, a short question title]
+* title: Pair Programming Tools
 <!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
 <!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
 
