@@ -255,7 +255,7 @@ Standards:
         Path: /nested-data-and-nested-loops/nested-loops.md
   -
     Title: While Loops
-    Description: While Loops
+    Description: "While Loops, Problem Set: While Loops"
     UID: 3P0q44
     SuccessCriteria:
       - success criteria
