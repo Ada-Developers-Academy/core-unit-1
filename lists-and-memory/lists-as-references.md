@@ -1,6 +1,6 @@
 # Lists As References
 
-## Goal
+## Learning Goals
 
 - Explain the impact of lists as references in a function call
 - Identify functions with side effects
