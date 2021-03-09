@@ -66,7 +66,13 @@ winners = [81, 231, 12]
 - `is_enabled` is a variable that refers to the object `True` in memory
 - `winners` is a variable that refers to the object `[81, 231, 12]` in memory
 
+![Diagram of hello_world, current, is_enabled and winners variables](../assets/functions-continued_variables-are-references_vars-are-references.png)
+
+
 ## An Analogy: Variables and Valet Parking
+
+![Strange Planet by Nathan W. Pyle, comic about parking](../assets/functions-continued_variables-are-references_parking-comic.jpeg)  
+[(source)](https://twitter.com/nathanwpyle/status/1289704708869771264)
 
 Variables and their values can be described like valet parking services.
 
@@ -162,6 +168,8 @@ id of apples: 4317740336
 id of oranges: 4317740336
 ```
 
+![Diagram of apples and oranges variables](../assets/functions-continued_variables-are-references_ref-to-same-object.png)
+
 From this output, we see that `apples` and `oranges`, share a reference to the **same** object ID. We started by storing a reference to `1000` in `apples`, then assigning that reference to `oranges`. As a result, `apples` and `oranges` both refer to the same object ID.
 
 ### Modifying an Immutable Object Produces a Different Object
@@ -189,6 +197,8 @@ Now the code produces something like this:
 [After modification] id of apples: 4500497616
 [After modification] id of oranges: 4499961936
 ```
+
+![Diagram of modifying immutable variable](../assets/functions-continued_variables-are-references_mod-immutable.png)
 
 As with the previous example, before the increment we see that `apples` and `oranges` both share a reference to the same object ID once more. But _after_ the increment, `apples` refers to the same object ID, while `oranges` refers to a different object ID. We can see that even though incrementing a number may seem like it's modifying the number, it actually gives us a reference to a different number entirely!
 
@@ -219,6 +229,8 @@ This code is similar to the previous example, and it has similar output:
 [After modification] id of apples: 4453532880
 [After modification] id of oranges: 4453533040
 ```
+
+![Diagram of reassignming immutable variable](../assets/functions-continued_variables-are-references_reassignment.png)
 
 Again, before the reassignment, `apples` and `oranges` both refer to the same object ID. After the reassignment, `oranges` refers to a different object ID. So the variable is refering to a completely different object than it started with.
 
@@ -260,6 +272,8 @@ When we run the above code, we may see output like this:
 [After modification] value of mangoes ['hearts', 'stars', 'horseshoes', 'clovers']
 ```
 
+![Diagram of modifying a mutable object](../assets/functions-continued_variables-are-references_mod-mutable.png)
+
 _Even after modification_, the mutable object's object ID remains the same.
 
 ## Multiple References to Mutable Objects
@@ -298,6 +312,8 @@ When we run the above code, we may see output like this:
 id of berries: 4506303040
 id of melons: 4506303040
 ```
+
+![Diagram of multiple references to a mutable object](../assets/functions-continued_variables-are-references_ref-to-mutable.png)
 
 `berries` and `melons` **have the same object ID because they refer to the same object**.
 
@@ -394,6 +410,8 @@ value of berries: ['hearts', 'stars', 'horseshoes', 'clovers']
 value of melons: ['hearts', 'stars', 'horseshoes', 'clovers']
 ```
 
+![Diagram of modifying a mutable object with mutiple references](../assets/functions-continued_variables-are-references_mod-mutable-mult.png)
+
 Re-read through the code slowly, and take notes about how the modification to `berries` affects the value that `melons` points to.
 
 `berries` and `melons` both point to the same object. We modify the object with object ID `4369938880` with `berries.append("clovers")`. We see that the value of `melons` (which also points to the object `4369938880`) is modified as well.
@@ -442,6 +460,8 @@ id of charms: 4460399680
 id of berries: 4460399680
 value of berries: ['hearts', 'stars', 'horseshoes', 'clovers']
 ```
+
+![Diagram of mutable object passed into a function](../assets/functions-continued_variables-are-references_mutable-fn-call.png)
 
 We should observe:
 
@@ -492,6 +512,8 @@ id of score: 4551559440
 id of jackfruit: 4539856336
 value of jackfruit: 222
 ```
+
+![Diagram of immutable object passed into a function](../assets/functions-continued_variables-are-references_immutable-fn-call.png)
 
 We should observe:
 
