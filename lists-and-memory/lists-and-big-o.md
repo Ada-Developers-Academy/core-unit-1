@@ -94,7 +94,7 @@ def find(students, student_name):
 
 The function takes an array as input, but it does not create a new list, and it does not increase the size of the given list.  So this function's space complexity is O(1).
 
-Similarly the function below only ever increases the size of the list by one element.  It always adds one dictionary with two key-value pairs, no matter the size of the input.
+Similarly the function below only ever increases the size of the list by one element.  It always adds one dictionary with two key-value pairs, no matter the size of the input. So this function's space complexity is also O(1).
 
 ```python
 def add_student(students, name, class_name):
@@ -106,7 +106,7 @@ def add_student(students, name, class_name):
     return students
 ```
 
-On the other hand this function **does** allocate more memory as the size of the input increases.
+On the other hand, this function **does** allocate more memory as the size of the input increases.
 
 ```python
 def even_numbers(numbers):
@@ -155,16 +155,16 @@ For example:
 
 <details style="max-width: 700px; margin: auto;">
     <summary>
-        How can you identify the time or space complexity of a Python library function?
+        How can we identify the time or space complexity of a Python library function?
     </summary>
 
-To identify the time/space complexity of a Python library function you could:
+To identify the time/space complexity of a Python library function we can:
 
 * Read the [Python Documentation entry on it](https://docs.python.org/3/tutorial/datastructures.html)
 * Search for the answer in a web search engine (google it)
 * Ask someone either in person or on a site like Stack Overflow
 
-Regardless you may need to make some educated guesses on the function's performance based on the description you read.  Consider, "How would I have to do this?"
+Regardless, we may need to make some educated guesses on the function's performance based on the description we read.  Consider, "How would I have to do this?"
 </details>
 
 ## Summary
