@@ -1,6 +1,6 @@
 # Lists and Memory
 
-## Goal
+## Learning Goal
 
 - Explain how Python structures data into lists
 
@@ -22,7 +22,7 @@ For most of us, Lists were our first _data structure_. Rather than a variable ho
 
 Every time our program stores a value in a variable, it is using _memory_.  Memory or RAM is a part of the computer which functions kind of like a series of post-it-notes on a fridge.  The information is quick to retrieve, and intended to be temporary.  When the program ends or the computer shuts down, information stored in RAM is erased.  Computer programs use memory to store information like variables they need while the program is executing.
 
-You can think of RAM as a series of blocks of memory, each with their own address, very much like the index in a list.
+We can think of RAM as a series of blocks of memory, each with their own address, very much like the index in a list.
 
 ![Memory Addresses](../assets/lists-and-memory/lists-and-memory_lists-and-memory_ram-addresses.png)
 

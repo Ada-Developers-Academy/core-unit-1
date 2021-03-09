@@ -2,9 +2,9 @@
 
 As our first data structure, lists can have a big impact on the time and space efficiency of our applications.  Lists allow us to pass arbitrary amounts of data into our functions so it becomes very important to learn to predict how our algorithms behave as the size of the input lists grow.
 
-## Goals
+## Learning Goals
 
-- Explain how lists can impact time and space complexity
+- Explain how lists can impact time and space complexity.
 - Accurately predict the time and space complexity of a function involving lists.  
 
 ## Time Complexity
@@ -38,7 +38,7 @@ def add_student(students, name, class_name):
 
 The above function takes a list and a couple of arguments, but the function does not take any longer to execute as the list grows larger.
 
-You might think that traversing a list, means that a function's time complexity is usually going to be O(n), but this is not always the case.  
+We might think that traversing a list, means that a function's time complexity is usually going to be O(n), but this is not always the case.  
 
 The following function takes a list of numbers and puts them into sorted order, from smallest to greatest.  What do you think the time complexity is?
 
