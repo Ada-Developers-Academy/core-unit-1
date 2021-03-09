@@ -1,12 +1,12 @@
 # Lists and Memory
 
-## Goal
+## Learning Goal
 
 - Explain how Python structures data into lists
 
 ## Introduction
 
-For most of us Lists were our first _data structure_, that is, rather than a variable holding a single value, Lists hold an arbitrary set of data and provide a structure to organize, access and modify the information.  In this lesson we will examine how lists work behind the scences.  
+For most of us, Lists were our first _data structure_. Rather than a variable holding a single value, Lists hold an arbitrary set of data and provide a structure to organize, access and modify the information.  In this lesson we will examine how lists work behind the scenes.  
 
 
 ## Vocabulary and Synonyms
@@ -15,22 +15,22 @@ For most of us Lists were our first _data structure_, that is, rather than a var
 | --- | --- | --- | ---
 |  List | An ordered list of values. Items in the list are sometimes called elements. Can get the value of an item by using square brackets and the index of the item. | Array | I needed an ordered collection of student names, so I used a list. |
 | Memory | Information and the medium on which it is stored for immediate use by a computing system.  Memory can also refer to the device which stores the information. | RAM (Random Access Memory) | There was too much data to load at once so we ran out of memory. |
-| Reference | A value which enables a program to directly access a datum (a piece of data). | Handle | I passed a reference to the student records into the function |
+| Reference | A value which enables a program to directly access a datum (a piece of data). | Handle | I passed a reference to the student records into the function. |
 | Contiguous | Things that are directly next to one another.  In many languages data in an array is stored in contiguous chunks. | adjacent | It's easier to write a collection of data to media when it is contiguous or adjacent to one another. |
 
 ## Memory
 
-Every time your program stores a value in a variable, it is using _memory_.  Memory or RAM is a part of the computer which functions kind of like a series of post-it-notes on a fridge.  The information is quick to retrieve, and intended to be temporary.  When the program ends or the computer shuts down, information stored in RAM is erased.  Computer programs use memory to store information like variables they need while the program is executing.
+Every time our program stores a value in a variable, it is using _memory_.  Memory or RAM is a part of the computer which functions kind of like a series of post-it-notes on a fridge.  The information is quick to retrieve, and intended to be temporary.  When the program ends or the computer shuts down, information stored in RAM is erased.  Computer programs use memory to store information like variables they need while the program is executing.
 
-You can think of RAM as a series of blocks of memory, each with their own address, very much like the index in a list.
+We can think of RAM as a series of blocks of memory, each with their own address, very much like the index in a list.
 
 ![Memory Addresses](../assets/lists-and-memory/lists-and-memory_lists-and-memory_ram-addresses.png)
 
-*Fig. Each location in memory is addressed by a unique id number, like an index in a list.
+*Fig. Each location in memory is addressed by a unique id number, like an index in a list.*
 
 Different types of data can take up different amounts of memory and the size of each unit of memory can depend on the type of computer system.
 
-In the version of Python we are using CPython, you can see the memory address for data referenced by any variable with the `id` function.
+In the version of Python we are using CPython, we can see the memory address for data referenced by any variable with the `id` function.
 
 ```python
 >>> name = "Aubrey"
@@ -40,7 +40,7 @@ In the version of Python we are using CPython, you can see the memory address fo
 
 ## Variables & References
 
-In python, if you make a variable like:
+In python, if we make a variable like:
 
 ```python
 sales_tax = 0.09
@@ -52,7 +52,7 @@ Python connects with the operating system (macOS in our case) and allocates an u
 
 *Fig. A variable in Python stores the location in memory, represented by the arrow, of the actual data.*
 
-Further when you use the equal sign (`=`) assign another variable to `sales_tax` Python simply has the new variable use the same reference and it "refers" to the same value in memory.
+Further when we use the equal sign (`=`) assign another variable to `sales_tax`, Python simply has the new variable use the same reference and it "refers" to the same value in memory.
 
 ```python
 fees = sales_tax
@@ -62,7 +62,7 @@ fees = sales_tax
 
 *Fig. Multiple variables can reference the same data in memory*
 
-You can see the identify that both refer to the same value in memory using our friend the `id` function and see that both variables refer to the same memory address.
+We can identify that both refer to the same value in memory using our friend the `id` function and see that both variables refer to the same memory address.
 
 ```python
 >>> sales_tax = 0.09
@@ -79,7 +79,7 @@ Lists are no different except that instead of a variable containing a reference 
 
 *Fig. Lists reference their elements, indirectly.*
 
-Notice that the section of the List in memory with the small set of blocks next to each other.  Each of those represent a reference.  In Python, a List maintains metadata about the list (Type, length etc) and contiguous chunks of memory which contain _references_ to where the actual data is stored.  So you can think of the data as twice removed from the actual array variable.  A primitive variable like an `int` is like a friend who can show you where their things are, while a list is like a person who can show you to a collection of people, each of whom can direct you to their belongings. 
+Notice the section of the List in memory with the small set of blocks next to each other.  Each of those represent a reference.  In Python, a List maintains metadata about the list (Type, length etc) and contiguous chunks of memory which contain _references_ to where the actual data is stored.  So we can think of the data as twice removed from the actual array variable.  A primitive variable like an `int` is like a friend who can show us where their things are, while a list is like a person who can show us to a collection of people, each of whom can direct us to their belongings. 
 
 ### Indexing
 
@@ -102,14 +102,14 @@ Python can then use the following steps to find any element a list of an arbitra
 1.  Use `start_of_items_collection + size_of_reference * index_number` to find the reference to the given item
 1.  Use the reference to find the given item
 
-Each step is an O(1) operation in time/space complexity and nothing in this algorithm changes as the list gets bigger.  Therefore retrieving an element from a list by it's index number is a very efficient operation.
+Each step is an O(1) operation in time/space complexity and nothing in this algorithm changes as the list gets bigger.  Therefore, retrieving an element from a list by it's index number is a very efficient operation.
 
 <!-- available callout types: info, success, warning, danger, secondary  -->
 ### !callout-warning
 
 ## Caveat
 
-Like many general rules, this is an oversimplification.  Things can get more complicated than we will go into here for huge datasets or environments with limited memory.  As an application developer in Python however, you can assume that looking up an element within a list by an index number is a fast and efficient O(1) operation.
+Like many general rules, this is an oversimplification.  Things can get more complicated than we will go into here for huge datasets or environments with limited memory.  As an application developer in Python however, we can assume that looking up an element within a list by an index number is a fast and efficient O(1) operation.
 
 ### !end-callout
 
@@ -252,7 +252,6 @@ Describe how data is organized in memory.
 ![Example diagram](../assets/lists-and-memory/lists-and-memory_lists-and-memory_exercise-answer.png)
 
 *Fig. A list references the elements indirectly through a collection of references.*
-![Example diagram](../assets/lists-and-memory/llists-and-memory_lists-and-memory_exercise-answer.png)
 
 ##### !end-explanation
 

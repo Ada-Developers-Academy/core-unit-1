@@ -1,6 +1,6 @@
 # Lists As References
 
-## Goal
+## Learning Goals
 
 - Explain the impact of lists as references in a function call
 - Identify functions with side effects
@@ -142,7 +142,7 @@ def shorten_names(names):
 
 Because lists internally contain references to the elements stored in them, it is possible for a parameter to modify the elements of a list passed as a parameter.  When this happens it is called a _side effect_.  Side effects can be useful, but they can also be problematic because they make our programs harder to test, and provide an avenue for subtle and hard to diagnose bugs enter our applications.  In general we try to avoid introducing side effects.
 
-## Learning Comprehension
+## Check for Understanding
 
 
 
