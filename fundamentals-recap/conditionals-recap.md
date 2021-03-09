@@ -1,5 +1,7 @@
 # Conditionals Recap
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=dfeb8473-fdde-419f-bbc7-ace30005c680&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Define truthiness and falsiness
@@ -155,13 +157,14 @@ When there are multiple kinds of operators in a single conditional expression, o
 
 This is an abbreviated list of operators in their "operator precedence" order, where 1 has the highest precedence and will be evaluated before the second. 2 has the second-highest precedence and is evaluated before 3, etc.
 
-1. `or`
-1. `and`
-1. `not`
-1. `in`, `not in`, `is`, `is not`, `<`, `<=`, `>`, `>=`, `!=`, `==`
-1. `+`, `-`
-1. `*`, `/`, `//`, `%`
+1. `()`
 1. `**`
+1. `*`, `/`, `//`, `%`
+1. `+`, `-`
+1. `in`, `not in`, `is`, `is not`, `<`, `<=`, `>`, `>=`, `!=`, `==`
+1. `not`
+1. `and`
+1. `or`
 
 Operators in the equal levels of precedence are evaluated left-to-right.
 
@@ -172,12 +175,12 @@ Expressions that are grouped together in parentheses `()` will always only get e
 Consider these examples that all evalute to `True`:
 
 ```python
-( 100 > 3 ) == ( 5 < 6 )
-not ( 3 > 100 )
-( 5 * 5 ) > ( 20 + 4)
-True != ( not True )
-False or (not ( 3 > 100 ))
-False or (( 3 > 100 ) or not False)
+not 6 - 2 * 3
+not 3 > 100
+5 * 5  > 20 + 4
+not True != True 
+not 3 > 100 or False
+3 > 100 or not False or False
 ```
 
 ## Check for Understanding

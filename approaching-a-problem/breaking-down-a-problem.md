@@ -48,6 +48,9 @@ There are even more questions we can ask! From these questions, let's say that f
 
 Did any of these questions and answers touch on things you would have otherwise assumed?
 
+![Possible question tree](../assets/approaching-a-problem_breaking-down-a-problem_question-tree.png)  
+*Fig. Example of a possible question tree*
+
 #### Create sub-problems
 
 Now that we have more clarity about our situation, we can start to **break down this problem into sub-problems and steps.** We could start to solve our dinner dilemma with these steps:
@@ -78,6 +81,9 @@ For our example, we might start by thinking:
 
 #### Begin Solving One Sub-problem
 
+![Thinking Cat](../assets/approaching-a-problem_breaking-down-a-problem_thinking-cat.png)  
+[(source)](https://www.memedroid.com/memes/detail/728159)
+
 Now that we have some ideas, we can pick one sub-problem and one strategy. Then, we begin working on one possible solution. We might begin to solve a sub-problem like so:
 
 Go shopping for the ingredients we need:
@@ -101,6 +107,9 @@ Then, we should **repeat** these steps for different sub-problems until we have 
 4. Hypothesize ideas for the solution
 5. Solve a sub-problem. When programming, this is where we write code!
 6. Repeat steps necessary
+
+![Problem solving cycle](../assets/approaching-a-problem_breaking-down-a-problem_summarize-steps.png)  
+*Fig. Problem solving cycle*
 
 ## Working First, Improve Second
 

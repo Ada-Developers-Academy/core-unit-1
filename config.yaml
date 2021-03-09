@@ -148,7 +148,7 @@ Standards:
         Path: /intro-to-functions/problem-set-intro-to-functions.md
   -
     Title: Functions, Continued
-    Description: "Variable Scope, How to Read Documentation, Problem Set: Functions Continued"
+    Description: "Variable Scope, How to Read Documentation, Variables Are References, Problem Set: Functions Continued"
     UID: 6736abef6aad93ad0fdb8d10e1849b62
     SuccessCriteria:
       - success criteria
@@ -161,6 +161,10 @@ Standards:
         Type: Lesson
         UID: 0ea7bd4c9be9469bd0232744edf2a80d
         Path: /functions-continued/how-to-read-documentation.md
+      -
+        Type: Lesson
+        UID: MlpE4r
+        Path: /functions-continued/variables-are-references.md
       -
         Type: Lesson
         UID: POpDU4
@@ -280,6 +284,30 @@ Standards:
         Type: Lesson
         UID: 36a61d83-b47f-414f-a6f0-3bd4331e713f
         Path: /lists-and-memory/lists-and-memory-problem-set.md
+  -
+    Title: Intermediate Python Debugging
+    Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Problem Set: Using Debugger"
+    UID: eb702636-a782-4ed3-8fb5-daca0aea5206
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson    
+        UID: 26f0b589-cb0f-4539-a4a6-1cb64f9ee28b
+        Path: /intermediate-python-debugging/intro-to-debuggers.md
+      -
+        Type: Lesson
+        UID: 506303a8-2fab-4283-98b3-9b4576721620
+        Path: /intermediate-python-debugging/debugging-with-vs-code.md
+      -
+        Type: Lesson
+        UID: 0cf83e0c-4483-4a15-8713-f35c425a16e1
+        Path: /intermediate-python-debugging/debugging-with-pytest.md
+      -
+        Type: Lesson
+        UID: a8e761cc-0d1f-49f9-a80a-6d2f79579a04
+        Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
+>>>>>>> 1656b69a5e4e4b3525e3e761ba0dd99806aaf5ff
   -
     Title: While Loops
     Description: While Loops

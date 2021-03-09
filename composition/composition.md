@@ -1,16 +1,18 @@
 # Composition
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=18e3de8f-d85b-42e5-9f9d-acdf017fdebb&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Use attributes to create composition between two classes
 - Define one-to-one and one-to-many composition relationships
-- Use instance methods to access instances of objects composed inside another object
+- Use instance methods on objects composed inside other objects
 
 ## Vocabulary and Synonyms
 
 | Vocab <div style="width:100px;">| Definition |Synonym|How to Use in a Sentence |
 | ----- | ---------- |----|------------------------ |
-| One-to-one | One composite object is associated with one component object  | has-a |On an e-commerce site, each order has a *one-to-one* relationship with each shipment (destination address, tracking number, etc). <br/> In a gradebook application, each student *has a* final grade. <br/> On a social media platform, each user *has a* profile picture|
+| One-to-one | One composite object is associated with one component object  | has-one |On an e-commerce site, each order has a *one-to-one* relationship with each shipment (destination address, tracking number, etc). <br/> In a gradebook application, each student *has one* final grade. <br/> On a social media platform, each user *has one* profile picture|
 | One-to-many | One composite object is associated with a collection of component objects. | has-many | In a gradebook application, one class *has many* students and *has many* assignments. <br/> On a social media platform, one user has a *one-to-many* relationship with posts.|
 
 ## Initializing Components as Attributes in the Constructor
@@ -190,7 +192,7 @@ class ExampleComposite:
 
 Note that `components` is a list of `component` objects. As usual, we use good naming, here the plural `components`, to help us remember what we expect an attribute to contain.
 
-## A Longer Example: Product and ShoppingCart
+## A Longer Example: Product, ShippingAddress, and ShoppingCart
 
 Let's look at one more example of one-to-one and one-to-many composition relationships.
 
@@ -206,12 +208,12 @@ class Product:
 
 class ShippingAddress:
 
-    def __init__(self, name, street_address, city, state, zip):
+    def __init__(self, name, street_address, city, state, zip_code):
         self.name = name
         self.street_address = street_address
         self.city = city
         self.state = state
-        self.zip = zip
+        self.zip_code = zip_code
 
 class ShoppingCart:
 
@@ -228,7 +230,7 @@ class ShoppingCart:
 
         return total_price
 
-    def.summary(self):
+    def summary(self):
         return f"{len(self.products)} products will be shipped to {self.shipping_address.name}."
 ```
 
@@ -243,7 +245,7 @@ ravis_address = ShippingAddress(
     street_address="123 John St", 
     city="Seattle",
     state="WA",
-    zip="98112"
+    zip_code="98112"
     )
 
 sc = ShoppingCart(products, ravis_address)

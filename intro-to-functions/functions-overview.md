@@ -67,6 +67,9 @@ Functions are lines of code that:
 - return a result
 - are reusable
 
+![Function diagram](../assets/intro-to-functions_functions-overview_box-metaphor.png)  
+*Fig. Function diagram*
+
 ### Functions Hold Logic
 
 Functions hold lines of logic!
@@ -84,6 +87,10 @@ This logic is typically related to each other.
 
 A function can hold logic such as this.
 
+![Functions hold logic](../assets/intro-to-functions_functions-overview_temp1.png)  
+*Fig. Functions hold logic*
+
+
 ### Functions Usually Have Names
 
 Almost every function has a name.
@@ -97,6 +104,9 @@ This name is how we will use, define, and talk about the function.
 - `convert_to_f`
 
 Or anything else!
+
+![Functions have a name](../assets/intro-to-functions_functions-overview_temp2.png)  
+*Fig. Functions have a name*
 
 ### Invoking, Executing, Running Functions
 
@@ -126,6 +136,9 @@ This function **takes in** data. Then, the function uses the data inside of its 
 
 **Look at this example:** For a function named `convert_temperature`, that converts **any** temperature in celsius to fahrenheit, we want the function `convert_temperature` to **take in** one piece of data: a temperature in celsius.
 
+![Functions take in data](../assets/intro-to-functions_functions-overview_temp3.png)  
+*Fig. Functions take in data*
+
 ### Functions Return a Result
 
 Functions return a result from the function. The result is a piece of data.
@@ -133,6 +146,9 @@ Functions return a result from the function. The result is a piece of data.
 When a function **runs** and executes its logic, we can tell functions to do something special: return a result _back_ to the line of code that ran the function in the first place.
 
 **Look at this example:** For our function `convert_temperature`, we want the function to **return the result** of one piece of data: a temperature in fahrenheit.
+
+![Functions return a result](../assets/intro-to-functions_functions-overview_temp4.png)  
+*Fig. Functions return a result*
 
 ### Functions Are Reusable
 
@@ -147,6 +163,9 @@ We should be able to **reuse** the exact same `convert_temperature` function log
 - 85 degrees celsius to 185 degrees fahrenheit
 - 25 degrees celsius to 75 degrees fahrenheit
 - 0 degrees celsius to 32 degrees fahrenheit
+
+![Functions are reusable](../assets/intro-to-functions_functions-overview_temp5.png)  
+*Fig. Functions are reusable*
 
 ## Single Responsibility Principle on Functions
 
