@@ -52,9 +52,15 @@ Technically, we can say a package is a collection of Python modules, and every `
 
 ### Where Do Packages Come From?
 
+![Comic about where babies come from by @MrLovenstein](../assets/intro-to-tests_packages-and-managing-packages_baby-comic.png)  
+[(source)](https://www.mrlovenstein.com/comic/906)
+
 Packages come from people! Packages are designed, built, and maintained by other Python programmers. Some packages are built by large teams, many are built by one person.
 
 Packages are **distributed** through a packaging index, or a center of packages. The dominant packaging index is [**The Python Package Index (PyPI)**](https://pypi.org/). PyPI is a place where programmers can find, install, and publish Python packages.
+
+![PyPI Logo](../assets/intro-to-tests_packages-and-managing-packages_pypi.png)  
+[(source)](https://pypi.org/)
 
 It requires setup, but anyone can release their package to PyPI!
 
@@ -88,6 +94,9 @@ A worst-case scenario for a developer is broken code that is failing because of 
 **Example:** Arya has released a Python package that calculates how many days until her birthday as version 1.0. Francesca is working on a project that calculates how many days until her half birthday, and it uses Arya's package at version 1.0. If Arya changes her package and erases all of the code, and releases it as version 1.1, what happens to Francesca's project? Francesca's project will fail if it uses version 1.1, but will be okay if it continues to use version 1.0
 
 ## Using And Managing Packages With `pip`
+
+![Pip Logo](../assets/intro-to-tests_packages-and-managing-packages_pip.png)  
+[(source)](https://github.com/topics/pip)
 
 [`pip`](https://pypi.org/project/pip/) is a package that is a package installer. With `pip`, we will be able to install any package that is on PyPI.
 
