@@ -110,6 +110,8 @@ JSON is relevant when:
 - We need to send data to another piece of software, and we aren't sure what data format is compatible, so we choose JSON as a common format
 - We want to practice reading nested data structures
 
+![JSON data moving between webpage and server](../assets/representing-data_data-and-json_json-moving.png)
+
 ### !callout-info
 
 ## JSON Alternatives

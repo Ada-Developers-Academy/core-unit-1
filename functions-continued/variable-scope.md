@@ -91,6 +91,8 @@ Most of the variables in our short examples so far have actually been _global_ v
 
 ### Functions Create New Local Variable Scope
 
+![Function scope diagram](../assets/functions-continued_variable-scope_scope-diagram.png)
+
 Local variables defined inside of a function only have scope **within that function.**
 
 If we try to access a variable that was scoped to a function, we will get our predicted `NameError`.
