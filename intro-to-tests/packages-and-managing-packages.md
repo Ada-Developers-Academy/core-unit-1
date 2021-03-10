@@ -61,7 +61,6 @@ Packages are **distributed** through a packaging index, or a center of packages.
 
 ![PyPI Logo](../assets/intro-to-tests_packages-and-managing-packages_pypi.png)  
 *Fig. The logo of the Python Package Index (PyPI, pronounced Pie-Pea-Eye). [(source)](https://pypi.org/)*  
-This contrasts with PyPy (pronounced Pie-Pie), which is a just-in-time Python compiler.
 
 It requires setup, but anyone can release their package to PyPI!
 
@@ -97,7 +96,7 @@ A worst-case scenario for a developer is broken code that is failing because of 
 ## Using And Managing Packages With `pip`
 
 ![Pip Logo](../assets/intro-to-tests_packages-and-managing-packages_pip.png)  
-*Fig. Pip logo [(source)](https://github.com/topics/pip)*
+[(source)](https://github.com/topics/pip)
 
 [`pip`](https://pypi.org/project/pip/) is a package that is a package installer. With `pip`, we will be able to install any package that is on PyPI.
 
