@@ -143,6 +143,15 @@ Conditional expressions can grow in size and complexity. How do we determine tha
 
 Generally, conditional expressions are evaluated from left-to-right, and each expression with one operator resolves first before moving to the next operator.
 
+### !callout-danger
+
+## Correction Notice
+The following crossed-out content is incorrect in Python, but _does_ apply to many other languages. For a fuller explanation of interpreting conditional expressions with multiple relational operators in Python, refer to the _Chaining Relational Operators of Equal Priority_ section later in this lesson.
+
+### !end-callout
+
+<strike>
+
 Consider, which evalutes to `False`:
 
 ```python
@@ -150,6 +159,8 @@ Consider, which evalutes to `False`:
 ```
 
 First, `10 < 2` is evaluated to `False`. Then, we consider `False` to be the left side of the next operator, and evaluate `False > True`. `False > True` evaluates to `False`. Therefore, the entire expression is `False`.
+
+</strike>
 
 ### Different Operators Have Priority
 
@@ -172,16 +183,74 @@ Operators in the equal levels of precedence are evaluated left-to-right.
 
 Expressions that are grouped together in parentheses `()` will always only get evaluated together.
 
-Consider these examples that all evalute to `True`:
+### Example Comparisons
+
+Consider these examples that all evaluate to `True`:
 
 ```python
 not 6 - 2 * 3
 not 3 > 100
-5 * 5  > 20 + 4
+5 * 5 > 20 + 4
 not True != True 
 not 3 > 100 or False
 3 > 100 or not False or False
 ```
+
+### !callout-success
+
+## Additional Content
+The following content was added to give a fuller look at how chaining multiple relational operators is handled in Python.
+
+### !end-callout
+
+### Chaining Relational Operators of Equal Priority
+
+Python treats the group of relational operators—the group containing `<`, `<=`, `>`, `>=`, `!=`, `==`, `in`, `not in`, `is`, and `is not`—a little differently from other operators.
+
+Consider the following, which evaluates to `True`:
+
+```python
+1 < 2 < 3
+```
+
+In this case, the usual left-to-right reading appears to give us the expected result. `1 < 2` is `True`, and `True` when interpreted as an `int` is `1`, which is less than `3`, resulting in `True`.
+
+**This is misleading.**
+
+Consider this example, which also evaluates to `True`:
+
+```python
+1 < 2 == 2
+```
+
+If we try to apply the left-to-right rule, we would see that `1 < 2` is `True`, but `True` does _not_ equal `2`, so this should evaluate to `False`. **But it evaluates to `True`.**
+
+Python interprets this expression more like:
+
+```python
+1 < 2 and 2 == 2
+```
+
+Now we have operators with different precedence, so we evaluate the expressions on either side of the `and` first, and then combine the results. Since both `1 < 2` and `2 == 2` are `True`, the whole expression is `True`!
+
+Chaining relational operators like this can be a little confusing, especially if we start chaining more than two in a row.
+
+The most common way this chaining is used is to check whether a value is between two other values, as in:
+
+```python
+low = int(input('Enter a lower bound: '))
+high = int(input('Enter an upper bound: '))
+num = int(input('Enter another number: '))
+
+if low < num < high:
+    print(f'{num} is between {low} and {high}')
+else:
+    print(f'{num} is not between {low} and {high}')
+```
+
+The above code prompts the user for a lower and upper bound and then reports whether a third number is between them. (Error checking has been omitted for clarity.)
+
+Other uses of multiple relational operators should be considered very carefully, and only used when we're sure there is little chance of confusing anyone else reading our code.
 
 ## Check for Understanding
 
