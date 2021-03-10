@@ -68,7 +68,8 @@ The function `map_character_frequency` takes in a list of words. In the function
 
 We then loop through every character in each `word`. Each character is represented with the variable `character`. For every character, we will run this set of instructions: we'll check whether it's in our `char_map` dictionary as a key already. If it is _not_ in the `char_map` dictionary already, then this is the first time we're seeing it, and it should be added to the dictionary as a key with a value of one. Otherwise, it's already in the dictionary, and we must increment the frequency count.
 
-![Diagram illustrating nested loops: words is a list containing "red", "orange", "yellow", "green". word is a string with the characters "o", "r", "a", "n", "g", "e". character has the value "a". char_map has the key-value pairs "r": 2, "e": 1, "d": 1, "o": 1.](../assets/nested-loops_nested-loops.png)
+![Diagram illustrating nested loops: words is a list containing "red", "orange", "yellow", "green". word is a string with the characters "o", "r", "a", "n", "g", "e". character has the value "a". char_map has the key-value pairs "r": 2, "e": 1, "d": 1, "o": 1.](../assets/nested-data-and-nested-loops_nested-loops_counting-chars.png)  
+*Fig. This diagram shows the state of the algorithm partway through. We see the __`words`__ list in the cyan table to the left. The __`word`__ loop control variable is referring to the __`"orange"`__ string, shown just to the right in orange. We see that strings are themselves iterable, and the __`character`__ loop control variable is referring to the __`"a"`__ in __`"orange"`__. The __`"a"`__ is just about to be added to the __`char_map`__ dictionary (on the right in fuchsia) with a value of __`1`__ since this is the first __`"a"`__ we've seen. Notice that __`"r"`__ has a value of __`2`__, since we have seen an __`"r"`__ in __`"red"`__ and an __`"r"`__ in __`"orange"`__.*
 
 ### !callout-info
 
