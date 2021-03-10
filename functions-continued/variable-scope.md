@@ -91,7 +91,8 @@ Most of the variables in our short examples so far have actually been _global_ v
 
 ### Functions Create New Local Variable Scope
 
-![Function scope diagram](../assets/functions-continued_variable-scope_scope-diagram.png)
+![Function scope diagram](../assets/functions-continued_variable-scope_scope-diagram.png)  
+*Fig. The main scope levels in Python: global and function scope. Notice that global identifiers are accessible from within function scope, but identifiers declared in function scope cannot be accessed from global scope.*
 
 Local variables defined inside of a function only have scope **within that function.**
 

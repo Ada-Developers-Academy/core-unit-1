@@ -60,7 +60,8 @@ Packages come from people! Packages are designed, built, and maintained by other
 Packages are **distributed** through a packaging index, or a center of packages. The dominant packaging index is [**The Python Package Index (PyPI)**](https://pypi.org/). PyPI is a place where programmers can find, install, and publish Python packages.
 
 ![PyPI Logo](../assets/intro-to-tests_packages-and-managing-packages_pypi.png)  
-[(source)](https://pypi.org/)
+*Fig. The logo of the Python Package Index (PyPI, pronounced Pie-Pea-Eye). [(source)](https://pypi.org/)*  
+This contrasts with PyPy (pronounced Pie-Pie), which is a just-in-time Python compiler.
 
 It requires setup, but anyone can release their package to PyPI!
 
@@ -96,7 +97,7 @@ A worst-case scenario for a developer is broken code that is failing because of 
 ## Using And Managing Packages With `pip`
 
 ![Pip Logo](../assets/intro-to-tests_packages-and-managing-packages_pip.png)  
-[(source)](https://github.com/topics/pip)
+*Fig. Pip logo [(source)](https://github.com/topics/pip)*
 
 [`pip`](https://pypi.org/project/pip/) is a package that is a package installer. With `pip`, we will be able to install any package that is on PyPI.
 
