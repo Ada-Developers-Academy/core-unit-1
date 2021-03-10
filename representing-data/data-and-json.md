@@ -104,6 +104,9 @@ With the above example, we can come to the following conclusions:
 
 It is possible that JSON does not feel relevant at all right now. If we're working on code that only uses Python, it's likely that developers would prefer to create Python dictionaries and Python lists.
 
+![JSON data moving between webpage and server](../assets/representing-data_data-and-json_json-moving.png)  
+*Fig. One of the main ways we use JSON: exchanging data between a front-end, such as a web page, and a back-end server*
+
 JSON is relevant when:
 
 - We need to read data from another piece of software, such as an API, and the API gives back data in JSON
