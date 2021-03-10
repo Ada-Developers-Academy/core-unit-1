@@ -358,7 +358,7 @@ Want a video series we recommend? Consider: ["Crash Course" on study skills](htt
 
 ## Past Adie Study-Skills Testimonials
 
-Every now and then we collect testimonials from graduated Adies who reflected on transitioning from having zero study skills to forging their study patterns. They are collectively located in the ["Student Testimonials" folder](https://drive.google.com/drive/folders/16TXs8qJ61KaNs8AmAdrQb8t4uX4OPnf5).
+Every now and then we collect testimonials from graduated Adies who reflected on transitioning from having zero study skills to forging their study patterns. They are collectively located in the ["Student Testimonials" folder](https://drive.google.com/drive/folders/1PBPfla7ZaIaCTy6A3Fa84SHn4kYw4Xf8).
 
 ## Conclusion
 
