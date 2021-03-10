@@ -145,7 +145,7 @@ Generally, conditional expressions are evaluated from left-to-right, and each ex
 
 ### !callout-danger
 
-## Errata Notice
+## Correction Notice
 The following crossed-out content is incorrect in Python, but _does_ apply to many other languages. For a fuller explanation of interpreting conditional expressions with multiple relational operators in Python, refer to the _Chaining Relational Operators of Equal Priority_ section later in this lesson.
 
 ### !end-callout
