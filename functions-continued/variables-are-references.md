@@ -1,5 +1,7 @@
 # Variables Are References
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=cc8cb0a2-187a-49f2-9257-ace700539dcf&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Our Goal
 
 Our goal in this lesson is to understand what it means to say "variables are references."
