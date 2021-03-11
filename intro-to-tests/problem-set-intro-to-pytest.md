@@ -1050,8 +1050,8 @@ def is_odd(num):
 Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
 ```python
-def test_raises_runtime_error():
-    with pytest.raises(RuntimeError):
+def test_raises_zerodiv_error():
+    with pytest.raises(ZeroDivisionError):
         run_mystery_algorithm()
 ```
 
@@ -1063,8 +1063,8 @@ import unittest
 from main import *
 
 class TestPython1(unittest.TestCase):
-    def test_raises_runtime_error(self):
-        with self.assertRaises(RuntimeError):
+    def test_raises_zerodiv_error(self):
+        with self.assertRaises(ZeroDivisionError):
             run_mystery_algorithm()
 ```
 
@@ -1091,7 +1091,7 @@ An example of a working implementation:
 
 ```python
 def run_mystery_algorithm():
-    raise RuntimeError
+    return 5/0
 ```
 
 ### !end-explanation
