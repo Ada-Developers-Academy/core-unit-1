@@ -66,7 +66,7 @@ Standards:
       - success criteria
     ContentFiles:
       -
-        Type: Lesson
+        Type: Instructor
         UID: 8QL8Gs
         Path: /intro-to-dev-environment/intro-to-dev-environment.instructor.md
       -
