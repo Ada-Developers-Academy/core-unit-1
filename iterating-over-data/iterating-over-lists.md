@@ -25,7 +25,7 @@ for my_element in my_list:
     print(my_element)
 ```
 
-| Piece of Code        | Notes                                                                                                                                                                                          |
+| <div style="min-width:200px;">Piece of Code</div>       | <div style="min-width:450px;">Notes</div>                                                                                                                                                                                          |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `for`                | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                                                               |
 | `my_element`         | **Replace this** part with a name that represents what each list element is. It will be used as a variable, which during iteration will take on the value of each list element, one at a time. |
