@@ -21,7 +21,7 @@ for my_key, my_value in my_dict.items():
     print(my_key, my_value)
 ```
 
-| Piece of Code              | Notes                                                                                                                                                                                                |
+| <div style="min-width:250px;">Piece of Code</div>              | <div style="min-width:400px;">Notes</div>                                                                                                                                                                                                |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `for`                      | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                                                                     |
 | `my_key`                   | **Replace this** part with a name that represents what each key is. This will be used as a variable name that will receive the _key_ in each key-value pair during the iteration, one key at a time. |
