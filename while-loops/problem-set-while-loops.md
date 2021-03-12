@@ -547,12 +547,17 @@ The function continues doing this until we find a value of `0`, which means we h
 
 For example, if we received `[2, 0, 1]` as our `number_list`, starting from position `0` we find a `2`. We look in position `2` and find a `1`. So we look in position `1` and find `0`. `0` marks the end of the chain, so we return `1`, the position we just looked in.
 
+<div style="max-width: 700px; margin: 0 auto -28px auto; text-align: center;">
+<img alt="How to interpret the array input to a short sidewinder list" src="../assets/while-loops_problem-set-while-loops_sidewinder-short.png">
+</div>
+*Fig. How to walk through `[2, 0, 1]` the `sidewinder` way!*
+
 The diagram below shows a longer example. Notice that there are _multiple_ zeros in the list, so we _cannot_ iterate through in order and return the position of the first zero that we find.
 
 <div style="max-width: 700px; margin: 0 auto -28px auto; text-align: center;">
 <img alt="How to interpret the array input to sidewinder" src="../assets/while-loops_problem-set-while-loops_sidewinder.png">
 </div>
-*Fig. Given the list `[4, 9, 0, 0, 1, 8, 0, 0, 11, 5, 0, 10]` for `number_list`, this diagram shows how to move through the list values to find the 'end.' Starting from index `0`, we find the value `4`. We go to index `4` where we find the value `1`. We go to index `1` where we find the value `9`, and so on. Eventually we reach index `10` where we find the value `0`, so this is the end and the result is `10`.*
+*Fig. Given the list `[4, 9, 0, 0, 1, 8, 0, 0, 11, 5, 0, 10]` for `number_list`, we can see how to find the 'end.' Starting from index `0` as before, we find the value `4`. We go to index `4` where we find the value `1`. We go to index `1` where we find the value `9`, and so on. Eventually we reach index `10` where we find the value `0`, so this is the end and the result is `10`.*
 
 Provide an implementation for `sidewinder` so that it
 - follows the chain of indices to the end, and
