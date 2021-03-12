@@ -488,7 +488,7 @@ Compare the correct `for` loop to the other answers and try explaining why they 
 
 ##### !question
 
-Reorder the lines of code below to produce a `while` loop with the following behavior:
+Reorder the lines of code below to produce a `while` loop that runs forever with the following behavior:
 
 - Prompt the user for input.
 - Ignore the input if the user enters 'skip.'
@@ -536,7 +536,14 @@ This implementation uses `while True: ...` to run the loop forever. It exits the
 
 ##### !question
 
-Let's implement a function called `sidewinder`. It will take a parameter `number_list` which contains a list of the _next_ index in the list to visit. Starting from position `0`, we will look in the current position, get the value stored there, and use it as the _next_ position to visit. We will continue doing this until we find a value of `0`, which means we have found the end of the index chain. Then we'll return the position where we found the `0`.
+Let's implement a function called `sidewinder`. This function is responsible for finding the _index_ in a list that has the value `0` by following the imaginary "sidewinder algorithm."
+
+In order to find the correct index, the function:
+  - Takes a parameter `number_list` which is a list of "next" indices to visit
+  - The function always starts at index `0`
+  - The function will look in the current position, get the value stored there. Then, it will use that value as the _next_ position to visit
+  
+The function continues doing this until we find a value of `0`, which means we have found the end of the index chain. Then we'll return the _position_ (index) where we found the `0`.
 
 For example, if we received `[2, 0, 1]` as our `number_list`, starting from position `0` we find a `2`. We look in position `2` and find a `1`. So we look in position `1` and find `0`. `0` marks the end of the chain, so we return `1`, the position we just looked in.
 
@@ -551,7 +558,7 @@ Provide an implementation for `sidewinder` so that it
 - follows the chain of indices to the end, and
 - returns the position of the end of the chain
 
-You may assume that `number_list` will never be an empty list, and that all of the values in the list are valid indices in the list.
+Assume that `number_list` will never be an empty list, and that all of the values in the list are valid indices in the list.
 
 ##### !end-question
 
@@ -571,13 +578,13 @@ import unittest
 from main import sidewinder
 
 class TestPython1(unittest.TestCase):
-  def test_one(self):
+  def test_sidewinder_when_list_of_one_element_zero(self):
     self.assertEqual(0, sidewinder([0]))
 
-  def test_two(self):
+  def test_sidewinder_stops_at_value_zero(self):
     self.assertEqual(1, sidewinder([2, 0, 1]))
 
-  def test_three(self):
+  def test_stops_at_value_zero_in_long_list(self):
     self.assertEqual(10, sidewinder([4, 9, 0, 0, 1, 8, 0, 0, 11, 5, 0, 10]))
 ```
 
@@ -624,13 +631,13 @@ Be creative!
 <!-- ======================= END CHALLENGE ======================= -->
 <!-- prettier-ignore-end -->
 
-### A Little Helper for the Next Question
+### Provided Helper Function for the Next Question
 
-The following coding question uses a helper function called `input_int`. It works just like the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except that instead of returning a string, we will assume that it returns an integer.
+In the following coding question, there is a helper function called `input_int`. This function is responsible for getting user input, and it will always return an integer. (It works similarly to the [`input`](https://docs.python.org/3/library/functions.html#input) function that we've seen before, except the function does not return a string.)
 
-In the question block below, we don't need to define `input_int`. We can assume that it is available, the same way `input` is available.
+In the question block below, `input_int` is already defined and available to use in our code. Do not define `input_int`. Use it because it is available, the same way `input` is available.
 
-To experiment with the coding question in VS Code or repl.it, we will need an implementation for `input_int`. In Python, safely converting from a string to an integer requires handling exceptions. We haven't discussed that material yet, so here is a working implementation.
+If you would like to experiment with the coding question in VS Code or repl.it, you will need an implementation for `input_int`. Here is a working implementation for you to copy/paste and use in VS Code or replit.com. It may contain concepts not covered yet, such as handling exceptions.
 
 <details style="max-width: 700px; margin: auto;">
     <summary>A working implementation of `input_int`</summary>
@@ -664,7 +671,7 @@ def input_int(*args):
 
 ##### !question
 
-Let's sum some numbers! We will write a function called `silly_sum` that reads a series of numbers from user input and returns the sum. To keep things interesting, let's also decide that entering `0` means the user is done entering input, and that we'll also stop asking for further input if the sum reaches or exceeds `1000`.
+Let's sum some numbers! We will write a function called `silly_sum` that reads a series of numbers from user input and returns the sum while following the rules below.
 
 Provide an implementation for `silly_sum` so that it
 - reads numbers from the user (use `input_int`) summing as we go until either
@@ -706,17 +713,17 @@ main.input_int = input_int
 
 class TestPython1(unittest.TestCase):
 
-    def test_one(self):
+    def test_silly_sum_stops_at_val_zero(self):
         global num_src
         num_src = input_ints([1, 1, 2, 3, 5, 8, 0, 9])
         self.assertEqual(20, silly_sum(), 'the provided input was 1, 1, 2, 3, 5, 8, 0, 9')
 
-    def test_two(self):
+    def test_silly_sum_stops_after_sum_is_greater_than_1000(self):
         global num_src
         num_src = input_ints([400, 400, 400, 400])
         self.assertEqual(1200, silly_sum(), 'the provided input was 400, 400, 400, 400')
 
-    def test_three(self):
+    def test_silly_sum_stops_when_sum_is_1001(self):
         global num_src
         num_src = input_ints([999, 1, 1])
         self.assertEqual(1000, silly_sum(), 'the provided input was 999, 1, 1')
@@ -803,7 +810,7 @@ Simple changes can sometimes have complicated effects. Play around a bit and see
 
 ##### !question
 
-Combining what we've learned about `while` loops and `for` loops both from the previous lessons and the previous questions, which of the following situations are handled more appropriately with a `while` loop?
+Let's compare `while` loops and `for` loops. Which of the following situations are handled more appropriately with a `while` loop, compared to a `for` loop?
 
 ##### !end-question
 
