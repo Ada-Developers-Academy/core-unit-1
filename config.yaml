@@ -309,7 +309,7 @@ Standards:
         Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
   -
     Title: While Loops
-    Description: While Loops
+    Description: "While Loops, Problem Set: While Loops"
     UID: 3P0q44
     SuccessCriteria:
       - success criteria
@@ -318,6 +318,14 @@ Standards:
         Type: Lesson
         UID: KyZkme
         Path: /while-loops/while-loops.md
+      -
+        Type: Lesson
+        UID: 3302a20d
+        Path: /while-loops/problem-set-while-loops.md
+      -
+        Type: Instructor
+        UID: c8eef724
+        Path: /while-loops/problem-set-while-loops.instructor.md
   -
     Title: Exception Handling
     Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Problem Set: Exception Handling"
