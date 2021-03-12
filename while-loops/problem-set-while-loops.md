@@ -704,6 +704,9 @@ import unittest
 import main
 from main import silly_sum
 
+class ReadTooManyInputsError(Exception):
+    pass
+
 num_src = None
 
 def input_ints(nums):
@@ -711,7 +714,13 @@ def input_ints(nums):
         yield num
 
 def input_int(*args):
-    return next(num_src)
+    try:
+        return next(num_src)
+    except StopIteration:
+        pass
+
+    details = "Your loop has read beyond the end of the user input!"
+    raise ReadTooManyInputsError(details)
 
 # inject into main
 main.input_int = input_int
