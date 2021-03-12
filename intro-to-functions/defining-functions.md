@@ -306,7 +306,7 @@ In this example, the `add` function is returning the value of the variable `sum`
 
 Return statements **always** end and exit a function call. When a program reaches a return statement, it will **immediately** take the return value, and return back to the line of code that invoked the function.
 
-![Monopoly Card that reads "ADVANCE TO GO (COLLECT $200)"](../assets/defining-functions-return-monopoly.jpg)  
+![Monopoly Card that reads "ADVANCE TO GO (COLLECT $200)"](../assets/intro-to-functions_defining-functions_return-monopoly.jpg)  
 [(source)](https://boardgames.stackexchange.com/questions/12254/advance-to-go-collect-400)
 
 **Here's a Metaphor:** The `return` statement is like playing Monopoly, and getting the card that says "Advance to GO (Collect \$200)". It means that the program should **immediately** pick up its bags (and the return value!) and head back to the code that invoked the function. **Don't even bother looking at the rest of the function!**
