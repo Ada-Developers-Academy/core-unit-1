@@ -154,7 +154,8 @@ def addition():
     num1 = 2
     num2 = 3
     print(num1+num2)
-sum()
+
+add_together()
 ```
 ##### !end-question
 
@@ -169,7 +170,7 @@ sum()
 ##### !end-answer
 
 #### !explanation 
-We will receive the following error message: `NameError: name 'sum' is not defined`. A `NameError` is a type of `Runtime error` that appears when a variable or function is used or invoked before it is defined. In this code snippet, a function named `sum` is being invoked, however, `sum()` does not exist. Often times, this error will appear when a variable or function is misspelled or misnamed. Perhaps the programmer meant to invoke `addition`. 
+We will receive the following error message: `NameError: name 'add_together' is not defined`. A `NameError` is a type of `Runtime error` that appears when a variable or function is used or invoked before it is defined. In this code snippet, a function named `add_together` is being invoked, however, `add_together()` does not exist. Often times, this error will appear when a variable or function is misspelled or misnamed. Perhaps the programmer meant to invoke `addition`. 
 #### !end-explanation 
 ### !end-challenge
 <!-- prettier-ignore-end -->
