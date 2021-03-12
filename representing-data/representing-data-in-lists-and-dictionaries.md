@@ -16,6 +16,9 @@ As part of _breaking down a problem_, one step we should consider, take, and pra
 
 ## Recognizing Lists When Reading Problem Statements
 
+![Spongebob reading a list](../assets/representing-data_representing-data-in-lists-and-dictionaries_spongebob-list.jpeg)  
+[(source)](https://www.youtube.com/watch?v=HwwGPOhF4CI)
+
 To practice representing data as lists, we will...
 
 1. Consider the strengths of lists
@@ -27,7 +30,7 @@ To practice representing data as lists, we will...
 
 Lists are great at...
 
-| Strength                                  | Notes                                                                                                                               | How it's represented in code                                                                                         |
+| <div style="min-width:205px;">Strength</div>                                  | <div style="min-width:210px;">Notes</div>  | <div style="min-width:210px;">How it's represented in code</div>                                                                                         |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | Lists contain 0+ elements                 | Lists contain multiple elements in a specific order. The elements don't need to be of the same type.                                | The syntax of a list literal is comma-separated elements. Lists could possibly be indicated by plural variable name. |
 | Lists contain elements in an order        | Elements in a list are always in an order. This order could have zero significance, or it could have meaning based on how it's used | -                                                                                                                    |
