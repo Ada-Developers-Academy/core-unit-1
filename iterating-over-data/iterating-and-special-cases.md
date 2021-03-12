@@ -179,12 +179,12 @@ A `break` statement can be used to stop a `for` loop early.
 
 Looking at the code below, what is the role of the `continue` statement?
 
-<!-- ```python
+```python
 for i in range(33):
   if i % 3 != 0:
     continue
   print(f"{i} is divisible by 3!")
-``` -->
+```
 
 ##### !end-question
 
@@ -219,7 +219,11 @@ For each iteration `i` is checked to see if it is evenly divisible by 3. If it's
 
 ##### !question
 
-What is the role of the `range` function? What three arguments does it take? Are they all required?
+Use 2-5 sentences to answer the following questions:
+
+1. What is the role of the `range` function?
+1. What three arguments does it take?
+1. Which arguments are required?
 
 ##### !end-question
 

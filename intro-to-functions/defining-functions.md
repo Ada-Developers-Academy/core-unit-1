@@ -15,7 +15,7 @@ If, in a given project, we want to **define** our own reusable chunks of code, t
 
 ## Vocabulary and Synonyms
 
-| Vocab                                    | Definition                                                                                                                                                                                                                 | Synonyms                                                          | How to Use in a Sentence                                                                                                                               |
+| <div style="min-width: 160px;">Vocab</div> |  <div style="min-width: 205px;">Definition</div>  | <div style="min-width: 155px;">Synonyms</div> | <div style="min-width: 180px;">How to Use in a Sentence</div> |
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Function                                 | Lines of code (1 or more) that are related, grouped together, and named. Once defined, these lines of code are reusable and can be called over and over again.                                                             | -                                                                 | "I defined a function, " "I used a function, " "I wrote a function"                                                                                    |
 | Function definition, defining a function | How a function gets defined before it gets invoked                                                                                                                                                                         | Function def, where the function is defined, a function you wrote | "I defined a function named `get_length` , " "I defined the `get_length` function in this file, " "I had bugs in my `get_length` function definition." |
@@ -25,6 +25,9 @@ If, in a given project, we want to **define** our own reusable chunks of code, t
 ## Every Function Has a Responsibility
 
 Remember, functions do things, and have a responsibility to do certain things when they are called.
+
+![Fish thinking about shapes](../assets/intro-to-functions_defining-functions_function-responsibility.png)  
+[(source)](https://www.popmatters.com/queering-the-sponge-the-transcendent-queerness-of-spongebob-squarepants-2495410105.html)
 
 Before we create a function, we should do our best to determine:
 
@@ -97,13 +100,15 @@ def function_name(apples, oranges):
 
 Read this table as it describes each piece of code in the function signature from left-to-right:
 
-| Piece of Code     | Notes                                                                                                                                                                                                                                                                                                                                                    |
+
+| <div style="min-width: 150px; text-align: center;">Piece of Code</div>     | <div style="min-width: 550px; text-align: center;">Notes</div>                                                                                                                                                                                                                                                                                                                                                  |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `def`             | `def` is a special keyword in Python. Python interpreters read `def` and go "Hey! I'm beginning to define a function!", and reads the rest of the line as a function definition.                                                                                                                                                                         |
+| `def`           | `def` is a special keyword in Python. Python interpreters read `def` and go "Hey! I'm beginning to define a function!", and reads the rest of the line as a function definition.                                                                                                                                                                         |
 | `function_name`   | **Replace this** part with the name of the function you are defining.                                                                                                                                                                                                                                                                                    |
 | `( ... )`         | These round parentheses contain the parameter list. Ensure that it's inbetween the function name and colon( `:` )! Ensure that there is an ending `)` !                                                                                                                                                                                                  |
 | `apples, oranges` | This is the function's parameter list. **Replace this!** Arguments named inside of a function signature are technincally called **parameters.** Here is a comma-separated list of the parameters of this function. There can be 0 parameters, in which case the parens would be empty, and the function signature would look like `def function_name():` |
 | `:`               | This colon ends the function signature, and begins the function body. It's easy to not remember this colon!                                                                                                                                                                                                                                              |
+
 
 Let's look at some examples of different function signatures:
 
@@ -150,6 +155,9 @@ This is where functions define the **position** of their parameters.
 - lowercase
 - words separated by underscores to help with readability
 
+![Parts of function signature: def keyword, descriptive function name, and parameters](../assets/intro-to-functions_defining-functions_function-signature.png)  
+*Fig. Function Signature*
+
 Tips:
 
 - Since functions often _do_ things, it helps to name your functions starting with _verbs_
@@ -176,11 +184,15 @@ Based on the function signature, are you able to tell or predict:
   - What is its implied data type?
   - How are you able to predict?
 
+
 ## Function Bodies: Python Logic Still Applies
 
 The part after the function signature, and the second and final part of the function definition, is the function body. We use the function body to define the lines of code to execute when the function is called.
 
 A function body can one line of code, or it can be 10000 lines of code.
+
+![Parts of function body: indentation, variable scope, logic](../assets/intro-to-functions_defining-functions_function-body.png)  
+*Fig. Parts of a Function Body*
 
 The function body syntax has three things rules to keep in mind:
 
@@ -260,6 +272,9 @@ add(15, 38)
 
 ## Define Return Values with `return`
 
+![Parts of function body: indentation, variable scope, logic](../assets/intro-to-functions_defining-functions_return.png)  
+[(source)](https://www.testbytes.net/blog/programming-memes/)
+
 We define the return value of a function by writing a **return statement** in a function body. There are three rules to creating a return statement:
 
 1. Syntax: use the keyword `return`, followed by expression or value to return
@@ -291,7 +306,8 @@ In this example, the `add` function is returning the value of the variable `sum`
 
 Return statements **always** end and exit a function call. When a program reaches a return statement, it will **immediately** take the return value, and return back to the line of code that invoked the function.
 
-![Monopoly Card that reads "ADVANCE TO GO (COLLECT $200)"](assets/defining-functions-return-monopoly.jpg)
+![Monopoly Card that reads "ADVANCE TO GO (COLLECT $200)"](../assets/intro-to-functions_defining-functions_return-monopoly.jpg)  
+[(source)](https://boardgames.stackexchange.com/questions/12254/advance-to-go-collect-400)
 
 **Here's a Metaphor:** The `return` statement is like playing Monopoly, and getting the card that says "Advance to GO (Collect \$200)". It means that the program should **immediately** pick up its bags (and the return value!) and head back to the code that invoked the function. **Don't even bother looking at the rest of the function!**
 

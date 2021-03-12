@@ -22,6 +22,9 @@ In programming, we can approach these problems with iteration.
 
 Iteration in programming is a sequence of instructions that repeats.
 
+![XKCD Comic about Loops](../assets/iterating-over-data_intro-to-iteration_loop-comic.png)  
+[(source)](https://xkcd.com/1411/)
+
 ## Iteration Solves Problems
 
 As programmers, as we see and solve more problems, we'll see a pattern about when to consider using iteration.

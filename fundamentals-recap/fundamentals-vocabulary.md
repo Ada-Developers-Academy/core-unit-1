@@ -1,5 +1,7 @@
 # Fundamentals Vocabulary
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=9364ba13-a72b-4d65-8c86-ace300056560&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Define expression
@@ -235,15 +237,16 @@ There are many other ways to combine strings and non-string values. Some methods
 
 ##### !question
 
-Using the code snippet below, on line 2, what is the expression?
+Read the code below.
 
 ```python
-
 1   test_num = 5
 2   if test_num > 10:
 3       print "Bigger than ten!"
-
 ```
+
+There is an expression on line 2. Identify the expression on line 2.
+
 ##### !end-question
 ##### !answer
 
@@ -252,12 +255,12 @@ test_num > 10
 ##### !end-answer
 ##### !hint
 
-An expression is a piece of code that evaluates to a value.  In the conditional `if` statement, what is the portion that evaluates to True or False?
+An expression is a piece of code that evaluates to a value.  In the conditional `if` statement, what is the portion that evaluates to `True` or `False`?
 
 ##### !end-hint
 ##### !explanation
 
-In the `if` statement, `test_num > 10` will evaluate to False.  It is the expression that is being evaluated in the statement.
+In the `if` statement, `test_num > 10` will evaluate to `False`.  It is the expression that is being evaluated in the statement.
 
 ##### !end-explanation
 ### !end-challenge

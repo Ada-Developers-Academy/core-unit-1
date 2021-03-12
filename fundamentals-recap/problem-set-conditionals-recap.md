@@ -154,7 +154,7 @@ if traffic_light_color = "green":
 elif traffic_light_color = "red":
     print("reduce speed to stop")
 elif traffic_light_color = "yellow":
-    print("reduce speed by half and check traff_light_color again")
+    print("reduce speed by half and check traffic_light_color again")
 else:
     print("prepare to reduce speed")
 ```
@@ -448,41 +448,43 @@ Which option best describes the logic to implement this pricing system?
 
 * 
 ``` Python
+if customer_age < 0:
+    print("please enter a valid age.")
 if customer_age <= 10:
     ticket_price = 10.00
-elif customer_age > 11 and customer_age <= 17:
+if customer_age <= 17:
     ticket_price = 13.00
-elif customer_age >= 18 or customer_age < 60:
+if customer_age < 60:
     ticket_price = 15.00
-elif customer_age > 60:
+if customer_age >= 60:
     ticket_price = 11.00
-else:
-    print("please enter a valid age.")
 ```
 * 
 ``` Python
-if customer_age <= 10:
-    ticket_price = 10.00
-elif customer_age > 11 or customer_age <= 17:
-    ticket_price = 13.00
-elif customer_age >= 18 or customer_age < 60:
-    ticket_price = 15.00
-elif customer_age > 60:
-    ticket_price = 11.00
-else:
+if customer_age < 0:
     print("please enter a valid age.")
+elif customer_age <= 10:
+    ticket_price = 10.00
+elif customer_age <= 17:
+    ticket_price = 13.00
+elif customer_age < 60:
+    ticket_price = 15.00
+else:
+    ticket_price = 11.00
 ```
+
+
 * 
 ``` Python
-if customer_age <= 10:
-    ticket_price = 10.00
-elif customer_age >= 11 and customer_age <= 17:
-    ticket_price = 13.00
-elif customer_age >= 18 and customer_age < 60:
-    ticket_price = 15.00
-elif customer_age >= 60:
+if customer_age >= 60:
     ticket_price = 11.00
-else:
+elif customer_age < 60:
+    ticket_price = 15.00
+elif customer_age <= 17:
+    ticket_price = 13.00
+elif customer_age <= 10:
+    ticket_price = 10.00
+elif customer_age < 0:
     print("please enter a valid age.")
 ```
 
@@ -492,16 +494,16 @@ else:
 
 * 
 ``` Python
-if customer_age <= 10:
-    ticket_price = 10.00
-elif customer_age >= 11 and customer_age <= 17:
-    ticket_price = 13.00
-elif customer_age >= 18 and customer_age < 60:
-    ticket_price = 15.00
-elif customer_age >= 60:
-    ticket_price = 11.00
-else:
+if customer_age < 0:
     print("please enter a valid age.")
+elif customer_age <= 10:
+    ticket_price = 10.00
+elif customer_age <= 17:
+    ticket_price = 13.00
+elif customer_age < 60:
+    ticket_price = 15.00
+else:
+    ticket_price = 11.00
 ```
 
 ##### !end-answer

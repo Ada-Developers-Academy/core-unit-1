@@ -1,12 +1,12 @@
 # Inheritance
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=e792f6c6-1d57-490f-970f-ace0005a3829&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Use Python syntax to create inheritance between two classes
 - Recall that all objects inherit from Object
 - Define overriding
-
-## Introduction
 
 ## Vocabulary and Synonyms
 
