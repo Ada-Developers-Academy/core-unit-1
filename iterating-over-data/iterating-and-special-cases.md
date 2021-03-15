@@ -16,7 +16,7 @@ By learning these different pieces of syntax, we can learn to wield them wisely 
 
 ## Vocabulary and Synonyms
 
-| Vocab      | Definition                                                       | Synonyms | How to Use in a Sentence                                                                     |
+| <div style="min-width: 100px;">Vocab</div>      | <div style="min-width: 100px;">Definition</div>                                                    | <div style="min-width: 50px;">Synonyms</div> | <div style="min-width: 150px;">How to Use in a Sentence</div>                                                                     |
 | ---------- | ---------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------- |
 | `break`    | A keyword that will exit an entire loop                          | -        | "We can break out of the loop using `break`," "The loop exited early because it saw `break`" |
 | `continue` | A keyword that will immediately advance one interation in a loop | -        | "The loop moved on because it saw `continue`"                                                |

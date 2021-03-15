@@ -16,6 +16,9 @@ As part of _breaking down a problem_, one step we should consider, take, and pra
 
 ## Recognizing Lists When Reading Problem Statements
 
+![Spongebob reading a list](../assets/representing-data_representing-data-in-lists-and-dictionaries_spongebob-list.jpeg)  
+[(source)](https://www.youtube.com/watch?v=HwwGPOhF4CI)
+
 To practice representing data as lists, we will...
 
 1. Consider the strengths of lists
@@ -27,14 +30,14 @@ To practice representing data as lists, we will...
 
 Lists are great at...
 
-| Strength                                  | Notes                                                                                                                               | How it's represented in code                                                                                         |
+| <div style="min-width:205px;">Strength</div>                                  | <div style="min-width:210px;">Notes</div>  | <div style="min-width:210px;">How it's represented in code</div>                                                                                         |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | Lists contain 0+ elements                 | Lists contain multiple elements in a specific order. The elements don't need to be of the same type.                                | The syntax of a list literal is comma-separated elements. Lists could possibly be indicated by plural variable name. |
-| Lists contain elements in an order        | Elements in a list are always in an order. This order could have zero significance, or it could have meaning based on how it's used | -                                                                                                                    |
+| Lists contain elements in an order        | Elements in a list are always in an order. This order could have zero significance, or it could have meaning based on how it's used | - |
 | Lists have a property of length/size      | A frequently used property for lists is its length. An empty list has a length of zero.                                             | We can use the `len` function and pass in a list to get its length.                                                  |
 | We can access elements in a list by index | If we know the index of an element in a list, we can get the element                                                                | We index with square brackets, `my_list[0]`                                                                          |
 | We can add things to lists                | We can add elements to lists                                                                                                        | `my_list.append(new_element)` will add this element to the end of the list                                           |
-| We can remove things to lists             | We can remove elements from lists                                                                                                   | `my_list.remove(value_to_remove)` will find the first instance of this value and remove it                           |
+| We can remove things to lists             | We can remove elements from lists                                                                                                   | `my_list.remove(value_to_remove)` will find the first instance of this value and remove it                   |
 
 ### An Example Problem Statement
 
@@ -97,9 +100,9 @@ Enter notes here
 
 ## Recognizing Dictionaries When Reading Problem Statements
 
-To practice representing data as lists, we will...
+To practice representing data as dictionaries, we will...
 
-1. Consider the strengths of lists
+1. Consider the strengths of dictionaries
 1. Read an example problem statement
 1. Write our own observations
 1. Make conclusions
@@ -108,11 +111,11 @@ To practice representing data as lists, we will...
 
 Dictionaries are great at...
 
-| Strength                                  | Notes                                                                                                                                                                                               | How it's represented in code |
+| <div style="min-width:130px;">Strength</div>                                  | <div style="min-width:280px">Notes</div>                                                                                                                                                                                               | <div style="min-width:250px;">How it's represented in code</div> |
 | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| Data must be organized in key-value pairs | All data in dictionaries _must_ be in key-value pairs; there is no way to add a value without specifying a key                                                                                      | -                            |
-| Data is unordered                         | Dictionaries may sometimes appear to have an order, but there is no consistent ordering of key-value pairs. This is helpful to express that there isn't necessarily priority or importance to order | -                            |
-| Accessing values by using keys            | All values can be accessed by a key; this might have more meaning than accessing values by index, especially when keys are named intentionally                                                      | -                            |
+| Data must be organized in key-value pairs | All data in dictionaries _must_ be in key-value pairs; there is no way to add a value without specifying a key                                                                                      |  ``` {"key_name": "value", "another_key": 100} ```                            |
+| Data is unordered                         | Dictionaries may sometimes appear to have an order, but there is no consistent ordering of key-value pairs. This is helpful to express that there isn't necessarily priority or importance to order | ``` {"key_123": 10,    "key_200": 0.34,   "key_2": 1}``` Notice how despite there being a numbering convention in these key-value pairs that they are not in a specific order.  |
+| Accessing values by using keys            | All values can be accessed by a key; this might have more meaning than accessing values by index, especially when keys are named intentionally                                                      | We can access values by using square brackets, ```dict_name["key_name"]```    |
 
 ### An Example Problem Statement
 
@@ -168,14 +171,17 @@ Enter notes here
 
 ### Our Conclusions About Dictionaries in Problem Statements
 
-| Observation                                                      | When it's related to dictionaries                                                                                                                                                                                                                                    | Examples |
+![Mr. Krabs reading a dictionary](../assets/representing-data_representing-data-in-lists-and-dictionaries_dictioinary.png)  
+[(source)](https://giphy.com/gifs/3oKHWxnWCaVZPR8Y6I/html5)
+
+| <div style="min-width: 100px;">Observation</div>                                      | <div style="min-width: 250px;">When it's related to dictionaries</div>                                                                                                                                                                                                                                    | <div style="min-width: 280px;">Examples</div> |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | A close relationship between an idea and details about that idea | Using dictionary's key-value pairs, contextually, if the problem associates one idea very closely with details about that idea, we can make the idea the key, and the details the value.                                                                             | -        |
-| Using the word "table"                                           | Dictionaries are great at representing tabular data, especially if there is one column that can represent a key, and one column that represents its corresponding value                                                                                              | -        |
-| Using the word "map" or "translate"                              | Dictionaries can represent a mapping relationship. If there is some data that should be "mapped" or "translated" to another value, we can use a dictionary to represent that                                                                                         | -        |
-| Mentions of frequency                                            | Dictionaries are great structures to map some data to its frequency. In this situation, the data would be the key, and its frequency (as an integer that starts at `0`) is the value                                                                                 | -        |
-| Accessing values by key                                          | Dictionaries allow us to use keys as the primary way of accessing data. If two pieces of data have a close relationship, and contextually we may have more exposure to the key, we might want to use a dictionary. (Accessing data by value is a trickier operation) | -        |
-| Modifying values                                                 | Dictionaries allow us to modify the values to key-value pairs easily. If two pieces of data have a close relationship, and contextually we are modifying the value often, we might want to use a dictionary.                                                         | -        |
+| Using the word "table"                                           | Dictionaries are great at representing tabular data, especially if there is one column that can represent a key, and one column that represents its corresponding value                                                                                              | Storing name, brand, and description for grocery items. Tallying the amount of times a letter appears in a word. Keeping track of how many available copies of a book are available to borrow at the library.   |
+| Using the word "map" or "translate"                              | Dictionaries can represent a mapping relationship. If there is some data that should be "mapped" or "translated" to another value, we can use a dictionary to represent that                                                                                         | The "item_name" key can map to the value "Froot Loops", the "item_description" key can map to "fruity cereal", and the "item_brand" key can map to a value of "Kellog"    |
+| Mentions of frequency                                            | Dictionaries are great structures to map some data to its frequency. In this situation, the data would be the key, and its frequency (as an integer that starts at `0`) is the value                                                                                 | Counting the amount of times the letter A appears to in a word. Keeping track of how many copies of "The Great Gatsby" are available to be borrowed.              |
+| Accessing values by key            | Dictionaries allow us to use keys as the primary way of accessing data. If two pieces of data have a close relationship, and contextually we may have more exposure to the key, we might want to use a dictionary. (Accessing data by value is a trickier operation) |  ```shopping_cart["item_name"]``` would access an item's name in a shopping cart. ```library_catalog["The Great Gatsby"]``` would access the amount of available copies of this book.   |
+| Modifying values                                                 | Dictionaries allow us to modify the values to key-value pairs easily. If two pieces of data have a close relationship, and contextually we are modifying the value often, we might want to use a dictionary.                                                         | As more copies of The Great Gatsby become available, we may want to increase the count in the library_catalog dictionary, to do so, we can use a key to access and reassign the value. ```library_catalog["The Great Gatsby] = 30```       |
 
 ## Check for Understanding
 

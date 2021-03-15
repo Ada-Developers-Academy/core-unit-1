@@ -21,7 +21,7 @@ for my_key, my_value in my_dict.items():
     print(my_key, my_value)
 ```
 
-| Piece of Code              | Notes                                                                                                                                                                                                |
+| <div style="min-width:250px;">Piece of Code</div>              | <div style="min-width:400px;">Notes</div>                                                                                                                                                                                                |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `for`                      | `for` is a reserved keyword in Python. Python recognizes `for` as the beginning of a `for` loop.                                                                                                     |
 | `my_key`                   | **Replace this** part with a name that represents what each key is. This will be used as a variable name that will receive the _key_ in each key-value pair during the iteration, one key at a time. |
@@ -115,6 +115,21 @@ for food, price in menu.items():
 
 print("That sure was a meal!")
 ```
+
+<details style="max-width: 700px; margin: auto;">
+    <summary>
+      Activity: Create a loop table to calculate the `taxed_price` for each food item in the `menu`. Click this sentence to see the final result.
+    </summary>
+
+| <div style="text-align:center;">food</div>         | price        | <div style="text-align: center;">taxed_price (rounded up)</div>   | <div style="text-align:center;">print statement |
+| ------------- | ------------- | ------------- | ------------- |
+| Brussel Sprouts     | 18.99   | <div style="text-align:center;">20.91</div> | "Brussel Sprouts costs most than $20."
+| Fancy Lemonade       | 56.00  | <div style="text-align:center;">61.66</div> | "Fancy Lemonade costs more than $20."
+| Summer Salad         | 48.50  | <div style="text-align:center;">53.40</div> | "Summer Salad costs more than $20."
+| Tomato Soup          | 18.50  | <div style="text-align:center;">20.37</div> | "Tomato Soup costs more than $20."  
+
+
+</details>
 
 Loops will often live in functions. We can use a `for` loop on a dictionary that was passed into a function, too!
 

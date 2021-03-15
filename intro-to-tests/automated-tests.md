@@ -23,6 +23,9 @@ Have you ever worked on a function, and it runs, but you weren't sure if it was 
 
 Automated tests, often called "tests," are suites of code used to verify the correctness of another, separate suite of code.
 
+![Comic about automated tests](../assets/intro-to-tests_automated-tests_dilbert-testing.png)  
+[(source)](https://dilbert.com/strip/2011-03-24)
+
 Programmers write tests to communicate what needs to be proved in order for a feature to be complete.
 
 Each test could follow this generic pattern:
@@ -32,6 +35,9 @@ Each test could follow this generic pattern:
 3. Compare the actual result from the above step to the expected value
 
 ### Example: Astrology Software
+
+![Part of an astrology birth chart](../assets/intro-to-tests_automated-tests_astrology.jpg)  
+[(source)](https://pixabay.com/photos/astrology-divination-chart-993127/)
 
 Addison is writing software about astrology. They are working on a feature that, when a user provides a date, time, and location of their birth, will compute their astrological birth chart. They need to know if they've implemented the logic correctly; does the feature accurately compute the astrological birth chart? They can test their feature by finding the following information:
 
@@ -50,6 +56,9 @@ Programmers run tests to get test output. For each test, it will either pass, fa
 **Example:** Addison could write a test suite of 20 tests. When they run the tests, they might get 15 passing tests, 4 failing tests, and 1 error. They should continue to work towards 0 failing tests.
 
 ### Unit Tests Are for Small Units
+
+![Comic about unit tests](../assets/intro-to-tests_automated-tests_unit-tests.png)  
+[(source)](https://www.monkeyuser.com/2018/fixing-unit-tests/)
 
 Because there are a lot of different kinds of code, there are a lot of different kinds of tests. One kind is unit testing. Unit tests are automated tests that focus on a unit, which is commonly a single function. They're used to check that given some specific arguments, the function returns some expected value.
 
