@@ -501,11 +501,15 @@ What will be the time complexity for [a brute force solution](https://en.wikiped
 ##### !end-answer
 ##### !explanation
 
-To break the password of size _n_ where each value could be one of ten, 0-9 digits, we will need to try out each possibility starting with all n values being _0_. Then change one of the values to remaining 9 possibilities. For each of these, change another value to each of the remaining possibilities and so on.
+To break a password of size _n_ where each value could be one of ten digits, 0 through 9, we will need to try out each possibility starting with all _n_ values being _0_. Then we systematically advance each value so that we test every possible combination of values.
 
 <br />
 
-The first of the n values could be any of 0 through 9. For each of these, we try the 10 possible values for the second of the n values and so on. This would lead to _10 * 10 * ... n times_ or in other words _10 ^ n_ possibilities to explore. Hence the time complexity will be _O(10 ^ n)_ or _exponential_.
+Imagine a case where _n_ is 3. We start at 000, then 001, 002, 003, all the way through all ten digits. Then 010, 011, 012, and so on. Notice that we are basically counting up in numerical order, starting from 000, and ending at 999, for a total of 1000 passwords to check, which is _10 * 10 * 10_, or _10<sup>3</sup>_.
+
+<br />
+
+More generally, the first of the _n_ values could be any of 0 through 9. For each of these, we try the 10 possible values for the second of the n values and so on. This would lead to _10 * 10 * ... n times_ or in other words _10<sup>n</sup>_ possibilities to explore. Hence the time complexity will be _O(10<sup>n</sup>)_ or _exponential_.
 
 ##### !end-explanation
 ### !end-challenge
