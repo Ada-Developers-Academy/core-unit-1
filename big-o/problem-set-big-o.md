@@ -42,7 +42,7 @@ def does_value_exist(input_list, value):
 ##### !end-answer
 ##### !explanation
 
-The provided code _linearly_ searches through each item in the list to check if the value is found. In the worst case scenario, all items in the list are searched. This means if there are _n_ items in the list, all _n_ items will be checked. In the best case scenario, the value to be found would be the first item in the list. In the average cases, the number of times the loop will run will be somewhere in between best case and worst case but still dependent on the number of items in the list i.e. _n_.
+The provided code _linearly_ searches through each item in the list to check if the value is found. In the worst case scenario, all items in the list are searched. This means if there are _n_ items in the list, all _n_ items will be checked. In the best case scenario, the value to be found would be the first item in the list. In the average case, the number of times the loop will run will be somewhere in between the best case and worst case, but still dependent on the number of items in the list, i.e. _n_.
 
 <br />
 
@@ -126,7 +126,7 @@ def repeat_multiple_times(value, num_of_repetitions):
 ##### !end-answer
 ##### !explanation
 
-This method executes the `print` instruction `num_of_repetitions` number of times. If the value of `num_of_repetitions` changes, the number of times the `print` instruction is repeated will change _linearly_.
+This method executes the `print` instruction `num_of_repetitions` times. If the value of `num_of_repetitions` changes, the number of times the `print` instruction is repeated will change _linearly_.
 
 <br />
 
@@ -263,7 +263,7 @@ def greet_friends(input_list):
 ##### !end-answer
 ##### !explanation
 
-The loop in this method gets run `count` number of times. `count` is the length of `input_list`. As the length of `input_list` changes, so will the number of times the loop gets executed. The execution of the loop is _linearly_ proportional to the length of `input_list`.
+The loop in this method gets run `count` times. `count` is the length of `input_list`. As the length of `input_list` changes, so will the number of times the loop gets executed. The execution of the loop is _linearly_ proportional to the length of `input_list`.
 
 <br />
 
@@ -311,11 +311,11 @@ def greet_friends(input_list):
 ##### !end-answer
 ##### !explanation
 
-There are two nested loops in this method. The outer `while` loop gets run 17 times. The inner `for` loop gets run `count` number of times where `count` is the length of `input_list`. Since the loops are nested, for each iteration of the outer loop, the complete inner loop gets run once. That means, the `print` statement will get executed (17 * `count`) number of times.
+There are two nested loops in this method. The outer `while` loop gets run 17 times. The inner `for` loop gets run `count` times where `count` is the length of `input_list`. Since the loops are nested, for each iteration of the outer loop, the complete inner loop gets run once. That means, the `print` statement will get executed (17 * `count`) times.
 
 <br />
 
-In Big O terms, the `print` statement will get executed _(17 * n)_ number of times, where _n_ is the length of `input_list`. While determining time complexity, we drop the constants. So, the time complexity of this algorithm is _O(n)_, where n is the length of `input_list`. In other words, the time complexity is linearly proportional to the input size.
+In Big O terms, the `print` statement will get executed _(17 * n)_ times, where _n_ is the length of `input_list`. While determining time complexity, we drop the constants. So, the time complexity of this algorithm is _O(n)_, where n is the length of `input_list`. In other words, the time complexity is linearly proportional to the input size.
 
 ##### !end-explanation
 ### !end-challenge
@@ -359,9 +359,11 @@ def greet_friends(input_list):
 ##### !end-answer
 ##### !explanation
 
-There are two nested loops in this method. Each loop runs _n_ number of times where _n_ is the length of `input_list`. Since the loops are nested, the loop will run _n * n_ number of times.
+There are two nested loops in this method. Each loop runs _n_ times where _n_ is the length of `input_list`. Since the loops are nested, the loop will run _n * n_ times.
 
-So, the times complexity of this algorithm is _O(n ^ 2)_ where _n_ is the length of the input test_array. In other words, the time complexity is _quadratic_, which is a _polynomial_ time complexity.
+<br />
+
+So, the time complexity of this algorithm is _O(n<sup>2</sup>)_ where _n_ is the length of the input test_array. In other words, the time complexity is _quadratic_, which is a _polynomial_ time complexity.
 
 ##### !end-explanation
 ### !end-challenge
@@ -408,7 +410,7 @@ def greet_friends(input_list):
 ##### !end-answer
 ##### !explanation
 
-There are three nested loops in this method, each running _n_ times where _n_ is the length of `input_list`. The time complexity will therefore be _n * n * n_ or in Big O terms _O(n ^ 3)_. In other words, the time complexity will be _cubic_, which is a _polynomial_ time complexity.
+There are three nested loops in this method, each running _n_ times where _n_ is the length of `input_list`. The time complexity will therefore be _n * n * n_ or in Big O terms _O(n<sup>3</sup>)_. In other words, the time complexity will be _cubic_, which is a _polynomial_ time complexity.
 
 ##### !end-explanation
 ### !end-challenge
@@ -422,7 +424,7 @@ There are three nested loops in this method, each running _n_ times where _n_ is
 * title: Big O
 ##### !question
 
-What is the time complexity of the following piece of code?
+What is the time complexity of the following piece of code? Assume that `input_list` is in sorted order.
 
 ```ruby
 def search(input_list, value):
@@ -461,7 +463,7 @@ def search(input_list, value):
 ##### !end-answer
 ##### !explanation
 
-There is one loop in this method. The loop is run proportional to the length of `input_list`. With each iteration through the loop, half of the items in `input_list` are eliminated (either first half or second half) until either the value is found or the loop ends. Since with each iteration through the loop, half of the values in the remaining sub-array are eliminated, the time complexity of this algorithm is _logarithmic_ or _O(log n)_ where _n_ is the length of the input parameter, test_array.
+There is one loop in this method. The number of times the loop runs is proportional to the length of `input_list`. With each iteration through the loop, half of the items in `input_list` are eliminated (either the first half or the second half) until either the value is found or the loop ends. Since with each iteration through the loop, half of the values in the remaining sub-array are eliminated, the time complexity of this algorithm is _logarithmic_ or _O(log n)_ where _n_ is the length of the input parameter, test_array.
 
 ##### !end-explanation
 ### !end-challenge
@@ -519,7 +521,7 @@ The first of the n values could be any of 0 through 9. For each of these, we try
 
 A traveling salesperson wants to visit _n_ cities. They can start the journey at any city and must visit each city once.
 
-How many different possibilities exist of the order in which they could visit all the _n_ cities?
+How many different possibilities exist for the order in which they could visit all _n_ cities?
 
 ##### !end-question
 ##### !options
@@ -541,26 +543,26 @@ How many different possibilities exist of the order in which they could visit al
 ##### !end-answer
 ##### !explanation
 
-We start with choosing one of the _n_ cities to be the starting cities. There _n_ possible options for this. For each such choice of first cities, the are _n - 1_ options to select the second city to visit. Then, _n - 2_ options to select the third city to vist and so on until only one city remains to visit.
+We start with choosing one of the _n_ cities to be the starting city. There are _n_ possible options for this. For each choice of first city, there are _n - 1_ options to select the second city to visit. Then, _n - 2_ options to select the third city to visit, and so on until only one city remains to visit.
 
 <br />
 
-Let's consider an example: Let's say _n_ is 3 and the possible cities are Atlanta, Boston and Chicago. Here's how we can explore the problem. We pick one of the three cities to be the first city. Let's say Atlanta. Then, for the next city to visit, there are two options, Boston or Chicago. Let's say we pick Boston then only one city remains unvisited i.e. Chicago. To try out all possible such options would look like to following:
+Let's consider an example: Let's say _n_ is 3 and the possible cities are Atlanta, Boston and Chicago. Here's how we can explore the problem. We pick one of the three cities to be the first city. Let's say Atlanta. Then, for the next city to visit, there are two options: Boston or Chicago. Let's say we pick Boston. Then only one city remains unvisited: Chicago. To try out all possible options would look like to following:
 
-1. Atlanta  -> Boston -> Chicago
-1. Atlanta -> Chicago -> Boston
-1. Boston -> Atlanta -> Chicago
-1. Boston -> Chicago -> Atlanta
-1. Chicago -> Atlanta -> Boston
-1. Chicago -> Boston -> Atlanta
-
-<br />
-
-This is a total of 6 possibilities, which is the same as _3 * 2 * 1_ or _3!_ i.e. _3 factorial_.
+1. Atlanta → Boston → Chicago
+1. Atlanta → Chicago → Boston
+1. Boston → Atlanta → Chicago
+1. Boston → Chicago → Atlanta
+1. Chicago → Atlanta → Boston
+1. Chicago → Boston → Atlanta
 
 <br />
 
-Generalizing to _n_ cities, this would be _n * (n-1) * (n-2) * ... * 1_ or _n!_ i.e. _n factorial_. In Big O terms, the time complexity will be _O(n!)_ or _factorial_.
+This is a total of 6 possibilities, which is the same as _3 * 2 * 1_ or _3!_, i.e. _3 factorial_.
+
+<br />
+
+Generalizing to _n_ cities, this would be _n * (n-1) * (n-2) * ... * 1_ or _n!_, i.e. _n factorial_. In Big O terms, the time complexity will be _O(n!)_ or _factorial_.
 
 ##### !end-explanation
 ### !end-challenge
