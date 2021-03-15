@@ -100,9 +100,9 @@ Enter notes here
 
 ## Recognizing Dictionaries When Reading Problem Statements
 
-To practice representing data as lists, we will...
+To practice representing data as dictionaries, we will...
 
-1. Consider the strengths of lists
+1. Consider the strengths of dictionaries
 1. Read an example problem statement
 1. Write our own observations
 1. Make conclusions
@@ -170,6 +170,9 @@ Enter notes here
 <!-- prettier-ignore-end -->
 
 ### Our Conclusions About Dictionaries in Problem Statements
+
+![Mr. Krabs reading a dictionary](../assets/representing-data_representing-data-in-lists-and-dictionaries_dictioinary.png)  
+[(source)](https://giphy.com/gifs/3oKHWxnWCaVZPR8Y6I/html5)
 
 | <div style="min-width: 100px;">Observation</div>                                      | <div style="min-width: 250px;">When it's related to dictionaries</div>                                                                                                                                                                                                                                    | <div style="min-width: 280px;">Examples</div> |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |

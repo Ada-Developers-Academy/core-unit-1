@@ -116,6 +116,22 @@ for food, price in menu.items():
 print("That sure was a meal!")
 ```
 
+<details style="max-width: 700px; margin: auto;">
+    <summary>
+      Activity: Create a loop table to calculate the `taxed_price` for each food item in the `menu`. Click this sentence to see the final result.
+    </summary>
+
+| menu item         | price(rounded up)         | taxed_price   | print statement |
+| ------------- | ------------- | ------------- | ------------- |
+| Brussel Sprouts     | 18.99   | 20.91 | "Brussel Sprouts costs most than $20."
+| Fancy Lemonade       | 56.00  | 61.66 | "Fancy Lemonade costs more than $20."
+| Summer Salad         | 48.50  | 53.40 | "Summer Salad costs more than $20."
+| Tomato Soup          | 18.50  | 20.37 | "Tomato Soup costs more than $20."
+
+
+
+</details>
+
 Loops will often live in functions. We can use a `for` loop on a dictionary that was passed into a function, too!
 
 ```python
