@@ -44,6 +44,8 @@ def does_value_exist(input_list, value):
 
 The provided code _linearly_ searches through each item in the list to check if the value is found. In the worst case scenario, all items in the list are searched. This means if there are _n_ items in the list, all _n_ items will be checked. In the best case scenario, the value to be found would be the first item in the list. In the average cases, the number of times the loop will run will be somewhere in between best case and worst case but still dependent on the number of items in the list i.e. _n_.
 
+<br />
+
 The time complexity of this algorithm is therefore _linear_ or _O(n)_ where _n_ is the length of the input_list.
 
 ##### !end-explanation
@@ -126,6 +128,8 @@ def repeat_multiple_times(value, num_of_repetitions):
 
 This method executes the `print` instruction `num_of_repetitions` number of times. If the value of `num_of_repetitions` changes, the number of times the `print` instruction is repeated will change _linearly_.
 
+<br />
+
 Therefore, the time complexity of this algorithm is _linear_ or _O(n)_ where _n_ is multiple.
 
 ##### !end-explanation
@@ -167,6 +171,8 @@ def greet_friends(input_list):
 ##### !explanation
 
 This method will execute the `print` statement as many times as is the length of the `input_list`. If the size of the `input_list` changes, the number of times the `print` statement gets executed will change to match the size.
+
+<br />
 
 Since the number of times the `print` statement gets executed is _linearly_ proportional to the length of the `input_list`, the time complexity is _linear_ or _O(n)_ where _n_ is the length of the `input_list`.
 
@@ -211,6 +217,8 @@ def greet_friends(input_list):
 ##### !explanation
 
 The loop in this method gets run 17 times regardless of the size or value of the input list.
+
+<br />
 
 Hence, the time complexity of _constant_ or _O(1)_.
 
@@ -257,6 +265,8 @@ def greet_friends(input_list):
 
 The loop in this method gets run `count` number of times. `count` is the length of `input_list`. As the length of `input_list` changes, so will the number of times the loop gets executed. The execution of the loop is _linearly_ proportional to the length of `input_list`.
 
+<br />
+
 So, the time complexity is _linear_ or _O(n)_ where n is the length of the input parameter, `input_list`.
 
 ##### !end-explanation
@@ -302,6 +312,8 @@ def greet_friends(input_list):
 ##### !explanation
 
 There are two nested loops in this method. The outer `while` loop gets run 17 times. The inner `for` loop gets run `count` number of times where `count` is the length of `input_list`. Since the loops are nested, for each iteration of the outer loop, the complete inner loop gets run once. That means, the `print` statement will get executed (17 * `count`) number of times.
+
+<br />
 
 In Big O terms, the `print` statement will get executed _(17 * n)_ number of times, where _n_ is the length of `input_list`. While determining time complexity, we drop the constants. So, the time complexity of this algorithm is _O(n)_, where n is the length of `input_list`. In other words, the time complexity is linearly proportional to the input size.
 
@@ -541,6 +553,8 @@ Let's consider an example: Let's say _n_ is 3 and the possible cities are Atlant
 1. Boston -> Chicago -> Atlanta
 1. Chicago -> Atlanta -> Boston
 1. Chicago -> Boston -> Atlanta
+
+<br />
 
 This is a total of 6 possibilities, which is the same as _3 * 2 * 1_ or _3!_ i.e. _3 factorial_.
 
