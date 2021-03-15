@@ -426,7 +426,7 @@ There are three nested loops in this method, each running _n_ times where _n_ is
 
 What is the time complexity of the following piece of code? Assume that `input_list` is in sorted order.
 
-```ruby
+```python
 def search(input_list, value):
     low = 0
     high = len(input_list) - 1
