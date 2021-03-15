@@ -30,9 +30,9 @@ def does_value_exist(input_list, value):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
@@ -72,9 +72,9 @@ def repeat_four_times(value):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
@@ -112,9 +112,9 @@ def repeat_multiple_times(value, num_of_repetitions):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
@@ -154,9 +154,9 @@ def greet_friends(input_list):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
@@ -198,9 +198,9 @@ def greet_friends(input_list):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
@@ -243,9 +243,9 @@ def greet_friends(input_list):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
@@ -289,9 +289,9 @@ def greet_friends(input_list):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
@@ -335,14 +335,14 @@ def greet_friends(input_list):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
 
-* O(n^2)
+* O(n<sup>2</sup>)
 
 ##### !end-answer
 ##### !explanation
@@ -384,14 +384,14 @@ def greet_friends(input_list):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
 
-* O(n^3)
+* O(n<sup>3</sup>)
 
 ##### !end-answer
 ##### !explanation
@@ -437,9 +437,9 @@ def search(input_list, value):
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 
 ##### !end-options
 ##### !answer
@@ -473,16 +473,16 @@ What will be the time complexity for [a brute force solution](https://en.wikiped
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 * O(n!)
-* O(10^n)
+* O(10<sup>n</sup>)
 
 ##### !end-options
 ##### !answer
 
-* O(10^n)
+* O(10<sup>n</sup>)
 
 ##### !end-answer
 ##### !explanation
@@ -515,11 +515,11 @@ How many different possibilities exist of the order in which they could visit al
 * O(1)
 * O(log n)
 * O(n)
-* O(nlog n)
-* O(n^2)
-* O(n^3)
+* O(n log n)
+* O(n<sup>2</sup>)
+* O(n<sup>3</sup>)
 * O(n!)
-* O(10^n)
+* O(10<sup>n</sup>)
 
 ##### !end-options
 ##### !answer
