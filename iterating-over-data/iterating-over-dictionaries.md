@@ -121,13 +121,12 @@ print("That sure was a meal!")
       Activity: Create a loop table to calculate the `taxed_price` for each food item in the `menu`. Click this sentence to see the final result.
     </summary>
 
-| menu item         | price(rounded up)         | taxed_price   | print statement |
+| <div style="text-align:center;">food</div>         | price        | <div style="text-align: center;">taxed_price (rounded up)</div>   | <div style="text-align:center;">print statement |
 | ------------- | ------------- | ------------- | ------------- |
-| Brussel Sprouts     | 18.99   | 20.91 | "Brussel Sprouts costs most than $20."
-| Fancy Lemonade       | 56.00  | 61.66 | "Fancy Lemonade costs more than $20."
-| Summer Salad         | 48.50  | 53.40 | "Summer Salad costs more than $20."
-| Tomato Soup          | 18.50  | 20.37 | "Tomato Soup costs more than $20."
-
+| Brussel Sprouts     | 18.99   | <div style="text-align:center;">20.91</div> | "Brussel Sprouts costs most than $20."
+| Fancy Lemonade       | 56.00  | <div style="text-align:center;">61.66</div> | "Fancy Lemonade costs more than $20."
+| Summer Salad         | 48.50  | <div style="text-align:center;">53.40</div> | "Summer Salad costs more than $20."
+| Tomato Soup          | 18.50  | <div style="text-align:center;">20.37</div> | "Tomato Soup costs more than $20."  
 
 
 </details>
