@@ -303,7 +303,7 @@ def compare_votes(candidate_a, candidate_b):
 * title: Functions, continued
 ### !question
 
-Create a function named `compare_ids`. It has two parameters, `candidate_a` and `candidate_b` (short for "candidate"). Both `candidate_a` and `candidate_b` will be dictionaries that look like this:
+Create a function named `compare_ids`. It has two parameters, `candidate_a` and `candidate_b`. Both `candidate_a` and `candidate_b` will be dictionaries that look like this:
 
 ```python
 {
