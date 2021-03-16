@@ -46,7 +46,7 @@ The provided code _linearly_ searches through each item in the list to check if 
 
 <br />
 
-The time complexity of this algorithm is therefore _linear_ or _O(n)_ where _n_ is the length of the input_list.
+The time complexity of this algorithm is therefore _linear_ or _O(n)_ where _n_ is the length of the `input_list`.
 
 ##### !end-explanation
 ### !end-challenge
@@ -130,7 +130,7 @@ This method executes the `print` instruction `num_of_repetitions` times. If the 
 
 <br />
 
-Therefore, the time complexity of this algorithm is _linear_ or _O(n)_ where _n_ is multiple.
+Therefore, the time complexity of this algorithm is _linear_ or _O(n)_ where _n_ is the supplied number of repetitions.
 
 ##### !end-explanation
 ### !end-challenge
@@ -267,7 +267,7 @@ The loop in this method gets run `count` times. `count` is the length of `input_
 
 <br />
 
-So, the time complexity is _linear_ or _O(n)_ where n is the length of the input parameter, `input_list`.
+So, the time complexity is _linear_ or _O(n)_ where _n_ is the length of the input parameter, `input_list`.
 
 ##### !end-explanation
 ### !end-challenge
@@ -315,7 +315,7 @@ There are two nested loops in this method. The outer `while` loop gets run 17 ti
 
 <br />
 
-In Big O terms, the `print` statement will get executed _(17 * n)_ times, where _n_ is the length of `input_list`. While determining time complexity, we drop the constants. So, the time complexity of this algorithm is _O(n)_, where n is the length of `input_list`. In other words, the time complexity is linearly proportional to the input size.
+In Big O terms, the `print` statement will get executed _(17 * n)_ times, where _n_ is the length of `input_list`. While determining time complexity, we drop the constants. So, the time complexity of this algorithm is _O(n)_, where _n_ is the length of `input_list`. In other words, the time complexity is linearly proportional to the input size.
 
 ##### !end-explanation
 ### !end-challenge
@@ -363,7 +363,7 @@ There are two nested loops in this method. Each loop runs _n_ times where _n_ is
 
 <br />
 
-So, the time complexity of this algorithm is _O(n<sup>2</sup>)_ where _n_ is the length of the input test_array. In other words, the time complexity is _quadratic_, which is a _polynomial_ time complexity.
+So, the time complexity of this algorithm is _O(n<sup>2</sup>)_ where _n_ is the length of the input `input_list`. In other words, the time complexity is _quadratic_, which is a _polynomial_ time complexity.
 
 ##### !end-explanation
 ### !end-challenge
@@ -463,7 +463,7 @@ def search(input_list, value):
 ##### !end-answer
 ##### !explanation
 
-There is one loop in this method. The number of times the loop runs is proportional to the length of `input_list`. With each iteration through the loop, half of the items in `input_list` are eliminated (either the first half or the second half) until either the value is found or the loop ends. Since with each iteration through the loop, half of the values in the remaining sub-array are eliminated, the time complexity of this algorithm is _logarithmic_ or _O(log n)_ where _n_ is the length of the input parameter, test_array.
+There is one loop in this method. The number of times the loop runs is proportional to the length of `input_list`. With each iteration through the loop, half of the items in `input_list` are eliminated (either the first half or the second half) until either the value is found or the loop ends. Since with each iteration through the loop, half of the values in the remaining sub-array are eliminated, the time complexity of this algorithm is _logarithmic_ or _O(log n)_ where _n_ is the length of the input parameter, `input_list`.
 
 ##### !end-explanation
 ### !end-challenge
@@ -509,7 +509,7 @@ Imagine a case where _n_ is 3. We start at 000, then 001, 002, 003, all the way 
 
 <br />
 
-More generally, the first of the _n_ values could be any of 0 through 9. For each of these, we try the 10 possible values for the second of the n values and so on. This would lead to _10 * 10 * ... n times_ or in other words _10<sup>n</sup>_ possibilities to explore. Hence the time complexity will be _O(10<sup>n</sup>)_ or _exponential_.
+More generally, the first of the _n_ values could be any of 0 through 9. For each of these, we try the 10 possible values for the second of the _n_ values and so on. This would lead to _10 * 10 * ... n times_ or in other words _10<sup>n</sup>_ possibilities to explore. Hence the time complexity will be _O(10<sup>n</sup>)_ or _exponential_.
 
 ##### !end-explanation
 ### !end-challenge
