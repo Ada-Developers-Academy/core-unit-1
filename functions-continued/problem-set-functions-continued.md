@@ -250,7 +250,7 @@ def get_third_place(finalists):
 * title: Functions, continued
 ### !question
 
-Create a function named `compare_votes`. It has two parameters, `candidate_a` and `candidate_b` (short for "candidate"). Both `candidate_a` and `candidate_b` will be dictionaries that look like this:
+Create a function named `compare_votes`. It has two parameters, `candidate_a` and `candidate_b`. Both `candidate_a` and `candidate_b` will be dictionaries that look like this:
 
 ```python
 {
