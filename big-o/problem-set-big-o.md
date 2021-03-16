@@ -130,7 +130,7 @@ This method executes the `print` instruction `num_of_repetitions` times. If the 
 
 <br />
 
-Therefore, the time complexity of this algorithm is _linear_ or _O(n)_ where _n_ is multiple.
+Therefore, the time complexity of this algorithm is _linear_ or _O(n)_ where _n_ is the supplied number of repetitions.
 
 ##### !end-explanation
 ### !end-challenge
