@@ -97,6 +97,9 @@ Large projects often have hundreds or thousands of commits.
 
 ## Teams Collaborate by Merging Histories
 
+[![Voltron!](../assets/intro-to-git_intro-to-git-vocab-and-concepts_voltron.png)](https://www.youtube.com/watch?v=tZZv5Z2Iz_s)  
+[(source)](https://comicdomwrecks.wordpress.com/2019/03/09/saturday-morning-cartoons/)
+
 Over the course of a work day, a team of programmers writes code, contributes commits, and builds software. In order to work together effectively, we need to contribute our own changes, as well as review changes made by other team members.
 
 We need to collaborate! But how can we do this while we are each working on our own code?

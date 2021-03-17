@@ -13,7 +13,7 @@
 Imagine that we're developers working on a unique project: we are writing software not for a laptop, but something much smaller! Imagine we're coding for an Arduino microcontroller, which has very little RAM. It's entirely possible that our program would crash if it takes up too much memory.
 
 ![Arduino Uno](../assets/big-o_big-o-notation_arduino.jpeg)  
-[(source)](https://en.wikipedia.org/wiki/Arduino_Uno#/media/File:Arduino_Uno_-_R3.jpg)
+*Fig. An Arduino Uno [(source)](https://en.wikipedia.org/wiki/Arduino_Uno#/media/File:Arduino_Uno_-_R3.jpg)*
 
 Let's imagine that we could write our Arduino program with two different solutions. We know that we should compare the space complexity between the two algorithms. However, **_how_** do we compare space complexity?
 

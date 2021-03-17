@@ -36,8 +36,7 @@ We consider time and space complexity with regards to _algorithms._ Algorithms a
 
 ## Time Complexity is How Long It Takes
 
-![time icon](../assets/big-o_time-and-space-complexity_time-icon.png) 
-
+![time icon](../assets/big-o_time-and-space-complexity_time-icon.png)  
 Whenever we run an algorithm, our computer runs a series of **operations,** or set of instructions.
 
 Given an algorithm with some input, how many operations does it do?
@@ -66,8 +65,7 @@ When we compare how many operations these algorithms take, we are considering th
 
 ## Space Complexity is How Much Memory is Required
 
-![space icon](../assets/big-o_time-and-space-complexity_space-icon.png)
-
+![space icon](../assets/big-o_time-and-space-complexity_space-icon.png)  
 Whenever we run an algorithm, our computer uses memory. Every variable, literal, reference, and object in our program takes up a small (or large) block of memory.
 
 Given an algorithm with some input, how many variables do we put in memory?
