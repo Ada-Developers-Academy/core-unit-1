@@ -46,6 +46,10 @@ We can refer to the parent class as a "super class." We can refer to the child c
 
 ### Example: Temmie, Karen, and Pizza
 
+<div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
+<img alt="A comic of the struggles of ordering a pizza." src="../assets/intro-to-oop-relationships_oop-relationships_pizza-example.png">
+</div>
+
 Let's roleplay a non-programming example!
 
 Imagine a 10-year-old, Temmie, and her caregiver, Karen. It's Friday night, and the two of them have invited us over for dinner.
@@ -57,6 +61,10 @@ A week has passed, and we're back for another pizza dinner with Karen and Temmie
 Another week has passed, and it's time for pizza #3. This time, Temmie has learned so much more, and she can completely override how she orders pizza. Temmie might go to her room, look for her own phone on the desk, and then open up a food delivery app. Or, Temmie could completely forego this whole process, and go outside, walk to the nearby pizza joint, and get pizza that way. However, the important thing is that Temmie _knows_ that she even has an "order pizza" behavior. It's important that Temmie _knows_ that she _does_ own a phone.
 
 ### Example: Form Buttons
+
+<div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
+<img alt="A comic of two people deciding to press a button on a robot" src="../assets/intro-to-oop-relationships_oop-relationships_buttons.png">
+</div>
 
 Let's consider a more realistic programming example.
 
@@ -96,6 +104,10 @@ We can describe composition as a **has-a** relationship, where the composite cla
 
 ### Example: The Good Book Club and Bus Fares
 
+<div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
+<img alt="A meme stating I tried to form a gang once it turned into a bookclub." src="../assets/intro-to-oop-relationships_oop-relationships_bookclub.jpg">
+</div>
+
 Brooklyn is the organizer of a book club. The book club itself has many things, such as a name ("The Good Book Club") and location. The book club itself can do many things, too, such as schedule meetings. Also, the book club _has_ many members.
 
 For The Good Book Club, Brooklyn sometimes needs to go through the members and send them emails about the next meeting, so it's good that she has a reference to all the members, and their names and email addresses.
@@ -108,6 +120,9 @@ Regardless if Brooklyn actually does that, the fact that Brooklyn knows that it'
 
 ### Example: Shopping Cart and Product
 
+<div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
+<img alt="A comic of a person online shopping for gifts" src="../assets/intro-to-oop-relationships_oop-relationships_onlineshopping.jpeg">
+</div>
 Angela is making an e-commerce web app that will allow users to shop for items and make orders.
 
 Angela wants to mimic other e-commerce sites. Each user should be able to add products to a shopping cart. Then, when the user is finished, the user should checkout the shopping cart, which should charge the user the total amount of money owed.
