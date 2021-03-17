@@ -14,7 +14,8 @@ When we refer to _versions_ in software, we are describing a set of changes to a
 Consider how the version of you from 10 years ago is different from the version of you from 10 minutes ago (which is different from the you of right now). Are those three versions of you very different from each other?
 
 Comparing the you from 10 minutes ago and the present you, have you gained, dropped, or changed anything? The difference between those two versions of you could be huge, or they could be small, incremental, barely noticeable changes.
-![spiderman pointing meme](https://user-images.githubusercontent.com/16619004/103394724-17a84c00-4adf-11eb-8b8a-83eb716960cd.jpeg)
+![spiderman pointing meme](../assets/intro-to-git_intro-to-git-vocab-and-concepts_spiderman.jpg)  
+[(source)](https://knowyourmeme.com/memes/spider-man-pointing-at-spider-man)
 
 What a codebase looked like at one point in time could be very different from how it looks now. If we used to have three tests, and later added a fourth, then we can say that there is a version of the codebase that passes three tests, and a version of the same codebase that passes four tests.
 
@@ -77,6 +78,9 @@ In order to use Git to compare versions, sometimes we will need to tell Git to _
 
 ### Commits are a Snapshot of History
 
+![Snapshots of code changing over time](../assets/intro-to-git_intro-to-git-vocab-and-concepts_multiple-versions.png)  
+*Fig. Snapshots of code changing over time.*
+
 **A commit** is a representation of a version of code at one point of time.
 
 We will build commits as we build software; we will create commits, and over time, these commits will represent different versions of code and build a history.
@@ -92,6 +96,9 @@ Commits are able to capture more than just a snapshot of our code. They can also
 Large projects often have hundreds or thousands of commits.
 
 ## Teams Collaborate by Merging Histories
+
+[![Voltron!](../assets/intro-to-git_intro-to-git-vocab-and-concepts_voltron.png)](https://www.youtube.com/watch?v=tZZv5Z2Iz_s)  
+[(source)](https://comicdomwrecks.wordpress.com/2019/03/09/saturday-morning-cartoons/)
 
 Over the course of a work day, a team of programmers writes code, contributes commits, and builds software. In order to work together effectively, we need to contribute our own changes, as well as review changes made by other team members.
 

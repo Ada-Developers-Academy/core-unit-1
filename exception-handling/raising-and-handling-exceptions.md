@@ -13,7 +13,8 @@ The absolute worst-case scenario for software is a crash caused by a syntax or r
 
 If software fails for one person, it's likely that software is failing for _many_ people. All of these consequences result in **chaos**.
 
-![giphy](https://user-images.githubusercontent.com/16619004/103056684-748d8a80-4552-11eb-8705-2429df508339.gif) Source: [Giphy](http://gph.is/2lENCEI)
+![Spongebob Panic](../assets/exception-handling_raising-and-handling-exceptions_panic.gif)  
+[(source)](http://gph.is/2lENCEI)
 
 \* = Actually, there are plenty of other more severe worst-case scenarios.
 
@@ -34,6 +35,9 @@ The act of creating an exception is often called **raising an exception.**
 When an exception is raised, Python moves "up" through the stack of code execution. This act of the exception moving "up" is often called **throwing an exception** or **bubbling up.** We might imagine an exception raised in a deep layer of code getting thrown up through each layer above, eventually to the programmer's face.
 
 Python raises exceptions because exceptions are Python's cry for help. Python only raises exceptions when some code says, "I can't do this! I can't go on!"
+
+![I can't even meme](../assets/exception-handling_raising-and-handling-exceptions_just-no-meme.jpg)  
+[(source)](https://memegenerator.net/instance/62045046/tired-dog-i-cant-even-justno)
 
 However, when Python surrenders and throws an exception, sometimes we can lend it a hand. While some exceptions really do represent irrecoverable conditions, others report situations that we might be able to handle so that Python can keep running our program normally!
 

@@ -12,6 +12,9 @@
 
 Imagine that we're developers working on a unique project: we are writing software not for a laptop, but something much smaller! Imagine we're coding for an Arduino microcontroller, which has very little RAM. It's entirely possible that our program would crash if it takes up too much memory.
 
+![Arduino Uno](../assets/big-o_big-o-notation_arduino.jpeg)  
+*Fig. An Arduino Uno [(source)](https://en.wikipedia.org/wiki/Arduino_Uno#/media/File:Arduino_Uno_-_R3.jpg)*
+
 Let's imagine that we could write our Arduino program with two different solutions. We know that we should compare the space complexity between the two algorithms. However, **_how_** do we compare space complexity?
 
 Computer science uses concepts from mathematics to measure time and space complexity. By using Big O notation, we can concretely compare algorithms and evaluate which is more efficient. Then, our program will work better on the Arduino!
@@ -69,19 +72,21 @@ These complexities are ordered! We can describe their order in all of these ways
 - going from most space efficent to least space efficent in space complexity
 - going from slower-growing to faster-growing
 
-| Complexity       | Name        | Definition                                                                                                                                                                                                                                                                                    |
-| ---------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| O(1)             | Constant    | The algorithm will take the same amount of time to execute regardless of the size of the input.                                                                                                                                                                                         |
-| O(log n)         | Logarithmic | The algorithm will grow in complexity proportional to the base 2 **log** of the input size. Logarithmic algorithms increase **very** slowly as the size of the input increases. They usually involve an algorithm which excludes 1/2 of the input with each iteration of a loop. |
-| O(n)             | Linear      | The algorithm will grow in time or space directly proprotional to the input size. The complexity increases at the same rate that the input increases.                                                                                                                                         |
-| O(n log n)       | Log Linear  | A term used to describe an algorithm which will grow in time or space complexity proportional to the n log n of the input size. "n log n" means that the input size is multiplied by the base-2 log of the input size.                                                                                                                                                              |
-| O(n<sup>2</sup>) | Quadratic   | The algorithm will have a runtime or memory usage proportional to the size of the input squared. This often involves 2 nested loops.                                                                                                                                                    |
-| O(2<sup>n</sup>) | Exponential | The algorithm's complexity doubles each time the input size increases by one.                                                                                                                                      |
+| Complexity       | Name        | <div style="min-width: 100px;">Graph</div>|Definition                                                                                                                                                                                                                                                                                    |
+| ---------------- | ----------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| O(1)             | Constant    | ![O(1) graph](../assets/big-o_big-o-notation_o-1.png)| The algorithm will take the same amount of time to execute regardless of the size of the input.                                                                                                                                                                                         |
+| O(log n)         | Logarithmic | ![O(log n) graph](../assets/big-o_big-o-notation_o-logn.png)| The algorithm will grow in complexity proportional to the base 2 **log** of the input size. Logarithmic algorithms increase **very** slowly as the size of the input increases. They usually involve an algorithm which excludes 1/2 of the input with each iteration of a loop. |
+| O(n)             | Linear      | ![O(n) graph](../assets/big-o_big-o-notation_o-n.png)| The algorithm will grow in time or space directly proprotional to the input size. The complexity increases at the same rate that the input increases.                                                                                                                                         |
+| O(n log n)       | Log Linear  | ![O(n log n) graph](../assets/big-o_big-o-notation_o-nlogn.png)| A term used to describe an algorithm which will grow in time or space complexity proportional to the n log n of the input size. "n log n" means that the input size is multiplied by the base-2 log of the input size.                                                                                                                                                              |
+| O(n<sup>2</sup>) | Quadratic   | ![O(n squared) graph](../assets/big-o_big-o-notation_o-nsquared.png)| The algorithm will have a runtime or memory usage proportional to the size of the input squared. This often involves 2 nested loops.                                                                                                                                                    |
+| O(2<sup>n</sup>) | Exponential | ![O(2 to the n) graph](../assets/big-o_big-o-notation_o-2tothen.png)| The algorithm's complexity doubles each time the input size increases by one.                                                                                                                                      |
 
 
-You can see a chart comparing these complexities below.  This chart illustrates for a given input size, how the output of the given expressions change.  Look at the curve of each line.  Which curve accellerates most quickly?  Which curve barely increases at all as the input size increases.
+You can see a chart comparing these complexities below.  This chart illustrates for a given input size, how the output of the given expressions change.  Look at the curve of each line.  Which curve accelerates most quickly?  Which curve barely increases at all as the input size increases.
 
-![Complexities comparison chart](../assets/big-o-notation_time-complexities.png)
+![Complexities comparison chart](../assets/big-o_big-o-notation_complexity-chart.png)  
+*Fig. Comparision chart of complexity types.*
+
 ### !callout-info
 
 ## How do we say it out loud?
