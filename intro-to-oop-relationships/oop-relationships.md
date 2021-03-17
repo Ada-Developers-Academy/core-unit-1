@@ -49,6 +49,7 @@ We can refer to the parent class as a "super class." We can refer to the child c
 <div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
 <img alt="A comic of the struggles of ordering a pizza." src="../assets/intro-to-oop-relationships_oop-relationships_pizza-example.png">
 </div>
+[(source)](https://cheezburger.com/8192876288/things-that-bug-everyone-about-ordering-pizza-with-friends)
 
 Let's roleplay a non-programming example!
 
@@ -65,6 +66,7 @@ Another week has passed, and it's time for pizza #3. This time, Temmie has learn
 <div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
 <img alt="A comic of two people deciding to press a button on a robot" src="../assets/intro-to-oop-relationships_oop-relationships_buttons.png">
 </div>
+[(source)](https://www.cartoonstock.com/directory/b/button_pushing.asp)
 
 Let's consider a more realistic programming example.
 
@@ -107,6 +109,7 @@ We can describe composition as a **has-a** relationship, where the composite cla
 <div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
 <img alt="A meme stating I tried to form a gang once it turned into a bookclub." src="../assets/intro-to-oop-relationships_oop-relationships_bookclub.jpg">
 </div>
+[(source)](https://rbclibrary.wordpress.com/2019/11/19/top-10-tuesday-10-years-of-reading-changes/)
 
 Brooklyn is the organizer of a book club. The book club itself has many things, such as a name ("The Good Book Club") and location. The book club itself can do many things, too, such as schedule meetings. Also, the book club _has_ many members.
 
@@ -123,6 +126,9 @@ Regardless if Brooklyn actually does that, the fact that Brooklyn knows that it'
 <div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
 <img alt="A comic of a person online shopping for gifts" src="../assets/intro-to-oop-relationships_oop-relationships_onlineshopping.jpeg">
 </div>
+[(source)](https://www.chron.com/entertainment/comics-games/slideshow/Tuesday-s-Top-Ten-Comics-on-Online-Shopping-167183.php)
+
+
 Angela is making an e-commerce web app that will allow users to shop for items and make orders.
 
 Angela wants to mimic other e-commerce sites. Each user should be able to add products to a shopping cart. Then, when the user is finished, the user should checkout the shopping cart, which should charge the user the total amount of money owed.
