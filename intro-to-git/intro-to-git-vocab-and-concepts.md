@@ -14,7 +14,8 @@ When we refer to _versions_ in software, we are describing a set of changes to a
 Consider how the version of you from 10 years ago is different from the version of you from 10 minutes ago (which is different from the you of right now). Are those three versions of you very different from each other?
 
 Comparing the you from 10 minutes ago and the present you, have you gained, dropped, or changed anything? The difference between those two versions of you could be huge, or they could be small, incremental, barely noticeable changes.
-![spiderman pointing meme](https://user-images.githubusercontent.com/16619004/103394724-17a84c00-4adf-11eb-8b8a-83eb716960cd.jpeg)
+![spiderman pointing meme](../assets/intro-to-git_intro-to-git-vocab-and-concepts_spiderman.jpg)  
+[(source)](https://knowyourmeme.com/memes/spider-man-pointing-at-spider-man)
 
 What a codebase looked like at one point in time could be very different from how it looks now. If we used to have three tests, and later added a fourth, then we can say that there is a version of the codebase that passes three tests, and a version of the same codebase that passes four tests.
 
@@ -76,6 +77,9 @@ In a sense, version control systems let us understand that software is built ove
 In order to use Git to compare versions, sometimes we will need to tell Git to _track_ different files in a project. This is Git's way of saying that it needs to watch for changes in certain files. Of course we will want Git to watch for changes; that's how we get all the benefits!
 
 ### Commits are a Snapshot of History
+
+![Snapshots of code changing over time](../assets/intro-to-git_intro-to-git-vocab-and-concepts_multiple-versions.png)  
+*Fig. Snapshots of code changing over time.*
 
 **A commit** is a representation of a version of code at one point of time.
 
