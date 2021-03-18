@@ -391,7 +391,7 @@ def sum_series(min_value, max_value):
 * title: Iterating Over Data
 ### !question
 
-Create a function named `sum_even_nums_in_series` that takes two parameters: `min_value` and `max_value`. Starting with `min_value`, add each **even** number in the range from `min_value` to `max_value` together. Then return that total.
+Create a function named `sum_even_nums_series` that takes two parameters: `min_value` and `max_value`. Starting with `min_value`, add each **even** number in the range from `min_value` to `max_value` together. Then return that total.
 
 **Required**: Use a for-loop.
 
@@ -399,10 +399,10 @@ Here is the test:
 
 ```python
 def test_sum_even_nums_in_series():
-    assert sum_series(1, 3) == 6  # 1 + 2 + 3
-    assert sum_series(2, 4) == 9  # 2 + 3 + 4
-    assert sum_series(0, 5) == 15  # 1 + 2 + 3 + 4 + 5
-    assert sum_series(3, 7) == 25  # 3 + 4 + 5 + 6 + 7
+    assert sum_even_nums_series(1, 3) == 2  # 2
+    assert sum_even_nums_series(2, 4) == 6  # 2 + 4
+    assert sum_even_nums_series(0, 5) == 6  # 0 + 2 + 4
+    assert sum_even_nums_series(3, 7) == 10  # 4 + 6
 ```
 
 Assume that `min_value` and `max_value` are positive integers, where `min_value` is less than `max_value`
