@@ -391,7 +391,7 @@ def sum_series(min_value, max_value):
 * title: Iterating Over Data
 ### !question
 
-Create a function named `sum_even_nums_in_series` that takes two parameters: `min_value` and `max_value`. Starting with `min_value`, add each **even** number in the range from `min_value` to `max_value` together. Then return that total.
+Create a function named `sum_even_nums_series` that takes two parameters: `min_value` and `max_value`. Starting with `min_value`, add each **even** number in the range from `min_value` to `max_value` together. Then return that total.
 
 **Required**: Use a for-loop.
 
