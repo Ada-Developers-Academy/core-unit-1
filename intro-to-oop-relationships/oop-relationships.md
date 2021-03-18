@@ -102,8 +102,7 @@ We can describe composition as a **has-a** relationship, where the composite cla
 
 ### Example: The Good Book Club and Bus Fares
 
-![A meme stating I tried to form a gang once it turned into a bookclub.](../assets/intro-to-oop-relationships_oop-relationships_bookclub.jpg)
-
+![A meme stating I tried to form a gang once it turned into a bookclub.](../assets/intro-to-oop-relationships_oop-relationships_bookclub.jpg)  
 [(source)](https://rbclibrary.wordpress.com/2019/11/19/top-10-tuesday-10-years-of-reading-changes/)
 
 Brooklyn is the organizer of a book club. The book club itself has many things, such as a name ("The Good Book Club") and location. The book club itself can do many things, too, such as schedule meetings. Also, the book club _has_ many members.
