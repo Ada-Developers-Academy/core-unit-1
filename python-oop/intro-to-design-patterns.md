@@ -6,6 +6,9 @@
 
 ## Introduction
 
+![Grey's Anatomy star Meredith Gray standing in front of Seattle Skyline](../assets/python-oop_intro-to-design-patterns_skyline.jpg)  
+[(source)](https://www.popsugar.com/smart-living/Grey-Anatomy-Seattle-Tour-45105070)
+
 Tatiana is moving to Seattle! As part of her move, she has one goal: get her possessions to her new apartment. Even though her goal is clear, she actually has a lot of decisions as to _how_:
 
 - How is knowledge about her moving spread?
