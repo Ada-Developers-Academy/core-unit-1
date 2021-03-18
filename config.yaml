@@ -348,7 +348,7 @@ Standards:
       -
         Type: Lesson
         UID: 36a61d83-b47f-414f-a6f0-3bd4331e713f
-        Path: /lists-and-memory/lists-and-memory-problem-set.md
+        Path: /lists-and-memory/problem-set-lists-and-memory.md
   -
     Title: Intermediate Python Debugging
     Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Problem Set: Using Debugger"
