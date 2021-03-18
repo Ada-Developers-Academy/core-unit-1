@@ -35,7 +35,7 @@ while conditional_evaluates_to_true:
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `while`                        | `while` is a keyword in Python that begins a while-loop. It looks immediately to the right for a conditional expression, and a `:` to end the line |
 | `conditional_evalutes_to_true` | **Replace this** with a conditional expression. When this expression is true, the loop body will run                                               |
-| Loop body                      | **Replace this** with the code that should run in this while-loop. This should be indented once inside the while-loop.                             |
+| Loop body                      | **Replace this** with the code that should run in this while-loop. This should be indented once inside the while-loop                            |
 
 ### Practicing Reading While Loops
 
