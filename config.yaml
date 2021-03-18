@@ -262,52 +262,6 @@ Standards:
         UID: bqPsZH
         Path: /nested-data-and-nested-loops/problem-set-nested-data-and-nested-loops.md
   -
-    Title: Lists & Memory
-    Description: "How lists work behind the scenes"
-    UID: fc8d96af-1277-4efc-8e4c-a7bb2facddb9
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: 0180eb42-ed8d-4f51-bcc2-2fe1e2f575c8
-        Path: /lists-and-memory/lists-and-memory.md
-      -
-        Type: Lesson
-        UID: f7fda59b-c157-49bb-aaf9-fe305904d0b7
-        Path: /lists-and-memory/lists-as-references.md
-      -
-        Type: Lesson
-        UID: 5395b235-30dc-47a8-a077-ac5cf578971c
-        Path: /lists-and-memory/lists-and-big-o.md
-      -
-        Type: Lesson
-        UID: 36a61d83-b47f-414f-a6f0-3bd4331e713f
-        Path: /lists-and-memory/lists-and-memory-problem-set.md
-  -
-    Title: Intermediate Python Debugging
-    Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Problem Set: Using Debugger"
-    UID: eb702636-a782-4ed3-8fb5-daca0aea5206
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson    
-        UID: 26f0b589-cb0f-4539-a4a6-1cb64f9ee28b
-        Path: /intermediate-python-debugging/intro-to-debuggers.md
-      -
-        Type: Lesson
-        UID: 506303a8-2fab-4283-98b3-9b4576721620
-        Path: /intermediate-python-debugging/debugging-with-vs-code.md
-      -
-        Type: Lesson
-        UID: 0cf83e0c-4483-4a15-8713-f35c425a16e1
-        Path: /intermediate-python-debugging/debugging-with-pytest.md
-      -
-        Type: Lesson
-        UID: a8e761cc-0d1f-49f9-a80a-6d2f79579a04
-        Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
-  -
     Title: While Loops
     Description: "While Loops, Problem Set: While Loops"
     UID: 3P0q44
@@ -372,6 +326,52 @@ Standards:
         Type: Lesson
         UID: 90465d8c4c1af56aed98039f4e95687c
         Path: /big-o/problem-set-big-o.md
+  -
+    Title: Lists and Memory
+    Description: "Lists and Memory, Lists as References, Lists and Big O, Problem Set: Lists and Memory"
+    UID: fc8d96af-1277-4efc-8e4c-a7bb2facddb9
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 0180eb42-ed8d-4f51-bcc2-2fe1e2f575c8
+        Path: /lists-and-memory/lists-and-memory.md
+      -
+        Type: Lesson
+        UID: f7fda59b-c157-49bb-aaf9-fe305904d0b7
+        Path: /lists-and-memory/lists-as-references.md
+      -
+        Type: Lesson
+        UID: 5395b235-30dc-47a8-a077-ac5cf578971c
+        Path: /lists-and-memory/lists-and-big-o.md
+      -
+        Type: Lesson
+        UID: 36a61d83-b47f-414f-a6f0-3bd4331e713f
+        Path: /lists-and-memory/lists-and-memory-problem-set.md
+  -
+    Title: Intermediate Python Debugging
+    Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Problem Set: Using Debugger"
+    UID: eb702636-a782-4ed3-8fb5-daca0aea5206
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 26f0b589-cb0f-4539-a4a6-1cb64f9ee28b
+        Path: /intermediate-python-debugging/intro-to-debuggers.md
+      -
+        Type: Lesson
+        UID: 506303a8-2fab-4283-98b3-9b4576721620
+        Path: /intermediate-python-debugging/debugging-with-vs-code.md
+      -
+        Type: Lesson
+        UID: 0cf83e0c-4483-4a15-8713-f35c425a16e1
+        Path: /intermediate-python-debugging/debugging-with-pytest.md
+      -
+        Type: Lesson
+        UID: a8e761cc-0d1f-49f9-a80a-6d2f79579a04
+        Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
   -
     Title: Intro to Git
     Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Problem Set: Git Commands, Activity: Git History"
