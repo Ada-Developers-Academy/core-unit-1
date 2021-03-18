@@ -22,6 +22,9 @@ How would Nakita's workflow change if the Hike Planner team grows? Multiple deve
 
 ## Collaboration Means Looking at the Same Source of Code
 
+![Picture of Spongebob saying 'Teamwork' with a magic rainbow](../assets/intro-to-git_collaborating_teamwork.jpeg)  
+[(source)](https://memegenerator.net/instance/49040424/spongebob-teamwork)
+
 Nakita's friends, Frida and Raul, want to join Nakita and help her build Hike Planner. How does Nakita share the current Git history that's already built? How do Frida and Raul get access to this Git history? Can Frida and Raul work at the same time as Nakita? Do Frida and Raul make commits too? How do all of these commits get received? How do they get shared?
 
 Git is highly configurable, so most of these settings can change. However, in the vast majority of cases, Git enables collaboration with this setup:
@@ -34,6 +37,11 @@ Git is highly configurable, so most of these settings can change. However, in th
 - All team members will follow and repeat this cycle, enabling a smooth team workflow
 
 ### Example of the Entire Process: The Hike Planner Team
+
+![Image of Spongebob and Patrick walkin wearing hiking hear](../assets/intro-to-git_collaborating_spongebob-hiking.jpeg)  
+[(source)](https://imgflip.com/memetemplate/71579342/Spongebob-Adventure)
+
+
 
 For the Hike Planner team, we can imagine this story:
 
