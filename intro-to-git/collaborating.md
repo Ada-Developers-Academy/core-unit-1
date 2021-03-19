@@ -123,6 +123,10 @@ There is much more to learn about Git pulling and merging. Due to the depth of t
 
 ### !end-callout
 
+![Pulling files using VS Code](../assets/intro-to-git_commits_vscode-pull.png)  
+*Fig. VS Code lets us pull from within the editor. We can open the Source Control Panel, then click the three dots icon to open the extra actions menu. From here, we can click Pull to pull our changes from `origin`. While handy, you might still prefer to use the command line to pull, since the terminal output can be informative.*
+
+
 ## Pushing Commits to `origin`
 
 As described in our discussion of pulling, the remote repository stores all commits from each team member. Our local machine has the changes we made ourselves on it, but how do we make our changes available to the rest of our team?
@@ -144,6 +148,9 @@ There are many, many arguments to configure the `$ git push` command. When we ne
 By default, `$ git push` will push the current history to the `origin` repo.
 
 ### !end-callout
+
+![Pushing files using VS Code](../assets/intro-to-git_commits_vscode-push.png)  
+*Fig. VS Code lets us push from within the editor. We can open the Source Control Panel, then click the three dots icon to open the extra actions menu. From here, we can click Push to push our changes to `origin`. While convenient, you might still prefer to use the command line to push, since the terminal output can be informative.*
 
 ### Pull Before Pushing
 
