@@ -164,7 +164,7 @@ In this example:
 
 - The outer dictionary has two key-value pairs: `'oranges'` and `'apples'`
 - The list stored at the `'oranges'` key has four elements
-- The list stored at the `'apples'` key has four elements
+- The list stored at the `'apples'` key has two elements
 
 ### Accessing One Element
 
