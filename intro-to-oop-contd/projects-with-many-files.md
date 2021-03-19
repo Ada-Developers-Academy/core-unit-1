@@ -33,10 +33,10 @@ Let's take a look at what we need to do to use this method of organization in ou
 
 ## Vocabulary and Synonyms
 
-| Vocab   | Definition                                                                             | Synonyms | How to Use in a Sentence                                                                |
-| ------- | -------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------- |
-| Module  | Any `.py` file that contains functions, classes, variables, and/or other runnable code | -        | "I used the `math.Euler()` from the `Math` module to calculate an angle"                |
-| Package | A collection of modules                                                                | -        | "The methods and classes accessible in a package can be found in the `__init__.py` file |
+| Vocab   | Definition                                                                              | How to Use in a Sentence                                                                |
+| ------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Module  | Any `.py` file that contains functions, classes, variables, and/or other runnable code | "I used the `math.Euler()` from the `Math` module to calculate an angle"                |
+| Package | A collection of modules                                                                | "The methods and classes accessible in a package can be found in the `__init__.py` file |
 
 ## New File Organization
 
