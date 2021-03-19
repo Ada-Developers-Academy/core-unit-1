@@ -40,9 +40,9 @@ Let's take a look at what we need to do to use this method of organization in ou
 
 ## New File Organization
 
-Our projects so far contain source code, unit tests, git files, `README` files, configuration files (such as `requirements.txt`), etc. Now, with OOP, we're motivated to add to that; ideally, each class definition will have their own `.py` file. Consistent organization and management of these files can help make our code more navigable and discoverable. What kind of guidelines for folders and files can we follow?
+Our projects so far contain source code, unit tests, git files, `README` files, configuration files (such as `requirements.txt`), etc. Now, with OOP, we're motivated to add to that; ideally, each class definition will have its own `.py` file. Consistent organization and management of these files can help make our code more navigable and discoverable. What kind of guidelines for folders and files can we follow?
 
-Python projects do not have a _required_ file structure; different projects have different structures, and they are all valid and work. One example structure we can use is the following:
+There is no single _required_ structure for Python projects; different projects have different structures, and any structure that works for a project is valid. But a good place to start is the following common setup:
 
 ```
 project_name/
@@ -50,9 +50,11 @@ project_name/
 ├── requirements.txt
 ├── project_package_name
 │   ├── __init__.py
+│   ├── __main__.py
 │   ├── example_class_a.py
 │   └── example_class_b.py
 └── tests
+    ├── __init__.py
     ├── example_c_test.py
     └── example_d_test.py
 ```
@@ -73,17 +75,21 @@ Often, files and folders are in the project root because it makes the most logic
 
 ### Project Code Lives in a Package Folder
 
-Projects that have classes will have a `.py` file for each class. All of these files should live in one single folder. This folder may also contain an `__init__.py` file. Details about this special file are below.
+Under the project root, we will have a single folder to contain all of our project classes, one class per `.py` file. We refer to this folder as the **package folder**. At the start of a project, when we don't have many class files, we might put them all directly in the package folder. But as the project becomes more complex, we can add subfolders to further group together related class files.
 
-Usually, this folder has the same name of the project, but must follow some package name rules (detailed below).
+There are also a number of special files that can be placed in the package folder. The most common of these is called the `__init__.py` file, which is discussed briefly in the Package Details section below. Projects with a clear starting point might include a `__main__.py` as a fairly standard place to put the application start up logic. Some projects may not need this file, and some might choose to put that logic somewhere else.
 
-The above example names this folder `project_package_name`. It contains two class files, `example_class_a.py` and `example_class_b.py`, and an `__init__.py` file.
+Our package folder usually has the same name as the project, but it must follow some package naming rules (detailed below).
+
+The above example names this folder `project_package_name`. It contains two class files, `example_class_a.py` and `example_class_b.py`, and both an `__init__.py` file and a `__main__.py`.
 
 ### Tests Live in a Test Folder
 
-Projects that have multiple test files should organize these files into one `tests` folder.
+Projects that have multiple test files should organize them under one `tests` folder.
 
-The above example has a `tests` folder. It contains two test files, `example_c_test.py` and `example_d_test.py`.
+When we start a project and have only a few test files, placing them all directly in the `tests` folder is reasonable. As the number of test files increases, we often organize the tests using the same subfolder structure we use to organize our class files.
+
+The above example has a `tests` folder. It contains two test files, `example_c_test.py` and `example_d_test.py`, and an `__init__.py` file.
 
 ### !callout-success
 
@@ -93,6 +99,7 @@ When we work on projects using this folder structure, we will save time if we le
 
 - How to expand and collapse any "file navigator" panes, that will show all of the folders and files in a project
 - The keyboard shortcut for switching to a file by name
+- The keyboard shortcut for switching among recently used files
 
 ### !end-callout
 
@@ -122,20 +129,26 @@ ride-share-app/
 ├── requirements.txt
 ├── ride_share_app
 │   ├── __init__.py
+│   ├── __main__.py
 │   ├── driver.py
 │   └── passenger.py
 └── tests
+    ├── __init__.py
     ├── driver_test.py
     └── passenger_test.py
 ```
 
-... There is one package named `ride_share_app`. It contains the modules `driver` and `passenger`. We might reference the _passenger module_ with `passenger` or `ride_share_app.passenger`, depending on our relative location.
+... There is one package named `ride_share_app`. It contains the modules `driver` and `passenger`. We might reference the _passenger module_ with `.passenger` or `ride_share_app.passenger`, depending on our relative location.
 
 ### !callout-info
 
 ## Package and Module Naming Conventions
 
-There aren't too many rules about package or module naming conventions, but a notable one is that they cannot contain hyphens (`-`) to be valid. [PEP-8](https://www.python.org/dev/peps/pep-0008/#package-and-module-names) recommends short, all-lowercase names. [PEP-423](https://www.python.org/dev/peps/pep-0423/) lists suggestions and guidelines for naming packages, namely for the purpose of public distribution.
+There aren't too many rules about package or module naming conventions, but a notable one is that they cannot contain hyphens (`-`). Python package names must be valid identifier names (think variable and function names). So even though hyphens are valid in file names, we can't use them in files that will be part of a package name. *Take a moment to think about why identifiers cannot contain hyphens.*
+
+<br />
+
+[PEP-8](https://www.python.org/dev/peps/pep-0008/#package-and-module-names) recommends short, all-lowercase names. [PEP-423](https://www.python.org/dev/peps/pep-0423/) lists suggestions and guidelines for naming packages, namely for the purpose of public distribution.
 
 ### !end-callout
 
