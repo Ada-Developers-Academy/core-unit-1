@@ -37,11 +37,11 @@ def test_exceptional_function():
         exceptional_function(exceptional_argument)
 ```
 
-| <div style="min-width:485px; text-align:center;">Code</div>                   | <div style="min-width:220px;">Description</div>    |
+| <div style="min-width:250px; text-align:center;">Code</div>                   | <div style="min-width:400px;">Description</div>    |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style="text-align:center;">`with pytest.raises(...):`</div>              | pytest needs to know beforehand that we're expecting an exception. We use `with pytest.raises(...):` to begin a code block that will be able to handle it. If we don't, the test itself will crash! |
-| <div style="text-align:center;">`SomeTypeOfException` </div>                        | **Replace this** with the exact kind of exception we're expecting. Examples include `TypeError`, `NotImplementedError`, or any other Python error. |
-| `test_exceptional_function(exceptional_argument)` | **Replace this** with the function call that will raise the exception.                                                                                                                |
+| `with pytest.raises(...):`             | pytest needs to know beforehand that we're expecting an exception. We use `with pytest.raises(...):` to begin a code block that will be able to handle it. If we don't, the test itself will crash! |
+| `SomeTypeOfException`                        | **Replace this** with the exact kind of exception we're expecting. Examples include `TypeError`, `NotImplementedError`, or any other Python error. |
+| `exceptional_function(  exceptional_argument)` | **Replace this** with the function call that will raise the exception.                                                                                                                |
 
 ### Read This Example
 
