@@ -36,7 +36,7 @@ Let's take a look at what we need to do to use this method of organization in ou
 | Vocab   | Definition                                                                              | How to Use in a Sentence                                                                |
 | ------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | Module  | Any `.py` file that contains functions, classes, variables, and/or other runnable code | "I used the `math.Euler()` from the `Math` module to calculate an angle"                |
-| Package | A collection of modules                                                                | "The methods and classes accessible in a package can be found in the `__init__.py` file |
+| Package | A collection of modules                                                                | "The `requests` package contains modules to help us make HTTP requests." "My package has custom configuration in its `__init__.py` file." |
 
 ## New File Organization
 
@@ -77,11 +77,15 @@ Often, files and folders are in the project root because it makes the most logic
 
 Under the project root, we will have a single folder to contain all of our project classes, one class per `.py` file. We refer to this folder as the **package folder**. At the start of a project, when we don't have many class files, we might put them all directly in the package folder. But as the project becomes more complex, we can add subfolders to further group together related class files.
 
-There are also a number of special files that can be placed in the package folder. The most common of these is called the `__init__.py` file, which is discussed briefly in the Package Details section below. Projects with a clear starting point might include a `__main__.py` as a fairly standard place to put the application start up logic. Some projects may not need this file, and some might choose to put that logic somewhere else.
+There are also a number of special files that can be placed in the package folder.
+
+The most common of these is called the `__init__.py` file, which is discussed briefly in the Package Details section below.
+
+Projects with a clear starting point might include a `__main__.py` as a fairly standard place to put the application start up logic. Some projects may not need this file, and some might choose to put that logic somewhere else.
 
 Our package folder usually has the same name as the project, but it must follow some package naming rules (detailed below).
 
-The above example names this folder `project_package_name`. It contains two class files, `example_class_a.py` and `example_class_b.py`, and both an `__init__.py` file and a `__main__.py`.
+The above example names this folder `project_package_name` so that we can distinguish it from the project root, but there would be nothing preventing us from calling it `project_name` to match the project root name. It contains two class files, `example_class_a.py` and `example_class_b.py`, and both an `__init__.py` file and a `__main__.py`.
 
 ### Tests Live in a Test Folder
 
@@ -119,9 +123,17 @@ In Python...
 - A **module** is a `.py` file that can contain any number of functions, classes, and variables, as well as other runnable code
   - Essentially, any Python file can be thought of as a module. In fact, we've been writing modules this whole time!
 
-"Packages and modules" may seem like fancy words for "folders and files," but this terminology allows us to understand their **namespaces**. A module located inside of a package can be referenced using namespacing with `.`s, such as `package_name.module_name`. The package and module names are derived from the name of the folder and file (without `.py`).
+"Packages and modules" may seem like fancy words for "folders and files," but this terminology allows us to understand their **namespaces**. A module located inside of a package can be referenced using namespacing with dot notation, such as `package_name.module_name`. The package and module names are derived from the name of the folder and file (without `.py`).
 
-For example, given this structure for a project named `ride-share-app`...
+### !callout-warning
+
+## Be Sure to Create an `__init__.py` File in Each Package Folder
+
+If we forget to create the `__init__.py` file, things may still seem to work. However, without this file, Python will interpret the folders as a slightly different kind of package. For most situations, we should create the `__init__.py` file in each package folder and subfolder, even if it is empty!
+
+### !end-callout
+
+For example, given this structure for a project named `ride-share-app`:
 
 ```
 ride-share-app/
@@ -129,7 +141,6 @@ ride-share-app/
 ├── requirements.txt
 ├── ride_share_app
 │   ├── __init__.py
-│   ├── __main__.py
 │   ├── driver.py
 │   └── passenger.py
 └── tests
@@ -138,13 +149,13 @@ ride-share-app/
     └── passenger_test.py
 ```
 
-... There is one package named `ride_share_app`. It contains the modules `driver` and `passenger`. We might reference the _passenger module_ with `.passenger` or `ride_share_app.passenger`, depending on our relative location.
+There is one package named `ride_share_app`. It contains the modules `driver` and `passenger`. We might reference the _passenger module_ with `.passenger` or `ride_share_app.passenger`, depending on our relative location.  More on why shortly!
 
 ### !callout-info
 
 ## Package and Module Naming Conventions
 
-There aren't too many rules about package or module naming conventions, but a notable one is that they cannot contain hyphens (`-`). Python package names must be valid identifier names (think variable and function names). So even though hyphens are valid in file names, we can't use them in files that will be part of a package name. *Take a moment to think about why identifiers cannot contain hyphens.*
+Notice in the example that the package name uses underscores (`_`) rather than hyphens (`-`). There aren't too many rules about package or module naming conventions, but a notable one is that they cannot contain hyphens. Python package names must be valid identifier names and tend to follow variable- or function-style naming. So while hyphens are valid in file names, we can't use them in files that will be part of a package or module name. *Take a moment to think about why identifiers cannot contain hyphens.*
 
 <br />
 
@@ -160,31 +171,151 @@ We must _import_ any resources that we need from another module before we can us
 
 ### Importing from Packages and Modules
 
-There are _many_ different syntaxes and strategies we can use to import modules. If a particular import syntax works for a project, it's valid! Different situations will need to use different ways of importing.
+There are three common ways that we will see packages and modules imported into our projects.
 
-As a starting point, let's look at one syntax for creating an import statement:
+#### 1. Importing a Module by Name
+
+This method is especially common for modules that are built-in to Python. We will tend _not_ to use this method when importing modules from our own packages, but we should be comfortable seeing it in other code, and using it to access built-in Python features.
+
+As an example, consider the `random` module, which provides the `randint` function.
 
 ```python
-from package_name.module_name import ExampleClassName
+import random
 ```
 
-It may be helpful to read this line of code in "reverse order," as "Import an object named `ExampleClassName` that's defined in the `module_name` module that's located in the `package_name` package."
+This statement imports the `random` module name into the current scope, allowing us to access identifiers in the module by using dot notation to look inside the module name as follows:
 
-The above statement looks for the matching _package_ and _module within that package_. The search for the matching module begins **_relative to the file_**. First, the program will look for the matching package and module in the current directory of this file. If there is no match, then our program will search for a matching package/module among all the installations of Python packages.
+```python
+my_random_int = random.randint(0, 5)
+```
 
-From that matching module, it will import anything defined in the module with the name `ExampleClassName`.
+Python has many built-in modules, and Python will _always_ prefer them over any modules we write that share the same name. So we should take care to avoid using their names for our own modules, or make sure to put such modules into a package of our own!
 
-Now, after importing, we can use `ExampleClassName` in this file as much as we want!
+#### 2. Importing a Package Module by Full Name
 
-Conventionally, these import statements are always at the top of a module.
+When we write our own modules, it is a best practice to gather them together into a package. As long as we pick a package name that doesn't match a built-in module, this lets us carve out a space to name our own types and functions.
+
+To import the `driver` module from the `ride_share_app` package example above, we could use the following command.
+
+```python
+import ride_share_app.driver
+```
+
+This statement imports the `ride_share_app` package name into the current scope. It further imports the `driver` module as a member of the `ride_share_app` package, allowing us to access identifiers in the module by using dot notation. Consider:
+
+```python
+driver = ride_share_app.driver.Driver()
+```
+
+Assuming there is an identifier called `Driver` in the `driver` module and that it is a class, this would make a new instance and store a reference to it in the `driver` variable. Notice that there is no issue with having a variable in the current scope that matches a module name in a package. The `driver` variable name and the `driver` module name exist in two separate scopes.
 
 ### !callout-info
 
-## Modules Know They're in the Same Package
+## Why We Keep Saying Identifier
+Notice that we have been careful to say that Python imports identifiers into the current scope. Identifiers are names of things. Variables, functions, and classes are all named with identifiers. From just looking at an identifier, we don't know what it refers to. So we have to be careful to import the correct identifiers, and then use them as they are intended to be used. 
 
-Sometimes, it may be unnecessary to specify a package if both modules are in the same package already. For details on the locations that Python searches for modules (and their priority order), we can read about [Python's module search path order](https://docs.python.org/3/tutorial/modules.html#the-module-search-path).
+<br />
+
+Hopefully good naming practices were employed to help hint at the proper usage of different identifiers. But if we import an identifier that refers to a value (a variable) but then try to call it like a function, this will result in a runtime error! So it's our job to read and understand the code or documentation of the module we want to use so that we import and make use of its identifiers correctly!
 
 ### !end-callout
+
+#### 3. Importing Module Identifiers using Relative Names
+
+Importing package modules by full name works everywhere, whether from outside or inside a package. But to access the identifiers defined in the module, we have to prefix them with the full package name. If our package were several layers deep, this could make for some long names! 
+
+Let's say that the `passenger` module in our `ride_share_app` package needs to make use of the `Driver` class. We could certainly import the `driver` module as before and access the `Driver` class with the full package name. But `driver.py` and `passenger.py` are defined in the same package. In fact, they're in the same folder. Wouldn't it be nice if there were a shorter way?
+
+There is!
+
+```python
+from .driver import Driver
+```
+
+This may look a little weird. It might even seem backwards! Feel free to read this statement from right to left if that's helpful!
+
+What this statement does is:
+
+1. Use the `from` keyword to name the module from which we want to import an identifier.
+1. Use the `import` keyword to name the identifier we want Python to import into the current scope
+
+The module name looks different from the examples we've seen before. It starts with a `.` which tells Python to look for the module in the folder containing the current file. When Python finds the specified module, rather than importing the name of the module into the current scope, it looks at the names listed after `import` (we can write multiple names separated by commas) and imports just those identifiers into the current scope.
+
+If we assume as before that the `Driver` identifier is a class, this lets us write the following:
+```python
+driver = Driver()
+```
+
+Shorter and clearer!
+
+
+```
+├── ride_share_app
+│   ├── __init__.py
+│   ├── driver.py
+│   ├── passenger.py
+│   └── payment
+        ├── __init__.py
+        ├── cash.py
+        └── credit.py
+```
+
+If our package had a folder called `payment` under `ride_share_app` (with an `__init__.py` file), and `payment` had the modules `cash.py` and `credit.py`, then from either of these modules we could access the `Driver` identifier in `driver.py` as:
+
+```python
+from ..driver import Driver
+```
+
+We added another `.` at the beginning, which tells Python to look up one folder. In principle, we can preface the name we give to `from` with as many `.`s as needed to move us up through folders in the package.
+
+### Importing With `from` Works for All Import Methods
+
+Using `from` to name a module, and then importing specific symbols is very useful. It's so useful that we can also use the `from` style to import from built-in modules and modules using their full package name as well!
+
+```python
+from random import randint
+from ride_share_app.driver import Driver
+
+my_random_int = randint(0, 5)
+driver = Driver()
+```
+
+### Handling Duplicate Names
+
+There is one more optional keyword that can be used with `import` statements. What if there are two modules we want to use: `module_one`, and `module_two`, and each of these modules provides an identifier `UsefulClass`? The following doesn't cause an error, but something's not right:
+
+```python
+from module_one import UsefulClass
+from module_two import UsefulClass
+```
+
+After the second `import`, `UsefulClass` only refers to the version from `module_two`. Of course we could import the entire modules and use dot notation to access the appropriate `UsefulClass` as needed, but we can also import the two versions as:
+
+```python
+from module_one import UsefulClass as UsefulClassOne
+from module_two import UsefulClass as UsefulClassTwo
+```
+
+Instead of importing the identifier `UsefulClass` into the current scope and then overwriting it, this second version imports each of the `UsefulClass` variables into two separate identifiers: `UsefulClassOne`, and `UsefulClassTwo`, which we can use as:
+
+```python
+one = UsefulClassOne()
+one.do_something()
+two = UsefulClassTwo()
+two.do_something_else()
+```
+
+### So Many Ways to Import
+
+As we have shown, there are _many_ different syntaxes and strategies we can use to import modules. If a particular import syntax works for a project, it's valid!
+
+Different situations will need to use different ways of importing. So we should be ready to see many styles of importing. We may even encounter styles that we haven't discussed that we might need to look up. That's ok! But we should feel confident that we can recognize importing when we see it!
+
+
+
+
+
+
 
 ### Example Between Classes
 
