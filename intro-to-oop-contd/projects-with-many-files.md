@@ -311,20 +311,22 @@ As we have shown, there are _many_ different syntaxes and strategies we can use 
 
 Different situations will need to use different ways of importing. So we should be ready to see many styles of importing. We may even encounter styles that we haven't discussed that we might need to look up. That's ok! But we should feel confident that we can recognize importing when we see it!
 
+## Restructuring a Project
+
+Let's return to Scarlet's project and see how she decides to reorganize her project. Remember that she started with a single file `main.py` that contained two classes, `Driver` and `Passenger`, and there was some main logic to create a `Passenger` instance.
 
 
+Scarlet is making a ride share app, so she decides to call her project root `ride-share-app`. She puts her standard project files in the project root. She knows that in Python we like to have each class in its own module, and that the modules for a project are usually grouped into a package. She can't use hyphens in the package name, so she decides on `ride_share_app` as her package name. She makes the folder, adds the `__init__.py` file to tell Python this is a package folder, then makes a module file for each class: `driver.py` and `passenger.py`.
 
+She considers renaming the `main.py` which now only contains the application startup to `ride_share_app.py` to be a little more descriptive on the command line. But Scarlet learned about another strategy for where to put her startup code that she wants to try, so for now she leaves the code in `main.py`
 
-
-
-### Example Between Classes
-
-Let's consider this file structure, and these two modules:
+This gives Scarlet the following file structure:
 
 ```
 ride-share-app/
 ├── README.md
 ├── requirements.txt
+├── main.py
 └── ride_share_app
     ├── __init__.py
     ├── driver.py
@@ -348,48 +350,122 @@ class Passenger:
     def __init__(self):
         print("I'm creating an instance of Passenger!")
         self.favorite_new_driver = Driver()
+```
+
+`main.py`:
+```python
+scarlet = Passenger()
+```
+
+She runs the project with `python3 main.py`, but she gets this runtime error:
+
+```
+Traceback (most recent call last):
+  File "main.py", line 1, in <module>
+    scarlet = Passenger()
+NameError: name 'Passenger' is not defined
+```
+
+`NameError: name 'Passenger' is not defined` indicates that the main file can't instantiate `Passenger` because it doesn't know what that is. She needs to import the `Passenger` class from the `ride_share_app.passenger` module first!
+
+She fixes `main.py` with an `import` statement as follows:
+
+```python
+from ride_share_app.passenger import Passenger
 
 scarlet = Passenger()
 ```
 
-When we run the `passenger` module with `$ python3 ride_share_app/passenger.py` (which has the `Passenger` definition and `scarlet = Passenger()`), we get this runtime error:
+She runs the project again with `python3 main.py` and gets a slightly different error:
 
 ```
 I'm creating an instance of Passenger!
 Traceback (most recent call last):
-  File "ride_share_app/passenger.py", line 7, in <module>
+  File "main.py", line 3, in <module>
     scarlet = Passenger()
   File "ride_share_app/passenger.py", line 5, in __init__
     self.favorite_new_driver = Driver()
 NameError: name 'Driver' is not defined
 ```
 
-`NameError: name 'Driver' is not defined` indicates that the `passenger` module can't instantiate `Driver` because it doesn't know what that is. We need to import the `Driver` class from the `ride_share_app.driver` module, first!
-
-Adjusting the `passenger` module by only adding the top import line...
+She sees the expected `print` output from inside the `Passenger __init__` method. But there's another `NameError`. This time it's in the `passenger.py` module where she instantiated a new `Driver`. Here again, Python doesn't know what the `Driver` identifier refers to since it hasn't been imported. But Scarlet knows exactly how to fix this! She adds an `import` statement to `passenger.py`:
 
 ```python
-from driver import Driver
+from .driver import Driver
 
 class Passenger:
 
     def __init__(self):
         print("I'm creating an instance of Passenger!")
         self.favorite_new_driver = Driver()
-
-scarlet = Passenger()
 ```
 
-Now produces this output, which doesn't have a `NameError`!
+This `import` tells Python to get the `Driver` identifier from the `driver` module located in the same folder as `passenger.py`. Running once more with `python3 main.py`, Scarlet gets the following output:
+
 
 ```
 I'm creating an instance of Passenger!
 I'm creating an instance of Driver!
 ```
 
-Again, the search for a matching module is relative to the file that is importing. In this example, the `driver` and `passenger` modules are in the same package, so there is no need to specify a package name. That's why `from driver` will suffice!
+No more `NameError` problems!
 
-Inside the matching `driver` module, it will load whatever is defined with the name `Driver`, in this case, a class. Inside of our `passenger` module, now we can call `Driver()` or any other `Driver` behavior `Driver`!
+Scarlet used an appropriate `import` statement for each case where Python needed to know where to find the identifier. From `main.py` she had to use a package full name import, since `main.py` is not part of the `ride_share_app` package. But from `passenger.py` she could use a relative `import`, since `passenger.py` and `driver.py` are in the same package.
+
+## Moving Startup Logic Into Our Package
+
+There are many approaches to where we should put the code that starts our applications.  Python doesn't have a strong opinion about this. Leaving it in a `main.py` file is fine. Using a different file name that's more descriptive of our project is also fine.
+
+Applications written in Python often include extra files so that the end user doesn't have to worry about exactly the command line to use. For instance, when we use `pytest` we run the command `pytest`. But this command is really only used to locate and run the real application startup for `pytest` which is actually in a really weird place!
+
+Another way we can run `pytest` is with the following command:
+
+```python
+python3 -m pytest
+```
+
+This might look a little familiar. This is the same style of command we use to create our virtual environments:
+
+```python
+python3 -m venv venv
+```
+
+Each command locates a special file called `__main__.py` in the specified package and runs that! We can think of the `-m` argument as standing for _main_ or _module_ to help us remember what it does.
+
+We can follow this pattern as well. Since this is a semi-standard Python pattern, other users who download our code should understand how it works. Again, Python will let us start our programs however we like, and as long as we communicate how to use our program to our users, anything that works is a valid approach! But let's see how Scarlet can use this pattern in her ride share app.
+
+Remember that she left the startup logic for her app in the `main.py` file, which is _not_ a part of her package. To start with, she can move the file into her package, and rename it to `__main__.py`.
+
+```
+ride-share-app/
+├── README.md
+├── requirements.txt
+└── ride_share_app
+    ├── __init__.py
+    ├── __main__.py
+    ├── driver.py
+    └── passenger.py
+```
+
+Now Scarlet can run her app with the following command:
+
+```python
+python3 -m ride_share_app
+```
+
+She runs the app and gets the same output as before. Great! But she remembers that she had to use a package full name `import` in `main.py` since it wasn't in the `ride_share_app` package. What if she changes that to a relative import?
+
+She changes the `import` in `__main__.py` as follows:
+
+```python
+from .passenger import Passenger
+
+scarlet = Passenger()
+```
+
+She runs the app once more with `python3 -m ride_share_app` and sees that everything is still working fine!
+
+We can do the same thing in our own projects if we like how this looks. There are many ways to start Python programs, so if this is an interesting topic, we can consider looking into how some Python tools we like let their users run them. Follow your curiosity!
 
 ## Debugging Imports
 
