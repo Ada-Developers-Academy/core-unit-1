@@ -63,6 +63,7 @@ def mystery(numbers):
     index = 0
     while index < len(numbers):
         numbers[index] *= 2
+        index += 1
     
     return numbers
 
