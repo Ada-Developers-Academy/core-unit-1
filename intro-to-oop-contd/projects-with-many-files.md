@@ -1,4 +1,4 @@
-# Projects with Many Files
+# Projects With Many Files
 
 ## Learning Goals
 
@@ -172,6 +172,8 @@ We must _import_ any resources that we need from another module before we can us
 ### Importing from Packages and Modules
 
 There are three common ways that we will see packages and modules imported into our projects.
+
+Regardless of the `import` style used, we should prefer to put `import` statements near the top of the file doing the importing. It _is_ valid syntax to put `import` statements elsewhere in a file, but by putting them near the top, other programmers will know where to look for the modules on which our module depends.
 
 #### 1. Importing a Module by Name
 
@@ -530,16 +532,16 @@ consider rephrasing to something like "if we try to use the host.py module in ou
 
 * type: multiple-choice
 * id: f032adcb-c05b-4591-96b9-58bc24d7ee79
-* title: Importing modules
+* title: Projects With Many Files
 
 ##### !question
 
-Hosts for AdaBnB can host guests at multiple properties on the app. Each property is an instance of a `Place` class. If we ran `guest.py`, we would receive a `NameError`. Select the option that describes how to solve this `NameError`.
+Hosts for AdaBnB can host guests at multiple properties on the app. Each property is an instance of a `Place` class. If we tried to call the `create_places` method of `Host`, we would receive a `NameError`. Assuming the `place` module in which the `Place` class is defined is in the same package folder as `host.py`, select the option that best describes how to solve this `NameError`.
 
-`guest.py`
+`host.py`
 ``` Python
 class Host:
-    def __init__(self, host_properties):
+    def __init__(self, name, host_properties):
         self.name = name
         self.host_properties = host_properties
         print(f"I'm creating an instance of a Host named {self.name}!")
@@ -547,8 +549,8 @@ class Host:
     def create_places(self):
         properties = []
         for host_property in self.host_properties:
-            host_property = Place()
-            properties.append(host_property)
+            new_place = Place(host_property)
+            properties.append(new_place)
         return properties
 ```
 
@@ -556,15 +558,27 @@ class Host:
 
 ##### !options
 
-* `from place import Place` at the end of `guest.py`
-* `from place import Place` right before we create assign `host_property` to an instance of the `Place` class.
-* `from place import Place` at the beginning of `guest.py`
+* `from place import Place` at the beginning of `host.py`
+* `from .place import Place` right before we set `new_place` to an instance of the `Place` class.
+* `from .place import Place` at the beginning of `host.py`
+* `import Place` at the beginning of `host.py`
 
 ##### !end-options
 
 ##### !answer
-* `from place import Place` at the beginning of `guest.py`
+* `from .place import Place` at the beginning of `host.py`
 ##### !end-answer
+
+##### !explanation
+
+Since the two modules, `host.py` and `place.py` are in the same package folder, we can use either package full name importing or relative importing to import `Place`. Of the two, there are only options given for relative importing, so we must select an option with `from .place import Place` in the answer.
+
+<br />
+
+The two options differ in terms of placement. While the code would work if we put the `import` statement just before using the `Place` class, we should prefer to put `import` statements near the top of the file.
+
+##### !end-explanation
+
 
 ### !end-challenge
 <!-- prettier-ignore-end -->
