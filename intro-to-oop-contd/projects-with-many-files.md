@@ -529,6 +529,12 @@ The `ImportError` is raised because we're trying to import an identifier that ca
 
 ## Summary
 
+Python doesn't put very many restrictions on how we structure our projects. In general, we should try to group our project files logically so that files can remain focused on individual classes and responsibilities. We should also try to keep related files together.
+
+Python provides very flexible statements to let us import identifiers from other packages and modules. This helps us keep our projects clean, and lets us use functionality written by other Pythonists!
+
+The most appropriate way to import things will depend on whether we are importing built-in functionality, or importing modules that may or may not be within the same package.
+
 ## Check for Understanding
 
 <!-- The first question (Project Structure) should use a main.py, or some other file outside the package to hold the main logic. Generally, only logic related to the setup of the package or package-level exports should be in init.py
