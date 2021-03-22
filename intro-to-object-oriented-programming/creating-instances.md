@@ -58,7 +58,7 @@ Album("Dirty Computer")
 Album("Purple Rain")
 ```
 
-![Two instances of Album](../assets/intro-to-oop_creating-instances_pass-in-params-2.png)  
+![Two instances of Album](../assets/intro-to-oop_creating-instances_pass-in-params-1.png)  
 *Fig. Two instances of 'Album'.*
 
 ### !callout-info
@@ -233,6 +233,9 @@ purple_rain = Album("Purple Rain")
 album_title = purple_rain.title
 print(album_title)
 ```
+
+![Local variable `album_title` points to the same string in memory as the self.title variable inside the `purple_rain` instance of Album](../assets/intro-to-oop_creating-instances_local-variable.png)  
+*Fig. Local variable `album_title` points to the same string in memory as the self.title variable inside the `purple_rain` instance of Album.*
 
 <!-- Question 2 -->
 
