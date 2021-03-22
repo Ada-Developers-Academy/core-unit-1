@@ -527,6 +527,213 @@ For the second question (Importing modules)
 it refers to guest.py in the question and the file label, but the class shown is Host, so change the filenames to match
 consider rephrasing to something like "if we try to use the host.py module in our project" rather than "running" it. We shouldn't encourage running package modules directly. -->
 
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- prettier-ignore-start -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 46c0a465-88fe-4b98-b012-e12f2818525a
+* title: Projects With Many Files
+
+##### !question
+
+Consider a project for a photo filtering app that can select from any of the cameras on a device, and apply any of several available filters. We started working on this project, and all the classes are in a single file called `photo_app.py`. A simplified version is given here:
+
+```python
+# adds cat ears to any portrait
+class CatEarsFilter:
+    pass
+
+# tints a photo to use sepia tones
+class SepiaFilter:
+    pass
+
+# produces a picture using the back-facing camera
+class BackCamera:
+    pass
+
+# produces a picture using the front-facing camera
+class FrontCamera:
+    pass
+
+class Processor:
+    def __init__(self, image_source, filter):
+        self.image_source = image_source
+        self.filter = filter
+
+    def filter_image(self):
+        return self.filter(self.image_source)
+
+# returns an image source instance based on user input
+def select_image_source():
+    pass
+
+# returns a filter instance based on user input
+def select_filter():
+    pass
+
+# writes an image to storage
+def save_image(image):
+    pass
+
+camera = select_image_source()
+filter = select_filter()
+processor = Processor(camera, filter)
+save_image(processor.filter_image())
+```
+
+Which option best captures a possible layout for this project?
+
+##### !end-question
+
+##### !options
+
+* ```
+photo-app/
+├── README.md
+├── requirements.txt
+├── photo_app.py
+├── photo_app_pkg
+│   ├── processor.py
+│   ├── filters
+│   │   ├── cat_ears_filter.py
+│   │   └── sepia_filter.py
+│   └── image_source
+│       ├── back_camera.py
+│       └── front_camera.py
+└── tests
+    ├── processor_test.py
+    ├── filters
+    │   ├── cat_ears_filter_test.py
+    │   └── sepia_filter_test.py
+    └── image_source
+        ├── back_camera_test.py
+        └── front_camera_test.py
+```
+* ```
+photo-app/
+├── README.md
+├── requirements.txt
+├── photo_app
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── processor.py
+│   ├── filters
+│   │   ├── __init__.py
+│   │   ├── cat_ears_filter.py
+│   │   └── sepia_filter.py
+│   └── image_source
+│       ├── __init__.py
+│       ├── back_camera.py
+│       └── front_camera.py
+└── tests
+    ├── __init__.py
+    ├── processor_test.py
+    ├── filters
+    │   ├── __init__.py
+    │   ├── cat_ears_filter_test.py
+    │   └── sepia_filter_test.py
+    └── image_source
+        ├── __init__.py
+        ├── back_camera_test.py
+        └── front_camera_test.py
+```
+* ```
+photo-app/
+├── README.md
+├── requirements.txt
+└── photo_app
+    ├── __init__.py
+    ├── __main__.py
+    ├── processor.py
+    ├── filters
+    │   ├── __init__.py
+    │   ├── cat_ears_filter.py
+    │   └── sepia_filter.py
+    ├── image_source
+    │   ├── __init__.py
+    │   ├── back_camera.py
+    │   └── front_camera.py
+    └── tests
+        ├── __init__.py
+        ├── processor_test.py
+        ├── filters
+        │   ├── __init__.py
+        │   ├── cat_ears_filter_test.py
+        │   └── sepia_filter_test.py
+        └── image_source
+            ├── __init__.py
+            ├── back_camera_test.py
+            └── front_camera_test.py
+```
+* ```
+photo-app/
+├── README.md
+├── requirements.txt
+├── photo_app
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── back_camera.py
+│   ├── cat_ears_filter.py
+│   ├── front_camera.py
+│   ├── processor.py
+│   └── sepia_filter.py
+└── tests
+    ├── __init__.py
+    ├── back_camera_test.py
+    ├── cat_ears_filter_test.py
+    ├── front_camera_test.py
+    ├── processor_test.py
+    └── sepia_filter_test.py
+```
+
+##### !end-options
+
+##### !answer
+
+* ```
+photo-app/
+├── README.md
+├── requirements.txt
+├── photo_app
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── processor.py
+│   ├── filters
+│   │   ├── __init__.py
+│   │   ├── cat_ears_filter.py
+│   │   └── sepia_filter.py
+│   └── image_source
+│       ├── __init__.py
+│       ├── back_camera.py
+│       └── front_camera.py
+└── tests
+    ├── __init__.py
+    ├── processor_test.py
+    ├── filters
+    │   ├── __init__.py
+    │   ├── cat_ears_filter_test.py
+    │   └── sepia_filter_test.py
+    └── image_source
+        ├── __init__.py
+        ├── back_camera_test.py
+        └── front_camera_test.py
+```
+
+##### !end-answer
+
+##### !explanation
+
+A good default layout is to have our general project files in the project root. Then we create two top-level packages, one for our application code, and one for the tests. The structures under each should generally mirror one another.  Each package folder should have an `__init__.py` file. And when we start dealing with a number of files, some of which are more closely related to each other than the rest of the package, we should consider creating subfolders to group the related types.
+
+##### !end-explanation
+
+### !end-challenge
+<!-- prettier-ignore-end -->
+<!-- ======================= END CHALLENGE ======================= -->
+
 <!-- prettier-ignore-start -->
 ### !challenge
 
