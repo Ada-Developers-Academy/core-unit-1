@@ -37,7 +37,7 @@ def test_exceptional_function():
         exceptional_function(exceptional_argument)
 ```
 
-| <div style="min-width:250px; text-align:center;">Code</div>                   | <div style="min-width:400px;">Description</div>    |
+| <div style="min-width:250px;">Code</div>                   | <div style="min-width:400px;">Description</div>    |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `with pytest.raises(...):`             | pytest needs to know beforehand that we're expecting an exception. We use `with pytest.raises(...):` to begin a code block that will be able to handle it. If we don't, the test itself will crash! |
 | `SomeTypeOfException`                        | **Replace this** with the exact kind of exception we're expecting. Examples include `TypeError`, `NotImplementedError`, or any other Python error. |
