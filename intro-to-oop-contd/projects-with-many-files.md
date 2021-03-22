@@ -538,13 +538,6 @@ The most appropriate way to import things will depend on whether we are importin
 
 ## Check for Understanding
 
-<!-- The first question (Project Structure) should use a main.py, or some other file outside the package to hold the main logic. Generally, only logic related to the setup of the package or package-level exports should be in init.py
-
-For the second question (Importing modules)
-
-it refers to guest.py in the question and the file label, but the class shown is Host, so change the filenames to match
-consider rephrasing to something like "if we try to use the host.py module in our project" rather than "running" it. We shouldn't encourage running package modules directly. -->
-
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- prettier-ignore-start -->
 
