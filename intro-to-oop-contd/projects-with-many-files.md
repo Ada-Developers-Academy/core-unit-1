@@ -430,9 +430,9 @@ This might look a little familiar. This is the same style of command we use to c
 python3 -m venv venv
 ```
 
-Each command locates a special file called `__main__.py` in the specified package and runs that! We can think of the `-m` argument as standing for _main_ or _module_ to help us remember what it does.
+If the argument to `-m` is a module name, Python runs the module in the context of its package (so relative package imports would work). If the argument is a package name (as in the examples), Python looks for a special file called `__main__.py` in the specified package and runs that! We can think of the `-m` argument as standing for _main_ or _module_ to help us remember what it does.
 
-We can follow this pattern as well. Since this is a semi-standard Python pattern, other users who download our code should understand how it works. Again, Python will let us start our programs however we like, and as long as we communicate how to use our program to our users, anything that works is a valid approach! But let's see how Scarlet can use this pattern in her ride share app.
+_We_ can follow this pattern in our own code as well. Since this is a semi-standard Python pattern, other users who download our code should understand how it works. Again, Python will let us start our programs however we like, and as long as we communicate how to use our program to our users, anything that works is a valid approach! But let's see how Scarlet can use this pattern in her ride share app.
 
 Remember that she left the startup logic for her app in the `main.py` file, which is _not_ a part of her package. To start with, she can move the file into her package, and rename it to `__main__.py`.
 
