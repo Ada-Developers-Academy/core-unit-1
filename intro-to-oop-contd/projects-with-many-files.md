@@ -33,9 +33,9 @@ Let's take a look at what we need to do to use this method of organization in ou
 
 ## Vocabulary and Synonyms
 
-| Vocab   | Definition                                                                              | How to Use in a Sentence                                                                |
-| ------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Module  | Any `.py` file that contains functions, classes, variables, and/or other runnable code | "I used the `math.Euler()` from the `Math` module to calculate an angle"                |
+| Vocab   | Definition                                                                             | How to Use in a Sentence                                                                                                                  |
+| ------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Module  | Any `.py` file that contains functions, classes, variables, and/or other runnable code | "I used the `math.Euler()` from the `Math` module to calculate an angle"                                                                  |
 | Package | A collection of modules                                                                | "The `requests` package contains modules to help us make HTTP requests." "My package has custom configuration in its `__init__.py` file." |
 
 ## New File Organization
@@ -149,13 +149,13 @@ ride-share-app/
     └── passenger_test.py
 ```
 
-There is one package named `ride_share_app`. It contains the modules `driver` and `passenger`. We might reference the `passenger` module with `.passenger` or `ride_share_app.passenger`, depending on our relative location.  More on why shortly!
+There is one package named `ride_share_app`. It contains the modules `driver` and `passenger`. We might reference the `passenger` module with `.passenger` or `ride_share_app.passenger`, depending on our relative location. More on why shortly!
 
 ### !callout-info
 
 ## Package and Module Naming Conventions
 
-Notice in the example that the package name uses underscores (`_`) rather than hyphens (`-`). There aren't too many rules about package or module naming conventions, but a notable one is that they cannot contain hyphens. Python package names must be valid identifier names and tend to follow variable- or function-style naming. So while hyphens are valid in file names, we can't use them in files that will be part of a package or module name. *Take a moment to think about why identifiers cannot contain hyphens.*
+Notice in the example that the package name uses underscores (`_`) rather than hyphens (`-`). There aren't too many rules about package or module naming conventions, but a notable one is that they cannot contain hyphens. Python package names must be valid identifier names and tend to follow variable- or function-style naming. So while hyphens are valid in file names, we can't use them in files that will be part of a package or module name. _Take a moment to think about why identifiers cannot contain hyphens._
 
 <br />
 
@@ -214,7 +214,8 @@ Assuming there is an identifier called `Driver` in the `driver` module and that 
 ### !callout-info
 
 ## Why We Keep Saying Identifier
-Notice that we have been careful to say that Python imports identifiers into the current scope. Identifiers are names of things. Variables, functions, and classes are all named with identifiers. From just looking at an identifier, we don't know what it refers to. So we have to be careful to import the correct identifiers, and then use them as they are intended to be used. 
+
+Notice that we have been careful to say that Python imports identifiers into the current scope. Identifiers are names of things. Variables, functions, and classes are all named with identifiers. From just looking at an identifier, we don't know what it refers to. So we have to be careful to import the correct identifiers, and then use them as they are intended to be used.
 
 <br />
 
@@ -224,7 +225,7 @@ Hopefully good naming practices were employed to help hint at the proper usage o
 
 #### 3. Importing Module Identifiers using Relative Names
 
-Importing package modules by full name works everywhere, whether from outside or inside a package. But to access the identifiers defined in the module, we have to prefix them with the full package name. If our package were several layers deep, this could make for some long names! 
+Importing package modules by full name works everywhere, whether from outside or inside a package. But to access the identifiers defined in the module, we have to prefix them with the full package name. If our package were several layers deep, this could make for some long names!
 
 Let's say that the `passenger` module in our `ride_share_app` package needs to make use of the `Driver` class. We could certainly import the `driver` module as before and access the `Driver` class with the full package name. But `driver.py` and `passenger.py` are defined in the same package. In fact, they're in the same folder. Wouldn't it be nice if there were a shorter way?
 
@@ -244,12 +245,12 @@ What this statement does is:
 The module name looks different from the examples we've seen before. It starts with a `.` which tells Python to look for the module in the folder containing the current file. When Python finds the specified module, rather than importing the name of the module into the current scope, it looks at the names listed after `import` (we can write multiple names separated by commas) and imports just those identifiers into the current scope.
 
 If we assume as before that the `Driver` identifier is a class, this lets us write the following:
+
 ```python
 driver = Driver()
 ```
 
 Shorter and clearer!
-
 
 ```
 └── ride_share_app
@@ -317,7 +318,6 @@ Different situations will need to use different ways of importing. So we should 
 
 Let's return to Scarlet's project and see how she decides to reorganize her project. Remember that she started with a single file `main.py` that contained two classes, `Driver` and `Passenger`, and there was some main logic to create a `Passenger` instance.
 
-
 Scarlet is making a ride share app, so she decides to call her project root `ride-share-app`. She puts her standard project files in the project root. She knows that in Python we like to have each class in its own module, and that the modules for a project are usually grouped into a package. She can't use hyphens in the package name, so she decides on `ride_share_app` as her package name. She makes the folder, adds the `__init__.py` file to tell Python this is a package folder, then makes a module file for each class: `driver.py` and `passenger.py`.
 
 She considers renaming the `main.py` which now only contains the application startup to `ride_share.py` to be a little more descriptive on the command line. But Scarlet learned about another strategy for where to put her startup code that she wants to try, so for now she leaves the code in `main.py`
@@ -325,6 +325,7 @@ She considers renaming the `main.py` which now only contains the application sta
 ### !callout-warning
 
 ## Be Careful With Descriptive Entry Point File Names
+
 Scarlet also briefly considered renaming `main.py` to `ride_share_app.py`, but then she realized that would prevent Python from being able to see the `ride_share_app` package. If the main file has the same name as the package, if we try to import from the package, Python will try looking inside the module we are currently in, not find the desired identifier, and raise an `ImportError`.
 
 <br />
@@ -366,6 +367,7 @@ class Passenger:
 ```
 
 `main.py`:
+
 ```python
 scarlet = Passenger()
 ```
@@ -415,7 +417,6 @@ class Passenger:
 
 This `import` tells Python to get the `Driver` identifier from the `driver` module located in the same folder as `passenger.py`. Running once more with `python3 main.py`, Scarlet gets the following output:
 
-
 ```
 I'm creating an instance of Passenger!
 I'm creating an instance of Driver!
@@ -427,7 +428,7 @@ Scarlet used an appropriate `import` statement for each case where Python needed
 
 ## Moving Startup Logic Into Our Package
 
-There are many approaches to where we should put the code that starts our applications.  Python doesn't have a strong opinion about this. Leaving it in a `main.py` file is fine. Using a different file name that's more descriptive of our project is also fine.
+There are many approaches to where we should put the code that starts our applications. Python doesn't have a strong opinion about this. Leaving it in a `main.py` file is fine. Using a different file name that's more descriptive of our project is also fine.
 
 Applications written in Python often include extra files so that the end user doesn't have to worry about exactly the command line to use. For instance, when we use `pytest` we run the command `pytest`. But this command is really only used to locate and run the real application startup for `pytest` which is actually in a really weird place!
 
@@ -521,7 +522,7 @@ Where `passenger.py` looks like:
 from .driver import non_existing_class_or_function
 ```
 
-The `ImportError` is raised because we're trying to import an identifier that can't be found,  `non_existing_class_or_function`, from an existing module `driver`. In general, this error tells us:
+The `ImportError` is raised because we're trying to import an identifier that can't be found, `non_existing_class_or_function`, from an existing module `driver`. In general, this error tells us:
 
 - There's an `import` statement that can't find what to import within the module
   - Double-check that the module defines what we're trying to import with the exact same name
@@ -543,7 +544,6 @@ For the second question (Importing modules)
 
 it refers to guest.py in the question and the file label, but the class shown is Host, so change the filenames to match
 consider rephrasing to something like "if we try to use the host.py module in our project" rather than "running" it. We shouldn't encourage running package modules directly. -->
-
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- prettier-ignore-start -->
