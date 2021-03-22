@@ -58,6 +58,9 @@ Album("Dirty Computer")
 Album("Purple Rain")
 ```
 
+![Two instances of Album](../assets/intro-to-oop_creating-instances_pass-in-params-2.png)  
+*Fig. Two instances of 'Album'.*
+
 ### !callout-info
 
 ## Don't Pass in `self`
@@ -73,6 +76,9 @@ Album("Dirty Computer")
 Album("Dirty Computer")
 ```
 
+![Two instances of Album with the same title](../assets/intro-to-oop_creating-instances_pass-in-params-2.png)  
+*Fig. Two instances of 'Album' with the same title.*
+
 ### Storing in Variables
 
 Just like with strings, lists, dictionaries, numbers, and other kinds of data, if we want to keep a reference to data, we should assign it to a variable.
@@ -81,6 +87,9 @@ Just like with strings, lists, dictionaries, numbers, and other kinds of data, i
 dirty_computer = Album("Dirty Computer")
 purple_rain = Album("Purple Rain")
 ```
+
+![Two instances of Album assigned to variables](../assets/intro-to-oop_creating-instances_storing-in-variables.png)  
+*Fig. Two instances of 'Album' assigned to variables.*
 
 In the above example...
 
@@ -315,6 +324,9 @@ print(album.title)
 album.title = "Dirty Computer"
 print(album.title)
 ```
+
+![Reassigning the attribute title of an Album](../assets/intro-to-oop_creating-instances_reassigning-attributes-2.png)  
+*Fig. Reassigning the attribute 'title' of an instance of Album.*
 
 What will the output be?
 
