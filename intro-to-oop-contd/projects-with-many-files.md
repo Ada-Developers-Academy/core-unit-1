@@ -320,7 +320,18 @@ Let's return to Scarlet's project and see how she decides to reorganize her proj
 
 Scarlet is making a ride share app, so she decides to call her project root `ride-share-app`. She puts her standard project files in the project root. She knows that in Python we like to have each class in its own module, and that the modules for a project are usually grouped into a package. She can't use hyphens in the package name, so she decides on `ride_share_app` as her package name. She makes the folder, adds the `__init__.py` file to tell Python this is a package folder, then makes a module file for each class: `driver.py` and `passenger.py`.
 
-She considers renaming the `main.py` which now only contains the application startup to `ride_share_app.py` to be a little more descriptive on the command line. But Scarlet learned about another strategy for where to put her startup code that she wants to try, so for now she leaves the code in `main.py`
+She considers renaming the `main.py` which now only contains the application startup to `ride_share.py` to be a little more descriptive on the command line. But Scarlet learned about another strategy for where to put her startup code that she wants to try, so for now she leaves the code in `main.py`
+
+### !callout-warning
+
+## Be Careful With Descriptive Entry Point File Names
+Scarlet also briefly considered renaming `main.py` to `ride_share_app.py`, but then she realized that would prevent Python from being able to see the `ride_share_app` package. If the main file has the same name as the package, if we try to import from the package, Python will try looking inside the module we are currently in, not find the desired identifier, and raise an `ImportError`.
+
+<br />
+
+We should make sure that the entry point file name does _not_ match the project package name. Alternatives include adding `_pkg` to the name of the package, though this isn't very Pythonic. Or we could make the entry point closely related to, but not the same as the package name, like how Scarlet considered `ride_share.py`. We can use a more general entry point, like `main.py`. Or if we want to be able to use the package name to launch the application, we can use the special `__main__.py` file described later in this lesson.
+
+### !end-callout
 
 This gives Scarlet the following file structure:
 
