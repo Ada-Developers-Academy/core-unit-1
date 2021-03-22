@@ -471,8 +471,11 @@ We can do the same thing in our own projects if we like how this looks. There ar
 
 Here are some common bugs that we may come across with importing:
 
+### `ModuleNotFoundError`
+
 ```
 Traceback (most recent call last):
+  ... (some details omitted for clarity) ...
   File "ride_share_app/passenger.py", line 1, in <module>
     from non_existing_module import Driver
 ModuleNotFoundError: No module named 'non_existing_module'
@@ -484,26 +487,31 @@ Where `passenger.py` looks like:
 from non_existing_module import Driver
 ```
 
-- A `ModuleNotFoundError` is raised because the program can't find `non_existing_module`
-- There's an import statement that can't find the specified module
-  - Double-check the `from` part. Do we need to including the package name, if this file isn't in the same package? Or do we need to exclude it?
+The `ModuleNotFoundError` is raised because the program can't find `non_existing_module`. In general, this error tells us:
+
+- There's an `import` statement that can't find the specified module
+  - Double-check the `from` part. Do we need to including the package name, if this file isn't in the same package? Ar we missing a `.` (one or more) for a relative import?
+
+### `ImportError`
 
 ```
 Traceback (most recent call last):
+  ... (some details omitted for clarity) ...
   File "ride_share_app/passenger.py", line 1, in <module>
-    from driver import non_existing_class_or_function
-ImportError: cannot import name 'non_existing_class_or_function' from 'driver'
+    from .driver import non_existing_class_or_function
+ImportError: cannot import name 'non_existing_class_or_function' from 'ride_share_app.driver'
 ```
 
 Where `passenger.py` looks like:
 
 ```python
-from driver import non_existing_class_or_function
+from .driver import non_existing_class_or_function
 ```
 
-- An `ImportError` is raised because we're trying to import an object named `non_existing_class_or_function` from an existing module `driver`
-- There's an import statement that can't find what to import within the module
-  - Double-check that the module defines what you're trying to import with the exact same name
+The `ImportError` is raised because we're trying to import an identifier that can't be found,  `non_existing_class_or_function`, from an existing module `driver`. In general, this error tells us:
+
+- There's an `import` statement that can't find what to import within the module
+  - Double-check that the module defines what we're trying to import with the exact same name
   - The name should refer to a top-level class, function, or variable defined in the module
 
 ## Summary
