@@ -219,6 +219,7 @@ This loop has a 50/50 chance of executing the loop body each time the condition 
 How many times will the body of this `while` loop run?
 
 ```python
+counter = 5
 while counter < 5:
     print('in the loop body')
     counter += 1
