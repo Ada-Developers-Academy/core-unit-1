@@ -16,12 +16,9 @@ How would Nakita's workflow change if the Hike Planner team grows? Multiple deve
 
 ## Vocabulary and Synonyms
 
-| <div style="min-width:50px;">Vocab</div>  | 
-<div style="min-width:100px;">Definition</div>        | 
-<div style="min-width:100px;">Synonyms</div>     | 
-<div style="min-width:100px;">How to Use in a Sentence</div>    |
-| ----------------- | ---------------------- | ----------------------------- | -------------------------- |
-| Remote repository | A common repository that all team members use to exchange their changes | Remote, remote repo, `origin` | "I push my code to the remote `origin`, so my team members can pull those changes from it," "I pull changes from the remote `origin`, so I can get the shared code changes." |
+| <div style="min-width:100px;">Vocab</div> | <div style="min-width:200px;">Definition</div> | <div style="min-width:150px;">Synonyms</div> | <div style="min-width:250px;">How to Use in a Sentence</div> |
+| ----------- | ----------- | ----------- | ----------- |
+ Remote repository | A common repository that all team members use to exchange their changes | Remote, remote repo, `origin` | "I push my code to the remote `origin`, so my team members can pull those changes from it," "I pull changes from the remote `origin`, so I can get the shared code changes." |
 
 ## Collaboration Means Looking at the Same Source of Code
 
