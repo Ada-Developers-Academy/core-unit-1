@@ -737,7 +737,7 @@ photo-app/
 
 ##### !explanation
 
-A good default layout is to have our general project files in the project root. Then we create two top-level packages, one for our application code, and one for the tests. The structures under each should generally mirror one another.  Each package folder should have an `__init__.py` file. And when we start dealing with a number of files, some of which are more closely related to each other than the rest of the package, we should consider creating subfolders to group the related types.
+A good default layout is to have our general project files in the project root. Then we create two top-level packages, one for our application code, and one for the tests. The structures under each should generally mirror one another.  Each package folder should have an `__init__.py` file. And when we start dealing with a number of files, some of which are more closely related to each other than the rest of the package, we should consider creating subfolders to group the related files.
 
 ##### !end-explanation
 
@@ -793,7 +793,7 @@ Since the two modules, `host.py` and `place.py` are in the same package folder, 
 
 <br />
 
-The two options differ in terms of placement. While the code would work if we put the `import` statement just before using the `Place` class, we should prefer to put `import` statements near the top of the file.
+The two options differ in terms of placement. While the `import` would work if we put it just before where we use the `Place` class, we should prefer to put `import` statements near the top of the file.
 
 ##### !end-explanation
 
