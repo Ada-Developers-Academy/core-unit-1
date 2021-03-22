@@ -55,8 +55,8 @@ project_name/
 │   └── example_class_b.py
 └── tests
     ├── __init__.py
-    ├── example_c_test.py
-    └── example_d_test.py
+    ├── example_class_a_test.py
+    └── example_class_b_test.py
 ```
 
 Let's examine the various parts of this project structure.
@@ -83,7 +83,7 @@ The most common of these is called the `__init__.py` file, which is discussed br
 
 Projects with a clear starting point might include a `__main__.py` as a fairly standard place to put the application start up logic. Some projects may not need this file, and some might choose to put that logic somewhere else.
 
-Our package folder usually has the same name as the project, but it must follow some package naming rules (detailed below).
+Our package folder usually has the same name as the project, but it must follow some package naming rules which we will review a little later in this lesson.
 
 The above example names this folder `project_package_name` so that we can distinguish it from the project root, but there would be nothing preventing us from calling it `project_name` to match the project root name. It contains two class files, `example_class_a.py` and `example_class_b.py`, and both an `__init__.py` file and a `__main__.py`.
 
@@ -93,7 +93,7 @@ Projects that have multiple test files should organize them under one `tests` fo
 
 When we start a project and have only a few test files, placing them all directly in the `tests` folder is reasonable. As the number of test files increases, we often organize the tests using the same subfolder structure we use to organize our class files.
 
-The above example has a `tests` folder. It contains two test files, `example_c_test.py` and `example_d_test.py`, and an `__init__.py` file.
+The above example has a `tests` folder. It contains two test files, `example_class_a_test.py` and `example_class_b_test.py`, and an `__init__.py` file.
 
 ### !callout-success
 
@@ -149,7 +149,7 @@ ride-share-app/
     └── passenger_test.py
 ```
 
-There is one package named `ride_share_app`. It contains the modules `driver` and `passenger`. We might reference the _passenger module_ with `.passenger` or `ride_share_app.passenger`, depending on our relative location.  More on why shortly!
+There is one package named `ride_share_app`. It contains the modules `driver` and `passenger`. We might reference the `passenger` module with `.passenger` or `ride_share_app.passenger`, depending on our relative location.  More on why shortly!
 
 ### !callout-info
 
@@ -252,11 +252,11 @@ Shorter and clearer!
 
 
 ```
-├── ride_share_app
-│   ├── __init__.py
-│   ├── driver.py
-│   ├── passenger.py
-│   └── payment
+└── ride_share_app
+    ├── __init__.py
+    ├── driver.py
+    ├── passenger.py
+    └── payment
         ├── __init__.py
         ├── cash.py
         └── credit.py
