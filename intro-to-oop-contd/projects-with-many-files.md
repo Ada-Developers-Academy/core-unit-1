@@ -505,6 +505,8 @@ Here are some common bugs that we may come across with importing:
 
 ### `ModuleNotFoundError`
 
+Consider this stack trace caused from running `passenger.py`
+
 ```
 Traceback (most recent call last):
   ... (some details omitted for clarity) ...
@@ -525,6 +527,8 @@ The `ModuleNotFoundError` is raised because the program can't find `non_existing
   - Double-check the `from` part. Do we need to including the package name, if this file isn't in the same package? Ar we missing a `.` (one or more) for a relative import?
 
 ### `ImportError`
+
+Consider this stack trace caused from running `passenger.py`
 
 ```
 Traceback (most recent call last):
