@@ -33,9 +33,9 @@ Let's take a look at what we need to do to use this method of organization in ou
 
 ## Vocabulary and Synonyms
 
-| Vocab   | Definition                                                                             | How to Use in a Sentence                                                                                                                  |
-| ------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Module  | Any `.py` file that contains functions, classes, variables, and/or other runnable code | "I used the `math.Euler()` from the `Math` module to calculate an angle"                                                                  |
+| Vocab   | Definition                                                                             | How to Use in a Sentence                                                                                                                              |
+| ------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Module  | Any `.py` file that contains functions, classes, variables, and/or other runnable code | "I used the `math.Euler()` from the `Math` module to calculate an angle"                                                                              |
 | Package | A collection of modules                                                                | "The `requests` package contains modules to help us request data from the Internet." "My package has custom configuration in its `__init__.py` file." |
 
 ## New File Organization
@@ -174,7 +174,6 @@ Following the above folder structure alone is not enough to make classes in one 
 
 We must _import_ any resources that we need from another module before we can use them in the current module, otherwise Python will report a `NameError`. Importing from another module into the current module allows the current module to access the other module's contents by name.
 
-
 There are three common ways that we will see packages and modules imported into our projects:
 
 1. Importing a module by name
@@ -205,7 +204,7 @@ Python has many built-in modules, and Python will _always_ prefer them over any 
 
 When we write our own modules, it is a best practice to gather them together into a package. We should pick a package name that doesn't match a built-in module. This lets us make a space to name our own types and functions without duplicating or hiding any other names!
 
-Let's return to the same `ride_share_app` example introduced above. 
+Let's return to the same `ride_share_app` example introduced above.
 
 ```
 ride-share-app/
@@ -368,7 +367,6 @@ Let's return to Scarlet's project and see how she decides to reorganize her proj
 
 Scarlet is making a ride share app, so she decides to call her project root `ride-share-app`. She puts her standard project files in the project root. She knows that in Python we like to have each class in its own module, and that the modules for a project are usually grouped into a package. She can't use hyphens in the package name, so she decides on `ride_share_app` as her package name. She makes the folder, adds the `__init__.py` file to tell Python this is a package folder, then makes a module file for each class: `driver.py` and `passenger.py`.
 
-
 This gives Scarlet the following file structure:
 
 ```
@@ -498,6 +496,7 @@ ride-share-app/
 ```
 
 Notice that the `tests` folder is in the project root folder (`ride-share-app`), not in the package folder (`ride_share_app`).
+
 </details>
 
 ## Debugging Imports
