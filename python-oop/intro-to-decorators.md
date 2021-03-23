@@ -116,6 +116,23 @@ def wrapped_function():
 | Definition of `wrapped_function` | The definition of the function being wrapped. It will be called within the newly created wrapped function, where it will be available as the first parameter to `wrapper_function`                                                                                                                                                      |
 | `@wrapper_function`              | **Replace this** with the name of the decorator (wrapper). This line should always start with `@` and be the line above the wrapped function signature.                                                                                                                                                                                 |
 
+### !callout-info
+
+## Decorators Are Syntactic Sugar
+
+The `@wrapper_function` notation above is referred to as _syntactic sugar_. It doesn't do anything we couldn't already do in Python, but it does it a little more neatly. So what does the above expression translate to in more plain Python?
+
+```python
+def wrapped_function():
+    pass
+
+wrapped_function = wrapper_function(wrapped_function)
+```
+
+Before decorator syntax, this wrapping was a manual two-step process. Now Python takes care of that for us. So even though the `@` syntax may look strange, this is really all it means!
+
+### !end-callout
+
 ### A Medium Example With Syntax
 
 Let's dive into an example!
