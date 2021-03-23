@@ -1,5 +1,7 @@
 # Collaborating
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=4a699cb2-5d73-4252-a42a-acf4011bb3e4&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Explain how Git is a version control system used to collaborate on code
@@ -16,11 +18,14 @@ How would Nakita's workflow change if the Hike Planner team grows? Multiple deve
 
 ## Vocabulary and Synonyms
 
-| Vocab             | Definition                                                              | Synonyms                      | How to Use in a Sentence                                                                                                                                                     |
-| ----------------- | ----------------------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Remote repository | A common repository that all team members use to exchange their changes | Remote, remote repo, `origin` | "I push my code to the remote `origin`, so my team members can pull those changes from it," "I pull changes from the remote `origin`, so I can get the shared code changes." |
+| <div style="min-width:100px;">Vocab</div> | <div style="min-width:200px;">Definition</div> | <div style="min-width:150px;">Synonyms</div> | <div style="min-width:250px;">How to Use in a Sentence</div> |
+| ----------- | ----------- | ----------- | ----------- |
+ Remote repository | A common repository that all team members use to exchange their changes | Remote, remote repo, `origin` | "I push my code to the remote `origin`, so my team members can pull those changes from it," "I pull changes from the remote `origin`, so I can get the shared code changes." |
 
 ## Collaboration Means Looking at the Same Source of Code
+
+![Picture of Spongebob saying 'Teamwork' with a magic rainbow](../assets/intro-to-git_collaborating_teamwork.jpeg)  
+[(source)](https://memegenerator.net/instance/49040424/spongebob-teamwork)
 
 Nakita's friends, Frida and Raul, want to join Nakita and help her build Hike Planner. How does Nakita share the current Git history that's already built? How do Frida and Raul get access to this Git history? Can Frida and Raul work at the same time as Nakita? Do Frida and Raul make commits too? How do all of these commits get received? How do they get shared?
 
@@ -34,6 +39,11 @@ Git is highly configurable, so most of these settings can change. However, in th
 - All team members will follow and repeat this cycle, enabling a smooth team workflow
 
 ### Example of the Entire Process: The Hike Planner Team
+
+![Image of Spongebob and Patrick walkin wearing hiking hear](../assets/intro-to-git_collaborating_spongebob-hiking.jpeg)  
+[(source)](https://imgflip.com/memetemplate/71579342/Spongebob-Adventure)
+
+
 
 For the Hike Planner team, we can imagine this story:
 
@@ -123,6 +133,10 @@ There is much more to learn about Git pulling and merging. Due to the depth of t
 
 ### !end-callout
 
+![Pulling files using VS Code](../assets/intro-to-git_commits_vscode-pull.png)  
+*Fig. VS Code lets us pull from within the editor. We can open the Source Control Panel, then click the three dots icon to open the extra actions menu. From here, we can click Pull to pull our changes from `origin`. While handy, you might still prefer to use the command line to pull, since the terminal output can be informative.*
+
+
 ## Pushing Commits to `origin`
 
 As described in our discussion of pulling, the remote repository stores all commits from each team member. Our local machine has the changes we made ourselves on it, but how do we make our changes available to the rest of our team?
@@ -144,6 +158,9 @@ There are many, many arguments to configure the `$ git push` command. When we ne
 By default, `$ git push` will push the current history to the `origin` repo.
 
 ### !end-callout
+
+![Pushing files using VS Code](../assets/intro-to-git_commits_vscode-push.png)  
+*Fig. VS Code lets us push from within the editor. We can open the Source Control Panel, then click the three dots icon to open the extra actions menu. From here, we can click Push to push our changes to `origin`. While convenient, you might still prefer to use the command line to push, since the terminal output can be informative.*
 
 ### Pull Before Pushing
 
