@@ -48,9 +48,9 @@ There is no single _required_ structure for Python projects; different projects 
 project_name/
 ├── README.md
 ├── requirements.txt
+├── main.py
 ├── project_package_name
 │   ├── __init__.py
-│   ├── __main__.py
 │   ├── example_class_a.py
 │   └── example_class_b.py
 └── tests
@@ -73,21 +73,23 @@ Files such as `README.md`, `requirements.txt`, and any virtual environment folde
 
 Often, files and folders are in the project root because it makes the most logical sense, and there isn't a better folder. `README.md`, `requirements.txt`, and the `venv` folder are all examples of this. Some configuration files will need to be in the project root in order for them to work.
 
+### A File That Starts Running Our Code
+
+In the `main.py` file (also located in the project root) we can put just enough code to start up the rest of our project. In the introduction example, this means that we might have `scarlet = Passenger()` as the only line in `main.py`! In actuality, it would be _nearly_ the only line, but we'll discuss this in more detail later in this lesson.
+
+With a `main.py` file, if we `cd` into the project root, this lets us run our code with the command `python3 main.py`.
+
 ### Project Code Lives in a Package Folder
 
 Under the project root, we will have a single folder to contain all of our project classes, one class per `.py` file. We refer to this folder as the **package folder**. At the start of a project, when we don't have many class files, we might put them all directly in the package folder. But as the project becomes more complex, we can add subfolders to further group together related class files.
 
-In the above example, the package folder is `project_package_name`.
+The above example names the package folder `project_package_name` so that we can distinguish it from the project root, but there would be nothing preventing us from calling it `project_name` to match the project root name.
 
-There are also a number of special files that can be placed in the package folder.
+The package folder contains two class files, `example_class_a.py` and `example_class_b.py`, and a special `__init__.py` file.
 
-The most common of these is called the `__init__.py` file, which is discussed briefly in the Package Details section below.
-
-Projects with a clear starting point might include a `__main__.py` as a fairly standard place to put the application start up logic. Some projects may not need this file, and some might choose to put that logic somewhere else.
+Package folders can contain a few special files. The most common of these is called the `__init__.py` file, which is discussed briefly in the Package Details section below.
 
 Our package folder usually has the same name as the project, but it must follow some package naming rules which we will review a little later in this lesson.
-
-The above example names this folder `project_package_name` so that we can distinguish it from the project root, but there would be nothing preventing us from calling it `project_name` to match the project root name. It contains two class files, `example_class_a.py` and `example_class_b.py`, and both an `__init__.py` file and a `__main__.py`.
 
 ### Tests Live in a Test Folder
 
@@ -141,6 +143,7 @@ For example, given this structure for a project named `ride-share-app`:
 ride-share-app/
 ├── README.md
 ├── requirements.txt
+├── main.py
 ├── ride_share_app
 │   ├── __init__.py
 │   ├── driver.py
@@ -180,7 +183,7 @@ There are three common ways that we will see packages and modules imported into 
 
 Regardless of the `import` style used, we should prefer to put `import` statements near the top of the file doing the importing. It _is_ valid syntax to put `import` statements elsewhere in a file, but by putting them near the top, other programmers will know where to look for the modules on which our module depends.
 
-#### 1. Importing a Module by Name
+### 1. Importing a Module by Name
 
 Importing a module by name is especially common for modules that are built-in to Python.
 
@@ -198,9 +201,26 @@ my_random_int = random.randint(0, 5)
 
 Python has many built-in modules, and Python will _always_ prefer them over any modules we write that share the same name. So we should take care to avoid using their names for our own modules, or make sure to put such modules into a package of our own!
 
-#### 2. Importing a Package Module by Full Name
+### 2. Importing a Package Module by Full Name
 
-When we write our own modules, it is a best practice to gather them together into a package. As long as we pick a package name that doesn't match a built-in module, this lets us carve out a space to name our own types and functions.
+When we write our own modules, it is a best practice to gather them together into a package. We should pick a package name that doesn't match a built-in module. This lets us make a space to name our own types and functions without duplicating or hiding any other names!
+
+Let's return to the same `ride_share_app` example introduced above. 
+
+```
+ride-share-app/
+├── README.md
+├── requirements.txt
+├── main.py
+├── ride_share_app
+│   ├── __init__.py
+│   ├── driver.py
+│   └── passenger.py
+└── tests
+    ├── __init__.py
+    ├── driver_test.py
+    └── passenger_test.py
+```
 
 To import the `driver` module from the `ride_share_app` package example above, we could use the following command.
 
@@ -214,7 +234,7 @@ This statement imports the `ride_share_app` package name into the current scope.
 driver = ride_share_app.driver.Driver()
 ```
 
-This line looks inside a package called `ride_share_app` for a module called `driver` to find and call a `Driver()` identifier. Then, it stores the new `Driver` instance returned by this call in the local variable `driver`.
+This line looks inside the `ride_share_app` package for the `driver` module to find a `Driver` identifier, and tries to call it with `()`. Then, it stores the new `Driver` instance returned by this call in the local variable `driver`.
 
 ### !callout-info
 
@@ -224,18 +244,34 @@ The line `driver = ride_share_app.driver.Driver()` uses both a module named `dri
 
 ### !end-callout
 
+### !callout-secondary
 
-### !callout-info
-
-## Identifiers are Variables, Functions, and Classes
+## Identifiers Are Names of Things
 
 Notice that we have been careful to say that Python imports identifiers into the current scope. Identifiers are names of things. Variables, functions, and classes are all named with identifiers. From only looking at an identifier, we don't know what it refers to. For example, if we import an identifier that refers to a value (a variable) but then try to call it like a function, this will result in a runtime error. We should be careful to import the correct identifiers, and then use them as they are intended to be used.
 
 ### !end-callout
 
-#### 3. Importing Module Identifiers using Relative Names
+### 3. Importing Module Identifiers using Relative Names
 
 Importing package modules by full name works everywhere, whether from outside or inside a package. But to access the identifiers defined in the module, we have to prefix them with the full package name. If our package were several layers deep, this could make for some long names!
+
+Again, considering our `ride_share_app` example from before:
+
+```
+ride-share-app/
+├── README.md
+├── requirements.txt
+├── main.py
+├── ride_share_app
+│   ├── __init__.py
+│   ├── driver.py
+│   └── passenger.py
+└── tests
+    ├── __init__.py
+    ├── driver_test.py
+    └── passenger_test.py
+```
 
 Let's say that the `passenger` module in our `ride_share_app` package needs to make use of the `Driver` class. We could certainly import the `driver` module as before and access the `Driver` class with the full package name. But `driver.py` and `passenger.py` are defined in the same package. In fact, they're in the same folder. Wouldn't it be nice if there were a shorter way?
 
@@ -254,13 +290,15 @@ What this statement does is:
 
 The module name looks different from the examples we've seen before. It starts with a `.` which tells Python to look for the module in the folder containing the current file. When Python finds the specified module, rather than importing the name of the module into the current scope, it looks at the names listed after `import` (we can write multiple names separated by commas) and imports just those identifiers into the current scope.
 
-If we assume as before that the `Driver` identifier is a class, this lets us write the following:
+Treating the `Driver` identifier as a class (as before), this lets us write the following:
 
 ```python
 driver = Driver()
 ```
 
 Shorter and clearer!
+
+Let's consider a second, similar situation. Notice we are looking only at the `ride_share_app` package folder, and not the whole project. How do we import a module that is inside a different folder, but within the same package?
 
 ```
 ride_share_app
@@ -273,15 +311,13 @@ ride_share_app
     └── credit.py
 ```
 
-Let's consider a second, similar situation. How do we import a module that is inside a different folder, but within the same package?
-
 Imagine that our package had a folder called `payment` under `ride_share_app` (with an `__init__.py` file), and `payment` had the modules `cash.py` and `credit.py`. Inside either `cash.py` or `credit.py`, we can access the `Driver` identifier in `driver.py` as:
 
 ```python
 from ..driver import Driver
 ```
 
-We added another `.` at the beginning, which tells Python to look up one folder. In principle, we can preface the name we give to `from` with as many `.`s as needed to move us up through folders in the package.
+We added another `.` at the beginning, which tells Python to look up one additional folder. In principle, we can preface the name we give to `from` with as many `.`s as needed to move us up through folders in the package.
 
 ### Importing With `from` Works for All Import Methods
 
@@ -322,11 +358,11 @@ two.do_something_else()
 
 ### So Many Ways to Import
 
-As we have shown, there are _many_ different syntaxes and strategies we can use to import modules. If a particular import syntax works for a project, it's valid!
+By now we've seen that there are _many_ different syntaxes and strategies we can use to import modules. If a particular import syntax works for a project, it's valid!
 
 Different situations will need to use different ways of importing. So we should be ready to see many styles of importing. We may even encounter styles that we haven't discussed that we might need to look up. That's ok! But we should feel confident that we can recognize importing when we see it!
 
-## Example Walkthrough: Restructuring a Project
+## Example Walk-Through: Restructuring a Project
 
 Let's return to Scarlet's project and see how she decides to reorganize her project. Remember that she started with a single file `main.py` that contained two classes, `Driver` and `Passenger`, and there was some main logic to create a `Passenger` instance.
 
@@ -371,7 +407,7 @@ class Passenger:
 scarlet = Passenger()
 ```
 
-She runs the project with `python3 main.py`, but she gets this runtime error:
+From within the project root, she runs the project with `python3 main.py`, but she gets this runtime error:
 
 ```
 Traceback (most recent call last):
@@ -425,60 +461,44 @@ No more `NameError` problems!
 
 Scarlet used an appropriate `import` statement for each case where Python needed to know where to find the identifier. From `main.py` she had to use a package full name import, since `main.py` is not part of the `ride_share_app` package. But from `passenger.py` she could use a relative `import`, since `passenger.py` and `driver.py` are in the same package.
 
-## Moving Startup Logic Into Our Package
+### !callout-info
 
-There are many approaches to where we should put the code that starts our applications. Python doesn't have a strong opinion about this. Leaving it in a `main.py` file is fine. Using a different file name that's more descriptive of our project is also fine.
+## `__main__.py` Is Another Special Package File
 
-Applications written in Python often include extra files so that the end user doesn't have to worry about exactly the command line to use. For instance, when we use `pytest` we run the command `pytest`. But this command is really only used to locate and run the real application startup for `pytest` which is actually in a really weird place!
+We have already seen the special `__init__.py` file that Python uses to mark package folders. There is another special package file that can help us organize the way we start our programs.
 
-Another way we can run `pytest` is with the following command:
+<br />
 
-```python
-python3 -m pytest
-```
+If our package includes a file called `__main__.py`, we can start our programs like `python3 -m package_name`. We won't go into the details here, but follow your curiosity!
 
-This might look a little familiar. This is the same style of command we use to create our virtual environments:
+### !end-callout
 
-```python
-python3 -m venv venv
-```
+### Don't Forget the Tests
 
-If the argument to `-m` is a module name, Python runs the module in the context of its package (so relative package imports would work). If the argument is a package name (as in the examples), Python looks for a special file called `__main__.py` in the specified package and runs that! We can think of the `-m` argument as standing for _main_ or _module_ to help us remember what it does.
+Scarlet hasn't written tests for her app yet. Take a moment to think about where she should add tests to this project, then reveal a possible structure below.
 
-_We_ can follow this pattern in our own code as well. Since this is a semi-standard Python pattern, other users who download our code should understand how it works. Again, Python will let us start our programs however we like, and as long as we communicate how to use our program to our users, anything that works is a valid approach! But let's see how Scarlet can use this pattern in her ride share app.
-
-Remember that she left the startup logic for her app in the `main.py` file, which is _not_ a part of her package. To start with, she can move the file into her package, and rename it to `__main__.py`.
+<details style="max-width: 700px; margin: auto;">
+    <summary>
+      Click to reveal a possible project layout that includes tests.
+    </summary>
 
 ```
 ride-share-app/
 ├── README.md
 ├── requirements.txt
-└── ride_share_app
+├── main.py
+├── ride_share_app
+│   ├── __init__.py
+│   ├── driver.py
+│   └── passenger.py
+└── tests
     ├── __init__.py
-    ├── __main__.py
-    ├── driver.py
-    └── passenger.py
+    ├── driver_test.py
+    └── passenger_test.py
 ```
 
-Now Scarlet can run her app with the following command:
-
-```python
-python3 -m ride_share_app
-```
-
-She runs the app and gets the same output as before. Great! But she remembers that she had to use a package full name `import` in `main.py` since it wasn't in the `ride_share_app` package. What if she changes that to a relative import?
-
-She changes the `import` in `__main__.py` as follows:
-
-```python
-from .passenger import Passenger
-
-scarlet = Passenger()
-```
-
-She runs the app once more with `python3 -m ride_share_app` and sees that everything is still working fine!
-
-We can do the same thing in our own projects if we like how this looks. There are many ways to start Python programs, so if this is an interesting topic, we can consider looking into how some Python tools we like let their users run them. Follow your curiosity!
+Notice that the `tests` folder is in the project root folder (`ride-share-app`), not in the package folder (`ride_share_app`).
+</details>
 
 ## Debugging Imports
 
@@ -603,8 +623,8 @@ Which option best captures a possible layout for this project?
 photo-app/
 ├── README.md
 ├── requirements.txt
-├── photo_app.py
-├── photo_app_pkg
+├── main.py
+├── photo_app
 │   ├── processor.py
 │   ├── filters
 │   │   ├── cat_ears_filter.py
@@ -625,9 +645,9 @@ photo-app/
 photo-app/
 ├── README.md
 ├── requirements.txt
+├── main.py
 ├── photo_app
 │   ├── __init__.py
-│   ├── __main__.py
 │   ├── processor.py
 │   ├── filters
 │   │   ├── __init__.py
@@ -653,9 +673,9 @@ photo-app/
 photo-app/
 ├── README.md
 ├── requirements.txt
+├── main.py
 └── photo_app
     ├── __init__.py
-    ├── __main__.py
     ├── processor.py
     ├── filters
     │   ├── __init__.py
@@ -681,9 +701,9 @@ photo-app/
 photo-app/
 ├── README.md
 ├── requirements.txt
+├── main.py
 ├── photo_app
 │   ├── __init__.py
-│   ├── __main__.py
 │   ├── back_camera.py
 │   ├── cat_ears_filter.py
 │   ├── front_camera.py
@@ -706,9 +726,9 @@ photo-app/
 photo-app/
 ├── README.md
 ├── requirements.txt
+├── main.py
 ├── photo_app
 │   ├── __init__.py
-│   ├── __main__.py
 │   ├── processor.py
 │   ├── filters
 │   │   ├── __init__.py
@@ -735,7 +755,7 @@ photo-app/
 
 ##### !explanation
 
-A good default layout is to have our general project files in the project root. Then we create two top-level packages, one for our application code, and one for the tests. The structures under each should generally mirror one another.  Each package folder should have an `__init__.py` file. And when we start dealing with a number of files, some of which are more closely related to each other than the rest of the package, we should consider creating subfolders to group the related files.
+A good default layout is to have our general project files in the project root. Then we create two top-level packages, one for our application code, and one for the tests. The structures under each should generally mirror one another.  Each package folder should have an `__init__.py` file. When we start dealing with a number of files, some of which are more closely related to each other than the rest of the package, we should consider creating subfolders to group the related files.
 
 ##### !end-explanation
 
@@ -752,7 +772,7 @@ A good default layout is to have our general project files in the project root. 
 
 ##### !question
 
-Hosts for AdaBnB can host guests at multiple properties on the app. Each property is an instance of a `Place` class. If we tried to call the `create_places` method of `Host`, we would receive a `NameError`. Assuming the `place` module in which the `Place` class is defined is in the same package folder as `host.py`, select the option that best describes how to solve this `NameError`.
+Hosts for AdaBnB can host guests at multiple properties on the app. Each property is an instance of a `Place` class. If we tried to call the `create_places` method of `Host`, we would receive a `NameError`.
 
 `host.py`
 ``` Python
@@ -769,6 +789,25 @@ class Host:
             properties.append(new_place)
         return properties
 ```
+
+Assuming the following project structure:
+
+```
+adabnb/
+├── README.md
+├── requirements.txt
+├── main.py
+├── adabnb
+│   ├── __init__.py
+│   ├── host.py
+│   └── place.py
+└── tests
+    ├── __init__.py
+    ├── host_test.py
+    └── place_test.py
+```
+
+Select the option that best describes how to solve this `NameError`.
 
 ##### !end-question
 
