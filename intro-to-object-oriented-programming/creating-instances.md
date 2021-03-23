@@ -392,7 +392,7 @@ Another album named Purple Rain: <__main__.Album object at 0x10b31c0a0>
 Dirty Computer: <__main__.Album object at 0x10b28c850>
 ```
 
-![Three Album instances](../assets/intro-to-oop_creating-instances_printing-objects.png)  
+![Three Album instances](../assets/intro-to-oop_creating-instances_printing-objects-shorthand.png)  
 *Fig. Three Album instances.*
 
 Note that even though two instances of `Album` both have the same title, `"Purple Rain"`, they are separate instances that have different IDs. Again, when you run this yourself, the ID values will most likely differ from the values shown here, but each will be distinct from the other `Album` IDs.
