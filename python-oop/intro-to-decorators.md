@@ -108,7 +108,7 @@ def wrapped_function():
 
 ```
 
-| Piece of code                    | Notes                                                                                                                                                                                                                                                                                                                                   |
+| <div style="min-width: 180px;">Piece of code</div>                    | <div style="min-width: 400px;">Notes</div>     |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Definition of `wrapper_function` | The definition of the decorator. This needs to be defined before it's used as a decorator. The wrapper function should always take in at least one parameter, which will receive the function being wrapped. The function body should define an inner function (see notes for `inner`). The decorator must return the `inner` function. |
 | Definition of `inner`            | An inner function defined in the decorator used for the decorator pattern. **Replace this** name with any valid function name (`inner` is fine!). This function body should include all logic that extends the wrapped function. The function body should invoke the wrapped function at least once.                                    |
