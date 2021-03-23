@@ -453,6 +453,10 @@ Standards:
         Type: Lesson
         UID: f6e28e9bf4561ab0a666f1e046e52a83
         Path: /intro-to-oop-contd/projects-with-many-files.md
+      -
+        Type: Instructor
+        UID: d4505dc2-4053-4501-9d48-8232f6ddb93a
+        Path: /intro-to-oop-contd/projects-with-many-files.instructor.md
   -
     Title: Intro to OOP Relationships
     Description: "OOP Relationships, Inheritance, Problem Set: OOP Relationships"
