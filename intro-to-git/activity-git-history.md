@@ -46,16 +46,16 @@ The group members will use these details to name the specific commands needed.
    - box labeled "Local Changes Area"
    - box labeled "Staging Area"
    - box labeled "Git Log"
-1. Each individual should pick one of these commits:
+1. Each individual should pick one of these commits, where each row is a different commit:
 
-| Commit Hash | Commit Message                                  | Modifies files                                       | Adds new files            |
-| ----------- | ----------------------------------------------- | ---------------------------------------------------- | ------------------------- |
-| `1a91c`     | "refactors plan_trip() to for loop"             | `plan.py`                                            | -                         |
-| `2e7de`     | "adds ability to plan multi-day hikes"          | -                                                    | `plan.py`, `test_plan.py` |
-| `384ca`     | "deletes outdated mentions of weather advisory" | `report.py`, `test_report.py`                        | -                         |
-| `4o5em`     | "renames supplies to supply                     | `supplies.py`                                        | `supply.py`               |
-| `5JTrA`     | "adds error handling when loading hike data"    | `hike.py`, `test_hike.py`, `list.py`, `test_list.py` | -                         |
-| `6ee9f`     | "replaces hike report text with new copy"       | `report.py`, `test_report.py`, `hike.py`             | -                         |
+| No. | Commit Hash | Commit Message                                  | Modifies files                                       | Adds new files            |
+| --- | ----------- | ----------------------------------------------- | ---------------------------------------------------- | ------------------------- |
+| 1   | `1a91c`     | "refactors plan_trip() to for loop"             | `plan.py`                                            | -                         |
+| 2   | `2e7de`     | "adds ability to plan multi-day hikes"          | -                                                    | `plan.py`, `test_plan.py` |
+| 3   | `384ca`     | "deletes outdated mentions of weather advisory" | `report.py`, `test_report.py`                        | -                         |
+| 4   | `4o5em`     | "renames supplies to supply                     | `supplies.py`                                        | `supply.py`               |
+| 5   | `5JTrA`     | "adds error handling when loading hike data"    | `hike.py`, `test_hike.py`, `list.py`, `test_list.py` | -                         |
+| 6   | `6ee9f`     | "replaces hike report text with new copy"       | `report.py`, `test_report.py`, `hike.py`             | -                         |
 
 ### Instructions
 
@@ -81,24 +81,30 @@ Each member will pick one of the commits in the Setup section. The only detail p
 ### Part 2 Setup
 
 1. Make a diagram that represents a team's repo. Label this "Hike Planner Git Log." Ensure all members can see this.
-1. Begin an individual diagram that represents each member's own laptop. Each individual should draw a box labeled "Git Log."
-1. Fill in the "Hike Planner Git Log" box with these commit hashes:
-   - ```
-     43d8f
-     01a6b
-     882ca
-     c6f7p
-     ```
-   - The commits are ordered reverse-chronologically. Commit `43d8bf` is the newest commit. `c6f79p` is the oldest commit.
-1. Each individual should pick one of these commit hashes:
-   - ```
-     1a91c
-     2e7de
-     384ca
-     4o5em
-     5JTrA
-     6ee9f
-     ```
+2. Begin an individual diagram that represents each member's own laptop. Each individual should draw a box labeled "Git Log."
+3. Fill in the "Hike Planner Git Log" box with these commit hashes:
+
+```bash
+# Hike Planner Git Log
+
+43d8f
+01a6b
+882ca
+c6f7p
+```
+
+The commits are ordered reverse-chronologically. Commit `43d8bf` is the newest commit. `c6f79p` is the oldest commit.
+
+4. Each individual should pick one of these commit hashes:
+
+| No. | Commit Hash |
+| --- | ----------- |
+| 1   | 1a91c       |
+| 2   | 2e7de       |
+| 3   | 384ca       |
+| 4   | 4o5em       |
+| 5   | 5JTrA       |
+| 6   | 6ee9f       |
 
 ### Instructions
 
