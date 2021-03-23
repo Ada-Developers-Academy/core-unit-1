@@ -59,7 +59,7 @@ Album("Purple Rain")
 ```
 
 ![Two instances of Album](../assets/intro-to-oop_creating-instances_pass-in-params-1.png)  
-*Fig. Two instances of 'Album'.*
+*Fig. Two instances of __`Album`__.*
 
 ### !callout-info
 
@@ -77,7 +77,7 @@ Album("Dirty Computer")
 ```
 
 ![Two instances of Album with the same title](../assets/intro-to-oop_creating-instances_pass-in-params-2.png)  
-*Fig. Two instances of 'Album' with the same title.*
+*Fig. Two instances of __`Album`__ with the same title.*
 
 ### Storing in Variables
 
@@ -89,7 +89,7 @@ purple_rain = Album("Purple Rain")
 ```
 
 ![Two instances of Album assigned to variables](../assets/intro-to-oop_creating-instances_storing-in-variables.png)  
-*Fig. Two instances of 'Album' assigned to variables.*
+*Fig. Two instances of __`Album`__ assigned to variables.*
 
 In the above example...
 
@@ -235,7 +235,7 @@ print(album_title)
 ```
 
 ![Local variable `album_title` points to the same string in memory as the self.title variable inside the `purple_rain` instance of Album](../assets/intro-to-oop_creating-instances_local-variable.png)  
-*Fig. Local variable `album_title` points to the same string in memory as the self.title variable inside the `purple_rain` instance of Album.*
+*Fig. Local variable __`album_title`__ points to the same __`string`__ in memory as the __`self.title`__ variable inside the __`purple_rain`__ instance of __`Album`__.*
 
 <!-- Question 2 -->
 
@@ -329,7 +329,7 @@ print(album.title)
 ```
 
 ![Reassigning the attribute title of an Album](../assets/intro-to-oop_creating-instances_reassigning-attributes.png)  
-*Fig. Reassigning the attribute 'title' of an instance of Album.*
+*Fig. Reassigning the attribute __`title`__ of an instance of __`Album`__.*
 
 What will the output be?
 
@@ -393,7 +393,7 @@ Dirty Computer: <__main__.Album object at 0x10b28c850>
 ```
 
 ![Three Album instances](../assets/intro-to-oop_creating-instances_printing-objects.png)  
-*Fig. Three Album instances.*
+*Fig. Three __`Album`__ instances.*
 
 Note that even though two instances of `Album` both have the same title, `"Purple Rain"`, they are separate instances that have different IDs. Again, when you run this yourself, the ID values will most likely differ from the values shown here, but each will be distinct from the other `Album` IDs.
 
