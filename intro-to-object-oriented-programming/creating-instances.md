@@ -395,9 +395,9 @@ Dirty Computer: <__main__.Album object at 0x10b28c850>
 ![Three Album instances](../assets/intro-to-oop_creating-instances_printing-objects.png)  
 *Fig. Three Album instances.*
 
-![Three Album instances](../assets/intro-to-oop_creating-instances_printing-objects-shorthand.png)  
-*Fig. This diagram presents the same three albums as the previous diagram, but using a slightly more compact representation. As we gain experience, we will tend to simplify details such as the distinction between variables and where their values live. We will be more likely to say that purple_rain is an Album that has a string, "Purple Rain" , called title. We should remember that this is a shorthand description, and that the full diagrams capture the actual relationships more accurately!*
-
 Note that even though two instances of `Album` both have the same title, `"Purple Rain"`, they are separate instances that have different IDs. Again, when you run this yourself, the ID values will most likely differ from the values shown here, but each will be distinct from the other `Album` IDs.
+
+![Three Album instances](../assets/intro-to-oop_creating-instances_printing-objects-shorthand.png)  
+*Fig. This diagram presents the same three albums as the previous diagram, but using a slightly more compact representation. As we gain experience, we will tend to simplify details such as the distinction between variables and where their values live. We will be more likely to say that __`purple_rain`__ is an __`Album`__ that has a __`string`__, __`"Purple Rain"`__, called __`title`__. We should remember that this is a shorthand description, and that the full diagrams capture the actual relationships more accurately!*
 
 <!-- No CFU; this lesson has several questions throughout the lesson -->
