@@ -117,13 +117,13 @@ def wrapped_function():
     </summary>
 
 ![A comparison of the previously introduced simple function representation of a box holding the function logic and an associated label, with the detailed representation that shows the function name as a variable referencing an object that holds the function logic](../assets/python-oop_intro-to-decorators_wrapped-function-representation.png)  
-*Fig. The previously introduced style represented a function as a box of logic with a name. Python functions are first class objects, meaning the function is an object and the function name is really a variable referring to that object. We can more accurately represent the implementation of a function and its name using a box and arrow style.*
+*Fig. In a previous lesson, we represented functions as a box of logic with a name. Behind the scenes, Python functions are really objects containing a list of instructions. A function name is essentially a variable referring to that object. We can more accurately represent the implementation of a function and its name using this box and arrow style.*
 
 ![Representation of wrapper_function, which takes a parameter called wrapped_func which is used to fill in the logic of an internal function called inner, which is ultimately returned](../assets/python-oop_intro-to-decorators_wrapper-function-definition.png)  
-*Fig. __`wrapper_function`__ is itself a function accepting a single parameter, __`wrapped_func`__, which is expected to be a function that will be wrapped with the logic contained in the internal function, __`inner`__. This customized __`inner`__, which has the passed in __`wrapped_func`__ embedded, is returned as a new function object.*
+*Fig. __`wrapper_function`__ is a function accepting a single parameter, __`wrapped_func`__. __`wrapped_func`__ is expected to be a function that __`wrapper_function`__ will use inside its internal function, __`inner`__. This customized __`inner`__, which embeds a call to __`wrapped_func`__, is returned as a new function object. In effect, __`wrapper_function`__ is a machine that builds new functions!*
 
 ![Plugging wrapped_function into wrapper_function results in a customized version of inner being returned](../assets/python-oop_intro-to-decorators_plugging-wrapped-into-wrapper.png)  
-*Fig. By passing __`wrapped_function`__ as the argument to __`wrapper_function`__, it can be inserted into a new copy of __`inner`__, which is then returned to the location from which the call was made.*
+*Fig. By passing __`wrapped_function`__ as the argument to __`wrapper_function`__, __`inner`__ can be customized to use __`wrapped_function`__ when it gets called. This custom __`inner`__ is returned as the result of __`wrapper_function`__. The function __`wrapper_function`__, returns a new function as its return value!*
 
 ![The syntactic sugar behavior of the decorator syntax automatically assigns the result of calling the decorator method back to the name of the function object that was passed in.](../assets/python-oop_intro-to-decorators_wrapped-function-result.png)  
 *Fig. The syntactic sugar behavior of the __`@`__ decorator syntax (discussed below) automatically assigns the result of calling the decorator method back to the name of the function object that was passed in. __`wrapped_function`__ now refers to the customized version of __`inner`__ that was created inside __`wrapper_function`__.*
@@ -204,6 +204,9 @@ Read through the above output and see if you can trace it. Find the lines of cod
 1. `Some stars before we call the wrapped function...`
 1. `Hello, World!`
 1. `Some stars after we call the wrapped function!`
+
+![The display_hello_world function without the display_star decorator compared with the same function using the display_stars decorator](../assets/python-oop_intro-to-decorators_display-stars-comparison.png)  
+*Fig. The version of __`display_hello_world`__ on the left has no decorator. It refers to the plain function object. The version on the right has the __`@display_stars`__ decorator. It refers to the custom-made version of the __`inner`__ function returned from the call to __`display_stars`__.*
 
 Our answers should help us see that the `display_stars` wrapper function does indeed "wrap" around `display_hello_world`.
 
