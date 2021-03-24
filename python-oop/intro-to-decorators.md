@@ -108,6 +108,31 @@ def wrapped_function():
 
 ```
 
+![The variable wrapped_function has a reference to a function which calls the original definition of wrapped_function as part of its interior logic](../assets/python-oop_intro-to-decorators_wrapped-function-result.png)  
+*Fig. The state of __`wrapped_function`__ after the execution of the previous code.*
+
+<details style="max-width: 700px; margin: auto;">
+    <summary>
+      Click for a visual presentation of how `wrapped_function` is created.
+    </summary>
+
+![A comparison of the previously introduced simple function representation of a box holding the function logic and an associated label, with the detailed representation that shows the function name as a variable referencing an object that holds the function logic](../assets/python-oop_intro-to-decorators_wrapped-function-representation.png)  
+*Fig. The previously introduced style represented a function as a box of logic with a name. Python functions are first class objects, meaning the function is an object and the function name is really a variable referring to that object. We can more accurately represent the implementation of a function and its name using a box and arrow style.*
+
+![Representation of wrapper_function, which takes a parameter called wrapped_func which is used to fill in the logic of an internal function called inner, which is ultimately returned](../assets/python-oop_intro-to-decorators_wrapper-function-definition.png)  
+*Fig. __`wrapper_function`__ is itself a function accepting a single parameter, __`wrapped_func`__, which is expected to be a function that will be wrapped with the logic contained in the internal function, __`inner`__. This customized __`inner`__, which has the passed in __`wrapped_func`__ embedded, is returned as a new function object.*
+
+![Plugging wrapped_function into wrapper_function results in a customized version of inner being returned](../assets/python-oop_intro-to-decorators_plugging-wrapped-into-wrapper.png)  
+*Fig. By passing __`wrapped_function`__ as the argument to __`wrapper_function`__, it can be inserted into a new copy of __`inner`__, which is then returned to the location from which the call was made.*
+
+![The syntactic sugar behavior of the decorator syntax automatically assigns the result of calling the decorator method back to the name of the function object that was passed in.](../assets/python-oop_intro-to-decorators_wrapped-function-result.png)  
+*Fig. The syntactic sugar behavior of the __`@`__ decorator syntax (discussed below) automatically assigns the result of calling the decorator method back to the name of the function object that was passed in. __`wrapped_function`__ now refers to the customized version of __`inner`__ that was created inside __`wrapper_function`__.*
+
+![A comparison of wrapped_function without and with a decorator](../assets/python-oop_intro-to-decorators_comparison.png)  
+*Fig. The version of __`wrapped_function`__ on the left has no decorator. It refers to the plain function object. The version on the right has the __`@wrapper_function`__ decorator. It refers to the custom-made version of the __`inner`__ function returned from the call to __`wrapper_function`__.*
+
+</details>
+
 | <div style="min-width: 180px;">Piece of code</div>                    | <div style="min-width: 400px;">Notes</div>     |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Definition of `wrapper_function` | The definition of the decorator. This needs to be defined before it's used as a decorator. The wrapper function should always take in at least one parameter, which will receive the function being wrapped. The function body should define an inner function (see notes for `inner`). The decorator must return the `inner` function. |
