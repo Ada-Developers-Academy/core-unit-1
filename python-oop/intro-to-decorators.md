@@ -108,8 +108,16 @@ def wrapped_function():
 
 ```
 
+### !callout-info
+
+## Functions in Functions Calling Functions: Oh My!
+
+At the end of the day, __`wrapped_function`__ will hold a new function that uses the original version, potentially with additional logic around it. For an illustrated exploration of how this happens, expand the following subsection.
+
 ![The variable wrapped_function has a reference to a function which calls the original definition of wrapped_function as part of its interior logic](../assets/python-oop_intro-to-decorators_wrapped-function-result.png)  
-*Fig. The state of __`wrapped_function`__ after the execution of the previous code.*
+*Fig. __`wrapped_function`__ after the execution of the previous code.*
+
+### !end-callout
 
 <details style="max-width: 700px; margin: auto;">
     <summary>
@@ -125,8 +133,8 @@ def wrapped_function():
 ![Plugging wrapped_function into wrapper_function results in a customized version of inner being returned](../assets/python-oop_intro-to-decorators_plugging-wrapped-into-wrapper.png)  
 *Fig. By passing __`wrapped_function`__ as the argument to __`wrapper_function`__, __`inner`__ can be customized to use __`wrapped_function`__ when it gets called. This custom __`inner`__ is returned as the result of __`wrapper_function`__. The function __`wrapper_function`__, returns a new function as its return value!*
 
-![The syntactic sugar behavior of the decorator syntax automatically assigns the result of calling the decorator method back to the name of the function object that was passed in.](../assets/python-oop_intro-to-decorators_wrapped-function-result.png)  
-*Fig. The syntactic sugar behavior of the __`@`__ decorator syntax (discussed below) automatically assigns the result of calling the decorator method back to the name of the function object that was passed in. __`wrapped_function`__ now refers to the customized version of __`inner`__ that was created inside __`wrapper_function`__.*
+![The self-assignment behavior of the decorator syntax automatically assigns the result of calling the decorator method back to the name of the function object that was passed in.](../assets/python-oop_intro-to-decorators_wrapped-function-result.png)  
+*Fig. The self-assignment behavior of the __`@`__ decorator syntax (discussed in __Decorators Are Syntactic Sugar__ below) automatically assigns the result of calling the decorator method back to the name of the function object that was passed in. __`wrapped_function`__ now refers to the customized version of __`inner`__ that was created inside __`wrapper_function`__.*
 
 ![A comparison of wrapped_function without and with a decorator](../assets/python-oop_intro-to-decorators_comparison.png)  
 *Fig. The version of __`wrapped_function`__ on the left has no decorator. It refers to the plain function object. The version on the right has the __`@wrapper_function`__ decorator. It refers to the custom-made version of the __`inner`__ function returned from the call to __`wrapper_function`__.*
@@ -145,7 +153,7 @@ def wrapped_function():
 
 ## Decorators Are Syntactic Sugar
 
-The `@wrapper_function` notation above is referred to as _syntactic sugar_. It doesn't do anything we couldn't already do in Python, but it does it a little more neatly. So what does the above expression translate to in more plain Python?
+The `@wrapper_function` notation above is referred to as a kind of _syntactic sugar_. It doesn't do anything we couldn't already do in Python, but it does it a little more neatly. So what does the above expression translate to in more plain Python?
 
 ```python
 def wrapped_function():
