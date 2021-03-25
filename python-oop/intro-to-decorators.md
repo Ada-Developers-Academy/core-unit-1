@@ -12,7 +12,11 @@ Our goal is to get _just_ familiar enough with the decorator pattern so we can r
 
 A variety of Python language and library features are exposed using a concise syntax that lets us apply additional pre-built behaviors to our own custom code. A general awareness of the concepts behind decorators can help us understand how they work. And a basic familiarity of the syntax will allow us to read through existing code and apply these useful features to our own code, even if we don't necessarily _write_ many decorators ourselves.
 
+<br />
+
 During this lesson, our energy is best used to focus on concepts, vocabulary, and reading the code, rather than coding exercises.
+
+<br />
 
 The content of this lesson, namely functions being passed around as objects, will help us solve problems beyond OOP, too!
 
