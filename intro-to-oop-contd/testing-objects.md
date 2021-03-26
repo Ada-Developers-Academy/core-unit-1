@@ -13,15 +13,18 @@ However, so far, we've only used unit tests for functions. How do unit tests cha
 
 ## Vocabulary and Synonyms
 
-| Vocab     | Definition                                                                                                  | Synonyms | How to Use in a Sentence                                                                      |
-| --------- | ----------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------- |
-| Unit Test | Scripts designed to test the performance of a single function                                               | Test     | "As the program scales, unit tests, will ensure classes will continue to behave as expected." |
-| Arrange   | Top section of a test designed to include things to arrange or set up like creating variables or instances. | -        | "I should think about the data I need to arrange to construct a test."                        |
-| Act       | A statement that is true or calls the method that we are testing                                            | -        | "How do I want this test to act? What function will trigger the test and provide inputs?"     |
-| Assert    | Statements that verify whether the method being tested behaves as expected                                  | -        | "This test will assert that the data returned should be an integer."                          |
-| Import    | A keyword that makes code in one module accessible in another                                               | -        | "I'm getting a NameError because I forgot to import the class."                               |
+| Vocab     | Definition                                                                                                  | How to Use in a Sentence                                                                      |
+| --------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Unit Test | Scripts designed to test the performance of a single function                                               | "As the program scales, unit tests, will ensure classes will continue to behave as expected." |
+| Arrange   | Top section of a test designed to include things to arrange or set up like creating variables or instances. | "I should think about the data I need to arrange to construct a test."                        |
+| Act       | A statement that is true or calls the method that we are testing                                            | "How do I want this test to act? What function will trigger the test and provide inputs?"     |
+| Assert    | Statements that verify whether the method being tested behaves as expected                                  | "This test will assert that the data returned should be an integer."                          |
+| Import    | A keyword that makes code in one module accessible in another                                               | "I'm getting a NameError because I forgot to import the class."                               |
 
 ## Unit Tests Verify State and Behavior
+
+![Calvin and Hobbes - Testing the Bathtub for Sharks](../assets/oop-continued_testing-objects_calvin-and-hobbes-shark-bathtub.gif)  
+[(source)](https://www.gocomics.com/calvinandhobbes/1986/04/08)
 
 Recall that classes and objects are responsible for tracking state and behavior. Therefore, our class unit tests should focus on two questions:
 

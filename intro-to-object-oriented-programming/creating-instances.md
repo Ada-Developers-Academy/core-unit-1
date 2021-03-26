@@ -58,6 +58,9 @@ Album("Dirty Computer")
 Album("Purple Rain")
 ```
 
+![Two instances of Album](../assets/intro-to-oop_creating-instances_pass-in-params-1.png)  
+*Fig. Two instances of __`Album`__.*
+
 ### !callout-info
 
 ## Don't Pass in `self`
@@ -73,6 +76,9 @@ Album("Dirty Computer")
 Album("Dirty Computer")
 ```
 
+![Two instances of Album with the same title](../assets/intro-to-oop_creating-instances_pass-in-params-2.png)  
+*Fig. Two instances of __`Album`__ with the same title.*
+
 ### Storing in Variables
 
 Just like with strings, lists, dictionaries, numbers, and other kinds of data, if we want to keep a reference to data, we should assign it to a variable.
@@ -81,6 +87,9 @@ Just like with strings, lists, dictionaries, numbers, and other kinds of data, i
 dirty_computer = Album("Dirty Computer")
 purple_rain = Album("Purple Rain")
 ```
+
+![Two instances of Album assigned to variables](../assets/intro-to-oop_creating-instances_storing-in-variables.png)  
+*Fig. Two instances of __`Album`__ assigned to variables.*
 
 In the above example...
 
@@ -225,6 +234,9 @@ album_title = purple_rain.title
 print(album_title)
 ```
 
+![Local variable `album_title` points to the same string in memory as the self.title variable inside the `purple_rain` instance of Album](../assets/intro-to-oop_creating-instances_local-variable.png)  
+*Fig. Local variable __`album_title`__ points to the same __`string`__ in memory as the __`self.title`__ variable inside the __`purple_rain`__ instance of __`Album`__.*
+
 <!-- Question 2 -->
 
 <!-- prettier-ignore-start -->
@@ -316,6 +328,9 @@ album.title = "Dirty Computer"
 print(album.title)
 ```
 
+![Reassigning the attribute title of an Album](../assets/intro-to-oop_creating-instances_reassigning-attributes.png)  
+*Fig. Reassigning the attribute __`title`__ of an instance of __`Album`__.*
+
 What will the output be?
 
 First we create an album with a title of "Purple Rain" and print that title. Then we re-assign the title to be "Dirty Computer" and print the title again. So we get the following output:
@@ -377,6 +392,12 @@ Another album named Purple Rain: <__main__.Album object at 0x10b31c0a0>
 Dirty Computer: <__main__.Album object at 0x10b28c850>
 ```
 
+![Three Album instances](../assets/intro-to-oop_creating-instances_printing-objects.png)  
+*Fig. Three __`Album`__ instances.*
+
 Note that even though two instances of `Album` both have the same title, `"Purple Rain"`, they are separate instances that have different IDs. Again, when you run this yourself, the ID values will most likely differ from the values shown here, but each will be distinct from the other `Album` IDs.
+
+![Three Album instances](../assets/intro-to-oop_creating-instances_printing-objects-shorthand.png)  
+*Fig. This diagram presents the same three albums as the previous diagram, but using a slightly more compact representation. As we gain experience, we will tend to simplify details such as the distinction between variables and where their values live. We will be more likely to say that __`purple_rain`__ is an __`Album`__ that has a __`string`__, __`"Purple Rain"`__, called __`title`__. We should remember that this is a shorthand description, and that the full diagrams capture the actual relationships more accurately!*
 
 <!-- No CFU; this lesson has several questions throughout the lesson -->
