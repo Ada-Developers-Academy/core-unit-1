@@ -42,7 +42,7 @@ Class variables hold _class state_. Every individual class variable gets shared 
 | Static method | A method that does not depend on an instance, and does not access instance or class variables. Essentially a regular function that happens to be stored in a class primarily for namespace purposes. | "The method `meets_age_requirement(age)` will always do the same behavior, regardless of instance or class state, so we can make it a static method."       |
 | Class method  | A method that receives a reference to the class itself. This method does not depend on an instance, and cannot access instance variables or methods.                                                 | "All `MovieTheater`s share the class state `is_open`. Our method `reopen_all_theaters` can be a class method that depends on the `is_open` class variable." |
 
-![Diagram of a class with static methods, class attributes, class methods and an instance of the class.](../assets/python-oop_static-methods-and-class-methods_intro.png)  
+![Static methods are related to the class, called using the class name (ex: Cookie.convert_tbsp_to_tsp()) but can not access any class or instance state.  Class attributes can be accessed from the class and from an instance of the class.  Class methods are called using the class name (ex: Cookie.get_oven_temp()) and can access any any class state (but not instance state).  Diagram of a class with static methods, class attributes, class methods and an instance of the class.](../assets/python-oop_static-methods-and-class-methods_intro.png)  
 *Fig. A class with static methods, class attributes, class methods and an instance of the class.*
 
 
