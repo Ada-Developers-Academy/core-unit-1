@@ -12,7 +12,11 @@ Our goal is to get _just_ familiar enough with the decorator pattern so we can r
 
 A variety of Python language and library features are exposed using a concise syntax that lets us apply additional pre-built behaviors to our own custom code. A general awareness of the concepts behind decorators can help us understand how they work. And a basic familiarity of the syntax will allow us to read through existing code and apply these useful features to our own code, even if we don't necessarily _write_ many decorators ourselves.
 
+<br />
+
 During this lesson, our energy is best used to focus on concepts, vocabulary, and reading the code, rather than coding exercises.
+
+<br />
 
 The content of this lesson, namely functions being passed around as objects, will help us solve problems beyond OOP, too!
 
@@ -108,13 +112,63 @@ def wrapped_function():
 
 ```
 
-| Piece of code                    | Notes                                                                                                                                                                                                                                                                                                                                   |
+### !callout-info
+
+## Functions in Functions Calling Functions: Oh My!
+
+At the end of the day, __`wrapped_function`__ will hold a new function that uses the original version, potentially with additional logic around it. For an illustrated exploration of how this happens, expand the following subsection.
+
+![The variable wrapped_function has a reference to a function which calls the original definition of wrapped_function as part of its interior logic](../assets/python-oop_intro-to-decorators_wrapped-function-result.png)  
+*Fig. __`wrapped_function`__ after the execution of the previous code.*
+
+### !end-callout
+
+<details style="max-width: 700px; margin: auto;">
+    <summary>
+      Click for a visual presentation of how `wrapped_function` is created.
+    </summary>
+
+![A comparison of the previously introduced simple function representation of a box holding the function logic and an associated label, with the detailed representation that shows the function name as a variable referencing an object that holds the function logic](../assets/python-oop_intro-to-decorators_wrapped-function-representation.png)  
+*Fig. In a previous lesson, we represented functions as a box of logic with a name. Behind the scenes, Python functions are really objects containing a list of instructions. A function name is essentially a variable referring to that object. We can more accurately represent the implementation of a function and its name using this box and arrow style.*
+
+![Representation of wrapper_function, which takes a parameter called wrapped_func which is used to fill in the logic of an internal function called inner, which is ultimately returned](../assets/python-oop_intro-to-decorators_wrapper-function-definition.png)  
+*Fig. __`wrapper_function`__ is a function accepting a single parameter, __`wrapped_func`__. __`wrapped_func`__ is expected to be a function that __`wrapper_function`__ will use inside its internal function, __`inner`__. This customized __`inner`__, which embeds a call to __`wrapped_func`__, is returned as a new function object. In effect, __`wrapper_function`__ is a machine that builds new functions!*
+
+![Plugging wrapped_function into wrapper_function results in a customized version of inner being returned](../assets/python-oop_intro-to-decorators_plugging-wrapped-into-wrapper.png)  
+*Fig. By passing __`wrapped_function`__ as the argument to __`wrapper_function`__, __`inner`__ can be customized to use __`wrapped_function`__ when it gets called. This custom __`inner`__ is returned as the result of __`wrapper_function`__. The function __`wrapper_function`__, returns a new function as its return value!*
+
+![The self-assignment behavior of the decorator syntax automatically assigns the result of calling the decorator method back to the name of the function object that was passed in.](../assets/python-oop_intro-to-decorators_wrapped-function-result.png)  
+*Fig. The self-assignment behavior of the __`@`__ decorator syntax (discussed in __Decorators Are Syntactic Sugar__ below) automatically assigns the result of calling the decorator method back to the name of the function object that was passed in. __`wrapped_function`__ now refers to the customized version of __`inner`__ that was created inside __`wrapper_function`__.*
+
+![A comparison of wrapped_function without and with a decorator](../assets/python-oop_intro-to-decorators_comparison.png)  
+*Fig. The version of __`wrapped_function`__ on the left has no decorator. It refers to the plain function object. The version on the right has the __`@wrapper_function`__ decorator. It refers to the custom-made version of the __`inner`__ function returned from the call to __`wrapper_function`__.*
+
+</details>
+
+| <div style="min-width: 180px;">Piece of code</div>                    | <div style="min-width: 400px;">Notes</div>     |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Definition of `wrapper_function` | The definition of the decorator. This needs to be defined before it's used as a decorator. The wrapper function should always take in at least one parameter, which will receive the function being wrapped. The function body should define an inner function (see notes for `inner`). The decorator must return the `inner` function. |
 | Definition of `inner`            | An inner function defined in the decorator used for the decorator pattern. **Replace this** name with any valid function name (`inner` is fine!). This function body should include all logic that extends the wrapped function. The function body should invoke the wrapped function at least once.                                    |
 | `wrapped_func`                   | **Replace this** name with any valid variable name (`wrapper_func` or `func` is fine!). The wrapper function should always define at least one parameter. This parameter will receive the wrapped function so that it can be called inside the new `inner` function.                                                                    |
 | Definition of `wrapped_function` | The definition of the function being wrapped. It will be called within the newly created wrapped function, where it will be available as the first parameter to `wrapper_function`                                                                                                                                                      |
 | `@wrapper_function`              | **Replace this** with the name of the decorator (wrapper). This line should always start with `@` and be the line above the wrapped function signature.                                                                                                                                                                                 |
+
+### !callout-info
+
+## Decorators Are Syntactic Sugar
+
+The `@wrapper_function` notation above is referred to as a kind of _syntactic sugar_. It doesn't do anything we couldn't already do in Python, but it does it a little more neatly. So what does the above expression translate to in more plain Python?
+
+```python
+def wrapped_function():
+    pass
+
+wrapped_function = wrapper_function(wrapped_function)
+```
+
+Before decorator syntax, this wrapping was a manual two-step process. Now Python takes care of that for us. So even though the `@` syntax may look strange, this is really all it means!
+
+### !end-callout
 
 ### A Medium Example With Syntax
 
@@ -162,6 +216,9 @@ Read through the above output and see if you can trace it. Find the lines of cod
 1. `Some stars before we call the wrapped function...`
 1. `Hello, World!`
 1. `Some stars after we call the wrapped function!`
+
+![The display_hello_world function without the display_star decorator compared with the same function using the display_stars decorator](../assets/python-oop_intro-to-decorators_display-stars-comparison.png)  
+*Fig. The version of __`display_hello_world`__ on the left has no decorator. It refers to the plain function object. The version on the right has the __`@display_stars`__ decorator. It refers to the custom-made version of the __`inner`__ function returned from the call to __`display_stars`__.*
 
 Our answers should help us see that the `display_stars` wrapper function does indeed "wrap" around `display_hello_world`.
 
