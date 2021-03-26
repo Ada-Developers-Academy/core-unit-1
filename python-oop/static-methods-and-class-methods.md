@@ -69,6 +69,9 @@ class ExampleClass:
         print("I'm inside the static method, example_method!")
 ```
 
+![Diagram of a class with a static method.](../assets/python-oop_static-methods-and-class-methods_static1.png)  
+*Fig. Diagram of a class with a static method.*
+
 Once a static method is defined, we can invoke it using dot notation, typically from the class itself.
 
 ```python
@@ -100,6 +103,9 @@ class ExampleClass:
         print("I'm inside the static method, example_method!")
         print(f"I'm accessing an instance variable, {self.name}")
 ```
+
+![Diagram of a class with a static method and an instance method.](../assets/python-oop_static-methods-and-class-methods_static2.png)  
+*Fig. Diagram of a class with a static method and an instance method.*
 
 ```python
 example_instance = ExampleClass("Hello, World!")
@@ -159,6 +165,9 @@ class ExampleClass:
         print("I'm inside the class method, example_method!")
         print("In a class method, cls will be the class itself", cls)
 ```
+
+![Diagram of a class with a class method.](../assets/python-oop_static-methods-and-class-methods_class1.png)  
+*Fig. Diagram of a class with a class method.*
 
 Once a static method is defined, we can invoke it using dot notation, typically from the class itself.
 
@@ -222,6 +231,10 @@ class ExampleClass:
         print("I'm inside the class method, example_method!")
         print("I can access class variables using the cls parameter:", cls.example_class_var)
 ```
+
+![Diagram of a class with a class method and a class variable.](../assets/python-oop_static-methods-and-class-methods_class2.png)  
+*Fig. Diagram of a class with a class and a class variable.*
+
 
 ```
 ExampleClass.example_method()
