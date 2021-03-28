@@ -152,7 +152,7 @@ def is_phone_num_valid(phone_num):
 Given these tests, refactor this function to make them pass. Use `try ... except` syntax.
 
 - If no error is raised, return `cost_per_person`
-- If a `ZeroDivsionError` is raised, catch it, and return `0`
+- If a `ZeroDivisionError` is raised, catch it, and return `0`
 
 ```python
 def test_split_cost_evenly():

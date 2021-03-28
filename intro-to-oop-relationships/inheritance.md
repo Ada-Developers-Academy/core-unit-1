@@ -63,6 +63,9 @@ class SendPaymentButton(Button):
     pass
 ```
 
+![Inheritance diagram for Button and SendPaymentButton](../assets/intro-to-oop-relationships_inheritance_button.png)  
+*Fig. Inheritance diagram for __`Button`__ and __`SendPaymentButton`__*
+
 Imagine running this code in a file `main.py`:
 
 ```python
@@ -124,6 +127,10 @@ Create two classes, `Pizza` and `FancyPizza`.
         - takes in no parameters
         - returns the string `f"Fancy {self.toppings[0]}"`
         - Example: if `toppings` is `["onions"]`, then this method returns `"Fancy onions"`
+
+![Inheritance diagram for Pizza and FancyPizza](../assets/intro-to-oop-relationships_inheritance_pizza.png)  
+*Fig. Inheritance diagram for __`Pizza`__ and __`FancyPizza`__.*
+
 ##### !end-question
 
 ##### !placeholder
@@ -226,6 +233,10 @@ class ExampleChildClass(ExampleParentClass):
         print("I'm inside of ExampleChildClass!")
 ```
 
+![Inheritance diagram for ExampleParentClass and ExampleChildClass](../assets/intro-to-oop-relationships_inheritance_overriding.png)  
+*Fig. Inheritance diagram for __`ExampleParentClass`__ and __`ExampleChildClass`__.*
+
+
 Running this code...
 
 ```python
@@ -256,6 +267,9 @@ Continue the `Pizza` and `FancyPizza` classes.
 - The `FancyPizza` class should override that instance method
     - takes no parameters
     - returns `(2.50 * len(self.toppings)) + 5`
+
+![Inheritance diagram for Pizza and FancyPizza with FancyPizza overriding the method calculate_toppings_price](../assets/intro-to-oop-relationships_inheritance_pizza-override.png)  
+*Fig. Inheritance diagram for __`Pizza`__ and __`FancyPizza`__ with __`FancyPizza`__ overriding the method __`calculate_toppings_price`__.*
 
 <!-- Question 2 -->
 <!-- prettier-ignore-start -->

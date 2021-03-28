@@ -63,10 +63,12 @@ def mystery(numbers):
     index = 0
     while index < len(numbers):
         numbers[index] *= 2
+        index += 1
     
     return numbers
 
 nums = [1, 2, 3, 4, 5]
+mystery(nums)
 
 print(nums[3])
 ```

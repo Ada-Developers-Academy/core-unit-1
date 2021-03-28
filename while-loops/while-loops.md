@@ -17,7 +17,7 @@ How can we solve this problem using Python code?
 
 ## Vocabulary and Synonyms
 
-| Vocab            | Definition                                                                                                                                                                                                                   | Synonyms     | How to Use in a Sentence                                                                                        |
+| <div style="min-width:50px">Vocab</div>            | <div style="min-width:250px">Definition</div>                                                                                                                                                                                                                   | <div style="min-width:50px">Synonyms</div>     | <div style="min-width:250px">How to Use in a Sentence</div>                                                                                        |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------- |
 | Infinite loop    | A loop that runs and never terminates or ends. This leads to a program freezing or getting stuck doing the same thing forever.                                                                                               | endless loop | "The loop kept going and going forever, " "The program hit an infinite loop and I had to terminate it manually" |
 | Counter variable | A variable solely used to represent a number that increments or decrements. Usually, counter variables are used to count loop iterations. It needs to be initialized outside of the loop. This is an informal, casual label! | -            | "The counter variable `i` started at `0` and incremented by 1 with each loop"                                   |
@@ -31,11 +31,11 @@ while conditional_evaluates_to_true:
     print("I'm in the loop body")
 ```
 
-| Piece of code                  | Notes                                                                                                                                              |
+| <div style="min-width: 300px;">Piece of code</div>                  | <div style="min-width:350px;">Notes</div>                                        |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `while`                        | `while` is a keyword in Python that begins a while-loop. It looks immediately to the right for a conditional expression, and a `:` to end the line |
 | `conditional_evalutes_to_true` | **Replace this** with a conditional expression. When this expression is true, the loop body will run                                               |
-| Loop body                      | **Replace this** with the code that should run in this while-loop. This should be indented once inside the while-loop.                             |
+| Loop body                      | **Replace this** with the code that should run in this while-loop. This should be indented once inside the while-loop                            |
 
 ### Practicing Reading While Loops
 

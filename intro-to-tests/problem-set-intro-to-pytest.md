@@ -390,7 +390,7 @@ We encourage you to copy and paste the large test output into a different file, 
 * title: Intro to Pytest
 ##### !question
 
-```bash
+```
 ================================================ test session starts ================================================
 platform darwin -- Python 3.8.5, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
 rootdir: /Users/user/projects/project
@@ -431,7 +431,7 @@ Read through this test report. What is the cause of the test failure?
 
 We reach this conclusion using the following lines:
 
-```bash
+```
 >       assert mystery_function("apples", "oranges") == False
 E       TypeError: mystery_function() takes 0 positional arguments but 2 were given
 
@@ -460,7 +460,7 @@ FAILED main.py::test_mystery_function - TypeError: mystery_function() takes 0 po
 * title: Intro to Pytest
 ##### !question
 
-```bash
+```
 ================================================ test session starts ================================================
 platform darwin -- Python 3.8.5, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
 rootdir: /Users/user/projects/project
@@ -501,7 +501,7 @@ In this test report, what line of what file caused the error?
 
 We reach this conclusion using the following lines:
 
-```bash
+```
 main.py:31: TypeError
 ```
 
@@ -517,7 +517,7 @@ main.py:31: TypeError
 * title: Intro to Pytest
 ##### !question
 
-```bash
+```
 ================================================ test session starts ================================================
 platform darwin -- Python 3.8.5, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
 rootdir: /Users/user/projects/project
@@ -559,7 +559,7 @@ Read through this test report. What is the cause of the test failure?
 
 We reach this conclusion using the following lines:
 
-```bash
+```
 E       AssertionError: assert True == False
 E        +  where True = mystery_function('apples', 'oranges')
 ```
@@ -576,7 +576,7 @@ E        +  where True = mystery_function('apples', 'oranges')
 * title: Intro to Pytest
 ##### !question
 
-```bash
+```
 ================================================ test session starts ================================================
 platform darwin -- Python 3.8.5, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
 rootdir: /Users/user/projects/project
@@ -620,7 +620,7 @@ Recall that `assert` is checking that whatever is to the right of it is truthy.
 
 We reach this conclusion using the following lines:
 
-```bash
+```
 >       assert is_passenger
 E       assert False
 
@@ -651,7 +651,7 @@ FAILED main.py::test_mystery_function - assert False
 * title: Intro to Pytest
 ##### !question
 
-```bash
+```
 ================================================ test session starts ================================================
 platform darwin -- Python 3.8.5, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
 rootdir: /Users/user/projects/project
@@ -700,7 +700,7 @@ Read through this test report. What is the cause of the test failure?
 
 We reach this conclusion using the following lines:
 
-```bash
+```
 a = 100, b = 0
 
     def mystery_function(a, b):

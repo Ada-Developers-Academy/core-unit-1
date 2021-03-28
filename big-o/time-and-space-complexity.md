@@ -8,6 +8,9 @@
 
 ## Introduction
 
+![The Persistence of Memory by Salvador Dali](../assets/big-o_time-and-space-complexity_the-persistence-of-memory.jpg)  
+[(source)](https://en.wikipedia.org/wiki/The_Persistence_of_Memory#/media/File:The_Persistence_of_Memory.jpg)
+
 Computers run our programs pretty quickly. For our projects, when we run the code or run the tests, it takes a fraction of a second, sometimes maybe one or two seconds. Our computers use a tiny bit of memory while running the program.
 
 However, those fractions of seconds add up. And what would happen if a computer did not have enough memory to hold everything in your code? Recall every app you've used that was slow; it might have been slow because of slow Internet, and it might have been slow because retrieving and processing data takes noticeable time and resources.
@@ -33,6 +36,7 @@ We consider time and space complexity with regards to _algorithms._ Algorithms a
 
 ## Time Complexity is How Long It Takes
 
+![time icon](../assets/big-o_time-and-space-complexity_time-icon.png)  
 Whenever we run an algorithm, our computer runs a series of **operations,** or set of instructions.
 
 Given an algorithm with some input, how many operations does it do?
@@ -61,6 +65,7 @@ When we compare how many operations these algorithms take, we are considering th
 
 ## Space Complexity is How Much Memory is Required
 
+![space icon](../assets/big-o_time-and-space-complexity_space-icon.png)  
 Whenever we run an algorithm, our computer uses memory. Every variable, literal, reference, and object in our program takes up a small (or large) block of memory.
 
 Given an algorithm with some input, how many variables do we put in memory?

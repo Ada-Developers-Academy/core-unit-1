@@ -1,5 +1,7 @@
 # Reviewing Git Histories
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=4a699cb2-5d73-4252-a42a-acf4011bb3e4&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Practice observing commit history using the commands git status, git log, git show, and git diff
@@ -101,6 +103,9 @@ Use this command frequently:
 - To understand and recall the current history of commits
 - For checking a lot of commit information quickly, such as timestamps, authors, etc.
 
+![Viewing git history using VS Code](../assets/intro-to-git_commits_vscode-log.png)  
+*Fig. With the Git History VS Code Extension installed, we can explore the commit history of our repository. In the Source Control Panel, click the history icon (highlighted) to show the history of commits.*
+
 ### `git show` Summarizes a Commit
 
 The command `$ git show` will show the details of a single commit.
@@ -122,6 +127,9 @@ $ git show <commit hash, such as 26fb46ca8...>
 ```
 
 Where `<commit hash, such as 26fb46ca8...>` is replaced with a commit hash.
+
+![Viewing individual commits using VS Code](../assets/intro-to-git_commits_vscode-show.png)  
+*Fig. With the Git History VS Code Extension installed, we can view the contents of individual commits. First, we go to the commit history, as described above. Then by clicking any commit, we will get the details of that commit, including the commit message, user, time, and summary information for all affected files. By clicking the Previous link for any file, we can open a diff view showing how that file changed from the previous commit.*
 
 ### !callout-info
 

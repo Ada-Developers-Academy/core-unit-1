@@ -7,7 +7,7 @@
 
 ## Introduction
 
-As we know, lists can contain any type of data, including other lists and dictionaries. Similarly, dictionary keys can hold any type of data, including lists and other dictionaries.
+As we know, lists can contain any type of data, including other lists and dictionaries. Similarly, dictionary values can hold any type of data, including lists and other dictionaries.
 
 Even if we can understand this theoretically, nested lists and dictionaries are truly tricky to get a hold of. Nested lists and dictionaries introduce and mix a lot of different syntaxes together, which can easily become time-consuming headaches. Even the most experienced programmers need to slow down to read through nested lists and dictionaries.
 
@@ -26,7 +26,7 @@ We recommend working through this lesson in the following way:
 
 | Vocab                  | Definition                                                                                                                                                                                                                           | Synonyms                              | How to Use in a Sentence                                                                                                              |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Two-dimensional arrays | A list where each element is a list. This often implies that all inner lists have the same length. When all inner lists have the same length, a two-dimensional array can resemble a grid, as the structure mimics rows and columns. | 2d array, nested lists, nested arrays | "To implement the game Tic-Tac-Toe, we used a 2d array to represent the spots in the grid, where the center spot was in `grid[0][0]`" |
+| Two-dimensional arrays | A list where each element is a list. This often implies that all inner lists have the same length. When all inner lists have the same length, a two-dimensional array can resemble a grid, as the structure mimics rows and columns. | 2d array, nested lists, nested arrays | "To implement the game Tic-Tac-Toe, we used a 2d array to represent the spots in the grid, where the center spot was in `grid[1][1]`" |
 
 ## Lists Containing Lists
 
@@ -164,7 +164,7 @@ In this example:
 
 - The outer dictionary has two key-value pairs: `'oranges'` and `'apples'`
 - The list stored at the `'oranges'` key has four elements
-- The list stored at the `'apples'` key has four elements
+- The list stored at the `'apples'` key has two elements
 
 ### Accessing One Element
 
