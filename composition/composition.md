@@ -194,6 +194,8 @@ Note that `components` is a list of `component` objects. As usual, we use good n
 
 ## A Longer Example: Product, ShippingAddress, and ShoppingCart
 
+![A diagram showing details of the shopping cart class](../assets/composition_a-longer-example_diagram.png)
+  
 Let's look at one more example of one-to-one and one-to-many composition relationships.
 
 ```python
