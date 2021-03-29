@@ -44,6 +44,9 @@ Classes can also follow the [Single Responsibility Principle](https://en.wikiped
 1. What is a descriptive name for this class?
    - The name should be singular, e.g., `Album` _not_ `Albums`
 
+![Image of 12 pusheen styled cats](../assets/intro-to-object-oriented-proramming_defining-classes_pusheen-cats.jpg)  
+*We can create a Cat class to create multiple Pusheen-styled cats to have the same body shape, whiskers, legs, and adorableness.*
+
 ## Defining Classes
 
 Once we've determined a class name and its responsibility, we can define a class with this syntax:
