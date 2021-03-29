@@ -45,7 +45,9 @@ Classes can also follow the [Single Responsibility Principle](https://en.wikiped
    - The name should be singular, e.g., `Album` _not_ `Albums`
 
 ![Image of 12 pusheen styled cats](../assets/intro-to-object-oriented-proramming_defining-classes_pusheen-cats.jpg)  
-*We can create a Cat class to create multiple Pusheen-styled cats to have the same body shape, whiskers, legs, and adorableness.*
+*A Cat class can be used to create multiple Pusheen-styled cats to have the same body shape, whiskers, legs, and adorableness.* [Source](https://wallpaperaccess.com/pusheen-iphone-8)
+
+
 
 ## Defining Classes
 
