@@ -53,7 +53,7 @@ class ClassName:
     pass
 ```
 
-| <div style="min-width:100px;">Piece of Code</div> | <div style="min-width:400px;">Notes</div>                                                                                 |
+| <div style="min-width:150px;">Piece of Code</div> | <div style="min-width:450px;">Notes</div>                                                                                 |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `class`       | A keyword that indicates that a class definition is beginning                                                                                                                                                                                                                                 |
 | `ClassName`   | **Replace this** with the name of the class you're defining. The [PEP-8](https://www.python.org/dev/peps/pep-0008/#class-names) style guide prefers CapitalCamel case for class names. Class names should be singular nouns.                                                                  |
