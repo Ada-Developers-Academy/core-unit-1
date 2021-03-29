@@ -128,6 +128,7 @@ Examples of mutation and modification include:
 
 - Appending or removing an item to a list
 - Adding or removing a key-value pair to a dictionary
+
 Examples of operations that do _not_ mutate or modify include:
 
 - Adding two numbers, resulting in a third number, such as `sum = 1 + 2`

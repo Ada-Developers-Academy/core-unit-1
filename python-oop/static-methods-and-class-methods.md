@@ -37,10 +37,14 @@ Class variables hold _class state_. Every individual class variable gets shared 
 
 ## Vocabulary and Synonyms
 
-| Vocab         | Definition                                                                                                                                                                                           | Synonyms | How to Use in a Sentence                                                                                                                                    |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Static method | A method that does not depend on an instance, and does not access instance or class variables. Essentially a regular function that happens to be stored in a class primarily for namespace purposes. | -        | "The method `meets_age_requirement(age)` will always do the same behavior, regardless of instance or class state, so we can make it a static method."       |
-| Class method  | A method that receives a reference to the class itself. This method does not depend on an instance, and cannot access instance variables or methods.                                                 | -        | "All `MovieTheater`s share the class state `is_open`. Our method `reopen_all_theaters` can be a class method that depends on the `is_open` class variable." |
+| Vocab         | Definition                                                                                                                                                                                           | How to Use in a Sentence                                                                                                                                    |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Static method | A method that does not depend on an instance, and does not access instance or class variables. Essentially a regular function that happens to be stored in a class primarily for namespace purposes. | "The method `meets_age_requirement(age)` will always do the same behavior, regardless of instance or class state, so we can make it a static method."       |
+| Class method  | A method that receives a reference to the class itself. This method does not depend on an instance, and cannot access instance variables or methods.                                                 | "All `MovieTheater`s share the class state `is_open`. Our method `reopen_all_theaters` can be a class method that depends on the `is_open` class variable." |
+
+![Static methods are related to the class, called using the class name (ex: Cookie.convert_tbsp_to_tsp()) but can not access any class or instance state.  Class attributes can be accessed from the class and from an instance of the class.  Class methods are called using the class name (ex: Cookie.get_oven_temp()) and can access any any class state (but not instance state).  Diagram of a class with static methods, class attributes, class methods and an instance of the class.](../assets/python-oop_static-methods-and-class-methods_intro.png)  
+*Fig. A class with static methods, class attributes, class methods and an instance of the class.*
+
 
 ## Static Methods are Stateless Methods from a Class
 
@@ -64,6 +68,9 @@ class ExampleClass:
     def example_method():
         print("I'm inside the static method, example_method!")
 ```
+
+![Diagram of a class with a static method.](../assets/python-oop_static-methods-and-class-methods_static1.png)  
+*Fig. Diagram of a class with a static method.*
 
 Once a static method is defined, we can invoke it using dot notation, typically from the class itself.
 
@@ -96,6 +103,9 @@ class ExampleClass:
         print("I'm inside the static method, example_method!")
         print(f"I'm accessing an instance variable, {self.name}")
 ```
+
+![Diagram of a class with a static method and an instance method.](../assets/python-oop_static-methods-and-class-methods_static2.png)  
+*Fig. Diagram of a class with a static method and an instance method.*
 
 ```python
 example_instance = ExampleClass("Hello, World!")
@@ -155,6 +165,9 @@ class ExampleClass:
         print("I'm inside the class method, example_method!")
         print("In a class method, cls will be the class itself", cls)
 ```
+
+![Diagram of a class with a class method.](../assets/python-oop_static-methods-and-class-methods_class1.png)  
+*Fig. Diagram of a class with a class method.*
 
 Once a static method is defined, we can invoke it using dot notation, typically from the class itself.
 
@@ -218,6 +231,10 @@ class ExampleClass:
         print("I'm inside the class method, example_method!")
         print("I can access class variables using the cls parameter:", cls.example_class_var)
 ```
+
+![Diagram of a class with a class method and a class variable.](../assets/python-oop_static-methods-and-class-methods_class2.png)  
+*Fig. Diagram of a class with a class and a class variable.*
+
 
 ```
 ExampleClass.example_method()
