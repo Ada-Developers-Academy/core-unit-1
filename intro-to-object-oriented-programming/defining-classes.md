@@ -9,7 +9,7 @@
 
 ## Vocabulary and Synonyms
 
-| <div style="min-width:100px;">Vocab</div> | <div style="min-width:300px;">Definition</div>  | <div style="min-width:250px;">How to Use in a Sentence</div> |       
+| <div style="min-width:80px;">Vocab</div> | <div style="min-width:300px;">Definition</div>  | <div style="min-width:220px;">How to Use in a Sentence</div> |       
 | ----------- | ------------- | ----------- | 
 | Constructor | A method used when creating objects. Usually initializes an object's attributes. | "The constructor gets called every time we make a new `User` instance," "The constructor has `username` as a parameter, so we need to pass in a username whenever we initialize a `User`" |
 | `__init__`  | Name of the method used by Python as the constructor. Pronounced "dunder init." One of many "dunder" (double underscore) methods that are reserved by Python for specific tasks. Because `__init__` is so common, the "dunder" is often dropped in spoken conversation.   | "If I want to set up attributes, in my class definition I need to make an `__init__` method," "If I misspell `__init__`, my constructor won't work" |                                      
@@ -53,7 +53,7 @@ class ClassName:
     pass
 ```
 
-| Piece of Code | Notes                                                                                                                                                                                                                                                                                         |
+| <div style="min-width:100px;">Piece of Code</div> | <div style="min-width:400px;">Notes</div>                                                                                 |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `class`       | A keyword that indicates that a class definition is beginning                                                                                                                                                                                                                                 |
 | `ClassName`   | **Replace this** with the name of the class you're defining. The [PEP-8](https://www.python.org/dev/peps/pep-0008/#class-names) style guide prefers CapitalCamel case for class names. Class names should be singular nouns.                                                                  |
