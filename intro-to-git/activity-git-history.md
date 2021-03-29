@@ -48,7 +48,7 @@ The group members will use these details to name the specific commands needed.
    - box labeled "Git Log"
 1. Each individual should pick one of these commits, where each row is a different commit:
 
-| No. | Commit Hash | Commit Message                                  | Modifies files                                       | Adds new files            |
+| <div style="min-width: 20px;">No.</div> | <div style="min-width: 50px;">Commit Hash</div> | <div style="min-width: 150px;">Commit Message  | <div style="min-width: 140px;">Modifies files</div> | <div style="min-width: 140px;">Adds new files</div>            |
 | --- | ----------- | ----------------------------------------------- | ---------------------------------------------------- | ------------------------- |
 | 1   | `1a91c`     | "refactors plan_trip() to for loop"             | `plan.py`                                            | -                         |
 | 2   | `2e7de`     | "adds ability to plan multi-day hikes"          | -                                                    | `plan.py`, `test_plan.py` |
