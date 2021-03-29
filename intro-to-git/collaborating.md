@@ -48,8 +48,8 @@ Git is highly configurable, so most of these settings can change. However, in th
 For the Hike Planner team, we can imagine this story:
 
 1. Nakita hosts the project codebase somewhere, and gives access to Frida and Raul.
-1. Friday clones this repo onto her laptop. Raul clones this repo onto his laptop.
-1. Nakita makes code changes and commits on her machine. Friday makes her own code changes and commits on his machine. Raul does, too.
+1. Frida clones this repo onto her laptop. Raul clones this repo onto his laptop.
+1. Nakita makes code changes and commits on her machine. Frida makes her own code changes and commits on his machine. Raul does, too.
 
 After setup, during development...
 
