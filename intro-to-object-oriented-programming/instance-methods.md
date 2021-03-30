@@ -91,12 +91,12 @@ Inside the `get_audio_data` method, we use the attribute `self.track_list` _**an
 
 ## Instances of a Class Do Not Share State but They Do Share Behavior
 
-![Diagram of Classes and Instances](../assets/intro-to-oop_instance-methods_diagram-class-vs-instance.png)  
+![Diagram of Classes and Instances](../assets/intro-to-oop_instance-methods_instance-method-diagram.png)  
 
 
 As we've been learning, the two building-blocks of a class are **state** (its attributes) and **behavior** (its methods). 
 
-**Each instance of a class has its own state**. This means that one album object might have the title "When Doves Cry" and another album object might have the title "Dirty Computer."
+**Each instance of a class has its own state**. This means that one album object might have the title "Purple Rain" and another album object might have the title "Dirty Computer."
 
 We will see that **all instances of a class have the same behavior**. This means that the method `get_audio_data` will be the same for all album objects. The only thing that will change from one instance to another is the value of the `track_list` attribute.
 
