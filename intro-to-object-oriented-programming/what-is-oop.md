@@ -81,12 +81,12 @@ Each class definition will have:
 
 Observe these examples of classes that already exist, or classes that could exist.
 
-| Idea to represent                                                                                              | Class Name |
-| -------------------------------------------------------------------------------------------------------------- | ---------- |
-| A class that describes the idea of a sequence of text                                                          | str        |
-| A class that describes an ordered list                                                                         | list       |
-| A class that describes a vehicle driver enrolled in a ride-share service, who has a ride history and a vehicle | Driver     |
-| A class that describes a music album sold in a digital music store, and all its data                           | Album      |
+| Class Name                    | Idea to represent |
+| ----------------------------- | ---------- |
+| str        | A class that describes the idea of a sequence of text                                                          |
+| list       | A class that describes an ordered list                                                                         |
+| Driver     | A class that describes a vehicle driver enrolled in a ride-share service, who has a ride history and a vehicle | 
+| Album      | A class that describes a music album sold in a digital music store, and all its data                           | 
 
 ### !end-callout
 
@@ -144,9 +144,14 @@ An **Attribute** is a specific kind of **variable**: one defined within a class.
 
 These four words (state, behavior, attributes, and methods) aren't introducing anything new. Instead, they let us talk about things we already know (variables and functions) in a new context (being in a class)!
 
-<img src="../assets/what-is-oop_class-breakdown.png" alt="Class Breakdown" width="800" height="500"/>
+
+![Diagram of the parts of a class depicted as a square seperated by two rectangles, state and behavior. Inside of the state rectangle are circles that represent attributes. Inside of the behavior rectange are triangles that represent behavior](../assets/intro-to-object-oriented-programming_what-is-oop_class-breakdown.png)  
+*Fig. Classes let us represent concepts in code by grouping together attributes along with the behaviors that make use of those attributes.*
+
+
 
 ### !callout-info
+
 
 ## Examples: State and Behavior
 
