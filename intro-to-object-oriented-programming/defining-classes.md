@@ -44,7 +44,7 @@ Classes can also follow the [Single Responsibility Principle](https://en.wikiped
 1. What is a descriptive name for this class?
    - The name should be singular, e.g., `Album` _not_ `Albums`
 
-![Image of 12 pusheen styled cats](../assets/intro-to-object-oriented-proramming_defining-classes_pusheen-cats.jpg)  
+![Image of 12 pusheen styled cats](../assets/intro-to-object-oriented-programming_defining-classes_pusheen-cats.jpg)  
 *Fig. A __`Cat`__ class could be used to create multiple Pusheen-styled cats. They might vary in body shape, whiskers, and legs, but they are all equally adorable!*
 
 
