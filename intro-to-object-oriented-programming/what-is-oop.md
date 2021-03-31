@@ -146,7 +146,7 @@ These four words (state, behavior, attributes, and methods) aren't introducing a
 
 
 ![Diagram of the parts of a class depicted as a square seperated by two rectangles, state and behavior. Inside of the state rectangle are circles that represent attributes. Inside of the behavior rectange are triangles that represent behavior](../assets/intro-to-object-oriented-programming_what-is-oop_class-breakdown.png)  
-*Fig. A __`Cat`__ class could be used to create multiple Pusheen-styled cats. They might vary in body shape, whiskers, and legs, but they are all equally adorable!*
+
 
 
 ### !callout-info
