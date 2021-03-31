@@ -1,4 +1,4 @@
-# `super()`
+# super()
 
 ## Learning Goals
 - Use super() in inheritance
