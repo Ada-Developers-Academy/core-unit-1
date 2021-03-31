@@ -471,7 +471,7 @@ Standards:
       -
         Type: Lesson
         UID: 13417be7f72da4eeb97ff9ce94f5df6a
-        Path: /intro-to-oop-relationships/inheritance.methods
+        Path: /intro-to-oop-relationships/inheritance.md
       -
         Type: Lesson
         UID: 2b71b999836f4c8a81dee6df7b0661e4
