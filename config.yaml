@@ -459,7 +459,7 @@ Standards:
         Path: /intro-to-oop-contd/projects-with-many-files.instructor.md
   -
     Title: Intro to OOP Relationships
-    Description: "OOP Relationships, Inheritance, Problem Set: OOP Relationships"
+    Description: "OOP Relationships, Inheritance, Super, Problem Set: OOP Relationships"
     UID: 6aa5a5d28d6c39bc5381c77a1e222232
     SuccessCriteria:
       - success criteria
@@ -472,6 +472,10 @@ Standards:
         Type: Lesson
         UID: 13417be7f72da4eeb97ff9ce94f5df6a
         Path: /intro-to-oop-relationships/inheritance.md
+      -
+        Type: Lesson
+        UID: 2b71b999836f4c8a81dee6df7b0661e4
+        Path: /intro-to-oop-relationships/super.md
       -
         Type: Lesson
         UID: e760a85b2f7705d0d4e42d26947b6f6c
