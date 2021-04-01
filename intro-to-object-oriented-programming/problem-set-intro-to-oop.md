@@ -598,7 +598,7 @@ class Automobile:
 ### !end-placeholder
 
 ### !hint
-Read through this example code to see what useage of `adjust_to_speed_limit` could look like:
+Read through this example code to see what usage of `adjust_to_speed_limit` could look like:
 
 ```python
 bus = Automobile()
