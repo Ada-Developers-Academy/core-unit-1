@@ -602,15 +602,19 @@ Read through this example code to see what usage of `adjust_to_speed_limit` coul
 
 ```python
 bus = Automobile()
+
 bus.speed = 45
 bus.adjust_to_speed_limit(50)
 print(bus.speed) # output: 47
+
 bus.speed = 45
 bus.adjust_to_speed_limit(46)
 print(bus.speed) # output: 46
+
 bus.speed = 45
 bus.adjust_to_speed_limit(44)
 print(bus.speed) # output: 44
+
 bus.speed = 45
 bus.adjust_to_speed_limit(45)
 print(bus.speed) # output: 45
