@@ -583,28 +583,6 @@ This method should:
 | Current `speed` is equal to `speed_limit`     | Don't change speed                    |
 | Current `speed` is over `speed_limit`         | accelerate with a speed delta of `-1` |
 
-Read through this example code to see what useage of `adjust_to_speed_limit` could look like:
-
-```python
-bus = Automobile()
-
-bus.speed = 45
-bus.adjust_to_speed_limit(50)
-print(bus.speed) # output: 47
-
-bus.speed = 45
-bus.adjust_to_speed_limit(46)
-print(bus.speed) # output: 46
-
-bus.speed = 45
-bus.adjust_to_speed_limit(44)
-print(bus.speed) # output: 44
-
-bus.speed = 45
-bus.adjust_to_speed_limit(45)
-print(bus.speed) # output: 45
-```
-
 ### !end-question
 ### !placeholder
 
@@ -618,6 +596,41 @@ class Automobile:
         return self.speed
 ```
 ### !end-placeholder
+
+### !hint
+Here are the tests!
+
+```python
+import unittest
+from main import *
+
+class TestChallenge(unittest.TestCase):
+    def test_automobile_accelerate(self):
+        bus = Automobile()
+        bus.speed = 45
+
+        new_speed = bus.accelerate(5)
+
+        self.assertEqual(new_speed, 50)
+        self.assertEqual(bus.speed, 50)
+
+    def test_automobile_adjust_to_speed_limit(self):
+        bus = Automobile()
+
+        bus.speed = 45
+        bus.adjust_to_speed_limit(50)
+        self.assertEqual(bus.speed, 47)
+        bus.speed = 45
+        bus.adjust_to_speed_limit(46)
+        self.assertEqual(bus.speed, 46)
+        bus.speed = 45
+        bus.adjust_to_speed_limit(44)
+        self.assertEqual(bus.speed, 44)
+        bus.speed = 45
+        bus.adjust_to_speed_limit(45)
+        self.assertEqual(bus.speed, 45)
+```
+
 ### !tests
 ```python
 import unittest
