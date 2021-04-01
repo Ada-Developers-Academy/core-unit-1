@@ -630,7 +630,7 @@ class TestChallenge(unittest.TestCase):
         bus.adjust_to_speed_limit(45)
         self.assertEqual(bus.speed, 45)
 ```
-
+### !end-hint
 ### !tests
 ```python
 import unittest
