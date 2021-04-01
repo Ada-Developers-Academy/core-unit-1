@@ -442,7 +442,7 @@ Use the following definition of `BasketballTeam`. Each `BasketballTeam` has:
 - An attribute `score_dict`, which maps a member's name to the number of points they've scored
 - An instance method `get_total_score`, which goes through the values of `score_dict` and sums and returns the total number of points
 
-Read through this example code to see what `score_dict` could look like:
+Read through this example code to see what usage of `score_dict` could look like:
 
 ```python
 original_scores = {
@@ -582,6 +582,28 @@ This method should:
 | Current `speed` is under `speed_limit` by 1-4 | accelerate with a speed delta of `1`  |
 | Current `speed` is equal to `speed_limit`     | Don't change speed                    |
 | Current `speed` is over `speed_limit`         | accelerate with a speed delta of `-1` |
+
+Read through this example code to see what useage of `adjust_to_speed_limit` could look like:
+
+```python
+bus = Automobile()
+
+bus.speed = 45
+bus.adjust_to_speed_limit(50)
+print(bus.speed) # output: 47
+
+bus.speed = 45
+bus.adjust_to_speed_limit(46)
+print(bus.speed) # output: 46
+
+bus.speed = 45
+bus.adjust_to_speed_limit(44)
+print(bus.speed) # output: 44
+
+bus.speed = 45
+bus.adjust_to_speed_limit(45)
+print(bus.speed) # output: 45
+```
 
 ### !end-question
 ### !placeholder
