@@ -204,6 +204,33 @@ Since looking up an element by it's index just involves some arithmetic and does
 
 <!-- ======================= END CHALLENGE ======================= -->
 
+
+
+<!-- Question 4 -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: multiple-choice
+* id: idFfOx
+* title: LJKASDFKLJDFSKLJ
+##### !question
+
+Are there multiple VS Code extensions to generate UUIDs?
+
+##### !end-question
+##### !options
+
+* Maybe
+* YES
+
+##### !end-options
+##### !answer
+
+* Maybe
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
 
