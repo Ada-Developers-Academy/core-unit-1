@@ -115,10 +115,11 @@ class Bear(Mammal):
 * `Bear` will inherit `name`, `region`, and `make_appearance()` from `Mammal`.
 * `Mammal` will inherit `color`, `size`, and `make_appearance()` from `Mammal`.
 * `Bear` will inherit `name`, `region`, and `make_noise()` from `Mammal`.
+* `Bear` will inherit `make_noise()` from `Mammal`.
 ##### !end-options
 
 ##### !answer
-* `Bear` will inherit `name`, `region`, and `make_noise()` from `Mammal`.
+* `Bear` will inherit `make_noise()` from `Mammal`.
 ##### !end-answer
 ### !end-challenge
 <!-- prettier-ignore-end -->
