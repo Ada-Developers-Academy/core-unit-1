@@ -150,6 +150,8 @@ These four words (state, behavior, attributes, and methods) aren't introducing a
 
 ### !callout-info
 
+## Examples: State and Behavior
+
 Observe these examples of classes that already exist, or classes that could exist.
 
 | Class  | Instances                                                                                                                 | Something Kept in State  (an Attribute)                                             | Behavior it Can Do  (a Method)                                                |
