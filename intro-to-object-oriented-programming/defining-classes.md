@@ -9,11 +9,11 @@
 
 ## Vocabulary and Synonyms
 
-| Vocab       | Definition                                                                                                                                                                                                                                                              | Synonyms    | How to Use in a Sentence                                                                                                                                                                  |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Constructor | A method used when creating objects. Usually initializes an object's attributes.                                                                                                                                                                                        | Initializer | "The constructor gets called every time we make a new `User` instance," "The constructor has `username` as a parameter, so we need to pass in a username whenever we initialize a `User`" |
-| `__init__`  | Name of the method used by Python as the constructor. Pronounced "dunder init." One of many "dunder" (double underscore) methods that are reserved by Python for specific tasks. Because `__init__` is so common, the "dunder" is often dropped in spoken conversation. | -           | "If I want to set up attributes, in my class definition I need to make an `__init__` method," "If I misspell `__init__`, my constructor won't work"                                       |
-| `self`      | The conventional name for a parameter that refers to an instance itself within a method of a class.                                                                                                                                                                     | -           | "We access attributes through `self`," "We assign attributes through `self`"                                                                                                              |
+| <div style="min-width:80px;">Vocab</div> | <div style="min-width:300px;">Definition</div>  | <div style="min-width:220px;">How to Use in a Sentence</div> |       
+| ----------- | ------------- | ----------- | 
+| Constructor | A method used when creating objects. Usually initializes an object's attributes. | "The constructor gets called every time we make a new `User` instance," "The constructor has `username` as a parameter, so we need to pass in a username whenever we initialize a `User`" |
+| `__init__`  | Name of the method used by Python as the constructor. Pronounced "dunder init." One of many "dunder" (double underscore) methods that are reserved by Python for specific tasks. Because `__init__` is so common, the "dunder" is often dropped in spoken conversation.   | "If I want to set up attributes, in my class definition I need to make an `__init__` method," "If I misspell `__init__`, my constructor won't work" |                                      
+| `self`      | The conventional name for a parameter that refers to an instance itself within a method of a class.         | "We access attributes through `self`," "We assign attributes through `self`"                                                                                                              
 
 ## When Do We Make a Class?
 
@@ -44,6 +44,11 @@ Classes can also follow the [Single Responsibility Principle](https://en.wikiped
 1. What is a descriptive name for this class?
    - The name should be singular, e.g., `Album` _not_ `Albums`
 
+![Image of 12 pusheen styled cats](../assets/intro-to-object-oriented-programming_defining-classes_pusheen-cats.jpg)  
+*Fig. A __`Cat`__ class could be used to create multiple Pusheen-styled cats. They might vary in body shape, whiskers, and legs, but they are all equally adorable!*
+
+
+
 ## Defining Classes
 
 Once we've determined a class name and its responsibility, we can define a class with this syntax:
@@ -53,7 +58,7 @@ class ClassName:
     pass
 ```
 
-| Piece of Code | Notes                                                                                                                                                                                                                                                                                         |
+| <div style="min-width:150px;">Piece of Code</div> | <div style="min-width:450px;">Notes</div>                                                                                 |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `class`       | A keyword that indicates that a class definition is beginning                                                                                                                                                                                                                                 |
 | `ClassName`   | **Replace this** with the name of the class you're defining. The [PEP-8](https://www.python.org/dev/peps/pep-0008/#class-names) style guide prefers CapitalCamel case for class names. Class names should be singular nouns.                                                                  |

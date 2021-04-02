@@ -18,7 +18,7 @@ How would Nakita's workflow change if the Hike Planner team grows? Multiple deve
 
 ## Vocabulary and Synonyms
 
-| <div style="min-width:100px;">Vocab</div> | <div style="min-width:200px;">Definition</div> | <div style="min-width:150px;">Synonyms</div> | <div style="min-width:250px;">How to Use in a Sentence</div> |
+| <div style="min-width:100px;">Vocab</div> | <div style="min-width:150px;">Definition</div> | <div style="min-width:100px;">Synonyms</div> | <div style="min-width:250px;">How to Use in a Sentence</div> |
 | ----------- | ----------- | ----------- | ----------- |
  Remote repository | A common repository that all team members use to exchange their changes | Remote, remote repo, `origin` | "I push my code to the remote `origin`, so my team members can pull those changes from it," "I pull changes from the remote `origin`, so I can get the shared code changes." |
 
@@ -48,8 +48,8 @@ Git is highly configurable, so most of these settings can change. However, in th
 For the Hike Planner team, we can imagine this story:
 
 1. Nakita hosts the project codebase somewhere, and gives access to Frida and Raul.
-1. Friday clones this repo onto her laptop. Raul clones this repo onto his laptop.
-1. Nakita makes code changes and commits on her machine. Friday makes her own code changes and commits on his machine. Raul does, too.
+1. Frida clones this repo onto her laptop. Raul clones this repo onto his laptop.
+1. Nakita makes code changes and commits on her machine. Frida makes her own code changes and commits on her machine. Raul does, too.
 
 After setup, during development...
 

@@ -192,8 +192,8 @@ class ExampleComposite:
 
 Note that `components` is a list of `component` objects. As usual, we use good naming, here the plural `components`, to help us remember what we expect an attribute to contain.
 
-## A Longer Example: Product, ShippingAddress, and ShoppingCart
-
+## A Longer Example: Product, ShippingAddress, and ShoppingCart 
+  
 Let's look at one more example of one-to-one and one-to-many composition relationships.
 
 ```python
@@ -255,6 +255,8 @@ total_cost = sc.calculate_total_cost()
 print(f"The total cost of the products in the shopping cart is ${total_cost}")
 print(sc.summary())
 ```
+![A diagram showing details of the shopping cart class](../assets/composition_composition_a-longer-example.png)  
+*Fig. The configuration of the instances created by running the above code. The instance of __`ShoppingCart`__ has one instance of __`ShippingAddress`__, and many (three) instances of __`Product`__ in its __`products`__ list.*
 
 This code produces the console output:
 

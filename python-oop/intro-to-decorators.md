@@ -1,5 +1,7 @@
 # Intro to Decorators
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=38935567-38d4-48f3-84bc-acfe00f38451&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Introduction
 
 Python decorators, an example of the decorator pattern, solve problems where we would like a common set of operations performed before, after, or around the logic of an existing function or method. In this lesson, we will make a brief exploration of the concepts and syntax of Python decorators.
