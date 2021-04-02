@@ -53,6 +53,8 @@ Let's roleplay a non-programming example!
 
 Imagine a 10-year-old, Temmie, and her caregiver, Karen. It's Friday night, and the two of them have invited us over for dinner.
 
+We can ask Karen to make a call and order pizza on the phone. When we do that, Karen will go to her room, find her phone on the desk, and then call Dino's Pizza Palace.
+
 If we try to ask Temmie to do the same, she won't know how to do that on her own. However, Temmie _inherits_ the properties and behaviors of her caregiver. Temmie has never bought her own phone, and she's never called a pizza place, but she can look up to how Karen does it. Temmie will then go to her own room, look for her own phone on the desk, and then call Dino's Pizza Palace.
 
 A week has passed, and we're back for another pizza dinner with Karen and Temmie. Temmie has learned about all of the different pizza places in the world. We can ask Temmie to call and order pizza on the phone. Temmie can _override_ the behavior she's inherited. This time, Temmie will go to her own room, look for her own phone on the desk, and then call _Pizza Planet_ instead. Karen's own behavior (and preference for Dino's) does not change.
