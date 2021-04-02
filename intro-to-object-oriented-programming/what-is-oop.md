@@ -145,13 +145,9 @@ An **Attribute** is a specific kind of **variable**: one defined within a class.
 These four words (state, behavior, attributes, and methods) aren't introducing anything new. Instead, they let us talk about things we already know (variables and functions) in a new context (being in a class)!
 
 
-<<<<<<< HEAD
-![Diagram of the parts of a class depicted as a square seperated by two rectangles, state and behavior. Inside of the state rectangle are circles that represent attributes. Inside of the behavior rectange are triangles that represent behavior.](../assets/intro-to-object-oriented-programming_what-is-oop_class-breakdown.png)
-=======
-![Diagram of the parts of a class depicted as a square seperated by two rectangles, state and behavior. Inside of the state rectangle are circles that represent attributes. Inside of the behavior rectange are triangles that represent behavior](../assets/intro-to-object-oriented-programming_what-is-oop_class-breakdown.png)  
+![Diagram of the parts of a class depicted as a square seperated by two rectangles, state and behavior. Inside of the state rectangle are circles that represent attributes. Inside of the behavior rectangle are triangles that represent behavior](../assets/intro-to-object-oriented-programming_what-is-oop_class-breakdown.png)  
 *Fig. Classes let us represent concepts in code by grouping together attributes along with the behaviors that make use of those attributes.*
 
->>>>>>> 3ad1072773a3c2b1f70cc14d886b0e9dd2d97859
 
 
 ### !callout-info
