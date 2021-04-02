@@ -106,7 +106,7 @@ class Bear(Mammal):
         self.color = color
         self.size = size
 
-    def make_appearance():
+    def make_appearance(self):
         print("ʕ •ᴥ• ʔ")
 ```
 ##### !end-question
@@ -141,7 +141,7 @@ class Mammal:
         self.name = name
         self.region = region
 
-    def make_noise():
+    def make_noise(self):
         print("AHHHHHHH")
 
 class Bear(Mammal):
@@ -150,7 +150,7 @@ class Bear(Mammal):
         self.color = color
         self.size = size
 
-    def make_appearance():
+    def make_appearance(self):
         print("ʕ •ᴥ• ʔ")
 ```
 ##### !end-question
