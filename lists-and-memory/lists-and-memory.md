@@ -138,6 +138,7 @@ In Python variables store...
 
 ##### !options
 
+* This is the new answer
 * values directly
 * references to where data is stored
 * values directly, except for lists which contain a reference
@@ -146,7 +147,7 @@ In Python variables store...
 
 ##### !answer
 
-* references to where data is stored
+* This is the new answer
 
 ##### !end-answer
 
