@@ -17,7 +17,7 @@ Here's a mind map an individual shared of their life which demonstrates the powe
 ![how-to-mind-map](../assets/unit-1-reflection-my-life-mind-map.jpeg)
 *Fig: Life mind-map [(source).](http://emmacookbehaviourandenvironment.blogspot.com/)*
 
-## Unit 1 Mind Map
+## Activity Instructions
 
 In our case, we will make a mind map based on our learning from Unit 1 at Ada. It can include anything from python programming concepts, to study skills, to learnings about how to be in community.
 
