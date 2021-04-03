@@ -1,6 +1,6 @@
 # Unit 1 - Reflection Activity
 
-Wow! We've learned so much in the last 5 weeks. Let's take time to reflect on our learning and make connections.
+Wow! We've learned so much in this unit. Let's take time to reflect on our learning and make connections.
 
 We will use a technique called a mind map. A mind map is a diagram that can represent tasks, ideas, concepts, etc. and the connections between them. 
 
