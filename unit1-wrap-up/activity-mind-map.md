@@ -19,12 +19,17 @@ Here's a mind map an individual shared of their life which demonstrates the powe
 
 ## Activity Instructions
 
-In our case, we will make a mind map based on our learning from Unit 1 at Ada. It can include anything from python programming concepts, to study skills, to learnings about how to be in community.
+Let's create a mind map. A mind map is a diagram that can represent tasks, ideas, and concepts, and the connections between them.
 
-We will work on our mind maps in small groups in breakout rooms to garner the wisdom of our classmates for approximately 40 minutes. We will come back together as a large group to share our insights. 
+In our case, let's include any topic from our learnings from this unit. We should consider:
+- Python programming concepts
+- Study skills
+- Learnings about how to be in community
+- Anything else!
 
-Here are a couple tools our team recommends: [Google Slide](https://www.google.com/slides/about/) and [Mind Meister](https://www.mindmeister.com/).
+We can make our mind map using any of these tools:
+- [Google Slide](https://www.google.com/slides/about/)
+- [Mind Meister](https://www.mindmeister.com/)
+- [Software from this list of mind mapping software](https://zapier.com/blog/best-mind-mapping-software/)
 
-Here is a [more exhaustive list](https://zapier.com/blog/best-mind-mapping-software/) of mind mapping software.
-
-We encourage you to pick a tool and go for it -- no censorship needed.
+We will spend approximately 40 minutes in small groups to work together and include all the wisdom from our classmates. We will come back together as a large group to share insights.
