@@ -15,7 +15,7 @@ We will use a technique called a mind map. A mind map is a diagram that can repr
 To learn more about the benefits of mind mapping, read this mind map!
 
 ![how-to-mind-map](../assets/unit-1-reflection-mind-map.jpg)
-*Fig: Mind-map map [(source).](https://www.mindmeister.com/blog/wp-content/uploads/2015/01/MindMapping_mindmap_handdrawn.png)
+*Fig: Mind-map map [(source).](https://www.mindmeister.com/blog/wp-content/uploads/2015/01/MindMapping_mindmap_handdrawn.png)*
 
 
 Here's a mind map an individual shared of their life which demonstrates the power of making connections across different areas.
