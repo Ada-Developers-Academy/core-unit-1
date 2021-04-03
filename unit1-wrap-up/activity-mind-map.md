@@ -1,4 +1,10 @@
-# Unit 1 - Reflection Activity
+# Activity: Mind Map
+
+## Goals
+- Reflect on our learning this Unit
+- Make connections between different concepts.
+
+## Introduction
 
 Wow! We've learned so much in this unit. Let's take time to reflect on our learning and make connections.
 
