@@ -38,4 +38,6 @@ We can make our mind map using any of these tools:
 - [Mind Meister](https://www.mindmeister.com/)
 - [Software from this list of mind mapping software](https://zapier.com/blog/best-mind-mapping-software/)
 
-We will spend approximately 40 minutes in small groups to work together and include all the wisdom from our classmates. We will come back together as a large group to share insights.
+Spend approximately 40 minutes in small groups to work together and include all the wisdom from our classmates. 
+
+Then, come back together as a large group to share insights.
