@@ -522,3 +522,14 @@ Standards:
         Type: Lesson
         UID: d70afaf7a11cea145281fd76ca10f1ab
         Path: /python-oop/problem-set-static-methods-and-class-methods.md
+  -
+    Title: Unit 1 Wrap-up
+    Description: "Activity: Mind Map"
+    UID: 05dcb8c7-8bfb-4b27-acef-9e1c838579d1
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+          Type: Lesson
+          UID: 0654d591-04a2-4663-91fa-3cf1d835037e
+          Path: /unit1-wrap-up/activity-mind-map.md
