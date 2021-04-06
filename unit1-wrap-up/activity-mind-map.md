@@ -25,7 +25,7 @@ Here's a mind map an individual shared of their life which demonstrates the powe
 
 ## Activity Instructions
 
-Let's create a mind map. A mind map is a diagram that can represent tasks, ideas, and concepts, and the connections between them.
+Let's create a mind map. A mind map is a diagram that can represent tasks, ideas, and concepts, and the connections between them. In general, boxes are single concepts. Arrows and lines are made between concepts to show that they are connected somehow.
 
 In our case, let's include any topic from our learnings from this unit. We should consider:
 - Python programming concepts
@@ -40,4 +40,6 @@ We can make our mind map using any of these tools:
 
 Spend approximately 40 minutes in small groups to work together and include all the wisdom from our classmates. 
 
-Then, come back together as a large group to share insights.
+Take turns contributing the the diagram.
+
+Then, come back together as a large group to share insights. We encourage you to start by answering the question "What was the favorite connection we made?".
