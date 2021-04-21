@@ -644,8 +644,11 @@ In the question block below, `input_int` is already defined and available to use
 
 If you would like to experiment with the coding question in VS Code or repl.it, you will need an implementation for `input_int`. Here is a working implementation for you to copy/paste and use in VS Code or replit.com. It may contain concepts not covered yet, such as handling exceptions.
 
+<br />
+
 <details style="max-width: 700px; margin: auto;">
-    <summary>A working implementation of `input_int`</summary>
+    <summary>A working implementation of <code>input_int</code></summary>
+
 ```python
 # accept a variable number of positional parameters
 def input_int(*args):
