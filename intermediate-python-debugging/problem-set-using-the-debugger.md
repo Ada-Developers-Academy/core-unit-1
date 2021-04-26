@@ -20,18 +20,18 @@ The program crashes with the following stack trace:
 
 ```
 Traceback (most recent call last):
-  File "/Users/username/ada/python/python-debugging/app.py", line 16, in <module>
-    f"{calculate_total(kamala_order)}")
-  File "/Users/username/ada/python/python-debugging/grocery_store/order.py", line 16, in calculate_total
-    total += order["products"][i]["price"]
+  File "/Users/trenisha.goslee/python-debugging/app.py", line 16, in <module>
+    f"{kamala_order.calculate_total()}")
+  File "/Users/trenisha.goslee/python-debugging/grocery_store/order.py", line 12, in calculate_total
+    total += self.products[i].price
 TypeError: unsupported operand type(s) for +=: 'int' and 'str'
 ```
 
-Hmmmm... The program is crashing at line 16 of `grocery_store/order.py`.
+Hmmmm... The program is crashing at line 12 of `grocery_store/order.py`.
 
-Lets put a breakpoint at line 16 of `grocery_store/order.py`.
+Lets put a breakpoint at line 12 of `grocery_store/order.py`.
 
-![Visual of a breakpoint in order.py at line 16](../assets/vs-code-debugger/order-py-breakpoint.png)
+![Visual of a breakpoint in order.py at line 12](../assets/vs-code-debugger/order-py-breakpoint.png)
 *Fig. A breakpoint*
 
 Then go to the debugger icon.
@@ -60,9 +60,9 @@ You will notice that the application stops in `order.py`.
 
 ### Finding the Bug with Watches
 
-Notice that the loop attempts to add up all the product prices.  In Watch add a watch for `order["products"][i]`
+Notice that the loop attempts to add up all the product prices.  In Watch add a watch for `self.products[i].name`
 
-![Adding a watch on a product](../assets/vs-code-debugger/watch-price.png)
+![Adding a watch on a product](../assets/vs-code-debugger/watch-product.png)
 *Fig. A watch*
 
 <details style="max-width: 700px; margin: auto;">
