@@ -8,7 +8,7 @@ In the past we've used a few tools for debugging our Python code.  This has incl
 
 - Asking the Questions
   - **What** is happening?
-  - **Why** is it happening
+  - **Why** is it happening?
   - **How** do we fix it
 - Answering these questions by:
   - Using Rubber Ducking to explain the problem and walk through potential solutions
@@ -63,7 +63,7 @@ Multiple breakpoints lets us jump between different points in a program, inspect
 
 Sometimes we need to track the value of an expression that is never stored in a variable. We can supply the debugger tool with expressions to _watch_. The debugger lists and shows the current value of each watched expression through the entire program execution.
 
-For example, imagine debugging an app that manages delivery drivers, and our driver names seem to be glitchy. However, in our code, there's no variable that holds driver names. Instead of using a variable, we can watch the value of the name of the first driver by watching the expression `drivers[0]["name"]`.
+For example, imagine debugging an app that manages grocery deliveries, and our products seem to be glitchy. However, in our code, there's no variable that holds product names. Instead of using a variable, we can watch the value of the name of the first product by watching the expression `order["products]["i"]`.
 
 ![Watch Example in VS Code](../assets/vs-code-debugger/watch-price.png)
 *Fig. An example of a watch*

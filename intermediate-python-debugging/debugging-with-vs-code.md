@@ -74,7 +74,7 @@ You are set up!  You can close `launch.json` now.
 
 You can add a breakpoint by clicking to the **left** of the line number.  You will see a red dot appear to indicate the breakpoint.  You can click again to make it dissapear.  
 
-![Breakpoint](../assets/vs-code-debugger/breakpoint.png)
+![Breakpoint](../assets/intermediate-python-debugging_breakpoint.png)
 
 
 Add a breakpoint to lines 5 and 11.  See how you can toggle them on and off.
@@ -95,10 +95,10 @@ Notice that the program will pause at the first breakpoint it encounters.
 
 You can create a watch by clicking on the `+` icon and enter any expression.
 
-![Entering a Watch](../assets/vs-code-debugger/watch-price.png)
+![Entering a Watch](../assets/vs-code-debugger/watch-guess-na.png)
 *Fig. Creating a watch*
 
-![Watches](../assets/vs-code-debugger/watch.png)
+![Watches](../assets/vs-code-debugger/watch-guess-number-false.png)
 *Fig. A watch while the debugger is running*
 
 
