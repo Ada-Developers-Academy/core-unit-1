@@ -2,7 +2,7 @@
 
 ## Directions
 
-In this problem set we will use the debugger to identify two errors.  To run the activity clone the code at [AdaGold/python-debugging](https://github.com/AdaGold/python-debugging).  Then follow the directions in the README to set up the repo.
+In this problem set we will use the debugger to identify two errors.  To run the activity clone the code at [AdaGold/python-debugging](https://github.com/AdaGold/python-debugging/tree/cm/dictionary-version).  Then follow the directions in the README to set up the repo.
 
 The code contains two bugs, one runtime error crashes the program on execution and the other is a logic error which calculates the incorrect sum for an Order.  
 
