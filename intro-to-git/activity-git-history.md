@@ -57,6 +57,31 @@ The group members will use these details to name the specific commands needed.
 | 5   | `5JTrA`     | "adds error handling when loading hike data"    | `hike.py`, `test_hike.py`, `list.py`, `test_list.py` | -                         |
 | 6   | `6ee9f`     | "replaces hike report text with new copy"       | `report.py`, `test_report.py`, `hike.py`             | -                         |
 
+### !callout-info
+
+## A Variety of Git Area Names
+
+We have taken the names used for labeling the boxes from the Git command line. Other tools may refer to these regions differently.
+
+<br />
+
+<details>
+   <summary>Let's briefly review what each region represents and some alternative names.</summary>
+
+| Git Label | Synonym | Purpose |
+| --------- | ------- | ------- |
+| Untracked files | Untracked Changes Area | Files that Git sees as newly created. No version of these files exists in the Git Log yet. |
+| Changes not staged for commit | Local Changes Area | Files that are being tracked by Git, and that have been modified, but which haven't yet been added to a pending commit. |
+| Changes to be committed | Staging Area | Files that are being tracked by Git and are part of a pending commit. |
+
+<br />
+
+We might also see the Git Log referred to as the Git History, which is the log of all commits that have been made.
+
+</details>
+
+### !end-callout
+
 ### Instructions
 
 Group members will take turns making one step. During your turn, you should say out loud what your step is, and the Git command that goes with it. Each group member should collaborate, discuss, help, and confirm that the other group members are on the right track.
