@@ -42,9 +42,9 @@ The group members will use these details to name the specific commands needed.
 ### Part 1 Setup
 
 1. Begin a diagram of Git's areas. Each individual should draw in their own notes a...
-   - box labeled "Untracked Changes Area"
-   - box labeled "Local Changes Area"
-   - box labeled "Staging Area"
+   - box labeled "Untracked files"
+   - box labeled "Changes not staged for commit"
+   - box labeled "Changes to be committed"
    - box labeled "Git Log"
 1. Each individual should pick one of these commits, where each row is a different commit:
 
@@ -63,10 +63,10 @@ Group members will take turns making one step. During your turn, you should say 
 
 These are the steps:
 
-1. Using the information from your selected commit, write down a new file in "Untracked Changes" or a modified file in "Local Changes"
+1. Using the information from your selected commit, write down a new file in "Untracked files" or a modified file in "Changes not staged for commit"
 1. Repeat step 1 until there are no more files to name
-1. Move a file into "Staging," and erase it from its previous area
-1. Repeat step 1 until there are no more files to add to staging
+1. Move a file into "Changes to be committed," and erase it from its previous area
+1. Repeat step 1 until there are no more files to add to "Changes to be committed"
 1. Create a commit with the specified commit message
 1. Write down the commit's commit hash in the "Log"
 
