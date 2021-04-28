@@ -76,7 +76,7 @@ Hypothesize a cause for the error, make changes to fix it, and then re-run the d
 
 Repeat this process until the program stops crashing, and the bug is fixed. During this debugger process, practice:
 
-- Adding another breakpoint to `product.py` inside the `__init__` function
+- Adding another breakpoint to `product.py` inside the `create_product` function
 - Stepping through the program when re-running the debugger
 </details>
 
@@ -103,7 +103,7 @@ If you don't see the `Debug Test` prompts (VS Code calls this a *CodeLens*) in y
 
 <details style="max-width: 700px; margin: auto;">
     <summary>
-      Click here for the steps to enable the `Debug Test` prompts.
+      Click here for the steps to enable the Debug Test prompts.
     </summary>
 
 #### Verify that VS Code is using your `venv`.
