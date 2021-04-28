@@ -102,7 +102,8 @@ class Mammal:
         print("AHHHHHHH")
 
 class Bear(Mammal):
-    def __init__(self, color, size):
+    def __init__(self, name, region, color, size):
+        super().__init__(name, region)
         self.color = color
         self.size = size
 
