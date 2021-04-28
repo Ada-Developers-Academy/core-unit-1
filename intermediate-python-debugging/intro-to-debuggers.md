@@ -50,7 +50,7 @@ A **breakpoint** is a place (line of code) which indicates to the debugger to pa
 
 Editors typically indicate breakpoints visually with a red-dot next to the line number.  This is a very common convention in many languages and editors, although some editors may use different visual clues.
 
-![VS Code Breakpoint Example](../assets/vs-code-debugger/Breakpoint.png)
+![VS Code Breakpoint Example](../assets/vs-code-debugger/breakpoint.png)
 *Fig. A breakpoint*
 
 So in short, we can think of a breakpoint as a pause button for a program which allows devs to "snoop-around" in the state of the currently executing application.
