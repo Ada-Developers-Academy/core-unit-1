@@ -63,7 +63,7 @@ Multiple breakpoints lets us jump between different points in a program, inspect
 
 Sometimes we need to track the value of an expression that is never stored in a variable. We can supply the debugger tool with expressions to _watch_. The debugger lists and shows the current value of each watched expression through the entire program execution.
 
-For example, imagine debugging an app that manages grocery deliveries, and our products seem to be glitchy. However, in our code, there's no variable that holds product names. Instead of using a variable, we can watch the value of the name of the first product by watching the expression `order["products][i]`.
+For example, imagine debugging an app that manages grocery deliveries, and one of our order products seems to be glitchy. However, in our code, there's no variable that directly holds the product we need to see. Instead of using a variable, we could watch the value of the `i`th product in our order by watching the expression `order["products"][i]`.
 
 ![Watch Example in VS Code](../assets/vs-code-debugger/watch-price.png)
 *Fig. An example of a watch*
