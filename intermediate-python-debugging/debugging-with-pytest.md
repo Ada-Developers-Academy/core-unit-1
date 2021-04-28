@@ -45,12 +45,12 @@ Once configured VS Code can run tests in the debugger using links above each tes
 
 The image below is an example of a test in VS code which is failing.
 
-![Failing test](../assets/vs-code-debugger/failing-test-vs-code.png)
+![Failing test](../assets/vs-code-debugger/failing-test-vs-code.png)  
 *Fig. An example of a failing test in VS Code.*
 
 While the image below shows another test which passes.  Notice the checkmarks next to `Run Test` and `Debug Test`.
 
-![Passing test](../assets/vs-code-debugger/passing-test-vs-code.png)
+![Passing test](../assets/vs-code-debugger/passing-test-vs-code.png)  
 *Fig. An example of a passing test in VS Code*
 
 You can then add breakpoints and use watches to examine why the test is not passing.
