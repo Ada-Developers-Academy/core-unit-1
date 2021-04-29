@@ -148,7 +148,7 @@ def get_restaurant_addresses(restaurants):
 * title: Nested Data and Nested Loops
 ##### !question
 
-What is the syntax to get `"Lizzie"` from `student_groups`?
+What is the syntax to get `"Lizzie"` from `students`?
 
 ```python
 students = [
