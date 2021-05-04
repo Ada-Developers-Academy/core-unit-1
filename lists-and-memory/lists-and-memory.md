@@ -48,7 +48,7 @@ sales_tax = 0.09
 
 Python connects with the operating system (macOS in our case) and allocates an unused block of memory to store the information.  Then the variable is given a _reference_ to where that variable is stored in memory.
 
-![Variable sales_tax referring to it's value in memory](../assets/lists-and-memory/lists-and-memory_lists-and-memory_reference-example.png)
+![Variable sales_tax referring to its value in memory](../assets/lists-and-memory/lists-and-memory_lists-and-memory_reference-example.png)
 
 *Fig. A variable in Python stores the location in memory, represented by the arrow, of the actual data.*
 
@@ -73,7 +73,7 @@ We can identify that both refer to the same value in memory using our friend the
 4304253904 
 ```
 
-Lists are no different except that instead of a variable containing a reference to the entire data set, it contains a reference to an object which contains metadata (information about the object like it's length etc) and an _array of references_, where each element in the list refers to a different object in memory, just like a normal variable.
+Lists are no different except that instead of a variable containing a reference to the entire data set, it contains a reference to an object which contains metadata (information about the object like its length etc) and an _array of references_, where each element in the list refers to a different object in memory, just like a normal variable.
 
 ![Lists in memory](../assets/lists-and-memory/lists-and-memory_lists-and-memory_lists-in-memory.png)
 
@@ -102,7 +102,7 @@ Python can then use the following steps to find any element a list of an arbitra
 1.  Use `start_of_items_collection + size_of_reference * index_number` to find the reference to the given item
 1.  Use the reference to find the given item
 
-Each step is an O(1) operation in time/space complexity and nothing in this algorithm changes as the list gets bigger.  Therefore, retrieving an element from a list by it's index number is a very efficient operation.
+Each step is an O(1) operation in time/space complexity and nothing in this algorithm changes as the list gets bigger.  Therefore, retrieving an element from a list by its index number is a very efficient operation.
 
 <!-- available callout types: info, success, warning, danger, secondary  -->
 ### !callout-warning
@@ -115,7 +115,7 @@ Like many general rules, this is an oversimplification.  Things can get more com
 
 ## Summary
 
-In memory Python variables contain references to where the actual data is stored.  A list variable refers to a memory location that contains metadata and a collection of references to where the actual data is stored, like a link to an addressbook.  This collection of references are contiguous in memory and that makes it very quick for Python to look up an element by it's index number, with some arithmetic.
+In memory Python variables contain references to where the actual data is stored.  A list variable refers to a memory location that contains metadata and a collection of references to where the actual data is stored, like a link to an addressbook.  This collection of references are contiguous in memory and that makes it very quick for Python to look up an element by its index number, with some arithmetic.
 
 ## Check for Understanding
 
@@ -176,7 +176,7 @@ All variables contain a reference to the location where data is stored.  Lists v
 
 ##### !question
 
-What is the Big O of for changing an element by it's index number like `students[n] = "Ceicil"`?
+What is the Big O of for changing an element by its index number like `students[n] = "Ceicil"`?
 
 ##### !end-question
 
@@ -197,7 +197,7 @@ O(...)
 <!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
 ##### !explanation
 
-Since looking up an element by it's index just involves some arithmetic and does **not** depend on the size of the given array, the time/space complexity are both O(1) 
+Since looking up an element by its index just involves some arithmetic and does **not** depend on the size of the given array, the time/space complexity are both O(1) 
 ##### !end-explanation
 
 ### !end-challenge
