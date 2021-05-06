@@ -742,7 +742,7 @@ class TestPython1(unittest.TestCase):
         num_src = input_ints([400, 400, 400, 400])
         self.assertEqual(1200, silly_sum(), 'the provided input was 400, 400, 400, 400')
 
-    def test_silly_sum_stops_when_sum_is_1001(self):
+    def test_silly_sum_stops_when_sum_is_1000(self):
         global num_src
         num_src = input_ints([999, 1, 1])
         self.assertEqual(1000, silly_sum(), 'the provided input was 999, 1, 1')
