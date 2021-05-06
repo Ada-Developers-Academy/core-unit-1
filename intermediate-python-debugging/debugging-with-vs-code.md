@@ -77,7 +77,7 @@ You can add a breakpoint by clicking to the **left** of the line number.  You wi
 ![Breakpoint](../assets/vs-code-debugger/breakpoint.png)
 
 
-Add a breakpoint to lines 14 and 16.  See how you can toggle them on and off.
+Add a breakpoint to lines 5 and 11.  See how you can toggle them on and off.
 
 
 ### Running the Debugger
