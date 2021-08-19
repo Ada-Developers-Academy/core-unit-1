@@ -1,32 +1,52 @@
 ---
 Standards:
   -
-    Title: Fundamentals Recap
-    Description: "Fundamentals Vocabulary, Conditionals Recap, Problem Set: Fundamentals Vocabulary, Problem Set: Conditionals Recap, Math Primer"
+    Title: Fundamentals
+    Description: "Fundamentals Vocabulary, Conditionals, Functions Overview, Defining Functions, Invoking Functions, How to Read Documentation, Problem Set: Fundamentals Vocabulary, Problem Set: Conditionals, Problem Set: Intro to Functions, Math Primer"
     UID: w7RhPU
     SuccessCriteria:
       - success criteria
     ContentFiles:
       -
         Type: Lesson
-        UID: k3byvO
-        Path: /fundamentals-recap/fundamentals-vocabulary.md
+        UID: c8607470-a07c-4a70-b1c8-5a4e4edb8519
+        Path: /fundamentals/fundamentals-vocabulary.md
       -
         Type: Lesson
-        UID: 0pDSN5
-        Path: /fundamentals-recap/conditionals-recap.md
+        UID: 17ba3d49-8311-499f-b98e-5f2187490952
+        Path: /fundamentals/conditionals.md
       -
         Type: Lesson
-        UID: wsrfiY
-        Path: /fundamentals-recap/problem-set-fundamentals-vocabulary.md
+        UID: 8b4b8d39fd4f56926aa6181cb77ed45f
+        Path: /fundamentals/functions-overview.md
       -
         Type: Lesson
-        UID: v2CqP7
-        Path: /fundamentals-recap/problem-set-conditionals-recap.md
+        UID: 2a192a35477f1d52a01849d3b778609c
+        Path: /fundamentals/invoking-functions.md
       -
         Type: Lesson
-        UID: oTncbU
-        Path: /fundamentals-recap/math-primer.md
+        UID: 692aeabdceb105d82aed2187db381860
+        Path: /fundamentals/defining-functions.md
+      -
+        Type: Lesson
+        UID: 0ea7bd4c9be9469bd0232744edf2a80d
+        Path: /fundamentals/how-to-read-documentation.md
+      -
+        Type: Lesson
+        UID: 9f71d60b-6423-40d0-9538-4c97949a4c27
+        Path: /fundamentals/problem-set-fundamentals-vocabulary.md
+      -
+        Type: Lesson
+        UID: 38f51e50-819c-49ec-af31-b860a8e532f5
+        Path: /fundamentals/problem-set-conditionals.md
+      -      
+        Type: Lesson
+        UID: 5c78092f-7794-4fdd-9449-a57e65689770
+        Path: /fundamentals/problem-set-intro-to-functions.md
+      -
+        Type: Lesson
+        UID: 1f5dfdf5-4a2a-4874-a3e3-5ae4af3b63e2
+        Path: /fundamentals/math-primer.md
   -
     Title: What Is Software Development
     Description: "What is Software?, Study Like a Programmer, Activity: Intention Setting Our Careers, Activity: Study Plan"
@@ -124,31 +144,8 @@ Standards:
         UID: VvrMFH
         Path: /intro-to-debugging/intro-to-debugging.md
   -
-    Title: Intro To Functions
-    Description: "Functions Overview, Invoking Functions, Defining Functions, Problem Set: Intro to Functions"
-    UID: e30a742083b7afa72ec565afafb9f64b
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: 8b4b8d39fd4f56926aa6181cb77ed45f
-        Path: /intro-to-functions/functions-overview.md
-      -
-        Type: Lesson
-        UID: 2a192a35477f1d52a01849d3b778609c
-        Path: /intro-to-functions/invoking-functions.md
-      -
-        Type: Lesson
-        UID: 692aeabdceb105d82aed2187db381860
-        Path: /intro-to-functions/defining-functions.md
-      -
-        Type: Lesson
-        UID: rjEdAe
-        Path: /intro-to-functions/problem-set-intro-to-functions.md
-  -
-    Title: Functions, Continued
-    Description: "Variable Scope, How to Read Documentation, Variables Are References, Problem Set: Functions Continued"
+    Title: Representing Data
+    Description: "Variable Scope, Variables Are References, Representing Data in Lists and Dictionaries, Sets, Tuples, Data and JSON, Problem Set: Representing Data, Problem Set: Sets, Problem Set: Tuples, Activity: Representing Data"
     UID: 6736abef6aad93ad0fdb8d10e1849b62
     SuccessCriteria:
       - success criteria
@@ -156,19 +153,44 @@ Standards:
       -
         Type: Lesson
         UID: k7GVFX
-        Path: /functions-continued/variable-scope.md
-      -
-        Type: Lesson
-        UID: 0ea7bd4c9be9469bd0232744edf2a80d
-        Path: /functions-continued/how-to-read-documentation.md
+        Path: /representing-data/variable-scope.md
       -
         Type: Lesson
         UID: MlpE4r
-        Path: /functions-continued/variables-are-references.md
+        Path: /representing-data/variables-are-references.md
       -
         Type: Lesson
-        UID: POpDU4
-        Path: /functions-continued/problem-set-functions-continued.md
+        UID: 88DgSp
+        Path: /representing-data/representing-data-in-lists-and-dictionaries.md
+      -
+        Type: Lesson
+        UID: 230e0a1b-f552-45ad-969a-6f577a5f91c6
+        Path: /representing-data/sets.md      
+      -
+        Type: Lesson
+        UID: 0318804d-6a48-4905-bdea-2a5a4e523127
+        Path: /representing-data/tuples.md
+      -
+        Type: Lesson
+        UID: r7MHqf
+        Path: /representing-data/data-and-json.md
+      -
+        Type: Lesson
+        UID: p4Pb0s
+        Path: /representing-data/problem-set-representing-data.md
+      -
+        Type: Lesson
+        UID: 1f3084593d9eed2a8ec8a797cbfdd89b
+        Path: /representing-data/activity-representing-data.md
+      -
+        Type: Lesson
+        UID: 30086be0-510f-414c-ab8f-3625c4a48548
+        Path: /representing-data/problem-set-sets.md
+      -
+        Type: Lesson
+        UID: 0913b292-4d34-4ec4-9a42-5192ff130113
+        Path: /representing-data/problem-set-tuples.md
+      
   -
     Title: Intro To Tests
     Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Problem Set: Intro to pytest"
@@ -193,31 +215,8 @@ Standards:
         UID: qcZisA
         Path: /intro-to-tests/problem-set-intro-to-pytest.md
   -
-    Title: Representing Data
-    Description: "Representing Data in Lists and Dictionaries, Data and JSON, Problem Set: Representing Data, Activity: Representing Data"
-    UID: hxB08H
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: 88DgSp
-        Path: /representing-data/representing-data-in-lists-and-dictionaries.md
-      -
-        Type: Lesson
-        UID: r7MHqf
-        Path: /representing-data/data-and-json.md
-      -
-        Type: Lesson
-        UID: p4Pb0s
-        Path: /representing-data/problem-set-representing-data.md
-      -
-        Type: Lesson
-        UID: 1f3084593d9eed2a8ec8a797cbfdd89b
-        Path: /representing-data/activity-representing-data.md
-  -
     Title: Iterating Over Data
-    Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, Iterating and Special Cases, Problem Set: Iterating Over Data"
+    Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, While Loops, Iterating and Special Cases, Problem Set: Iterating Over Data, Problem Set: While Loops"
     UID: giOpFA
     SuccessCriteria:
       - success criteria
@@ -236,12 +235,39 @@ Standards:
         Path: /iterating-over-data/iterating-over-dictionaries.md
       -
         Type: Lesson
+        UID: KyZkme
+        Path: /iterating-over-data/while-loops.md
+      -
+        Type: Lesson
         UID: 4oVaz5
         Path: /iterating-over-data/iterating-and-special-cases.md
       -
         Type: Lesson
         UID: maPjmo
         Path: /iterating-over-data/problem-set-iterating-over-data.md
+      -
+        Type: Lesson
+        UID: 3302a20d
+        Path: /iterating-over-data/problem-set-while-loops.md
+      -
+        Type: Instructor
+        UID: c8eef724
+        Path: /iterating-over-data/problem-set-while-loops.instructor.md
+  -
+    Title: Debugging Continued
+    Description: "Debugging Continued, Problem Set: Debugging Continued"
+    UID: 50c966ad-6dc5-4a52-9881-36a1d79e86e0
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: ac211af9-adc9-48b4-aebe-d9e31dbe953b
+        Path: /debugging-contd/debugging-contd.md
+      -
+        Type: Lesson
+        UID: 8180f119-17d9-4c8e-81d8-7e0acd52329e
+        Path: /debugging-contd/problem-set-debugging-contd.md
   -
     Title: Nested Data and Nested Loops
     Description: "Nested Lists and Dictionaries, Nested Loops, Problem Set: Nested Data and Nested Loops"
@@ -261,25 +287,7 @@ Standards:
         Type: Lesson
         UID: bqPsZH
         Path: /nested-data-and-nested-loops/problem-set-nested-data-and-nested-loops.md
-  -
-    Title: While Loops
-    Description: "While Loops, Problem Set: While Loops"
-    UID: 3P0q44
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: KyZkme
-        Path: /while-loops/while-loops.md
-      -
-        Type: Lesson
-        UID: 3302a20d
-        Path: /while-loops/problem-set-while-loops.md
-      -
-        Type: Instructor
-        UID: c8eef724
-        Path: /while-loops/problem-set-while-loops.instructor.md
+
   -
     Title: Exception Handling
     Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Problem Set: Exception Handling"
@@ -374,7 +382,7 @@ Standards:
         Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
   -
     Title: Intro to Git
-    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Problem Set: Git Commands, Activity: Git History"
+    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Git Cheatsheet, Problem Set: Git Commands, Activity: Git History"
     UID: DaSCfO
     SuccessCriteria:
       - success criteria
@@ -401,6 +409,10 @@ Standards:
         Path: /intro-to-git/reviewing-git-history.md
       -
         Type: Lesson
+        UID: ce6c935d-a665-420e-97ba-8b4a5cebf4d7
+        Path: /intro-to-git/git-cheatsheet.md
+      -
+        Type: Lesson
         UID: g1zQGU
         Path: /intro-to-git/problem-set-git-commands.md
       -
@@ -413,7 +425,7 @@ Standards:
         Path: /intro-to-git/activity-git-history.md
   -
     Title: Intro To Object-Oriented Programming
-    Description: "What is OOP?, Defining Classes, Creating Instances, Instance Methods, Problem Set: Intro to OOP"
+    Description: "What is OOP?, Defining Classes, Constructors, Creating Instances, Instance Methods, Problem Set: Intro to OOP, Problem Set: Constructors"
     UID: dfa81f9898dba334bbda0cdf7b32c9f6
     SuccessCriteria:
       - success criteria
@@ -428,6 +440,10 @@ Standards:
         Path: /intro-to-object-oriented-programming/defining-classes.md
       -
         Type: Lesson
+        UID: 6e94caab-815c-44ba-93d6-2e582e8c1b42
+        Path: /intro-to-object-oriented-programming/constructors.md
+      -
+        Type: Lesson
         UID: 3e5c6be7ed788302010d3515fcc938d4
         Path: /intro-to-object-oriented-programming/creating-instances.md
       -
@@ -437,7 +453,7 @@ Standards:
       -
         Type: Lesson
         UID: ecf610c94fd56dbcc8dcfa0f774342ec
-        Path: /intro-to-object-oriented-programming/problem-set-intro-to-oop.md
+        Path: /intro-to-object-oriented-programming/problem-set-constructors.md
   -
     Title: Intro To OOP, Cont'd
     Description: "Testing Objects, Projects With Many Files"

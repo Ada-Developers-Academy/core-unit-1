@@ -1,4 +1,4 @@
-# Problem Set: Conditionals Recap
+# Problem Set: Conditionals
 
 ## Directions
 
