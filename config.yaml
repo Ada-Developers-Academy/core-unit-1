@@ -152,14 +152,6 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
-        UID: k7GVFX
-        Path: /representing-data/variable-scope.md
-      -
-        Type: Lesson
-        UID: MlpE4r
-        Path: /representing-data/variables-are-references.md
-      -
-        Type: Lesson
         UID: 88DgSp
         Path: /representing-data/representing-data-in-lists-and-dictionaries.md
       -
@@ -191,6 +183,25 @@ Standards:
         UID: 0913b292-4d34-4ec4-9a42-5192ff130113
         Path: /representing-data/problem-set-tuples.md
       
+  -
+    Title: Variables and Memory
+    Description: "Variable Scope, Variables Are References, Problem Set: Variables and Memory"
+    UID: 8add2047-cbf3-4f35-9707-7c75bf919918
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 7bac503f-1fd7-4979-9d74-3e17be1fd59e
+        Path: /variables-and-memory/variable-scope.md
+      -
+        Type: Lesson
+        UID: b995d045-d2e8-4c44-9179-ea82c25a3376
+        Path: /variables-and-memory/variables-are-references.md
+      -
+        Type: Lesson
+        UID: b271db2a-bbca-466e-a8b0-d77eaff1d645
+        Path: /variables-and-memory/problem-set-variables-and-memory.md
   -
     Title: Intro To Tests
     Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Problem Set: Intro to pytest"
@@ -456,7 +467,7 @@ Standards:
         Path: /intro-to-object-oriented-programming/problem-set-constructors.md
       -
         Type: Lesson
-        UID: ecf610c94fd56dbcc8dcfa0f774342ec
+        UID: 2de13c58-e594-4169-a53a-41b249e6b652
         Path: /intro-to-object-oriented-programming/problem-set-intro-to-oop.md
   -
     Title: Intro To OOP, Cont'd
