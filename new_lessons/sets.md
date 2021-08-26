@@ -245,71 +245,64 @@ set_a.disjoint(set_b) # evaluates to True
 set_a.disjoint(set_c) # evaluates to False
 ```
 
-## Sets and Problem Solving
+## Problem Solving With Sets
 
-Now that we know set basics, let's take a look at how we can use sets to solve problems!  
+We have now been introduced to the fundamentals of sets, next we can apply our knowledge of sets to solve programming problems.
 
-Lets say we are working on an algorithm to compare two lists and find the elements that are common to both.  If we decided to approach this with a brute force solution, we might start by looping over all of the elements in the first list.  Then, for each element in the first list we would search inside the second list and see if we can find that element from the first list in the second list.  If we do find the element in the second list, we would add it to a result list.  Here's the code for this type of approach:
+Lets say we are working on an algorithm to compare two lists and find the elements that are common to both.  For example common favorite movies between two friends.
+
+Here's the code for this type of approach:
 
 ```python
-
-list_a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-list_b = [6, 7, 8, 9, 10, 11, 12, 13, 14]
+bethan_movies  = ["Candyman", "Free Guy", "Old", "Luck by Chance", "Billu"]
+hussain_movies = ["Old", "Billu", "Gulaal", "Blue", "Fruit & Nut", "Wonder Woman"] 
 
 result_list = []
-for element_a in list_a:
-    if element_a in list_b:
-        result_list.append(element_a)
+for movie in bethan_movies:
+    if movie in hussain_movies:
+        result_list.append(movie)
 
 return result_list
 ```
 
-This solution will get the job done, but it's not very efficient or elegant!  We can use sets to simplify this code by converting our lists into sets and then using set functionality to solve the problem.
+This solution will get the job done, but it's not very efficient.  The line `for movie in bethan_movies:` iterates through the first list and the line `if movie in hussain_movies:` iterates through the entire `hussain_movies` list with each iteration.
+
+We can use sets to simplify this code by converting our lists into sets and then using set functionality to solve the problem.
 
 ### Creating Sets From Other Data Structures
 
 First we need to turn our lists into sets.  The syntax for this is:
 
 ```python
+bethan_movies  = ["Candyman", "Free Guy", "Old", "Luck by Chance", "Billu"]
+hussain_movies = ["Old", "Billu", "Gulaal", "Blue", "Fruit & Nut", "Wonder Woman"] 
 
-list_a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-list_b = [6, 7, 8, 9, 10, 11, 12, 13, 14]
-
-set_a = set(list_a) # converts the list into a set!
-set_b = set(list_a) 
-
+bethan_set = set(bethan_movies) 
+hussain_set = set(hussain_movies) 
 ```
 
 Next, we can use set intersection to generate a set of all of the elements that are contained in both sets:
 
 ```python
-
 result_set = set_a & set b
-
 ```
 
 If we want the results in a list we can convert a set into a list in a similar way to how we converted the list into a set:
 
 ```python
-
 result_list = list(result_set)
-
 ```
 
-Here's the final version of the code:
+We can turn this into a method with the following:
 
 ```python
+def common_favorite_movies(movie_list_a, movie_list_b):
+    movie_set_a = set(movie_list_a) 
+    movie_set_b = set(movie_list_b) 
 
-list_a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-list_b = [6, 7, 8, 9, 10, 11, 12, 13, 14]
+    result_set = movie_set_a & movie_set_b
 
-set_a = set(list_a) # converts the list into a set!
-set_b = set(list_a) 
-
-result_set = set_a & set b
-
-return list(result_set)
-
+    return result_set
 ```
 
 ### Iterating Through Sets
