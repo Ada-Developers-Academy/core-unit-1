@@ -451,20 +451,12 @@ Standards:
         Path: /intro-to-object-oriented-programming/defining-classes.md
       -
         Type: Lesson
-        UID: 6e94caab-815c-44ba-93d6-2e582e8c1b42
-        Path: /intro-to-object-oriented-programming/constructors.md
-      -
-        Type: Lesson
         UID: 3e5c6be7ed788302010d3515fcc938d4
         Path: /intro-to-object-oriented-programming/creating-instances.md
       -
         Type: Lesson
         UID: 04e31443d6167d3ffb3b9728804b82ff
         Path: /intro-to-object-oriented-programming/instance-methods.md
-      -
-        Type: Lesson
-        UID: ecf610c94fd56dbcc8dcfa0f774342ec
-        Path: /intro-to-object-oriented-programming/problem-set-constructors.md
       -
         Type: Lesson
         UID: 2de13c58-e594-4169-a53a-41b249e6b652
