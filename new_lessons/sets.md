@@ -99,7 +99,7 @@ The `clear()` method removes all elements from a set leaving the set empty.
 
 ### Set Interactions
 
-Now that we are familiar with the basic set operations, we can get into the exiting world of set to set interactions!  Lets start with two basic sets:
+Now that we are familiar with the basic set operations, we can get into the exiting world of set to set interactions!  Let's start with two basic sets:
 
 ![Set A and Set B](../assets/new-lesson_sets_sets.png)  
 *Fig. Set A {1, 2, 3, 4} and Set B {4, 5, 6, 7}.*
@@ -112,7 +112,6 @@ The union of two sets combines the sets into a new set that includes all of the 
 *Fig. Result Set {1, 2, 3, 4, 5, 6, 7}.*
 
 ```python
-
 set_a = {1, 2, 3, 4}
 set_b = {4, 5, 6, 7}
 
