@@ -14,9 +14,9 @@ Sets are a unique data structure in Python.  Sets can be used to store data like
 | Difference |  |  |
 | Disjoint |  |  |
 
-## Set Basics
+## Set Fundamentals
 
-Sets are like buckets that can hold things!  Just like a bucket, we can add things to a set, remove things from a set, and dump everything out.  In addition, we can do many interesting things around comparing the contents of one set to another and combining the contents in specific ways.
+A "set" is an unordered collection of unique elements.  Similar to a list, a set can store several values, but unlike a list, a set does not maintain any particular order and cannot contain duplicates.  Like lists and dictionaries, we can add things to a set, remove things from a set, and dump everything out.  In addition, we can do many interesting things around comparing the contents of one set to another and combining the contents of sets in specific ways.
 
  There are a few rules that govern sets:
 
