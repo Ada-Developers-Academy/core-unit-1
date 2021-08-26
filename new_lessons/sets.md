@@ -56,14 +56,21 @@ Notice that creating a new, empty, set instance can be accomplished with `set()`
 **Add an element to a set:**
 
 ```python
+set_a = {1, 2, 3}
+set_a.add(4) 
+```
 
+The `add` method can be used to add a value to a set.
+
+**Remove an element from a set:**
+
+```python
 set_a = {1, 2, 3}
 set_a.remove(1) # set_a now equals {2, 3}
 set_a.remove(4) # Raises a KeyError
 
 set_a.discard(2) # set_a now equals {3}
 set_a.discard(4) # does nothing
-
 ```
 1. Remove and return a random element from a set
 ```python
