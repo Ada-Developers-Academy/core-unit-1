@@ -344,12 +344,101 @@ for char in result_set:
     print(char)
 ```
 
+## Check for Understanding
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: checkbox
+* id: b21888b8-b27e-4d9d-b0fb-55f6de5e93f4
+* title: How to create a set?
+* topics: python, sets
+
+##### !question
+
+How can you create a new set?
+
+##### !end-question
+
+##### !options
+
+* `names = set()`
+* `names = {"Peter", "Lai"}`
+* `names = {}`
+* `names = {"name": "Peter"}`
+
+##### !end-options
+
+##### !answer
+
+* `names = set()`
+* `names = {"Peter", "Lai"}`
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+The line `names = set()` creates a new empty set.  The line `names = {"Peter", "Lai"}` creates a new set containing the two given strings.
+
+The lines `names = {}` and `names = {"name": "Peter"}` create dictionaries instead.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 3dc99142-2dc3-4831-afd9-b9089bcdca59
+* title: How are sets different from lists
+* topics: python, sets
+
+##### !question
+
+How are sets different from lists?
+
+##### !end-question
+
+##### !options
+
+* A set maintains a specific order
+* A set **cannot** contain duplicates
+* A set cannot hold integers
+* A list contains key-value pairs
+
+##### !end-options
+
+##### !answer
+
+* A set **cannot** contain duplicates
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- ======================= END CHALLENGE ======================= -->
+
 <!-- Question Takeaway -->
 <!-- prettier-ignore-start -->
 ### !challenge
 * type: paragraph
-* id: 9Nqz2c
-* title: Variables Are References
+* id: aa450824-d399-45ff-8d38-be98a44072d5
+* title: Biggest Takeaway
 ##### !question
 
 What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
