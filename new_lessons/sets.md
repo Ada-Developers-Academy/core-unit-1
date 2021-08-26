@@ -24,26 +24,37 @@ A "set" is an unordered collection of unique elements.  Similar to a list, a set
 1. Each element of a set must be immutable.
 1. Elements in a set are unordered.
 
+What does it mean that each element is unique?  If you add an element to a set, for example `5` and then try to add another `5` to the set, the number of items in the collection does not increase.
+
+What does it mean that each element of a set must be immutable?  This means that we can only add unchangable elements to a set.  We can add `5` or `3` or `"pizza"` to the set because the values of 5, 3, or "pizza" cannot be modified.  However we cannot add a list or dictionary to a set because we can modify a list by appending new elements, overwriting existing elements and we can add and remove new key-value pairs to a dictionary.  If you do attempt to add a mutable value to a set you will get a `TypeError` with the message `unhashable type`.
+
+What is meant by the statement that, "Elements in a set are unordered."?  A set does not maintain it's elements in any order.  
+
+For example the following code.
+
+```python
+example_set = set()
+example_set.add(5)
+example_set.add(6)
+example_set.add('pizza')
+print(example_set)
+```
+
+Will print `{'pizza', 5, 6}`.  The set does not maintain order by insertion or 
+
 ### Set Operations and Syntax
 
-1. Create a new set:
+**Create a new set:**
+
 ```python
-
-new_set = set() # To create an empty set, use the keyword set()
-set_with_contents = {1, 2, 3, 'a', 'b'} # To create a set with contents, use {}
-# like dictionaries.  Notice the difference from dictionaries, each element is
-# on it's own, there are no key-value pairs.
-
+new_set = set() 
+set_with_contents = {1, 2, 3, 'a', 'b'} 
 ```
-1. Add an element to a set:
-```python
 
-set_a = {1, 2, 3}
-set_a.add(4) # set_a now equals {1, 2, 3, 4}
+Notice that creating a new, empty, set instance can be accomplished with `set()` and you can create a new set with values using the curly braces (`{}`).  The syntax for creating a new set with values differs from creating a dictionary in that there are no key-value pairs, only a list of values separated by commas.
 
-```
-1.  Remove an element from a set:
-* There are two ways to remove an element, remove() which raises an error if the element is not present, and discard() which does not.
+**Add an element to a set:**
+
 ```python
 
 set_a = {1, 2, 3}
