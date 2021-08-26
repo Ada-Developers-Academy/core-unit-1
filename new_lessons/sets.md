@@ -72,22 +72,30 @@ set_a.remove(4) # Raises a KeyError
 set_a.discard(2) # set_a now equals {3}
 set_a.discard(4) # does nothing
 ```
-1. Remove and return a random element from a set
-```python
 
+There are two ways to remove an element, `remove()` which raises a `KeyError` if the element is not present, and `discard()` which does not.
+
+
+**Remove and return a random element from a set:**
+```python
 set_a = {1, 2, 3}
-random_element = set_a.pop() # random_element equals a random element from set_a, and that element has been removed from set_a
+random_element = set_a.pop()
 
 set_b = set()
-random_element = set_b.pop() # Throws a KeyError, can't pop from an empty set
-
+random_element = set_b.pop() # Throws a KeyError
 ```
-1. Remove all elements from a set 
+
+The `pop` method removes and returns one element from a set.  If the set is empty, `pop()` will throw a `KeyError`.
+
+
+**Remove all elements from a set:**
+
 ```python
 set_a = {1, 2, 3}
 set_a.clear() # set_a is now an empty set
-
 ```
+
+The `clear()` method removes all elements from a set leaving the set empty.
 
 ### Set Interactions
 
