@@ -222,11 +222,12 @@ authors = {"Lorraine", "Colin", "Aedan", "Ajwa", "Ciara"}
 
 editors < authors # evaluates to True
 
-# A set is not a proper subset of another set if they are equal
-set_c = {1, 2, 3}
+users = {"Lorraine", "Colin", "Aedan"}
 
-set_a < set_c # evaluates to False
+users < editors # evaluates to False
 ```
+
+We use the `<` operator to determine if one set is a proper subset.  In the above example `editors` is a proper subset of `authors` because every element in `editors` is contained in `authors`, but the two sets are not equal (`authors` contain more).  `users < editors` evaluates to `False` because the two sets are equal.
 
 #### Disjoint
 
