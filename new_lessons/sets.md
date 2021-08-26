@@ -123,6 +123,10 @@ result_set1 = set_a.union(set_b) # {1, 2, 3, 4, 5, 6, 7}
 result_set2 = set_a | set_b # {1, 2, 3, 4, 5, 6, 7}
 ```
 
+In the code above the union of `set_a` and `set_b` results in `{1, 2, 3, 4, 5, 6, 7}` consisting of all the elements in both sets.  However values, like `4` are included only once.  Overlapping elements are included once in the resulting set.
+
+We can perform Union operations either by using the `union()` method, or the `|` operator.  Both the method and operator result in a new set consisting of the union of the given sets.
+
 #### Intersection
 
 The intersection of two sets is a new set composed of all of the elements that were present in both sets.  The overlapping elements are included only once in the result set.
