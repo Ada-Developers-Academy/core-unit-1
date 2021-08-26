@@ -171,7 +171,15 @@ result_set2 = set_a - set_b # {1, 2, 3}
 
 #### And More!
 
-There are more set interactions in Python that we will not cover in this curriculum.  Follow your curiosity!
+
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## There is more!
+
+There are more set interactions in Python that we will not cover in this curriculum.  [Follow your curiosity!](https://www.programiz.com/python-programming/set)
+
+### !end-callout
 
 ### Set Comparisons
 
