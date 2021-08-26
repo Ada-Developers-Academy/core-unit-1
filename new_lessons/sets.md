@@ -8,11 +8,11 @@ Sets are a unique data structure in Python.  Sets can be used to store data like
 
 | Vocab | Definition | Synonyms | How to Use in a Sentence |
 | ----------------- | ----------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Set |  |  |
-| Union |  |  |
-| Intersection |  |  |
-| Difference |  |  |
-| Disjoint |  |  |
+| Set | An abstract data type that can store unique values, without any particular order |  | I added this project to my set of demos.
+| Union | The union of a collection of sets is a new set consisting of all the elements in the input sets. | Juncture | I took the set of movies Mark has seen and Hiba and calculated the union resulting in a set of all the movies they've seen.
+| Intersection | The intersection of two sets, A and B is a set containing all the elements of A which also belong to set B | Overlap | I took the set of movies staring Iron man and Black Panther and calculated the intersection resulting in the set of movies they both appeared in.
+| Difference | The difference of two sets A and B consists of a set consisting of all the elements in set A excluding any element also found in set B. |  | I wanted to get a list of all the Hong Kong action movies which do not include Jackie Chan, so I took the difference of the set of HK movies and the set of Jackie Chan movies.
+| Disjoint | Two sets A and B are disjoint when the intersection of set A and set B is empty. |  | Apparently the set of movies staring Uma Thurmond and Jackie chan is disjoint.  They've never worked together.
 
 ## Set Fundamentals
 
