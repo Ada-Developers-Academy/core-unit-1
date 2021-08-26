@@ -305,51 +305,43 @@ def common_favorite_movies(movie_list_a, movie_list_b):
     return result_set
 ```
 
-### Iterating Through Sets
+### Eliminating Duplicates
 
 Let's say we have a string of letters and we want to find all of the unique characters in the string.  Here's a brute force solution that we could use:
 
 ```python
-
-s = "she sells sea shells by the sea shore"
+phrase = "Fuzzy Wuzzy was a bear"
 result = []
 
-for char in s:  # loop over each character in the string
+for char in phrase:  # loop over each character in the string
     if char not in result: # if the character is not in the result set:
         result.append(char) # add the character to the result set
 
-for char in result: #print out the results
+for char in result: # print out the results
     print(char)
-
 ```
 
 Just like our other brute force solution, this will get the job done, but we can use sets to come up with a more streamlined solution!
 
 ```python
-
-s = "she sells sea shells by the sea shore"
-result_set = set(s) # that's it!  the set now contains {'o', 'a', 'b', 'y', 'r', 't', 'l', 's', 'e', 'h', ' '}
-
+phrase = "Fuzzy Wuzzy was a bear"
+result_set = set(phrase) 
 ```
 
 If we want to print out the set, we can use a for loop just like the for loop we used for the list above:
 
 ```python
-
 for char in result_set:
     print(char)
-
 ```
 
 Here's our final solution:
 
 ```python
-
-s = "she sells sea shells by the sea shore"
-result_set = set(s)
+phrase = "Fuzzy Wuzzy was a bear"
+result_set = set(phrase)
 for char in result_set:
     print(char)
-
 ```
 
 <!-- Question Takeaway -->
