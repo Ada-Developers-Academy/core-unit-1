@@ -147,9 +147,11 @@ result_set1 = set_a.intersection(set_b) # {4}
 result_set2 = set_a & set_b # {4}
 ```
 
+Much like with union, we can perform set intersection using either the `intersection` method or the `&` operator.  When we perform the intersection of two sets a new set is returned consisting of *only* the values contained in both of the given sets.
+
 #### Difference
 
-The difference of two sets is a new set composed of all of the elements of the first set except for any elements that overlap with the second set.  
+The difference of two sets is a new set composed of all of the elements of the first set _except_ for any elements that overlap with the second set.  
 
 ![Difference of Set A and Set B](../assets/new-lesson_sets_set-difference.png)  
 *Fig. Result Set {1, 2, 3}.*
