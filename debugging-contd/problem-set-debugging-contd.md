@@ -250,11 +250,7 @@ Moira knows what's happening and why it's happening.  She's not quite sure yet h
 
 ##### !end-question
 
-<!--optional-->
-##### !explanation
-
-##### !end-explanation
-
 ### !end-challenge
 
 <!--END CHALLENGE-->
+
