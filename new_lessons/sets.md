@@ -183,42 +183,44 @@ There are more set interactions in Python that we will not cover in this curricu
 
 ### Set Comparisons
 
-In addition to the interactions between sets, Python has built in ways to compare sets.
+In addition to the previous set operations, Python has built-in ways to compare sets.  This can be quite practical for us.  For example, we might want to know if a set of users who are "Editors" and verify if all the editors are also "Publishers" in our web application.
 
 #### Subset
 
-A set is a subset of another set if the other set contains all of the elements from the first set.  A set can be a subset of another set if the two sets are equal.
+Imagine two sets, `authors` and `editors`.  The `editors` set would be a subset of `authors` if every element of `editors` was also contained in `authors`.  
 
 ```python
 
-set_a = {1, 2, 3}
-set_b = {1, 2, 3, 4, 5}
+editors = {"Lorraine", "Colin", "Aedan"}
+authors = {"Lorraine", "Colin", "Aedan", "Ajwa", "Ciara"}
 
-# Two syntax methods to test if a set is a subset of another set
-# issubset() function
-set_a.issubset(set_b) # evaluates to True
+editors.issubset(authors) # evaluates to True
 
-# <= operator
-set_a <= set_b # evaluates to True
-
-# A set is also a subset of another set if they are equal
-set_c = {1, 2, 3}
-
-set_a <= set_c # evaluates to True
+editors <= authors # evaluates to True
 ```
+
+We can use the `issubset()` method or the `<=` operator to determine if one set is a subset of another.  Because all the elements of `editors` are contained in the set `authors`, the `editors` set is a subset of `authors` and both the `issubset()` and `<=` operator returns `True`.  We can also observe that two equal sets like `users` and `authors` are also subsets of each other.
 
 #### Proper Subset
 
-A set is a subset of another set if the other set contains all of the elements from the first set.  A set is not a proper subset of another set if the two sets are equal.
+Two equal sets are also subsets of each other.
 
 ```python
+authors = {"Lorraine", "Colin", "Aedan", "Ajwa", "Ciara"}
+users = {"Lorraine", "Colin", "Aedan", "Ajwa", "Ciara"}
 
-set_a = {1, 2, 3}
-set_b = {1, 2, 3, 4, 5}
+authors <= users # evaluates to True
+users <= authors # evaluates to True
+```
 
-# Only one syntax methods to test if a set is a subset of another set
-# < operator
-set_a < set_b # evaluates to True
+However a set is a proper subset if the other set contains all of the elements from the first set.  A set is not a proper subset of another set if the two sets are equal.
+
+```python
+editors = {"Lorraine", "Colin", "Aedan"}
+authors = {"Lorraine", "Colin", "Aedan", "Ajwa", "Ciara"}
+
+
+editors < authors # evaluates to True
 
 # A set is not a proper subset of another set if they are equal
 set_c = {1, 2, 3}
