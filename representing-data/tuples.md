@@ -1,18 +1,22 @@
 # Tuples
 
+## Learning Goals
+
+- Practice representing ordered data as a tuple
+
 ## Introduction
 
 A "tuple" is an ordered, **immutable** collection similar to lists. Tuples can be used to return multiple values from a function and for occasions where we would like to store data that's not intended to chage.
 
 ## Vocabulary and Synonyms
 
-| Vocab     | Definition | Synonyms | How to Use in a Sentence |
-| --------- | ---------- | -------- | ------------------------ |
-| Tuple     | conte      | conte    | conte                    |
-| Immutable | conte      | conte    | conte                    |
-| Mutable   | conte      | conte    | conte                    |
+| Vocab     | Definition                                           | Synonyms            | How to Use in a Sentence          |
+| --------- | ---------------------------------------------------- | ------------------- | --------------------------------- |
+| Tuple     | An immutable data type that can store ordered values |                     | I stored the id values in a tuple |
+| Immutable | unchanging over time or unable to be changed         | unchangeable, fixed |                                   |
+| Mutable   | liable to change                                     | changeable          |                                   |
 
-## Tuple Fundamentals
+## What is a tuple?
 
 A tuple is an ordered, immutable collection of elements. The length and data type of each element in a tuple never changes. This means that elements cannot be added, replaced, or removed.
 
@@ -56,17 +60,19 @@ Notice how `"Daria"` is surrounded by parentheses but evalutes to a string data 
 Tuple indices, like lists, are both ordered and zero-based. This means that the first index in a tuple is 0. In the example below, we can access an element within a tuple like we would a list:
 
 ```Python
-example_list = [1, 2, 3]
-example_tuple = (1,2,3)
+example_list = [1, 2, 3, 4, 5, 6]
+example_tuple = (1, 2, 3, 4, 5, 6)
 
 print(example_list[0])
 print(example_list[-1])
+print(example_list[1:4])
 
 print(example_tuple[0])
 print(example_tuple[-1])
+print(example_tuple[1:4])
 ```
 
-Loops can also be used to access the elements within tuples.
+Loops can also be used to iterate through all the elements in tuples.
 
 ```Python
 destinys_child = ("Beyonce", "Kelly", "Michelle")
@@ -94,14 +100,14 @@ instructor_tuple = (
 )
 ```
 
-Once the tuple is initialized, the mutable elements cannot replaced. Attempts at replacing the element will cause a TypeError. For example, if we try to change the list inside of `food_tuple` from a list to an integer, we will receive: `TypeError: 'tuple' object does not support item assignment`.
+Once the tuple is initialized, the mutable elements cannot be replaced. Attempts at replacing the element will cause a TypeError. For example, changing the list inside of `food_tuple` from a list to an integer will return `TypeError: 'tuple' object does not support item assignment`.
 
 ```Python
 food_tuple = (["apples", "pears", "bananas"], "carrot", "noodles")
 food_tuple[0] = 5
 ```
 
-Although we cannot replace the elements in a tuple, we can update, add, and remove the values inside of mutable elements.
+Although we cannot replace the elements in a tuple, we can update, add, and remove the values inside of the mutable elements.
 
 **Update List in Tuple**
 
@@ -162,3 +168,175 @@ print(instructor_tuple[0])
 #         "favorite_meal": "pork katsu"
 #     }
 ```
+
+## Tuple Operations
+
+### Addition
+
+We can combine tuples to form a new tuple using the `+` operator. However, if we try to combine at tuple with a different data type we will receive a `TypeError`.
+
+```Python
+sweet_menu = ("ice cream", "cake", "cupcake")
+savory_menu = ("pasta", "ramen", "pizza")
+
+all_menu_items = savory_menu + sweet_menu
+print(all_menu_items)
+# prints ("ice cream", "cake", "cupcake", "pasta", "ramen", "pizza")
+
+all_menu_itmes = "New" + sweet_menu
+# receive TypeError: can only concatenate str (not "tuple") to str
+```
+
+### Multiplication
+
+If we need elements to repeat within a tuple, we can use the `*` operator.
+
+```Python
+nums = (1, 2, 3)
+new_nums = nums*3
+print(new_nums)
+# (1, 2, 3, 1, 2, 3, 1, 2, 3)
+```
+
+### Problem Solving Strategies with Tuples
+
+## Returning multiple values from a function
+
+In Python, functions can return multiple values using tuples. Lets say we are provided a dictionary and need to return two values from the dictionary:
+
+```Python
+def display_student_info(id):
+
+    student_dict = {
+        "345": {
+            "name" : "June",
+            "grade": 8
+        },
+        "346": {
+            "name": "Mariah",
+            "grade": 8
+        }
+    }
+
+    for student_id, student_data in student_dict.items():
+        print(student_id)
+        if id == student_id:
+            return student_data["name"], student_data["grade"]
+
+(name, grade) = display_student_info("346")
+print(f"Student name: {name}, grade: {grade}")
+```
+
+## Creating constants
+
+Constants are values that are designed to never change and are often used across different parts of a program. Because tuples are immutable, they are a great candidate in storing data multiple pieces of data that are intended to never change and only accessed.
+
+## Dictionary Keys
+
+Dictionary keys are required to be immutable, making tuples a great way to have multiple pieces of data refer to a single value. This can be useful for storing location data using coordinates.
+
+```Python
+destinations = {
+    (-122.349358, 47.620422): {
+        "building_name": "Space Needle",
+        "city": "Seattle, Washington, United States"
+    },
+    (35.658581, 139.745438): {
+        "building_name": "Tokyo Tower",
+        "city": "Tokyo, Japan"
+    }
+}
+
+print(destinations[(35.658581, 139.745438)])
+
+```
+
+# Check for Understanding
+
+<!--prettier-ignore-start-->
+### !challenge
+
+* type: checkbox
+* id: 78138480-78d5-44d4-ac41-323b4c6c39de
+* title: Tuples
+
+##### !question
+
+How do we create a new tuple? 
+
+##### !end-question
+
+##### !options
+
+* soups = tuple()
+* soups = {"ramen", "congee", "stew"}
+* soups = ()
+* soups = ramen, congee, stew
+
+##### !end-options
+
+##### !answer
+
+* soups = tuple()
+* soups = {"ramen", "congee", "stew"}
+* soups = ()
+* soups = ramen, congee, stew
+
+##### !end-answer
+
+### !end-challenge
+<!--prettier-ignore-end-->
+
+<!--prettier-ignore-start-->
+### !challenge
+
+* type: checkbox
+* id: f5cea13b-ce38-4c3a-bb6f-c03fd01e9205
+* title: Tuples
+
+##### !question
+
+How are tuples different from lists?
+
+##### !end-question
+
+##### !options
+
+* lists are mutable 
+* tuples cannot contain duplicates
+* tuples are immutable 
+
+##### !end-options
+
+##### !answer
+
+* tuples are immutable 
+
+##### !end-answer
+
+### !end-challenge
+<!--prettier-ignore-end-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+- type: paragraph
+- id: 8e31a545-1c3c-4104-a715-bd76ef0125b8
+- title: Biggest Takeaway
+
+##### !question
+
+What was your biggest takeaway from this lesson? Feel free to answer in 1-2 sentences, draw a picture and describe it, or write a poem, an analogy, or a story.
+
+##### !end-question
+
+##### !placeholder
+
+My biggest takeaway from this lesson is...
+
+##### !end-placeholder
+
+### !end-challenge
+
+<!--END CHALLENGE-->
