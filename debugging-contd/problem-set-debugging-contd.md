@@ -46,7 +46,7 @@ will result in this output:
 ![Two generations of output that depict a text representation of a blinker, oscillating from a vertical arrangement to a horizontal arrangement.](../assets/debugging-contd_ps-output.png)  
 _Fig. A text representation of a blinker across two generations_
 
-Before starting work, please fork Moira's Replit.  Follow the link: (https://replit.com/@JasmineLopez4/DebuggingContdProblemSet)[https://replit.com/@JasmineLopez4/DebuggingContdProblemSet] and click the Fork button to create a copy that you can edit.
+Before starting work, please fork Moira's Replit.  Follow the link: (https://replit.com/@adacore/DebuggingContdProblemSet)[https://replit.com/@adacore/DebuggingContdProblemSet] and click the Fork button to create a copy that you can edit.
 
 <!--BEGIN CHALLENGE-->
 
@@ -120,21 +120,15 @@ Moira needs the inner `for` loop to iterate over each of the elements in each of
 
 ### !challenge
 
-* type: short-answer
+* type: paragraph
 * id: 42cc6a3a-e111-4344-ba03-bc4b2730c0d3
 * title: Debugging Continued
 
 ##### !question
 
-What is the change that Moira needs to make to line 16 to fix this bug?  Input the new line 16 below, omitting any tabs.
+How can Moira change her code to fix this bug?
 
 ##### !end-question
-
-##### !answer
-
-for h_pos in range(len(stage[v_pos])):
-
-##### !end-answer
 
 
 <!--optional-->
@@ -148,7 +142,14 @@ Moira needs to loop over the list at position `v_pos` inside of `stage`. She can
 <!--optional-->
 ##### !explanation
 
-By changing the code to `for h_pos in range(len(stage[v_pos])):`, the `for` loop is now looping over each horizontal position in each inner list. 
+Moira changes line 16 to `for h_pos in range(len(stage[v_pos])):`.  
+
+The for loop is now iterating over each horizontal position in each inner list.  Let's break down this line section by section:
+
+- `stage[v_pos]` accesses the element in stage at index `v_pos`.  This element is a list of True/False values that represents a horizontal row of the stage.
+- `len(stage[v_pos])` gets the length of the list.
+- `range(len(stage[v_pos]))` creates a range from 0 to the length of the array minus 1
+- `for h_pos in range(len(stage[v_pos])):` iterates over the range, stores each value in `h_pos` for use inside the loop.
 
 ##### !end-explanation
 
@@ -172,6 +173,11 @@ Moira runs her code and discovers that the error is gone!  Unfortunately, the ou
 <!--`topics: python, pandas`: the topics for analyzing points-->
 
 ##### !question
+
+Moira's code produces this output:
+
+![Moira's code output.  The first generation has three vertical alive cells.  The second generation has no alive cells.](../assets/debugging-contd_ps-output.png)  
+_Fig. Moira's code output._
 
 What is the bug that Moira sees now?  What is the expected output?  What is the code doing?
 
@@ -273,6 +279,18 @@ That means that cells are being set to dead (`False`) in the first row, and when
 Moira knows what's happening and why it's happening.  She's not quite sure yet how to fix her code, though!  What are some debugging steps she can take as she works on a solution?
 
 ##### !end-question
+
+<!--optional-->
+##### !explanation
+
+Moira tries several things to debug her code.  
+- Verify Library Functions: Moira starts by reading the count_neighbors function and makes sure she understands what it's doing.  
+- Check for Logical Errors: Moira realizes that she's changing the stage and using it in count_neighbors to count the previous generation's neighbors at the same time.  She realizes she needs two versions of the stage.  
+- Try Something: Moira tries several different things to come up with a solution that allows her to check the previous version of the stage and update the new version at the same time.
+
+Take some time to try to debug Moira's code.  When you are ready, take a look at [Moira's solution here](https://replit.com/@adacore/DebuggingContdProblemSetSolution).
+
+##### !end-explanation
 
 ### !end-challenge
 
