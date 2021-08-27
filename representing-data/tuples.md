@@ -237,7 +237,7 @@ How do we create a new tuple?
 * soups = tuple()
 * soups = ("ramen", "congee", "stew")
 * soups = ()
-* soups = ramen, congee, stew
+* soups = "ramen", "congee", "stew"
 
 ##### !end-options
 
