@@ -1,5 +1,7 @@
 # Problem Set: Debugging Continued
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=465884e5-a350-4020-abb8-ad9101852567&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 Moira has been working on some code related to [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), but has run into some bugs. Today's task is to fork Moira's Replit and help Moira debug her code.
 
 Before getting started, here is some important information about the project that Moira is working on:
