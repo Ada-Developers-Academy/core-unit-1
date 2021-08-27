@@ -86,7 +86,7 @@ print(example_tuple[1:4])
 
 Loops can also be used to iterate through all the elements in tuples.
 
-```Python
+```python
 destinys_child = ("Beyonce", "Kelly", "Michelle")
 for singer in destinys_child:
     print(singer)
