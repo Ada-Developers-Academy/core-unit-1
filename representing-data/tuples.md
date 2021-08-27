@@ -34,7 +34,7 @@ Where did this weird word come from? Originally it's a mathematical term related
 
 ## Tuple Syntax
 
-### Create a new tuple
+### Create a New Tuple
 
 There are three ways we can create a tuple:
 
