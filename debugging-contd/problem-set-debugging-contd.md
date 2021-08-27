@@ -46,7 +46,7 @@ will result in this output:
 ![Two generations of output that depict a text representation of a blinker, oscillating from a vertical arrangement to a horizontal arrangement.](../assets/debugging-contd_ps-output.png)  
 _Fig. A text representation of a blinker across two generations_
 
-Before starting work, please fork Moira's Replit.  Follow the link: (https://replit.com/@adacore/DebuggingContdProblemSet)[https://replit.com/@adacore/DebuggingContdProblemSet] and click the Fork button to create a copy that you can edit.
+Before starting work, please fork Moira's Replit.  Follow the link: [https://replit.com/@adacore/DebuggingContdProblemSet](https://replit.com/@adacore/DebuggingContdProblemSet) and click the Fork button to create a copy that you can edit.
 
 <!--BEGIN CHALLENGE-->
 
