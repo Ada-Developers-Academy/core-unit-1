@@ -93,7 +93,52 @@ We can combine this strategy with print statements to verify the behavior of eac
 
 A debugger is like print statements magnified! A debugger allows us to walk through our code line by line and see the value of each variable at each step.
 
-[TODO: Debugger Video](Debugger Video)
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=55a7f006-0764-4284-82e9-ad910161bb25&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+<details style="max-width: 700px; margin: auto;">
+  <summary>
+    Source Code for the Video
+  </summary>
+
+  ```python
+  def calculate_bill(items):
+      subtotal = 0
+      sales_tax = 0.8
+      tip = 0.2
+
+      for i in range(1, len(items)):
+          subtotal += items[i]["price"]
+
+      total = subtotal * sales_tax * tip
+
+      return total
+
+  items = [ {
+      "name": "Pasta",
+      "price": 14.99,
+      },
+      {
+      "name": "Dumplings",
+      "price": 9.99,
+      },
+      {
+      "name": "Diet Coke",
+      "price": 2.99,
+      },
+      {
+      "name": "Ice T",
+      "price": 0.89,
+      },
+      {
+      "name": "Green Curry Chicken",
+      "price": 18.39,
+      },
+  ]
+
+  bill = calculate_bill(items)
+  print(f"{bill=}")
+  ```
+</details>
 
 ## Fixing Bugs
 
