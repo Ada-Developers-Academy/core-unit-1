@@ -176,7 +176,7 @@ Moira runs her code and discovers that the error is gone!  Unfortunately, the ou
 
 Moira's code produces this output:
 
-![Moira's code output.  The first generation has three vertical alive cells.  The second generation has no alive cells.](../assets/debugging-contd_ps-output.png)  
+![Moira's code output.  The first generation has three vertical alive cells.  The second generation has no alive cells.](../assets/debugging-contd_ps-output-bug.png)  
 _Fig. Moira's code output._
 
 What is the bug that Moira sees now?  What is the expected output?  What is the code doing?
