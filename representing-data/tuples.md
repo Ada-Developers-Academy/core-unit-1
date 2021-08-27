@@ -20,6 +20,18 @@ A "tuple" is an ordered, **immutable** collection similar to lists. Tuples can b
 
 A tuple is an ordered, immutable collection of elements. The length and data type of each element in a tuple never changes. This means that elements cannot be added, replaced, or removed.
 
+### !callout-info
+
+## You Say Tuple, I Say Tuple
+
+There are two main pronunciations of tuple. One sounds like "to pull," and the other rhymes with "supple." It's said both ways, so we should get used to hearing it both ways!
+
+<br/>
+
+Where did this weird word come from? Originally it's a mathematical term related to groups of things. Think single, double, triple, quadruple, quin<u>tuple</u>. Rather than remembering all the different names for these groups, mathematicians settled on the general term _n-tuple_, where _n_ is the number of things in the group!
+
+### !end-callout
+
 ## Tuple Syntax
 
 ### Create a new tuple
