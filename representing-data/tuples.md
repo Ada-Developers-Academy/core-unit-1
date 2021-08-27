@@ -6,7 +6,7 @@
 
 ## Introduction
 
-A "tuple" is an ordered, **immutable** collection similar to lists. Tuples can be used to return multiple values from a function and for occasions where we would like to store data that's not intended to chage.
+A "tuple" is an ordered, **immutable** collection similar to lists. Tuples can be used to return multiple values from a function and for occasions where we would like to store data that's not intended to change.
 
 ## Vocabulary and Synonyms
 
