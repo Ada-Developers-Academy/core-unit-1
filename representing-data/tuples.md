@@ -30,7 +30,7 @@ There are three ways we can create a tuple:
 2. Initialize with parentheses
 3. Omitting the parentheses and have Python implicitly interpet the values as a tuple.
 
-```Python
+```python
 #1
 example_tuple_1 = tuple([1, 2, 3, 3])
 
@@ -45,7 +45,7 @@ example_tuple_3 = 1, 2, 3, 3
 
 Single-element tuple are initiliazed using a trailing comma before the closing parentheses. It is this one character that distinguishes the tuple from being evaluated as an expression. For example,
 
-```Python
+```python
 cartoon = ("Daria")
 anime = ("Sailor Moon",)
 
@@ -59,7 +59,7 @@ Notice how `"Daria"` is surrounded by parentheses but evalutes to a string data 
 
 Tuple indices, like lists, are both ordered and zero-based. This means that the first index in a tuple is 0. In the example below, we can access an element within a tuple like we would a list:
 
-```Python
+```python
 example_list = [1, 2, 3, 4, 5, 6]
 example_tuple = (1, 2, 3, 4, 5, 6)
 
@@ -84,7 +84,7 @@ for singer in destinys_child:
 
 Tuples can store any data type including mutable data types like lists and dictionaries.
 
-```Python
+```python
 food_tuple = (["apples", "pears", "bananas"], "carrot", "noodles")
 
 instructor_tuple = (
@@ -102,7 +102,7 @@ instructor_tuple = (
 
 Once the tuple is initialized, the mutable elements cannot be replaced. Attempts at replacing the element will cause a TypeError. For example, changing the list inside of `food_tuple` from a list to an integer will return `TypeError: 'tuple' object does not support item assignment`.
 
-```Python
+```python
 food_tuple = (["apples", "pears", "bananas"], "carrot", "noodles")
 food_tuple[0] = 5
 ```
@@ -111,7 +111,7 @@ Although we cannot replace the elements in a tuple, we can update, add, and remo
 
 **Update List in Tuple**
 
-```Python
+```python
 food_tuple = (["apples", "pears", "bananas"], "carrot", "noodles")
 food_tuple[0][0] = "grapes"
 print(food_tuple)
@@ -120,7 +120,7 @@ print(food_tuple)
 
 **Add element to list in tuple**
 
-```Python
+```python
 food_tuple[0].append("persimmon")
 print(food_tuple)
 # prints (["grapes", "pears", "bananas", "persimmon"], "carrot", "noodles")
@@ -128,7 +128,7 @@ print(food_tuple)
 
 **Remove element to list in tuple**
 
-```Python
+```python
 food_tuple[0].remove("pears")
 print(food_tuple)
 # prints (["grapes", "bananas", "persimmon"], "carrot", "noodles")
@@ -136,7 +136,7 @@ print(food_tuple)
 
 **Update dictionary value in tuple**
 
-```Python
+```python
 instructor_tuple = (
     {
         "name": "Claire",
@@ -153,7 +153,7 @@ print(instructor_tuple[0])
 
 **Add dictionary key-value in tuple**
 
-```Python
+```python
 instructor_tuple = (
     {
         "name": "Claire",
@@ -175,7 +175,7 @@ print(instructor_tuple[0])
 
 We can combine tuples to form a new tuple using the `+` operator. However, if we try to combine at tuple with a different data type we will receive a `TypeError`.
 
-```Python
+```python
 sweet_menu = ("ice cream", "cake", "cupcake")
 savory_menu = ("pasta", "ramen", "pizza")
 
@@ -191,7 +191,7 @@ all_menu_itmes = "New" + sweet_menu
 
 If we need elements to repeat within a tuple, we can use the `*` operator.
 
-```Python
+```python
 nums = (1, 2, 3)
 new_nums = nums*3
 print(new_nums)
@@ -204,7 +204,7 @@ print(new_nums)
 
 In Python, functions can return multiple values using tuples. Lets say we are provided a dictionary and need to return two values from the dictionary:
 
-```Python
+```python
 def display_student_info(id):
 
     student_dict = {
@@ -235,7 +235,7 @@ Constants are values that are designed to never change and are often used across
 
 Dictionary keys are required to be immutable, making tuples a great way to have multiple pieces of data refer to a single value. This can be useful for storing location data using coordinates.
 
-```Python
+```python
 destinations = {
     (-122.349358, 47.620422): {
         "building_name": "Space Needle",
