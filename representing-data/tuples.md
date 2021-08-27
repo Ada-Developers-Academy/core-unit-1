@@ -6,29 +6,41 @@
 
 ## Introduction
 
-A "tuple" is an ordered, **immutable** collection similar to lists. Tuples can be used to return multiple values from a function and for occasions where we would like to store data that's not intended to chage.
+A "tuple" is an ordered, **immutable** collection similar to lists. Tuples can be used to return multiple values from a function and for occasions where we would like to store data that's not intended to change.
 
 ## Vocabulary and Synonyms
 
 | Vocab     | Definition                                           | Synonyms            | How to Use in a Sentence          |
 | --------- | ---------------------------------------------------- | ------------------- | --------------------------------- |
 | Tuple     | An immutable data type that can store ordered values |                     | I stored the id values in a tuple |
-| Immutable | unchanging over time or unable to be changed         | unchangeable, fixed |                                   |
-| Mutable   | liable to change                                     | changeable          |                                   |
+| Immutable | Unchanging over time or unable to be changed         | unchangeable, fixed | Python dictionary keys must be immutable data types.                                  |
+| Mutable   | Able to change                                     | changeable          | Appending a value to a list modifies the list directly because it is mutable. Tuples don't have an append method because they are immutable!                                  |
 
-## What is a tuple?
+## What Is a Tuple?
 
 A tuple is an ordered, immutable collection of elements. The length and data type of each element in a tuple never changes. This means that elements cannot be added, replaced, or removed.
 
+### !callout-info
+
+## You Say Tuple, I Say Tuple
+
+There are two main pronunciations of tuple. One sounds like "to pull," and the other rhymes with "supple." It's said both ways, so we should get used to hearing it both ways!
+
+<br/>
+
+Where did this weird word come from? Originally it's a mathematical term related to groups of things. Think single, double, triple, quadruple, quin<u>tuple</u>. Rather than remembering all the different names for these groups, mathematicians settled on the general term _n-tuple_, where _n_ is the number of things in the group!
+
+### !end-callout
+
 ## Tuple Syntax
 
-### Create a new tuple
+### Create a New Tuple
 
 There are three ways we can create a tuple:
 
-1. Using Python's built-in `tuple` function to create an empty tuple or convert a data structure into a tuple.
-2. Initialize with parentheses
-3. Omitting the parentheses and have Python implicitly interpet the values as a tuple.
+1. Use Python's built-in `tuple` function to create an empty tuple or build a new tuple from an existing data structure.
+1. Initialize with parentheses.
+1. Omit the parentheses and have Python implicitly interpret the values as a tuple.
 
 ```python
 #1
@@ -41,9 +53,9 @@ example_tuple_2 = (1, 2, 3, 3)
 example_tuple_3 = 1, 2, 3, 3
 ```
 
-### Create a Tuple with One Element
+### Create a Tuple With One Element
 
-Single-element tuple are initiliazed using a trailing comma before the closing parentheses. It is this one character that distinguishes the tuple from being evaluated as an expression. For example,
+Single-element tuples are initialized using a trailing comma before the closing parentheses. It is this one character that tells Python to treat a single parenthesized value as a tuple. For example:
 
 ```python
 cartoon = ("Daria")
@@ -53,9 +65,9 @@ print(type(cartoon))
 print(type(anime))
 ```
 
-Notice how `"Daria"` is surrounded by parentheses but evalutes to a string data type. Because there is no trailing comma, Python interprets `cartoon = ("Daria")` as an expression that evaluates to a string data type. For `anime`, the trailing comma is what signals Python to interpret `"Sailor Moon"` as a single-element tuple. It is really easy to forget this trailing comma, so beware!
+Notice how `("Daria")` is surrounded by parentheses but evaluates to a string data type. Because there is no trailing comma, Python interprets `("Daria")` as an expression that evaluates to a string data type. It views the parentheses as grouping an expression, not as the start of a tuple. For `("Sailor Moon",)`, the trailing comma is what signals Python to interpret `("Sailor Moon",)` as a single-element tuple. It is really easy to forget this trailing comma, so beware!
 
-### Accessing values in a tuple
+### Accessing Values in a Tuple
 
 Tuple indices, like lists, are both ordered and zero-based. This means that the first index in a tuple is 0. In the example below, we can access an element within a tuple like we would a list:
 
@@ -107,73 +119,17 @@ food_tuple = (["apples", "pears", "bananas"], "carrot", "noodles")
 food_tuple[0] = 5
 ```
 
-Although we cannot replace the elements in a tuple, we can update, add, and remove the values inside of the mutable elements.
+But be careful! Although we cannot replace the elements in a tuple, it's still possible to update, add, and remove the values inside of the mutable elements.
 
-**Update List in Tuple**
+In general, we tend _not_ to store mutable types in tuples. One of the main reasons to use a tuple is to communicate our intent that some collection of data should _not_ change. So we should be suspicious of code that modifies mutable values within a tuple.
 
-```python
-food_tuple = (["apples", "pears", "bananas"], "carrot", "noodles")
-food_tuple[0][0] = "grapes"
-print(food_tuple)
-# prints (["grapes", "pears", "bananas"], "carrot", "noodles")
-```
-
-**Add element to list in tuple**
-
-```python
-food_tuple[0].append("persimmon")
-print(food_tuple)
-# prints (["grapes", "pears", "bananas", "persimmon"], "carrot", "noodles")
-```
-
-**Remove element to list in tuple**
-
-```python
-food_tuple[0].remove("pears")
-print(food_tuple)
-# prints (["grapes", "bananas", "persimmon"], "carrot", "noodles")
-```
-
-**Update dictionary value in tuple**
-
-```python
-instructor_tuple = (
-    {
-        "name": "Claire",
-        "favorite_dessert": "cake"
-    },
-)
-instructor_tuple[0].favorite_dessert = "chocolate"
-print(instructor_tuple[0])
-# prints {
-#         "name": "Claire",
-#         "favorite_dessert": "chocolate"
-#     }
-```
-
-**Add dictionary key-value in tuple**
-
-```python
-instructor_tuple = (
-    {
-        "name": "Claire",
-        "favorite_dessert": "cake"
-    },
-)
-instructor_tuple[0]["favorite_meal"] = "pork katsu"
-print(instructor_tuple[0])
-# prints {
-#         "name": "Claire",
-#         "favorite_dessert": "chocolate",
-#         "favorite_meal": "pork katsu"
-#     }
-```
+So why does Python allow mutable values in tuples at all? We'll see an example of this related to function return values in a moment!
 
 ## Tuple Operations
 
-### Addition
+### Concatenation
 
-We can combine tuples to form a new tuple using the `+` operator. However, if we try to combine at tuple with a different data type we will receive a `TypeError`.
+We can combine tuples to form a new tuple using the `+` operator. However, if we try to combine a tuple with a different data type we will receive a `TypeError`. After concatenation, the original tuples remain unchanged.
 
 ```python
 sweet_menu = ("ice cream", "cake", "cupcake")
@@ -183,53 +139,47 @@ all_menu_items = savory_menu + sweet_menu
 print(all_menu_items)
 # prints ("ice cream", "cake", "cupcake", "pasta", "ramen", "pizza")
 
-all_menu_itmes = "New" + sweet_menu
+print(savory_menu)
+# prints ("pasta", "ramen", "pizza")
+print(sweet_menu)
+# prints ("ice cream", "cake", "cupcake")
+
+all_menu_items = "New" + sweet_menu
 # receive TypeError: can only concatenate str (not "tuple") to str
 ```
 
-### Multiplication
+### Repetition
 
-If we need elements to repeat within a tuple, we can use the `*` operator.
+If we need elements to repeat within a tuple, we can use the `*` operator, just like we can with lists and strings.
 
 ```python
 nums = (1, 2, 3)
-new_nums = nums*3
+new_nums = nums * 3
 print(new_nums)
 # (1, 2, 3, 1, 2, 3, 1, 2, 3)
 ```
 
-### Problem Solving Strategies with Tuples
+## Problem Solving Strategies With Tuples
 
-## Returning multiple values from a function
+### Returning Multiple Values From a Function
 
-In Python, functions can return multiple values using tuples. Lets say we are provided a dictionary and need to return two values from the dictionary:
+In Python, functions can return multiple values using tuples. Let's write a function that looks for an item in a list. If it finds the item it will return `True` along with where the item was found. If the item is _not_ found, it will return `False` and `None`. 
 
-```python
-def display_student_info(id):
+```Python
+def find_with_pos(items, item):
 
-    student_dict = {
-        "345": {
-            "name" : "June",
-            "grade": 8
-        },
-        "346": {
-            "name": "Mariah",
-            "grade": 8
-        }
-    }
+    if item in items:
+        return True, items.index(item)
 
-    for student_id, student_data in student_dict.items():
-        print(student_id)
-        if id == student_id:
-            return student_data["name"], student_data["grade"]
+    return False, None
 
-(name, grade) = display_student_info("346")
-print(f"Student name: {name}, grade: {grade}")
+found, pos = find_with_pos([1, 2, 3], 3)
+print(f"found: {found}, pos: {pos}")
 ```
 
-## Creating constants
+## Creating Constants
 
-Constants are values that are designed to never change and are often used across different parts of a program. Because tuples are immutable, they are a great candidate in storing data multiple pieces of data that are intended to never change and only accessed.
+Constants are values that are designed to never change and are often used across multiple parts of a program. Because tuples are immutable, they are a great candidate for storing several pieces of data that are intended to be read only, never changed.
 
 ## Dictionary Keys
 
@@ -251,6 +201,22 @@ print(destinations[(35.658581, 139.745438)])
 
 ```
 
+### !callout-warning
+
+## Tuples Used as Dictionary Keys May Not Contain Mutable Data
+
+When we use tuples as dictionary keys, they must contain immutable data only. If the tuple contains any mutable data, directly or indirectly, it will result in a `TypeError`.
+
+```python
+my_dict = {}
+my_tuple = (0,)
+my_tuple_with_mutable_data = ([],)
+my_dict[my_tuple] = 1  # OK
+my_dict[my_tuple_with_mutable_data] = 1
+# TypeError: unhashable type: 'list'
+```
+### !end-callout
+
 # Check for Understanding
 
 <!--prettier-ignore-start-->
@@ -269,7 +235,7 @@ How do we create a new tuple?
 ##### !options
 
 * soups = tuple()
-* soups = {"ramen", "congee", "stew"}
+* soups = ("ramen", "congee", "stew")
 * soups = ()
 * soups = ramen, congee, stew
 
@@ -278,9 +244,9 @@ How do we create a new tuple?
 ##### !answer
 
 * soups = tuple()
-* soups = {"ramen", "congee", "stew"}
+* soups = ("ramen", "congee", "stew")
 * soups = ()
-* soups = ramen, congee, stew
+* soups = "ramen", "congee", "stew"
 
 ##### !end-answer
 
@@ -310,6 +276,7 @@ How are tuples different from lists?
 
 ##### !answer
 
+* lists are mutable 
 * tuples are immutable 
 
 ##### !end-answer
@@ -317,13 +284,14 @@ How are tuples different from lists?
 ### !end-challenge
 <!--prettier-ignore-end-->
 
-<!--BEGIN CHALLENGE-->
+
+<!--prettier-ignore-start-->
 
 ### !challenge
 
-- type: paragraph
-- id: 8e31a545-1c3c-4104-a715-bd76ef0125b8
-- title: Biggest Takeaway
+* type: paragraph
+* id: 8e31a545-1c3c-4104-a715-bd76ef0125b8
+* title: Biggest Takeaway
 
 ##### !question
 
@@ -339,4 +307,5 @@ My biggest takeaway from this lesson is...
 
 ### !end-challenge
 
-<!--END CHALLENGE-->
+<!--prettier-ignore-end-->
+
