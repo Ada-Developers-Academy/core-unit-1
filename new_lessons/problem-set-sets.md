@@ -47,8 +47,8 @@ Check the expressions that evaluate to `{'apple', 'orange', 'banana'}` with the 
 
 ##### !explanation
 
-* `.union` and `&` are two syntax methods to create a set union.
-* `.intersect` and `|` are two syntax methods to create a set intersection.
+* `.union` and `|` are two syntax methods to create a set union.
+* `.intersection` and `&` are two syntax methods to create a set intersection.
 
 ##### !end-explanation
 <!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->``
