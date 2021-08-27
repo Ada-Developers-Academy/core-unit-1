@@ -13,8 +13,8 @@ A "tuple" is an ordered, **immutable** collection similar to lists. Tuples can b
 | Vocab     | Definition                                           | Synonyms            | How to Use in a Sentence          |
 | --------- | ---------------------------------------------------- | ------------------- | --------------------------------- |
 | Tuple     | An immutable data type that can store ordered values |                     | I stored the id values in a tuple |
-| Immutable | unchanging over time or unable to be changed         | unchangeable, fixed |                                   |
-| Mutable   | liable to change                                     | changeable          |                                   |
+| Immutable | Unchanging over time or unable to be changed         | unchangeable, fixed | Python dictionary keys must be immutable data types.                                  |
+| Mutable   | Able to change                                     | changeable          | Appending a value to a list modifies the list directly because it is mutable. Tuples don't have an append method because they are immutable!                                  |
 
 ## What is a tuple?
 
