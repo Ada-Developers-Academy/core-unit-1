@@ -33,6 +33,7 @@ This numbering system includes
 <div style="max-width: 700px; margin: 0 auto -36px auto; text-align: center;">
 <img alt="A number line ranging from -5 to 5.  An orange point is displayed at -3, and a cyan point is displayed at 4." src="../assets/fundamentals-recap_math-primer_number-line.png">
 </div>
+
 *Fig. A number line. Every __real__ number appears somewhere on this line. The orange point (to the left) shows where -3 is, and the cyan point (to the right) shows where 4 is.*
 
 ### !callout-info
