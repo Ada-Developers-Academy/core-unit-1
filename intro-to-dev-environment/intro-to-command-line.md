@@ -58,7 +58,7 @@ We will use the command line (in the terminal) and learn several commands to hel
 
 **Here's a Metaphor:** Imagine our computer's entire file system is a house. This house contains main rooms that connect with each other. Each room can contain many pieces of furniture. A computer's file system is like the house, folders are like the rooms, and files are like the pieces of furniture.
 
-![Floorplan](../assets/intro-to-dev-environment_intro-to-command-line_blueprint.png)  
+![Floor plan](../assets/intro-to-dev-environment_intro-to-command-line_blueprint.png)  
 [(source)](https://en.wikipedia.org/wiki/File:Hills-DeCaro-House-First-Floor-Plan.jpg)
 
 We can only be in one room (folder) at a time. We can move pieces of furniture (files) between the different rooms (folders). In this house, we can also make or remove as many rooms (folders) or pieces of furniture (files) as we want!
@@ -67,14 +67,14 @@ In our terminal, **there is only one current working directory at a time;** the 
 
 ### Commands
 
-| Command in the Command Line | Description                                                                                                                | Notes                                                                                                                                                                                   |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style="min-width:170px;">`pwd`</div>                      | Print the path of the current working directory                                                                            | Use this command when you're lost in the terminal or need to confirm where you are; you can read this path to understand the pathway to get to the current working directory from root. |
-| `ls`                        | List the visible files and folders that are inside of the current directory                                                | This command does not list hidden files or folders; there is a separate argument for that                                                                                               |
-| `ls -A`                     | List all the files and folders inside of the current directory                                                             | The `-A` is an _argument_ to the `ls` command                                                                                                                                           |
-| `cd somefolder`             | Change the working directory to the given path. This path is a relative path from the current location                     | In this example, `cd somefolder` will navigate to a sub-folder named `somefolder`                                                                                                       |
-| `cd ..`                     | Change the working directory to the given path... And `..` is a nickname for "the parent folder of the current directory." | Use this command to go "up" one folder level                                                                                                                                            |
-| `cd ~`                      | Change the working directory to the home directory                                                                         | Use this command to always go back home                                                                                                                                                 |
+| Command in the Command Line               | Description                                                                                                                | Notes                                                                                                                                                                                   |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style="min-width:170px;">`pwd`</div> | Print the path of the current working directory                                                                            | Use this command when you're lost in the terminal or need to confirm where you are; you can read this path to understand the pathway to get to the current working directory from root. |
+| `ls`                                      | List the visible files and folders that are inside of the current directory                                                | This command does not list hidden files or folders; there is a separate argument for that                                                                                               |
+| `ls -A`                                   | List all the files and folders inside of the current directory                                                             | The `-A` is an _argument_ to the `ls` command                                                                                                                                           |
+| `cd some_folder`                          | Change the working directory to the given path. This path is a relative path from the current location                     | In this example, `cd some_folder` will navigate to a sub-folder named `some_folder`                                                                                                     |
+| `cd ..`                                   | Change the working directory to the given path... And `..` is a nickname for "the parent folder of the current directory." | Use this command to go "up" one folder level                                                                                                                                            |
+| `cd ~`                                    | Change the working directory to the home directory                                                                         | Use this command to always go back home                                                                                                                                                 |
 
 #### Feedback
 
@@ -108,19 +108,19 @@ We can create and delete files and folders from the command line.
 
 ### Commands for Creating Files and Folders
 
-| Command in the Command Line | Description                                                                                                                                          | Notes                                                                                                                             |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| <div style="min-width:220px;">`mkdir new-folder-name`</div>     | Creates a new folder with the given path and folder name. By default, this will create a new folder as a sub-folder in the current working directory | In this example, `mkdir new-folder-name` makes a new folder named `new-folder-name` inside the current directory.                 |
-| `touch new_file.py`         | Creates a new file with the given path and file name. By default, this creates a new file inside the current working dierctory                       | In this example, `touch new_file.py` makes a new file named `new_file.py`. We should include the file extension in this filename. |
+| Command in the Command Line                                 | Description                                                                                                                                          | Notes                                                                                                                             |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| <div style="min-width:220px;">`mkdir new-folder-name`</div> | Creates a new folder with the given path and folder name. By default, this will create a new folder as a sub-folder in the current working directory | In this example, `mkdir new-folder-name` makes a new folder named `new-folder-name` inside the current directory.                 |
+| `touch new_file.py`                                         | Creates a new file with the given path and file name. By default, this creates a new file inside the current working directory                       | In this example, `touch new_file.py` makes a new file named `new_file.py`. We should include the file extension in this filename. |
 
 ### Commands for Deleting Files and Folders
 
 Files and folders deleted with these commands are difficult to recover; use them often and wisely!
 
-| Command in the Command Line | Description                                                                                                                                                                 | Notes                                                                                                                             |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| <div style="min-width:220px;">`rm -rf folder-name`</div>        | Deletes the folder with the given path and folder name, and all of the files and folders inside of it. By default, this deletes the folder in the current working directory | In this example, `rm -rf folder-name` deletes the folder named `folder-name` inside the current directory.                        |
-| `rm some_file.py`           | Deletes the file with the given path and file name. By default, this creates a new file inside the current working dierctory                                                | In this example, `touch new_file.py` makes a new file named `new_file.py`. We should include the file extension in this filename. | In this examle, `rm some_file.py` deletes the file named `some_file.py` inside the current directory. |
+| <div style="min-width:220px;">Command in the Command Line</div> | Description                                                                                                                                                                 | Notes                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `rm -rf folder-name`                                            | Deletes the folder with the given path and folder name, and all of the files and folders inside of it. By default, this deletes the folder in the current working directory | In this example, `rm -rf folder-name` deletes the folder named `folder-name` inside the current directory.                                                                                                                               |
+| `rm some_file.py`                                               | Deletes the file with the given path and file name. By default, this creates a new file inside the current working directory                                                | In this example, `touch new_file.py` makes a new file named `new_file.py`. We should include the file extension in this filename. In this example, `rm some_file.py` deletes the file named `some_file.py` inside the current directory. |
 
 ## Recommended File System Structure
 
@@ -142,7 +142,7 @@ If you've never organized that many files and folders, and don't have a preferen
 
 ### `~/Developer/classroom`
 
-- This is a folder where you put all of your notes, exercises, scratchwork, classroom activities, homework, etc
+- This is a folder where you put all of your notes, exercises, scratch work, classroom activities, homework, etc
 - Make this folder with `$ mkdir ~/Developer/classroom`
 - Pick one of these two popular ways to organize your notes:
   - Organize notes by week. They will have sub-folders nested in here, such as `~/Developer/classroom/week-1`
@@ -204,7 +204,7 @@ Terminal and some commands bring us to different text editors. If you're ever ta
 - there is a `:` on the bottom line
 - `ctrl+c` does not exit this screen
 
-Try using the up and down arrows to scroll, and tapping the `q` key to quit. If you're ever in this situation, one of macOS's default paging helpers, [less](https://en.wikipedia.org/wiki/Less_(Unix)) is at play here! See more `less` commands [with this cheatsheet](https://gist.github.com/glnds/8862214).
+Try using the up and down arrows to scroll, and tapping the `q` key to quit. If you're ever in this situation, one of macOS's default paging helpers, [less](<https://en.wikipedia.org/wiki/Less_(Unix)>) is at play here! See more `less` commands [with this cheat sheet](https://gist.github.com/glnds/8862214).
 
 ## Check for Understanding
 
