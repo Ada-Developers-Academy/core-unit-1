@@ -143,25 +143,6 @@ Conditional expressions can grow in size and complexity. How do we determine tha
 
 Generally, conditional expressions are evaluated from left-to-right, and each expression with one operator resolves first before moving to the next operator.
 
-### !callout-danger
-
-## Correction Notice
-The following crossed-out content is incorrect in Python, but _does_ apply to many other languages. For a fuller explanation of interpreting conditional expressions with multiple relational operators in Python, refer to the _Chaining Relational Operators of Equal Priority_ section later in this lesson.
-
-### !end-callout
-
-<strike>
-
-Consider, which evalutes to `False`:
-
-```python
-10 < 2 > True
-```
-
-First, `10 < 2` is evaluated to `False`. Then, we consider `False` to be the left side of the next operator, and evaluate `False > True`. `False > True` evaluates to `False`. Therefore, the entire expression is `False`.
-
-</strike>
-
 ### Different Operators Have Priority
 
 When there are multiple kinds of operators in a single conditional expression, operators with higher precedence get evaluated first.
