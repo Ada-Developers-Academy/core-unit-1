@@ -177,6 +177,12 @@ found, pos = find_with_pos([1, 2, 3], 3)
 print(f"found: {found}, pos: {pos}")
 ```
 
+Here, we used the implicit tuple syntax (without parentheses) to package up and return two pieces of data. When we assign the result to `found, pos`, Python assigns the returned values in order, so `found` receives the value that was at position 0 in the returned tuple, and `pos` gets the value that was at position 1.
+
+Parentheses could also be used, but when using tuples to return multiple values, this implicit style is more common.
+
+This example also shows the most common reason that a tuple might contain a mutable value. Functions can return mutable types. This function happens to only return immutable values (a boolean and a number), but Python functions can just as easily return mutable values like lists or dictionaries. Python handles multiple return values by returning them in a tuple. So if one of the return values is mutable, then the tuple will contain a mutable value!
+
 ## Creating Constants
 
 Constants are values that are designed to never change and are often used across multiple parts of a program. Because tuples are immutable, they are a great candidate for storing several pieces of data that are intended to be read only, never changed.
