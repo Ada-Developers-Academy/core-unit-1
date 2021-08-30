@@ -38,11 +38,11 @@ Today, we should learn about what it means to **be** a programmer and **study** 
 There are so many ways to define the role of a software developer and programmer. We're sure you all spent a lot of time considering what it means to you.
 
 Some words that might describe the role of a software developer include:
-<!-- ![Word cloud that describes the software developer role as a storywriter, code chef, team-player, logician, etc.](../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png)  
-[(source)](https://wordart.com/create) -->
 
-<img height=500 alt="Word cloud that describes the software developer role as a storywriter, code chef, team-player, logician, etc." src="../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png")>  
+![Word cloud that describes the software developer role as a storywriter, code chef, team-player, logician, etc.](../assets/what-is-software-development_study-like-a-programmer_software-dev-word-cloud.png)  
 [(Created using wordart)](https://wordart.com/)
+
+<br/>
 
 <details style="max-width: 700px; margin: auto;">
     <summary>
@@ -102,6 +102,7 @@ One of the biggest goals of the Ada program is to foster the skill of **learning
 As a programmer in a field that changes so quickly, your most valuable asset will be how you manage your own individual learning.
 
 ### Creative Writer
+
 ![Art of a brain, one half looks like a circuit board, the other half is colorful art](../assets/what-is-software_study-like-a-programmer_programming-brain-art.png)  
 *Fig. Programming is science and art*  [(source)](https://www.nicepng.com/ourpic/u2t4u2r5w7e6r5o0_creative-brain-png-two-sides-brain-png/)
 
@@ -111,10 +112,7 @@ A maybe-helpful analogy: If our jobs were to paint color-by-numbers, we could pr
 
 ### Take Care of Your Brain
 
-<!-- ![Illustration of person and their brain](../assets/what-is-software-development_study-like-a-programmer_brain.jpg)  
-[(source)](https://pixabay.com/illustrations/brain-binary-silhouette-head-5930645/) -->
-
-<img src="../assets/what-is-software-development_study-like-a-programmer_brain.jpg" alt="Illustration of person and their brain looking away at incoming binary text">  
+![Illustration of person and their brain looking away at incoming binary text](../assets/what-is-software-development_study-like-a-programmer_brain.jpg)  
 [(source)](https://pixabay.com/illustrations/brain-binary-silhouette-head-5930645/)
 
 
@@ -340,14 +338,15 @@ Which of the following is _not_ a category of studying skills that was covered a
 
 
 
- <div style="min-width: 330px;">Are you feeling like... </div> | <div style="min-width: 370px;">Consider</div> |
- ---- | ---- 
-| ...classroom time is overwhelming? | Look at the calendar and the lessons the night before, and pre-read the lectures
-| ...reading material on programming is unnatural? | Read this resource on [how to read programming books](http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html)
-|  ...you lose focus on the task at hand? | Using physical paper and sticky notes to write down the specific task you are trying to accomplish| ...you lose focus over time? | Using a time management method like  [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to help enable frequent breaks and frequent periods of flow
-| ...your knowledge and understanding level of vocabulary is lacking? | Utilize flashcards for specific vocabulary, concepts, and syntax
-| ...you are craving more review in your own words? | Making crib sheets (1-page review notes of the crucial knowledge) at the end of the week
-| ... you're isolated? | Please consider having proactive communication with other students and staff! Staff is on your side for your success, and your proactive communication with staff can lead to opportunities and resources
+| <div style="min-width: 330px;">Are you feeling like... </div> | <div style="min-width: 370px;">Consider</div> |
+| ---- | ---- |
+| ...classroom time is overwhelming? | Look at the calendar and the lessons the night before, and pre-read the lectures |
+| ...reading material on programming is unnatural? | Read this resource on [how to read programming books](http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html) |
+|  ...you lose focus on the task at hand? | Using physical paper and sticky notes to write down the specific task you are trying to accomplish |
+| ...you lose focus over time? | Using a time management method like  [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to help enable frequent breaks and frequent periods of flow |
+| ...your knowledge and understanding level of vocabulary is lacking? | Utilize flashcards for specific vocabulary, concepts, and syntax |
+| ...you are craving more review in your own words? | Making crib sheets (1-page review notes of the crucial knowledge) at the end of the week |
+| ... you're isolated? | Please consider having proactive communication with other students and staff! Staff is on your side for your success, and your proactive communication with staff can lead to opportunities and resources |
 
 Want a video series we recommend? Consider: ["Crash Course" on study skills](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W)
 
