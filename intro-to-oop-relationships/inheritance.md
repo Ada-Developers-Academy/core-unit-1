@@ -373,11 +373,10 @@ def test_fancy_pizza():
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-## Not Covered: Multiple Inheritance
+<!-- Revise this -->
+## Inheritance Next Steps
 
-Many programming languages decree that each class shall inherit implementation from only one other class; each class only has one parent class. Python supports multiple inheritance, or the ability for a class to inherit from more than one parent class. This concept has many possible uses, but learning to apply it effectively is not a task to be undertaken lightly. As a result, we will not be spending time with multiple inheritance in this curriculum. But it can be a fascinating topic for further self-directed study.
-
-As always, follow your curiosity!
+This lesson demonstrated a specific inheritance pattern in which the parent class has a constructor, and the child class does not. In the next lesson, we will explore using `super()`. This will make it easier for our child classes to have additional logic and attributes in their own constructor, while still making use of the logic and attributes in their parent's constructor.
 
 ## Check for Understanding
 
