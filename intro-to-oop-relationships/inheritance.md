@@ -375,7 +375,8 @@ def test_fancy_pizza():
 
 <!-- Revise this -->
 ## Inheritance Next Steps
-This lesson demonstrated single-level inheritance using a parent class with a constructor and a child class without a constructor. In the next lesson, we will explore using `super()` for child classes to access its own constructor as well as its parent.
+
+This lesson demonstrated a specific inheritance pattern in which the parent class has a constructor, and the child class does not. In the next lesson, we will explore using `super()`. This will make it easier for our child classes to have additional logic and attributes in their own constructor, while still making use of the logic and attributes in their parent's constructor.
 
 ## Check for Understanding
 
