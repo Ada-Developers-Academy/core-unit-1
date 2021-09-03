@@ -364,7 +364,7 @@ Functions can have nested logic, and conditional return values.
 def add(a, b):
     if a < 0:
         print("I only want to add if a is greater than zero! I'll return false instead.")
-        return false
+        return False
     elif b == a:
         print("Did you know that a and b are the same value?")
     elif a % 2 == 0:
