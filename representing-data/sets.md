@@ -26,7 +26,7 @@ A "set" is an unordered collection of unique elements.  Similar to a list, a set
 
 What does it mean that each element is unique?  If you add an element to a set, for example `5` and then try to add another `5` to the set, the number of items in the collection does not increase.
 
-What does it mean that each element of a set must be immutable?  This means that we can only add unchangable elements to a set.  We can add `5` or `3` or `"pizza"` to the set because the values of 5, 3, or "pizza" cannot be modified.  However we cannot add a list or dictionary to a set because we can modify a list by appending new elements, overwriting existing elements and we can add and remove new key-value pairs to a dictionary.  If you do attempt to add a mutable value to a set you will get a `TypeError` with the message `unhashable type`.
+What does it mean that each element of a set must be immutable?  This means that we can only add unchangeable elements to a set.  We can add `5` or `3` or `"pizza"` to the set because the values of 5, 3, or "pizza" cannot be modified.  However we cannot add a list or dictionary to a set because we can modify a list by appending new elements, overwriting existing elements and we can add and remove new key-value pairs to a dictionary.  If you do attempt to add a mutable value to a set you will get a `TypeError` with the message `unhashable type`.
 
 What is meant by the statement that, "Elements in a set are unordered."?  A set does not maintain it's elements in any order.  
 
@@ -240,9 +240,9 @@ set_b = {4, 5, 6}
 set_c = {3, 4, 5}
 
 # Only one syntax method to test if a set is disjoint with another set
-# disjoint() function
-set_a.disjoint(set_b) # evaluates to True
-set_a.disjoint(set_c) # evaluates to False
+# isdisjoint() function
+set_a.isdisjoint(set_b) # evaluates to True
+set_a.isdisjoint(set_c) # evaluates to False
 ```
 
 ## Problem Solving With Sets
@@ -262,7 +262,7 @@ for movie in bethan_movies:
     if movie in hussain_movies:
         result_list.append(movie)
 
-return result_list
+print(result_list)
 ```
 
 This solution will get the job done, but it's not very efficient.  The line `for movie in bethan_movies:` iterates through the first list and the line `if movie in hussain_movies:` iterates through the entire `hussain_movies` list with each iteration.
