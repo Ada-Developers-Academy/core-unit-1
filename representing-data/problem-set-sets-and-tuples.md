@@ -85,15 +85,15 @@ Check the expressions that evaluate to `True`.
 
 * `{'apple', 'orange', 'banana'} < {'apple', 'orange', 'banana', 'melon', 'peach'} `
 * `{'apple', 'orange', 'banana'} > {'apple', 'orange', 'banana', 'melon', 'peach'} `
-* `{'apple', 'orange', 'banana'}.disjoint({'melon', 'peach'})`
-* `{'apple', 'orange', 'banana'}.disjoint({'apple', 'orange', 'banana', 'melon', 'peach'})`
+* `{'apple', 'orange', 'banana'}.isdisjoint({'melon', 'peach'})`
+* `{'apple', 'orange', 'banana'}.isdisjoint({'apple', 'orange', 'banana', 'melon', 'peach'})`
 
 ##### !end-options
 
 ##### !answer
 
 * `{'apple', 'orange', 'banana'} < {'apple', 'orange', 'banana', 'melon', 'peach'} `
-* `{'apple', 'orange', 'banana'}.disjoint({'melon', 'peach'})`
+* `{'apple', 'orange', 'banana'}.isdisjoint({'melon', 'peach'})`
 
 ##### !end-answer
 
