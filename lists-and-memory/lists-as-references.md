@@ -4,7 +4,7 @@
 
 - Explain the impact of lists as references in a function call
 - Identify functions with side effects
-- Explain reasons to avoid side effects in our
+- Explain reasons to avoid side effects in our code
 
 ## Introduction
 
