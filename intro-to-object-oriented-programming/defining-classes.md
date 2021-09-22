@@ -457,8 +457,8 @@ class TestDriverClass(unittest.TestCase):
     speed_racer = Driver("DR0004", 35, [], 4.67)
     self.assertIs(speed_racer.id, "DR0004")
     self.assertIs(speed_racer.total_earnings, 35)
-    self.assertIs( len(speed_racer.trips), 0)
-    self.assertIs(speed_racer.avg_rating, 4.67)
+    self.assertIs(len(speed_racer.trips), 0)
+    self.assertAlmostEqual(speed_racer.avg_rating, 4.67)
 
     racer_x = Driver("Racer X", 999, ["trip"], 10)
     self.assertIs(racer_x.id, "Racer X")
