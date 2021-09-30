@@ -388,7 +388,7 @@ class CalculateTotal:
         return(f"Ask about our membership program to receive a {cls.summer_discount}% discount today!")
 
 def display_total(amount):
-    print(f"You total will be ${amount}")
+    print(f"Your total will be ${amount}")
     print(CalculateTotal.promote_membership())
 ```
 
@@ -421,7 +421,7 @@ class CalculateTotal:
         return(f"Ask about our membership program to receive a {cls.summer_discount}% discount today!")
 
 def display_total(amount):
-    print(f"You total will be ${amount}")
+    print(f"Your total will be ${amount}")
     print(CalculateTotal.promote_membership())
 ```
 ##### !end-answer
