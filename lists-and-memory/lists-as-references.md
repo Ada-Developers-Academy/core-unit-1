@@ -4,7 +4,7 @@
 
 - Explain the impact of lists as references in a function call
 - Identify functions with side effects
-- Explain reasons to avoid side effects in our
+- Explain reasons to avoid side effects in our code
 
 ## Introduction
 
@@ -32,7 +32,7 @@ products_total = 113
 
 print(f"Before calculating the the total of the order, products_total is \
 {products_total}")
-bill_total = calculate_subtotal(products_total, 0.08)
+bill_total = calculate_total(products_total, 0.08)
 print(f"The total bill is {bill_total}")
 print(f"After calculating the the total of the order, products_total is \
 {products_total}")
