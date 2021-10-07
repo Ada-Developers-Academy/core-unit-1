@@ -171,7 +171,7 @@ class ExampleClass:
 ![Diagram of a class with a class method.](../assets/python-oop_static-methods-and-class-methods_class1.png)  
 *Fig. Diagram of a class with a class method.*
 
-Once a static method is defined, we can invoke it using dot notation, typically from the class itself.
+Once a class method is defined, we can invoke it using dot notation, typically from the class itself.
 
 ```python
 ExampleClass.example_method()
