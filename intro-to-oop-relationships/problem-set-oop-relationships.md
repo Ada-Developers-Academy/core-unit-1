@@ -92,7 +92,7 @@ Select the option that best describes the parent-child relationship between the 
 
 Provided this code snippet, select the option that best describes how inheritance works between the `Bear` and `Mammal` class.
 
-``` Python
+``` python
 class Mammal:
     def __init__(self, name, region):
         self.name = name
