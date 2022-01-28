@@ -314,56 +314,6 @@ Standards:
         UID: b72TBD
         Path: /exception-handling/problem-set-exception-handling.md
   -
-    Title: Big O
-    Description: "Time and Space Complexity, Big O Notation, Big O Analysis, Problem Set: Big O"
-    UID: f2703dfead197309bf41c0a2d8ff1daf
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Instructor
-        UID: 81281faf1d71e4872fb5ca286cc3618e
-        Path: /big-o/big-o.instructor.md
-      -
-        Type: Lesson
-        UID: b0ad60b6fe7116d3b63fdb9b4cc4bfde
-        Path: /big-o/time-and-space-complexity.md
-      -
-        Type: Lesson
-        UID: 97a53b0bc90b67970a5b0f0c61472464
-        Path: /big-o/big-o-notation.md
-      -
-        Type: Lesson
-        UID: 46f8d000785c9cd1b0112854c419f232
-        Path: /big-o/big-o-analysis.md
-      -
-        Type: Lesson
-        UID: 90465d8c4c1af56aed98039f4e95687c
-        Path: /big-o/problem-set-big-o.md
-  -
-    Title: Lists and Memory
-    Description: "Lists and Memory, Lists as References, Lists and Big O, Problem Set: Lists and Memory"
-    UID: fc8d96af-1277-4efc-8e4c-a7bb2facddb9
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: 0180eb42-ed8d-4f51-bcc2-2fe1e2f575c8
-        Path: /lists-and-memory/lists-and-memory.md
-      -
-        Type: Lesson
-        UID: f7fda59b-c157-49bb-aaf9-fe305904d0b7
-        Path: /lists-and-memory/lists-as-references.md
-      -
-        Type: Lesson
-        UID: 5395b235-30dc-47a8-a077-ac5cf578971c
-        Path: /lists-and-memory/lists-and-big-o.md
-      -
-        Type: Lesson
-        UID: 36a61d83-b47f-414f-a6f0-3bd4331e713f
-        Path: /lists-and-memory/problem-set-lists-and-memory.md
-  -
     Title: Intermediate Python Debugging
     Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Problem Set: Using Debugger"
     UID: eb702636-a782-4ed3-8fb5-daca0aea5206
