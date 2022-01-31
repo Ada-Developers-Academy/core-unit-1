@@ -337,49 +337,6 @@ Standards:
         UID: a8e761cc-0d1f-49f9-a80a-6d2f79579a04
         Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
   -
-    Title: Intro to Git
-    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Git Cheatsheet, Problem Set: Git Commands, Activity: Git History"
-    UID: DaSCfO
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: qCKw66
-        Path: /intro-to-git/intro-to-git-vocab-and-concepts.md
-      -
-        Type: Lesson
-        UID: EgvjDl
-        Path: /intro-to-git/git-setup.md
-      -
-        Type: Lesson
-        UID: CltvdV
-        Path: /intro-to-git/commits.md
-      -
-        Type: Lesson
-        UID: wGkqyQ
-        Path: /intro-to-git/collaborating.md
-      -
-        Type: Lesson
-        UID: w3WLGs
-        Path: /intro-to-git/reviewing-git-history.md
-      -
-        Type: Lesson
-        UID: ce6c935d-a665-420e-97ba-8b4a5cebf4d7
-        Path: /intro-to-git/git-cheatsheet.md
-      -
-        Type: Lesson
-        UID: g1zQGU
-        Path: /intro-to-git/problem-set-git-commands.md
-      -
-        Type: Instructor
-        UID: NvHa7v
-        Path: /intro-to-git/activity-git-history.instructor.md
-      -
-        Type: Lesson
-        UID: tSg96d
-        Path: /intro-to-git/activity-git-history.md
-  -
     Title: Intro To Object-Oriented Programming
     Description: "What is OOP?, Defining Classes, Constructors, Creating Instances, Instance Methods, Problem Set: Intro to OOP, Problem Set: Constructors"
     UID: dfa81f9898dba334bbda0cdf7b32c9f6
