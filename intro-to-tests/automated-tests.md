@@ -108,11 +108,14 @@ When a whole team collaborates using the same test suite, the whole team has vis
 To incorporate testing into our development workflow, our workflow may adjust to this:
 
 1. Read the feature requirements
-2. Think of scenarios relevant to the feature, and what their expected values would be
-3. Write a test for that scenario
-4. Implement the code to make that test pass
-5. Create `git` commits when appropriate (at least one)
-6. Repeat!
+1. Think of scenarios relevant to the feature, and what their expected values would be
+1. Write a test for that scenario
+1. Implement the code to make that test pass
+1. Create `git` commits when appropriate (at least one)
+1. Refactor
+1. Repeat!
+
+We will go into more depth on this workflow in the [Test Driven Development lesson](./test-driven-development.md).
 
 ## Check for Understanding
 
@@ -140,7 +143,7 @@ Why are automated tests beneficial?
 ##### !end-answer
 
 ##### !explanation 
-Tests and these benefits are reasons to follow a practice called test-driven development. If you'd like to look that up, follow your curiosity~
+Tests and these benefits are reasons to follow a practice called test-driven development.~
 ##### !end-explanation 
 
 ### !end-challenge

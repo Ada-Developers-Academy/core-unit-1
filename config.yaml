@@ -220,6 +220,10 @@ Standards:
         Type: Lesson
         UID: qcZisA
         Path: /intro-to-tests/problem-set-intro-to-pytest.md
+      -
+        Type: Lesson
+        UID: 88765c99
+        Path: /intro-to-tests/test-driven-development.md
   -
     Title: Iterating Over Data
     Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, While Loops, Iterating and Special Cases, Problem Set: Iterating Over Data, Problem Set: While Loops"
