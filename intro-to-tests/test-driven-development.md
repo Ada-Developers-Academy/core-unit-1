@@ -20,8 +20,6 @@ Test-Driven-Development follows this process and order. Note that writing the te
 1. Refactor
 1. Repeat!
 
-A more complete workflow that includes steps that are already part of our development work flow is summarized with the following steps:
-
 #### TDD is Summarized as "Red, Green, Refactor"
 
 ![Red Green Refactor](assets/tdd_flow.gif)
