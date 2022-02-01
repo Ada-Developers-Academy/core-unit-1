@@ -199,7 +199,7 @@ Standards:
         Path: /variables-and-memory/problem-set-variables-and-memory.md
   -
     Title: Intro To Tests
-    Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Problem Set: Intro to pytest"
+    Description: "Automated Tests, Intro to pytest, Test Driven Development, Problem Set: Intro to Tests, Activity: Identifying Test Cases"
     UID: cxnH0Z
     SuccessCriteria:
       - success criteria
@@ -214,12 +214,17 @@ Standards:
         Path: /intro-to-tests/intro-to-pytest.md
       -
         Type: Lesson
+        UID: 88765c99
+        Path: /intro-to-tests/test-driven-development.md
+      -
+        Type: Lesson
         UID: qcZisA
         Path: /intro-to-tests/problem-set-intro-to-pytest.md
       -
         Type: Lesson
-        UID: 88765c99
-        Path: /intro-to-tests/test-driven-development.md
+        UID: 997e931b
+        Path: /intro-to-tests/activity-tests.md
+    
   -
     Title: Iterating Over Data
     Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, While Loops, Iterating and Special Cases, Problem Set: Iterating Over Data, Problem Set: While Loops"
