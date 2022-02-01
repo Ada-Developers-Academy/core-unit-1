@@ -206,10 +206,6 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
-        UID: abirop
-        Path: /intro-to-tests/packages-and-managing-packages.md
-      -
-        Type: Lesson
         UID: qGalfB
         Path: /intro-to-tests/automated-tests.md
       -
