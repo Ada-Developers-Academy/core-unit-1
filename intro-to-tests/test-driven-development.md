@@ -22,7 +22,8 @@ Test-Driven-Development follows this process and order. Note that writing the te
 
 #### TDD is Summarized as "Red, Green, Refactor"
 
-![Red Green Refactor](assets/tdd_flow.gif)
+![Red Green Refactor](../assets/tdd_flow.gif)
+[(source)](http://luizricardo.org/2014/05/is-tdd-dead/)
 
 We'll often hear this cycle shorthanded as __Red, Green, Refactor__.
 
@@ -49,6 +50,11 @@ We should run our **entire** automated unit test suite often. When our requireme
 __Tests are transient.__ As we work on a project, our understanding of the problems at hand will change. As they do, your tests will change.
 
 Keep in mind the balance between evolving requirements, evolving tests, and tests that should stay the same. This balance will change with every task.
+
+## Resources
+-  [TDD Definition from the Agile Alliance](https://www.agilealliance.org/glossary/tdd/#q=~(filters~(postType~(~'page~'post~'aa_book~'aa_event_session~'aa_experience_report~'aa_glossary~'aa_research_paper~'aa_video)~tags~(~'tdd))~searchTerm~'~sort~false~sortDirection~'asc~page~1))
+-  [Medium Article:  "TDD Changed My Life"](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
+
 
 ## Check for Understanding
 
