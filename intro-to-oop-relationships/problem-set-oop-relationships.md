@@ -204,6 +204,7 @@ print(bear.make_noise())
 ##### !end-options
 
 ##### !answer
+*
 ```python
 class Mammal:
     def __init__(self, name, region):
