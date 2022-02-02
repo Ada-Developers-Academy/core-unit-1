@@ -1,4 +1,4 @@
-# Introduction toAutomated Tests
+# Introduction to Automated Tests
 
 <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0ba5a538-9021-401c-aeb6-acd2000a91d6&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
@@ -51,7 +51,7 @@ An Astrological Birth Chart is a visual map of what the sky looked like when you
 Addison is writing software about astrology. They are working on a feature that, when a user provides a date, time, and location of their birth, will compute their astrological birth chart. They need to know if they've implemented the logic correctly; does the feature accurately compute the astrological birth chart? They can test their feature by finding the following information:
 
 1. Get a sample of at least one correct example: an input and and output
-   - This means, finding and using a real date, time, and location, and its real astrological birth chart
+   - This means,∂ finding and using a real date, time, and location, and its real astrological birth chart
    - Addison can use January 1, 1980, Seattle, 12:00pm, and its real chart: Capricorn sun, Cancer moon, and Aries rising
 2. Use the inputs in the feature to test
    - This means Addison should use this date, time, and location, and pass it into the feature
@@ -87,10 +87,10 @@ Addison could come up with the following scenarios:
 | 4. What happens if the function receives an invalid place for `location`?       | `"January 1, 1980"`, `"xyz"`, `"12:00"` | should raise an exception   |
 
 To ensure that our test cases cover all scenarios, it can be helpful to categorize tests using the following categories:
-    1. Positive Nominal
-    1. Negative Nominal
-    1. Positive Edge
-    1. Negative Edge
+1. Positive Nominal
+1. Negative Nominal
+1. Positive Edge
+1. Negative Edge
 
 #### Nominal Test Cases
 
@@ -107,7 +107,7 @@ An edge test case is a type of test case that verifies that the function can wor
 
 A **positive edge** test case is a test case that describes a set of inputs and expectations that are on the limits of the method's most obvious, most typical way of working successfully. In the test cases listed above, the third test case is a positive edge case. The function returns the correct birth chart even when the input is in an unexpected format.
 
-A **negative edge** test case is a test case that tests that this function can handle the most non-obvious, most atypical unexpected input gracefully. The fourth example above is a negative edge case.The function receives an invalid place for `location` and raises an exception. We will learn more about raising, handling, and testing exceptions in [Exception Handling](./raising-and-handling-exceptions.md)
+A **negative edge** test case is a test case that tests that this function can handle the most non-obvious, most atypical unexpected input gracefully. The fourth example above is a negative edge case.The function receives an invalid place for `location` and raises an exception. We will learn more about raising, handling, and testing exceptions in [Exception Handling](../exception-handling/raising-and-handling-exceptions.md)
 
 ### !callout-info
 
