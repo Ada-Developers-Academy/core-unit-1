@@ -10,7 +10,7 @@
 
 When we use this programming technique, programmers get to use _automated tests_ as a way to explore, build, and test our code as a repeated workflow loop.
 
-### How to TDD
+### Development Workflow
 
 Test-Driven-Development follows this process and order. Note that writing the test comes before writing the implementation code. That's the "test-driven" part!
 
@@ -20,14 +20,14 @@ Test-Driven-Development follows this process and order. Note that writing the te
 1. Refactor
 1. Repeat!
 
-#### TDD is Summarized as "Red, Green, Refactor"
+#### "Red, Green, Refactor"
 
 ![Red Green Refactor](../assets/tdd_flow.gif)
 [(source)](http://luizricardo.org/2014/05/is-tdd-dead/)
 
 We'll often hear this cycle shorthanded as __Red, Green, Refactor__.
 
-1. Write a test that describes a feature of the software. Included in this ste
+1. Write a test that describes a feature of the software.
 1. Run the test, and watch it fail. Watching it fail is crucial! This helps us confirm that the test is working as expected: we **should** get a test failure (or reasonable error) before the implementation code is written. This is watching a test result in **red** (or not passing the test).
 1. Write code that makes all the tests pass. This makes the test **green.**
 1. Look for opportunities to improve our code. This is most appropriate time to **refactor**-- after we have a messy working solution. This step does not add functionality.
@@ -42,14 +42,21 @@ The steps above augment our current workflow, which include reading feature requ
 
 ### !end-callout
 
-
-### TDD Checks Our Code As We Go
+## Keep in Mind
 
 We should run our **entire** automated unit test suite often. When our requirements change, we can feel secure in changing our code because we have some _tests_ to let us know if we've broken something.
 
 __Tests are transient.__ As we work on a project, our understanding of the problems at hand will change. As they do, your tests will change.
 
 Keep in mind the balance between evolving requirements, evolving tests, and tests that should stay the same. This balance will change with every task.
+
+### !callout-info
+
+## Integration Tests
+The tests we write as part of the TDD programming workflow described here are are *Unit Tests*, tests that to check a single function. There are other types of test. One other type of test we'll see in this curriculum are *Integration Tests*, tests that determine if software works when multiple parts are connected together. We will learn more about Integration Tests with our first project. 
+
+### !end-callout
+
 
 ## Resources
 -  [TDD Definition from the Agile Alliance](https://www.agilealliance.org/glossary/tdd/#q=~(filters~(postType~(~'page~'post~'aa_book~'aa_event_session~'aa_experience_report~'aa_glossary~'aa_research_paper~'aa_video)~tags~(~'tdd))~searchTerm~'~sort~false~sortDirection~'asc~page~1))
