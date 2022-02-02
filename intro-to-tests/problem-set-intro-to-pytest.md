@@ -1,10 +1,37 @@
-# Problem Set: Intro to Pytest
+# Problem Set: Intro to Tests
 
 ## Directions
 
 Complete all questions below.
 
-## Determining Best Test Cases
+<!-- Question 0 -->
+<!-- prettier-ignore-start -->
+### !challenge
+
+* type: paragraph
+* id: 6cc1f1e5-b54a-4d89-900f-2d18f8db240d
+* title: Identifying Tests Cases
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+Complete Part 1 outlined in the readme of the [tdd-exercise repository](https://github.com/AdaGold/tdd-exercise).
+
+Record your answers below.
+
+##### !end-question
+
+##### !placeholder
+
+Test cases...
+
+##### !end-placeholder
+
+
+
+### !end-challenge
+<!-- prettier-ignore-end -->
 
 <!-- Question 1 -->
 <!-- prettier-ignore-start -->

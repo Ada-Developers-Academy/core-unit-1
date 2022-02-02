@@ -1,3 +1,3 @@
-# Problem Set: Identifying Test Cases
+# Activity: TDD Exercise
 
-Refer to the [tdd-exercise repository](https://github.com/AdaGold/tdd-exercise) for problem set instructions.
+Complete Parts 2 and 3 outlined in the readme of the [tdd-exercise repository](https://github.com/AdaGold/tdd-exercise).
