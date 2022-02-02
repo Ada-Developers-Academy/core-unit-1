@@ -199,7 +199,7 @@ Standards:
         Path: /variables-and-memory/problem-set-variables-and-memory.md
   -
     Title: Intro To Tests
-    Description: "Automated Tests, Intro to pytest, Test Driven Development, Problem Set: Intro to Tests, Activity: Identifying Test Cases"
+    Description: "Automated Tests, Intro to pytest, Test Driven Development, Problem Set: Intro to Tests, Activity: TDD Exercise"
     UID: cxnH0Z
     SuccessCriteria:
       - success criteria
