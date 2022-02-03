@@ -205,6 +205,10 @@ Standards:
       - success criteria
     ContentFiles:
       -
+        Type: Instructor
+        UID: 200f3aa7
+        Path: /intro-to-tests/fizz_buzz.instructor.md
+      -
         Type: Lesson
         UID: qGalfB
         Path: /intro-to-tests/automated-tests.md
