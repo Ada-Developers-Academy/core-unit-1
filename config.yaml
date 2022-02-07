@@ -179,25 +179,6 @@ Standards:
         UID: 30086be0-510f-414c-ab8f-3625c4a48548
         Path: /representing-data/problem-set-sets-and-tuples.md      
   -
-    Title: Variables and Memory
-    Description: "Variable Scope, Variables Are References, Problem Set: Variables and Memory"
-    UID: 8add2047-cbf3-4f35-9707-7c75bf919918
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: 7bac503f-1fd7-4979-9d74-3e17be1fd59e
-        Path: /variables-and-memory/variable-scope.md
-      -
-        Type: Lesson
-        UID: b995d045-d2e8-4c44-9179-ea82c25a3376
-        Path: /variables-and-memory/variables-are-references.md
-      -
-        Type: Lesson
-        UID: b271db2a-bbca-466e-a8b0-d77eaff1d645
-        Path: /variables-and-memory/problem-set-variables-and-memory.md
-  -
     Title: Intro To Tests
     Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Problem Set: Intro to pytest"
     UID: cxnH0Z
@@ -314,56 +295,6 @@ Standards:
         UID: b72TBD
         Path: /exception-handling/problem-set-exception-handling.md
   -
-    Title: Big O
-    Description: "Time and Space Complexity, Big O Notation, Big O Analysis, Problem Set: Big O"
-    UID: f2703dfead197309bf41c0a2d8ff1daf
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Instructor
-        UID: 81281faf1d71e4872fb5ca286cc3618e
-        Path: /big-o/big-o.instructor.md
-      -
-        Type: Lesson
-        UID: b0ad60b6fe7116d3b63fdb9b4cc4bfde
-        Path: /big-o/time-and-space-complexity.md
-      -
-        Type: Lesson
-        UID: 97a53b0bc90b67970a5b0f0c61472464
-        Path: /big-o/big-o-notation.md
-      -
-        Type: Lesson
-        UID: 46f8d000785c9cd1b0112854c419f232
-        Path: /big-o/big-o-analysis.md
-      -
-        Type: Lesson
-        UID: 90465d8c4c1af56aed98039f4e95687c
-        Path: /big-o/problem-set-big-o.md
-  -
-    Title: Lists and Memory
-    Description: "Lists and Memory, Lists as References, Lists and Big O, Problem Set: Lists and Memory"
-    UID: fc8d96af-1277-4efc-8e4c-a7bb2facddb9
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: 0180eb42-ed8d-4f51-bcc2-2fe1e2f575c8
-        Path: /lists-and-memory/lists-and-memory.md
-      -
-        Type: Lesson
-        UID: f7fda59b-c157-49bb-aaf9-fe305904d0b7
-        Path: /lists-and-memory/lists-as-references.md
-      -
-        Type: Lesson
-        UID: 5395b235-30dc-47a8-a077-ac5cf578971c
-        Path: /lists-and-memory/lists-and-big-o.md
-      -
-        Type: Lesson
-        UID: 36a61d83-b47f-414f-a6f0-3bd4331e713f
-        Path: /lists-and-memory/problem-set-lists-and-memory.md
-  -
     Title: Intermediate Python Debugging
     Description: "Intro to Debuggers, VS Code Debugging, Debugging Pytest, Problem Set: Using Debugger"
     UID: eb702636-a782-4ed3-8fb5-daca0aea5206
@@ -386,49 +317,6 @@ Standards:
         Type: Lesson
         UID: a8e761cc-0d1f-49f9-a80a-6d2f79579a04
         Path: /intermediate-python-debugging/problem-set-using-the-debugger.md
-  -
-    Title: Intro to Git
-    Description: "Intro to Git: Vocab and Concepts, Git Setup, Commits, Collaborating, Reviewing Git History, Git Cheatsheet, Problem Set: Git Commands, Activity: Git History"
-    UID: DaSCfO
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Lesson
-        UID: qCKw66
-        Path: /intro-to-git/intro-to-git-vocab-and-concepts.md
-      -
-        Type: Lesson
-        UID: EgvjDl
-        Path: /intro-to-git/git-setup.md
-      -
-        Type: Lesson
-        UID: CltvdV
-        Path: /intro-to-git/commits.md
-      -
-        Type: Lesson
-        UID: wGkqyQ
-        Path: /intro-to-git/collaborating.md
-      -
-        Type: Lesson
-        UID: w3WLGs
-        Path: /intro-to-git/reviewing-git-history.md
-      -
-        Type: Lesson
-        UID: ce6c935d-a665-420e-97ba-8b4a5cebf4d7
-        Path: /intro-to-git/git-cheatsheet.md
-      -
-        Type: Lesson
-        UID: g1zQGU
-        Path: /intro-to-git/problem-set-git-commands.md
-      -
-        Type: Instructor
-        UID: NvHa7v
-        Path: /intro-to-git/activity-git-history.instructor.md
-      -
-        Type: Lesson
-        UID: tSg96d
-        Path: /intro-to-git/activity-git-history.md
   -
     Title: Intro To Object-Oriented Programming
     Description: "What is OOP?, Defining Classes, Constructors, Creating Instances, Instance Methods, Problem Set: Intro to OOP, Problem Set: Constructors"
