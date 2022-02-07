@@ -1,4 +1,4 @@
-# Packages and Managing Packages
+# Managing Packages
 
 <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=20425c72-d6f8-417b-969a-acd2000c74bd&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
@@ -148,7 +148,7 @@ Where `<packagename>` is replaced with a package name.
 
 ## Global Installations vs. Virtual Environments
 
-We are largely using `pip` to do global installations on our computer. It is best practice to use `pip` to install packages in a virtual environment; this is out of scope for this curriculum, but feel free to dive deeper.
+We will initially use `pip` to do global installations on our computer. It is best practice to use `pip` to install packages in a virtual environment. We will learn about virtual environments as part of our first project.
 
 ### !end-callout
 
