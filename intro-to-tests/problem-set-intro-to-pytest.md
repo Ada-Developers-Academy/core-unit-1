@@ -18,7 +18,7 @@ Complete all questions below.
 
 Complete Part 1 outlined in the readme of the [tdd-exercise repository](https://github.com/AdaGold/tdd-exercise).
 
-Record your answers below.
+Record your test cases below.
 
 ##### !end-question
 

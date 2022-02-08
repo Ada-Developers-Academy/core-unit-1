@@ -51,7 +51,7 @@ An Astrological Birth Chart is a visual map of what the sky looked like when you
 Addison is writing software about astrology. They are working on a feature that, when a user provides a date, time, and location of their birth, will compute their astrological birth chart. They need to know if they've implemented the logic correctly; does the feature accurately compute the astrological birth chart? They can test their feature by finding the following information:
 
 1. Get a sample of at least one correct example: an input and and output
-   - This means,∂ finding and using a real date, time, and location, and its real astrological birth chart
+   - This means, finding and using a real date, time, and location, and its real astrological birth chart
    - Addison can use January 1, 1980, Seattle, 12:00pm, and its real chart: Capricorn sun, Cancer moon, and Aries rising
 2. Use the inputs in the feature to test
    - This means Addison should use this date, time, and location, and pass it into the feature
@@ -75,7 +75,7 @@ Because there are a lot of different kinds of code, there are a lot of different
 
 ### Test Cases and Scenarios
 
-Testing a single function will generally have many unit tests to test it. Why? Based on the context, a single function could potentially have different arguments that give back different return values. Different scenarios in development can imply different arguments, which would produce different logic. All scenarios and possible outcomes of a function should be tested, as much as reasonably possible.
+Testing a single function will generally have many unit tests to ensure the code works correctly. Why? Based on the context, a single function could potentially have different arguments that give back different return values. Different scenarios in development can imply different arguments, which would produce different logic. All scenarios and possible outcomes of a function should be tested, as thoroughly as possible.
 
 Addison could come up with the following scenarios:
 
@@ -171,7 +171,7 @@ Why are automated tests beneficial?
 ##### !end-answer
 
 ##### !explanation 
-Tests and these benefits are reasons to follow a practice called test-driven development.~
+Tests and these benefits are reasons to follow a practice called test-driven development.
 ##### !end-explanation 
 
 ### !end-challenge
