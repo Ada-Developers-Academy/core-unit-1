@@ -53,7 +53,9 @@ Keep in mind the balance between evolving requirements, evolving tests, and test
 ### !callout-info
 
 ## Integration Tests
-The tests we write as part of the TDD programming workflow described here are are *Unit Tests*, tests that to check a single function. There are other types of test. One other type of test we'll see in this curriculum are *Integration Tests*, tests that determine if software works when multiple parts are connected together. We will learn more about Integration Tests with our first project. 
+The tests we write as part of the TDD programming workflow described here are are *Unit Tests*, tests that to check a single function. There are other types of test. One other type of test we'll see in this curriculum are *Integration Tests*, tests that determine if software works when multiple parts are connected together. We will learn more about Integration Tests later in the curriculum. 
+
+![Test Level Triangle](../assets/tdd_test_triangle.png) [(source)](https://testerstories.com/2020/09/test-shapes/)
 
 ### !end-callout
 
