@@ -209,6 +209,10 @@ Standards:
         UID: 200f3aa7
         Path: /intro-to-tests/fizz_buzz.instructor.md
       -
+        Type: Instructor
+        UID: 3d95c49c
+        Path: /intro-to-tests/tdd-exercise.instructor.md
+      -
         Type: Lesson
         UID: qGalfB
         Path: /intro-to-tests/automated-tests.md
