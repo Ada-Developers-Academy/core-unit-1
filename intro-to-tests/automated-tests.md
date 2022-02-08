@@ -91,12 +91,9 @@ To ensure that our test cases cover all scenarios, it can be helpful to categori
 
 #### Nominal Test Cases
 
-A nominal test case is a type of test case that describes a piece of core functionality needed for the success of this method. This is the test case that verifies that the method does its primary responsibility. Nominal test cases are the obvious test cases.
+A nominal test case is a type of test case that describes a piece of core functionality needed for the success of this method. This is the test case that verifies that the method does its primary responsibility. Nominal test cases are the obvious test cases and often referred to as "happy path" test cases.
 
 In the case of Addison's astrological software, the first test case listed above is a nominal **positive nominal** test case. It checks that given the correct, expected input (the `date`, `location`, and `time`), the functions returns the correct output (a dictionary with the sun, rising, and moon signs). 
-
-A **negative nominal** test case is a type of test case that describes the most obvious, most typical way that a function handles unexpected input. Again, consider our test cases outlined above, the second test case falls under this category. If we pass in `None` for time, the function
-does not have enough information to determine the astrological birth chart, and as such, it returns `None`.
 
 #### Edge Test Cases
 
@@ -104,7 +101,7 @@ An edge test case is a type of test case that verifies that the function can wor
 
 A **positive edge** test case is a test case that describes a set of inputs and expectations that are on the limits of the method's most obvious, most typical way of working successfully. In the test cases listed above, the third test case is a positive edge case. The function returns the correct birth chart even when the input is in an unexpected format.
 
-A **negative edge** test case is a test case that tests that this function can handle the most non-obvious, most atypical unexpected input gracefully. The fourth example above is a negative edge case.The function receives an invalid place for `location` and raises an exception. We will learn more about raising, handling, and testing exceptions in [Exception Handling](../exception-handling/raising-and-handling-exceptions.md)
+A **negative edge** test case is a test case that tests that this function can handle the most non-obvious, most atypical unexpected input gracefully. Again, let's consider our test cases outlined above. The second test case falls under this category. If we pass in `None` for time, the function does not have enough information to determine the astrological birth chart, and as such, it returns `None`. The fourth example is also a negative edge case. The function receives an invalid place for `location` and raises an exception. We will learn more about raising, handling, and testing exceptions in [Exception Handling](../exception-handling/raising-and-handling-exceptions.md)
 
 ### !callout-info
 
