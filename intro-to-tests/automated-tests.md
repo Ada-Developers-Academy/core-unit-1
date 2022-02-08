@@ -86,11 +86,8 @@ Addison could come up with the following scenarios:
 | 3. What happens if the `date` argument comes as a different format?            | `"1980-01-01"`, `"Seattle"`, `"12:00"`      | `{"Sun": "Capricorn", ...}` |
 | 4. What happens if the function receives an invalid place for `location`?       | `"January 1, 1980"`, `"xyz"`, `"12:00"` | should raise an exception   |
 
-To ensure that our test cases cover all scenarios, it can be helpful to categorize tests using the following categories:
-1. Positive Nominal
-1. Negative Nominal
-1. Positive Edge
-1. Negative Edge
+To ensure that our test cases cover all scenarios, it can be helpful to categorize tests using the following two categories:
+- **Nominal** and **Edge** Test Cases
 
 #### Nominal Test Cases
 
