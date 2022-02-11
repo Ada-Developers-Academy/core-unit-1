@@ -97,7 +97,7 @@ In the case of Addison's astrological software, the first test case listed above
 
 #### Edge Test Cases
 
-An edge test case is a type of test case that verifies that the function can work successfully, even given non-obvious context. This is the test case that verifies that the function works, even with very unexpected context.
+An edge test case is a type of test case that verifies that the function can work successfully, even given non-obvious input. This is the test case that verifies that the function works, even with very unexpected input.
 
 A **positive edge** test case is a test case that describes a set of inputs and expectations that are on the limits of the method's most obvious, most typical way of working successfully. In the test cases listed above, the third test case is a positive edge case. The function returns the correct birth chart even when the input is in an unexpected format.
 
