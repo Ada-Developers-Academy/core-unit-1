@@ -93,7 +93,7 @@ To ensure that our test cases cover all scenarios, it can be helpful to categori
 
 A nominal test case is a type of test case that describes a piece of core functionality needed for the success of this method. This is the test case that verifies that the method does its primary responsibility. Nominal test cases are the obvious test cases and often referred to as "happy path" test cases.
 
-In the case of Addison's astrological software, the first test case listed above is a nominal **positive nominal** test case. It checks that given the correct, expected input (the `date`, `location`, and `time`), the functions returns the correct output (a dictionary with the sun, rising, and moon signs). 
+In the case of Addison's astrological software, the first test case listed above is a nominal **nominal** test case. It checks that given the correct, expected input (the `date`, `location`, and `time`), the functions returns the correct output (a dictionary with the sun, rising, and moon signs). 
 
 #### Edge Test Cases
 
