@@ -188,11 +188,19 @@ Standards:
         Path: /representing-data/activity-representing-data.md     
   -
     Title: Intro To Tests
-    Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Problem Set: Intro to pytest"
+    Description: "Automated Tests, Intro to pytest, Test Driven Development, Problem Set: Intro to Tests, Activity: TDD Exercise"
     UID: cxnH0Z
     SuccessCriteria:
       - success criteria
     ContentFiles:
+      -
+        Type: Instructor
+        UID: 200f3aa7
+        Path: /intro-to-tests/fizz_buzz.instructor.md
+      -
+        Type: Instructor
+        UID: 3d95c49c
+        Path: /intro-to-tests/tdd-exercise.instructor.md
       -
         Type: Lesson
         UID: qGalfB
@@ -203,8 +211,17 @@ Standards:
         Path: /intro-to-tests/intro-to-pytest.md
       -
         Type: Lesson
+        UID: 88765c99
+        Path: /intro-to-tests/test-driven-development.md
+      -
+        Type: Lesson
         UID: qcZisA
         Path: /intro-to-tests/problem-set-intro-to-pytest.md
+      -
+        Type: Lesson
+        UID: 997e931b
+        Path: /intro-to-tests/activity-tests.md
+    
   -
     Title: Iterating Over Data
     Description: "Intro to Iteration, Iterating Over Lists, Iterating Over Dictionaries, While Loops, Iterating and Special Cases, Problem Set: Iterating Over Data, Problem Set: While Loops"
