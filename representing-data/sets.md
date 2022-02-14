@@ -9,10 +9,10 @@ Sets are a unique data structure in Python.  Sets can be used to store data like
 | Vocab | Definition | Synonyms | How to Use in a Sentence |
 | ----------------- | ----------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Set | An abstract data type that can store unique values, without any particular order |  | I added this project to my set of demos.
-| Union | The union of a collection of sets is a new set consisting of all the elements in the input sets. | Juncture | I took the set of movies Mark has seen and Hiba and calculated the union resulting in a set of all the movies they've seen.
-| Intersection | The intersection of two sets, A and B is a set containing all the elements of A which also belong to set B | Overlap | I took the set of movies staring Iron man and Black Panther and calculated the intersection resulting in the set of movies they both appeared in.
+| Union | The union of a collection of sets is a new set consisting of all the elements in the input sets. | Juncture | I took the set of movies Mark and Hiba have seen and calculated the union resulting in a set of all the movies they've seen.
+| Intersection | The intersection of two sets, A and B is a set containing all the elements of A which also belong to set B | Overlap | I took the set of movies starring Iron man and Black Panther and calculated the intersection resulting in the set of movies they both appeared in.
 | Difference | The difference of two sets A and B consists of a set consisting of all the elements in set A excluding any element also found in set B. |  | I wanted to get a list of all the Hong Kong action movies which do not include Jackie Chan, so I took the difference of the set of HK movies and the set of Jackie Chan movies.
-| Disjoint | Two sets A and B are disjoint when the intersection of set A and set B is empty. |  | Apparently the set of movies staring Uma Thurmond and Jackie chan is disjoint.  They've never worked together.
+| Disjoint | Two sets A and B are disjoint when the intersection of set A and set B is empty. |  | Apparently the set of movies staring Uma Thurman and Jackie chan is disjoint.  They've never worked together.
 
 ## Set Fundamentals
 
@@ -40,7 +40,7 @@ example_set.add('pizza')
 print(example_set)
 ```
 
-Will print `{'pizza', 5, 6}`.  The set does not maintain order by insertion or 
+Will print `{'pizza', 5, 6}`.  The set does not maintain order by insertion.
 
 ### Set Operations and Syntax
 
@@ -99,7 +99,7 @@ The `clear()` method removes all elements from a set leaving the set empty.
 
 ### Set Interactions
 
-Now that we are familiar with the basic set operations, we can get into the exiting world of set to set interactions!  Let's start with two basic sets:
+Now that we are familiar with the basic set operations, we can get into the exciting world of set to set interactions!  Let's start with two basic sets:
 
 ![Set A and Set B](../assets/new-lesson_sets_sets.png)  
 *Fig. Set A {1, 2, 3, 4} and Set B {4, 5, 6, 7}.*
