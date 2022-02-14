@@ -156,6 +156,10 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
+        UID: 9dcbb90f
+        Path: /representing-data/activity-representing-data.instructor.md 
+      -
+        Type: Lesson
         UID: 88DgSp
         Path: /representing-data/representing-data-in-lists-and-dictionaries.md
       -
@@ -176,12 +180,12 @@ Standards:
         Path: /representing-data/problem-set-representing-data.md
       -
         Type: Lesson
-        UID: 1f3084593d9eed2a8ec8a797cbfdd89b
-        Path: /representing-data/activity-representing-data.md
+        UID: 30086be0-510f-414c-ab8f-3625c4a48548
+        Path: /representing-data/problem-set-sets-and-tuples.md 
       -
         Type: Lesson
-        UID: 30086be0-510f-414c-ab8f-3625c4a48548
-        Path: /representing-data/problem-set-sets-and-tuples.md      
+        UID: 1f3084593d9eed2a8ec8a797cbfdd89b
+        Path: /representing-data/activity-representing-data.md     
   -
     Title: Intro To Tests
     Description: "Packages and Managing Packages, Automated Tests, Intro to pytest, Problem Set: Intro to pytest"
