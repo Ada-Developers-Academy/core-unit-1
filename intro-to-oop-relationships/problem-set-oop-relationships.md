@@ -92,7 +92,7 @@ Select the option that best describes the parent-child relationship between the 
 
 Provided this code snippet, select the option that best describes how inheritance works between the `Bear` and `Mammal` class.
 
-``` Python
+```python
 class Mammal:
     def __init__(self, name, region):
         self.name = name
@@ -158,28 +158,6 @@ bear = Bear("bear", "wa")
 print(bear.make_appearance())
 print(bear.make_noise())
 ```
-
-* 
-```python
-class Mammal:
-    def __init__(self, name, region):
-        self.name = name
-        self.region = region
-
-    def make_noise(self):
-        return "AHHHHHHH"
-
-class Bear(Mammal):
-    def make_appearance(self):
-        return "ʕ •ᴥ• ʔ"
-
-    def make_noise(self):
-        return "ROOAAAR!!"
-
-bear = Bear("bear", "wa")
-print(bear.make_appearance())
-print(bear.make_noise())
-```
 * 
 ```python
 class Mammal:
@@ -221,7 +199,7 @@ class Bear(Mammal):
     def make_noise(self):
         return "ROOAAAR!!"
 
-bear = Bear("bear", "wa")
+bear = Mammal("bear", "wa")
 print(bear.make_appearance())
 print(bear.make_noise())
 ```
