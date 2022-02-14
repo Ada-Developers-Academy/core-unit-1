@@ -14,7 +14,7 @@
 | ------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | Inheritance  | A programming mechanism that allows classes to inherit attributes from another class.                               | ---                      | "I'll use inheritance so the `Chocolate` class can inherit the `sugar serving` and `eat_in_one_sitting()` method from the `Candy` class. |
 | Parent class | A class that contains variables and methods that can be inherited to other classes                                  | base class, super class  | "`Candy` class is the parent class to `Chocolate` class."                                                                                |
-| Child class  | A class that contains its own variables and methods but also inherits the variables and methods from a parent class | derived class, sub class | "`Chocolate` class is the parent class to `Candy` class."                                                                                |
+| Child class  | A class that contains its own variables and methods but also inherits the variables and methods from a parent class | derived class, sub class | "`Chocolate` class is the child class to `Candy` class."                                                                                |
 
 ## Syntax for Inheritance
 
