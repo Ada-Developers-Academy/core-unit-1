@@ -1,4 +1,4 @@
-# Automated Tests
+# Intro to Automated Tests
 
 <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0ba5a538-9021-401c-aeb6-acd2000a91d6&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
@@ -36,6 +36,15 @@ Each test could follow this generic pattern:
 
 ### Example: Astrology Software
 
+### !callout-info
+
+## Astrological Birth Chart
+An Astrological Birth Chart is a visual map of what the sky looked like when you were born. It is determined using your exact birthdate and birthplace. It includes three signs, your **sun sign** (typically refered to as your Zodiac sign), your **moon sign**, and your **rising sign**. 
+[source](https://www.shape.com/lifestyle/mind-and-body/sun-moon-rising-sign-meaning)
+
+### !end-callout
+<!-- available callout types: info, success, warning, danger, secondary  -->
+
 ![Part of an astrology birth chart](../assets/intro-to-tests_automated-tests_astrology.jpg)  
 [(source)](https://pixabay.com/photos/astrology-divination-chart-993127/)
 
@@ -66,20 +75,39 @@ Because there are a lot of different kinds of code, there are a lot of different
 
 ### Test Cases and Scenarios
 
-Testing a single function could have many unit tests to test it. Why? Based on the context, a single function could potentially have different arguments that give back different return values. Different scenarios in development can imply different arguments, which would produce different logic. All scenarios and possible outcomes of a function should be tested, as much as reasonably possible.
+Testing a single function will generally have many unit tests to ensure the code works correctly. Why? Based on the context, a single function could potentially have different arguments that give back different return values. Different scenarios in development can imply different arguments, which would produce different logic. All scenarios and possible outcomes of a function should be tested, as thoroughly as possible.
 
 Addison could come up with the following scenarios:
 
 | Question to Ask                                                             | Specific Arguments                          | Expected Return Value       |
 | --------------------------------------------------------------------------- | ------------------------------------------- | --------------------------- |
-| Do we get an accurate birth chart if we pass in a date, location, and time? | `"January 1, 1980"`, `"Seattle"`, `"12:00"` | `{"Sun": "Capricorn", ...}` |
-| What happens if the function receives `None` for time?                      | `"January 1, 1980"`, `"Seattle"`, `None`    | `None`                      |
-| What happens if the `date` argument comes as a different format?            | `"1980-01-01"`, `"Seattle"`, `"12:00"`      | `{"Sun": "Capricorn", ...}` |
-| What happens if the function receives an empty string for `location`?       | `"January 1, 1980"`, `""`, `"12:00"` | should raise an exception   |
+| 1. Do we get an accurate birth chart if we pass in a date, location, and time? | `"January 1, 1980"`, `"Seattle"`, `"12:00"` | `{"Sun": "Capricorn", ...}` |
+| 2. What happens if the function receives `None` for time?                      | `"January 1, 1980"`, `"Seattle"`, `None`    | `None`                      |
+| 3. What happens if the `date` argument comes as a different format?            | `"1980-01-01"`, `"Seattle"`, `"12:00"`      | `{"Sun": "Capricorn", ...}` |
+| 4. What happens if the function receives an invalid place for `location`?       | `"January 1, 1980"`, `"xyz"`, `"12:00"` | should raise an exception   |
+
+To ensure that our test cases cover all scenarios, it can be helpful to categorize tests using the following two categories:
+- **Nominal** and **Edge** Test Cases
+
+#### Nominal Test Cases
+
+A nominal test case is a type of test case that describes a piece of core functionality needed for the success of this method. This is the test case that verifies that the method does its primary responsibility. Nominal test cases are the obvious test cases and often referred to as "happy path" test cases.
+
+In the case of Addison's astrological software, the first test case listed above is a nominal **nominal** test case. It checks that given the correct, expected input (the `date`, `location`, and `time`), the functions returns the correct output (a dictionary with the sun, rising, and moon signs). 
+
+#### Edge Test Cases
+
+An edge test case is a type of test case that verifies that the function can work successfully, even given non-obvious input. This is the test case that verifies that the function works, even with very unexpected input.
+
+A **positive edge** test case is a test case that describes a set of inputs and expectations that are on the limits of the method's most obvious, most typical way of working successfully. In the test cases listed above, the third test case is a positive edge case. The function returns the correct birth chart even when the input is in an unexpected format.
+
+A **negative edge** test case is a test case that tests that this function can handle the most non-obvious, most atypical unexpected input gracefully. Again, let's consider our test cases outlined above. The second test case falls under this category. If we pass in `None` for time, the function does not have enough information to determine the astrological birth chart, and as such, it returns `None`. The fourth example is also a negative edge case. The function receives an invalid place for `location` and raises an exception. We will learn more about raising, handling, and testing exceptions in [Exception Handling](../exception-handling/raising-and-handling-exceptions.md)
 
 ### !callout-info
 
 ## Testing Scenarios
+
+How we categorize test cases isn't that important. What's important is being able to consider all of the possible test cases.
 
 There are countless more scenarios to anticipate! How many scenarios do we need to anticipate? In general, the answer to this question depends on the code you're testing. If there are a lot of conditions in the function, with a lot of different kinds of `return` values, we may have a test for one or two examples each of those `return` values.
 
@@ -108,11 +136,14 @@ When a whole team collaborates using the same test suite, the whole team has vis
 To incorporate testing into our development workflow, our workflow may adjust to this:
 
 1. Read the feature requirements
-2. Think of scenarios relevant to the feature, and what their expected values would be
-3. Write a test for that scenario
-4. Implement the code to make that test pass
-5. Create `git` commits when appropriate (at least one)
-6. Repeat!
+1. Think of scenarios relevant to the feature, and what their expected values would be
+1. Write a test for that scenario
+1. Implement the code to make that test pass
+1. Create `git` commits when appropriate (at least one)
+1. Refactor
+1. Repeat!
+
+We will go into more depth on this workflow in the [Test Driven Development lesson](./test-driven-development.md).
 
 ## Check for Understanding
 
@@ -140,7 +171,7 @@ Why are automated tests beneficial?
 ##### !end-answer
 
 ##### !explanation 
-Tests and these benefits are reasons to follow a practice called test-driven development. If you'd like to look that up, follow your curiosity~
+Tests and these benefits are reasons to follow a practice called test-driven development.
 ##### !end-explanation 
 
 ### !end-challenge
