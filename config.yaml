@@ -80,7 +80,7 @@ Standards:
         Path: /what-is-software-development/activity-study-plan.md
   -
     Title: Intro to Dev Environment
-    Description: "Intro to Command Line, Intro to Computer Memory, Managing Packages"
+    Description: "Intro to Command Line, Intro to Computer Memory"
     UID: QkZshi
     SuccessCriteria:
       - success criteria
@@ -97,10 +97,6 @@ Standards:
         Type: Lesson
         UID: Bp7qUb
         Path: /intro-to-dev-environment/intro-to-computer-memory.md
-      -
-        Type: Lesson
-        UID: abirop
-        Path: /intro-to-dev-environment/packages-and-managing-packages.md
   -
     Title: Approaching a Problem
     Description: "Breaking down a problem, Pseudocode and Logic, Pair Programming, Activity: Breaking Down a Problem"
