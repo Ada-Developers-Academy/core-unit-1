@@ -80,7 +80,7 @@ Standards:
         Path: /what-is-software-development/activity-study-plan.md
   -
     Title: Intro to Dev Environment
-    Description: "Intro to Command Line, Intro to Computer Memory, Managing Packages"
+    Description: "Intro to Command Line, Intro to Computer Memory"
     UID: QkZshi
     SuccessCriteria:
       - success criteria
@@ -97,10 +97,6 @@ Standards:
         Type: Lesson
         UID: Bp7qUb
         Path: /intro-to-dev-environment/intro-to-computer-memory.md
-      -
-        Type: Lesson
-        UID: abirop
-        Path: /intro-to-dev-environment/packages-and-managing-packages.md
   -
     Title: Approaching a Problem
     Description: "Breaking down a problem, Pseudocode and Logic, Pair Programming, Activity: Breaking Down a Problem"
@@ -351,16 +347,20 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
+        UID: 93e56c2c-6bed-459c-9d5c-c77a3b9e3a80
+        Path: /intro-to-oop-contd/code-coverage.instructor.md
+      -
+        Type: Instructor
+        UID: d4505dc2-4053-4501-9d48-8232f6ddb93a
+        Path: /intro-to-oop-contd/projects-with-many-files.instructor.md
+      -
+        Type: Lesson
         UID: 613e336a5248766041367235ba6bca58
         Path: /intro-to-oop-contd/testing-objects.md
       -
         Type: Lesson
         UID: f6e28e9bf4561ab0a666f1e046e52a83
         Path: /intro-to-oop-contd/projects-with-many-files.md
-      -
-        Type: Instructor
-        UID: d4505dc2-4053-4501-9d48-8232f6ddb93a
-        Path: /intro-to-oop-contd/projects-with-many-files.instructor.md
   -
     Title: Intro to OOP Relationships
     Description: "OOP Relationships, Inheritance, super(), Problem Set: OOP Relationships"
