@@ -154,8 +154,8 @@ class Order:
 
 ##### !options
 
-* That you can create a product with correct values for products and a customer.
-* That `add_product` will increase the `products` list by one.
+* That you can create an order with correct values for products and a customer.
+* That `add_product` will increase the length of the `products` list by one.
 * That `add_product` will **remove** an element from the `products` list.
 * That `add_product` will **add** the argument into the `products` list.
 
@@ -163,8 +163,8 @@ class Order:
 
 ##### !answer
 
-* That you can create a product with correct values for products and a customer.
-* That `add_product` will increase the `products` list by one.
+* That you can create an order with correct values for products and a customer.
+* That `add_product` will increase the length of the `products` list by one.
 * That `add_product` will **add** the argument into the `products` list.
 
 ##### !end-answer
