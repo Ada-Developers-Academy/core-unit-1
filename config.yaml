@@ -319,6 +319,10 @@ Standards:
       - success criteria
     ContentFiles:
       -
+        Type: Instructor
+        UID: c131cf68-233b-42d4-a802-ecd200603b0c
+        Path: /intro-to-object-oriented-programming/adagrams-oop.instructor.md
+      -
         Type: Lesson
         UID: 56c780d52a039c59bdbc844d9de154f1
         Path: /intro-to-object-oriented-programming/what-is-oop.md
@@ -345,10 +349,6 @@ Standards:
     SuccessCriteria:
       - success criteria
     ContentFiles:
-      -
-        Type: Lesson
-        UID: 93e56c2c-6bed-459c-9d5c-c77a3b9e3a80
-        Path: /intro-to-oop-contd/code-coverage.instructor.md
       -
         Type: Instructor
         UID: d4505dc2-4053-4501-9d48-8232f6ddb93a
