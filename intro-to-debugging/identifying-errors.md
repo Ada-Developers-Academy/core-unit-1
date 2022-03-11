@@ -34,7 +34,7 @@ For example, let's consider the following situation:
 ```python
 # main.py
 
-apples_quantity = 888      # this is line 3
+number_of_apples = 888      # this is line 3
 basket_capacity = 0        # this is line 4
 apple_basket_quantity = number_of_apples / basket_capacity    # this is line 5
 ```
@@ -61,8 +61,6 @@ Let's consider briefly **where** we see error messages, and in general all outpu
 We introduce this idea briefly because one day, the standard stream may change. :)
 
 ### !end-callout
-
-We introduce this idea briefly because one day, the standard stream may change. :)
 
 ### Python Calls It The Traceback
 
