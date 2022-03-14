@@ -485,7 +485,7 @@ Reading and tracing this code takes patience and practice, and gets a lot easier
 def sing_birthday_line():
     print("Happy birthday to you")
 
-def sing_birthday_song(name):
+def sing_happy_birthday(name):
     sing_birthday_line()
     sing_birthday_line()
     print(f"Happy birthday, dear {name}")
