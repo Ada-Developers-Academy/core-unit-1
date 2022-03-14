@@ -284,7 +284,7 @@ hussain_set = set(hussain_movies)
 Next, we can use set intersection to generate a set of all of the elements that are contained in both sets:
 
 ```python
-result_set = set_a & set b
+result_set = set_a & set_b
 ```
 
 If we want the results in a list we can convert a set into a list in a similar way to how we converted the list into a set:
