@@ -151,7 +151,7 @@ Standards:
       - success criteria
     ContentFiles:
       -
-        Type: Lesson
+        Type: Instructor
         UID: 9dcbb90f
         Path: /representing-data/activity-representing-data.instructor.md 
       -
