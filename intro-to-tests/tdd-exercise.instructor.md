@@ -5,6 +5,8 @@ Replit: https://replit.com/@adadev/tdd-exercise#README.md
 
 Old Repo: https://github.com/AdaGold/tdd-exercise, not used because students haven't learned how to collaborate in Git yet.
 
+Solution Branch: https://github.com/AdaGold/tdd-exercise/blob/solution-python/tests/test_blackjack_score.py
+
 The TDD Exercise is introduced as part of the problem set (Part 1) and parts 2 and 3 are meant to be a classroom activity. This classroom activity likely needs 2 hours.
 
 Many folks are not familiar with BlackJack. Hopefully by providing the prompt as part of the problem set students will have time to review the rules.
