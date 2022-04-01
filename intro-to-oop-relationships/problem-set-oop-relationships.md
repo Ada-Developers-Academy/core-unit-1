@@ -175,7 +175,7 @@ class Bear(Mammal):
     def make_noise(self):
         return "ROOAAAR!!"
 
-bear = Mammal("bear", "wa")
+bear = Bear("bear", "wa")
 print(bear.make_appearance())
 print(bear.make_noise())
 ```
@@ -199,7 +199,7 @@ class Bear(Mammal):
     def make_noise(self):
         return "ROOAAAR!!"
 
-bear = Mammal("bear", "wa")
+bear = Bear("bear", "wa")
 print(bear.make_appearance())
 print(bear.make_noise())
 ```
