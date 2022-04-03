@@ -88,7 +88,7 @@ For more details on `object`, run `help(object)` in a Python repl!
 
 ## Composition: Instances Holding Instances
 
-Most classes have attributes. Those attributes are things like strings, numbers, lists, dictionaries, booleans, and so on. It's easy to overlook that those types are all classes, and that any time we make a string, number, or any of the rest, we are making instances of classes. And of course we can also make instances of our own classes. Any of these potential instances can be stored as the value of an attribute is an instance of another class.
+Most classes have attributes. Those attributes are things like strings, numbers, lists, dictionaries, booleans, and so on. It's easy to overlook that those types are all classes, and that any time we make a string, number, or any of the rest, we are making instances of classes. And of course we can also make instances of our own classes. Any of these potential instances can be stored as the value of an attribute in an instance of another class.
 
 This relationship is called composition. Composition means that one class is expected to have objects of another class stored or referenced inside of it.
 
