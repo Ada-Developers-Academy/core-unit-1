@@ -65,7 +65,7 @@ Provided is her code so far. Select the option that best describes the relations
 class Temperature:
   def __init__(self, celsius):
     self.celsius = celsius
-    self.metric_converter = Metric_Converter(self.celsius)
+    self.metric_converter = MetricConverter(self.celsius)
 
   def display_temperature(self):
     return "It is " + str(self.metric_converter.convert_to_fahrenheit()) + " degrees Fahrenheit today."
