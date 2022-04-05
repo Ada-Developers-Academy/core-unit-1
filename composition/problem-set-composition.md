@@ -99,7 +99,7 @@ print(today.display_temperature())
 * title: Composition
 
 ##### !question
-Composition can be initiated by a single line of code. In this code snippet, which line is responsible for starting the relationship between `Bedroom` and `Area`?
+Composition can be initiated by a single line of code. In this code snippet, which line is responsible for starting the relationship between `Room` and `Area`?
 
 ```python
 1   class Room:
