@@ -87,7 +87,7 @@ Example 2 is full of working, functional code. Sometimes, Example 2 is easier to
 
 ### Pseudocode Can Be Any Style
 
-There are no rules about pseudocode and what it should look like! Therefore, all of these are valid examples of pseudocode.
+There are no rules about pseudocode and what it should look like! Therefore, all of the examples above and below are valid examples of pseudocode.
 
 The only rule is that **pseudocode should be deleted from the final solution, to ensure that the final solution runs correctly.**
 
