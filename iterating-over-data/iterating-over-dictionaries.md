@@ -36,7 +36,7 @@ for my_key, my_value in my_dict.items():
 
 The most unique part about iterating over the keys & values of dictionaries, is that we should call `.items()` next to each dictionary when starting the for loop.
 
-Python is unable to iterate over the key/value pairs in dictionaries by default; `.items()` lets us use the `for` loop with it. If we neglected to add `.items()`, we'll likely get something similar to this error:
+Python is unable to iterate over the key/value pairs in dictionaries by default; `.items()` lets us use the `for` loop with it. If we neglect to add `.items()`, we'll likely get something similar to this error:
 
 ```bash
 ValueError: too many values to unpack (expected 2)
