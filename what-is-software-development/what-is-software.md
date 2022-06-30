@@ -9,7 +9,7 @@
 | Source Code     | Code that builds software and is readable to a human                                                    | source, src               | "If we want to see how that's implemented, we could look at the source code," "The source code gets obfuscated after the software is built"             |
 | Open Source     | Source code that is available to view and use                                                           | OSS                       | "Sometimes I like to contribute to this open source project," "Since it's open source, we can probably check what the dev discussion was on this issue" |
 | Hello, World!   | A program that prints "Hello, World!"                                                                   | -                         | "I want to learn TypeScript so I just did a Hello, World," "The hardest part of the Hello, World to me was figuring out how to run it"                  |
-| Local Machine   | Your own very computer in front of you                                                                  | local                     | "I don't know why it was broken for you, it was working on my local machine"                                                                            |
+| Local Machine   | Your very own computer in front of you                                                                  | local                     | "I don't know why it was broken for you, it was working on my local machine"                                                                            |
 | Code of Conduct | A written set of norms for a community, typically outlining rules, responsibilities, and accountability | -                         | "That harrasser was banned because they violated the code of conduct," "The code of conduct meant nothing if it wasn't enforced"                        |
 
 ## Software is a Set of Instructions
@@ -127,7 +127,7 @@ print("Hello, World!")
 
 ## You are the Local Machine
 
-What does "local machine" mean? The phrase "local machine" will be used to mean your own very computer that you're writing code on. "Local" refers to a computer close to you, the user. We say "machine" to not assume that the users of code are laptops or desktop computers!
+What does "local machine" mean? The phrase "local machine" will be used to mean your very own computer that you're writing code on. "Local" refers to a computer close to you, the user. We say "machine" to not assume that the users of code are laptops or desktop computers!
 
 ### !end-callout
 
