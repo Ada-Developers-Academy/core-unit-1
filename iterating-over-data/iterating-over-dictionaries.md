@@ -34,7 +34,7 @@ for my_key, my_value in my_dict.items():
 
 ### About `.items()`
 
-The most unique part about iterating over the keys & values of dictionaries, is that we should call `.items()` next to each dictionary when starting the for loop.
+The most unique part about iterating over the keys & values of dictionaries, is that we should call the method `.items()` on each dictionary when starting the for loop.
 
 Python is unable to iterate over the key/value pairs in dictionaries by default; `.items()` lets us use the `for` loop with it. If we neglect to add `.items()`, we'll likely get something similar to this error:
 
