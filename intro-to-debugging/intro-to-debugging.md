@@ -59,8 +59,6 @@ Now that we have a general set of questions and order to debugging, here is a ge
 6. Document what you tried and what the results were... Probably on a piece of paper or a separate file.
 7. Repeat this process until the bug is fixed!
 
-True or false: It is okay to come up with theories about the bug and to test & experiment, as long as you document what you tried and what the results are in your notes
-
 ## Debugging is Utilizing Your Tools and Resources
 
 What is debugging? Debugging is not only asking and answering questions, but also it's using your tools and resources to ask and answer questions.

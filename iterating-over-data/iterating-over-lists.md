@@ -121,8 +121,8 @@ for option in options:
 | iteration # | <div style="width: 80px;">index of `option`</div> | <div style="width: 100px;">value of `option`</div>  | print output                                                                        |
 | ----------- | ------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | 1           | 0                                                 | `"the place I'm craving but is too far away"`       | `"What about getting food from the place I'm craving but is too far away tonight?"` |
-| 2           | 1                                                 | `"the place we always go to"`                       | `"What about getting food from the place we always go to?"`                         |
-| 3           | 2                                                 | `"that place that just opened but looks too fancy"` | `"What about getting food from that place that just opened but looks too fancy?"`   |
+| 2           | 1                                                 | `"the place we always go to"`                       | `"What about getting food from the place we always go to tonight?"`                         |
+| 3           | 2                                                 | `"that place that just opened but looks too fancy"` | `"What about getting food from that place that just opened but looks too fancy tonight?"`   |
 
 #### Example: Calculating Taxes Explained
 

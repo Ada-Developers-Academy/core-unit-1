@@ -205,7 +205,7 @@ b d e
 
 ### Modifying an Element
 
-This is example syntax for modifying one element in a nested list.
+This is example syntax for modifying one element in a nested list:
 
 ```python
 example_list[ index_to_find_inner_list ][ index_to_find_element ] = 'This is my new value!'
