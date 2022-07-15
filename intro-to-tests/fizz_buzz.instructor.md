@@ -1,4 +1,4 @@
-# TDD Ping Pong
+# Instructor: TDD Ping Pong
 
 ## Goals
 - Demonstrate TDD workflow and the Red-Green-Refactor cycle
