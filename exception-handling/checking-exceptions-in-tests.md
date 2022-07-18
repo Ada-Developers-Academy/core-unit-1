@@ -3,6 +3,7 @@
 ## Learning Goals
 
 - Explain how to handle exceptions using try and except clauses
+- Practice testing for exceptions using `pytest`
 
 ## Introduction
 
