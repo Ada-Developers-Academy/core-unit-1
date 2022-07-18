@@ -137,6 +137,52 @@ True and not True
 not True or False
 ```
 
+## Pythonic Conditionals
+
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## Pythonic
+
+There are many ways to achieve the same goal in programming. Writing _pythonic_ code means writing code that "follows certain stylistic and conventional guidelines that are accepted by the Python community to promote unified, maintainable, and concise applications that are written the way the language intended them to be written." [source](https://towardsdatascience.com/how-to-be-pythonic-and-why-you-should-care-188d63a5037e).
+<br>
+<br>
+Writing code with a particular style should not be our main focus as we are learning how to code. However, we will note some stylistic best practices as we review and learn fundamental programming topics in Python. 
+
+### !end-callout
+
+Let's go over a few examples of the _pythonic_ way to write a conditional statement that makes use of the truthiness or falsiness of a variable.
+
+
+
+<table>
+  <tr>
+    <th>Valid Code</th>
+    <th>Pythonic Code</th>
+  </tr>
+  <tr>
+    <td>
+        ```python
+        fruit = ["guava", "papaya"]
+
+        if len(fruit) == 0:
+            print("There is no fruit")
+        ```
+    </td>
+
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+|
+
+
+
 ## Order of Operations and Operator Precedence
 
 Conditional expressions can grow in size and complexity. How do we determine that they are truthy or falsy?
