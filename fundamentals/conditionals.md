@@ -24,11 +24,11 @@ Let's ensure we're on the same page about some programming fundamentals by revie
 
 There are two boolean values: `True` and `False`, and they represent the concept of true and false.
 
-When faced with the question of "is this value true or false?," values that are not booleans become truthy or falsey. A truthy value is something that would be considered `True`, even if it is not literally the value `True`. A falsey value is considered `False`, even if it's not literally `False`.
+When faced with the question of "is this value true or false?," values that are not booleans become truthy or falsy. A truthy value is something that would be considered `True`, even if it is not literally the value `True`. A falsy value is considered `False`, even if it's not literally `False`.
 
 In Python, _all values are truthy_... with some exceptions.
 
-The following values are falsey, and will resolve to `False` in a conditional statement:
+The following values are falsy, and will resolve to `False` in a conditional statement:
 
 - `None`
 - `0` and `0.0`
@@ -53,9 +53,59 @@ elif a_different_expression_is_truthy:
     print("AND this different expression IS truthy")
     print("So now we run the code is in this clause.")
 else:
-    print("The expression is falsey!")
+    print("The expression is falsy!")
     print("We will run all code in the else clause.")
 ```
+
+### Pythonic Conditionals
+
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## Pythonic
+
+There are many ways to achieve the same goal in programming. Writing _pythonic_ code means writing code that "follows certain stylistic and conventional guidelines that are accepted by the Python community to promote unified, maintainable, and concise applications that are written the way the language intended them to be written." [source](https://towardsdatascience.com/how-to-be-pythonic-and-why-you-should-care-188d63a5037e).
+<br>
+<br>
+While writing code with a particular style should not be our main focus as we are learning how to code, we can still learn some stylistic best practices as we learn fundamental programming topics in Python. 
+
+### !end-callout
+
+The _pythonic_ way to write a conditional statement with lists makes use of the truthiness and falsiness  values of lists.
+
+The following code snippets are valid and will print `"The list is empty"` for `a_list = []`:
+
+```Python
+if len(a_list) == 0:
+    print("The list is empty.")
+```
+
+```Python
+if a_list == []:
+  print("The list is empty.")
+```
+
+However, the pythonic way to write this conditional control structure is as follows:
+
+```Python
+if not a_list:
+  print("The list is empty.")
+```
+
+Similarly, while the following code will print `"The list has at least one element"` for `a_list` that is non-empty:
+
+```Python
+if len(a_list) > 0:
+  print("The list has at least one element.")
+```
+
+The more _pythonic_ way to write this conditional is as follows:
+
+```Python
+if a_list:
+  print("The list has at least one element.")
+```
+
 
 ## `and` vs. `or` Boolean Operations
 
@@ -136,52 +186,6 @@ not 1
 True and not True
 not True or False
 ```
-
-## Pythonic Conditionals
-
-<!-- available callout types: info, success, warning, danger, secondary, star  -->
-### !callout-info
-
-## Pythonic
-
-There are many ways to achieve the same goal in programming. Writing _pythonic_ code means writing code that "follows certain stylistic and conventional guidelines that are accepted by the Python community to promote unified, maintainable, and concise applications that are written the way the language intended them to be written." [source](https://towardsdatascience.com/how-to-be-pythonic-and-why-you-should-care-188d63a5037e).
-<br>
-<br>
-Writing code with a particular style should not be our main focus as we are learning how to code. However, we will note some stylistic best practices as we review and learn fundamental programming topics in Python. 
-
-### !end-callout
-
-Let's go over a few examples of the _pythonic_ way to write a conditional statement that makes use of the truthiness or falsiness of a variable.
-
-
-
-<table>
-  <tr>
-    <th>Valid Code</th>
-    <th>Pythonic Code</th>
-  </tr>
-  <tr>
-    <td>
-        ```python
-        fruit = ["guava", "papaya"]
-
-        if len(fruit) == 0:
-            print("There is no fruit")
-        ```
-    </td>
-
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table>
-|
-
-
 
 ## Order of Operations and Operator Precedence
 
