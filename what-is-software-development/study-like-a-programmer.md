@@ -340,7 +340,7 @@ Which of the following is _not_ a category of studying skills that was covered a
 
 | <div style="min-width: 330px;">Are you feeling like... </div> | <div style="min-width: 370px;">Consider</div> |
 | ---- | ---- |
-| ...classroom time is overwhelming? | Look at the calendar and the lessons the night before, and pre-read the lectures |
+| ...classroom time is overwhelming? | Complete the reading and problem sets before class. Make a note of the questions you have. |
 | ...reading material on programming is unnatural? | Read this resource on [how to read programming books](http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html) |
 |  ...you lose focus on the task at hand? | Using physical paper and sticky notes to write down the specific task you are trying to accomplish |
 | ...you lose focus over time? | Using a time management method like  [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to help enable frequent breaks and frequent periods of flow |
