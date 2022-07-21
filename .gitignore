@@ -2,3 +2,4 @@
 __pycache__/
 .vscode
 autoconfig.yaml
+code_samples.py

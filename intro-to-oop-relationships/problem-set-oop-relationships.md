@@ -179,6 +179,27 @@ bear = Bear("bear", "wa")
 print(bear.make_appearance())
 print(bear.make_noise())
 ```
+*
+```python
+class Mammal:
+    def __init__(self, name, region):
+        self.name = name
+        self.region = region
+
+    def make_noise(self):
+        return "AHHHHHHH"
+
+class Bear(Mammal):
+    def make_appearance(self):
+        return "ʕ •ᴥ• ʔ"
+
+    def make_noise(self):
+        return "ROOAAAR!!"
+
+bear = Mammal("bear", "wa")
+print(bear.make_appearance())
+print(bear.make_noise())
+```
 ##### !end-options
 
 ##### !answer
