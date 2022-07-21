@@ -415,7 +415,7 @@ Standards:
         UID: 2e1f6e9e38e6f594e6a86cfb15b494ed
         Path: /python-oop/intro-to-design-patterns.md
       -
-        Type: Lesson
+        Type: Resource
         UID: 533f8f6dada668c242e332613c0052ef
         Path: /python-oop/intro-to-decorators.md
       -
