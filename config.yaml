@@ -8,6 +8,10 @@ Standards:
       - success criteria
     ContentFiles:
       -
+        Type: Instructor
+        UID: 4a47a20f-c65f-4457-b07e-6a4e262d3a23
+        Path: /fundamentals/sequence.instructor.md
+      -
         Type: Lesson
         UID: c8607470-a07c-4a70-b1c8-5a4e4edb8519
         Path: /fundamentals/fundamentals-vocabulary.md
