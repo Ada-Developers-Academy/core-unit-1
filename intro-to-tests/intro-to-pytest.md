@@ -193,7 +193,7 @@ What do we put into the test (function) body? "Arrange, Act, Assert" is a useful
 | ------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Arrange | top                     | The top section of a test can include things to arrange, or set up. This can be creating variables, calling helper methods, or anything else depending on the context. Sometimes this section doesn't exist, because there is no setup. |
 | Act     | middle                  | This section is where what needs to be tested _happens_. If we're writing a unit test for a function, this is where we invoke the function.                                                                                             |
-| Assert  | end                     | The assert section is where any assert statements can be made.   
+| Assert  | end                     | The assert section is where any assert statements can be made.   |
 
 ### Expecting a Raised Exception
 
