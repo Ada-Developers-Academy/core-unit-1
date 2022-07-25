@@ -114,22 +114,6 @@ When considering a design pattern, the team should consider:
 - What are the benefits of implementing this design pattern?
 - What are the alternatives?
 
-### !callout-info
-
-## Decorators
-
-Python decorators, an example of the decorator pattern, are used to add functionality to a function or method. 
-<br>
-<br>
-A python decorator uses the `@` symbol and is placed above the function that it decorates. Some examples of decorators we have already seen include `@pytest.mark.integration_test` and `@pytest.mark.skip`. 
-<br>
-<br>
-Follow your curiosity to learn more about how decorators are implemented. You may optionally review [this resource in Learn](./intro-to-decorators.md).
-
-### !end-callout
-
-### !callout-info
-
 ## Hungry for Examples?
 
 As mentioned, applying design patterns takes time, experience, research, context, and experimentation. If you're hungry to see examples of design patterns in Python, feel free to do extra research. One external resource to begin your research may be [python-patterns.guide](https://python-patterns.guide/).
