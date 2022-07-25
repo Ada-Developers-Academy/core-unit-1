@@ -195,7 +195,7 @@ What do we put into the test (function) body? "Arrange, Act, Assert" is a useful
 | Act     | middle                  | This section is where what needs to be tested _happens_. If we're writing a unit test for a function, this is where we invoke the function.                                                                                             |
 | Assert  | end                     | The assert section is where any assert statements can be made.   
 
-## Expecting a Raised Exception
+### Expecting a Raised Exception
 
 In contrast to `assert`, sometimes we need to assert that an exception gets raised during a function call.
 
