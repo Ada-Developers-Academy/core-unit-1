@@ -114,6 +114,8 @@ When considering a design pattern, the team should consider:
 - What are the benefits of implementing this design pattern?
 - What are the alternatives?
 
+### !callout-info
+
 ## Hungry for Examples?
 
 As mentioned, applying design patterns takes time, experience, research, context, and experimentation. If you're hungry to see examples of design patterns in Python, feel free to do extra research. One external resource to begin your research may be [python-patterns.guide](https://python-patterns.guide/).
