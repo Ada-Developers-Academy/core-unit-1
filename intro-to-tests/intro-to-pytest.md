@@ -167,6 +167,24 @@ Read through these example `assert` statements as passing examples that prove we
 
 Tests should include at least one `assert` statement. There can be multiple assertions in a test.
 
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## `@pytest.mark.skip`
+
+To skip a test we can place the _decorator_ `@pytest.mark.skip` above the unit test:
+
+```python
+@pytest.mark.skip
+def test_my_func_returns_hello_world():
+    result = my_func()
+    assert result == "Hello, World!"
+```
+
+Python decorators are used to add functionality to a function or method. A python decorator uses the <code>@</code> symbol and is placed above the function that it decorates. Follow your curiosity to learn more about the [implementation of decorators](./intro-to-decorators.md).
+
+### !end-callout
+
 ## Arrange, Act, Assert is Useful Test Structure
 
 What do we put into the test (function) body? "Arrange, Act, Assert" is a useful pattern for reading and structuring tests.
@@ -175,7 +193,7 @@ What do we put into the test (function) body? "Arrange, Act, Assert" is a useful
 | ------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Arrange | top                     | The top section of a test can include things to arrange, or set up. This can be creating variables, calling helper methods, or anything else depending on the context. Sometimes this section doesn't exist, because there is no setup. |
 | Act     | middle                  | This section is where what needs to be tested _happens_. If we're writing a unit test for a function, this is where we invoke the function.                                                                                             |
-| Assert  | end                     | The assert section is where any assert statements can be made.                                                                                                                                                                          |
+| Assert  | end                     | The assert section is where any assert statements can be made.   |
 
 ### Expecting a Raised Exception
 

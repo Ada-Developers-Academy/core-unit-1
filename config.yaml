@@ -217,6 +217,10 @@ Standards:
         Type: Lesson
         UID: 997e931b
         Path: /intro-to-tests/activity-tests.md
+      -
+        Type: Resource
+        UID: 533f8f6dada668c242e332613c0052ef
+        Path: /intro-to-tests/intro-to-decorators.md
     
   -
     Title: Iterating Over Data
@@ -399,33 +403,6 @@ Standards:
         Type: Lesson
         UID: eedb1f62ad21bb5e478b414c25e17998
         Path: /composition/problem-set-composition.md
-  -
-    Title: Python OOP
-    Description: "Intro to Design Patterns, Intro to Decorators, Static Methods and Class Methods, Problem Set: Static Methods and Class Methods"
-    UID: 53ff8a562d3c8ba58b02a9b3ef612df5
-    SuccessCriteria:
-      - success criteria
-    ContentFiles:
-      -
-        Type: Instructor
-        UID: 79ab0f6a47bee8ef7904918484d14ec3
-        Path: /python-oop/python-oop.instructor.md
-      -
-        Type: Lesson
-        UID: 2e1f6e9e38e6f594e6a86cfb15b494ed
-        Path: /python-oop/intro-to-design-patterns.md
-      -
-        Type: Lesson
-        UID: 533f8f6dada668c242e332613c0052ef
-        Path: /python-oop/intro-to-decorators.md
-      -
-        Type: Lesson
-        UID: fec017fec392028400734ad89c0ebde2
-        Path: /python-oop/static-methods-and-class-methods.md
-      -
-        Type: Lesson
-        UID: d70afaf7a11cea145281fd76ca10f1ab
-        Path: /python-oop/problem-set-static-methods-and-class-methods.md
   -
     Title: Unit 1 Wrap-up
     Description: "Activity: Mind Map"
