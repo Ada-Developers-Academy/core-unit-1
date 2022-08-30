@@ -14,8 +14,8 @@ Our goal is to practice generating exceptions and writing tests to handle those 
 - In the `test.py` file write a test for the function.
 
 You can execute the code from the command line with:  
-` $ python activity/main.py `   
-__Note: make sure to call your function inside your `main.py` file.__
+` $ python activity/main.py `    
+*Warning: To test your code manually, you will need to call your function inside your `main.py` file.  This will cause an issue with pytest, because your function throws an error.  When the test file imports main, if the function is being called in main, pytest will throw an error along the lines of "Interrupted: 1 error during collection" or something similar.  To remove this error when running pytest, comment out the line in main.py where you are calling your function.*
 
 You can run the tests with:  
 ` $ pytest `
@@ -34,7 +34,7 @@ In their main.py they write:
 def div_zero(num):
     x = num / 0
 
-div_zero(5)
+# div_zero(5)
 
 ```
 Note: Group A has written code that throws the error, in this case a division problem with 0 as the divisor, rather than writing `raises ZeroDivisionError`.  In this activity make sure to write code that generates the error.
