@@ -1,0 +1,4 @@
+# Instructor: Activity: Exception Handling
+
+- Students have not yet been introduced to working with Git collaboratively, so students are instructed to select one person as the "driver", and the driver will fork, clone and share their screen.  When we introduce collaboration, we can call back to this to point out that "driver/navigator" is a common collaboration strategy.
+- Additional exceptions have been added to this activity to accommodate smaller group sizes in larger classes.  An ideal group size is 3-4 students.  The first four exceptions are the most common ones that students will see.  An alternative is to assign two groups to each of the first four exceptions
