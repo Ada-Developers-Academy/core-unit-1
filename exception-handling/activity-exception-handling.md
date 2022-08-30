@@ -14,8 +14,8 @@ Our goal is to practice generating exceptions and writing tests to handle those 
 - In the `test.py` file write a test for the function.
 
 You can execute the code from the command line with:  
-` $ python activity/main.py `
-Note: make sure to call your function inside your `main.py` file.
+` $ python activity/main.py `   
+__Note: make sure to call your function inside your `main.py` file.__
 
 You can run the tests with:  
 ` $ pytest `
@@ -37,7 +37,7 @@ def div_zero(num):
 div_zero(5)
 
 ```
-NOTE: Group A has written code that throws the error, in this case a division problem with 0 as the divisor, rather than writing `raises ZeroDivisionError`.  In this activity make sure to write code that generates the error.
+Note: Group A has written code that throws the error, in this case a division problem with 0 as the divisor, rather than writing `raises ZeroDivisionError`.  In this activity make sure to write code that generates the error.
 
 In their test.py Group A writes:
 ```python
