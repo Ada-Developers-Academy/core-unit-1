@@ -13,11 +13,11 @@ Our goal is to practice generating exceptions and writing tests to handle those 
 - In the `main.py` file write a function that throws an exception with logic (not "raises Error".  See the note in the example below.)
 - In the `test.py` file write a test for the function.
 
-You can execute the code from the command line with:
+You can execute the code from the command line with:  
 ` $ python activity/main.py `
 Note: make sure to call your function inside your `main.py` file.
 
-You can run the tests with:
+You can run the tests with:  
 ` $ pytest `
 
 ### As a whole class
