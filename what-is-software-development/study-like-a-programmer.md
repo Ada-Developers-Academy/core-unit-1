@@ -351,14 +351,6 @@ Which of the following is _not_ a category of studying skills that was covered a
 Want a video series we recommend? Consider: ["Crash Course" on study skills](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W)
 
 
-
-
-
-
-## Past Adie Study-Skills Testimonials
-
-Every now and then we collect testimonials from graduated Adies who reflected on transitioning from having zero study skills to forging their study patterns. They are collectively located in the ["Student Testimonials" folder](https://drive.google.com/drive/folders/1PBPfla7ZaIaCTy6A3Fa84SHn4kYw4Xf8).
-
 ## Conclusion
 
 Finding your own study style is challenging, but necessary. Luckily, there are a lot of existing resources and ideas, as well as your own understanding of yourself and your own creativity!
