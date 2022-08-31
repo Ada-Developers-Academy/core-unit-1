@@ -298,7 +298,7 @@ Standards:
 
   -
     Title: Exception Handling
-    Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Problem Set: Exception Handling"
+    Description: "Raising and Handling Exceptions, Checking Exceptions in Tests, Problem Set: Exception Handling, Activity: Exception Handling"
     UID: xT5cCv
     SuccessCriteria:
       - success criteria
@@ -315,6 +315,14 @@ Standards:
         Type: Lesson
         UID: b72TBD
         Path: /exception-handling/problem-set-exception-handling.md
+      - 
+        Type: Lesson
+        UID: a98cd351-1bf9-4ef8-8535-43555485aa7c
+        Path: /exception-handling/activity-exception-handling.md
+      -
+        Type: Instructor
+        UID: 470c257e-3361-49c9-ae3b-bc90203971fe
+        Path: /exception-handling/activity-exception-handling.instructor.md
   -
     Title: Intro To Object-Oriented Programming
     Description: "What is OOP?, Defining Classes, Constructors, Creating Instances, Instance Methods, Problem Set: Intro to OOP, Problem Set: Constructors"
