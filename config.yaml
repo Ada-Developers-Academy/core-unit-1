@@ -324,6 +324,17 @@ Standards:
         UID: a98cd351-1bf9-4ef8-8535-43555485aa7c
         Path: /exception-handling/activity-exception-handling.md
   -
+    Title: Higher Order Functions
+    Description: "Intro to Higher Order Functions"
+    UID: 80bf0f55-5aad-4380-9f71-0d259ec33123
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 77440f05-b130-4540-885c-f81cbd7370d4
+        Path: /higher-order-functions/intro-to-higher-order-functions.md
+  -
     Title: Intro To Object-Oriented Programming
     Description: "What is OOP?, Defining Classes, Constructors, Creating Instances, Instance Methods, Problem Set: Intro to OOP, Problem Set: Constructors"
     UID: dfa81f9898dba334bbda0cdf7b32c9f6
