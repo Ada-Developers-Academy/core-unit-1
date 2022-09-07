@@ -11,6 +11,91 @@ In the previous lesson, we passed a named function to the `key` parameter in the
 
 In this lesson, we will use the list of movie dictionaries example to learn about *lambda expressions* and how they are used with the `key` parameter in the `sorted` function. 
 
+## Vocabulary and Synonyms
+| Vocab	| Definition| Synonyms |	How to Use in a Sentence |
+|--|--|--|--|
+|Lambda Expression| An unnamed function with a any number of arguments and a single expression | Anonymous Function | Lambda functions can be passed to the `key` parameter in the `min` function. |
+
+## Lambda Expression Syntax
+
+In this lesson we will work with the same list of movie dictionaries as the previous lesson:
+
+```py
+INTRIGUE_1 = {
+    "title": "Recursion",
+    "genre": "Intrigue",
+    "rating": 2.0,
+    "release_year": 1999
+}
+INTRIGUE_2 = {
+    "title": "Zero Dark Python",
+    "genre": "Intrigue",
+    "rating": 3.0,
+    "release_year": 2022
+}
+ACTION_1 = {
+    "title": "2 JavaScript 2 React",
+    "genre": "Action",
+    "rating": 4.2,
+    "release_year": 2015
+}
+ACTION_2 = {
+    "title": "JavaScript 3: VS Code Lint",
+    "genre": "Action",
+    "rating": 3.5,
+    "release_year": 2013
+}
+
+movies = [INTRIGUE_1, INTRIGUE_2, ACTION_1, ACTION_2]
+```
+
+Let's recall the code we wrote that used the `key` parameter with named functions to find the movie with the first title alphabetically, the lowest rating, and the earliest release date.
+
+```py
+def get_title(movie):
+    return movie["title"]
+
+def get_rating(movie):
+    return movie["rating"]
+
+def get_release_year(movie):
+    return movie["release_year"]
+
+first_movie_title = min(movies, key=get_title)
+lowest_rated_movie = min(movies, key=get_movie)
+earliest_movie = min(movies, key=get_release_year)
+```
+
+Note that the function `get_title`, `get_rating`, and `get_release_year` all have a single expression. These simple functions are a great candidate for lambda expressions.
+
+The syntax for a lambda expression is as follows:
+
+```py
+lambda arguments : expression
+```
+
+The expression is executed and the result is returned (source)[https://www.w3schools.com/python/python_lambda.asp].
+
+The function `get_title`:
+
+```py
+def get_title(movie):
+    return movie["title"]
+```
+is equivalent to the lambda expression below:
+
+```py
+lambda movie:movie["title"]
+```
+
+As such, we can replace the named functions in passed to the `key` parameter in the min functions with the following lambda expressions:
+
+```py
+first_movie_title = min(movies, key=lambda movie:movie["title"])
+lowest_rated_movie = min(movies, key=lambda movie:movie["rating"])
+earliest_movie = min(movies, key=lambda movie:movie["release year"])
+```
+
 ## Check For Understanding
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
