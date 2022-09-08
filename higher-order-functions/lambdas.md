@@ -3,13 +3,13 @@
 ## Learning Goals
 
 * Define lambda expressions
-* Describe how to pass lambda expressions as a parameter.
+* Describe how to pass lambda expressions as an argument to the `key` parameter
 
 ## Introduction 
 
-In the previous lesson, we passed a named function to the `key` parameter in the `sorted` function.
+In the previous lesson, we passed a named function to the `key` parameter in the `sorted`, `min`, and `max` functions.
 
-In this lesson, we will use the list of movie dictionaries example to learn about *lambda expressions* and how they are used with the `key` parameter in the `sorted` function. 
+In this lesson, we will use the list of movie dictionaries example to learn about *lambda expressions* and how they are used with the `key` parameter in the `min` function. 
 
 ## Vocabulary and Synonyms
 | Vocab	| Definition| Synonyms |	How to Use in a Sentence |
@@ -61,8 +61,8 @@ def get_rating(movie):
 def get_release_year(movie):
     return movie["release_year"]
 
-first_movie_title = min(movies, key=get_title)
-lowest_rated_movie = min(movies, key=get_movie)
+first_movie_by_title = min(movies, key=get_title)
+lowest_rated_movie = min(movies, key=get_rating)
 earliest_movie = min(movies, key=get_release_year)
 ```
 
@@ -74,7 +74,7 @@ The syntax for a lambda expression is as follows:
 lambda arguments : expression
 ```
 
-The expression is executed and the result is returned (source)[https://www.w3schools.com/python/python_lambda.asp]. Lambda expressions are a single line and they do not use parentheses.
+The expression is executed and the result is returned [source](https://www.w3schools.com/python/python_lambda.asp). Lambda expressions are a single line and they do not use parentheses.
 
 The function `get_title`:
 
@@ -91,9 +91,9 @@ lambda movie:movie["title"]
 As such, we can replace the named functions passed to the `key` parameter in the `min` functions with the following lambda expressions:
 
 ```py
-first_movie_title = min(movies, key=lambda movie:movie["title"])
-lowest_rated_movie = min(movies, key=lambda movie:movie["rating"])
-earliest_movie = min(movies, key=lambda movie:movie["release_year"])
+first_movie_by_title = min(movies, key=lambda movie: movie["title"])
+lowest_rated_movie = min(movies, key=lambda movie: movie["rating"])
+earliest_movie = min(movies, key=lambda movie: movie["release_year"])
 ```
 
 <!-- available callout types: info, success, warning, danger, secondary, star  -->
