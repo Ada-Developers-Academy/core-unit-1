@@ -1,1 +1,147 @@
 # Writing Higher Order Functions
+
+## Learning Goals
+
+* Review one example of writing a higher order function
+
+## Introduction
+
+Thus far we have learned how to pass a function as a parameter and how to write an anonymous function using lambda expressions. In this lesson we will examine an example of writing a custom higher order function. 
+
+## Movie Example Review
+
+Let's return to our movie example. In the [lesson on passing functions as parameters](./min-max-sorted.md) we first considered the following three functions to find the movie with the first title, the earliest release  year, and the lowest rating:
+
+```py    
+def get_first_movie(movies):
+    min_movie = movies[0]
+    min_title = movies[0]["title"]
+    for movie in movies:
+        if movie["title"] < min_title:
+            min_movie = movie
+            min_title = movie["title"]
+    return min_title
+
+def get_earliest_movie(movies):
+    min_movie = movies[0]
+    min_date = movies[0]["release_year"]
+    for movie in movies:
+        if movie["release_year"] < min_date:
+            min_movie = movie
+            min_date = movie["release_year"]
+    return min_movie
+
+def get_lowest_rated_movie(movies):
+    min_movie = movies[0]
+    min_rating = movies[0]["rating"]
+    for movie in movies:
+        if movie["rating"] < min_rating:
+            min_movie = movie
+            min_rating = movie["rating"]
+    return min_movie
+```
+
+We then saw how we could DRY up this code with the `min` function and the optional `key` parameter.
+
+```py
+def get_title(movie):
+    return movie["title"]
+
+def get_rating(movie):
+    return movie["rating"]
+
+def get_release_year(movie):
+    return movie["release_year"]
+
+first_movie_title = min(movies, key=get_title)
+lowest_rated_movie = min(movies, key=get_movie)
+earliest_movie = min(movies, key=get_release_year)
+```
+
+Finally, in the lesson on [lambda expressions](./lambdas.md), we achieved the functionality above with more concise code:
+
+```py
+first_movie_title = min(movies, key=lambda movie:movie["title"])
+lowest_rated_movie = min(movies, key=lambda movie:movie["rating"])
+earliest_movie = min(movies, key=lambda movie:movie["release_year"])
+```
+
+## Writing a Custom Min Function
+
+Now, let's demystify the `min` function with the optional `key` parameter by writing our own custom min function `min_function_custom`. We will use `get_first_movie` as a reference:
+
+```py
+def get_first_movie(movies):
+    min_movie = movies[0]
+    min_title = movies[0]["title"]
+    for movie in movies:
+        if movie["title"] < min_title:
+            min_movie = movie
+            min_title = movie["title"]
+    return min_title
+```
+
+Notice that we can replace each line with the expression `movie["title"]` with a function call `get_title(movies[0])`. The function has not changed at all.
+
+```py
+def get_first_movie(movies):
+    min_movie = movies[0]
+    min_title = get_title(movies[0])
+    for movie in movies:
+        if get_title(movie) < min_title:
+            min_movie = movie
+            min_title = get_title(movie)
+    return min_title
+```
+
+Now, let's take it one step further to generalize our function to find the minimum movie by any key (i.e. `"title"`, `"rating"`, or `"release_year"`). We will add a second parameter, a function that gets the value for a specified key `get_value_for_key`. We will generalize our variable names changing `movies` to `collection` and `movie` to `item.` Each line from `get_first_movie` that has the expression `get_title(movie)` will be replaced with `get_value_for_key(item)`
+
+```py
+def min_function_custom(collection, get_value_for_key):
+     min_item = collection[0]
+     min_value = get_value_for_key(collection[0])
+     for item in collection:
+         if get_value_for_key(item) < min_value:
+             min_item = item
+             min_value = get_value_for_key(item)
+     return min_item
+```
+
+We can now class `min_function_custpm` just like the built in `min` function. We can pass in a named function or a lambda expression for the `get_value_for_key` parameter
+
+```py
+first_movie_title = min_function_custom(movies, get_value_for_key=get_title)
+lowest_rated_movie = min_function_custom(movies, get_value_for_key=get_movie)
+earliest_movie = min_function_custom(movies, get_value_for_key=get_release_year)
+```
+or 
+
+```py
+first_movie_title = min_function_custom(movies, get_value_for_key=lambda movie:movie["title"])
+lowest_rated_movie = min_function_custom(movies, get_value_for_key=lambda movie:movie["rating"])
+earliest_movie = min_function_custom(movies, get_value_for_key=lambda movie:movie["release_year"])
+```
+
+We can also pass the second parameter as a positional argument rather than a keyword argument:
+
+```py
+first_movie_title = min_function_custom(movies, get_title)
+lowest_rated_movie = min_function_custom(movies, get_movie)
+earliest_movie = min_function_custom(movies, get_release_year)
+```
+or 
+
+```py
+first_movie_title = min_function_custom(movies, lambda movie:movie["title"])
+lowest_rated_movie = min_function_custom(movies, lambda movie:movie["rating"])
+earliest_movie = min_function_custom(movies, lambda movie:move["release_year"])
+```
+
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## Writing Higher Order Functions
+
+This lesson provides one example of how to write one higher order function to provide initial exposure to writing higher order functions. We do not need to be fluent with this skill at this stage of our learning. We will see more examples in the Javascript Unit and will gain fluency with writing higher order functions.
+
+### !end-callout

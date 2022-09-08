@@ -325,7 +325,7 @@ Standards:
         Path: /exception-handling/activity-exception-handling.md
   -
     Title: Higher Order Functions
-    Description: "Intro to Higher Order Functions"
+    Description: "Passing Functions as Arguments, Lambda Expressions, Writing Higher Order Functions, Problem Set: Higher Order Functions"
     UID: 80bf0f55-5aad-4380-9f71-0d259ec33123
     SuccessCriteria:
       - success criteria

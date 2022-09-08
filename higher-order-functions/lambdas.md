@@ -74,7 +74,7 @@ The syntax for a lambda expression is as follows:
 lambda arguments : expression
 ```
 
-The expression is executed and the result is returned (source)[https://www.w3schools.com/python/python_lambda.asp].
+The expression is executed and the result is returned (source)[https://www.w3schools.com/python/python_lambda.asp]. Lambda expressions are a single line and they do not use parentheses.
 
 The function `get_title`:
 
@@ -82,19 +82,29 @@ The function `get_title`:
 def get_title(movie):
     return movie["title"]
 ```
-is equivalent to the lambda expression below:
+is equivalent to the following lambda expression:
 
 ```py
 lambda movie:movie["title"]
 ```
 
-As such, we can replace the named functions in passed to the `key` parameter in the min functions with the following lambda expressions:
+As such, we can replace the named functions passed to the `key` parameter in the `min` functions with the following lambda expressions:
 
 ```py
 first_movie_title = min(movies, key=lambda movie:movie["title"])
 lowest_rated_movie = min(movies, key=lambda movie:movie["rating"])
-earliest_movie = min(movies, key=lambda movie:movie["release year"])
+earliest_movie = min(movies, key=lambda movie:movie["release_year"])
 ```
+
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## Lambda Expression Usage
+
+Lambda expressions are ideally suited to simple and concise functionality. They can take any number of arguments, but must have a single line expression.
+
+### !end-callout
+
 
 ## Check For Understanding
 
@@ -117,11 +127,11 @@ Which of the following are true for lambda expressions [reference](https://www.f
 
 ##### !options
 
-a| [Lambda expressions are also known as anonymous functions]
-b| [Lambda expressions only contain one expression]
-c| [Lambda functions can only have one argument]
-d| [Lambda functions can have any number of arguments]
-e| [Lambda expressions are good for chained conditionals with multiple `elif`s]
+a| Lambda expressions are also known as anonymous functions
+b| Lambda expressions only contain one expression
+c| Lambda functions can only have one argument
+d| Lambda functions can have any number of arguments
+e| Lambda expressions are good for chained conditionals with multiple `elif`s
 
 
 ##### !end-options
@@ -157,16 +167,16 @@ The [key](https://docs.python.org/3/howto/sorting.html#key-functions) parameter 
 
 ##### !question
 
-Which of the following are valid to pass to the `key` parameter in the `sorted` function?
+Which of the following are valid to pass to the `key` parameter in the `min` function?
 
 ##### !end-question
 
 ##### !options
 
-a| [A variable that points to a list of integers]
-b| [A variable that points to a list of dictionaries]
-c| [A variable that points to a function]
-d| [A lambda expression]
+a| A variable that points to a list of integers
+b| A variable that points to a list of dictionaries
+c| A variable that points to a function
+d| A lambda expression
 
 ##### !end-options
 
@@ -186,37 +196,3 @@ The [key](https://docs.python.org/3/howto/sorting.html#key-functions) parameter 
 ### !end-challenge
 
 <!-- ======================= END CHALLENGE ======================= -->
-
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
-<!-- Replace everything in square brackets [] and remove brackets  -->
-
-### !challenge
-
-* type: paragraph
-* id: 9ecfb979-f766-49e9-82ca-79e900f57abe
-* title: Higher Order Functions
-<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
-<!-- * topics: [python, pandas] (Checkpoints only, optional the topics for analyzing points) -->
-
-##### !question
-
-What is the benefit of passing a lambda function to the key parameter in the `sorted` function.
-
-##### !end-question
-
-##### !placeholder
-
-The benefit of...
-
-##### !end-placeholder
-
-##### !explanation
-
-Lambda functions provide a succinct way...
-
-##### !end-explanation
-
-### !end-challenge
-
-<!-- ======================= END CHALLENGE ======================= -->
-

@@ -134,16 +134,20 @@ print("")
 # print(min_function_release_year(movies))
 
 
-# def min_function_custom(collection, key):
-#     min_item = collection[0]
-#     min_key = key(collection[0])
-#     for item in collection:
-#         if key(item) < min_key:
-#             min_item = item
-#             min_key = key(item)
-#     return min_item
+def min_function_custom(collection, key):
+    min_item = collection[0]
+    min_key = key(collection[0])
+    for item in collection:
+        if key(item) < min_key:
+            min_item = item
+            min_key = key(item)
+    return min_item
 
 
-# print(min_function_custom(movies, get_release_year))
-# print(min_function_custom(movies, get_title))
-# print(min_function_custom(movies, get_rating))
+print(min_function_custom(movies, lambda movie: movie["title"]))
+print(min_function_custom(movies, lambda movie: movie["rating"]))
+print(min_function_custom(movies, lambda movie: movie["release_year"]))
+
+first_movie_title = min(movies, key=lambda movie: movie["title"])
+lowest_rated_movie = min(movies, key=lambda movie: movie["rating"])
+earliest_movie = min(movies, key=lambda movie: movie["release_year"])

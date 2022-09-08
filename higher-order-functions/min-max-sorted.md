@@ -1,13 +1,14 @@
-# Passing Functions as Parameters: Min, Max, and Sort
+# Passing Functions as Arguments: Min, Max, and Sort
 
 ## Learning Goals
 
-* Demonstrate how to pass a function as parameter
+* Demonstrate how to pass a function as an argument
 * Describe how to use the key parameter in the `sorted` function to sort a list of dictionaries by a specific key
+* Describe how to use the key parameter in the `min` function to find the minimum in a list of dictionaries by a specific key
 
 ## Introduction
 
-Imagine we have a list of movie titles we'd like to sort alphabetically. Python provides a couple convenient functions for this task. The [`sort`](https://docs.python.org/3/howto/sorting.html#sorting-basics) method can be called on a list and sorts the list in place. The `sorted` function take a list as a parameter and returns the sorted list.  
+Imagine we have a list of movie titles we'd like to sort alphabetically. Python provides a couple convenient functions for this task. The [`sort`](https://docs.python.org/3/howto/sorting.html#sorting-basics) method can be called on a list and sorts the list in place. The `sorted` function takes a list as a parameter and returns the sorted list.  
 
 But what if we have a list of dictionaries representing movies that we want to sort by title, or perhaps by rating. Or perhaps we want to find the most recent movie or oldest movie in a list.
 
@@ -31,9 +32,9 @@ movie_titles = [
 To sort the titles alphabetically in place we can use `sort` method:
 
 ```py
-movies_titles.sort()
+movie_titles.sort()
 
-# movies_titles = [
+# movie_titles = [
 #   '2 JavaScript 2 React', 
 #   'Javascript 3: VS Code Lint', 
 #   'Recursion',
@@ -41,7 +42,7 @@ movies_titles.sort()
 # ]
 ```
 
-Alteratively, we can use the function sorted to return the list sorted alphabetically:
+Alteratively, we can use the function `sorted` to return the list sorted alphabetically:
 
 ```py
 sorted_movie_titles = sorted(movie_titles)
@@ -54,7 +55,7 @@ sorted_movie_titles = sorted(movie_titles)
 # ]
 ```
 
-Similarly to sorting, to find the first movie title alphabetically we can use the `min` function and to find the last movie alphabetically we can use the `max` function.
+Similar to sorting, to find the first movie title alphabetically we can use the `min` function and to find the last movie alphabetically we can use the `max` function.
 
 ```py
 first_movie_title = min(movie_titles)
@@ -100,7 +101,7 @@ ACTION_2 = {
 movies = [INTRIGUE_1, INTRIGUE_2, ACTION_1, ACTION_2]
 ```
 
-Consider how to implement a function using a loop that returns the movie dictionary with the first title alphabetically, the review the code below.
+Consider how to implement a function using a loop that returns the movie dictionary with the first title alphabetically, then review the code below.
 
 ```py
 def get_first_movie(movies):
@@ -110,10 +111,11 @@ def get_first_movie(movies):
         if movie["title"] < min_title:
             min_movie = movie
             min_title = movie["title"]
-    return min_title
+    return min_movie
 
-first_movie_title = get_first_movie(movie_titles)
-# first_movie_title = {
+
+first_movie_by_title = get_first_movie(movies)
+# first_movie_by_title = {
 #    "title": "2 JavaScript 2 React",
 #    "genre": "Action",
 #    "rating": 4.2,
@@ -188,11 +190,10 @@ def get_rating(movie):
     return movie["rating"]
 ```
 
-We then can pass this function to the `key` parameter in the min function.
+We then can pass this function to the `key` parameter in the `min` function.
 
 ```py
-lowest_rated_movie = min(movies, key=get_movie)
-
+lowest_rated_movie = min(movies, key=get_rating)
 # lowest_rated_movie = {
 #    "title": "Recursion",
 #    "genre": "Intrigue",
@@ -218,9 +219,9 @@ earliest_movie = min(movies, key=get_release_year)
 #    "release_year": 1999
 #}
 
-first_movie_title = min(movies, key=get_title)
+first_movie_by_title = min(movies, key=get_title)
 
-# first_movie_title = {
+# first_movie_by_title = {
 #    "title": "2 JavaScript 2 React",
 #    "genre": "Action",
 #    "rating": 4.2,
@@ -228,7 +229,22 @@ first_movie_title = min(movies, key=get_title)
 #}
 ```
 
+### !callout-info
+
+## Keyword Arguments
+
+The `key` parameter is an example of a keyword argument. Thus far we've defined functions with positional arguments. The table below describes the difference between defining and calling functions with positional and keyword arguments. 
+
+| Type | Function Definition | Function Call |
+| -- | --| --|
+| Positional Arguments | `def function_name(parameter1, parameter2)` | `function_name(argument1, argument2)`|
+| Keyword Arguments |`def function_name(parameter1, parameter2)` | `function_name(parameter1=argument1, parameter2=argument2)` |
+
+### !end-callout
+
 ## Higher Order Functions
+
+The `min` function with the `key` parameter is an example of a higher order function.
 
 ### !callout-info
 
@@ -238,7 +254,7 @@ A higher order function is a function that takes another function as an argument
 
 ### !end-callout
 
-A function is an object in memory that is a set of instructions. A function names is a variable that points to this set of instructions. 
+A function is an object in memory that is a set of instructions. A function name is a variable that points to this set of instructions. 
 
 When we use the `()` syntax, we are calling the address of that variable. When we leave off the `()`, we are looking up the address that the variable is pointing to.
 
@@ -247,9 +263,9 @@ Just like variables that point to other objects (strings, integers, lists, etc.)
 ```py
 get_the_title = get_title
 
-first_movie_title = min(movies, key=get_the_title)
+first_movie_by_title = min(movies, key=get_the_title)
 
-# first_movie_title = {
+# first_movie_by_title = {
 #    "title": "2 JavaScript 2 React",
 #    "genre": "Action",
 #    "rating": 4.2,
