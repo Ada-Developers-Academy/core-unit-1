@@ -229,18 +229,40 @@ first_movie_by_title = min(movies, key=get_title)
 #}
 ```
 
+## Keyword Arguments
+
 ### !callout-info
 
 ## Keyword Arguments
 
-The `key` parameter is an example of a keyword argument. Thus far we've defined functions with positional arguments. The table below describes the difference between defining and calling functions with positional and keyword arguments. 
+The `key` parameter is an example of a keyword argument. 
+
+### !end-callout
+
+Thus far we've defined functions with positional arguments. The table below describes the difference between defining and calling functions with positional and keyword arguments. 
 
 | Type | Function Definition | Function Call |
 | -- | --| --|
 | Positional Arguments | `def function_name(parameter1, parameter2)` | `function_name(argument1, argument2)`|
 | Keyword Arguments |`def function_name(parameter1, parameter2)` | `function_name(parameter1=argument1, parameter2=argument2)` |
 
-### !end-callout
+Functions can be called with a mix of keyword and positional arguments, but positional arguments cannot follow keyword arguments in the function call. To learn more, [here is an article we recommend](https://treyhunner.com/2018/04/keyword-arguments-in-python/).
+
+Consider the following function:
+
+```py
+def sum(a, b):
+    return a + b
+```
+
+The following table describes valid and invalid syntax for calling `get_the_sum`:
+
+| Function Call | Valid Syntax (yes/no) | Explanation |
+|--|--|--|
+|`sum(1, 2)` | yes | This is an example of calling a function with two positional arguments. |
+|`sum(a=1, b=2)` | yes | This is an example of calling a function with two keyword arguments. |
+|`sum(1, b=2)` | yes | This is an example of calling a function with a mix of positional and keyword arguments. |
+|`sum(a=1, 2)` | no | This is invalid. Positional arguments cannot follow keyword arguments. <br> `SyntaxError: positional argument follows keyword argument`|
 
 ## Higher Order Functions
 

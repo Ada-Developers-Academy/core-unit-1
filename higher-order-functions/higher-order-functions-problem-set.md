@@ -9,6 +9,44 @@ Complete all questions below.
 
 ### !challenge
 
+* type: multiple-choice
+* id: 2a948f45-615e-4e79-8f90-260bd231ba28
+* title: Higher Order Functions
+
+##### !question
+
+The following is the correct syntax for passing a keyword argument when calling a function.
+
+##### !end-question
+
+##### !options
+
+a| function_name(argument1, parameter2)
+b| [Option 2]
+c| [Option 3, etc]
+
+##### !end-options
+
+##### !answer
+
+b|
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
 * type: code-snippet
 * language: python3.6
 * id: 7bbe5762-40e2-40f3-8af5-b6d3786ea57d
