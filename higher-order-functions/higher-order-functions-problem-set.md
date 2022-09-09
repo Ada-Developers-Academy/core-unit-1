@@ -9,34 +9,44 @@ Complete all questions below.
 
 ### !challenge
 
-* type: multiple-choice
+* type: checkbox
 * id: 2a948f45-615e-4e79-8f90-260bd231ba28
 * title: Higher Order Functions
 
 ##### !question
 
-The following is the correct syntax for passing a keyword argument when calling a function.
+Check all the example function calls that represent valid syntax.
 
 ##### !end-question
 
 ##### !options
 
-a| function_name(argument1, parameter2)
-b| [Option 2]
-c| [Option 3, etc]
+a| `function_name(argument1, argument2)`
+b| `function_name(parameter1=argument1, argument2)`
+c| `function_name(parameter1=argument1, parameter2=argument2)`
+d| `function_name(argument1, parameter2=argument2)`
+e| `function_name(argument1, parameter2=argument2, parameter3=argument3)`
+f| `function_name(argument1, argument2, parameter3=argument3)`
+g| `function_name(argument1, parameter2=argument2, parameter3)`
 
 ##### !end-options
 
 ##### !answer
 
-b|
+a|
+c| 
+d|
+e|
+f|
 
 ##### !end-answer
 
-<!-- other optional sections -->
-<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
-<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
-<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+##### !explanation
+
+Function calls may have just positional arguments, just keyword arguments, or a mix of both. Positional arguments may not follow keyword arguments.
+
+##### !end-explanation
+
 
 ### !end-challenge
 
