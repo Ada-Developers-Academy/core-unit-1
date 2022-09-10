@@ -3,16 +3,16 @@
 ## Learning Goals
 
 * Demonstrate how to pass a function as an argument
-* Describe how to use the key parameter in the `sorted` function to sort a list of dictionaries by a specific key
-* Describe how to use the key parameter in the `min` function to find the minimum in a list of dictionaries by a specific key
+* Describe how to use the `key` parameter of the `sorted` function to sort a list of dictionaries by a specific key
+* Describe how to use the `key` parameter of the `min` function to find the minimum in a list of dictionaries by a specific key
 
 ## Introduction
 
 Imagine we have a list of movie titles we'd like to sort alphabetically. Python provides a couple convenient functions for this task. The [`sort`](https://docs.python.org/3/howto/sorting.html#sorting-basics) method can be called on a list and sorts the list in place. The `sorted` function takes a list as a parameter and returns the sorted list.  
 
-But what if we have a list of dictionaries representing movies that we want to sort by title, or perhaps by rating. Or perhaps we want to find the most recent movie or oldest movie in a list.
+But what if we have a list of dictionaries representing movies that we want to sort by title, or perhaps by rating. Maybe we want to find the most recent movie in a list, or perhaps the oldest.
 
-Python provides the `key` parameter for `min`, `max`, and `sorted` functions, just to name a few. The `key` parameters takes a function that provides the key to use to indicate which attribute to use for finding the minimum, finding the maximum, or to sort. 
+There are several functions in Python, including the `min`, `max`, and `sorted` functions, that accept a `key` parameter. This `key` parameter takes a function that will be called on each item in the list to retrieve a special value, called a comparison key, for that item. The comparison keys will then be used to find the minimum, find the maximum, or to sort.
 
 ## Movie Example
 
@@ -29,7 +29,7 @@ movie_titles = [
 ]
 ```
 
-To sort the titles alphabetically in place we can use `sort` method:
+To sort the titles alphabetically in place, we can use the `sort` method:
 
 ```py
 movie_titles.sort()
@@ -42,7 +42,7 @@ movie_titles.sort()
 # ]
 ```
 
-Alteratively, we can use the function `sorted` to return the list sorted alphabetically:
+Alternatively, we can use the function `sorted` to return the list sorted alphabetically:
 
 ```py
 sorted_movie_titles = sorted(movie_titles)
@@ -55,7 +55,7 @@ sorted_movie_titles = sorted(movie_titles)
 # ]
 ```
 
-Similar to sorting, to find the first movie title alphabetically we can use the `min` function and to find the last movie alphabetically we can use the `max` function.
+Similar to sorting, to find the first movie title alphabetically we can use the `min` function, and to find the last movie alphabetically we can use the `max` function.
 
 ```py
 first_movie_title = min(movie_titles)
@@ -68,7 +68,7 @@ last_movie_title = max(movie_titles)
 
 ### List of Movie Dictionaries
 
-Let's now consider that we may like to store information about each movie beyond it's title. A dictionary is a great data structure for this. However, finding the first or last movie title and sorting a list of movie dictionaries by title is more involved than performing these operations on a list of strings.
+But what if we store more information about each movie than just its title? A dictionary is a great data structure for this! However, finding the movie dictionary with the first or last title, or sorting a list of movie dictionaries by title, is more involved than performing these operations on a list of strings.
 
 Let's consider the following list of movie titles:
 
@@ -101,7 +101,12 @@ ACTION_2 = {
 movies = [INTRIGUE_1, INTRIGUE_2, ACTION_1, ACTION_2]
 ```
 
-Consider how to implement a function using a loop that returns the movie dictionary with the first title alphabetically, then review the code below.
+We could write our own logic to find the movie dictionary with the first title alphabetically. Consider how we might accomplish this, then review one possible implementation below.
+
+<br>
+
+<details>
+    <summary>Finding the movie dictionary with the first title alphabetically</summary>
 
 ```py
 def get_first_movie(movies):
@@ -120,10 +125,17 @@ first_movie_by_title = get_first_movie(movies)
 #    "genre": "Action",
 #    "rating": 4.2,
 #    "release_year": 2015
-#}
+# }
 ```
 
-We can implement a similar function to get the movie dictionary with the earliest release date:
+</details>
+
+We can implement a similar function to get the movie dictionary with the earliest release date.
+
+<br>
+
+<details>
+    <summary>Finding the movie dictionary with the earliest release date</summary>
 
 ```py
 def get_earliest_movie(movies):
@@ -142,10 +154,17 @@ earliest_movie = get_earliest_movie(movies)
 #    "genre": "Intrigue",
 #    "rating": 2.0,
 #    "release_year": 1999
-#}
+# }
 ```
 
+</details>
+
 And we can implement yet another similar function to get the movie with the lowest rating.
+
+<br>
+
+<details>
+    <summary>Finding the movie dictionary with the lowest rating</summary>
 
 ```py
 def get_lowest_rated_movie(movies):
@@ -164,33 +183,35 @@ lowest_rated_movie = get_lowest_rated_movie(movies)
 #    "genre": "Intrigue",
 #    "rating": 2.0,
 #    "release_year": 1999
-#}
+# }
 ```
+
+</details>
 
 <!-- available callout types: info, success, warning, danger, secondary, star  -->
 ### !callout-info
 
 ## DRY: Don't Repeat Yourself
 
-Take a moment to notice the amount of repeated code. We will now look at one way to DRY up this functionality, passing a function to the `key` parameter of the `min` function.
+After reviewing the implementations above, take a moment to notice the amount of repeated code. We will now look at one way to DRY up this functionality, passing a function to the `key` parameter of the `min` function. Later, we'll look at how we can DRY up our own functions, such as in cases where there might not be a library function for us to use already!
 
 ### !end-callout
 
 
 ## The `key` parameter.
 
-The [`key` parameter in the `min` function](https://docs.python.org/3/library/functions.html#min) specifies an ordering function that is used to extract a comparison key for each item in the list.
+The [`key` parameter of the `min` function](https://docs.python.org/3/library/functions.html#min) is used to provide a function that `min` can use to extract a comparison key for each item in the list.
 
-For example, to find the lowest rated movie in a list of dictionaries, we need to pass the `key` parameter in the `min` function that returns value corresponding to the `"rating"` for a movie.
+For example, to find the lowest rated movie in a list of dictionaries, we need to pass a function to the `key` parameter of the `min` function that `min` will be able to use to retrieve the `"rating"` for a movie.
 
-Such as function is defined below:
+Such a function is defined below:
 
 ```py
 def get_rating(movie):
     return movie["rating"]
 ```
 
-We then can pass this function to the `key` parameter in the `min` function.
+We then can pass this function to the `key` parameter of the `min` function.
 
 ```py
 lowest_rated_movie = min(movies, key=get_rating)
@@ -199,10 +220,10 @@ lowest_rated_movie = min(movies, key=get_rating)
 #    "genre": "Intrigue",
 #    "rating": 2.0,
 #    "release_year": 1999
-#}
+# }
 ```
 
-We can use the same pattern to find the movie with the earliest release date and the first title alphabetically.
+We can use the same pattern to find the movie with the earliest release date, or the first title alphabetically.
 
 ```py
 def get_release_year(movie):
@@ -217,7 +238,7 @@ earliest_movie = min(movies, key=get_release_year)
 #    "genre": "Intrigue",
 #    "rating": 2.0,
 #    "release_year": 1999
-#}
+# }
 
 first_movie_by_title = min(movies, key=get_title)
 
@@ -226,7 +247,7 @@ first_movie_by_title = min(movies, key=get_title)
 #    "genre": "Action",
 #    "rating": 4.2,
 #    "release_year": 2015
-#}
+# }
 ```
 
 ## Keyword Arguments
@@ -235,7 +256,7 @@ first_movie_by_title = min(movies, key=get_title)
 
 ## Keyword Arguments
 
-The `key` parameter is an example of a keyword argument. 
+The `key` parameter is an example of a keyword argument, also referred to as a named parameter.
 
 ### !end-callout
 
@@ -243,26 +264,28 @@ Thus far we've defined functions with positional arguments. The table below desc
 
 | Type | Function Definition | Function Call |
 | -- | --| --|
-| Positional Arguments | `def function_name(parameter1, parameter2)` | `function_name(argument1, argument2)`|
-| Keyword Arguments |`def function_name(parameter1, parameter2)` | `function_name(parameter1=argument1, parameter2=argument2)` |
+| Positional Arguments | `def function_name(​parameter1, parameter2)` | `function_name(​argument1, argument2)`|
+| Keyword Arguments |`def function_name(​parameter1, parameter2)` | `function_name(​parameter1=argument1, parameter2=argument2)` |
 
 Functions can be called with a mix of keyword and positional arguments, but positional arguments cannot follow keyword arguments in the function call. To learn more, [here is an article we recommend](https://treyhunner.com/2018/04/keyword-arguments-in-python/).
 
 Consider the following function:
 
 ```py
-def sum(a, b):
+def add(a, b):
     return a + b
 ```
 
-The following table describes valid and invalid syntax for calling `get_the_sum`:
+The following table describes valid and invalid syntax for calling `add`:
 
-| Function Call | Valid Syntax (yes/no) | Explanation |
+|<div style="min-width:140px;">Function Call</div>| Valid Syntax (yes/no) | Explanation |
 |--|--|--|
-|`sum(1, 2)` | yes | This is an example of calling a function with two positional arguments. |
-|`sum(a=1, b=2)` | yes | This is an example of calling a function with two keyword arguments. |
-|`sum(1, b=2)` | yes | This is an example of calling a function with a mix of positional and keyword arguments. |
-|`sum(a=1, 2)` | no | This is invalid. Positional arguments cannot follow keyword arguments. <br> `SyntaxError: positional argument follows keyword argument`|
+|`add(1, 2)` | yes | This is an example of calling a function with two positional arguments. |
+|`add(a=1, b=2)` | yes | This is an example of calling a function with two keyword arguments. |
+|`add(1, b=2)` | yes | This is an example of calling a function with a mix of positional and keyword arguments. |
+|`add(a=1, 2)` | no | This is invalid. Positional arguments cannot follow keyword arguments. <br> `SyntaxError: positional argument follows keyword argument`|
+
+Python also provides a way for a function to indicate that certain parameters _must_ be called as either positional or keyword arguments. This is why we must supply our `key` function using a keyword argument. We won't go into how to use this in our own functions, but [PEP 3102](https://peps.python.org/pep-3102/) provides additional details. Follow your curiosity!
 
 ## Higher Order Functions
 
@@ -276,14 +299,31 @@ A higher order function is a function that takes another function as an argument
 
 ### !end-callout
 
-A function is an object in memory that is a set of instructions. A function name is a variable that points to this set of instructions. 
+In Python, a function is an object in memory, just like any other value. But instead of storing a number, string, or collection, it stores a set of instructions. And in the same way that a variable name _isn't_ the value it refers to, a function name isn't the function itself. It's a variable that points to the set of instructions which make up the function.
 
-When we use the `()` syntax, we are calling the address of that variable. When we leave off the `()`, we are looking up the address that the variable is pointing to.
+```py
+# my_num is a variable that refers to an integer object with the value 3
+my_num = 3
 
-Just like variables that point to other objects (strings, integers, lists, etc.), we can assign a function to another variable:
+# my_fun is a variable that refers to a function object containing the pass instruction
+def my_fun():
+    pass
+```
+
+When we write parentheses `()` after a variable that refers to a function, we are asking Python to call (run) the function object referred to by the variable. When we leave off the parentheses `()`, we are only getting a reference to the object (here a function object) the variable is pointing at, the same as when we write any other variable name.
+
+So just like variables that point to other objects (strings, integers, lists, etc.), we can assign the function object referred to by one variable to another variable:
 
 ```py
 get_the_title = get_title
+```
+
+And use it just as we could when referring to it by its original name.
+
+```py
+movie_title = get_the_title(INTRIGUE_1)
+
+# movie_title = "Recursion"
 
 first_movie_by_title = min(movies, key=get_the_title)
 
@@ -292,8 +332,10 @@ first_movie_by_title = min(movies, key=get_the_title)
 #    "genre": "Action",
 #    "rating": 4.2,
 #    "release_year": 2015
-#}
+# }
 ```
+
+The fact that functions are objects allows us to reassign them to other variables. And since function parameters are variables themselves, we can pass a reference to a function stored in one variable (such as its original name) as an argument to another function.
 
 ## Check For Understanding
 
@@ -333,7 +375,7 @@ b|
 
 ##### !explanation
 
-The `key` parameter takes a function as an argument. Recall that a function can be assigned to a variable just like any other object in Python. The `()` call a function, whereas the function name is a variable that points to the function object in memory, just like any other variable.
+The `key` parameter takes a function as an argument. Recall that a function can be assigned to a variable just like any other object in Python. The parentheses `()` call a function, whereas the function name is a variable that points to the function object in memory, just like any other variable.
 
 ##### !end-explanation
 

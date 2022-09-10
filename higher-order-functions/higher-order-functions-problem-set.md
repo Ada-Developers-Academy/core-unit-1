@@ -274,8 +274,6 @@ def get_max_word(words):
 
 Imagine you have a list of dictionaries that represents the words and their score in the Adagrams game. Write a function `sort_words` that takes a list of word dictionaries. You should use the `sorted` function with the `key` parameter such that the `sort_words` function returns a list of word dictionaries sorted alphabetically by `"word"`. 
 
-In the case of an empty list, it should return `None`.
-
 Example inputs and outputs:
 
 | input | output | 
@@ -284,7 +282,7 @@ Example inputs and outputs:
 |`[{"word": "roar", "score": 4}, {"word": "ada", "score": 4}]`| `[{"word": "ada", "score": 4}, {"word": "roar", "score": 4}]`|
 |`[{"word": "how", "score": 9}]`|`[{"word": "how", "score": 9}]`|
 ||
-|`[]`| None|
+|`[]`| `[]` |
 ##### !end-question
 
 ##### !placeholder
@@ -327,7 +325,7 @@ class test_max_word(unittest.TestCase):
     def test_empty(self):
         words = []
 
-        result = None
+        result = []
 
         self.assertEqual(result,p.sort_words(words))
 ```
@@ -343,9 +341,6 @@ An example solution:
 
 ```py
 def sort_words(words):
-    if not words:
-        return None
-    
     return sorted(words, key=lambda word: word["word"])
 ```
 ##### !end-explanation
