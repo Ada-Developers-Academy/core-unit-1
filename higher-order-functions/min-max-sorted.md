@@ -19,7 +19,7 @@ There are several functions in Python, including the `min`, `max`, and `sorted` 
 | Vocab	| Definition| Synonyms |	How to Use in a Sentence |
 |--|--|--|--|
 |Higher Order Function| A function that takes a function as an argument | - | When we use the optional `key` parameter with the `sorted` function, `sorted` is a higher order function. |
-|Positional Arguments|Arguments that must be provided in the specified order in the function call | -|It is not uncommon to introduce a bug by passing positional arguments to a function in the wrong order. |
+|Positional Arguments|Arguments that must be passed to a function in the specified order | -|It is not uncommon to introduce a bug by passing positional arguments to a function in the wrong order. |
 |Keyword Arguments| Arguments that are passed to a function with the `name=value` syntax |Named Parameters |Keyword arguments can be passed to a function in any order, but cannot be followed by positional arguments.|
 
 ## Movie Example
