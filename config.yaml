@@ -324,6 +324,29 @@ Standards:
         UID: a98cd351-1bf9-4ef8-8535-43555485aa7c
         Path: /exception-handling/activity-exception-handling.md
   -
+    Title: Higher Order Functions
+    Description: "Passing Functions as Arguments, Lambda Expressions, Writing Higher Order Functions, Problem Set: Higher Order Functions"
+    UID: 80bf0f55-5aad-4380-9f71-0d259ec33123
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 54274421-2f6d-4089-a6b2-72833e3ff1bf
+        Path: /higher-order-functions/min-max-sorted.md
+      -
+        Type: Lesson
+        UID: db623de7-cd43-4da7-81e6-a9697f3b6c8c
+        Path: /higher-order-functions/lambdas.md
+      -
+        Type: Lesson
+        UID: 77440f05-b130-4540-885c-f81cbd7370d4
+        Path: /higher-order-functions/writing-higher-order-functions.md
+      -
+        Type: Lesson
+        UID: 445f012e-7aae-456f-adb5-5c7f6dec6bd4
+        Path: /higher-order-functions/higher-order-functions-problem-set.md
+  -
     Title: Intro To Object-Oriented Programming
     Description: "What is OOP?, Defining Classes, Constructors, Creating Instances, Instance Methods, Problem Set: Intro to OOP, Problem Set: Constructors"
     UID: dfa81f9898dba334bbda0cdf7b32c9f6
