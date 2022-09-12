@@ -138,7 +138,7 @@ def min_function_custom(collection, get_value_from_item):
      return min_item
 ```
 
-We can now call `min_function_custom` just like the built in `min` function. We can pass in a named function or a lambda expression for the `get_value_from_item` parameter
+We can now call `min_function_custom` just like the built in `min` function. We can pass in a named function or a lambda expression for the `get_value_from_item` parameter:
 
 ```py
 first_movie_by_title = min_function_custom(
