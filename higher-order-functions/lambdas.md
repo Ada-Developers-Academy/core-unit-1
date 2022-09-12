@@ -7,18 +7,18 @@
 
 ## Introduction 
 
-In the previous lesson, we passed a named function to the `key` parameter in the `sorted`, `min`, and `max` functions.
+In the previous lesson, we passed a named function to the `key` parameter of the `sorted`, `min`, and `max` functions.
 
-In this lesson, we will use the list of movie dictionaries example to learn about *lambda expressions* and how they are used with the `key` parameter in the `min` function. 
+In this lesson, we will continue to use the example of a list of movie dictionaries to learn about *lambda expressions* and how they can be used with the `key` parameter of the `min` function. 
 
 ## Vocabulary and Synonyms
 | Vocab	| Definition| Synonyms |	How to Use in a Sentence |
 |--|--|--|--|
-|Lambda Expression| An unnamed function with a any number of arguments and a single expression | Anonymous Function | Lambda functions can be passed to the `key` parameter in the `min` function. |
+|Lambda Expression| An unnamed function with a any number of arguments and a single expression | Anonymous Function, Lambda Function | Lambda functions can be passed to the `key` parameter in the `min` function. |
 
 ## Lambda Expression Syntax
 
-In this lesson we will work with the same list of movie dictionaries as the previous lesson:
+Let's quickly recall the list of movie dictionaries we started working with in the last lesson.
 
 ```py
 INTRIGUE_1 = {
@@ -49,7 +49,7 @@ ACTION_2 = {
 movies = [INTRIGUE_1, INTRIGUE_2, ACTION_1, ACTION_2]
 ```
 
-Let's recall the code we wrote that used the `key` parameter with named functions to find the movie with the first title alphabetically, the lowest rating, and the earliest release date.
+And here's the code we wrote using the `key` parameter with named functions to find the movie with the first title alphabetically, the lowest rating, and the earliest release date.
 
 ```py
 def get_title(movie):
@@ -66,17 +66,19 @@ lowest_rated_movie = min(movies, key=get_rating)
 earliest_movie = min(movies, key=get_release_year)
 ```
 
-Note that the function `get_title`, `get_rating`, and `get_release_year` all have a single expression. These simple functions are a great candidate for lambda expressions.
+Note that the functions `get_title`, `get_rating`, and `get_release_year` are each composed of a single expression. These simple functions are great candidates for lambda expressions.
 
 The syntax for a lambda expression is as follows:
 
 ```py
-lambda arguments : expression
+lambda arguments: expression
 ```
 
-The expression is executed and the result is returned [source](https://www.w3schools.com/python/python_lambda.asp). Lambda expressions are a single line and they do not use parentheses.
+The `lambda` syntax creates a new function object, just like `def` does. However, the function has no name, and no variable is created to refer to it. We should also notice that we do not put parentheses `()` around the arguments list, and that the body is restricted to a single expression. We can still assign the created function object to a variables ourselves, or more commonly, pass it directly as an argument to a higher order function.
 
-The function `get_title`:
+When called, the lambda's expression is executed and the result is returned, even though we do not explicitly  write a `return` keyword. [(source)](https://www.w3schools.com/python/python_lambda.asp)
+
+Let's see how we can use this syntax.  In the following code, the function object referred to as `get_title`:
 
 ```py
 def get_title(movie):
@@ -85,10 +87,24 @@ def get_title(movie):
 is equivalent to the following lambda expression:
 
 ```py
-lambda movie:movie["title"]
+get_title = lambda movie: movie["title"]
 ```
 
-As such, we can replace the named functions passed to the `key` parameter in the `min` functions with the following lambda expressions:
+The lambda version of `get_title` can be used in exactly the same way as the version of  `get_title` created using `def`.
+
+```py
+get_title = lambda movie: movie["title"]
+
+movie_title = get_title(INTRIGUE_1)
+
+# movie_title = "Recursion"
+```
+
+But why would we ever create a function this way, with all the limitations of the `lambda` syntax?
+
+Such small, simple functions are often needed only once, in a small section of logic, usually to customize the behavior of a higher order function. In such cases, we may decide that creating a named object is unnecessary. Instead, we might create this function directly where we call the higher order function.
+
+For example, we can replace the named functions passed to the `key` parameter of the `min` function calls with the following lambda expressions:
 
 ```py
 first_movie_by_title = min(movies, key=lambda movie: movie["title"])
@@ -101,7 +117,7 @@ earliest_movie = min(movies, key=lambda movie: movie["release_year"])
 
 ## Lambda Expression Usage
 
-Lambda expressions are ideally suited to simple and concise functionality. They can take any number of arguments, but must have a single line expression.
+Lambda expressions are ideally suited to simple and concise functionality. They can take any number of arguments, but must contain only a single expression.
 
 ### !end-callout
 
@@ -121,15 +137,15 @@ Lambda expressions are ideally suited to simple and concise functionality. They 
 
 ##### !question
 
-Which of the following are true for lambda expressions [reference](https://www.freecodecamp.org/news/lambda-expressions-in-python/)? 
+Which of the following are true for lambda expressions? [(reference)](https://www.freecodecamp.org/news/lambda-expressions-in-python/)
 
 ##### !end-question
 
 ##### !options
 
 a| Lambda expressions are also known as anonymous functions
-b| Lambda expressions only contain one expression
-c| Lambda functions can only have one argument
+b| Lambda expressions contain only one expression
+c| Lambda functions can have only one argument
 d| Lambda functions can have any number of arguments
 e| Lambda expressions are good for chained conditionals with multiple `elif`s
 
@@ -146,7 +162,7 @@ d|
 
 ##### !explanation
 
-The [key](https://docs.python.org/3/howto/sorting.html#key-functions) parameter takes a callable, which can be a named function or a lambda expression.
+Lambda expressions have no name, making them anonymous. They are restricted to containing only a single expression, but may receive as many arguments as needed to perform their calculation. Chained conditionals are statements (they do not evaluate to a single value), and so cannot be used within a lambda.
 
 ##### !end-explanation
 
@@ -167,7 +183,7 @@ The [key](https://docs.python.org/3/howto/sorting.html#key-functions) parameter 
 
 ##### !question
 
-Which of the following are valid to pass to the `key` parameter in the `min` function?
+Which of the following are valid to pass to the `key` parameter of the `min` function?
 
 ##### !end-question
 
@@ -189,7 +205,7 @@ d|
 
 ##### !explanation
 
-The [key](https://docs.python.org/3/howto/sorting.html#key-functions) parameter takes a callable, which can be a named function or a lambda expression.
+The [key](https://docs.python.org/3/howto/sorting.html#key-functions) parameter takes a reference to something "callable", such as a named function or a lambda expression.
 
 ##### !end-explanation
 

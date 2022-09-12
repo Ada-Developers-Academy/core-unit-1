@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Thus far we have learned how to pass a function as an argument and how to write an anonymous function using lambda expressions. In this lesson we will examine an example of writing a custom higher order function. 
+Thus far we have learned how to pass a function as an argument and how to write an anonymous function using lambda expressions. In this lesson we'll look at an example of writing a custom higher order function. 
 
 ## Movie Example Review
 
@@ -64,14 +64,14 @@ earliest_movie = min(movies, key=get_release_year)
 Finally, in the lesson on [lambda expressions](./lambdas.md), we achieved the functionality above with more concise code:
 
 ```py
-first_movie_by_title = min(movies, key=lambda movie:movie["title"])
-lowest_rated_movie = min(movies, key=lambda movie:movie["rating"])
-earliest_movie = min(movies, key=lambda movie:movie["release_year"])
+first_movie_by_title = min(movies, key=lambda movie: movie["title"])
+lowest_rated_movie = min(movies, key=lambda movie: movie["rating"])
+earliest_movie = min(movies, key=lambda movie: movie["release_year"])
 ```
 
 ## Writing a Custom Min Function
 
-Now, let's demystify the `min` function with the optional `key` parameter by writing our own custom min function `min_function_custom`. We will use `get_first_movie` as a reference:
+Now, let's demystify the optional `key` parameter of the `min` function by writing our own custom min function `min_function_custom`. We will use `get_first_movie` as a reference:
 
 ```py
 def get_first_movie(movies):
@@ -84,7 +84,7 @@ def get_first_movie(movies):
     return min_movie
 ```
 
-Notice that we can replace each line with the expression `movie["title"]` with a function call `get_title(movies[0])` without changing the behavior of the function. 
+Notice that we can replace each occurrence of an expression of the form `movie_dict["title"]`, with a function call `get_title(movie_dict)` without changing the behavior of the function.
 
 ```py
 def get_title(movie):
@@ -101,54 +101,78 @@ def get_first_movie(movies):
     return min_movie
 ```
 
-Now, let's take it one step further to generalize our function to find the minimum movie by any key (i.e. `"title"`, `"rating"`, or `"release_year"`). 
+Now, let's take it one step further to generalize our function to find the minimum by any key for any list of dictionaries. 
 
-We will add a second parameter, a function that gets the value for a specified key: `get_value_for_key`. We will generalize our variable names changing `movies` to `collection` and `movie` to `item.` Each line from `get_first_movie` that has the expression `get_title(movie)` will be replaced with `get_value_for_key(item)`.
+We will:
+1. Generalize our variable names by changing `movies` to `collection` and `movie` to `item`. 
+2. Add a second parameter, a function that gets the comparison value that should be used for each movie, now renamed to item: `get_value_from_item`. 
+3. Replace all uses of the expression `get_title(movie)` with a call to our new parameter `get_value_from_item(item)`.
 
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## There's Always Another Way
+
+In an actual project, if we only need to be able to change the dictionary key that a function is using, we might simply add a parameter for that key. But when writing a more general purpose function, a parameter accepting a function often provides greater flexibility.
+
+<br>
+
+We'll see there are other structures we can use to store related data values which must be accessed using different syntax. A parameter accepting a function can be used to adapt to a wider variety of data structures!
+
+### !end-callout
 
 | Specific Function | Generalized Function |
 | -- | -- |
 | `movies` | `collection`|
 | `movie` | `item` |
-| `get_title(movie)` | `get_value_for_key(item)` |
-| `def get_first_movie(movies)`|`def min_function_custom(collection, get_value_for_key)`|
-*Table. Relationship between variables in specific function an generalized function.*
+| `get_title(movie)` | `get_value_from_item(item)` |
+| `def get_first_movie(​movies)`|`def min_function_custom(​collection, get_value_from_item)`|  
+
+*Table. Relationship between variables in specific function and generalized function.*
 
 ```py
-def min_function_custom(collection, get_value_for_key):
+def min_function_custom(collection, get_value_from_item):
      min_item = collection[0]
-     min_value = get_value_for_key(collection[0])
+     min_value = get_value_from_item(collection[0])
      for item in collection:
-         if get_value_for_key(item) < min_value:
+         if get_value_from_item(item) < min_value:
              min_item = item
-             min_value = get_value_for_key(item)
+             min_value = get_value_from_item(item)
      return min_item
 ```
 
-We can now class `min_function_custom` just like the built in `min` function. We can pass in a named function or a lambda expression for the `get_value_for_key` parameter
+We can now call `min_function_custom` just like the built in `min` function. We can pass in a named function or a lambda expression for the `get_value_from_item` parameter:
 
 ```py
-first_movie_by_title = min_function_custom(movies, get_value_for_key=get_title)
-lowest_rated_movie = min_function_custom(movies, get_value_for_key=get_rating)
+first_movie_by_title = min_function_custom(
+    movies, get_value_from_item=get_title)
+
+lowest_rated_movie = min_function_custom(
+    movies, get_value_from_item=get_rating)
+
 earliest_movie = min_function_custom(
-    movies, get_value_for_key=get_release_year)
+    movies, get_value_from_item=get_release_year)
 ```
 or 
 
 ```py
 first_movie_by_title = min_function_custom(
-    movies, get_value_for_key=lambda movie: movie["title"])
+    movies, get_value_from_item=lambda movie: movie["title"])
+
 lowest_rated_movie = min_function_custom(
-    movies, get_value_for_key=lambda movie: movie["rating"])
+    movies, get_value_from_item=lambda movie: movie["rating"])
+
 earliest_movie = min_function_custom(
-    movies, get_value_for_key=lambda movie: movie["release_year"])
+    movies, get_value_from_item=lambda movie: movie["release_year"])
 ```
 
 We can also pass the second parameter as a positional argument rather than a keyword argument:
 
 ```py
 first_movie_by_title = min_function_custom(movies, get_title)
+
 lowest_rated_movie = min_function_custom(movies, get_rating)
+
 earliest_movie = min_function_custom(movies, get_release_year)
 ```
 or 
@@ -156,7 +180,10 @@ or
 ```py
 first_movie_by_title = min_function_custom(
     movies, lambda movie: movie["title"])
-lowest_rated_movie = min_function_custom(movies, lambda movie: movie["rating"])
+
+lowest_rated_movie = min_function_custom(
+    movies, lambda movie: movie["rating"])
+    
 earliest_movie = min_function_custom(
     movies, lambda movie: movie["release_year"])
 ```
