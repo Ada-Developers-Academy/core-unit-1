@@ -8,11 +8,18 @@
 
 ## Introduction
 
-Imagine we have a list of movie titles we'd like to sort alphabetically. Python provides a couple convenient functions for this task. The [`sort`](https://docs.python.org/3/howto/sorting.html#sorting-basics) method can be called on a list and sorts the list in place. The `sorted` function takes a list as a parameter and returns the sorted list.  
+Imagine we have a list of movie titles we'd like to sort alphabetically. Python provides a couple convenient functions for this task. The [`sort`](https://docs.python.org/3/howto/sorting.html#sorting-basics) method can be called on a list and sorts the list in place. The `sorted` function takes a list (or any iterable datatype) as a parameter and returns the sorted list (or other datatype).  
 
 But what if we have a list of dictionaries representing movies that we want to sort by title, or perhaps by rating. Maybe we want to find the most recent movie in a list, or perhaps the oldest.
 
 There are several functions in Python, including the `min`, `max`, and `sorted` functions, that accept a `key` parameter. This `key` parameter takes a function that will be called on each item in the list to retrieve a special value, called a comparison key, for that item. The comparison keys will then be used to find the minimum, find the maximum, or to sort.
+
+## Vocabulary and Synonyms
+| Vocab	| Definition| Synonyms |	How to Use in a Sentence |
+|--|--|--|--|
+|Higher Order Function| A function that takes a function as an argument | - | When we use the optional `key` parameter with the `sorted` function, `sorted` is a higher order function. |
+|Positional Arguments|Arguments that must be provided in the specified order in the function call | -|It is not uncommon to introduce a bug by passing positional arguments to a function in the wrong order. |
+|Keyword Arguments| Arguments that are passed to a function with the `name=value` syntax |Named Parameters |Keyword arguments can be passed to a function in any order, but cannot be followed by positional arguments.|
 
 ## Movie Example
 
@@ -267,7 +274,7 @@ Thus far we've defined functions with positional arguments. The table below desc
 | Positional Arguments | `def function_name(​parameter1, parameter2)` | `function_name(​argument1, argument2)`|
 | Keyword Arguments |`def function_name(​parameter1, parameter2)` | `function_name(​parameter1=argument1, parameter2=argument2)` |
 
-Functions can be called with a mix of keyword and positional arguments, but positional arguments cannot follow keyword arguments in the function call. To learn more, [here is an article we recommend](https://treyhunner.com/2018/04/keyword-arguments-in-python/).
+Functions can be called with a mix of keyword and positional arguments, but positional arguments cannot follow keyword arguments in the function call. Keyword argument can be passed in any order, whereas positional arguments must be passed in the order specified in the function definition. To learn more, [here is an article we recommend](https://treyhunner.com/2018/04/keyword-arguments-in-python/).
 
 Consider the following function:
 
@@ -312,7 +319,7 @@ def my_fun():
 
 When we write parentheses `()` after a variable that refers to a function, we are asking Python to call (run) the function object referred to by the variable. When we leave off the parentheses `()`, we are only getting a reference to the object (here a function object) the variable is pointing at, the same as when we write any other variable name.
 
-So just like variables that point to other objects (strings, integers, lists, etc.), we can assign the function object referred to by one variable to another variable:
+So just like variables that point to other objects (strings, integers, lists, etc.), we can assign the function object referred to by one variable to another variable. Assuming `get_title` is a function as defined in the example above, we could write:
 
 ```py
 get_the_title = get_title

@@ -14,7 +14,7 @@ In this lesson, we will continue to use the example of a list of movie dictionar
 ## Vocabulary and Synonyms
 | Vocab	| Definition| Synonyms |	How to Use in a Sentence |
 |--|--|--|--|
-|Lambda Expression| An unnamed function with a any number of arguments and a single expression | Anonymous Function | Lambda functions can be passed to the `key` parameter of the `min` function. |
+|Lambda Expression| An unnamed function with a any number of arguments and a single expression | Anonymous Function, Lambda Function | Lambda functions can be passed to the `key` parameter in the `min` function. |
 
 ## Lambda Expression Syntax
 

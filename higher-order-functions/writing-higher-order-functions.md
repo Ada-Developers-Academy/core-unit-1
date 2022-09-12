@@ -101,9 +101,12 @@ def get_first_movie(movies):
     return min_movie
 ```
 
-Now, let's take it one step further to generalize our function to find the minimum movie by any key (i.e. `"title"`, `"rating"`, or `"release_year"`). 
+Now, let's take it one step further to generalize our function to find the minimum by any key for any list of dictionaries. 
 
-We will generalize our variable names changing `movies` to `collection` and `movie` to `item`. We will also add a second parameter, a function that gets the comparison value that should be used for each movie, now renamed to item: `get_value_from_item`. Each line from `get_first_movie` that has the expression `get_title(movie)` will be replaced with `get_value_from_item(item)`.
+We will:
+1. Generalize our variable names by changing `movies` to `collection` and `movie` to `item`. 
+2. Add a second parameter, a function that gets the comparison value that should be used for each movie, now renamed to item: `get_value_from_item`. 
+3. Replace all uses of the expression `get_title(movie)` with a call to our new parameter `get_value_from_item(item)`.
 
 <!-- available callout types: info, success, warning, danger, secondary, star  -->
 ### !callout-info
