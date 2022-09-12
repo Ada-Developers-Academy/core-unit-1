@@ -5,6 +5,7 @@
 * Demonstrate how to pass a function as an argument
 * Describe how to use the `key` parameter of the `sorted` function to sort a list of dictionaries by a specific key
 * Describe how to use the `key` parameter of the `min` function to find the minimum in a list of dictionaries by a specific key
+* Describe how to use the `key` parameter of the `sorted` function to sort a list of movie titles by length
 
 ## Introduction
 
@@ -64,7 +65,6 @@ last_movie_title = max(movie_titles)
 # first_movie_title = '2 JavaScript 2 React'
 # last_movie_title = 'Zero Dark Python'
 ```
-
 
 ### List of Movie Dictionaries
 
@@ -248,6 +248,45 @@ first_movie_by_title = min(movies, key=get_title)
 #    "rating": 4.2,
 #    "release_year": 2015
 # }
+```
+
+### Sorting a List of Movie Titles by Length
+
+Using the `key` parameter is not limited to working with a list of dictionaries.
+
+Similar to using the `key` parameter to find the minimum, the maximum, and sort a list of dictionaries by a particular key, we can use the `key` parameter to customize the sort behavior when sorting a list of strings. 
+
+The default behavior of comparators (i.e. `<`, `>`, etc.) for strings is to compare them alphabetically. But what if we want to sort a list of movie titles by the length of the title? This is a perfect opportunity to use the `key` parameter.
+
+Let's recall the list of movie titles:
+
+```py
+movie_titles = [
+    "Recursion",
+    "Zero Dark Python",
+    "2 JavaScript 2 React",
+    "Javascript 3: VS Code Lint"
+]
+```
+
+First we will write a function that returns the length of the movie titles:
+
+```py
+def get_length(movie_title):
+    return len(movie_title)
+```
+
+Then we will pass this function to the `key` parameter of the sorted function:
+
+```py
+movie_titles_sorted_by_length = sorted(movie_titles, key=get_length)
+
+# movies_titles_sorted_by_length = [
+# 'Recursion', 
+# 'Zero Dark Python', 
+# '2 JavaScript 2 React',
+# 'Javascript 3: VS Code Lint']
+# ]
 ```
 
 ## Keyword Arguments
