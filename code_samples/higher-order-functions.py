@@ -30,6 +30,14 @@ movie_titles = [
     "Javascript 3: VS Code Lint"
 ]
 
+
+def get_length(movie_title):
+    return len(movie_title)
+
+
+movie_titles_sorted_by_length = sorted(movie_titles, key=get_length)
+
+print(movie_titles_sorted_by_length)
 # print(sorted(movie_titles))
 # print("")
 
