@@ -43,7 +43,7 @@ movie_titles.sort()
 # ]
 ```
 
-Alternatively, we can use the function `sorted` to return the list sorted alphabetically:
+Alternatively, we can use the function `sorted` to return a copy of the list sorted alphabetically:
 
 ```py
 sorted_movie_titles = sorted(movie_titles)
