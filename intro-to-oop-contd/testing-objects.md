@@ -295,7 +295,7 @@ def test_driver_add_invalid_trip():
 
     assert not result
     assert len(batman.trips) is original_trip_length
-    assert valid_trip not in batman.trips
+    assert invalid_trip not in batman.trips
 ```
 
 We should notice:
