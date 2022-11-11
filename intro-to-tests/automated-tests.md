@@ -66,9 +66,6 @@ Programmers run tests to get test output. For each test, it will either pass, fa
 
 ### Unit Tests Are for Small Units
 
-![Comic about unit tests](../assets/intro-to-tests_automated-tests_unit-tests.png)  
-[(source)](https://www.monkeyuser.com/2018/fixing-unit-tests/)
-
 Because there are a lot of different kinds of code, there are a lot of different kinds of tests. One kind is unit testing. Unit tests are automated tests that focus on a unit, which is commonly a single function. They're used to check that given some specific arguments, the function returns some expected value.
 
 **Example:** Addison has a function called `calculate_chart`, which takes in 3 parameters: `date`, `location`, and `time`. They can write unit tests for this function.
