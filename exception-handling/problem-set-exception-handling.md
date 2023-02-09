@@ -93,7 +93,7 @@ def test_valid_phone_nums_return_true():
 
 def test_invalid_phone_nums_raise_error():
     phone_num = 777-888-9999
-    with pytest.raises(ValueError):
+    with pytest.raises(TypeError):
         is_valid = is_phone_num_valid(phone_num)
 ```
 
@@ -118,7 +118,7 @@ class TestChallenge(unittest.TestCase):
 
     def test_invalid_phone_nums_raise_error(self):
         phone_num = 777-888-9999
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             is_phone_num_valid(phone_num)
 ```
 ### !end-tests
@@ -129,7 +129,7 @@ An example of a working implementation:
 ```python
 def is_phone_num_valid(phone_num):
     if type(phone_num) is not str:
-        raise ValueError
+        raise TypeError
     return True
 ```
 
