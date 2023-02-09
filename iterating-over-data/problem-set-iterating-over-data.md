@@ -469,32 +469,36 @@ def sum_even_nums_series(min_value, max_value):
 * title: Iterating Over Data
 ##### !question
 
-Create a function named `search_dictionary`. This function...
+Create a function named `find_adults`. This function...
 
-- Has two parameters, `dict` and `needle`
-    - `dict` is a dictionary
-    - `needle` is a string
-- If `needle` is a key found in `dict`, then return the value at that key.
+- Has one parameter, `people`, which is a dictionary.
+    - Each key is a string that holds the name of a person.
+    - Each value is an integer that is the age of that person.
 
-**Required**: Use a for-loop.
+The function should return a list of all the names of people that are 18 or older. The list can be in any order. If there are no adults in the dictionary, the function should return an empty list.
 
-Here is the test:
+For example, for the input:
 
 ```python
-def test_search_dictionary_finds_value():
-    dict = {"icecream_flavor": "chocolate",
-            "lucky_nums": [7, 18, 34],
-            "has_pets": True}
-    assert search_dictionary(dict, "icecream_flavor") == "chocolate"
+people = {
+    "Jane": 23,
+    "Mateo": 2,
+    "Eduardo": 18,
+    "Elsa": 1,
+    "Alba": 66
+}
 ```
+
+A valid output would be:
+```python
+["Jane", "Eduardo", "Alba"]
+``` 
 
 ##### !end-question
 ##### !placeholder
 
 ```python
-def search_dictionary(dict, needle):
-    # Note: the word "dict" may be highlighted because the Learn platform believes it's reserved
-    # This should not affect our code
+def find_adults(people):
     pass
 ```
 
@@ -506,114 +510,56 @@ import unittest
 from main import *
 
 class TestPython1(unittest.TestCase):
-    def test_search_dictionary_finds_value(self):
-        dict = {"icecream_flavor": "chocolate",
-                "lucky_nums": [7, 18, 34],
-                "has_pets": True}
-        self.assertEqual(search_dictionary(
-            dict, "icecream_flavor"), "chocolate")
+    def test_find_adults_finds_multiple_adults(self):
+        people = {
+            "Jane": 23,
+            "Mateo": 2,
+            "Eduardo": 18,
+            "Elsa": 1,
+            "Alba": 66
+        }
+
+        self.assertEqual(set(find_adults(people)), set(["Jane", "Eduardo", "Alba"]))
+
+    def test_find_adults_finds_one_adult(self):
+        people = {
+            "Mateo": 2,
+            "Eduardo": 18,
+            "Elsa": 1
+        }
+
+        self.assertEqual(set(find_adults(people)), set(["Eduardo"]))
+
+    def test_find_adults_returns_empty_collection_if_no_adults(self):
+        people = {
+            "Mateo": 2,
+            "Elsa": 1
+        }
+
+        self.assertEqual(set(find_adults(people)), set())
+
+    def test_find_adults_returns_empty_collection_if_empty_dict(self):
+        people = {}
+
+        self.assertEqual(set(find_adults(people)), set())
 
 ```
 ##### !end-tests
 ##### !explanation
 
-Two examples of working implementations:
+An example of a working implementation:
 
 ``` python
-def search_dictionary(dict, needle):
-    for item in dict:
-        if item == needle:
-            return dict[needle]
+def find_adults(people):
+    adults = []
+
+    for name, age in people.items():
+        if age >= 18:
+            adults.append(name)
+    
+    return adults
 ```
 
-``` python
-def search_dictionary(dict, needle):
-    for key, value in dict.items():
-        if key == needle:
-            return value
-```
-
-##### !end-explanation
-### !end-challenge
-<!-- prettier-ignore-end -->
-
-<!-- Question 9 -->
-<!-- prettier-ignore-start -->
-### !challenge
-* type: code-snippet
-* language: python3.6
-* id: Ny72-sS0Y
-* title: Iterating Over Data
-##### !question
-
-Continue the function named `search_dictionary` from above. This function still has two parameters, `dict` and `needle`, and returns the value if there is a key that matches `needle`.
-
-Now, if `dict` does not contain the `needle` key, the function returns `False`.
-
-**Required**: Use a for-loop.
-
-Here are the tests:
-
-```python
-def test_search_dictionary_finds_value():
-    dict = {"icecream_flavor": "chocolate",
-            "lucky_nums": [7, 18, 34],
-            "has_pets": True}
-    assert search_dictionary(dict, "icecream_flavor") == "chocolate"
-
-
-def test_search_dictionary_key_not_found_is_false():
-    dict = {"icecream_flavor": "chocolate",
-            "lucky_nums": [7, 18, 34],
-            "has_pets": True}
-    assert search_dictionary(dict, "has_dogs") == False
-```
-
-##### !end-question
-##### !tests
-```python
-import unittest
-from main import *
-
-class TestPython1(unittest.TestCase):
-    def test_search_dictionary_finds_value(self):
-        dict = {"icecream_flavor": "chocolate",
-                "lucky_nums": [7, 18, 34],
-                "has_pets": True}
-        self.assertEqual(search_dictionary(
-            dict, "icecream_flavor"), "chocolate")
-
-    def test_search_dictionary_key_not_found_is_false(self):
-        dict = {"icecream_flavor": "chocolate",
-                "lucky_nums": [7, 18, 34],
-                "has_pets": True}
-        self.assertEqual(search_dictionary(dict, "has_dogs"), False)
-```
-##### !end-tests
-##### !hint
-
-If you're stuck, consider reviewing the information on pairing an `else` statement with a `for loop`.
-
-##### !end-hint
-##### !explanation
-
-Two examples of working implementations:
-
-``` python
-def search_dictionary(dict, needle):
-    for item in dict:
-        if item == needle:
-            return dict[needle]
-    return False
-```
-``` python
-def search_dictionary(dict, needle):
-    for item in dict:
-        if item == needle:
-            return dict[needle]
-    else:
-        return False
-```
 ##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
