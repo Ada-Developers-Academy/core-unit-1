@@ -431,7 +431,7 @@ Read this line carefully: Mario needs to reach a skill level of at least 10 **an
 
 ##### !question
 
-The Cinnamon Cinema always prices movie tickets based on age. There is a new promotion for additional discounts to reward individuals for pursuing an education. The discounted ticket prices per age are listed below.
+The Cinnamon Cinema prices movie tickets based on age. The ticket prices per age are listed below:
 
 | Age Groups | Ticket Price|
 |-----|-------------|
