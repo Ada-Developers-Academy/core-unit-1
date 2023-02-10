@@ -82,7 +82,8 @@ Which of these is the best name for a test?
 * `test_calculate_non_numbers_returns_type_error()`
 
 ##### !end-answer
-##### !explanation
+
+##### !hint
 
 In tests, long test names are welcome. For each test case, the best test names usually include:
 
@@ -90,9 +91,33 @@ In tests, long test names are welcome. For each test case, the best test names u
 - context (possibly the kinds of arguments)
 - its expected outcome (usually the return value)
 
+<br />
+
 The following guideline is challenging to master, but the best test names tend to describe a situation, and not name exact variable names. If the variable name changes, then the test name could become inaccurate.
 
-Pytest will only recognize test names begin with `test_` or end with `_test`.
+Pytest will only recognize test names beginning  with `test_` or ending with `_test`.
+
+##### !end-hint
+
+##### !explanation
+
+For testing whether our function `calculate` returns a `TypeError` when we get an input that is not a number, the test name `test_calculate_non_numbers_returns_type_error()` is the most preferred name because it is specific and adds context describing which condition the test is checking. 
+
+<br />
+
+One can read the test name and determine the test is checking to ensure the `calculate` function returns a `TypeError` when receiving a non number as input.
+
+<br />
+
+The option `test_calculate()` is not the best option here because it does not provide enough context to determine the condition for which the test is checking.
+
+<br />
+
+The option `test_calculate_int_float_error()` is not the best option here because it does not provide context to determine what error will occur or why the error would occur. Would the function cause an error if given an int or a float? Would the function cause an error if given a specific int or float? This test name is not specific enough for us to determine what the test does by reading the name.
+
+<br />
+
+The option `tests_calculate_non_numbers_returns_type_error()` is not the best option because pytest will only recognize test names beginning with `test_` or ending with `_test`.
 
 ##### !end-explanation
 ### !end-challenge
@@ -145,7 +170,8 @@ We want to test `calculate()` and verify the case when it returns `"Value Error:
 * `test_calculate_invalid_operator_returns_error_msg()`
 
 ##### !end-answer
-##### !explanation
+
+##### !hint
 
 In tests, long test names are welcome. For each test case, the best test names usually include:
 
@@ -153,7 +179,29 @@ In tests, long test names are welcome. For each test case, the best test names u
 - context (possibly the kinds of arguments)
 - its expected outcome (usually the return value)
 
+<br />
+
 The following guideline is challenging to master, but the best test names tend to describe a situation, and not name exact variable names. If the variable name changes, then the test name could become inaccurate.
+
+Pytest will only recognize test names beginning with `test_` or ending with `_test`.
+
+##### !end-hint
+
+##### !explanation
+
+For testing that the `calculate` function will return a `ValueError` when given an invalid `operator`, the best choice for the test name would be `test_calculate_invalid_operator_returns_error_msg()`. This is the best test name because one can read the name of the test and determine the conditions of the test.
+
+<br />
+
+The option `test_calculate()` is not the best option here because it does not provide enough context to determine the condition for which the test is checking.
+
+<br />
+
+The option `test_calculate_return_string()` is not the best option here because its name implies the test will check whether the `calculate` function returns a string. 
+
+<br />
+
+The option `test_calculate_invalid_operator_returns_string()` is not the best option because it does not specifically indicate that the string that is returned is an error message.
 
 ##### !end-explanation
 ### !end-challenge
@@ -206,7 +254,8 @@ We want to test `calculate()` and verify that multiplying two numbers works succ
 * `test_calculate_multiplies_two_numbers()`
 
 ##### !end-answer
-##### !explanation
+
+##### !hint
 
 In tests, long test names are welcome. For each test case, the best test names usually include:
 
@@ -214,7 +263,29 @@ In tests, long test names are welcome. For each test case, the best test names u
 - context (possibly the kinds of arguments)
 - its expected outcome (usually the return value)
 
+<br />
+
 The following guideline is challenging to master, but the best test names tend to describe a situation, and not name exact variable names. If the variable name changes, then the test name could become inaccurate.
+
+Pytest will only recognize test names beginning with `test_` or ending with `_test`.
+
+##### !end-hint
+
+##### !explanation
+
+The test name `test_calculate_multiplies_two_numbers()` is the best name in this case because it accurately indicates the situation for which we are testing, which is that the function `calculate` successfully works for multiplying two numbers.
+
+<br />
+
+The option `test_calculate()` is not the best option here because it does not provide enough context to determine the condition for which the test is checking.
+
+<br />
+
+The option `test_calculate_adds_two_numbers()` is not the best option here because it implies an inaccurate description for what the test is validating.
+
+<br />
+
+The option `test_calculate_num_a_is_int_num_b_is_float_operator_is_multiply()` is not the best option because it implies we are testing for when num `a` is an int, num `b` is a float and the operator is to multiply. While descriptive, this test name is inaccurate for what we are validating in this particular test.
 
 ##### !end-explanation
 ### !end-challenge
@@ -267,7 +338,8 @@ We want to test `calculate()` and verify the case when it returns `"Zero Divisio
 * `test_calculate_dividing_by_zero_returns_error_msg()`
 
 ##### !end-answer
-##### !explanation
+
+##### !hint
 
 In tests, long test names are welcome. For each test case, the best test names usually include:
 
@@ -275,7 +347,29 @@ In tests, long test names are welcome. For each test case, the best test names u
 - context (possibly the kinds of arguments)
 - its expected outcome (usually the return value)
 
+<br />
+
 The following guideline is challenging to master, but the best test names tend to describe a situation, and not name exact variable names. If the variable name changes, then the test name could become inaccurate.
+
+Pytest will only recognize test names beginning with `test_` or ending with `_test`.
+
+##### !end-hint
+
+##### !explanation
+
+The test name `test_calculate_dividing_by_zero_returns_error_msg()` is the best option for this test because it describes the condition for which we want to test the most accurately.
+
+<br />
+
+The option `test_calculate_dividing_when_second_number_is_zero()` is not the best option here because it does not clearly indicate what the function is intending to return in the case of dividing by zero.
+
+<br />
+
+The option `test_calculate_dividing_num_b_is_zero()` is not the best option here because it does not clearly indicate what the function is expected to return in the case of `b` being zero.
+
+<br />
+
+The option `test_calculate_dividing_by_zero()` is not the best option here because, again, it does not clearly indicate what the function is expected to return if dividing by zero.
 
 ##### !end-explanation
 ### !end-challenge
@@ -886,7 +980,7 @@ def is_odd(num):
     return True
 ```
 
-Yes, this is not a very robust implementation at all! However, part of the aim with TDD is to write _minimal_ implementations to avoid writing over-complicated code, since over-complicated code tends to attract bugs. As we add more tests to cover more scenarios, we'll be forced to make our implementation to be more robost to handle those cases.
+Yes, this is not a very robust implementation at all! However, part of the aim with TDD is to write _minimal_ implementations to avoid writing over-complicated code, since over-complicated code tends to attract bugs. As we add more tests to cover more scenarios, we'll be forced to make our implementation to be more robust to handle those cases.
 
 The other benefit of writing minimal code is that it limits work to only what is needed, possibly saving time! It may be a bit silly for such a simple case, but it makes more sense as the problems we solve are less trivial...
 
