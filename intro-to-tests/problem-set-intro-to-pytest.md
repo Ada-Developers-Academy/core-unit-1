@@ -980,7 +980,7 @@ def is_odd(num):
     return True
 ```
 
-Yes, this is not a very robust implementation at all! However, part of the aim with TDD is to write _minimal_ implementations to avoid writing over-complicated code, since over-complicated code tends to attract bugs. As we add more tests to cover more scenarios, we'll be forced to make our implementation to be more robost to handle those cases.
+Yes, this is not a very robust implementation at all! However, part of the aim with TDD is to write _minimal_ implementations to avoid writing over-complicated code, since over-complicated code tends to attract bugs. As we add more tests to cover more scenarios, we'll be forced to make our implementation to be more robust to handle those cases.
 
 The other benefit of writing minimal code is that it limits work to only what is needed, possibly saving time! It may be a bit silly for such a simple case, but it makes more sense as the problems we solve are less trivial...
 
