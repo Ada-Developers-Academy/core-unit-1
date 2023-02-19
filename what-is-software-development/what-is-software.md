@@ -17,11 +17,20 @@
 
 As we jump into programming, it's good to know what it means to be a **_software developer_**. What is software? And what are we making and doing?
 
-Software is a collection of instructions for a computer to execute. Software is code that tells computers what to do, when to do it, and how to do it. It turns out that computers aren't very useful without being told what to do.
+Software is a collection of instructions for a computer to execute. Each line of code in a program or piece of software is a single instruction to the computer. In other words, software is a collection of code that tells computers what to do, when to do it, and how to do it. It turns out computers aren't very useful without being told what to do.
 
 The category of software is broad. It includes system software, which tells a computer how to run; how does a computer get keyboard input? How does it display videos? How does a computer save data? What happens when a computer starts up?
 
-"Software" also includes creating services that most people will never see, or can't be seen, even though it's moving and changing data. When we use an app to transfer money to a fund, software from one bank sends a message to software from another bank. When we use a third-party aggregator for flight tickets, that system has to reach out to a different software program for each airline.
+Software also includes creating services that most people will never see, or can't be seen, even though it's moving and changing data. When we use an app to transfer money to a fund, software from one bank sends a message to software from another bank. When we use a third-party aggregator for flight tickets, that system has to reach out to a different software program for each airline.
+
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## Program v Software
+
+The terms _program_ and _software_ are largely interchangeable, and throughout this course we will use both to refer to a set of code that provides instructions to a computer. Technically, software is a broader term that can refer to a collection of multiple programs bundled together.
+
+### !end-callout
 
 ## Applications Are For Users
 
