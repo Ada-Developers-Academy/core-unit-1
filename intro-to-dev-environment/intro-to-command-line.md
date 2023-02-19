@@ -19,10 +19,14 @@ As a programmer, the terminal is one of our most important tools, and we will ru
 | interface      | A medium that takes information from one source, and passes it to another source.The interface usually makes a meaningful translation between the two sources. | -         | "The command line and the terminal is one interface for how we interact with the file system and run programs on our computer," "That program has a graphical user interface, and there are buttons and images to interact with" |
 | folder         | A named container of files and other folders (normally named sub-folders). Can be inside another folder.                                                       | directory | "I'm going to make another folder in this folder to organize things better," "Check to see if you put that file in the home directory"                                                                                           |
 | Root directory | The nickname of the top-most folder that exists on the machine                                                                                                 | root      | "That program gets installed and its files live somewhere in root," "I don't usually spend much time in the root directory"                                                                                                      |
+<!-- Add Vocab terms: Interpreter, IDLE/IDE, OS? -->
 
-## Command Line vs. Terminal vs. Shell
+## Terminal vs. Shell vs. Command Line
 
-In our curriculum, we will use **"terminal"** to mean an application that allows command input to interact with a computer, such as navigating, running programs, or making files. Often, developers use the phrases "terminal" and "console" interchangeably. In macOS, there is an application named Terminal, and we'll use that application to type in commands and use the command line.
+In our curriculum, we will use **"terminal"** to refer to an application that allows us to 
+
+
+ mean an application that allows command input to interact with a computer, such as navigating, running programs, or making files. Often, developers use the phrases "terminal" and "console" interchangeably. In macOS, there is an application named Terminal, and we'll use that application to type in commands and use the command line.
 
 The **command line** refers to the interface where developers type in commands into a terminal. The command line is the area in the terminal where we type in commands.
 

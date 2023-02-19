@@ -109,6 +109,10 @@ It's valuable to know that a lot of software and developer communities have adop
 
 ### !end-callout
 
+## Operating Systems
+
+An **operating system** is software itself! Operating systems such as MacOS, Windows, etc. are collections of programs that facilitate communication between the 
+
 ## Hello, World!
 
 A "Hello, World!" program is the name of a program whose responsibility is to print `Hello, World!`.
