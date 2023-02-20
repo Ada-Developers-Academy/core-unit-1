@@ -168,11 +168,11 @@ Of course, feel free to not follow these recommendations if you have preferred w
 
 ## Using the Command Line to Execute Code
 
-Writing code is like writing an instruction manual. When we write a program, we are using the programming language of our choice to explain step by step _how_ to perform a specific task. Writing out an explanation is not the same as actually _doing_ the task. Carrying out the task is referred to **executing** or running the program. 
+Writing code is like writing an instruction manual. When we write a program, we are using the programming language of our choice to explain step by step _how_ to perform a specific task. Writing out this explanation is not the same as actually _doing_ the task. Carrying out the task is referred to **executing** or running the program. 
 
 To run our program using the command line, we can use the `python3` command. Python is a programming language, but it is also a piece of software. When we install Python onto our machine, we are installing a Python **interpreter** which takes a program written in human-readable Python code, translates it into computer-readable machine code, and has our computer execute the program using the translated machine code.
 
-Entering `python3` into the command line without adding additional arguments will open the interpreter directly in the command line.
+Entering `python3` into the command line without adding any arguments will open the interpreter directly in the command line.
 
 ```bash
 $ python3
