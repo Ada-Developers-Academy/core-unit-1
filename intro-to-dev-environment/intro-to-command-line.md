@@ -192,11 +192,13 @@ We can make a commitment to ourselves to discover and learn more and more ways t
 
 Some commands to learn include:
 
-- `man`
-- `mv`
-- `cat`
-- `echo`
-- `grep`
+| Command in the Command Line| Description | Notes |
+|---                         |---          |---    |
+|`man`  |   |  |
+|`mv`   |   |  |
+|`cat`  |   |  |
+|`echo` |   |  |
+|`grep` |   |  |                              
 
 For a fun way to learn more command line tools [check out these Bite Size Command Line comics by Julia Evans!](https://wizardzines.com/comics/#bite-size-command-line)
 
