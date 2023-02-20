@@ -23,26 +23,34 @@ As a programmer, the terminal is one of our most important tools, and we will ru
 
 ## Terminal vs. Shell vs. Command Line
 
-In our curriculum, we will use **"terminal"** to refer to an application that allows us to 
+ Most people navigate the computer using a **GUI** or _Graphical User Interface_. This is the visual component of a computer or application that allows us to interact with the software by selecting icons and images. 
 
+ ![MacOS GUI](../assets/intro-to-dev-environment-macos-gui.png)
 
- mean an application that allows command input to interact with a computer, such as navigating, running programs, or making files. Often, developers use the phrases "terminal" and "console" interchangeably. In macOS, there is an application named Terminal, and we'll use that application to type in commands and use the command line.
+ Some of the components that make up the macOS GUI are highlighted above. We can, for example, open an application by clicking on the app's icon in the dock or check which wifi network we are connected to by clicking on the menu bar's wifi icon. 
 
-The **command line** refers to the interface where developers type in commands into a terminal. The command line is the area in the terminal where we type in commands.
+ As software developers, we often use the **terminal** instead of the operating system's GUI to use our computer. In our curriculum, we will use "terminal" to refer to an application that allows us to give text commands directly to a computer's operating system. Entering commands into the terminal application allows us to interact with a computer in the same way that clicking on buttons or windows does. We can enter commands to navigate between folders, make files, run programs, and more. Often, developers use the phrases "terminal" and "console" interchangeably. In macOS, there is an application named Terminal, and we'll use that application to type in commands and use the command line.
 
-Often, a tutorial may stylize a command line prompt (or, command to input) with a `$` in the front. This `$` is to indicate the command line, and shouldn't be typed in.
+The **command line** refers to the area in the terminal where where developers type in commands. Often, a tutorial may stylize a command line prompt (or, command to input) with a `$` or other symbol (ex. `➜` , `%`, etc.) in the front. This symbol is to indicate the start of the command line, and does not need to be typed in.
 
 ```bash
 $ ls
 ```
 
-In this example, the user should execute the `ls` command by typing in `ls`.
+In the example above, the user executes the `ls` command by typing in `ls`.
 
-A **shell** is a program that runs commands. It is the program that works between the command line and the computer's operating system, and runs our programs. There is a shell used in our terminal, that takes the commands we type in our terminal and executes them. In this curriculum, we will go into shells only at this level of depth.
+The terminal is not actually the program responsible for running the commands we enter into the command line. It turns out, the terminal itself is a GUI that accepts commands as text input and will print any text output of commands we run. There is a **shell** program used by our terminal that works between the command line and the computer's operating system to run our commands. When a command is entered into the command line, the terminal runs the shell. The shell interprets the entered command and executes it. 
+Just as there are multiple operating systems, there are multiple shell programs. `zsh` or Z shell is the default shell installed on Macs since macOS Catalina. In this curriculum, we will go into shells only at this level of depth.
 
-### !callout-secondary
+![Parts of a Terminal Application](../assets/intro-to-dev-environment-terminal-components.png)
 
-There is some cool computing history about how the terms "console" and "terminal" have evolved! Follow your curiosity and look it up!
+The terminal is the application where commands are typed in via the command line. In the example above, when the enter key is pressed, the terminal will ask the shell to execute the `cd Documents` command that was typed in.
+
+### !callout-info
+
+## Why use the Terminal?
+
+Why use the terminal when we can use the macOS GUI to get the same result? While using the terminal takes time to learn, once we are familiar with common commands, using the terminal is more efficient. The terminal is also quite powerful - it is possible to write programs or _scripts_ that will execute multiple commands at once. 
 
 ### !end-callout
 
@@ -58,7 +66,10 @@ Our terminal can run several kinds of _text editors_, or programs that can read 
 
 ## Navigating The File System
 
-We will use the command line (in the terminal) and learn several commands to help us navigate a computer's file system.
+![Finder app](../assets/intro-to-dev-environment-finder.png)
+_Finder Application_
+
+You may be familiar with using Mac's Finder application to navigate, create, delete, and move different files in your computer's file system. We will use the command line (in the terminal) and learn several commands to help us navigate a computer's file system without the Finder app.
 
 **Here's a Metaphor:** Imagine our computer's entire file system is a house. This house contains main rooms that connect with each other. Each room can contain many pieces of furniture. A computer's file system is like the house, folders are like the rooms, and files are like the pieces of furniture.
 
@@ -67,7 +78,7 @@ We will use the command line (in the terminal) and learn several commands to hel
 
 We can only be in one room (folder) at a time. We can move pieces of furniture (files) between the different rooms (folders). In this house, we can also make or remove as many rooms (folders) or pieces of furniture (files) as we want!
 
-In our terminal, **there is only one current working directory at a time;** the command line is only working in one folder (room) at a time. Navigating the file system in the command line means learning the commands to go between folders (rooms) and manipulate files (furniture).
+In our terminal, **there is only one current working directory (folder) at a time;** the command line is only working in one folder (room) at a time. Navigating the file system in the command line means learning the commands to go between folders (rooms) and manipulate files (furniture).
 
 ### Commands
 
@@ -154,22 +165,36 @@ If you've never organized that many files and folders, and don't have a preferen
 
 Of course, feel free to not follow these recommendations if you have preferred ways of organizing files that will work for you better.
 
-## Always Run Code with `python3`
+
+## Using the Command Line to Execute Code
+
+Writing code is like writing an instruction manual. When we write a program, we are using the programming language of our choice to explain step by step _how_ to perform a specific task. Writing out an explanation is not the same as actually _doing_ the task. Carrying out the task is referred to **executing** or running the program. 
+
+To run our program using the command line, we can use the `python3` command. Python is a programming language, but it is also a piece of software. When we install Python onto our machine, we are installing a Python **interpreter** which takes a program written in human-readable Python code, translates it into computer-readable machine code, and has our computer execute the program using the translated machine code.
+
+Entering `python3` into the command line without adding additional arguments will open the interpreter directly in the command line.
+
+```bash
+$ python3
+```
+
+![Python Command Line Interpreter](../assets/intro-to-dev-environment-command-line-interpreter.gif)
+
+Using the command line interpreter, we can write and execute Python code directly in the interpreter. We can type `quit()` to exit the command line interpreter. The command line interpreter can be useful for debugging and testing out small pieces of code.
+
+To run a Python program stored within a file, we follow the `python3` command with an argument: (the path and) name of the Python script we want to run.
+
+```bash
+$ python3 some_file.py
+```
+
+### Always Run Code with `python3`
 
 This curriculum teaches programming in Python 3. By default, many macOS systems come with Python 2 installed. However, the differences between Python 3 and Python 2 are significant! It will become **crucial** to always execute our Python scripts from the command line and specify Python 3.
 
-We can specify that we want to run specifically Python 3, we will always use this command:
-
-```bash
-python3 some_file.py
-```
-
-...where `some_file.py` is the (path and) name of the Python script we want to run.
-
-If we forget to run our Python scripts with `python3`, there's a chance that the script runs as expected, and a chance that the script breaks or has bugs.
+If we forget to run our Python scripts with `python3`, there's a chance that the script runs as expected but also a chance that the script breaks or has bugs.
 
 ### !callout-warning
-
 ## python3 vs python
 
 "A lot of tutorials just use the `python` command to run Python scripts! Why? I'm not convinced that we need to use the `python3` command." One way to check if you need to use the `python3` command is to run two commands: `$ python --version` and `$ python3 --version`. If the output of these two commands differs (namely, `python` points to version 2), then we need to **avoid** using the `python` command.
