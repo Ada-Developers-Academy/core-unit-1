@@ -100,7 +100,7 @@ Here are some categories of different software to spend a career and a half expl
 ### !callout-info
 
 ## Operating Systems are Software!
-An **operating system** is software itself! Operating systems such as MacOS, Microsoft Windows, etc. are sets of software which act as an _interface_ or translator between the applications you use and other parts of the computer including its hardware. For example, if we wanted to print a document we had open in a text editor, our text editor application would relay that task to the operating system, and the operating system would translate the task into commands the printer can understand. The operating system also acts as the computer's manager, allocating resources like computer memory to different applications.
+An **operating system** is software itself! Operating systems such as macOS, Microsoft Windows, etc. are sets of software which act as an _interface_ or translator between the applications you use and other parts of the computer including its hardware. For example, if we wanted to print a document we had open in a text editor, our text editor application would relay that task to the operating system, and the operating system would translate the task into commands the printer can understand. The operating system also acts as the computer's manager, allocating resources like computer memory to different applications.
 
 ![Operating System](images/operating-system-diagram.png)
 ### !end-callout
