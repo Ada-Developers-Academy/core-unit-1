@@ -94,6 +94,17 @@ Here are some categories of different software to spend a career and a half expl
 - Hardware programming
 - Other programming languages
 
+
+
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-info
+
+## Operating Systems are Software!
+An **operating system** is software itself! Operating systems such as MacOS, Microsoft Windows, etc. are sets of programs which act as an _interface_ or translator between the applications you use and other parts of the computer including its hardware. For example, if we wanted to print a document we had open in a text editor, our text editor application would relay that task to the operating system, and the operating system would translate the task into commands the printer can understand. The operating system also acts as the computer's manager, allocating resources like computer memory to different applications.
+
+![Operating System](images/operating-system-diagram.png)
+### !end-callout
+
 ## Software Has Impact
 
 Software has impact and technology is political. Software affects the world in positive and negative ways. Software can build community, and software can influence people.
@@ -118,9 +129,7 @@ It's valuable to know that a lot of software and developer communities have adop
 
 ### !end-callout
 
-## Operating Systems
 
-An **operating system** is software itself! Operating systems such as MacOS, Windows, etc. are collections of programs that facilitate communication between the 
 
 ## Hello, World!
 
