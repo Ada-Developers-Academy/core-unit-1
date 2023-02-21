@@ -69,7 +69,7 @@ We've discussed that the memory we call RAM is responsible for storing instructi
 
 ## Memory in Action
 
-When we write a program, we place the code in a Python file. That Python file and any code or data inside of it is stored in our hard drive. When we run the program, any data created while running the program such as variables, the result of computations, etc. is stored in RAM. The data created while running the program is not automatically saved anywhere once the program stops or we turn off our computer.
+When we write a program, we place the code in a Python file. That Python file and any code or data inside of it is stored in our hard drive. When we run the program, the file is copied from the hard drive to RAM and any data created while running the program such as variables, the result of computations, etc. is stored in RAM. The data created while running the program is not automatically saved anywhere once the program stops or we turn off our computer.
 
 Say, for example, we run a program that finds all mentions of 'Ada Lovelace' in a text file. To save the program's findings, we would have to store the results somewhere, such as a file on our hard drive or the web. Follow your curiosity if you are interested in learning more about how web or cloud storage works. 
 
