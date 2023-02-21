@@ -219,11 +219,11 @@ Some commands to learn include:
 
 | Command in the Command Line| Description | Notes |
 |---                         |---          |---    |
-|`man`  |   |  |
-|`mv`   |   |  |
-|`cat`  |   |  |
-|`echo` |   |  |
-|`grep` |   |  |                              
+|`man some_command`  |  Prints the manual for any Unix command | Use this command if you want more information about how to use another command and the command's arguments|
+|`mv source destination`   | Moves the `source` file or directory to the `destination` file or directory. | We can move multiple items to the same destination simultaneously: for example `mv source1 source2 destination`.  `mv` can also be used to rename files. |
+|`cat some_file`  | Reads the data in the given file and prints the content as output in the terminal  | Can print the contents of multiple files with `cat file1 file2`  |
+|`echo some_string` | Prints the string passed in to the console  |  |
+|`gre some_string some_file` | Prints out any lines in `some_file` containing `some_string`   | Use this command if you want to search for a term within a file. |                              
 
 For a fun way to learn more command line tools [check out these Bite Size Command Line comics by Julia Evans!](https://wizardzines.com/comics/#bite-size-command-line)
 
