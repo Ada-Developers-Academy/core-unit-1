@@ -31,7 +31,7 @@ As a programmer, the terminal is one of our most important tools, and we will ru
 
  As software developers, we often use the **terminal** instead of the operating system's GUI to use our computer. In our curriculum, we will use "terminal" to refer to an application that allows us to give text commands directly to a computer's operating system. Entering commands into the terminal application allows us to interact with a computer in the same way that clicking on buttons or windows does. We can enter commands to navigate between folders, make files, run programs, and more. Often, developers use the phrases "terminal" and "console" interchangeably. In macOS, there is an application named Terminal, and we'll use that application to type in commands and use the command line.
 
-The **command line** refers to the area in the terminal where where developers type in commands. Often, a tutorial may stylize a command line prompt (or, command to input) with a `$` or other symbol (ex. `➜` , `%`, etc.) in the front. This symbol is to indicate the start of the command line, and does not need to be typed in.
+The **command line** refers to the area in the terminal where developers type in commands. Often, a tutorial may stylize a command line prompt (or, command to input) with a `$` or other symbol (ex. `➜` , `%`, etc.) in the front. This symbol is to indicate the start of the command line, and does not need to be typed in.
 
 ```bash
 $ ls
