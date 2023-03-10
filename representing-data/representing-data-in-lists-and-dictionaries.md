@@ -123,6 +123,8 @@ Dictionaries are great at...
 ## *Dictionaries & Ordering Data
 In recent versions of Python, key-value pairs in dictionaries are maintained in insertion order meaning that key-value pairs are organized in the order that they were added to the dictionary. Ordered dictionaries were first introduced as an implementation detail in version [Python 3.6](https://docs.python.org/3/whatsnew/3.6.html#new-dict-implementation) and became an official language feature beginning with [version 3.7](https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict).
 
+<br>
+
 Despite these changes, we recommend still treating dictionaries as unordered. Because dictionaries are not ordered alphabetically or numerically, treating dictionaries as ordered may not be useful or reliable unless we know how items were added to the dictionary. Additionally, similar data types in other programming languages are often unordered. 
 
 ### !end-callout
