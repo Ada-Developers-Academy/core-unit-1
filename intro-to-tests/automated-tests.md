@@ -23,9 +23,6 @@ Have you ever worked on a function, and it runs, but you weren't sure if it was 
 
 Automated tests, often called "tests," are suites of code used to verify the correctness of another, separate suite of code.
 
-![Comic about automated tests](../assets/intro-to-tests_automated-tests_dilbert-testing.png)  
-[(source)](https://dilbert.com/strip/2011-03-24)
-
 Programmers write tests to communicate what needs to be proved in order for a feature to be complete.
 
 Each test could follow this generic pattern:
