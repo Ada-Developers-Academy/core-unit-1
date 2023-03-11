@@ -114,8 +114,20 @@ Dictionaries are great at...
 | <div style="min-width:130px;">Strength</div>                                  | <div style="min-width:280px">Notes</div>                                                                                                                                                                                               | <div style="min-width:250px;">How it's represented in code</div> |
 | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
 | Data must be organized in key-value pairs | All data in dictionaries _must_ be in key-value pairs; there is no way to add a value without specifying a key                                                                                      |  ``` {"key_name": "value", "another_key": 100} ```                            |
-| Data is unordered                         | Dictionaries may sometimes appear to have an order, but there is no consistent ordering of key-value pairs. This is helpful to express that there isn't necessarily priority or importance to order | ``` {"key_123": 10,    "key_200": 0.34,   "key_2": 1}``` Notice how despite there being a numbering convention in these key-value pairs that they are not in a specific order.  |
+| Data is unordered*                         | Dictionaries may sometimes appear to have an order, but there is no consistent ordering of key-value pairs. This is helpful to express that there isn't necessarily priority or importance to order | ``` {"key_123": 10,    "key_200": 0.34,   "key_2": 1}``` Notice how despite there being a numbering convention in these key-value pairs that they are not in a specific order.  |
 | Accessing values by using keys            | All values can be accessed by a key; this might have more meaning than accessing values by index, especially when keys are named intentionally                                                      | We can access values by using square brackets, ```dict_name["key_name"]```    |
+
+<!-- available callout types: info, success, warning, danger, secondary, star  -->
+### !callout-none
+
+## *Dictionaries & Ordering Data
+In recent versions of Python, key-value pairs in dictionaries are maintained in insertion order meaning that key-value pairs are organized in the order that they were added to the dictionary. Ordered dictionaries were first introduced as an implementation detail in version [Python 3.6](https://docs.python.org/3/whatsnew/3.6.html#new-dict-implementation) and became an official language feature beginning with [version 3.7](https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict).
+
+<br>
+
+Despite these changes, we recommend still treating dictionaries as unordered. Because dictionaries are not ordered alphabetically or numerically, treating dictionaries as ordered may not be useful or reliable unless we know how items were added to the dictionary. Additionally, similar data types in other programming languages are often unordered. 
+
+### !end-callout
 
 ### An Example Problem Statement
 
