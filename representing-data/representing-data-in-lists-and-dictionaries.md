@@ -118,7 +118,7 @@ Dictionaries are great at...
 | Accessing values by using keys            | All values can be accessed by a key; this might have more meaning than accessing values by index, especially when keys are named intentionally                                                      | We can access values by using square brackets, ```dict_name["key_name"]```    |
 
 <!-- available callout types: info, success, warning, danger, secondary, star  -->
-### !callout-star
+### !callout-none
 
 ## *Dictionaries & Ordering Data
 In recent versions of Python, key-value pairs in dictionaries are maintained in insertion order meaning that key-value pairs are organized in the order that they were added to the dictionary. Ordered dictionaries were first introduced as an implementation detail in version [Python 3.6](https://docs.python.org/3/whatsnew/3.6.html#new-dict-implementation) and became an official language feature beginning with [version 3.7](https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict).
