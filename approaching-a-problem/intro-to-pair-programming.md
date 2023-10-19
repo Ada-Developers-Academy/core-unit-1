@@ -16,7 +16,7 @@ Different contexts call for different methods of programming: sometimes it's bes
 
 Pair programming is a method of programming in which two people problem-solve together on the same code simultaneously. Typically, during a pair-programming session, the two people trade and alternate the two roles "drive" and "navigator."
 
-The driver is responsible for using the keyboard and mouse. This usually means this person types code and navigates the project.
+The driver is responsible for using the keyboard and mouse. This usually means this person types code and browses through the projects directories and files.
 
 ![Comic of two coworkers deciding to pair program](../assets/approaching-a-problem_pair-programming_driver-navigator.jpeg)  
 [(source)](https://medium.com/swlh/writing-code-efficiently-with-a-partner-e9c969674a3b)
@@ -67,7 +67,7 @@ You can still accomplish pair programming remotely by following the principles a
 
 There are many software solutions you can use to make remote pairing go smoothly but even something as simple as screen sharing during a video call can do the trick.
 
-You can also use some tools specifically made for remote pairing. If developing in VS Code, [VS Code's plugin Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is an example of one of these tools. The Live Share extension allows teams to write code, debug, chat, and have audio calls in Visual Studio Code. in Tools like these will make it easier to do hand off between driving and navigating like you would if you were sitting next to each other in person.
+You can also use some tools specifically made for remote pairing. If developing in VS Code, [VS Code's plugin Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is an example of one of these tools. The Live Share extension allows teams to write code, debug, chat, and have audio calls in Visual Studio Code. Tools like these will make it easier to do hand off between driving and navigating like you would if you were sitting next to each other in person.
 
 ![Audrey and Claire on VS Code Liveshare](../assets/approaching-a-problem_pair-programming_vs-code-liveshare.png)  
 *Fig. Audrey and Claire collaborating on VS Code* [(source)](https://www.monkeyuser.com/2020/pair-programming/)
