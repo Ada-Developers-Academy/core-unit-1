@@ -816,7 +816,7 @@ What does this code print to the console?
 
 ```python
 age = 99
-print("The current value of age is: ", age)
+print("The current value of age is:", age)
 ```
 
 Exclude any surrounding quotes. (For example, `print("Hello, World!")` prints `Hello, World!`.)
