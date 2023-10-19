@@ -48,7 +48,7 @@ As dictionaries iterate over key-value pairs, the values of `my_key` and `my_val
 
 1. In the first iteration, the value of `my_key` will be the key of a key-value pair, and the value of `my_value` will be the value of that same key-value pair.
 2. In the second iteration, the value of `my_key` will be the key of a different key-value pair, and the value of `my_value` will be the value of that same key-value pair.
-3. ... etc., until there are no more key-value pairs in the list.
+3. ... etc., until there are no more key-value pairs in the dictionary.
 
 We should change `my_key` and `my_value` to have variable names appropriate to the context of the dictionary.
 
@@ -123,7 +123,7 @@ print("That sure was a meal!")
 
 | <div style="text-align:center;">food</div>         | price        | <div style="text-align: center;">taxed_price (rounded up)</div>   | <div style="text-align:center;">print statement |
 | ------------- | ------------- | ------------- | ------------- |
-| Brussel Sprouts     | 18.99   | <div style="text-align:center;">20.91</div> | "Brussel Sprouts costs most than $20."
+| Brussel Sprouts     | 18.99   | <div style="text-align:center;">20.91</div> | "Brussel Sprouts costs more than $20."
 | Fancy Lemonade       | 56.00  | <div style="text-align:center;">61.66</div> | "Fancy Lemonade costs more than $20."
 | Summer Salad         | 48.50  | <div style="text-align:center;">53.40</div> | "Summer Salad costs more than $20."
 | Tomato Soup          | 18.50  | <div style="text-align:center;">20.37</div> | "Tomato Soup costs more than $20."  
