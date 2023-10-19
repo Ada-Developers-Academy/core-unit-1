@@ -16,7 +16,7 @@ Different contexts call for different methods of programming: sometimes it's bes
 
 Pair programming is a method of programming in which two people problem-solve together on the same code simultaneously. Typically, during a pair-programming session, the two people trade and alternate the two roles "drive" and "navigator."
 
-The driver is responsible for using the keyboard and mouse. This usually means this person types code and browses through the projects directories and files.
+The driver is responsible for using the keyboard and mouse. This usually means this person types code and browses through project directories and files.
 
 ![Comic of two coworkers deciding to pair program](../assets/approaching-a-problem_pair-programming_driver-navigator.jpeg)  
 [(source)](https://medium.com/swlh/writing-code-efficiently-with-a-partner-e9c969674a3b)
