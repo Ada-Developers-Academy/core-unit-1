@@ -89,7 +89,7 @@ What is the file path from the current working directory to where we want `new_s
 ##### !explanation 
 The `touch` command allows us to create new files.
 
-Since we want to create the new file in a different directory than the one we are currently in, we need to include the file path relative to our current directory in our argument which is `Developers/new_script.py`
+Since we want to create the new file in a different directory than the one we are currently in, we need to include the file path relative to our current directory in our argument which is `Developer/new_script.py`
 ##### !end-explanation
 
 ### !end-challenge

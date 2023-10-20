@@ -77,14 +77,6 @@ When we come across errors, we should take notes of three things:
 2. What is the name of the error
 3. What is the line number of the error
 
-<!-- ![Screenshot of two windows: One is a .rb file with a bug, and one is Terminal running the file, and showing a NameError](images/intro_debugging-stack_trace.png) -->
-
-From this example, our answers are:
-
-<!-- 1. Description of the error: `undefined local variable or method 'world'`
-2. Name of the error: `NameError`
-3. Line number of the error: `hello_world.rb:2`, so line 2 -->
-
 When we start to take notes about the errors, we'll start to see patterns, and be able to debug them faster.
 
 ### Confirm Your Values with `print`

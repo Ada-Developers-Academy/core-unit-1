@@ -72,7 +72,7 @@ Coordinate planes help us solve problems where we need to consider points that h
 If you've seen certain kinds of bar graphs or line graphs, and there's a horizontal x-axis, and a vertical y-axis, this is the exact same concept.
 
 ![A cartesian coordinate plane. A cyan point is displayed as (2, 3) and a fuchsia point is displayed at (-4, 1).](../assets/fundamentals-recap_math-primer_coordinate-plane.png)  
-*Fig. A coordinate plane. Essentially two number lines arranged at right angles. We can describe any location on the plane with 2 numbers. The cyan point (top-right) is at location (2, 3) and the fuchsia point (bottom-left) is at location (-4, 1).*
+*Fig. A coordinate plane. Essentially two number lines arranged at right angles. We can describe any location on the plane with 2 numbers. The cyan point (top-right) is at location (2, 3) and the fuchsia point (bottom-left) is at location (-4, -1).*
 
 ## Maximum and Minimum
 
