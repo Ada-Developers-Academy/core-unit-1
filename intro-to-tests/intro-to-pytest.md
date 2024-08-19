@@ -21,10 +21,30 @@ When we understand that tests can verify code correctness, let's learn one way t
 
 [`pytest`](https://docs.pytest.org/en/stable/) is one of many testing tools for the Python language.
 
-We can install (and upgrade) the `pytest` package with this command:
+
+
+Before we install `pytest`, let's recall the steps we took in precourse the commands to install Python packages. First, we need to navigate to the directory that we want to step up our virtual environment in. You can use the `pwd` command to check if we are currently inside of the desired directory, if not then we can use the `cd` command to navigate to the correct one. After we are inside the correct directory we can the following commands to create and then activate our virtual environment:
 
 ```bash
-pip3 install -U pytest
+$ python3 -m venv venv
+$ source venv/bin/activate
+```
+
+Remember that the first command creates a virtual environment under the name `venv` and the second command activates our virtual environment. After running the activation command, we should now see that each line of our terminal now begins with `(venv)`. This lets us know that our virtual environment has been activated. 
+
+### !callout-info
+
+## Virtual Environments
+
+At high level, virtual environments are used to  install and manage packages separately from other projects that could be using the same packages. For instance, if project A requires an older version of `pytest` than project B, using a virtual environment allows both projects to exist on the same machine without have to upgrade/downgrade `pytest` to meet the conflicting version requirements. We will discuss virtual environments in greater detail later in Managing Packages and when discussing the Adagrams project.
+
+### !end-callout
+
+
+Now let's use the command below to install `pytest`:
+
+```bash
+(venv) pip3 install -U pytest
 ```
 
 ### !callout-danger
