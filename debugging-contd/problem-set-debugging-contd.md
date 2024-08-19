@@ -96,7 +96,7 @@ How can Dahlia change her code to fix the two bugs above? Check out our prior le
 ##### !end-question
 ##### !hint
 
-1. How can we convert and integer to a string? What function can we use to cast a variable of one type to another type?
+1. How can we convert an integer to a string? What function can we use to cast a variable of one type to another type?
 2. What keys were declared when the dictionary's lists for categories were created? What values does the `categorize_strand` function return? How can we make them match?
 
 ##### !end-hint
