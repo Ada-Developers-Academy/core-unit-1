@@ -12,6 +12,8 @@ Dahlia's code can either be ran in test mode or production mode. When you run th
 
 Before jumping into debugging, please take a few minutes to read through the `PROBLEM_SET_README.md` file in the Replit for further information on how Dahlia is trying to achieve her goals and what the files in her project should be doing. 
 
+The focus of this exercise is to practice identifying bugs. We will continue to practice this skill during our time together at Ada and we should feel comfortable doing so without the use of AI tools like ChatGPT. Later, we'll practice debugging code with the assistance of prompting. For now, we'll stick to tools like rubber ducking or performing web searches to fix these bugs.
+
 When you're ready, come back to this page to answer the questions below about the debugging process and the bugs you found.
 
 Before starting work, please fork Dahlia's Replit. Follow the link: [https://replit.com/@adacore/EncodeAndDecodeGeneticSequencesStarter](https://replit.com/@adacore/EncodeAndDecodeGeneticSequencesStarter) and click the Fork button to create a copy that you can edit. 
@@ -158,7 +160,7 @@ Answer the following question:
 
 2. The expected output should include all bases listed in the genetic sequence we're compressing.
 
-3. If we use the debugger or print statements to look at the values of `result` and `dna_encoded1`, we'll see that the last base in a sequence and its count is not being added to the compressed sequence stored in `result`. 
+3. If we use the debugger or print statements to look at the values of `result` and `DNA_ENCODED`, we'll see that the last base in a sequence and its count is not being added to the compressed sequence stored in `result`. 
 
 ##### !end-explanation
 ### !end-challenge
@@ -182,9 +184,9 @@ List a few of the things you tried and what you discovered.
 
 Some examples of things to try:
 
-- Add print statements that print out `stage` at the beginning and the end of `one_generation`.
+- Add print statements to `encode_strand` inside the for-loop to see what is getting appended to the list called `encoding` with each iteration.
 
-- Add print statements inside of the for loops that print out `stage`.
+- Add a print statement to the test just before the assert statement to see the value of result.
 
 - Comment out sections of code and re-add it line by line.
 
@@ -207,6 +209,8 @@ Why doesn't Dahlia's `encode_strand` function work? What is happening that means
 ##### !explanation
 
 The function `encode_strand` that is compressing the sequence is not accounting for adding the last base to the compressed string. 
+
+<br>
 
 When our loop ends, the variable `count` points to the correct number of characters for the last base in the sequence, but we still need to do some work to create a new entry for that character and append it to our `encoding` list before we call `join` in our `return` statement.
 
@@ -241,7 +245,13 @@ encoding.append(new_entry)
 
 In Part 2, Dahlia has refactored her code to first compress the strings, then categorize them. 
 
+### !callout-info
+
+## Set Up for Part 2
+
 Before you answer these questions, ensure you have followed all instructions in the `PROBLEM_SET_README.md` file for Part 2 to change the imports in `main.py`, as well as uncommented the Part 2 tests in the `sequence_tests.py` file.
+
+### !end-callout
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -261,9 +271,9 @@ List a few of the things you tried and what you discovered.
 
 Some examples of things to try:
 
-- Add print statements that print out `stage` at the beginning and the end of `one_generation`.
+- Add print statements to `encode_strand` inside the for-loop to see what is getting appended to the list called `encoding` with each iteration.
 
-- Add print statements inside of the for loops that print out `stage`.
+- Add a print statement to the test just before the assert statement to see the value of result.
 
 - Comment out sections of code and re-add it line by line.
 
