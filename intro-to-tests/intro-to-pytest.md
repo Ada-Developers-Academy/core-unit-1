@@ -1,6 +1,7 @@
 # Intro to pytest
 
-<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=3df8554d-2963-4ae9-a253-acd20023dc59&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+<!-- Video does a global install of pytest, Python no longer allows for global installation of packages >
+<!-- <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=3df8554d-2963-4ae9-a253-acd20023dc59&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> -->
 
 ## Learning Goals
 
@@ -23,7 +24,7 @@ When we understand that tests can verify code correctness, let's learn one way t
 
 
 
-Before we install `pytest`, let's recall the steps we took in precourse the commands to install Python packages. First, we need to navigate to the directory that we want to step up our virtual environment in. You can use the `pwd` command to check if we are currently inside of the desired directory, if not then we can use the `cd` command to navigate to the correct one. After we are inside the correct directory we can the following commands to create and then activate our virtual environment:
+Before we install `pytest`, let's recall the steps we took in Precourse the commands to install Python packages. First, we need to navigate to the directory that we want to setup our virtual environment in. We can use the `pwd` command to check if we are currently inside of the desired directory, if not then we can use the `cd` command to navigate to the correct one. After we are inside the correct directory we can the following commands to create and then activate our virtual environment:
 
 ```bash
 $ python3 -m venv venv
@@ -36,7 +37,7 @@ Remember that the first command creates a virtual environment under the name `ve
 
 ## Virtual Environments
 
-At high level, virtual environments are used to  install and manage packages separately from other projects that could be using the same packages. For instance, if project A requires an older version of `pytest` than project B, using a virtual environment allows both projects to exist on the same machine without have to upgrade/downgrade `pytest` to meet the conflicting version requirements. We will discuss virtual environments in greater detail later in Managing Packages and when discussing the Adagrams project.
+At high level, virtual environments are used to  install and manage packages separately from other projects that could be using the same packages. For instance, if project A requires an older version of `pytest` than project B, using a virtual environment allows both projects to exist on the same machine without have to upgrade/downgrade `pytest` to meet the conflicting version requirements. We will discuss virtual environments in greater detail later in `Managing Packages` and when discussing the `Adagrams` project.
 
 ### !end-callout
 
@@ -64,10 +65,10 @@ When we use `pytest`, we will be creating more files. In order to anticipate mor
 ├── projectname
 │   ├── __init__.py
 │   └── somefile.py
-└── tests
-    ├── __init__.py
-    ├── context.py
-    └── test_somefile.py
+├── tests
+│   ├── __init__.py
+│   └── test_somefile.py
+└── venv
 ```
 
 Take care to notice the following:
@@ -80,11 +81,12 @@ Take care to notice the following:
    - This represents a test file that is responsible for testing `projectname/somefile.py`
 1. There are some other files: `__init__.py` and `context.py`
    - We will not focus on these files, but feel free to read through them
+1. Our `venv` folder is located directly inside of our project directory.
 
 This folder structure isn't necessary to make `pytest` work; this folder structure:
 
 1. Provides structure and organization to our projects
-1. Mimics a project structure commonly used across technologies
+2. Mimics a project structure commonly used across technologies
 
 ### Tests Files go in the `tests` Directory
 
