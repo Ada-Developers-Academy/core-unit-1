@@ -208,7 +208,7 @@ Why doesn't Dahlia's `encode_strand` function work? What is happening that means
 
 The function `encode_strand` that is compressing the sequence is not accounting for adding the last base to the compressed string. 
 
-When our loop ends, the variable `count` points to the correct number of characters for the last base in the sequence, but we still need to do some work to create a new entry for that character and append it to our `encoding` list before we call join in our `return` statement.
+When our loop ends, the variable `count` points to the correct number of characters for the last base in the sequence, but we still need to do some work to create a new entry for that character and append it to our `encoding` list before we call `join` in our `return` statement.
 
 ##### !end-explanation
 ### !end-challenge
@@ -221,7 +221,7 @@ When our loop ends, the variable `count` points to the correct number of charact
 * title: Debugging Continued
 ##### !question
 
-Dahlia knows what's happening and why it's happening. What code does she need to add or change to ensure the last base and its count gets added to the `encoding` list before we call join in our `return` statement?
+Dahlia knows what's happening and why it's happening. What code does she need to add or change to ensure the last base and its count gets added to the `encoding` list before we call `join` in our `return` statement?
 
 ##### !end-question
 ##### !explanation
