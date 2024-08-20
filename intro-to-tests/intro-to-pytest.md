@@ -39,7 +39,7 @@ Remember that the first command creates a virtual environment under the name `ve
 
 ## Virtual Environments
 
-At high level, virtual environments are used to  install and manage packages separately from other projects that could be using the same packages. For instance, if project A requires an older version of `pytest` than project B, using a virtual environment allows both projects to exist on the same machine without have to upgrade/downgrade `pytest` to meet the conflicting version requirements. We will discuss virtual environments in greater detail later in `Managing Packages` and when discussing the `Adagrams` project.
+At high level, virtual environments are used to install and manage packages separately from other projects that could be using the same packages. For instance, if project A requires an older version of `pytest` than project B, using a virtual environment allows both projects to exist on the same machine without needing to upgrade/downgrade `pytest` to meet the conflicting version requirements. We will discuss virtual environments in greater detail later in `Managing Packages` and when discussing the `Adagrams` project.
 
 ### !end-callout
 
