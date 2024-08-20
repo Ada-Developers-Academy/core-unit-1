@@ -1,6 +1,7 @@
 # Intro to pytest
 
-<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=3df8554d-2963-4ae9-a253-acd20023dc59&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+<!-- Video does a global install of pytest, Python no longer allows for global installation of packages >
+<!-- <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=3df8554d-2963-4ae9-a253-acd20023dc59&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> -->
 
 ## Learning Goals
 
@@ -21,13 +22,35 @@ When we understand that tests can verify code correctness, let's learn one way t
 
 [`pytest`](https://docs.pytest.org/en/stable/) is one of many testing tools for the Python language.
 
-We can install (and upgrade) the `pytest` package with this command:
+Before we install `pytest`, let's recall the steps we took in Precourse the commands to install Python packages:
+1. First, we need to navigate to the directory that we want to setup our virtual environment in. 
+    - We can use the `pwd` command to check if we are currently inside of the desired directory. 
+    - If we're not in the right folder, then we can use the `cd` command to navigate to the correct one. 
+2. After we are inside the correct directory we can use the following commands to create and then activate our virtual environment:
 
 ```bash
-pip3 install -U pytest
+$ python3 -m venv venv
+$ source venv/bin/activate
 ```
 
-### !callout-danger
+Remember that the first command creates a virtual environment under the name `venv` and the second command activates our virtual environment. After running the activation command, we should now see that each line of our terminal now begins with `(venv)`. This lets us know that our virtual environment has been activated. 
+
+### !callout-info
+
+## Virtual Environments
+
+At high level, virtual environments are used to install and manage packages separately from other projects that could be using the same packages. For instance, if project A requires an older version of `pytest` than project B, using a virtual environment allows both projects to exist on the same machine without needing to upgrade/downgrade `pytest` to meet the conflicting version requirements. We will discuss virtual environments in greater detail later in `Managing Packages` and when discussing the `Adagrams` project.
+
+### !end-callout
+
+
+Now let's use the command below to install `pytest`:
+
+```bash
+(venv) pip3 install -U pytest
+```
+
+### !callout-info
 
 ## pip3
 
@@ -44,27 +67,28 @@ When we use `pytest`, we will be creating more files. In order to anticipate mor
 ├── projectname
 │   ├── __init__.py
 │   └── somefile.py
-└── tests
-    ├── __init__.py
-    ├── context.py
-    └── test_somefile.py
+├── tests
+│   ├── __init__.py
+│   └── test_somefile.py
+└── venv
 ```
 
 Take care to notice the following:
 
-1. In our project directory, there are 0 files, and 2 folders: `projectname` and `tests`.
+1. In our project directory, there are 0 files, and 3 folders: `projectname`, `tests`, and `venv`.
    - We will replace the folder name `projectname` with our project's name
-1. In our `projectname` folder, there is a file named `somefile.py`
+2. In our `projectname` folder, there is a file named `somefile.py`
    - This represents any Python files that include the functions we're writing
-1. In our `tests` folder, there is a file named `test_somefile.py`
+3. In our `tests` folder, there is a file named `test_somefile.py`
    - This represents a test file that is responsible for testing `projectname/somefile.py`
-1. There are some other files: `__init__.py` and `context.py`
+4. There are some other files such as `__init__.py`
    - We will not focus on these files, but feel free to read through them
+5. Our `venv` folder is located directly inside of our project directory.
 
 This folder structure isn't necessary to make `pytest` work; this folder structure:
 
 1. Provides structure and organization to our projects
-1. Mimics a project structure commonly used across technologies
+2. Mimics a project structure commonly used across technologies
 
 ### Tests Files go in the `tests` Directory
 
