@@ -50,7 +50,7 @@ Now let's use the command below to install `pytest`:
 (venv) pip3 install -U pytest
 ```
 
-### !callout-danger
+### !callout-info
 
 ## pip3
 
