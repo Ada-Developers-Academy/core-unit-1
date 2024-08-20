@@ -22,9 +22,11 @@ When we understand that tests can verify code correctness, let's learn one way t
 
 [`pytest`](https://docs.pytest.org/en/stable/) is one of many testing tools for the Python language.
 
-
-
-Before we install `pytest`, let's recall the steps we took in Precourse the commands to install Python packages. First, we need to navigate to the directory that we want to setup our virtual environment in. We can use the `pwd` command to check if we are currently inside of the desired directory, if not then we can use the `cd` command to navigate to the correct one. After we are inside the correct directory we can the following commands to create and then activate our virtual environment:
+Before we install `pytest`, let's recall the steps we took in Precourse the commands to install Python packages:
+1. First, we need to navigate to the directory that we want to setup our virtual environment in. 
+    - We can use the `pwd` command to check if we are currently inside of the desired directory. 
+    - If we're not in the right folder, then we can use the `cd` command to navigate to the correct one. 
+2. After we are inside the correct directory we can use the following commands to create and then activate our virtual environment:
 
 ```bash
 $ python3 -m venv venv
