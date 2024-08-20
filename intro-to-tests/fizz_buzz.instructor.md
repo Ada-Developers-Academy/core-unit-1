@@ -13,5 +13,3 @@ The suggested way to run this live code is one instructor writes a test and then
 A `requirements.txt` is not currently provided. Here are a few suggestions for how to run this exercise related to the `requirements.txt`.
 - We could use venv and install pytest and create a requirements.txt
 - We could create a `requirements.txt` in the repo and model creating a venv and installing the requirements
-
-In C15 and C16 we introduced `requirements.txt` and `venv` with the first project. Starting with C21, introduced `requirements.txt` and `venv` in precourse due to Python no longer allowing the global installation of packages. 

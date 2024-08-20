@@ -22,9 +22,11 @@ When we understand that tests can verify code correctness, let's learn one way t
 
 [`pytest`](https://docs.pytest.org/en/stable/) is one of many testing tools for the Python language.
 
-
-
-Before we install `pytest`, let's recall the steps we took in Precourse the commands to install Python packages. First, we need to navigate to the directory that we want to setup our virtual environment in. We can use the `pwd` command to check if we are currently inside of the desired directory, if not then we can use the `cd` command to navigate to the correct one. After we are inside the correct directory we can the following commands to create and then activate our virtual environment:
+Before we install `pytest`, let's recall the steps we took in Precourse the commands to install Python packages:
+1. First, we need to navigate to the directory that we want to setup our virtual environment in. 
+    - We can use the `pwd` command to check if we are currently inside of the desired directory. 
+    - If we're not in the right folder, then we can use the `cd` command to navigate to the correct one. 
+2. After we are inside the correct directory we can use the following commands to create and then activate our virtual environment:
 
 ```bash
 $ python3 -m venv venv
@@ -37,7 +39,7 @@ Remember that the first command creates a virtual environment under the name `ve
 
 ## Virtual Environments
 
-At high level, virtual environments are used to  install and manage packages separately from other projects that could be using the same packages. For instance, if project A requires an older version of `pytest` than project B, using a virtual environment allows both projects to exist on the same machine without have to upgrade/downgrade `pytest` to meet the conflicting version requirements. We will discuss virtual environments in greater detail later in `Managing Packages` and when discussing the `Adagrams` project.
+At high level, virtual environments are used to install and manage packages separately from other projects that could be using the same packages. For instance, if project A requires an older version of `pytest` than project B, using a virtual environment allows both projects to exist on the same machine without needing to upgrade/downgrade `pytest` to meet the conflicting version requirements. We will discuss virtual environments in greater detail later in `Managing Packages` and when discussing the `Adagrams` project.
 
 ### !end-callout
 
@@ -79,7 +81,7 @@ Take care to notice the following:
    - This represents any Python files that include the functions we're writing
 3. In our `tests` folder, there is a file named `test_somefile.py`
    - This represents a test file that is responsible for testing `projectname/somefile.py`
-4. There are some other files: `__init__.py` and `context.py`
+1. There are some other files such as `__init__.py`
    - We will not focus on these files, but feel free to read through them
 5. Our `venv` folder is located directly inside of our project directory.
 
