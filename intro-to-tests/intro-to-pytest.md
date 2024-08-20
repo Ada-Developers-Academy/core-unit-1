@@ -73,15 +73,15 @@ When we use `pytest`, we will be creating more files. In order to anticipate mor
 
 Take care to notice the following:
 
-1. In our project directory, there are 0 files, and 2 folders: `projectname` and `tests`.
+1. In our project directory, there are 0 files, and 3 folders: `projectname`, `tests`, and `venv`.
    - We will replace the folder name `projectname` with our project's name
-1. In our `projectname` folder, there is a file named `somefile.py`
+2. In our `projectname` folder, there is a file named `somefile.py`
    - This represents any Python files that include the functions we're writing
-1. In our `tests` folder, there is a file named `test_somefile.py`
+3. In our `tests` folder, there is a file named `test_somefile.py`
    - This represents a test file that is responsible for testing `projectname/somefile.py`
-1. There are some other files: `__init__.py` and `context.py`
+4. There are some other files: `__init__.py` and `context.py`
    - We will not focus on these files, but feel free to read through them
-1. Our `venv` folder is located directly inside of our project directory.
+5. Our `venv` folder is located directly inside of our project directory.
 
 This folder structure isn't necessary to make `pytest` work; this folder structure:
 
