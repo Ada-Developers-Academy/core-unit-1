@@ -81,7 +81,7 @@ Take care to notice the following:
    - This represents any Python files that include the functions we're writing
 1. In our `tests` folder, there is a file named `test_somefile.py`
    - This represents a test file that is responsible for testing `projectname/somefile.py`
-1. There are some other files: `__init__.py` and `context.py`
+1. There are some other files such as `__init__.py`
    - We will not focus on these files, but feel free to read through them
 1. Our `venv` folder is located directly inside of our project directory.
 
