@@ -16,7 +16,7 @@ Complete all questions below.
 
 ##### !question
 
-Complete Part 1 outlined in the **README** of the [tdd-exercise replit](https://replit.com/@adadev/tdd-exercise#README.md).
+Complete Part 1 outlined in the **README** of the [tdd-exercise](https://github.com/Ada-Activities/tdd-exercise).
 
 Record your test cases below.
 
