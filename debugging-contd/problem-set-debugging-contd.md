@@ -16,7 +16,7 @@ The focus of this exercise is to practice identifying bugs. We will continue to 
 
 When you're ready, come back to this page to answer the questions below about the debugging process and the bugs you found.
 
-Before starting work, please fork and clone Dahlia's repository. Follow the link: [https://github.com/Ada-Activities/Encode-Decode-Genetic-Sequences](https://github.com/Ada-Activities/Encode-Decode-Genetic-Sequences) and click the Fork button to create a copy that you can edit. 
+Before starting work, please fork and clone Dahlia's repository. Follow the link: [https://github.com/Ada-Activities/Encode-Decode-Genetic-Sequences](https://github.com/Ada-Activities/Encode-Decode-Genetic-Sequences), click the Fork button to create a copy in your own account, and then clone it down to your local machine to edit it. 
 
 ## Part 1 Questions
 
