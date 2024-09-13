@@ -4,19 +4,19 @@
 
 Dahlia is a geneticist and programmer who is stuck while debugging her program. Dahlia has been tasked with analyzing genetic sequences which are provided as strings of characters. 
 
-Our objective is to fork [Dahlia's Replit](https://replit.com/@adacore/EncodeAndDecodeGeneticSequencesStarter) and help Dahlia debug her code.
+Our objective is to fork and clone [Dahlia's repository](https://github.com/Ada-Activities/Encode-Decode-Genetic-Sequences) and help Dahlia debug her code.
 
 She needs to determine if each sequence is DNA or RNA, and compress the sequence for storage. Dahlia will compress them by replacing repeating characters in the string with a single character followed by a number representing how many times the character was repeated. 
 
-Dahlia's code can either be ran in test mode or production mode. When you run the project on Replit, the console will prompt you to enter `t` to test the project, or `r` to run the code in production mode.
+Dahlia's code can either be ran in test mode or production mode. To run the project, execute `python3 main.py` in the console and you will see a prompt to enter `t` to test the project, or `r` to run the code in production mode.
 
-Before jumping into debugging, please take a few minutes to read through the `PROBLEM_SET_README.md` file in the Replit for further information on how Dahlia is trying to achieve her goals and what the files in her project should be doing. 
+Before jumping into debugging, please take a few minutes to read through the `PROBLEM_SET_README.md` file in the repository for further information on how Dahlia is trying to achieve her goals and what the files in her project should be doing. 
 
 The focus of this exercise is to practice identifying bugs. We will continue to practice this skill during our time together at Ada and we should feel comfortable doing so without the use of AI tools like ChatGPT. Later, we'll practice debugging code with the assistance of prompting. For now, we'll stick to tools like rubber ducking or performing web searches to fix these bugs.
 
 When you're ready, come back to this page to answer the questions below about the debugging process and the bugs you found.
 
-Before starting work, please fork Dahlia's Replit. Follow the link: [https://replit.com/@adacore/EncodeAndDecodeGeneticSequencesStarter](https://replit.com/@adacore/EncodeAndDecodeGeneticSequencesStarter) and click the Fork button to create a copy that you can edit. 
+Before starting work, please fork and clone Dahlia's repository. Follow the link: [https://github.com/Ada-Activities/Encode-Decode-Genetic-Sequences](https://github.com/Ada-Activities/Encode-Decode-Genetic-Sequences), click the Fork button to create a copy in your own account, and then clone it down to your local machine to edit it. 
 
 ## Part 1 Questions
 
@@ -301,7 +301,7 @@ The step value of the `range` function call was 4, which means some bases were g
 for index in range(0, len(strand) - 1, 2):
 ```
 
-Take some time to try to debug Dahlia's code. When you are ready, take a look at [Dahlia's solution here](https://replit.com/@adacore/EncodeAndDecodeGeneticSequencesSolution).
+Take some time to try to debug Dahlia's code. When you are ready, take a look at [Dahlia's solution](https://github.com/Ada-Activities/Encode-Decode-Genetic-Sequences/tree/solution) in the solution branch. You will need to select the files you are interested in reviewing from the Github UI. 
 
 ##### !end-explanation
 ### !end-challenge
