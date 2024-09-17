@@ -329,7 +329,7 @@ Given these tests, refactor **_only_** the **`prepare_meal`** function to make t
 In `prepare_meal`...
 
 - If no error is raised, then `food` should be the result of `make_breakfast(pantry)`
-- If a `KeyError` is raised because of accessing something missing in `pantry`, then `food` should be `"nothing"`
+- If a `KeyError` is raised because of accessing something missing in `pantry`, then `food` should be `"nothing on a plate!"`
 
 ```python
 def test_makes_breakfast_on_a_plate():
@@ -400,7 +400,7 @@ class TestChallenge(unittest.TestCase):
 ```
 ### !end-tests
 ### !hint
-Try putting the line `food = make_breakfast(pantry)` inside the try-clause. If a `KeyError` is caught, then assign `food` to `"nothing"`.
+Try putting the line `food = make_breakfast(pantry)` inside the try-clause. If a `KeyError` is caught, then assign `food` to `"nothing on a plate!"`.
 ### !end-hint
 ### !explanation
 
@@ -412,7 +412,7 @@ def prepare_meal(meal_type, pantry):
         try:
             food = make_breakfast(pantry)
         except KeyError:
-            food = "nothing"
+            food = "nothing on a plate!"
     meal = serve_food(food)
     return meal
 ```
