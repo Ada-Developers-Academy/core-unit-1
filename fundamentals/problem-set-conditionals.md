@@ -516,43 +516,43 @@ else:
 <!-- prettier-ignore-start -->
 ### !challenge
 
-* type: checkbox
-* id: a61f06a0-94aa-4617-89a2-86f1217c8ef4
-* title: Boolean practice
+* type: multiple-choice
+* id: 4c8d3f3b-3edd-4269-ad7a-90e9bac49685
+* title: Boolean Practice
 
 ##### !question
 
 Voice assistants like Alexa will turn on when any of its "wake words" is announced nearby. Which option best describes this behavior?
 
 ##### !end-question
+
 ##### !options
 
-* 
+a| 
 ``` Python
 if "alexa" in users_speech and "echo" in users_speech:
   print("processing your request...")
 ```
-* 
+b| 
 ``` Python
 if "alexa" in users_speech or "echo" in users_speech:
   print("processing your request...")
 ```
-* 
+
+c|
 ``` Python
-if "alexa" == users_speech or "echo" == users_speech:
+if "alexa, order toilet paper" in users_speech or "echo, play Beyonce" in users_speech:
   print("processing your request...")
 ```
 
 ##### !end-options
+
 ##### !answer
 
-* 
-``` Python
-if "alexa" in users_speech or "echo" in users_speech:
-  print("processing your request...")
-```
+b| 
 
 ##### !end-answer
+
 ##### !hint 
 
 Assume that `users_speech` is a string that holds all of the recent speech that is announced nearby.
@@ -561,8 +561,10 @@ Assume that `users_speech` is a string that holds all of the recent speech that 
 
 ##### !explanation
 
-Alexa software requires at least one wake word in order to turn on and process requests. The `or` ensures that `print("processing your request...")` will execute if EITHER alexa or echo is used. The `and` would require the user to say both "Alexa" AND "echo" in order to turn on Alexa.
+Alexa software requires at least one wake word in order to turn on and process requests. The `or` ensures that `print("processing your request...")` will execute if **either** "alexa" or "echo" is used. The `and` would require the user to say both "alexa" **and** "echo" in order to turn on Alexa.
 
 ##### !end-explanation
+
 ### !end-challenge
+
 <!-- prettier-ignore-end -->
