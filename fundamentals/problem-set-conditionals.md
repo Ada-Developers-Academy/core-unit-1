@@ -522,7 +522,7 @@ else:
 
 ##### !question
 
-Voice assistants like Alexa will turn on when any of its "wake words" is announced nearby. Which option best describes this behavior?
+Voice assistants like Alexa will turn on when any of its "wake words" are announced nearby. Which option best describes this behavior?
 
 ##### !end-question
 
