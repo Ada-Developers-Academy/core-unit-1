@@ -1,8 +1,8 @@
 # Instance Methods
 
 <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=fa0b6e67-0d85-4412-822d-acdb01359706&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-## Learning Goals
 
+## Learning Goals
 - Define instance methods
 - Practice building classes with instance methods
 
