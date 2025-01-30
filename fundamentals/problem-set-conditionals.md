@@ -541,7 +541,7 @@ if "alexa" in users_speech or "echo" in users_speech:
 
 c|
 ``` Python
-if "alexa, order toilet paper" in users_speech or "echo, play Beyonce" in users_speech:
+if "alexa, order toilet paper" == users_speech or "echo, play Beyonce" == users_speech:
   print("processing your request...")
 ```
 
