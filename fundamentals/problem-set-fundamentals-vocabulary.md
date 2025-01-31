@@ -549,6 +549,20 @@ Which of the following options is a dictionary literal?
 
 ##### !end-answer
 
+##### !hint
+
+Dictionaries in Python are data structure that allow us to store key-value pairs. One of the ways to create a dictionary is to place key-value pairs within curly braces `{}`.
+
+A literal refers to the value itself without referencing a variable. 
+
+##### !end-hint
+##### !explanation
+
+- The first two options are dictionary literals because they are data structures with key-value pairs that are surrounded by curly braces. They are not referenced by any variables. 
+- The third option does not contain curly braces and is therefore not valid Python syntax.
+
+##### !end-explanation
+
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -580,9 +594,17 @@ Which of the following are literals?
 * `None`
 
 ##### !end-answer
+##### !hint
+
+A literal value is a value itself. The value is not referenced by a variable. For example, `3` is a literal integer but `a_number = 3` is not a literal integer.
+
+##### !end-hint
 ##### !explanation
 
-
+- `"Welcome! Make yourselves comfortable!"` is a string literal, `["magenta", "purple", "blue"]` is a list literal, and `None` is a special literal that represents the absence of a value. These three values are actual values that we might directly write into code. 
+- `app_name = "Ada's Super Ultra Amazing S-Rank App"` creates a variable called `app_name` and assigns it a string value `"Ada's Super Ultra Amazing S-Rank App"`. Since the string value is referenced by a variable this option is not a literal. 
+- `count` is not a string because it does not have quotations around it and is not a variable because there is no assignment after it. If you were to type `count` into a Python interpreter and execute this code, you would encounter a `NameError`.
+- `count = 100` creates a variable named `count` and assigns it a value `100`.
 
 ##### !end-explanation
 ### !end-challenge
@@ -617,6 +639,13 @@ Which of the following are literals?
 * `[]`
 
 ##### !end-answer
+##### !explanation
+
+- `87` is an integer literal, `"87"` is a string literal, `True` is a Boolean literal, and `[]` is an empty list literal.
+- `print()` is an expression that invokes the print function.
+- `2 + 3` is an expression. An expression is a combination of some programming logic that evaluates to a result. Here, 2 and 3 are added together, which evaluates to 5. 
+
+##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
@@ -651,6 +680,18 @@ Assume that all variables are properly defined.
 * `False or (is_eligible and not is_expired)`
 
 ##### !end-answer
+##### !hint
+
+An expression is a unit of code that can be evaluated into one value. A statement is a unit of code that is used to execute a change. In programming, statements are the building blocks that constitute a program.
+
+##### !end-hint
+##### !explanation
+
+- The last four options are all expressions because each of them will evaluate to one value. `sum > total` will evaluate to `True` or `False` depending on what values the variables reference. `5-10` will evaluate to `-5`. `is_eligible and not is_expired` and `False or (is_eligible and not is_expired)` will also either evaluate to `True` or `False` depending on what values the variables reference.
+- `sum = 5` is a statement that declares a variable called `sum` and assigns it an integer value of `5`.
+- `total = 10` is a statement that declares a variable called `total` and assigns it an integer value of `10`.
+
+##### !end-explanation
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
