@@ -559,7 +559,7 @@ A literal refers to the value itself without referencing a variable.
 ##### !explanation
 
 - The first two options are dictionary literals because they are data structures with key-value pairs that are surrounded by curly braces. They are not referenced by any variables. 
-- The third option is not valid Python syntax.
+- The third option does not contain curly braces and is therefore not valid Python syntax.
 
 ##### !end-explanation
 
@@ -601,7 +601,7 @@ A literal value is a value itself. The value is not referenced by a variable. Fo
 ##### !end-hint
 ##### !explanation
 
-- `"Welcome! Make yourselves comfortable!"` is a string literal, `["magenta", "purple", "blue"]` is a list literal, and `None` is a special literal value that represents the absence of a value. These three values are actual values that we might directly write into code. 
+- `"Welcome! Make yourselves comfortable!"` is a string literal, `["magenta", "purple", "blue"]` is a list literal, and `None` is a special literal that represents the absence of a value. These three values are actual values that we might directly write into code. 
 - `app_name = "Ada's Super Ultra Amazing S-Rank App"` creates a variable called `app_name` and assigns it a string value `"Ada's Super Ultra Amazing S-Rank App"`. Since the string value is referenced by a variable this option is not a literal. 
 - `count` is not a string because it does not have quotations around it and is not a variable because there is no assignment after it. If you were to type `count` into a Python interpreter and execute this code, you would encounter a `NameError`.
 - `count = 100` creates a variable named `count` and assigns it a value `100`.
@@ -641,7 +641,7 @@ Which of the following are literals?
 ##### !end-answer
 ##### !explanation
 
-- `87` is a integer literal, `"87"` is a string literal, `True` is a Boolean literal, and `[]` is a empty list literal.
+- `87` is an integer literal, `"87"` is a string literal, `True` is a Boolean literal, and `[]` is an empty list literal.
 - `print()` is an expression that invokes the print function.
 - `2 + 3` is an expression. An expression is a combination of some programming logic that evaluates to a result. Here, 2 and 3 are added together, which evaluates to 5. 
 
