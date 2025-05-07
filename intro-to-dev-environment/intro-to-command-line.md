@@ -180,7 +180,10 @@ $ python3
 
 ![Python Command Line Interpreter](../assets/intro-to-dev-environment-command-line-interpreter.gif)
 
-Using the command line interpreter, we can write and execute Python code directly in the interpreter. We can type `quit()` to exit the command line interpreter. The command line interpreter can be useful for debugging and testing out small pieces of code.
+Using the command line interpreter, we can write and execute Python code directly in the interpreter. The command line interpreter can be useful for debugging and testing out small pieces of code. To exit the command line interpreter, we can type one of the following options:
+- `quit()`
+- `exit()`
+- `ctrl` + `d`
 
 To run a Python program stored within a file, we follow the `python3` command with an argument: (the path and) name of the Python script we want to run.
 
@@ -239,14 +242,12 @@ Try using the up and down arrows to scroll, and tapping the `q` key to quit. I
 
 ## Check for Understanding
 
-<!-- Question 1 -->
-
 <!-- prettier-ignore-start -->
 ### !challenge
 
 * type: multiple-choice
 * id: 0d18747d-94a0-4136-85b1-49a1308ef647
-* title: The command line 
+* title: Intro to Command Line 
 
 ##### !question
 
@@ -272,7 +273,53 @@ What is the command line?
 ### !end-challenge
 <!-- prettier-ignore-end -->
 
-<!-- Question Takeaway -->
+<!-- prettier-ignore-start -->
+### !challenge
+* type: short-answer
+* id: 4jUlbM
+* title: Intro to Command Line
+##### !question
+
+What is the command line command to open the Python 3 interpreter?
+
+##### !end-question
+##### !answer
+
+python3
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+### !challenge
+* type: checkbox
+* id: NU7rOw
+* title: Intro to Command Line
+##### !question
+
+Imagine that we are running the Python 3 interpreter in a Terminal. What are all of the valid commands or key combinations to exit the interpreter, and return to the command line?
+
+##### !end-question
+##### !options
+
+* `exit()`
+* `close()`
+* `quit()`
+* `ctrl D`
+* `ctrl C`
+
+##### !end-options
+##### !answer
+
+* `exit()`
+* `quit()`
+* `ctrl D`
+
+##### !end-answer
+### !end-challenge
+<!-- prettier-ignore-end -->
+
 <!-- prettier-ignore-start -->
 ### !challenge
 * type: paragraph
