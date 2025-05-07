@@ -881,55 +881,6 @@ Use the Python interpreter to experiment with code. We can evaluate any expressi
 <!-- Question 29 -->
 <!-- prettier-ignore-start -->
 ### !challenge
-* type: short-answer
-* id: 4jUlbM
-* title: Fundamentals Vocabulary
-##### !question
-
-What is the command line command to open the Python 3 interpreter?
-
-##### !end-question
-##### !answer
-
-python3
-
-##### !end-answer
-### !end-challenge
-<!-- prettier-ignore-end -->
-
-<!-- Question 30 -->
-<!-- prettier-ignore-start -->
-### !challenge
-* type: checkbox
-* id: NU7rOw
-* title: Fundamentals Vocabulary
-##### !question
-
-Imagine that we are running the Python 3 interpreter in a Terminal. What are all of the valid commands or key combinations to exit the interpreter, and return to the command line?
-
-##### !end-question
-##### !options
-
-* `exit()`
-* `close()`
-* `quit()`
-* `ctrl D`
-* `ctrl C`
-
-##### !end-options
-##### !answer
-
-* `exit()`
-* `quit()`
-* `ctrl D`
-
-##### !end-answer
-### !end-challenge
-<!-- prettier-ignore-end -->
-
-<!-- Question 31 -->
-<!-- prettier-ignore-start -->
-### !challenge
 * type: multiple-choice
 * id: 5a5b2aa8-08ef-4a98-bf3c-e1a61461ceaa
 * title: Fundamentals Vocabulary
