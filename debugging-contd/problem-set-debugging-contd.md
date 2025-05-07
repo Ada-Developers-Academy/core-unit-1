@@ -137,14 +137,18 @@ Dahlia's code produces this output when ran in test mode:
 ```py
 Please enter r to run or t to test => t
 Traceback (most recent call last):
-  File "/home/runner/EncodeAndDecodeGeneticSequencesStarter/main.py", line 17, in <module>
+  File "/home/runner/Encode-Decode-Genetic-Sequences/main.py", line 16, in <module>
     tests()
-  File "/home/runner/EncodeAndDecodeGeneticSequencesStarter/sequence_tests.py", line 16, in tests
+    ~~~~~^^
+  File "/home/runner/Encode-Decode-Genetic-Sequences/sequence_tests.py", line 14, in tests
     part_one_tests()
-  File "/home/runner/EncodeAndDecodeGeneticSequencesStarter/sequence_tests.py", line 21, in part_one_tests
+    ~~~~~~~~~~~~~~^^
+  File "/home/runner/Encode-Decode-Genetic-Sequences/sequence_tests.py", line 19, in part_one_tests
     dna_tests()
-  File "/home/runner/EncodeAndDecodeGeneticSequencesStarter/sequence_tests.py", line 27, in dna_tests
+    ~~~~~~~~~^^
+  File "/home/runner/Encode-Decode-Genetic-Sequences/sequence_tests.py", line 25, in dna_tests
     assert result == DNA_ENCODED
+           ^^^^^^^^^^^^^^^^^^^^^
 AssertionError
 ```
 
