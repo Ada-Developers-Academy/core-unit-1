@@ -36,8 +36,12 @@ Each test could follow this generic pattern:
 ### !callout-info
 
 ## Astrological Birth Chart
-An Astrological Birth Chart is a visual map of what the sky looked like when you were born. It is determined using your exact birthdate and birthplace. It includes three signs, your **sun sign** (typically refered to as your Zodiac sign), your **moon sign**, and your **rising sign**. 
-[source](https://www.shape.com/lifestyle/mind-and-body/sun-moon-rising-sign-meaning)
+
+An Astrological Birth Chart is a visual map of what the sky looked like when you were born. 
+- It is determined using your exact birthdate and time, along with your birthplace. 
+- An Astrological Birth Chart includes three signs, your **sun sign**, your **moon sign**, and your **rising sign**.
+
+If you'd like more context, feel free to do a web search or check out [this article from tarot.com](https://web.archive.org/web/20250423003501/https://www.tarot.com/astrology/sun-moon-rising-sign)
 
 ### !end-callout
 <!-- available callout types: info, success, warning, danger, secondary  -->
