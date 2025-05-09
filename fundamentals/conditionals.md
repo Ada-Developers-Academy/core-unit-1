@@ -64,10 +64,10 @@ else:
 
 ## Pythonic
 
-There are many ways to achieve the same goal in programming. Writing _pythonic_ code means writing code that "follows certain stylistic and conventional guidelines that are accepted by the Python community to promote unified, maintainable, and concise applications that are written the way the language intended them to be written." [source](https://towardsdatascience.com/how-to-be-pythonic-and-why-you-should-care-188d63a5037e).
+There are many ways to achieve the same goal in programming. Writing _pythonic_ code means writing code that uses Python idioms and language specific syntax to their fullest while following stylistic conventions and guidelines for code organization that are accepted by the Python community. The goal is to promote creating applications with an emphasis on being readable, maintainable, and concise. 
 <br>
 <br>
-While writing code with a particular style should not be our main focus as we are learning how to code, we can still learn some stylistic best practices as we learn fundamental programming topics in Python. 
+While writing code with a particular style should not be our main focus as we are learning how to code, we can still learn some stylistic best practices as we learn fundamental programming topics in Python. The [PEP8 guidelines](https://peps.python.org/pep-0008/) we've mentioned previsouly are a great place to start if we want to begin exploring how to make our code more pythonic.
 
 ### !end-callout
 
