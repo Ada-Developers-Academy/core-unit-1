@@ -13,10 +13,10 @@ When we understand that tests can verify code correctness, let's learn one way t
 
 ## Vocabulary and Synonyms
 
-| Vocab     | Definition                        | Synonyms | How to Use in a Sentence |
-| --------- | --------------------------------- | -------- | ------------------------ |
-| Assertion | A statement that somethng is true |
-| Assert    | Stating that something is true    | expect   |
+| Vocab | Definition | Synonyms | How to Use in a Sentence |
+| --------- | --------- | -------- | --------- |
+| Assertion | A statement that something is true | expectation | "We wrote an assertion that the result should equal 10." |
+| Assert | Stating that something is true | expect | "What can we assert to confirm if the function behaves as intended?" |
 
 ## Installing `pytest`
 
