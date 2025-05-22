@@ -9,10 +9,7 @@ Our objective is to fork and clone [Dahlia's repository](https://github.com/Ada-
 She needs to determine if each sequence is DNA or RNA, and compress the sequence for storage. Dahlia will compress them by replacing repeating characters in the string with a single character followed by a number representing how many times the character was repeated. 
 
 To run the project: 
-- execute in the console `python3 main.py` 
-
-Or
-- Use the "Play" button in VS Code when the `main.py` file is open and has focus
+- execute `python3 main.py` in the console
 
 To run the tests: 
 - execute `pytest tests/test_part_one.py` in the console to run just the part 1 tests
