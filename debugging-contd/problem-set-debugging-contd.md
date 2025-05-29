@@ -131,7 +131,7 @@ How can Dahlia change her code to fix the two bugs above? Check out our prior le
 <!-- prettier-ignore-end -->
 <!--END CHALLENGE-->
 
-Dahlia run her code in `main.py` and discovers that the error is gone! Unfortunately, when she runs the tests in `tests/test_part_one.py` the actual output does not match the expected output. When looking at the test results, she sees a new crash.
+Dahlia runs her code in `main.py` and discovers that the error is gone! Unfortunately, when she runs the tests in `tests/test_part_one.py` the actual output does not match the expected output. When looking at the test results, she sees a new crash.
 
 <!-- prettier-ignore-start -->
 ### !challenge
