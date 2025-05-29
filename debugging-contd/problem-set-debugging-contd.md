@@ -8,7 +8,15 @@ Our objective is to fork and clone [Dahlia's repository](https://github.com/Ada-
 
 She needs to determine if each sequence is DNA or RNA, and compress the sequence for storage. Dahlia will compress them by replacing repeating characters in the string with a single character followed by a number representing how many times the character was repeated. 
 
-Dahlia's code can either be ran in test mode or production mode. To run the project, execute `python3 main.py` in the console and you will see a prompt to enter `t` to test the project, or `r` to run the code in production mode.
+To run the project: 
+- execute `python3 main.py` in the console
+
+To run the tests: 
+- execute `pytest tests/test_part_one.py` in the console to run just the part 1 tests
+- execute `pytest tests/test_part_two.py` in the console to run just the part 2 tests
+
+Or
+- Use the "Testing" tab (beaker icon) in VS Code and configure the set up for `Pytest`, then run the tests from the Testing panel.
 
 Before jumping into debugging, please take a few minutes to read through the `PROBLEM_SET_README.md` file in the repository for further information on how Dahlia is trying to achieve her goals and what the files in her project should be doing. 
 
@@ -29,17 +37,17 @@ Before starting work, please fork and clone Dahlia's repository. Follow the link
 
 Answer the following questions:
 
-1. What happens when you use the `t` option to test Dahlia's code without making any changes?  
-1. In which file, and on what line of code is the error on?
-1. What type of error is it?
-1. Why is the line throwing an error?
+1. What happens when you run the tests in `tests/test_part_one.py` without making any changes?  
+2. In which file, and on what line of code is the error on?
+3. What type of error is it?
+4. Why is the line throwing an error?
 
 ##### !end-question
 ##### !explanation
 
 1. Dahlia's code raises an exception.  
 
-2. The line that causes the error is line 73 of `part_one.py`, inside the `encode_strand` function: `new_entry = strand[index - 1] + count`.  
+2. The line that causes the error is line 73 of `source/part_one.py`, inside the `encode_strand` function: `new_entry = strand[index - 1] + count`.  
 
 3. The error is a `TypeError`.  
 
@@ -58,17 +66,17 @@ Answer the following questions:
 
 Answer the following questions:
 
-1. What happens when you use the `r` option to run Dahlia's code without making any changes?  
-1. In which file, and on what line of code is the error on?
-1. What type of error is it?
-1. Why is the line throwing an error?
+1. What happens when you run `main.py` without making any changes?  
+2. In which file, and on what line of code is the error on?
+3. What type of error is it?
+4. Why is the line throwing an error?
 
 ##### !end-question
 ##### !explanation
 
 1. Dahlia's code raises an exception. 
 
-2. The line that causes the error is line 20 of `part_one.py`, inside the `driver` function. 
+2. The line that causes the error is line 20 of `source/part_one.py`, inside the `driver` function. 
 
 3. The error is a `KeyError`. 
 
@@ -104,12 +112,12 @@ How can Dahlia change her code to fix the two bugs above? Check out our prior le
 ##### !end-hint
 ##### !explanation
 
-1. Dahlia changes line 73 of `part_one.py` to
+1. Dahlia changes line 73 of `source/part_one.py` to
     ```py
     new_entry = strand[index - 1] + str(count)
     ```  
     - By wrapping `count` in the `str()` function, we convert `count` into a string that can be concatenated to another string like `strand[index - 1]`.
-2. There are other ways she could fix it, but Dahlia decides to change lines 14-16 of `part_one.py` to update the keys in `categorized_sequences` so that they match the integer values returned by the function `categorize_strand`.
+2. There are other ways she could fix it, but Dahlia decides to change lines 14-16 of `source/part_one.py` to update the keys in `categorized_sequences` so that they match the integer values returned by the function `categorize_strand`.
     ```py
     categorized_sequences[-1] = [] # strands that can't be determined
     categorized_sequences[0] = [] # dna strands
@@ -123,7 +131,7 @@ How can Dahlia change her code to fix the two bugs above? Check out our prior le
 <!-- prettier-ignore-end -->
 <!--END CHALLENGE-->
 
-Dahlia uses the `r` option to run her code and discovers that the error is gone!  Unfortunately, the actual output does not match the expected output. When she runs the code using the `t` option she sees a new crash.
+Dahlia runs her code in `main.py` and discovers that the error is gone! Unfortunately, when she runs the tests in `tests/test_part_one.py` the actual output does not match the expected output. When looking at the test results, she sees a new crash.
 
 <!-- prettier-ignore-start -->
 ### !challenge
@@ -132,27 +140,63 @@ Dahlia uses the `r` option to run her code and discovers that the error is gone!
 * title: Debugging Continued
 ##### !question
 
-Dahlia's code produces this output when ran in test mode:
+Dahlia's code produces this output when the tests for part one are ran:
 
 ```py
-Please enter r to run or t to test => t
-Traceback (most recent call last):
-  File "/home/runner/Encode-Decode-Genetic-Sequences/main.py", line 16, in <module>
-    tests()
-    ~~~~~^^
-  File "/home/runner/Encode-Decode-Genetic-Sequences/sequence_tests.py", line 14, in tests
-    part_one_tests()
-    ~~~~~~~~~~~~~~^^
-  File "/home/runner/Encode-Decode-Genetic-Sequences/sequence_tests.py", line 19, in part_one_tests
-    dna_tests()
-    ~~~~~~~~~^^
-  File "/home/runner/Encode-Decode-Genetic-Sequences/sequence_tests.py", line 25, in dna_tests
-    assert result == DNA_ENCODED
-           ^^^^^^^^^^^^^^^^^^^^^
-AssertionError
+(venv) Encode-Decode-Genetic-Sequences % pytest tests/test_part_one.py
+================================================== test session starts ==================================================
+platform darwin -- Python 3.13.1, pytest-8.3.5, pluggy-1.6.0
+rootdir: /Users/Ada_Student/Documents/Learn/debugging-cont/Encode-Decode-Genetic-Sequences
+collected 8 items                                                                                                       
+
+tests/test_part_one.py F..F....                                                                                   [100%]
+
+======================================================= FAILURES ========================================================
+________________________________________________ test_encode_DNA_strand _________________________________________________
+
+    def test_encode_DNA_strand():
+        # Arrange
+        expected = DNA_ENCODED
+    
+        # Act
+        result = encode_strand(DNA)
+    
+        # Assert
+>       assert result == expected, f"Expected {expected}, but got {result}"
+E       AssertionError: Expected G5A3G2C4T3A4C4T5A4C5G3A4T4A3, but got G5A3G2C4T3A4C4T5A4C5G3A4T4
+E       assert 'G5A3G2C4T3A4C4T5A4C5G3A4T4' == 'G5A3G2C4T3A4C4T5A4C5G3A4T4A3'
+E         
+E         - G5A3G2C4T3A4C4T5A4C5G3A4T4A3
+E         ?                           --
+E         + G5A3G2C4T3A4C4T5A4C5G3A4T4
+
+tests/test_part_one.py:14: AssertionError
+________________________________________________ test_encode_RNA_strand _________________________________________________
+
+    def test_encode_RNA_strand():
+        # Arrange
+        expected = RNA_ENCODED
+    
+        # Act
+        result = encode_strand(RNA)
+    
+        # Assert
+>       assert result == expected, f"Expected {expected}, but got {result}"
+E       AssertionError: Expected C3A5U4C4G3U2A4U5G5A3C3G4A4C5, but got C3A5U4C4G3U2A4U5G5A3C3G4A4
+E       assert 'C3A5U4C4G3U2A4U5G5A3C3G4A4' == 'C3A5U4C4G3U2A4U5G5A3C3G4A4C5'
+E         
+E         - C3A5U4C4G3U2A4U5G5A3C3G4A4C5
+E         ?                           --
+E         + C3A5U4C4G3U2A4U5G5A3C3G4A4
+
+tests/test_part_one.py:46: AssertionError
+================================================ short test summary info ================================================
+FAILED tests/test_part_one.py::test_encode_DNA_strand - AssertionError: Expected G5A3G2C4T3A4C4T5A4C5G3A4T4A3, but got G5A3G2C4T3A4C4T5A4C5G3A4T4
+FAILED tests/test_part_one.py::test_encode_RNA_strand - AssertionError: Expected C3A5U4C4G3U2A4U5G5A3C3G4A4C5, but got C3A5U4C4G3U2A4U5G5A3C3G4A4
+============================================== 2 failed, 6 passed in 0.03s ==============================================
 ```
 
-Answer the following question:
+Answer the following questions:
 1. What is the bug that Dahlia sees now?  
 2. What is the expected output?  
 3. What is the code doing?
@@ -164,7 +208,7 @@ Answer the following question:
 
 2. The expected output should include all bases listed in the genetic sequence we're compressing.
 
-3. If we use the debugger or print statements to look at the values of `result` and `DNA_ENCODED`, we'll see that the last base in a sequence and its count is not being added to the compressed sequence stored in `result`. 
+3. If we use the debugger or print statements to look at the values of `result` and `DNA_ENCODED`, we'll see that the last base in a sequence and its count are not being added to the compressed sequence stored in `result`. 
 
 ##### !end-explanation
 ### !end-challenge
@@ -253,7 +297,7 @@ In Part 2, Dahlia has refactored her code to first compress the strings, then ca
 
 ## Set Up for Part 2
 
-Before you answer these questions, ensure you have followed all instructions in the `PROBLEM_SET_README.md` file for Part 2 to change the imports in `main.py`, as well as uncommented the Part 2 tests in the `sequence_tests.py` file.
+Before you answer these questions, ensure you have followed all instructions in the `PROBLEM_SET_README.md` file for Part 2 to change the imports in `main.py`.
 
 ### !end-callout
 
@@ -264,7 +308,7 @@ Before you answer these questions, ensure you have followed all instructions in 
 * title: Debugging Continued
 ##### !question
 
-When Dahlia runs her code with the `r` option, no errors are raised, but she gets a test failure when running with the `t` option.
+When Dahlia runs her code in `main.py`, no errors are raised, but she gets a test failure when running the tests in `tests/test_part_two.py`.
 
 Take a few minutes and use some debugging techniques to find out why the Part 2 code is behaving the way it is.
 
@@ -281,7 +325,7 @@ Some examples of things to try:
 
 - Comment out sections of code and re-add it line by line.
 
-- Grab the code and run it inside of VSCode with the debugger.
+- Run the code or tests using the debugger in VS Code.
 
 ##### !end-explanation
 ### !end-challenge
@@ -294,7 +338,7 @@ Some examples of things to try:
 * title: Debugging Continued
 ##### !question
 
-Now Dahlia knows the issue is in `part_two.py`'s `categorize_strand` function. Ready with info on what's happening and why it's happening from her debugging techniques, what code does Dahlia need to change to fix the issue with the loop?
+Now Dahlia knows the issue is in `source/part_two.py`'s `categorize_strand` function. Ready with info on what's happening and why it's happening from her debugging techniques, what code does Dahlia need to change to fix the issue with the loop?
 
 ##### !end-question
 ##### !explanation
