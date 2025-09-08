@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-Sets have a wide array of built in functionality based on the concept of sets in mathematics, and this is where sets really shine! In this lesson we will explore the basics of sets and look at the ways we can take advantage of the features of sets in algorithms and problem solving.
+Sets are a collection that allows us to hold pieces of data, similar to how lists and dictionaries hold data. Sets have a wide array of built in functionality based on the concept of sets in mathematics, and this is where sets really shine!  In this lesson we will explore the basics of sets and look at the ways we can take advantage of the features of sets in algorithms and problem solving.
 
 ## Vocabulary and Synonyms 
 
