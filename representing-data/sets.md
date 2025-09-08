@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-Sets are a unique data structure in Python.  Sets can be used to store data like lists and dictionaries, but sets also have a wide array of built in functionality based on the concept of sets in mathematics, and this is where sets really shine!  In this lesson we will explore the basics of sets and look at the ways we can take advantage of the features of sets in algorithms and problem solving.
+Sets are a unique data structure in Python. Sets have a wide array of built in functionality based on the concept of sets in mathematics, and this is where sets really shine! In this lesson we will explore the basics of sets and look at the ways we can take advantage of the features of sets in algorithms and problem solving.
 
 ## Vocabulary and Synonyms 
 
