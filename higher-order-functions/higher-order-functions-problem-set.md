@@ -82,7 +82,7 @@ Example inputs and outputs:
 |`[{"word": "ada", "score": 4}, {"word": "roar", "score": 4}]`| `{"word": "ada", "score": 4}`|
 |`[{"word": "how", "score": 9}]`|`{"word": "how", "score": 9}`|
 ||
-|`[]`| None|
+|`[]`| `None`|
 ##### !end-question
 
 ##### !placeholder
