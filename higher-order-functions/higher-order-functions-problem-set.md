@@ -80,9 +80,9 @@ Example inputs and outputs:
 | -- | -- |
 |`[{"word": "hi", "score": 5}, {"word": "how", "score": 9}, {"word": "are", "score": 3}, {"word": "you", "score": 6}]`|`{"word": "how", "score": 9}`|
 |`[{"word": "ada", "score": 4}, {"word": "roar", "score": 4}]`| `{"word": "ada", "score": 4}`|
-|`[{"word": "how", "score": 9}]`|`[{"word": "how", "score": 9}]`|
+|`[{"word": "how", "score": 9}]`|`{"word": "how", "score": 9}`|
 ||
-|`[]`| None|
+|`[]`| `None`|
 ##### !end-question
 
 ##### !placeholder
