@@ -821,9 +821,6 @@ E       AttributeError: 'int' object has no attribute 'append'
 main.py:26: AttributeError
 ============================================== short test summary info ==============================================
 FAILED main.py::test_mystery_function - AttributeError: 'int' object has no attribute 'append'
-main.py:26: AttributeError
-============================================== short test summary info ==============================================
-FAILED main.py::test_mystery_function - AttributeError: 'int' object has no attribute 'append'
 ```
 
 * `a = 100, b = 0` shows us with what arguments the function that failed was called.
