@@ -436,6 +436,17 @@ class Order:
 
 ##### !end-answer
 
+##### !hint
+
+If the challenge is not correct, but you believe that you have accurately re-arranged the declaration of the function and variables for this this test, try changing the order of the assert statements.
+
+##### !end-hint
+
+##### !explanation
+
+In actual tests, the assert statements could appear in either order. For this scenario, it does not matter if we first check if the customer is May or if the number of products is two. The reason we are required to order the assert statements so that `assert len(order.products) == 2` comes before `assert order.customer == may` is a limitation related to Learn. 
+
+##### !end-explanation
 <!-- other optional sections -->
 <!-- !hint - !end-hint (markdown, hidden, students click to view) -->
 <!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
